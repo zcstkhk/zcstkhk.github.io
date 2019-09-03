@@ -1,0 +1,241 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Examine the model</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=id1030165.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Examine the model</h2>
+         <p>The provided simulation model includes predefined physical and material properties, constraints, and load conditions. The activity focuses on the SOL 200 solution creation, solving, and post processing. Familiarize yourself with the physical properties, constraints, and loads.</p>
+         <div class="division">
+            
+            <h3>Physical properties and materials</h3>
+            
+            <table border="0" cellpadding="4" cellspacing="2" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody valign="top">
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p><span class="uiTerm">Type</span>: PSHELL 
+                        </p>
+                        
+                        <p><span class="uiTerm">Name</span>: Plate 
+                        </p>
+                        
+                        <p><span class="uiTerm">Thickness</span>: 0.15&quot;
+                        </p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Material</span>: Aluminum 
+                        </p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p><span class="uiTerm">Type</span>: PSHELL 
+                        </p>
+                        
+                        <p><span class="uiTerm">Name</span>: Web 
+                        </p>
+                        
+                        <p><span class="uiTerm">Thickness</span>: 0.20 inches
+                        </p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Material</span>: Aluminum 
+                        </p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p><span class="uiTerm">Type</span>: PBARL
+                        </p>
+                        
+                        <p><span class="uiTerm">Name</span>: Web Cap 
+                        </p>
+                        
+                        <p><span class="uiTerm">Cross Section</span>: BAR 
+                        </p>
+                        
+                        <p><span class="uiTerm">Dimensions</span>: 0.25&quot; x 0.25&quot;
+                        </p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Material</span>: Aluminum 
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Constraints</h3>
+            
+            <table border="0" cellpadding="4" cellspacing="2" width="369" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="83*">
+                  
+                  <col span="1" width="107*">
+                  
+               </colgroup>
+               
+               <tbody valign="top">
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>Corner translations Fixed</p>
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/desopt200/constraints1.png"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>Back edge X and Z Fixed</p>
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/desopt200/constraints2.png"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <table border="0" cellpadding="4" cellspacing="2" width="278" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="100*">
+                  
+               </colgroup>
+               
+               <tbody valign="top">
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>Fixed Z around perimeter</p>
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/desopt200/constraints3.png"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Loads (will be used in Subcase 1)</h3>
+            
+            <table border="0" cellpadding="4" cellspacing="2" frame="void" rules="none" width="371" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="95*">
+                  
+                  <col span="1" width="102*">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1" valign="top">
+                        
+                        <p>Axial load distributed along front edge</p>
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/desopt200/loads1.png"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1" valign="top">
+                        
+                        <p>Pressure load on plate</p>
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/desopt200/loads2.png"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Load (will be used in Subcase 2)</h3>
+            
+            <table border="0" cellpadding="4" cellspacing="2" frame="void" rules="none" width="210" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="100*">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1" valign="top">
+                        
+                        <p>Concentrated force</p>
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/desopt200/loads3.png"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

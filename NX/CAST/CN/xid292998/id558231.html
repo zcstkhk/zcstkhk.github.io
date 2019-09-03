@@ -1,0 +1,78 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Consolidate the 2D meshes</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=id558231.html">
+   </head>
+   <body>
+      <div class="contentType_procedure">
+         <h2>Consolidate the 2D meshes</h2>
+         <p>Only one 3D mesh collector was created, so no consolidation is necessary for the 3D meshes. </p>
+         <p>Next, examine the 2D mesh collectors. You will see that the 2D meshes use three physical property tables: </p>
+         <ul>
+            
+            <li>
+               
+               <p><span class="uiTerm">SHELL 4MM IDEAS PTABLE</span></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">SHELL 3MM IDEAS PTABLE</span> 
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">SHELL 2MM IDEAS PTABLE</span> 
+               </p>
+               
+            </li>
+            
+         </ul>
+         <p>Rename the Thin Shell(1), Thin Shell(3), and Thin Shell(5) mesh collectors to <span class="literalText">4mmShell</span>, <span class="literalText">3mmShell</span>, and <span class="literalText">2mmShell</span> respectively.
+         </p>
+         <p>Consolidate the 2D meshes into three collectors. Organize them according to their physical properties. The consolidated meshes should look like this:</p>
+         <table border="0" cellpadding="4" cellspacing="2" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/activities/meshing/mesh_collectors/mech_col_nav_7.gif" border="0"> 2D Collectors<br/><img align="bottom" src="../graphics/nonLocalized/nx_dss/activities/meshing/mesh_collectors/mech_col_nav_8.gif" border="0"> 4mmShell<br/><img align="bottom" src="../graphics/nonLocalized/nx_dss/activities/meshing/mesh_collectors/mech_col_nav_9.gif" border="0"> 2d_mesh(1)<br/><img align="bottom" src="../graphics/nonLocalized/nx_dss/activities/meshing/mesh_collectors/mech_col_nav_10.gif" border="0"> 2d_mesh(2)<br/><img align="bottom" src="../graphics/nonLocalized/nx_dss/activities/meshing/mesh_collectors/mech_col_nav_8.gif" border="0"> 3mmShell<br/><img align="bottom" src="../graphics/nonLocalized/nx_dss/activities/meshing/mesh_collectors/mech_col_nav_9.gif" border="0"> 2d_mesh(3)<br/><img align="bottom" src="../graphics/nonLocalized/nx_dss/activities/meshing/mesh_collectors/mech_col_nav_10.gif" border="0"> 2d_mesh(4)<br/><img align="bottom" src="../graphics/nonLocalized/nx_dss/activities/meshing/mesh_collectors/mech_col_nav_8.gif" border="0"> 2mmShell<br/><img align="bottom" src="../graphics/nonLocalized/nx_dss/activities/meshing/mesh_collectors/mech_col_nav_10.gif" border="0"> 2d_mesh(5)
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <p>You can then delete the empty mesh collectors. </p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/gateway/standard/save.gif" border="0"> <span class="uiTerm">Save</span> (Quick Access toolbar)
+         </p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

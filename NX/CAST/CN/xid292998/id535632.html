@@ -1,0 +1,427 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Assembly FEM project</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=id535632.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Assembly FEM project</h2>
+         <p>In Advanced Simulation, assembly FEMs are useful for large models where analysts work in collaboration or where multiple instances of individual components are used. The following exercise demonstrates the workflow to create an associative assembly FEM for a simple assembly.</p>
+         <div class="division">
+            
+            <h3>Objective</h3>
+            
+            <p>The assembly shown below is used in an automotive car jack. It is constructed by welding two identical arms to a spacer plate. Create an associative assembly FEM of the assembly and then use the SOL 101 Linear Statics - Global Constraints solution sequence to perform a structural analysis of the assembly when it is compressed by 1000 lbf.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/assembly_fem/assembly_fem_objective.png"></p>
+            
+            <ul class="unmarkedList">
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball1.gif" border="0"> Arm (<span class="fileName">arm.prt</span>)
+                  </p>
+                  
+               </li>
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball2.gif" border="0"> Spacer plate (<span class="fileName">spacer_lower.prt</span>)
+                  </p>
+                  
+               </li>
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Required data</h3>
+            <a name="genid_xid292998_1236" id="genid_xid292998_1236"></a><h4></h4>
+            <table border="0" cellpadding="4" cellspacing="2" width="375" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="91*">
+                  
+                  <col span="1" width="97*">
+                  
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Property</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Value</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Part</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p><span class="fileName">arm.prt</span></p>
+                        
+                        <p><span class="fileName">spacer_lower.prt</span></p>
+                        
+                        <p class="no-bottom-margin"><span class="fileName">lower_arm_assy.prt</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" height="30" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Solution sequence</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" height="30" rowspan="1">
+                        
+                        <p class="no-bottom-margin">SOL 101 Linear Statics - Global Constraints</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Idealization</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">None</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Material</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Steel</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Mesh</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>CTETRA10</p>
+                        
+                        <p class="no-bottom-margin">Automatic element sizing</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Constraints</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Fix two holes as indicated</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Loads</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Apply <span class="userInput">500</span> lbf compressive loads to the two holes as indicated
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/assembly_fem/assembly_fem_model.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Notes</h3>
+            
+            <p>A summary of how to complete each step is provided below.</p>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>Create component FEMs.</p>
+                  
+                  <ol type="a" start="1">
+                     
+                     <li>
+                        
+                        <p>Open the part and start Advanced Simulation. Create a FEM file named <span class="fileName">spacer_lower_fem1.fem</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Define the material and the physical properties and create a 3D mesh collector.</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Create a CTETRA10 mesh using automatic sizing. Assign the mesh to the mesh collector you created.</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Save and close the FEM.</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Repeat the previous steps to mesh <span class="fileName">arm.prt</span>. For this part, name the FEM <span class="fileName">arm_fem1.fem</span>.
+                        </p>
+                        
+                     </li>
+                     
+                  </ol>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Map the component FEMs to the assembly FEM.</p>
+                  
+                  <ol type="a" start="1">
+                     
+                     <li>
+                        
+                        <p>Open the <span class="fileName">lower_arm_assy.prt</span> and start Advanced Simulation.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>To create a new assembly FEM, in the <span class="uiTerm">Simulation Navigator</span>, right-click <span class="fileName">lower_arm_assy.prt</span> and select <span class="uiTerm">New Assembly FEM</span>. Name the new file <span class="fileName">lower_arm_assyfem1.afm</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>In the <span class="uiTerm">Simulation Navigator</span>, expand <span class="uiTerm">lower_arm_assy.prt</span> to reveal the components comprising the assembly.
+                        </p>
+                        
+                     </li>
+                     
+                     <li id="step_4_afem">
+                        
+                        <p>In the <span class="uiTerm">Simulation Navigator</span>, right-click <span class="uiTerm">spacer_lower.prt</span> and select <span class="uiTerm">Map Existing</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li id="step_5_afem">
+                        
+                        <p>In the <span class="uiTerm">Map CAD Component To Existing FEM</span> dialog box, browse to and select <span class="fileName">spacer_lower_fem1.fem</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>In the <span class="uiTerm">Simulation Navigator</span>, right-click <span class="uiTerm">arm.prt</span> and select <span class="uiTerm">Find All Matching Components</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>In the <span class="uiTerm">Simulation Navigator</span>, right-click either of the <span class="uiTerm">arm.prt</span> instances and select <span class="uiTerm">Map Existing</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>In the <span class="uiTerm">Map CAD Component To Existing FEM</span> dialog box, browse to and select <span class="fileName">arm_fem1.fem</span> 
+                        </p>
+                        
+                     </li>
+                     
+                  </ol>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Resolve label conflicts.</p>
+                  
+                  <ol type="a" start="1">
+                     
+                     <li>
+                        
+                        <p>In the <span class="uiTerm">Simulation Navigator</span>, right-click <span class="uiTerm">lower_arm_assyfem1.afm</span> and select <span class="uiTerm">Assembly Label Manager</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>In the <span class="uiTerm">Assembly Label Manager</span> dialog box, click <span class="userInput">Automatically Resolve</span>.
+                        </p>
+                        
+                     </li>
+                     
+                  </ol>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Connect the component FEMs in the assembly FEM. Depending on the connection method, you can do this in the FEM or in the Simulation file. In this case, you will use the <span class="uiTerm">Surface-to-Surface Gluing</span> command, which is accessed from the Simulation file.
+                  </p>
+                  
+                  <ol type="a" start="1">
+                     
+                     <li>
+                        
+                        <p>In the <span class="uiTerm">Simulation Navigator</span>, right-click <span class="uiTerm">lower_arm_assyfem1.afm</span> and select <span class="uiTerm">New Simulation</span>. Name the new Simulation file <span class="fileName">lower_arm_assysim1.sim</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>To simulate the welds that join the parts, use the <span class="uiTerm">Automatic Pairing</span> feature in the <span class="uiTerm">Surface-to-Surface Gluing</span> command.
+                        </p>
+                        
+                     </li>
+                     
+                  </ol>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Apply constraints and loads.</p>
+                  
+                  <ol type="a" start="1">
+                     
+                     <li>
+                        
+                        <p>Fix the nodes on the surface of the two lower holes.</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Apply 500 lbf bearing loads to each of the two upper holes. Direct the loads to compress the structure.</p>
+                        
+                     </li>
+                     
+                  </ol>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Solve the model.</p>
+                  
+               </li>
+               
+            </ol>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Expected Results</h3>
+            
+            <p>To access the analysis results, in the <span class="uiTerm">Simulation Navigator</span>, double-click <span class="uiTerm">Results</span>.
+            </p>
+            
+            <p>To view a contour plot of the von Mises stress, in the <span class="uiTerm">Post Processing Navigator</span>, expand <span class="uiTerm">Solution 1</span>. Next, expand <span class="uiTerm">Stress-Element-Nodal</span> and double-click <span class="uiTerm">Von-Mises</span>. The resulting contour plot should look similar to the one shown below.
+            </p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/assembly_fem/assembly_fem_results.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Completed project</h3>
+            
+            <p>For your reference, a completed model for this project is located in the <span class="pathName">..\projects\solved_project_models</span> folder.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

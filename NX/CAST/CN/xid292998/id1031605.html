@@ -1,0 +1,207 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Examine the results</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=id1031605.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Examine the results</h2>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/simulation_navigator_tab.gif" border="0"> &nbsp; <span class="uiTerm">Simulation Navigator</span></p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/mb1.gif" border="0">&nbsp; <span class="uiTerm">Plate Optimization</span> (the solution)
+               </p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/mb3.gif" border="0">&nbsp; <span class="uiTerm">Browse</span></p>
+               
+            </li>
+            <li>
+               
+               <p>In <span class="uiTerm">Windows Explorer</span>, navigate to the folder where you saved the Simulation file. 
+               </p>
+               
+            </li>
+            <li>
+               
+               <p>In Notepad or another text editor, open the .f06 file and scroll to the end to view the design variable history. Notice the labels you entered for the design variables are reported in the output.</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/desopt200/results1.png"></p>
+               
+               <p>The optimized design variables are reported in design cycle 5 (highlighted in the above graphic). The height of the bar element decreased and the shell element thicknesses of the web and plate increased.</p>
+               
+               <table border="1" cellpadding="2" cellspacing="1" width="250" align="center">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="100*">
+                     
+                     <col span="1" width="100*">
+                     
+                     <col span="1" width="100*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td align="center" colspan="1" height="25" rowspan="1">
+                           
+                           <p class="no-bottom-margin">Variable Label</p>
+                           
+                        </td>
+                        
+                        <td align="center" colspan="1" height="25" rowspan="1">
+                           
+                           <p class="no-bottom-margin">Initial Value</p>
+                           
+                        </td>
+                        
+                        <td align="center" colspan="1" height="25" rowspan="1">
+                           
+                           <p class="no-bottom-margin">Final Value</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">T-WEB</p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">0.2</p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">0.4977</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr>
+                        
+                        <td colspan="1" height="79" rowspan="1">
+                           
+                           <p class="no-bottom-margin">T-PLATE</p>
+                           
+                        </td>
+                        
+                        <td colspan="1" height="79" rowspan="1">
+                           
+                           <p class="no-bottom-margin">0.15</p>
+                           
+                        </td>
+                        
+                        <td colspan="1" height="79" rowspan="1">
+                           
+                           <p class="no-bottom-margin">0.3733</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">H-BAR</p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">0.25</p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">0.4147</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+               <p>Note that the objective of the analysis was to minimize the weight, but it appears that the weight has increased. The optimization algorithm works in the overall scope of the objective, yet it must satisfy the constraints. The algorithm increased the shell element thicknesses to keep the displacement and stress constraints in range, but did so as minimally as possible.</p>
+               
+               <p>Close the text editor window when finished.</p>
+               
+            </li>
+            <li>
+               
+               <p>In NX:</p>
+               
+               <table border="0" cellpadding="0" cellspacing="0" class="tab-blue">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="tab_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="tab_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">File</span></p>
+                           
+                        </td>
+                        
+                        <td class="tab_right" colspan="1" rowspan="1" width="16"></td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+               <ul class="unmarkedList">
+                  <li>
+                     
+                     <p><span class="uiTerm">Close</span>&rarr;<span class="uiTerm">All Parts</span></p>
+                     
+                  </li>
+               </ul>
+               
+            </li>
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

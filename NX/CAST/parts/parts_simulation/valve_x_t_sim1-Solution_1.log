@@ -1,0 +1,597 @@
+ Thermal/Flow Analysis
+ =====================
+ MAYA Heat Transfer Technologies Ltd.
+
+
+ TMG Thermal/Flow 9.0.286  Apr 12 2014
+
+
+ Run directory specified for analysis:
+ .\
+
+ NX2TMG - Thermal/flow model file builder
+ ======================================================================
+ Time: Sat Nov 29 14:56:29 2014
+
+ +--------------------------------------------------------------------+     
+ |                            Model Builder                           |     
+ +--------------------------------------------------------------------+     
+                                                                            
+ Reading model file...                                                      
+ ...model file read.                                                        
+                                                                            
+ +--------------------------------------------------------------------+     
+ |                            Model Summary                           |     
+ +--------------------------------------------------------------------+     
+                                                                            
+ Finite Element Model                                                       
+ --------------------                                                       
+                                                                            
+ Solver type:     NX THERMAL / FLOW                                         
+ Analysis type:   Flow                                                      
+ Solution type:   Advanced Flow                                             
+ Simulation File: D:\NX_CAE_DATA\mt15032_nx9\student_home\parts_simulation\v
+ Solution:        Solution_1                                                
+                                                                            
+ Number of nodes in thermal model:                        0                 
+ Number of elements in thermal model:                     0                 
+                                                                            
+ Number of nodes in flow model:                        2250                 
+ Number of elements in flow model:                     8724                 
+                                                                            
+ Number of fluid nodes reused for surface coating:       74                 
+ Number of elements created for surface coating:        104                 
+                                                                            
+ Solution Options                                                           
+ ----------------                                                           
+                                                                            
+ Steady-State Analysis                                                      
+ Solving Flow                                                               
+ Solving Thermal                                                            
+                                                                            
+ Ambient Temperature:                             2.000E+01 C               
+ Ambient Pressure:                                1.014E+02 mN/mm^2         
+ Gravitational Acceleration:                      9.810E+03 mm/s^2          
+ Gravity Direction: X: 0.000E+00  Y: 1.000E+00  Z: 0.000E+00                
+ Fluid buoyancy:                                  Off                       
+                                                                            
+ Flow laminar/turbulent model:                    Mixing length             
+   Length scale is auto calculated                                          
+                                                                            
+ Flow solver iteration limit:                          1000                 
+ Flow converged when RMS residual less than:      2.000E-04                 
+ Flow solver physical time step:                  5.000E-01 s               
+ Flow solver heat imbalance:                      2.000E-02                 
+                                                                            
+ Advection Scheme Momentum:                       First Order               
+ Advection Scheme Energy (if Solve_Energy):       First Order               
+                                                                            
+ Global Relaxation Factor:                        7.500E-01                 
+ Mass Relaxation Factor:                          7.500E-01                 
+ Fluids Relaxation Factor:                        9.000E-01                 
+ Turbulence Relaxation Factor:                    1.000E+00                 
+                                                                            
+ Freeze flow field:                               Off                       
+ High Speed Flow:                                 Off                       
+ Connect Disjoint Fluid Meshes:                   On                        
+                                                                            
+ Performing mesh checks...                                                  
+                                                                            
+  - interior and warping angle                                              
+    checks on fluid elements...                                             
+
+ +--------------------------------------------------------------------+
+ | NX2TMG - WARNING  1196                                      GRP001 |
+ +--------------------------------------------------------------------+
+ | Distorted fluid element(s) with interior angles < 15 deg. found.   |
+ | The diffusion coefficients of those elements will be modified to   |
+ | avoid convergence problems. The solution will be more robust but   |
+ | less accurate.                                                     |
+ |                                                                    |
+ | List of element labels:                                            |
+ |       12      24      39      57      70      92      93     100   |
+ |      120     188     193     195     196     207     211     212   |
+ |      213     214     217     295     298     319     429     438   |
+ |      478     485     489     515     536     537     541     543   |
+ |      545     569     598     599     618     647     650     662   |
+ |      702     703     722     736     740     753     782     811   |
+ |      826     847     892     937     972    1012    1013    1023   |
+ |     1057    1154    1160    1189    1190    1191    1192    1214   |
+ |      ... list too long to display.                                 |
+ | Number of elements found:    878                                   |
+ +--------------------------------------------------------------------+
+
+
+ +--------------------------------------------------------------------+
+ | NX2TMG - WARNING  1197                                      GRP002 |
+ +--------------------------------------------------------------------+
+ | Distorted fluid element(s) with interior angles > 165 deg. found.  |
+ | The diffusion coefficients of those elements will be modified to   |
+ | avoid convergence problems. The solution will be more robust but   |
+ | less accurate.                                                     |
+ |                                                                    |
+ | List of element labels:                                            |
+ |      188     811    1189    1658    1734    1738    1782    1815   |
+ |     2071    2122    2125    2129    2287    2336    2527    2540   |
+ |     2545    2572    2647    2745    2760    2761    2763    2769   |
+ |     2772    2778    2797    2806    2811    2824    2831    2858   |
+ |     2890    2974    2976    2980    2991    3025    3115    3314   |
+ |     3682    3723    3741    4024    4247    4799    4846    4961   |
+ |     5180    5182    5312    5835    5842    5852    5892    5900   |
+ |     5909    5911    6011    6066    6067    6069    6081    6082   |
+ |      ... list too long to display.                                 |
+ | Number of elements found:     75                                   |
+ +--------------------------------------------------------------------+
+
+    ...angle checks on fluid                                                
+       elements completed.                                                  
+                                                                            
+  - interior and warping angle                                              
+    checks on thermal elements...                                           
+    ...angle checks on thermal                                              
+       elements completed.                                                  
+                                                                            
+  - coincident node check                                                   
+    on fluid model...                                                       
+    ...node check on fluid                                                  
+       model completed.                                                     
+                                                                            
+  - coincident node check                                                   
+    on thermal model...                                                     
+    ...node check on thermal                                                
+       model completed.                                                     
+                                                                            
+  - coincident element check                                                
+    on fluid model...                                                       
+                                                                            
+   ... coincident fluid elements                                            
+       check completed.                                                     
+                                                                            
+ ...mesh checks completed.                                                  
+                                                                            
+ Building free face list...                                                 
+ ...found    3014 free faces.                                               
+                                                                            
+ Processing inlets/outlets/internal fans...                                 
+                                                                            
+  - Building entity face list...                                            
+    ...found         52 entity faces.                                       
+ ...Inlet   1 done.                                                         
+                                                                            
+ Processing openings...                                                     
+                                                                            
+  - Building entity face list...                                            
+    ...found         52 entity faces.                                       
+ ...Opening  2 done.                                                        
+                                                                            
+ Processing disjoint fluid meshes...                                        
+  - Automatic disjoint fluid mesh checks                                    
+    ...no disjoint fluid mesh found                                         
+ ...done.                                                                   
+                                                                            
+ Surface Property Definitions                                               
+ -----------------------------                                              
+                                                                            
+   1 - Default surface property                                             
+       Roughness:  0.000E+00 mm                                             
+       Heat Transfer Coefficient: Auto. Calc. Forced Convection             
+                                                                            
+ Inlets                                                                     
+ ------                                                                     
+                                                                            
+ Number of inlet:                                          1                
+                                                                            
+ Inlet                               Type           Value                   
+ ----------------------------------------------------------------------     
+   1 - Flow Boundary Condition(1)    Velocity        1.000E+02  mm/s        
+       Area:  3.773E+02 mm^2                                                
+ ----------------------------------------------------------------------     
+                                                                            
+ Openings                                                                   
+ --------                                                                   
+                                                                            
+ Number of openings:                                       1                
+                                                                            
+ Opening                             Type                                   
+ ----------------------------------------------------------------------     
+   2 - Flow Boundary Condition(2)    Ambient                                
+       Area:  3.773E+02 mm^2                                                
+ ----------------------------------------------------------------------     
+                                                                            
+ Sub-domains                                                                
+ -----------                                                                
+                                                                            
+ Sub-domain Elements   Fluid                           Volume               
+ ----------------------------------------------------------------------     
+   1            8724   Liquid : Water                  6.2544E+04 mm^3      
+ ----------------------------------------------------------------------     
+                                                                            
+ Flow Model Conditions:                                                     
+ ----------------------                                                     
+                                                                            
+ Total Fluid Volume available for Flow: 6.2544E+04 mm^3                     
+                                                                            
+                                                                            
+ Estimated Characteristic Velocities, Lengths and Dimensionless Numbers:    
+                                                                            
+ Sub-domain    Velocity         Length          Reynolds     Mach           
+ ----------------------------------------------------------------------     
+   1- Water    4.8936E+01 mm/s  3.9694E+01 mm   1.9309E+03   ----------     
+ ----------------------------------------------------------------------     
+                                                                            
+ Writing flow model files...                                                
+ ...done.                                                                   
+
+ Executing Flow Solver Only
+
+ FLOW - Flow analysis
+ ======================================================================
+ Time: Sat Nov 29 14:56:32 2014
+
+
+ +--------------------------------------------------------------------+
+ | Solving Flow Model - Elapsed Time: 00 min 01 sec                   |
+ +--------------------------------------------------------------------+
+
+
+
+ +--------------------------------------------------------------------+
+ |                 Initialization Information                         |
+ +--------------------------------------------------------------------+
+
+  Velocity-Gradient array not found in FLI file.
+  Zero initial values will be used.
+
+  Pressure-Gradients array not found in FLI file.
+  Zero initial values will be used.
+
+
+ +--------------------------------------------------------------------+
+ |         Average Scale Information Sub-domain        1              |
+ +--------------------------------------------------------------------+
+
+ Global Length Scale     :                3.969E+01
+ Density Scale           :                1.000E-06
+ Dynamic Viscosity Scale :                1.006E-06
+ Velocity Scale          :                0.000E+00
+ Prandtl Number          :                6.985E+00
+ Cp Scale                :                4.187E+09
+ Conductivity Scale      :                6.030E+02
+
+
+ +--------------------------------------------------------------------+
+ |                       Convergence History                          |
+ +--------------------------------------------------------------------+
+
+ TIME STEP =     1   SIMULATION TIME = 5.00E-01  CPU SECONDS = 5.69E-01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.00 | 6.0E-02 | 7.0E-01 |    1406  |       1.2E-01  ok |
+ | V - Mom  | 0.00 | 3.4E-18 | 5.7E-17 |     753  |       4.4E+15  ok |
+ | W - Mom  | 0.00 | 2.0E-18 | 6.0E-17 |    2073  |       7.1E+15  ok |
+ | P - Mass | 0.00 | 3.9E-03 | 4.6E-02 |    2073  | 16.7  8.1E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =     2   SIMULATION TIME = 1.00E+00  CPU SECONDS = 8.58E-01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.67 | 4.0E-02 | 3.1E-01 |    1413  |       1.6E-02  OK |
+ | V - Mom  |99.99 | 1.6E-02 | 6.3E-02 |     726  |       2.1E-02  OK |
+ | W - Mom  |99.99 | 4.5E-03 | 3.0E-02 |    1448  |       5.6E-02  OK |
+ | P - Mass | 3.31 | 1.3E-02 | 1.8E-01 |    1406  |  8.8  5.5E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =     3   SIMULATION TIME = 1.50E+00  CPU SECONDS = 1.07E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.47 | 1.9E-02 | 7.0E-02 |    2074  |       1.3E-02  OK |
+ | V - Mom  | 0.72 | 1.1E-02 | 4.7E-02 |    1538  |       1.7E-02  OK |
+ | W - Mom  | 0.75 | 3.3E-03 | 2.3E-02 |    2029  |       3.9E-02  OK |
+ | P - Mass | 0.50 | 6.4E-03 | 7.6E-02 |    2155  |  8.9  4.4E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =     4   SIMULATION TIME = 2.00E+00  CPU SECONDS = 1.28E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.48 | 9.1E-03 | 1.3E-01 |     971  |       1.0E-02  OK |
+ | V - Mom  | 0.58 | 6.7E-03 | 7.2E-02 |     971  |       1.1E-02  OK |
+ | W - Mom  | 0.62 | 2.1E-03 | 3.1E-02 |     995  |       3.3E-02  OK |
+ | P - Mass | 0.65 | 4.2E-03 | 4.1E-02 |    2155  |  8.8  2.9E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =     5   SIMULATION TIME = 2.50E+00  CPU SECONDS = 1.49E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.94 | 8.6E-03 | 1.8E-01 |     970  |       9.8E-03  OK |
+ | V - Mom  | 0.74 | 4.9E-03 | 7.8E-02 |     985  |       9.4E-03  OK |
+ | W - Mom  | 0.66 | 1.4E-03 | 2.9E-02 |     985  |       2.1E-02  OK |
+ | P - Mass | 0.42 | 1.8E-03 | 1.3E-02 |    1284  |  8.9  1.6E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ Flow solver - Mass Imbalance                   =  8.0319E-02%
+ Flow solver - X Momentum Imbalance             =  3.5414E-01%
+ Flow solver - Y Momentum Imbalance             = -5.3988E-02%
+ Flow solver - Z Momentum Imbalance             = -1.2590E-02%
+
+ TIME STEP =     6   SIMULATION TIME = 3.00E+00  CPU SECONDS = 1.70E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.73 | 6.3E-03 | 1.5E-01 |     970  |       7.5E-03  OK |
+ | V - Mom  | 0.69 | 3.4E-03 | 5.5E-02 |    1949  |       1.5E-02  OK |
+ | W - Mom  | 0.57 | 7.9E-04 | 1.3E-02 |     985  |       1.8E-02  OK |
+ | P - Mass | 0.41 | 7.1E-04 | 6.2E-03 |     986  |  8.8  1.1E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =     7   SIMULATION TIME = 3.50E+00  CPU SECONDS = 1.91E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.58 | 3.7E-03 | 7.0E-02 |     976  |       6.1E-03  OK |
+ | V - Mom  | 0.59 | 2.0E-03 | 2.9E-02 |     976  |       1.4E-02  OK |
+ | W - Mom  | 0.61 | 4.8E-04 | 8.8E-03 |     976  |       2.2E-02  OK |
+ | P - Mass | 0.50 | 3.5E-04 | 3.7E-03 |     986  |  8.8  1.1E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =     8   SIMULATION TIME = 4.00E+00  CPU SECONDS = 2.12E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.66 | 2.4E-03 | 6.0E-02 |     976  |       6.2E-03  OK |
+ | V - Mom  | 0.66 | 1.3E-03 | 2.0E-02 |     976  |       1.3E-02  OK |
+ | W - Mom  | 0.73 | 3.5E-04 | 6.1E-03 |     976  |       2.4E-02  OK |
+ | P - Mass | 0.58 | 2.0E-04 | 2.2E-03 |     987  |  8.8  1.0E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =     9   SIMULATION TIME = 4.50E+00  CPU SECONDS = 2.32E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.68 | 1.6E-03 | 4.2E-02 |     976  |       5.8E-03  OK |
+ | V - Mom  | 0.69 | 9.1E-04 | 1.4E-02 |    1067  |       1.2E-02  OK |
+ | W - Mom  | 0.74 | 2.6E-04 | 3.9E-03 |    1963  |       2.4E-02  OK |
+ | P - Mass | 0.61 | 1.2E-04 | 1.4E-03 |    2219  |  8.8  9.6E-03  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    10   SIMULATION TIME = 5.00E+00  CPU SECONDS = 2.53E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.67 | 1.1E-03 | 2.6E-02 |     976  |       5.4E-03  OK |
+ | V - Mom  | 0.72 | 6.6E-04 | 1.2E-02 |    1067  |       1.2E-02  OK |
+ | W - Mom  | 0.71 | 1.9E-04 | 3.0E-03 |    1963  |       2.4E-02  OK |
+ | P - Mass | 0.60 | 7.5E-05 | 9.0E-04 |    2219  |  8.8  9.7E-03  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ Flow solver - Mass Imbalance                   =  1.8995E-03%
+ Flow solver - X Momentum Imbalance             = -1.9059E-02%
+ Flow solver - Y Momentum Imbalance             = -5.2067E-03%
+ Flow solver - Z Momentum Imbalance             =  3.6050E-04%
+
+ TIME STEP =    11   SIMULATION TIME = 5.50E+00  CPU SECONDS = 2.74E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.65 | 7.2E-04 | 1.4E-02 |     976  |       5.0E-03  OK |
+ | V - Mom  | 0.70 | 4.6E-04 | 8.1E-03 |    2092  |       1.1E-02  OK |
+ | W - Mom  | 0.67 | 1.3E-04 | 2.0E-03 |    1067  |       2.4E-02  OK |
+ | P - Mass | 0.62 | 4.6E-05 | 6.0E-04 |     977  |  8.8  9.9E-03  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    12   SIMULATION TIME = 6.00E+00  CPU SECONDS = 2.94E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.68 | 4.9E-04 | 9.2E-03 |     994  |       4.9E-03  OK |
+ | V - Mom  | 0.71 | 3.3E-04 | 5.8E-03 |    2092  |       9.8E-03  OK |
+ | W - Mom  | 0.69 | 8.7E-05 | 1.5E-03 |    1067  |       2.3E-02  OK |
+ | P - Mass | 0.65 | 3.0E-05 | 3.9E-04 |     977  |  8.8  1.0E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    13   SIMULATION TIME = 6.50E+00  CPU SECONDS = 3.16E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.68 | 3.3E-04 | 6.4E-03 |     994  |       5.2E-03  OK |
+ | V - Mom  | 0.71 | 2.3E-04 | 3.9E-03 |    2092  |       9.1E-03  OK |
+ | W - Mom  | 0.68 | 5.9E-05 | 1.1E-03 |    1067  |       2.5E-02  OK |
+ | P - Mass | 0.66 | 2.0E-05 | 2.4E-04 |     977  |  8.9  1.1E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    14   SIMULATION TIME = 7.00E+00  CPU SECONDS = 3.38E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.69 | 2.3E-04 | 4.4E-03 |     994  |       5.2E-03  OK |
+ | V - Mom  | 0.70 | 1.6E-04 | 2.8E-03 |    1066  |       8.4E-03  OK |
+ | W - Mom  | 0.68 | 4.0E-05 | 7.5E-04 |    1067  |       2.5E-02  OK |
+ | P - Mass | 0.67 | 1.3E-05 | 1.5E-04 |     977  |  8.9  1.1E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    15   SIMULATION TIME = 7.50E+00  CPU SECONDS = 3.59E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.70 | 1.6E-04 | 3.1E-03 |    1076  |       5.3E-03  OK |
+ | V - Mom  | 0.70 | 1.1E-04 | 2.0E-03 |    1066  |       7.8E-03  OK |
+ | W - Mom  | 0.68 | 2.8E-05 | 5.1E-04 |    1067  |       2.5E-02  OK |
+ | P - Mass | 0.68 | 9.1E-06 | 1.0E-04 |    2219  |  8.9  1.1E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ Flow solver - Mass Imbalance                   =  3.0950E-04%
+ Flow solver - X Momentum Imbalance             = -3.4535E-03%
+ Flow solver - Y Momentum Imbalance             = -3.4029E-04%
+ Flow solver - Z Momentum Imbalance             =  3.7286E-05%
+
+
+Execution terminating:
+    all RMS residual AND global imbalance
+    are below their target criteria.
+
+
+
+
+ +--------------------------------------------------------------------+
+ |                      Computed Model Constants                      |
+ +--------------------------------------------------------------------+
+ Fluid Sub-Domain :    1
+  Characteristic length scale for MLM (Lmax)            = 1.0571E+01
+  Maximum effective turbulence length scale (0.09*Lmax) = 9.5136E-01
+
+
+ +--------------------------------------------------------------------+
+ |         Boundary Mass Flow and Total Source Term Summary           |
+ +--------------------------------------------------------------------+
+ ADIABATIC FACES                          0.0000E+00
+ INLET _FAN 1_Flow Boundary Condition(1)  3.7732E-02
+ OPENING 2_Flow Boundary Condition(2)    -3.7731E-02
+ OPEN_TETRAHEDRAL_ELEMENTS                0.0000E+00
+                                         -----------
+ Global Mass Balance:                     1.1678E-07
+
+ Global Imbalance, in %:                    0.0003 %
+ 
+
+
+ +--------------------------------------------------------------------+
+ |        Boundary Momentum Flow and Total Source Term Summary        |
+ +--------------------------------------------------------------------+
+                                     X-Comp.      Y-Comp.      Z-Comp.
+ ADIABATIC FACES                  -5.0822E+00   8.0339E-02   2.1276E-03
+ INLET _FAN 1_Flow Boundary Condit 8.8812E+00  -3.1939E-06   5.2863E-06
+ OPENING 2_Flow Boundary Condition-3.8001E+00  -8.0448E-02  -2.1206E-03
+ OPEN_TETRAHEDRAL_ELEMENTS         0.0000E+00   0.0000E+00   0.0000E+00
+                                  -----------  -----------  -----------
+ Global Momentum Balance:         -1.1444E-03  -1.1276E-04   1.2355E-05
+
+ Global Imbalance, in %:            -0.0035 %    -0.0003 %     0.0000 %
+ 
+
+
+
+ +--------------------------------------------------------------------+
+ |                 Locations of maximum residuals                     |
+ +--------------------------------------------------------------------+
+ | Equation  |    Node #   |      X      |      Y      |       Z      |
+ +--------------------------------------------------------------------+
+ | U - Mom   |      1076   |  5.789E+00  | -3.491E+01  |  1.520E+02   |
+ | V - Mom   |      1066   |  6.738E+00  | -3.845E+01  |  1.541E+02   |
+ | W - Mom   |      1067   |  7.613E+00  | -4.240E+01  |  1.529E+02   |
+ | P - Mass  |      2219   |  5.031E+00  | -3.160E+01  |  1.484E+02   |
+ +--------------------------------------------------------------------+
+
+
+ +--------------------------------------------------------------------+
+ |                 Peak Values of residuals                           |
+ +--------------------------------------------------------------------+
+ | Equation  |Peak occur at loop # | Peak Residual  | Final Residual  |
+ +--------------------------------------------------------------------+
+ | U - Mom   |            1        |  5.97227E-02   |  1.60750E-04    |
+ | V - Mom   |            2        |  1.58633E-02   |  1.14572E-04    |
+ | W - Mom   |            2        |  4.46475E-03   |  2.75605E-05    |
+ | P - Mass  |            2        |  1.28865E-02   |  9.13564E-06    |
+ +--------------------------------------------------------------------+
+
+
+ +--------------------------------------------------------------------+
+ |         Average Scale Information Sub-domain        1              |
+ +--------------------------------------------------------------------+
+
+ Global Length Scale     :                3.969E+01
+ Density Scale           :                1.000E-06
+ Dynamic Viscosity Scale :                1.006E-06
+ Advection Time Scale    :                5.333E-01
+ Reynolds Number         :                2.937E+03
+ Velocity Scale          :                7.443E+01
+ Prandtl Number          :                6.985E+00
+ Cp Scale                :                4.187E+09
+ Conductivity Scale      :                6.030E+02
+
+
+ +--------------------------------------------------------------------+
+ |                 y+ information (min, max, average)                 |
+ +--------------------------------------------------------------------+
+ |        Face set name           |  min y+   |  max y+   |  ave y+   |
+ +--------------------------------------------------------------------+
+ |ADIABATIC FACES                 |  1.67E-01 |  1.33E+01 |  7.17E+00 |
+ +--------------------------------------------------------------------+
+
+
+ +--------------------------------------------------------------------+
+ |                 CPU Requirements of Numerical Solution             |
+ +--------------------------------------------------------------------+
+
+ Equation Type       Discretization       Linear Solution
+                     (secs. %total)       (secs. %total) 
+ --------------------------------------------------------
+ Momentum-Mass       2.38E+00  79.3 %     6.23E-01  20.7 %
+
+
+ +--------------------------------------------------------------------+
+ |                     Memory Usage Information                       |
+ +--------------------------------------------------------------------+
+ |      Peak Memory Use:           9653 Kb                            |
+ |     Shared Workspace:         453617 words                         |
+ +--------------------------------------------------------------------+
+
+ ESCRR - Convert analysis results
+ ======================================================================
+ Time: Sat Nov 29 14:56:38 2014
+
+ +--------------------------------------------------------------------+     
+ |                          Results Recovery                          |     
+ +--------------------------------------------------------------------+     
+                                                                            
+ Recovering Velocity                                                        
+ Recovering Pressure                                                        
+ Recovering Temperature                                                     
+                                                                            
+ Reading fluid flow results...                                              
+ Reading thermal results...                                                 
+ Writing results data...                                                    
+ 
+ 
+ +--------------------------------------------------------------------+     
+ |                          Solution Summary                          |     
+ +--------------------------------------------------------------------+     
+                                                                            
+                                                                            
+ Results Summary       Maximum       Minimum       Average                  
+ ----------------------------------------------------------------------     
+ Fluid Temperature     2.000E+01     2.000E+01     2.000E+01 C              
+           at node             1             1                              
+ Fluid Velocity        1.291E+02     7.387E-01     7.443E+01 mm/s           
+           at node          1304          1559                              
+ Fluid Pressure        1.733E-02    -6.236E-03     8.632E-03 mN/mm^2        
+           at node          2107          1279                              
+ ----------------------------------------------------------------------     
+                                                                            
+                                                                            
+ Volume/Mass Flow Summary                                                   
+ (Values > 0 are inflows)     Volume Flow          Mass Flow                
+ ----------------------------------------------------------------------     
+ Flow Boundary Condition(1)   3.773E+04 mm^3/s     3.773E-02 kg/s           
+ Flow Boundary Condition(2)  -3.773E+04 mm^3/s    -3.773E-02 kg/s           
+ ----------------------------------------------------------------------     
+                                                                            
+                                                                            
+ Solver Convergence                                                         
+ ----------------------------------------------------------------------     
+ Flow solver - Momentum imbalance                   -0.00345 Percent        
+ Flow solver - Mass imbalance                        0.00031 Percent        
+ Flow solver - Energy imbalance                      0.00000 Percent        
+ ----------------------------------------------------------------------     
+                                                                            
+
+
+
+ +--------------------------------------------------------------------+
+ |                                END                                 |
+ +--------------------------------------------------------------------+
+
+ Solution elapsed time: 00 min 11 sec

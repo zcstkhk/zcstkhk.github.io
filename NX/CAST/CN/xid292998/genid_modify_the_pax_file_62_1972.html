@@ -1,0 +1,126 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Modify the .pax file</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=genid_modify_the_pax_file_62_1972.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Modify the .pax file</h2>
+         <p>In this step you will modify the <span class="fileName">ugs_cae_templates_custom.pax</span> file to create a new tab in the <span class="uiTerm">File New</span> dialog box.
+         </p>
+         <p>The .pax file has a long list of entries. Each entry starts with a tag such as <span class="codeText">&lt;PaletteEntry id=&quot;d1&quot;&gt;</span>, and ends with a <span class="codeText">&lt;/PaletteEntry&gt;</span> tag.
+         </p>
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>Open the <span class="fileName">ugs_cae_templates_custom.pax</span> file in a text editor.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>In the first <span class="codeText">&lt;Presentation&gt;</span> element, change the <span class="codeText">FileNewTab=</span> attribute value to <span class="codeText"> <span class="userInput">&quot;Custom&quot;</span></span>.
+               </p>
+               
+               <p>When you next run NX, a <span class="uiTerm">Custom</span> tab appears on the <span class="uiTerm">File New</span> dialog box.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Delete all of the <span class="codeText">PaletteEntry</span> tags except for the one labelled <span class="codeText">id=&quot;d2&quot;</span>. This entry defines settings for the <span class="fileName">FemNxNastranMetric.fem</span> file.
+               </p>
+               
+               <p>Your custom template will be based on this palette entry.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Change the <span class="codeText">id=</span> attribute value for the <span class="codeText">PaletteEntry</span> element to <span class="codeText">&quot;<span class="userInput">d1</span>&quot;</span>.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Change the <span class="codeText">location=</span> attribute value for the <span class="codeText">PreviewImage</span> element to <span class="codeText">&quot;<span class="userInput">adv_fem_template_custom.jpg</span>&quot;</span>.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Change the content of the <span class="codeText">Filename</span> element to <span class="codeText"> <span class="userInput">FemNXNastranMetric_custom.fem</span></span>.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Save and close the <span class="fileName">.pax</span> file.
+               </p>
+               
+            </li>
+            
+         </ol>
+         <p>Your file should look like the one shown below. The areas that have been changed are shown in boldface type.</p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>This text has been edited and formatted to better fit this window. The formatting in your <span class="fileName">.pax</span> file may be different.
+                  </p>
+                  
+               </td>
+            </tr>
+         </table><pre class="codeExample ">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+...
+  &lt;Presentation 
+    name=&quot;Simulation templates&quot; 
+    bitmap=&quot;sheet_and_block.bmp&quot; 
+    FileNewTab=&quot;<span class="userInput">Custom</span>&quot; 
+    application=&quot;All&quot; 
+    UserMasterModel=&quot;No&quot;/&gt;
+    &lt;PaletteEntry 
+      id=&quot;<span class="userInput">d1</span>&quot;&gt;
+    &lt;References/&gt;
+    &lt;Presentation 
+      name=&quot;NX Nastran&quot; 
+      description=&quot;Empty NX Nastran Fem&quot;&gt;
+        &lt;PreviewImage 
+          type=&quot;UGPart&quot; 
+          location=&quot;<span class="userInput">adv_fem_template_custom.jpg</span>&quot;/&gt;
+    &lt;/Presentation&gt;
+    &lt;ObjectData class=&quot;CaeFemTemplate&quot;&gt;
+      &lt;Filename&gt;
+       <span class="userInput">FemNxNastranMetric_custom.fem</span>
+      &lt;/Filename&gt;
+      &lt;Units&gt;
+        Metric
+      &lt;/Units&gt;
+    &lt;/ObjectData&gt;
+  &lt;/PaletteEntry&gt;
+
+&lt;/Palette&gt;</pre><p>The user interface changes are complete. In the next step you will set up the new FEM file template.</p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Verify the model</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=id1406987.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Verify the model</h2>
+         <p>Open <span class="fileName">opticalassembly_sim1-extse.f06</span> in any text editor to verify that the boundary nodes are fixed and there are no rigid body modes.
+         </p>
+         <p>The eigenvalue analysis summary at the end of the file shows the constraint modes written to the superelement_0.op2 file. </p>
+         <p>The constraint modes are as follows:</p><pre class="codeExample codeExampleSmall ">     R E A L   E I G E N V A L U E S
+
+MODE    EXTRACTION      EIGENVALUE
+ NO.       ORDER
+     1         1        5.994909E+06   ...
+     2         2        6.118062E+06   ...
+     3         3        8.075934E+06   ...
+     4         4        8.078573E+06   ...
+     5         5        2.723370E+07   ...
+     6         6        2.724042E+07   ...
+     7         7        3.215338E+07   ...
+     8         8        8.031011E+07   ...
+     9         9        8.051478E+07   ...
+    10        10        8.542288E+07   ...
+    11        11        1.794294E+08   ...
+    12        12        1.795023E+08   ...
+    13        13        3.404955E+08   ...
+    14        14        3.406050E+08   ...</pre><p>Because there are no rigid body modes, you can verify that the boundary DOFs were fixed when computing the constraint modes.</p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/close_window.gif" border="0"> the text editor
+         </p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/close_window.gif" border="0"> the operating system file browser window
+         </p>
+         <table border="0" cellpadding="0" cellspacing="0" class="tab-blue">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="10">
+               
+               <col span="1" width="*">
+               
+               <col span="1" width="10">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td class="tab_left" colspan="1" rowspan="1" width="10"></td>
+                  
+                  <td class="tab_middle" colspan="1" rowspan="1" width="*">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">File</span></p>
+                     
+                  </td>
+                  
+                  <td class="tab_right" colspan="1" rowspan="1" width="16"></td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><span class="uiTerm">Close</span>&rarr;<span class="uiTerm">All Parts</span></p>
+               
+            </li>
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

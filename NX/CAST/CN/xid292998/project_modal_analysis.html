@@ -1,0 +1,241 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Modal analysis project</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=project_modal_analysis.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Modal analysis project</h2>
+         <p>Modal analysis determines the natural frequencies and mode shapes of structures. Advanced Simulation can perform modal analysis on unconstrained, constrained, and prestressed structures.</p>
+         <div class="division">
+            
+            <h3>Objective</h3>
+            
+            <p>Using the SOL 103 Real Eigenvalues solution sequence, verify that the tuning fork resonates at 440 Hz.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/modal/tuning_fork.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Required data</h3>
+            <a name="genid_xid292998_1225" id="genid_xid292998_1225"></a><h4></h4>
+            <table border="0" cellpadding="4" cellspacing="2" width="375" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="91*">
+                  
+                  <col span="1" width="97*">
+                  
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Property</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Value</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Part</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="fileName">tuning_fork.prt</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Solution sequence</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">SOL 103 Real Eigenvalues</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Idealization</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">See note regarding symmetry</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" height="29" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Material</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" height="29" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Steel</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Mesh</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>CTETRA10</p>
+                        
+                        <p class="no-bottom-margin">Element size <span class="userInput">2</span> mm
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Constraints</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">See note regarding constraints</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Loads</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">None</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/modal/tuning_fork_model.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Notes</h3>
+            
+            <p>Although structural symmetry exists, using symmetry in the model prevents asymmetrical modes from being calculated.</p>
+            
+            <p>Model the tuning fork as unconstrained. Because it is unconstrained, the first six modes calculated are rigid body modes. Rigid body modes are easy to identify because their natural frequencies are noticeably low. Although we elected to calculate the rigid body modes, you can avoid calculating them by specifying a lower limit to the frequency range of about 1 Hz. To do so, in the <span class="uiTerm">Simulation Navigator</span>, edit the solution (<span class="uiTerm">Edit</span>&rarr;<span class="uiTerm">Case Control</span> tab&rarr;<span class="uiTerm">Create Modeling Object</span> (<span class="uiTerm">Lanczos Data</span>)&rarr;<span class="uiTerm">Frequency Range-Lower Limit</span>&rarr;enter <span class="userInput">1</span> Hz).
+            </p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Expected Results</h3>
+            
+            <p>The ten modes calculated by our model are listed below. The first six modes represent rigid body modes. Therefore, the fundamental natural frequency is about 439 Hz (Mode 7), which corresponds closely with the expected result of 440 Hz.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/modal/mode_list.png"></p>
+            
+            <p>The mode shape for Mode 7 is animated below.</p>
+            
+            <div class="activityDiv">
+               <p>For a detailed description of how to create this animation, see the <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" href="#" onclick="popUpPageType('id741200.html','activity');return(false);">Modal analysis</a> activity.
+               </p>
+            </div>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/modal/tuning_fork_anim_2.gif"></p>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">Note</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>If the tuning fork tines overlap one another in your animation, use the <span class="userInput">Edit Post View</span> command to reduce the deformation scale.
+                     </p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Completed project</h3>
+            
+            <p>For your reference, a completed model for this project is located in the <span class="pathName">..\projects\solved_project_models</span> folder.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

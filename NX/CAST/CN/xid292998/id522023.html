@@ -1,0 +1,522 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Geometry idealization project</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=id522023.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Geometry idealization project</h2>
+         <p>A variety of tools to create idealized geometry are available in Advanced Simulation. The following exercise demonstrates two such tools.</p>
+         <div class="division">
+            
+            <h3>Objective</h3>
+            
+            <p>A U-shaped bracket is shown below. To idealize the geometry, you will:</p>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>Split the body to create a symmetric representation of the bracket.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Create a midsurface of the symmetric representation of the bracket.</p>
+                  
+               </li>
+               
+            </ol>
+            
+            <p>Using the SOL 101 Linear Statics - Global Constraints solution sequence, perform a structural analysis on the idealized geometry to determine the tensile stress at <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_blue/blue_ball1.gif" border="0">.
+            </p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/geometry_idealization/geometry_idealization_objective.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Required data</h3>
+            <a name="genid_xid292998_1216" id="genid_xid292998_1216"></a><h4></h4>
+            <table border="0" cellpadding="4" cellspacing="2" width="375" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="91*">
+                  
+                  <col span="1" width="97*">
+                  
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Property</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Value</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Part</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="fileName">U_bracket.prt</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Solution sequence</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">SOL 101 Linear Statics - Global Constraints</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Idealization</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p>Utilize symmetry</p>
+                        
+                        <p class="no-bottom-margin">Create midsurface</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Material</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Steel</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Physical Property</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p>2D element family</p>
+                        
+                        <p>Thin shell collector type</p>
+                        
+                        <p class="no-bottom-margin">Default thickness <span class="userInput">4</span> mm
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Mesh</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>CQUAD8</p>
+                        
+                        <p class="no-bottom-margin">Element size <span class="userInput">4</span> mm
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Constraints</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">See note regarding constraints</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Loads</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Apply a <span class="userInput">500</span> N bearing load as indicated
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/geometry_idealization/geometry_idealization_model.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Notes</h3>
+            
+            <p>A summary of the steps to complete the analysis is listed below.</p>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>Open the part file and start Advanced Simulation. Create new FEM and Simulation files.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Make the idealized part the displayed part.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Perform geometry idealization on the bracket.</p>
+                  
+                  <ol type="a" start="1">
+                     
+                     <li>
+                        
+                        <p>Use the <span class="uiTerm">Promote</span> command to promote the body.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Use the <span class="uiTerm">Split Body</span> command to split the body along the plane of symmetry.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Use the <span class="uiTerm">Midsurface by Face Pairs</span> command to create a midsurface representation of one of the bodies created in the previous step.
+                        </p>
+                        
+                        <div class="activityDiv">
+                           <p>For a detailed description of how to complete this step, see the <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" href="#" onclick="popUpPageType('id741194.html','activity');return(false);">Mesh a midsurface</a> activity.
+                           </p>
+                        </div>
+                        
+                     </li>
+                     
+                  </ol>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Make the FEM file the displayed part.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Turn off unused polygon bodies. In the <span class="uiTerm">Simulation Navigator</span>, expand the <span class="uiTerm">Polygon Geometry</span> node and clear the unused polygon bodies so that only the midsurface is visible.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Define the material and the physical properties and create a 2D thin shell mesh collector.</p>
+                  
+                  <div class="activityDiv">
+                     <p>For a detailed description of how to complete this step, see the <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" href="#" onclick="popUpPageType('id741176.html','activity');return(false);">Define mesh properties with mesh collectors</a> activity.
+                     </p>
+                  </div>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Create a CQUAD8 paver mesh with a 4 mm element size. Assign the mesh to the mesh collector created in the previous step.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Make the Simulation the displayed part.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Use the <span class="uiTerm">User Defined Constraint</span> command to constrain the model along the edge of symmetry.
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>Fix one node on the edge of symmetry in all six DOF.</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Constrain all the other nodes on the edge of symmetry from translating in the Y-direction and rotating about the X- and Z-axes.</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  <a name="genid_xid292998_1217" id="genid_xid292998_1217"></a><table border="0" cellpadding="4" cellspacing="2" align="center">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1">
+                        
+                        <col span="1">
+                        
+                     </colgroup>
+                     
+                     <thead>
+                        
+                        <tr bgcolor="silver">
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">Degree of Freedom (DOF)</p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">Deformation</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </thead>
+                     
+                     <tbody>
+                        
+                        <tr bgcolor="#F0F0F0">
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">DOF1</p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">Translation in the X-direction</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr bgcolor="#F0F0F0">
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">DOF2</p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">Translation in the Y-direction</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr bgcolor="#F0F0F0">
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">DOF3</p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">Translation in the Z-direction</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr bgcolor="#F0F0F0">
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">DOF4</p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">Rotation about the X-axis</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr bgcolor="#F0F0F0">
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">DOF5</p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">Rotation about the Y-axis</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr bgcolor="#F0F0F0">
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">DOF6</p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">Rotation about the Z-axis</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Use the <span class="uiTerm">Bearing</span> command to apply the 500 N force.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Solve the model.</p>
+                  
+               </li>
+               
+            </ol>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Expected Results</h3>
+            
+            <p>To access the analysis results, in the <span class="uiTerm">Simulation Navigator</span>, double-click <span class="uiTerm">Results</span>.
+            </p>
+            
+            <p>The tensile stress at <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_blue/blue_ball1.gif" border="0"> is the normal stress in the Y-direction. To view a contour plot of this stress, in the <span class="uiTerm">Post Processing Navigator</span>, expand <span class="uiTerm">Solution 1</span>. Next, expand <span class="uiTerm">Stress - Element-Nodal</span> and double-click <span class="uiTerm">YY</span>. The resulting contour plot (in MPa) should look similar to the one shown below.
+            </p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/geometry_idealization/geometry_idealization_results.png"></p>
+            
+            <p>Use the <span class="uiTerm">Identify Results</span> command to obtain the numerical value for the tensile stress at the point of interest. The result (in MPa) is shown below.
+            </p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/geometry_idealization/geometry_idealization_results2.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Completed project</h3>
+            
+            <p>For your reference, a completed model for this project is located in the <span class="pathName">..\projects\solved_project_models</span> folder.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

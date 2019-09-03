@@ -1,0 +1,173 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Insert lines to model the rails</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=id1616487.html">
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Insert lines to model the rails</h2>
+         
+         <p>Use the <span class="uiTerm">Line</span> command to insert associative geometry you can mesh with the <span class="uiTerm">1D Mesh</span> command.
+         </p>
+         
+         <p>Create a series of four line segments that connect the midpoints and arc centers highlighted in the following image.</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/idealization/ladder_comp_points.png"></p>
+         
+         <table border="0" cellpadding="0" cellspacing="0">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="5">
+               
+               <col span="1" width="*">
+               
+               <col span="1" width="10">
+               
+               <col span="1" width="*">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td class="button_left" colspan="1" rowspan="1"></td>
+                  
+                  <td class="button_middle" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/main_menu.gif" border="0">&nbsp; <span class="uiTerm">Menu</span>&nbsp; <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/menu_arrow.gif" border="0"></p>
+                     
+                  </td>
+                  
+                  <td class="button_right" colspan="1" rowspan="1"></td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">&nbsp;</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><span class="uiTerm">Insert</span>&rarr;<span class="uiTerm">Curve</span>&rarr;<span class="uiTerm">Line</span></p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/idealization/snap_point_mid_arc.png" border="0"></p>
+               
+               <p><span class="uiTerm">Enable Snap Point</span>, <span class="uiTerm">Mid Point</span>, <span class="uiTerm">Arc Center</span>  (Top Border bar)
+               </p>
+               
+               <p>(All other <span class="uiTerm">Snap Point</span> options should be deselected.)
+               </p>
+               
+            </li>
+            <li>
+               
+               <p>Select pairs of points to create a series of four line segments along the rail, as shown in the animation.</p>
+               
+               <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;"><script type="dojo/method">
+      flashData= {
+          swfSrc : '../xps3/graphics/xpsPlayer.swf',
+          graphSrc : '../graphics/graphicLibrary/nx_dss/adv_sim/meshing/1d/insert_lines.gif',
+          align : 'center',
+          base : './',
+          height : '188',
+          width : '304',
+          bgcolor : '#FFFFFF',
+          flashVersion : '7',         
+          looping : 'false',
+          play : 'true',
+          menu : 'true',
+          parameters : 'mySound=false,dependentFile1=..%2Fgraphics%2FgraphicLibrary%2Fnx_dss%2Fadv_sim%2Fmeshing%2F1d%2Finsert_lines.swf,dependentFile2=..%2Fxps3%2Fgraphics%2Fnav_buttons.txt'
+      }
+      top.loadFlash(this,flashData);
+    </script></div>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Apply</span></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;after selecting each pair of points</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/idealization/ladder_right_rail.png"></p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb2.gif" border="0">&nbsp; Rotate the part to view the other rail.
+               </p>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/idealization/ladder_rotated.png"></p>
+               
+            </li>
+            <li>
+               
+               <p>Repeat these steps to create an identical series of line segments on the other rail.</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/idealization/ladder_rails_complete.png"></p>
+               
+            </li>
+         </ul>
+         
+         <p>Leave the <span class="uiTerm">Line</span> dialog box open for the next step.
+         </p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Hand-calculating strain and displacement</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=nonlinears-02.html">
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Hand-calculating strain and displacement</h2>
+         <p>You can apply an axial pressure load to a simple bar and then remove it to predict permanent strain due to plasticity. The applied pressure load will induce a stress/strain condition beyond the elastic limit.</p>
+         <p>The following graph shows the stress/strain curve for the material applied to the bar. Stress (on the vertical axis) is plotted against strain (on the horizontal axis). The red line shows plastic strain; the green line shows elastic strain. When removing the load, the stress/strain curve returns to the zero-stress condition along a path parallel to the elastic line.</p>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/fea_basic/theory/stress-strain_curve.png"></p>
+         <div class="division">
+            
+            <h3>Calculating plastic strain</h3>
+            
+            <p>The plastic strain for this simple one dimensional problem is calculated as follows:</p>
+            
+            <p><span class="variableText">Total Strain</span> = <span class="variableText">Plastic Strain</span> + <span class="variableText">Elastic Strain</span></p>
+            
+            <p>Total strain is determined by the stress level and the stress/strain data for the material. In this case, the applied pressure and stress are identical.</p>
+            
+            <p>As shown in the stress/strain curve, when <span class="variableText">Stress</span> = 46250 psi, <span class="variableText">Total Strain</span> = 0.015.
+            </p>
+            
+            <p><span class="variableText">Elastic Strain</span> is calculated as follows:
+            </p>
+            
+            <p><span class="variableText">Elastic Strain</span> = <span class="variableText">Stress</span> / <span class="variableText">Elastic Modulus</span></p>
+            
+            <p>Substituting the known stress when the load is applied and the elastic modulus gives:</p>
+            
+            <p><span class="variableText">Elastic Strain</span> = 46250/26.9E6 = 0.00172
+            </p>
+            
+            <p>To solve for plastic strain:</p>
+            
+            <p><span class="variableText">Plastic Strain</span> = <span class="variableText">Total Strain</span> - <span class="variableText">Elastic Strain</span></p>
+            
+            <p>Substituting known values gives:</p>
+            
+            <p><span class="variableText">Plastic Strain</span> = 0.01500 - 0.00172 = 0.01328
+            </p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Calculating residual displacement</h3>
+            
+            <p><span class="variableText">Engineering Strain</span> = <span class="variableText">Change in Length</span> / <span class="variableText">Original Length</span></p>
+            
+            <p>Therefore:</p>
+            
+            <p><span class="variableText">Residual Displacement</span> = <span class="variableText">Plastic Strain</span> x <span class="variableText">Original Length</span></p>
+            
+            <p><span class="variableText">Residual Displacement</span> = 0.01328 x 5 in = 0.06640 in.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

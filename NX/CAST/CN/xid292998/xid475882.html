@@ -1,0 +1,282 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Release DOF from RBE3</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=xid475882.html">
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Release DOF from RBE3</h2>
+         <p>To assure deformations of the tetrahedral mesh do not cause the bolt to twist, release the DOF that corresponds to rotation about the bolt axis from one of the RBE3 elements.</p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/simulation_navigator_tab.gif" border="0"> &nbsp; <span class="uiTerm">Simulation Navigator</span></p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0"> &nbsp; <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/node_collapsed.gif" border="0"> <span class="uiTerm">1D Collectors</span> (expand)
+               </p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0"> &nbsp; <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/node_collapsed.gif" border="0"> <span class="uiTerm">RBE3 Collector(1)</span> (expand)
+               </p>
+               
+            </li>
+            <li>
+               
+               <p>Both RBE3 elements are contained in the <span class="uiTerm">bolt_recipe_1_spider</span> mesh. If you release the DOF that corresponds to rotation about the bolt axis for both RBE3 elements, you will introduce a singularity. To avoid doing so, extract one of the RBE3 elements from the <span class="uiTerm">bolt_recipe_1_spider</span> mesh. Then release the DOF of only the extracted RBE3 element.
+               </p>
+               
+            </li>
+         </ul>
+         <table border="0" cellpadding="0" cellspacing="0" class="tab-black">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="10">
+               
+               <col span="1" width="*">
+               
+               <col span="1" width="10">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td class="tab_left" colspan="1" rowspan="1" width="10"></td>
+                  
+                  <td class="tab_middle" colspan="1" rowspan="1" width="*">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Nodes and Elements</span></p>
+                     
+                  </td>
+                  
+                  <td class="tab_right" colspan="1" rowspan="1" width="16"></td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/element_extract.gif" border="0"> &nbsp; <span class="uiTerm">Extract</span> (<span class="uiTerm">Elements</span> group)
+               </p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0"> &nbsp; <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball1.gif" border="0"></p>
+               
+            </li>
+            <li>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/bolt_preload/spider_selection.png"></p>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">OK</span></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p>In the <span class="uiTerm">Simulation Navigator</span>, two meshes are now listed under <span class="uiTerm">RBE3 Collector(1)</span>.
+               </p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0"> &nbsp; <span class="uiTerm">1d_extracted_mesh(1)</span></p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb3.gif" border="0"> &nbsp; <span class="uiTerm">Edit Mesh Associated Data</span></p>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="45">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="banner_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="banner_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Element Properties</span></p>
+                           
+                        </td>
+                        
+                        <td class="banner_right" colspan="1" rowspan="1" width="45"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table cellspacing="0" class="option_list" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="86">
+                     
+                     <col span="1" width="185*">
+                     
+                     <col span="1" width="20">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">DOF6</span></p>
+                           
+                        </td>
+                        
+                        <td class="border1a" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">Off</p>
+                           
+                        </td>
+                        
+                        <td class="nopadding" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="top" src="../graphics/nonLocalized/nx_dss/icons/images/option_arrow_no_border.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">OK</span></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

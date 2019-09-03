@@ -1,0 +1,490 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Geometry abstraction project</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=id533042.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Geometry abstraction project</h2>
+         <p>Advanced Simulation contains geometry abstraction tools to prepare CAD geometry for FEM modeling. In the following exercise, you will use the geometry abstraction tools to prepare a welded structure for shell meshing.</p>
+         <div class="division">
+            
+            <h3>Objective</h3>
+            
+            <p>A weldment constructed from two rectangular plates and a reinforcing rib is shown below. Use the geometry idealization and geometry abstraction tools to create a stitched midsurface representation of the structure. After shell meshing, constraining, and loading the model, use the SOL 101 Linear Statics - Global Constraints solution sequence to perform a structural analysis of the weldment.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/geometry_abstraction/geometry_abstraction_objective.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Required data</h3>
+            <a name="genid_xid292998_1223" id="genid_xid292998_1223"></a><h4></h4>
+            <table border="0" cellpadding="4" cellspacing="2" width="375" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="91*">
+                  
+                  <col span="1" width="97*">
+                  
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Property</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Value</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Part</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="fileName">weldment.prt</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Solution sequence</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">SOL 101 Linear Statics - Global Constraints</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Idealization</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Create midsurface</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Material</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Steel</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Physical Property</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p>2D element family</p>
+                        
+                        <p>Thin shell collector type</p>
+                        
+                        <p class="no-bottom-margin">Use the midsurface thickness</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Mesh</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>CQUAD4</p>
+                        
+                        <p class="no-bottom-margin">Element size <span class="userInput">5</span> mm
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Constraints</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Fix the edges of the holes</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Loads</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Apply a <span class="userInput">1500</span> N force as indicated
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/geometry_abstraction/geometry_abstraction_model.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Notes</h3>
+            
+            <p>A summary of the steps to complete the analysis is listed below.</p>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>Open the part file and start Advanced Simulation. Create new idealized part, FEM, and Simulation files.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Make the idealized part the displayed part.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Promote the three bodies that comprise the weldment.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Create midsurface representations of the two plates and the rib.</p>
+                  
+                  <div class="activityDiv">
+                     <p>For a detailed description of how to complete this step, see the <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" href="#" onclick="popUpPageType('id741194.html','activity');return(false);">Mesh a midsurface</a> activity.
+                     </p>
+                  </div>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Make the FEM the displayed part.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Turn off unused polygon bodies. In the <span class="uiTerm">Simulation Navigator</span>, expand the <span class="uiTerm">Polygon Geometry</span> node and clear the unused polygon bodies. The resulting model will appear as follows:
+                  </p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/geometry_abstraction/geometry_abstraction_midsurface.png"></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Gaps exist between each of the midsurfaces. To eliminate the gaps, use the <span class="uiTerm">Stitch Edge</span> command to manually stitch the free edges to the faces.
+                  </p>
+                  
+                  <ol type="a" start="1">
+                     
+                     <li>
+                        
+                        <p>Manually stitch the top edge of the rib to the top plate.</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Manually stitch the right edge of the top plate to the side plate</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Manually stitch the side edge of the rib to the side plate.</p>
+                        
+                     </li>
+                     
+                  </ol>
+                  
+                  <p>The model now appears as follows:</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/geometry_abstraction/geometry_abstraction_stitched_2.png"></p>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">Note</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p>The above sequence of stitching steps causes you to use the <span class="uiTerm">Collapse Edge</span>, <span class="uiTerm">Split Edge</span>, <span class="uiTerm">Split Face</span>, and <span class="uiTerm">Face Repair</span> commands in the next two steps. Although the edges can be stitched in a different sequence to achieve the same results with fewer steps, the sequence shown allows you to practice using these additional commands.
+                           </p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>To eliminate the small edge highlighted in the above illustration, use the <span class="uiTerm">Collapse Edge</span> command.
+                  </p>
+                  
+                  <p>Select the starting point of the edge at <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball1.gif" border="0"> (with the edge highlighted as shown).
+                  </p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/geometry_abstraction/geometry_abstraction_stitched_3.png"></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Remove the sliver that runs between the top edge of the side plate and the right edge of the top plate.</p>
+                  
+                  <ol type="a" start="1">
+                     
+                     <li>
+                        
+                        <p>To separate the sliver from the larger face, use the <span class="uiTerm">Split Edge</span> command to split the top edge of the side plate. Then use the <span class="uiTerm">Split Face</span> command to split the face of the side plate as indicated.
+                        </p>
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/geometry_abstraction/geometry_abstraction_stitched_5.png"></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>To remove the sliver, use the <span class="uiTerm">Delete Face</span> command.
+                        </p>
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/geometry_abstraction/geometry_abstraction_stitched_6.png"></p>
+                        
+                     </li>
+                     
+                  </ol>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">Note</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p>For this model, the collapsed edge and removed sliver were relatively large. If these features were small and not eliminated, the resulting mesh would contain extremely small elements in these areas relative to the remainder of the mesh.</p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Mesh the bodies with a CQUAD4 paver mesh having a 5 mm element size and create a mesh collector using the automatic creation feature.</p>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">Note</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p>Continuity between adjoining meshes is maintained along edges that were stitched together.</p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Specify steel as the material type by expanding <span class="uiTerm">2D Collectors</span> and editing <span class="uiTerm">ThinShell(1)</span>.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Specify the thickness of the plates using midsurface thickness.</p>
+                  
+                  <ol type="a" start="1">
+                     
+                     <li>
+                        
+                        <p>In the <span class="uiTerm">Simulation Navigator</span>, expand <span class="uiTerm">ThinShell(1)</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Right-click <span class="uiTerm">2d_mesh(1)</span> and select <span class="uiTerm">Edit Mesh Associated Data</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>In the <span class="uiTerm">Mesh Associated Data</span> dialog box, from the <span class="uiTerm">Thickness Source</span> list, select <span class="uiTerm">Midsurface</span>.
+                        </p>
+                        
+                     </li>
+                     
+                  </ol>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Make the Simulation the displayed part.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>To fix the edges of the holes, use the <span class="uiTerm">Fixed Constraint</span> command.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>To apply the 1500 N force, use the <span class="uiTerm">Force</span> command.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Solve the model.</p>
+                  
+               </li>
+               
+            </ol>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Expected Results</h3>
+            
+            <p>To access the analysis results, in the <span class="uiTerm">Simulation Navigator</span>, double-click <span class="uiTerm">Results</span>. To view a contour plot of von Mises stress, in the <span class="uiTerm">Post Processing Navigator</span>, expand <span class="uiTerm">Solution 1</span>. Next, expand <span class="uiTerm">Stress - Element-Nodal</span> and double-click <span class="uiTerm">Von-Mises</span>.
+            </p>
+            
+            <p>Because the model consists of shell elements, you should specify the location (for example, top face, bottom face, and so on) for which to display results. Suppose that you want to examine results on the bottom face. To specify results for the bottom face:</p>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>Use the <span class="uiTerm">Set Result</span> command to open the <span class="uiTerm">Smooth Plot</span> dialog box.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>In the <span class="uiTerm">Smooth Plot</span> dialog box, from the <span class="uiTerm">Shell</span> list, select <span class="uiTerm">Bottom</span>.
+                  </p>
+                  
+               </li>
+               
+            </ol>
+            
+            <p>The resulting contour plot (in MPa) of von Mises stress on either the top or bottom face of the shell elements should look similar to the one shown below.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/geometry_abstraction/geometry_abstraction_results.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Completed project</h3>
+            
+            <p>For your reference, a completed model for this project is located in the <span class="pathName">..\projects\solved_project_models</span> folder.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

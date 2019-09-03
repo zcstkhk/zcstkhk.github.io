@@ -1,0 +1,501 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Geometric nonlinear analysis project</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=project_geometric_nonlinear.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Geometric nonlinear analysis project</h2>
+         <p>Advanced Simulation is capable of modeling geometric nonlinear problems such as the one described below.</p>
+         <div class="division">
+            
+            <h3>Objective</h3>
+            
+            <p>A ball and socket joint similar to those used in windshield wiping systems is illustrated below. The joint consists of a steel ball pressed into a nylon socket that has been insert-molded onto a steel connecting rod. (Only the end of the rod is shown.) Graph the axial force required to pull the ball out of the socket versus axial displacement.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/geometric_nonlinear/geometric_nonlinear_objective.png"></p>
+            <a name="genid_xid292998_1238" id="genid_xid292998_1238"></a><div class="figureContainer">
+               <table align="center">
+                  <tr>
+                     <td>
+                        <div class="figure">
+                           <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/geometric_nonlinear/geometric_nonlinear_section.png" border="0"></div>
+                        </div>
+                     </td>
+                  </tr>
+               </table>
+               <h4>Section view</h4>
+            </div>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Required data</h3>
+            <a name="genid_xid292998_1239" id="genid_xid292998_1239"></a><h4></h4>
+            <table border="0" cellpadding="4" cellspacing="2" width="375" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="91*">
+                  
+                  <col span="1" width="97*">
+                  
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Property</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Value</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Part</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="fileName">spherical_joint_separation.prt</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Solution sequence</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">SOL 601, 106 Advanced Nonlinear Statics</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Idealization</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Model using axisymmetry</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Material</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p>Nylon for socket</p>
+                        
+                        <p class="no-bottom-margin">Steel for ball</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" height="117" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Mesh</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" height="117" rowspan="1">
+                        
+                        <p>CQUADX8</p>
+                        
+                        <p>Element size <span class="userInput">0.5</span> mm
+                        </p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Paver</span> mesh
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Constraints</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>See notes regarding constraints</p>
+                        
+                        <p class="no-bottom-margin">Use advanced axisymmetric nonlinear contact between the ball and socket</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Loads</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">None</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/geometric_nonlinear/geometric_nonlinear_model.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Notes</h3>
+            
+            <p>Use SOL 601, 106 Advanced Nonlinear Statics because the problem is axisymmetric, includes large displacements, and requires contact. When you are creating the FEM and Simulation files, select <span class="uiTerm">Axisymmetric Structural</span> as the <span class="uiTerm">Analysis Type</span>, and select <span class="uiTerm">ZX Plane, Z Axis</span> as the <span class="uiTerm">2D Solid Option</span>.
+            </p>
+            
+            <p>Create an axisymmetric representation of the structure in the XZ-plane.</p>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>Use the <span class="uiTerm">Promote</span> command to promote the ball and socket in the idealized part.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Use the <span class="uiTerm">Split Body</span> command to section the structure.
+                  </p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/geometric_nonlinear/geometric_nonlinear_split_body.png"></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>In the FEM, turn off the unused polygon geometry. Then use the <span class="uiTerm">Show Only</span> command to make only the graphics in the first and fourth quadrants of the XZ-plane visible.
+                  </p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/geometric_nonlinear/geometric_nonlinear_show_only.png"></p>
+                  
+               </li>
+               
+            </ol>
+            
+            <p>Create a <span class="uiTerm">Solid Axisymmetric ZX Collector</span> for both the ball and socket meshes. Then mesh the ball and socket using CQUADX8 axisymmetric solid elements.
+            </p>
+            
+            <p>Define contact between the ball and socket using <span class="uiTerm">Advanced Axisymmetric Nonlinear Contact</span>. A pointed feature arises in the model of the socket where the spherical ball feature and conical inlet feature meet. Because of this, make the two relevant edges of the socket model the source region, and make the circular edge of the ball model the target region.
+            </p>
+            
+            <p>Constrain the socket edges that contact the connecting rod as follows:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Fix the nodes on the vertical edge.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Permit only radial (X-direction) displacements on the lower horizontal edge.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Allow the upper horizontal edge to displace freely.</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>Use the values listed in the table below to apply an <span class="uiTerm">Enforced Displacement Constraint</span> of 5 mm in the negative Z-direction to a node along the bottom edge of the ball. The first 10 sec are added to improve viewing of post-processed results.
+            </p>
+            
+            <table border="1" cellpadding="4" cellspacing="2" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr bgcolor="silver">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Row ID</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">time (sec)</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">length (mm)</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" height="34" rowspan="1">
+                        
+                        <p class="no-bottom-margin">1</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" height="34" rowspan="1">
+                        
+                        <p class="no-bottom-margin">0</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" height="34" rowspan="1">
+                        
+                        <p class="no-bottom-margin">0</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">2</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">10</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">0</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">3</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">30</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">-5</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p>Edit the solution to:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Define 30 time steps of 1 sec each. In the <span class="uiTerm">Solution</span> dialog box, under the <span class="uiTerm">Case Control</span> tab, click <span class="uiTerm">Create Time Step Intervals</span>. In the <span class="uiTerm">Modeling Objects Manager</span> dialog box, click <span class="uiTerm">Create</span> and enter <span class="userInput">30</span> for the number of time steps. After creating the time step, in the <span class="uiTerm">Modeling Objects Manager</span> dialog box, click <span class="uiTerm">Add</span> to add the time step to the modeling object list.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Specify automatic time stepping and activate line searches as the strategy parameters. In the <span class="uiTerm">Solution</span> dialog box, under the <span class="uiTerm">Case Control</span> tab, click <span class="uiTerm">Create Modeling Object</span> (<span class="uiTerm">Strategy Parameters</span>). In the <span class="uiTerm">Strategy Parameters</span> dialog box:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>Under the <span class="uiTerm">Analysis Control</span> tab, from the <span class="uiTerm">Automatic Incrementation Scheme (AUTO)</span> list, select <span class="uiTerm">ATS</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Under the <span class="uiTerm">Equilibrium</span> tab, from the <span class="uiTerm">Use Line Searches (LSEARCH)</span> list, select <span class="uiTerm">Yes</span>.
+                        </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Account for large displacements. In the <span class="uiTerm">Solution</span> dialog box, under the <span class="uiTerm">Parameters</span> tab, select <span class="uiTerm">Large Displacements</span>.
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Expected Results</h3>
+            
+            <p>After you solve the model:</p>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>Animate the Z-direction nodal displacements across iterations. After changing the deformation scale to 1.0 and absolute, the animation should look similar to the one shown below.</p>
+                  
+                  <p align="center"><img src="../graphics/graphicLibrary/nx_dss/projects/geometric_nonlinear/ball_socket_animation.gif"></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>For the node with the enforced displacement, create graphs of displacement and reaction force in the Z-direction versus iterations. Then combine the two graphs to produce a graph of reaction force versus displacement. After formatting, the resulting graph should look similar to the graph shown below.</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/geometric_nonlinear/geometric_nonlinear_plot.png"></p>
+                  
+                  <p>Notice that:</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>The data corresponding to Iteration 1 is at the right end of the curve and the data corresponding to Iteration 30 is at the left end of the curve.</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>The ball separates from the socket between 0 mm and about -2.00 mm. The peak separating force is about 238 N.</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>From about -2.00 mm to -4.00 mm, the reaction force balances the spring-back force produced by the socket.</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+            </ol>
+            
+            <div class="activityDiv">
+               <p>For a detailed description of how to create both the animation and graph, see the <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" href="#" onclick="popUpPageType('id741128.html','activity');return(false);">Display nonlinear analysis results</a> activity.
+               </p>
+            </div>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Completed project</h3>
+            
+            <p>For your reference, a completed model for this project is located in the <span class="pathName">..\projects\solved_project_models</span> folder.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Evaluate transmissibility</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=evaluate_transmissibility.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Evaluate transmissibility</h2>
+         <p>Transmissibility is a frequency response function (FRF) that lets you evaluate the response of one or several output nodes to an enforced motion input such as displacement, velocity, or acceleration at a selected node. </p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/simulation_navigator_tab.gif" border="0"> &nbsp; <span class="uiTerm">Simulation Navigator</span></p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0">&nbsp; <span class="uiTerm">RS_Meta_Solution_1</span></p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb3.gif" border="0">&nbsp; <span class="uiTerm">Evaluate Transmissibility</span></p>
+               
+            </li>
+            <li>
+               
+               <table cellspacing="0" class="option_list" width="302">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="86">
+                     
+                     <col span="1" width="185*">
+                     
+                     <col span="1" width="20">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Result</span></p>
+                           
+                        </td>
+                        
+                        <td class="border1a" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Displacement</span></p>
+                           
+                        </td>
+                        
+                        <td class="nopadding" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/option_arrow_no_border.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table cellspacing="0" class="option_list" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="86">
+                     
+                     <col span="1" width="185*">
+                     
+                     <col span="1" width="20">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Input Motion Type</span></p>
+                           
+                        </td>
+                        
+                        <td class="border1a" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Acceleration</span></p>
+                           
+                        </td>
+                        
+                        <td class="nopadding" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/option_arrow_no_border.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/excitation_location_list.gif" border="0">&nbsp; <span class="uiTerm">Excitation Location List</span></p>
+               
+            </li>
+            <li>
+               
+               <table cellspacing="0" class="list_box" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="300*">
+                     
+                     <col span="1" width="20">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Select Excitation Location</span></p>
+                           
+                        </td>
+                        
+                        <td class="nopadding2" colspan="1" rowspan="1"></td>
+                        
+                     </tr>
+                     
+                     <tr>
+                        
+                        <td class="border1a" colspan="1" rowspan="1" width="300*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Node[number]: Z</span></p>
+                           
+                        </td>
+                        
+                        <td align="left" class="nopadding2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/list_box.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+               <p>Select an ID number in the <span class="uiTerm">Select Excitation Location</span> dialog box that corresponds to a node near the center of the top edge of the back face. The node that you select is highlighted in the graphics window (see below). Because you will need to know the ID number of this node later in the activity, write it down.
+               </p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/activities/response_simulation/trans_node_56.gif"></p>
+               
+               <table class="attentionTable attn_note">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">Note</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>The ID number in your model will be different from that shown in the illustration.</p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">OK</span></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;<span class="uiTerm">Select Excitation Location</span> dialog box
+                           </p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="45">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="banner_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="banner_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Input Direction</span></p>
+                           
+                        </td>
+                        
+                        <td class="banner_right" colspan="1" rowspan="1" width="45"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table cellspacing="0" class="option_list" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="86">
+                     
+                     <col span="1" width="185*">
+                     
+                     <col span="1" width="20">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Data Component</span></p>
+                           
+                        </td>
+                        
+                        <td class="border1a" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Z</span></p>
+                           
+                        </td>
+                        
+                        <td class="nopadding" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/option_arrow_no_border.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+               <table class="attentionTable attn_note">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">Note</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>Z is the only selectable direction because your enforced motion location was defined in the Z direction. </p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+         </ul>
+         <p>Leave the <span class="uiTerm">Evaluate Transmissibility</span> dialog box open for the next step.
+         </p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

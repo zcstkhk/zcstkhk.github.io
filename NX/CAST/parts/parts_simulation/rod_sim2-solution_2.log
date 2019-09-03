@@ -1,0 +1,116 @@
+NX Nastran V9.0 (Intel64 Family 6 Model 30 Stepping 5 Windows 7 Service Pack 1) Control File:
+-------------------------------------------------------------------
+Nastran BUFFSIZE=8193 $(d:/siemens/nx9.0/nxnastran/conf/nast9.rcf[2])
+Nastran PARALLEL=4 $(d:/siemens/nx9.0/nxnastran/conf/nast9.rcf[3])
+Nastran DIAGA=128 DIAGB=0 $(d:/siemens/nx9.0/nxnastran/conf/nast9.rcf[7])
+Nastran SYSTEM(442)=1 $(command line[4])
+Nastran REAL=2141454336 $(program default)
+JID='D:\NX_CAE_DATA\mt15032_nx9\student_home\parts_simulation\rod_sim2-solution_2.dat'
+OUT='./rod_sim2-solution_2'
+MEM=26214400
+MACH='Intel64 Family 6 Model 30 Stepping 5'
+OPER='Windows 7'
+OSV='Service Pack 1'
+MODEL='Intel(R) Core(TM) i7 CPU Q 740 @ 1.73GHz (BJI6P601)'
+CONFIG=8666
+NPROC=8
+symbol=DELDIR='d:/siemens/nx9.0/nxnastran/nxn9/nast/del' $(program default)
+symbol=DEMODIR='d:/siemens/nx9.0/nxnastran/nxn9/nast/demo' $(program default)
+symbol=SSSALTERDIR='d:/siemens/nx9.0/nxnastran/nxn9/nast/misc/sssalter' $(program default)
+symbol=TPLDIR='d:/siemens/nx9.0/nxnastran/nxn9/nast/tpl' $(program default)
+SDIR='c:/users/hvt2yx/appdata/local/temp/rod_sim2-solution_2.T5920_57'
+DBS='c:/users/hvt2yx/appdata/local/temp/rod_sim2-solution_2.T5920_57'
+SCR=yes
+NEWDEL='d:/siemens/nx9.0/nxnastran/nxn9/em64tnt/SSS'
+DEL='NXNDEF'
+AUTH='28000@bji6p601'
+AUTHQUE=0
+MSGCAT='d:/siemens/nx9.0/nxnastran/nxn9/em64tnt/analysis.msg'
+MSGDEST='f06'
+NEWS='d:/siemens/nx9.0/nxnastran/nxn9/nast/news.txt'
+-------------------------------------------------------------------
+NXN_ISHELLPATH=D:\Siemens\NX9.0\nxnastran\bin
+NXN_JIDPATH=
+PATH=d:/siemens/nx9.0/nxnastran/nxn9/em64tnt;d:/siemens/nx9.0/nxnastran/nxn9/em64tnt/mpi/bin;D:\Siemens\NX9.0\ugii;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\10.0\DLLShared\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;
+Command Line: rod_sim2-solution_2.dat old=no scratch=yes sys442=1
+Current Dir: D:\NX_CAE_DATA\mt15032_nx9\student_home\parts_simulation
+Executable:  d:/siemens/nx9.0/nxnastran/nxn9/em64tnt/analysis.exe
+NXN_MSG:     stderr
+FPE:         no
+-------------------------------------------------------------------
+Current resource limits:
+ Physical memory:                     8181 MB
+ Physical memory available:           5698 MB
+ Paging file size:                   10228 MB
+ Paging file size available:          7726 MB
+ Virtual memory:                   8388607 MB
+ Virtual memory available:         8388556 MB
+-------------------------------------------------------------------
+System configuration:
+ Hostname:         BJI6P601.net.plm.eds.com
+ Architecture:     em64tnt
+ Platform:         Intel64 Family 6 Model 30 Stepping 5 Windows 7 Service Pack 1
+ Model:            Intel(R) Core(TM) i7 CPU Q 740 @ 1.73GHz
+ Clock freq.:      1729 MHz
+ Number of CPUs:   8
+ Executable:       standard
+ Raw model ID:     8666
+ Config number:    8666
+ Physical memory:  8181 MB
+ Virtual memory:   10228 MB
+ Numeric format:   32-bit little-endian IEEE.
+ Bytes per word:   4
+ Disk block size:  512 bytes (128 words)
+ Remote shell cmd: "d:/siemens/nx9.0/nxnastran/nxn9/em64tnt/edsrmtcmd.exe" (Windows, UNIX)
+-------------------------------------------------------------------
+NX Nastran started  Thu Dec 11 10:32:57 CST 2014
+ 10:32:57  Beginning Analysis
+
+ 10:32:57  NX NASTRAN Authorization Information - System Attributes
+ 10:32:57  --------------------------------------------------------
+ 10:32:57  Model: Intel(R) Core(TM) i7 CPU Q 740 @
+ 10:32:57  Machine: Intel64 Family 6 Model 30 Steppi
+ 10:32:57  OS: Windows 7
+ 10:32:57  Version: Service Pack 1
+ 10:32:57  License File(s): 28000@bji6p601
+
+
+ 10:32:57  NX NASTRAN Licensing Information
+ 10:32:57  -------------------------------
+ 10:32:57  Sold To ID:            IN11112015 - SIEMENS PLM SOFTWA
+ 10:32:57  Webkey Access Code:    6UH1QCUHNX
+ 10:32:57  License File Issuer:   SIEMENS
+
+
+ 10:32:57  NX NASTRAN Authorization Information - Checkout Successful
+ 10:32:57  ----------------------------------------------------------
+ 10:32:57  License for module NX Nastran Basic checked out successfully
+
+ 10:32:58  Analysis started.
+ 10:32:58  Analysis started.
+ 10:32:58  Geometry access/verification to CAD part initiated (if needed).
+ 10:32:58  Geometry access/verification to CAD part initiated (if needed).
+ 10:32:58  Geometry access/verification to CAD part successfully completed (if needed).
+ 10:32:58  Geometry access/verification to CAD part successfully completed (if needed).
+ 10:33:00  Finite element model generation started.
+ 10:33:00  Finite element model generation started.
+ 10:33:02  Finite element model generated 189330 degrees of freedom.
+ 10:33:02  Finite element model generated 189330 degrees of freedom.
+ 10:33:02  Finite element model generation successfully completed.
+ 10:33:02  Finite element model generation successfully completed.
+ 10:33:02  Application of Loads and Boundary Conditions to the finite element model started.
+ 10:33:02  Application of Loads and Boundary Conditions to the finite element model started.
+ 10:33:03  Application of Loads and Boundary Conditions to the finite element model successfully completed.
+ 10:33:03  Application of Loads and Boundary Conditions to the finite element model successfully completed.
+ 10:33:10  Solution of the system equations for linear statics started.
+ 10:33:10  Solution of the system equations for linear statics started.
+ 10:33:11  Solution of the system equations for linear statics successfully completed.
+ 10:33:11  Solution of the system equations for linear statics successfully completed.
+ 10:33:11  Linear static analysis completed.
+ 10:33:11  Linear static analysis completed.
+ 10:33:11  NSEXIT: EXIT(0)
+ 10:33:11  Analysis complete  0
+Real:       14.096 seconds ( 0:00:14.096)
+User:       23.618 seconds ( 0:00:23.618)
+Sys:         4.305 seconds ( 0:00:04.305)
+NX Nastran finished Thu Dec 11 10:33:11 CST 2014

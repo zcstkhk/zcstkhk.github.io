@@ -1,0 +1,129 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Define fixed boundary DOFs</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=id1406974.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Define fixed boundary DOFs</h2>
+         <p>The bolted connection between the optics subassembly and the gimbal is modeled using point-to-face RBE2 spider elements. The center nodes are joined to similar spider elements in the gimbal support using very stiff spring elements (1).</p>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/system/sys_node_connection.png"></p>
+         <p>Define a <span class="uiTerm">Fixed Boundary Degrees of Freedom</span> constraint at the four center nodes of the spider elements. To make selection easier, these four nodes have been stored in a group in the FEM file. Reference this group to select the nodes.
+         </p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/fixed_boundary_dof.gif" border="0"> <span class="uiTerm">Fixed Boundary Degrees of Freedom</span> (<span class="uiTerm">Loads and Conditions</span> group&rarr;<img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/list70_constraint_type.gif" border="0"> <span class="uiTerm">Constraint Type</span> list)
+         </p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/check_box_on.gif" border="0"> <span class="uiTerm">Group Reference</span></p>
+               
+            </li>
+            <li>
+               
+               <table cellspacing="0" class="option_list" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="86">
+                     
+                     <col span="1" width="185*">
+                     
+                     <col span="1" width="20">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">Group list</p>
+                           
+                        </td>
+                        
+                        <td class="border1a" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">boundary_nodes::OpticalSupport_fem1</p>
+                           
+                        </td>
+                        
+                        <td class="nopadding" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="top" src="../graphics/nonLocalized/nx_dss/icons/images/option_arrow_no_border.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/all_fixed.gif" border="0">&nbsp; <span class="uiTerm">All On</span></p>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">OK</span></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp; </p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/superelement/sup_fixed_dofs.png"></p>
+               
+            </li>
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

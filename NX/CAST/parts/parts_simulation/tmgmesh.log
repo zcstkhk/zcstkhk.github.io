@@ -1,0 +1,157 @@
+ +--------------------------------------------------------------------+
+ |                            Fluid Mesh                              |
+ +--------------------------------------------------------------------+
+
+ Time 29-Nov-2014 14:53:44
+
+ Build Revision      41377
+ UGII_TMG_DIR        D:\Siemens\NX9.0\nxcae_extras\tmg
+ 
+ +--------------------------------------------------------------------+
+ |                         CAE Geometry                               |
+ +--------------------------------------------------------------------+
+
+ Reading bodies information...
+    File: bodytags.dat
+ ...Done reading bodies information
+ 
+ Reading faces information...
+    File: facetags.dat
+ ...Done reading faces information
+ 
+ Reading CAE geometry...
+    File: D:\NX_CAE_DATA\mt15032_nx9\student_home\parts_simulation\valve_x_t_sim1_sam_1.xml
+ ...Done reading CAE Geometry
+ 
+ +--------------------------------------------------------------------+
+ |                    Fluid Domain Entities                           |
+ +--------------------------------------------------------------------+
+
+ Reading fluid domain entities...
+ ...Done reading fluid domain entities
+ 
+ +--------------------------------------------------------------------+
+ |                        Error checking                              |
+ +--------------------------------------------------------------------+
+
+ Performing error checking...
+ ...Done performing error checking
+ 
+ +--------------------------------------------------------------------+
+ |                    User Defined Mesh Options                       |
+ +--------------------------------------------------------------------+
+
+ Reading user defined mesh options ...
+    Using File: D:\Siemens\NX9.0\nxcae_extras\tmg\exe\tmgmesh.xml
+
+                                tolerance               1e-16
+                            facesQuickMap                   3
+                           rmSmallFeatOpt                   0
+                           rmSmallFeatTol                1e-7
+    Meshing Options After the override
+
+                                tolerance              1e-016
+                            facesQuickMap                   3
+                         convergenceSpeed                   2
+                           rmSmallFeatOpt                   0
+                           rmSmallFeatTol              1e-007
+                      minLayerAspectRatio                 0.9
+                  surfaceMeshOptimization                   1
+                     surfaceMeshSmoothing                   1
+               surfaceMeshFixIntersection                   1
+               surfaceMeshContinueOnError                   0
+             surfaceMeshFaceRotationLimit                  15
+            surfaceMeshProximitySizeLevel                   0
+                 surfaceMeshUseQuadMesher                   0
+                      surfaceMeshModifyBL                   0
+                   surfaceMeshShapeMetric             Default
+                    surfaceMeshShapeValue                   1
+                   volumeMeshOptimization                   1
+                      volumeMeshSmoothing                   1
+                  volumeMeshModifySurface                   1
+            volumeMeshDoStructuredMeshing                   1
+          volumeMeshDoUnstructuredMeshing                   1
+                       volumeMeshModifyBL                   0
+                    volumeMeshShapeMetric             Default
+                     volumeMeshShapeValue                   1
+         activateRefinementFactorForShape                   0
+                 refinementFactorForShape                   1
+                       edgeBlendSmoothing                   0
+             edgeBlendSmoothingStartLayer                   1
+               edgeBlendSmoothingDistance                   3
+                      activatePropagation                   0
+                         propagationSpeed             default
+                         propagationValue                   1
+                    activateMeshCurvature                   0
+                            meshCurvature                 0.4
+                       blUseMixedElements                   1
+                           blCreateBlends                   1
+                   propagateBLElementSize                   0
+                    minExposedAspectRatio                 0.2
+ ...Done reading user defined mesh options
+ 
+ +--------------------------------------------------------------------+
+ |                               NX Mesh                              |
+ +--------------------------------------------------------------------+
+
+ Reading NX mesh...
+ ...Done reading NX mesh
+ 
+ +--------------------------------------------------------------------+
+ |                               Meshing                              |
+ +--------------------------------------------------------------------+
+
+ Loading Parasolid Model...
+   Reading Parasolid File: D:\NX_CAE_DATA\mt15032_nx9\student_home\parts_simulation\valve_x_t_sim1_sam_1.x_t
+ ...Done loading Parasolid Model
+
+    Number of regions:    1
+    Number of faces:      112
+    Number of edges:      288
+    Number of vertices:   178
+
+ Regions identification...
+ ...Done regions identification
+
+ Parasolid faces identification...
+ ...Done parasolid faces identification
+
+ Setting mesh options...
+
+ Fluid Domain Mesh
+ ----------------------------------------------------------------------
+      1 - Body: 1 (1)
+          Element Size:            0.002  Abs.
+ ----------------------------------------------------------------------
+
+ Fluid Surface Mesh
+ ----------------------------------------------------------------------
+      No fluid surface mesh defined
+ ----------------------------------------------------------------------
+
+ Mesh Matching
+ ----------------------------------------------------------------------
+      No Mesh Matching defined
+ ----------------------------------------------------------------------
+
+ ...Done setting mesh options
+
+ Meshing surfaces & volumes...
+    Allow mesh size variations inside fluid domains is OFF
+ ...Done meshing surfaces & volumes
+
+ 
+ +--------------------------------------------------------------------+
+ |                          Meshing Summary                           |
+ +--------------------------------------------------------------------+
+
+    Number of nodes:         14998
+    Number of elements:      69889
+ 
+ +--------------------------------------------------------------------+
+ |                          File Generation                           |
+ +--------------------------------------------------------------------+
+
+ Generating UNV File: valve_x_t_sim1-Solution_1.unv
+ Generating BUN File: valve_x_t_sim1-Solution_1.bun
+

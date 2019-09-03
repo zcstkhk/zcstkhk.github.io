@@ -1,0 +1,142 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Summary of optimization inputs</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=id1030175.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Summary of optimization inputs</h2>
+         <p>In the following steps, you will add the following optimization inputs into the solution hierarchy. </p>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/desopt200/subcase_hierarchy.png"></p>
+         <p>To simplify the steps, you will create only those inputs shown in bold below. The others have been created for you.</p>
+         <div class="division">
+            
+            <h3><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball1.gif" border="0">&nbsp; Solution Options
+            </h3>
+            
+            <p>Design Objective: <span class="uiTerm">Minimize Weight</span></p>
+            
+            <p>Three Design Variables:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Cross section height (DIM2) on property &quot;Web Cap&quot;</span></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Thickness on property &quot;Plate&quot;</span></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Thickness on property &quot;Web&quot;</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>Optimization Parameters: <span class="uiTerm">Change printed output with the parameters P1 and P2</span></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball2.gif" border="0">&nbsp; Subcase 1
+            </h3>
+            
+            <p>Type: Desopt-Statics</p>
+            
+            <p>Design constraints: </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Limit stress at end A for bar elements in property &quot;Web Cap&quot; </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Limit stress at end B for bar elements in property &quot;Web Cap&quot;</span></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Limit bottom stress for shell elements in property &quot;Plate&quot;</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Limit top stress for shell elements in property &quot;Plate&quot;</span></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Limit bottom stress for shell elements in property &quot;Web&quot;</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Limit top stress for shell elements in property &quot;Web&quot;</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Limit vertical (z) displacement at a grid on the plate</span></p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+            <h3><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball3.gif" border="0">&nbsp; Subcase 2
+            </h3>
+            
+            <p>Type: Desopt-Statics </p>
+            
+            <p>Design constraints: </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>The same six stress constraints used in Subcase 1</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Limit vertical (z) displacement at the same node in which the concentrated load is applied</span></p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

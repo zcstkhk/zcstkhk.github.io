@@ -1,0 +1,293 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Buckling analysis project</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=project_buckling.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Buckling analysis project</h2>
+         <p>Advanced Simulation calculates buckling loads based upon linear theory. Linear theory restricts the applicability to cases where the deformations in the pre-buckled configuration are small and the material behavior is elastic. The tapered flat bar shown below is such a case.</p>
+         <div class="division">
+            
+            <h3>Objective</h3>
+            
+            <p>The compressive load that causes a column to buckle is termed the critical load. Use the SOL 105 Linear Buckling solution sequence to calculate the critical load of the tapered bar shown below if both ends are free to rotate about the X-axis.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/buckling/buckling_part.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Required data</h3>
+            <a name="genid_xid292998_1230" id="genid_xid292998_1230"></a><h4></h4>
+            <table border="0" cellpadding="4" cellspacing="2" width="375" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="91*">
+                  
+                  <col span="1" width="97*">
+                  
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Property</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Value</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Part</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="fileName">tapered_bar.prt</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Solution sequence</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">SOL 105 Linear Buckling</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" height="96" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Idealization</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" height="96" rowspan="1">
+                        
+                        <p>Use a midsurface representation</p>
+                        
+                        <p class="no-bottom-margin">See note regarding symmetry</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Material</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Steel</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Physical Property</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p>Thin shell collector type</p>
+                        
+                        <p class="no-bottom-margin">Default thickness <span class="userInput">4</span> mm
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Mesh</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>CQUAD8</p>
+                        
+                        <p class="no-bottom-margin">Element size <span class="userInput">5</span> mm
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Constraints</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">See note regarding constraints</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Loads</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">See note regarding loads</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/buckling/buckling_model.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Notes</h3>
+            
+            <p>To create a midsurface representation:</p>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>Use the <span class="uiTerm">Promote</span> command to promote the body in the idealized part.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Use the <span class="uiTerm">Midsurface by Face Pairs</span> command to define the midsurface.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Turn off the display of the unused polygon body in the FEM.</p>
+                  
+               </li>
+               
+            </ol>
+            
+            <p>Although structural symmetry exists, using symmetry in the model prevents asymmetrical buckling modes from being calculated.</p>
+            
+            <p>The critical load of a structure is highly dependent upon how the structure is constrained. For this case, model both ends to rotate freely about the X-axis, fix one end from translating, and fix the other end so that it is able to translate in the XY-plane only. To apply these constraints, use the <span class="uiTerm">User Defined Constraint</span> command.
+            </p>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>For the edge closest to the coordinate system in the above illustration, fix all the DOF except DOF4.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>For the edge at the other end, fix DOF3, DOF5, and DOF6.</p>
+                  
+               </li>
+               
+            </ol>
+            
+            <p>Apply a compressive force in the Y-direction to the end of the bar that is free to translate in the XY-plane. Apply the load at the midpoint of the edge, or distribute the force uniformly over the edge. Because the critical load is the product of the applied load and the eigenvalue for Mode 1, the magnitude of the force is arbitrary.</p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Expected Results</h3>
+            
+            <p>To access the analysis results, in the <span class="uiTerm">Simulation Navigator</span>, double-click <span class="uiTerm">Results</span>. To view the modes that were calculated, in the <span class="uiTerm">Post Processing Navigator</span>, expand <span class="uiTerm">Solution 1</span>. Next, expand <span class="uiTerm">Subcase-Buckling Method</span>.
+            </p>
+            
+            <p>The critical load is the product of the applied load and the eigenvalue for Mode 1. The results shown below are from a model using a unit compressive load. Therefore, the critical load is about 5820 N.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/buckling/buckling_mode_list.png"></p>
+            
+            <p>The buckled shape associated with Mode 1 is shown below.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/buckling/buckled_shape.png"></p>
+            
+            <p>The buckled and undeformed shapes are shown. To display the undeformed shape, use the <span class="uiTerm">Edit Post View</span> command to open the <span class="uiTerm">Post View</span> dialog box. In the <span class="uiTerm">Post View</span> dialog box, select <span class="uiTerm">Show undeformed model</span>.
+            </p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Completed project</h3>
+            
+            <p>For your reference, a completed model for this project is located in the <span class="pathName">..\projects\solved_project_models</span> folder.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

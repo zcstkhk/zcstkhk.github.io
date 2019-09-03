@@ -1,0 +1,307 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Solving project</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=id521622.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Solving project</h2>
+         <p>If you are new to NX Advanced Simulation, the following exercise will give you practice in using the Advanced Simulation automated workflow to perform a structural analysis.</p>
+         <div class="division">
+            
+            <h3>Objective</h3>
+            
+            <p>Using the SOL 101 Linear Statics - Global Constraints solution sequence, perform a structural analysis of the tire iron simulating when it is used to loosen a lug nut.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/solving/solving_objective.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Required data</h3>
+            <a name="genid_xid292998_1212" id="genid_xid292998_1212"></a><h4></h4>
+            <table border="0" cellpadding="4" cellspacing="2" width="375" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="91*">
+                  
+                  <col span="1" width="97*">
+                  
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Property</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Value</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Part</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="fileName">tire_iron.prt</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Solution sequence</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">SOL 101 Linear Statics - Global Constraints</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Idealization</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">None</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Material</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Steel</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Mesh</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>CTETRA10</p>
+                        
+                        <p class="no-bottom-margin">Element size <span class="userInput">6</span> mm
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Constraints</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Fix all nodes on internal hex feature</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Loads</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Apply a <span class="userInput">350</span> N force as indicated
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/solving/solving_model.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Notes</h3>
+            
+            <p>A summary of the steps to complete the analysis is listed below.</p>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>Open the part file and start Advanced Simulation. Create new FEM and Simulation files.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Define the material and physical properties.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Create a 3D mesh collector.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Create a CTETRA10 mesh with a 6 mm element size. Assign the mesh to the mesh collector created in the previous step.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Make the Simulation the work part.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Apply a fixed translation constraint to nodes on the surface of the internal hex feature by selecting the six polygon faces that form the hex feature.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Apply the 350 N force.</p>
+                  
+                  <ol type="a" start="1">
+                     
+                     <li>
+                        
+                        <p>Select the <span class="uiTerm">Force</span> command (<span class="uiTerm">Loads and Conditions</span> group&rarr;<img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/load_type_list.gif" border="0"> <span class="uiTerm">Load Type</span> list).
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Select the polygon face where the force is applied.</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Enter a magnitude of <span class="userInput">350</span> N.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Select the <span class="uiTerm">-ZC</span> vector for the direction.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Select <span class="uiTerm">Total per Object</span> as the distribution method.
+                        </p>
+                        
+                     </li>
+                     
+                  </ol>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Solve the model.</p>
+                  
+               </li>
+               
+            </ol>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Expected Results</h3>
+            
+            <p>To access the analysis results, in the <span class="uiTerm">Simulation Navigator</span>, double-click <span class="uiTerm">Results</span>. To view a contour plot of element-nodal von Mises stress, in the <span class="uiTerm">Post Processing Navigator</span>, expand <span class="uiTerm">Solution 1</span>. Next, expand <span class="uiTerm">Stress-Element-Nodal</span> and double-click <span class="uiTerm">Von-Mises</span>. The resulting contour plot of von Mises stress (in MPa) should look similar to the one shown below.
+            </p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/solving/solving_results.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Completed project</h3>
+            
+            <p>For your reference, a completed model for this project is located in the <span class="pathName">..\projects\solved_project_models</span> folder.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

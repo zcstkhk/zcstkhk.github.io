@@ -1,0 +1,333 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Swept meshing project</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=id976997.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Swept meshing project</h2>
+         <p>The following project shows how to prepare a part for swept meshing, then how to generate the swept mesh.</p>
+         <div class="division">
+            
+            <h3>Objective</h3>
+            
+            <p>A steel bracket is shown below. Use the <span class="uiTerm">Split Body</span> and <span class="uiTerm">3D Swept Mesh</span> commands to generate a hexahedral mesh on the model.
+            </p>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/projects/swept_bracket/proj_swept_br13.gif"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Required data</h3>
+            <a name="genid_xid292998_1221" id="genid_xid292998_1221"></a><h4></h4>
+            <table border="0" cellpadding="4" cellspacing="2" width="375" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="91*">
+                  
+                  <col span="1" width="97*">
+                  
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Property</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Value</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Part</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="fileName">mid_2.prt</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Solution sequence</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Not applicable</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Idealization</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Split the body into smaller bodies that can be swept meshed</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Material</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Steel</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Mesh</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>CHEXA8</p>
+                        
+                        <p class="no-bottom-margin">Automatic element size</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/projects/swept_bracket/proj_swept_br12.gif"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Notes</h3>
+            
+            <p>A summary of the steps to generate the mesh is listed below.</p>
+            
+            <div class="activityDiv">
+               <p>For a detailed description of how to complete these steps, see the <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" href="#" onclick="popUpPageType('id961044.html','activity');return(false);">Generate a hexahedral (swept) mesh</a> activity.
+               </p>
+            </div>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>Open the part file and start Advanced Simulation. Create idealized part and FEM files.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Make the idealized part the displayed part.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Use the <span class="uiTerm">Promote</span> command to promote the body.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Use the <span class="uiTerm">Split Body</span> command to split the bracket into smaller bodies that can be used for swept meshing, as shown below.
+                  </p>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/projects/swept_bracket/proj_swept_br14.gif" border="0"></p>
+                  
+                  <p>Here are some ways that you can use the <span class="uiTerm">Split Body</span> command:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>Use the <span class="uiTerm">Extrude</span> option to select an existing curve or sketch a new curve.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Use the <span class="uiTerm">New Plane</span> option to create a new splitting plane.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Select the <span class="uiTerm">Check for Sweepable Body</span> option to identify which bodies can be swept meshed.
+                        </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Make the FEM file the displayed part.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Use the <span class="uiTerm">Merge Face</span> command to combine adjacent polygon faces into a larger face before meshing. Select the edges to remove as shown below:
+                  </p>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/projects/swept_bracket/proj_swept_br15.gif" border="0"></p>
+                  
+                  <p>Select the following edges on the other side of the model:</p>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/projects/swept_bracket/proj_swept_br16.gif" border="0"></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Use the <span class="uiTerm">Mesh Mating Condition</span> command to automatically generate mesh mating conditions.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Create a 3D mesh collector and define the material and the physical properties.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>To mesh the model, use the <span class="uiTerm">3D Swept Mesh</span> command.
+                  </p>
+                  
+                  <p>Select face <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball1.gif" border="0"> as the source face.
+                  </p>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/projects/swept_bracket/proj_swept_br11.gif" border="0"></p>
+                  
+                  <p>Use the following settings:</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>Set element type to <span class="uiTerm">CHEXA8</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Select <span class="uiTerm">Automatic Element Size</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Select <span class="uiTerm">Attempt Free Mapped Meshing</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Select <span class="uiTerm">On - Zero Triangles</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Clear <span class="uiTerm">Automatic Creation</span> and assign the mesh to the mesh collector you created.
+                        </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Continue meshing the remaining bodies in the model. Be sure to use the <span class="uiTerm">Automatic Element Size</span> option for each body. When you are finished, the mesh should look similar to this one:
+                  </p>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/projects/swept_bracket/proj_swept_br12.gif" border="0"></p>
+                  
+               </li>
+               
+            </ol>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Completed project</h3>
+            
+            <p>For your reference, a completed model for this project is located in the <span class="pathName">..\projects\solved_project_models</span> folder.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

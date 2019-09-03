@@ -1,0 +1,719 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Hardening models project</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=project_hardening_models.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Hardening models project</h2>
+         <p>Consider an axially loaded rod fabricated from a strain-hardening material with the same initial yield strength and strain-hardening characteristics in tension and compression. If the rod is stressed beyond the yield strength in either tension or compression, plastic deformation results.</p>
+         <p>Upon unloading, the length of the rod differs from the original length. Now suppose that the rod is stressed in the opposite sense. The stress level that yielding now initiates depends on the strain hardening model (hardening rule) used. Advanced Simulation supports three hardening rules.</p>
+         <ul>
+            
+            <li>
+               
+               <p>Isotropic hardening (the default rule).</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Kinematic hardening.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Combined isotropic and kinematic hardening (using a mixed hardening factor of 0.5).</p>
+               
+            </li>
+            
+         </ul>
+         <div class="division">
+            
+            <h3>Objective</h3>
+            
+            <p>Compare the stress-strain behavior associated with each hardening rule by modeling an axially loaded rod subject to the following loads:</p>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>From the free state, load in tension to 40,000 psi.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Unload to the free state.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Load in compression to 40,000 psi.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Unload to the free state.</p>
+                  
+               </li>
+               
+            </ol>
+            
+            <p>The rod is fabricated from an isotropic, bilinear (linear elastic and linear strain hardening) material with an initial yield strength of 36,000 psi. Use the von Mises criterion (the default setting) as the yield function and assume that the stress level is low enough that necking does not occur.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/hardening_models/hardening_models_objective.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Required data</h3>
+            <a name="genid_xid292998_1242" id="genid_xid292998_1242"></a><h4></h4>
+            <table border="0" cellpadding="4" cellspacing="2" width="375" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="91*">
+                  
+                  <col span="1" width="97*">
+                  
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Property</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Value</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Part </p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="fileName">plasticity_models.prt</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Solution sequence</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">SOL 601, 106 Advanced Nonlinear Statics</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Idealization</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">None</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Material</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p>Mass density <span class="userInput">0.284</span> lbm/in<sup>3</sup></p>
+                        
+                        <p>Young&rsquo;s modulus <span class="userInput">30 x 10<sup>6</sup></span> psi
+                        </p>
+                        
+                        <p>Poisson&rsquo;s ratio <span class="userInput">0.29</span></p>
+                        
+                        <p>Yield strength <span class="userInput">36,000</span> psi
+                        </p>
+                        
+                        <p class="no-bottom-margin">Tangential modulus <span class="userInput">20,080</span> psi
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Mesh</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>CHEXA8</p>
+                        
+                        <p class="no-bottom-margin">Element size <span class="userInput">1</span> in
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Constraints</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Fix one end of the rod (allow for lateral expansion and contraction)</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Loads</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">See note</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/hardening_models/hardening_models_model.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Notes</h3>
+            
+            <p>The problem involves material nonlinearity. Displacements and strains are small. Either SOL 601, 106 Advanced Nonlinear Statics or SOL 106 Nonlinear Statics - Global Constraints can be used. We used SOL 601, 106 Advanced Nonlinear Statics.</p>
+            
+            <p>Use the <span class="uiTerm">Isotropic Material</span> dialog box to define a new material. Enter the values for <span class="uiTerm">Mass Density</span>, <span class="uiTerm">Young's Modulus</span>, <span class="uiTerm">Poisson's Ratio</span>, and <span class="uiTerm">Initial Yield Point (LIMIT1)</span> that are listed in the Required Data table above. Notice that <span class="uiTerm">von Mises</span> is the default for <span class="uiTerm">Yield Function Criterion (YF)</span> and <span class="uiTerm">Isotropic</span> is the default for <span class="uiTerm">Hardening Rule (HR)</span>.
+            </p>
+            
+            <p>For <span class="uiTerm">Stress - Strain (H)</span>, use the <span class="uiTerm">Table Constructor</span> to create a <span class="uiTerm">Table Field</span> that defines the bilinear material characteristic. Enter the following stress-strain values which were calculated from the Young's modulus, yield strength, and tangential modulus listed in the Required Data table:
+            </p>
+            
+            <table border="1" cellpadding="4" cellspacing="2" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr bgcolor="silver">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Strain (in/in)</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Stress (psi)</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" height="34" rowspan="1">
+                        
+                        <p class="no-bottom-margin">0</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" height="34" rowspan="1">
+                        
+                        <p class="no-bottom-margin">0</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">0.0012</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">36000</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">0.3</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">42000</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p>After meshing, make the Simulation file the displayed part.</p>
+            
+            <p>A time-varying force acts at the unconstrained end of the rod in the +Z direction. Because the cross section of the rod is 1 in<sup>2</sup>, a 40,000 lbf load produces a normal stress of 40,000 psi.
+            </p>
+            
+            <p>In the <span class="uiTerm">Force</span> dialog box, use the <span class="uiTerm">Table Constructor</span> to create a <span class="uiTerm">Table Field</span> that defines the force. Enter the following values in the <span class="uiTerm">Table Field</span>:
+            </p>
+            
+            <table border="1" cellpadding="4" cellspacing="2" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr bgcolor="silver">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Row ID</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Time (sec)</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Force (lbf)</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">1</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">0</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">0</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">2</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">10</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">0</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">3</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">20</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">40000</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">4</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">30</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">0</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">5</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">40</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">-40000</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">6</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">50</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">0</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p>The first 10 sec are added to the force data to improve viewing of post-processed results.</p>
+            
+            <p>After defining the force, edit the solution to:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Define 50 time steps of 1 sec each. In the <span class="uiTerm">Solution</span> dialog box, under the <span class="uiTerm">Case Control</span> tab, click <span class="uiTerm">Create Time Step Intervals</span>. In the <span class="uiTerm">Modeling Objects Manager</span> dialog box, click <span class="uiTerm">Create</span> and enter <span class="userInput">50</span> for the number of time steps. After creating the time step, in the <span class="uiTerm">Modeling Objects Manager</span> dialog box, click <span class="uiTerm">Add</span> to add the time step to the modeling object list.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Specify automatic time stepping and activate line searches as the strategy parameters. In the <span class="uiTerm">Solution</span> dialog box, under the <span class="uiTerm">Case Control</span> tab, click <span class="uiTerm">Create Modeling Object</span> (<span class="uiTerm">Strategy Parameters</span>). In the <span class="uiTerm">Strategy Parameters</span> dialog box:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>Under the <span class="uiTerm">Analysis Control</span> tab, from the <span class="uiTerm">Automatic Incrementation Scheme (AUTO)</span> list, select <span class="uiTerm">ATS</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Under the <span class="uiTerm">Equilibrium</span> tab, from the <span class="uiTerm">Use Line Searches (LSEARCH)</span> list, select <span class="uiTerm">Yes</span>.
+                        </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>Before solving, rename <span class="uiTerm">Solution 1</span> to <span class="uiTerm">Isotropic Hardening</span>.
+            </p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Expected Results</h3>
+            
+            <p>Use the <span class="uiTerm">Nonlinear Stress - Element-Nodal</span> and <span class="uiTerm">Nonlinear Strain - Element-Nodal</span> results to create a graph of stress versus strain (both in the axial direction).
+            </p>
+            
+            <div class="activityDiv">
+               <p>For a detailed description of how to create the graph, see the <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" href="#" onclick="popUpPageType('id741128.html','activity');return(false);">Display nonlinear analysis results</a> activity.
+               </p>
+            </div>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">Note</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>If the applied force is distributed evenly over the unconstrained end of the rod, the choice of node to obtain data to graph is arbitrary because the stress and strain will be uniform throughout the rod.</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            <a name="genid_xid292998_1243" id="genid_xid292998_1243"></a><div class="figureContainer">
+               <table align="center">
+                  <tr>
+                     <td>
+                        <div class="figure">
+                           <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/hardening_models/hardening_models_graph_isotropic.png" border="0"></div>
+                        </div>
+                     </td>
+                  </tr>
+               </table>
+               <h4>Isotropic hardening model</h4>
+            </div>
+            
+            <p>For isotropic hardening, the yield strength in compression increases by the amount the material strain hardens in tension. Rerunning the model such that the compressive stress increases to 42,000 psi shows that yielding in compression now initiates at 40,000 psi.</p>
+            
+            <p>To specify kinematic and combined hardening without having to create additional FEM files, you can clone the <span class="uiTerm">Isotropic Hardening</span> solution twice and edit the corresponding NX Nastran input files manually. You can access the input file by selecting <span class="uiTerm">Write, Edit &amp; Solve Input File</span> from the <span class="uiTerm">Solve</span> dialog box. Upon exiting the <span class="uiTerm">Solve</span> dialog box, the input file is written and opened in a text editor. At this time, you can edit the input file and save the changes. The solution sequence resumes automatically once the input file text editor is closed.
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Rename one of the cloned solution <span class="uiTerm">Kinematic Hardening</span>. To specify kinematic hardening for this solution, edit the input file as follows:
+                  </p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/hardening_models/hardening_models_kinematic.png"></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Rename the other cloned solution <span class="uiTerm">Combined Hardening</span>. To specify combined hardening for this solution, edit the input file as follows:
+                  </p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/hardening_models/hardening_models_combined.png"></p>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">Note</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p>The <span class="uiTerm">TABLES1</span> card is eliminated.
+                           </p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </li>
+               
+            </ul>
+            
+            <table class="attentionTable attn_tip">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">Tip</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>Take special care to maintain the eight-space per field format of the input file.</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            <a name="genid_xid292998_1244" id="genid_xid292998_1244"></a><div class="figureContainer">
+               <table align="center">
+                  <tr>
+                     <td>
+                        <div class="figure">
+                           <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/hardening_models/hardening_models_graph_kinematic.png" border="0"></div>
+                        </div>
+                     </td>
+                  </tr>
+               </table>
+               <h4>Kinematic hardening model</h4>
+            </div>
+            
+            <p>For kinematic hardening, the yield strength in compression decreases by the amount the material strain hardens in tension. In this case, the material strain hardened from 36,000 psi to 40,000 psi in tension and the yield strength in compression decreased from 36,000 psi to 32,000 psi.</p>
+            <a name="genid_xid292998_1245" id="genid_xid292998_1245"></a><div class="figureContainer">
+               <table align="center">
+                  <tr>
+                     <td>
+                        <div class="figure">
+                           <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/hardening_models/hardening_models_graph_combined.png" border="0"></div>
+                        </div>
+                     </td>
+                  </tr>
+               </table>
+               <h4>Combined hardening model</h4>
+            </div>
+            
+            <p>For combined hardening (using a mixed hardening factor of 0.5), the effects of isotropic and kinematic hardening offset one another and the yield strength in compression is unchanged.</p>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">Note</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>The above conclusions are applicable to this elementary uniaxial stress state and may not be applicable to a more general stress state.</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Completed project</h3>
+            
+            <p>For your reference, a completed model for this project is located in the <span class="pathName">..\projects\solved_project_models</span> folder.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

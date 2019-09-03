@@ -1,0 +1,130 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Generating a shell mesh on a welded structure</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=id529367.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Generating a shell mesh on a welded structure</h2>
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>Begin with a CAD assembly made of solid bodies. The assembly can either be created in NX or imported into NX.</p>
+               
+               <p>The figure shows a simple assembly made of solid bodies.</p>
+               
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/workflows/welded_workflow1.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Edit or generate CAD data for analysis. </p>
+               
+               <ul>
+                  
+                  <li>
+                     
+                     <p>Generate midsurfaces of components.</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>Defeature the geometry (for example, remove small holes).</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>Retain center point locations where connections are needed.</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>Define weld geometry if needed. </p>
+                     
+                  </li>
+                  
+               </ul>
+               
+               <p>The figure shows the assembly from step 1, after midsurfacing.</p>
+               
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/workflows/welded_workflow2.gif" border="0"></p>
+               
+               <p>In the following figure, the midsurfaces are displayed and the solid polygon bodies are hidden. The midsurfaces of the components have a gap between them.</p>
+               
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/workflows/welded_workflow3.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Edit polygon geometry. </p>
+               
+               <ul>
+                  
+                  <li>
+                     
+                     <p>Eliminate gaps by stitching the midsurfaces together.</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>Remove sliver faces left behind by stitching. Use geometry abstraction tools.</p>
+                     
+                  </li>
+                  
+               </ul>
+               
+               <p>The figure shows the midsurfaces after they are stitched. The gap is gone, but there is a now a sliver face. </p>
+               
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/workflows/welded_workflow4.gif" border="0"></p>
+               
+               <p>In the following figure, the sliver face is removed.</p>
+               
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/workflows/welded_workflow5.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Define CAE entities such as material and physical properties. Shell thickness can be linked to CAD solid body thickness.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Generate a shell mesh on the model. </p>
+               
+               <p>The figure shows the model meshed with quadrilateral elements. The stitched faces maintain continuity in the mesh along shared edges.</p>
+               
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/workflows/welded_workflow6.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Modify the thickness of shell elements along edges that are joined using fabrication methods that stiffen the structure, such as fillet welds and gussets. </p>
+               
+            </li>
+            
+         </ol>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

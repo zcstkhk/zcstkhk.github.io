@@ -1,0 +1,49 @@
+-1
+       201
+Material Description                    
+Version 1.0
+        -1
+        -1
+         1         6
+         1         2         6          Water                                   
+DENSITY                                          0
+  0.999999997475E-06
+SPECIFIC_HEAT_P                                  0
+  0.418700006400E+10
+SPECIFIC_HEAT_V                                  0
+  0.418700006400E+10
+DYNAMIC_VISCOSITY                                0
+  0.100600004771E-05
+CONDUCTIVITY                                     0
+  0.603000000000E+03
+THERMAL_EXPANSION_COEFFICIENT                    0
+  0.182000003406E-03
+-999
+-1
+       309
+Enclosures material information         
+Version 1.0
+        -1
+        -1
+         1
+         1         0         0         1         0         0         0         0
+-999
+-1
+       304
+Fan head loss information               
+Version 1.0
+        -1
+        -1
+         0
+         0
+-999
+-1
+       302
+Variable Boundary Conditions            
+Version 1.0
+        -1
+        -1
+         1
+         1         0
+  0.377314960938E+05
+-999

@@ -1,0 +1,89 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Workflow for analyzing a bladed rotor</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=id534964.html">
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Workflow for analyzing a bladed rotor</h2>
+         <p>In this course, you will do the following workflow to solve a model of an integrally bladed rotor (IBR).</p>
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>Define mesh mating conditions to connect individual meshes together.</p>
+               
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/meshing/mesh_connections/blade_mesh_mating2.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Create symmetric 2D dependent meshes on the sides of the blade.</p>
+               
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/animations/blade_dependent_mesh.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Create hexahedral meshes on polygon bodies in the model. Some of the hexahedral meshes use the 2D dependent meshes as seed meshes.</p>
+               
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/meshing/3d/blade_swept9.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Create a tetrahedral mesh, using pyramid elements to transition from the tetrahedral to hexahedral elements.</p>
+               
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/meshing/3d/blade_transition.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Define centrifugal load on the model.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Define automatic coupling to automatically create coupled degrees of freedom between symmetric meshes on the blade.</p>
+               
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/boundary_conditions/constraints/blade_auto_coupling5.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Constrain the model and remove redundant constraints.</p>
+               
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/boundary_conditions/constraints/blade_fixed3.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Solve the model and display results.</p>
+               
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/post/blade_post1_small.gif" border="0"></p>
+               
+            </li>
+            
+         </ol>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

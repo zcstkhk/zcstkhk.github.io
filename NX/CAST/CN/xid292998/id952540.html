@@ -1,0 +1,530 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Connect the flexible body FEM to the mechanism</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=id952540.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Connect the flexible body FEM to the mechanism</h2>
+         <p>You must define the points where the flexible body is connected to other degrees of freedom in the motion mechanism. Although you can use any element type to connect the flexible body, typically you will use a <span class="uiTerm">1D Connection</span> (spider element). 
+         </p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/simulation_navigator_tab.gif" border="0"> &nbsp; <span class="uiTerm">Simulation Navigator</span></p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/mb1.gif" border="0">&nbsp; <span class="uiTerm">_demo_assy_fem1.fem</span></p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/mb3.gif" border="0">&nbsp; <span class="uiTerm">Make Displayed Part</span></p>
+               
+            </li>
+         </ul>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/view/static_wireframe.gif" border="0"> &nbsp; <span class="uiTerm">Static Wireframe</span> (Top Border bar&rarr;<span class="uiTerm">Rendering Style Drop Down</span> list)
+         </p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/spider_element_create.gif" border="0"> &nbsp; <span class="uiTerm">1D Connection</span> (<span class="uiTerm">Connections</span> group)
+         </p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <table cellspacing="0" class="option_list" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="86">
+                     
+                     <col span="1" width="185*">
+                     
+                     <col span="1" width="20">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Type</span></p>
+                           
+                        </td>
+                        
+                        <td class="border1a" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">Point to Face</p>
+                           
+                        </td>
+                        
+                        <td class="nopadding" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="top" src="../graphics/nonLocalized/nx_dss/icons/images/option_arrow_no_border.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="45">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="banner_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="banner_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Source</span></p>
+                           
+                        </td>
+                        
+                        <td class="banner_right" colspan="1" rowspan="1" width="45"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/gateway/common/point_constructor.gif" border="0"> <span class="uiTerm">Point Dialog</span> (<span class="uiTerm">Select Point</span>)
+               </p>
+               
+            </li>
+            <li>
+               
+               <table cellspacing="0" class="option_list" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="86">
+                     
+                     <col span="1" width="185*">
+                     
+                     <col span="1" width="20">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Type</span></p>
+                           
+                        </td>
+                        
+                        <td class="border1a" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">Between Two Points</p>
+                           
+                        </td>
+                        
+                        <td class="nopadding" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="top" src="../graphics/nonLocalized/nx_dss/icons/images/option_arrow_no_border.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/gateway/point_constructor/arc_ellipse_sphere_center.gif" border="0"> &nbsp; <span class="uiTerm">Arc/Ellipse/Sphere Center</span> (<span class="uiTerm">Specify Point 1</span> and <span class="uiTerm">Specify Point 2</span>)
+               </p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/mb1.gif" border="0">&nbsp; <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_blue/blue_ball1.gif" border="0"> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_blue/blue_ball2.gif" border="0"></p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/activities/advanced/flex_5.gif"></p>
+               
+               <table class="attentionTable attn_note">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">Note</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>Select the arc centers of the top and bottom edges. </p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">OK</span></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;<span class="uiTerm">Point</span> dialog box
+                           </p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="45">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="banner_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="banner_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Target</span></p>
+                           
+                        </td>
+                        
+                        <td class="banner_right" colspan="1" rowspan="1" width="45"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/mb1.gif" border="0">&nbsp; <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_blue/blue_ball1.gif" border="0"> (the face)
+               </p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/activities/advanced/flex_6.gif"></p>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="45">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="banner_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="banner_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Connection Element</span></p>
+                           
+                        </td>
+                        
+                        <td class="banner_right" colspan="1" rowspan="1" width="45"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table cellspacing="0" class="option_list" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="86">
+                     
+                     <col span="1" width="185*">
+                     
+                     <col span="1" width="20">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Type</span></p>
+                           
+                        </td>
+                        
+                        <td class="border1a" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">RBE2</p>
+                           
+                        </td>
+                        
+                        <td class="nopadding" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="top" src="../graphics/nonLocalized/nx_dss/icons/images/option_arrow_no_border.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Apply</span></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/activities/advanced/flex_7.gif"></p>
+               
+               <p>This creates a <span class="emphasis">connection recipe</span>. In a later step in this activity, when you create a solid mesh on the part, the connection recipe will generate a spider element using nodes defined in the geometry mesh. 
+               </p>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="4" cellspacing="0" frame="box" width="330">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="20">
+                     
+                     <col span="1" width="0*">
+                     
+                     <col span="1" width="0*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/check_box_off.gif" border="0"></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Automatic Creation</span></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p>Repeat the above steps to create <span class="uiTerm">Point to Face</span> RBE2 connection recipes on the other two ends of the arm, as shown in the following pictures.
+               </p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/activities/advanced/flex_8.gif"></p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/activities/advanced/flex_9.gif"></p>
+               
+               <p>When you are finished, close the <span class="uiTerm">1D Connection</span> dialog box.
+               </p>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">OK</span></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

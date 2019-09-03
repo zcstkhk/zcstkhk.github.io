@@ -1,0 +1,251 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Define connection degrees of freedom</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=id952550.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Define connection degrees of freedom</h2>
+         <p>In a previous step, you created spider elements at the three ends of the suspension arm. The independent node at the center of each spider element was defined to be coincident with the origin point of a joint or bushing that connects this component to the mechanism. You will now define the local stiffness at these connection points using a <span class="uiTerm">Fixed Boundary Degrees of Freedom</span> constraint.
+         </p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>The term &quot;bushing&quot; refers to a bushing connection defined in Motion Simulation, not to be confused with the bushing constraint that is available in Advanced Simulation. A bushing in Motion Simulation is a type of joint connection between two links. </p>
+                  
+               </td>
+            </tr>
+         </table>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/view/static_wireframe.gif" border="0"> &nbsp; <span class="uiTerm">Static Wireframe</span> (Top Border bar&rarr;<span class="uiTerm">Rendering Style Drop-down</span> list)
+         </p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/fixed_boundary_dof.gif" border="0"> &nbsp; <span class="uiTerm">Fixed Boundary Degrees of Freedom</span> (<span class="uiTerm">Loads and Conditions</span> group&rarr;<img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/constraint_type.gif" border="0"> <span class="uiTerm">Constraint Type</span> list)
+         </p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="45">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="banner_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="banner_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Model Objects</span></p>
+                           
+                        </td>
+                        
+                        <td class="banner_right" colspan="1" rowspan="1" width="45"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/check_box_on.gif" border="0">&nbsp; <span class="uiTerm">Group Reference</span></p>
+               
+            </li>
+            <li>
+               
+               <table cellspacing="0" class="list_box" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="300*">
+                     
+                     <col span="1" width="20">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"></p>
+                           
+                        </td>
+                        
+                        <td class="nopadding2" colspan="1" rowspan="1"></td>
+                        
+                     </tr>
+                     
+                     <tr>
+                        
+                        <td class="border1a" colspan="1" rowspan="1" width="300*">
+                           
+                           <p class="no-bottom-margin">connection_nodes::_demo_assy_fem1</p>
+                           
+                        </td>
+                        
+                        <td align="left" class="nopadding2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/graphicLibrary/list_box2.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+               <table class="attentionTable attn_note">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">Note</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>This is the node group you created in the previous step.</p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="45">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="banner_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="banner_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Degrees of Freedom</span></p>
+                           
+                        </td>
+                        
+                        <td class="banner_right" colspan="1" rowspan="1" width="45"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/all_fixed.gif" border="0">&nbsp; <span class="uiTerm">All On</span></p>
+               
+               <p>To ensure the correct local stiffness at the connection points, always set all DOF to <span class="uiTerm">On</span> when creating <span class="uiTerm">Fixed Boundary Degrees of Freedom</span> or <span class="uiTerm">Free Boundary Degrees of Freedom</span> constraints in a flexible body analysis.
+               </p>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"> <span class="uiTerm">OK</span></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/activities/advanced/flex_12a.gif"></p>
+               
+               <p>When you created the connection recipe for each spider element, you placed the independent node at the bore center of the hole rather than at the arc center of the edge of the hole. This placement ensures balanced loading. </p>
+               
+            </li>
+         </ul>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/standard/save.gif" border="0"> &nbsp; <span class="uiTerm">Save</span> (Quick Access toolbar)
+         </p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

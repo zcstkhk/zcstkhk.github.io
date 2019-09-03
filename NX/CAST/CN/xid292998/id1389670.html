@@ -1,0 +1,307 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Specify solution result types and number of modes</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=id1389670.html">
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Specify solution result types and number of modes</h2>
+         <p>Edit the dynamics subcase to save the number of requested modes, and output requests for displacement, SPC forces, and stress. </p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/simulation_navigator_tab.gif" border="0"> &nbsp; <span class="uiTerm">Simulation Navigator</span></p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0">&nbsp; <span class="uiTerm"> Subcase - Dynamics</span></p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb3.gif" border="0">&nbsp; <span class="uiTerm"> Edit</span></p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/edit_new.gif" border="0">&nbsp; <span class="uiTerm">Edit</span> (<span class="uiTerm">Output Requests</span>)
+               </p>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="tab_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="tab_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Modal Effective Mass</span></p>
+                           
+                        </td>
+                        
+                        <td class="tab_right" colspan="1" rowspan="1" width="16"></td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+               <p>You can apply a threshold to filter out modes with small modal effective mass. This practice can save disk space because fewer modes are stored, and can save computation time because fewer modes are used in the response computation.</p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/check_box_on.gif" border="0">&nbsp; <span class="uiTerm">Enable MEFFMASS Request</span></p>
+               
+            </li>
+            <li>
+               
+               <table cellspacing="0" class="input_field" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="90">
+                     
+                     <col span="1" width="190*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Threshold</span></p>
+                           
+                        </td>
+                        
+                        <td class="border1b" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">0.01</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+               <p>Modes that have an effective mass fraction greater than the <span class="uiTerm">Threshold</span> in at least one translational or rotational direction will be output for use in the response simulation when you solve the modal solution. All other modes will be filtered out. <span class="uiTerm">Threshold</span> values can be set between 0.0 and 1.0. A reasonable value is 0.01, which will save modes that have an effective mass greater than 1% in any translational or rotational direction.
+               </p>
+               
+               <p>This method is an alternative to using the manual method of filtering out insignificant modes that is shown in the <span class="titleReference">Response Simulation - Solution Setup</span> activity.
+               </p>
+               
+            </li>
+            <li>
+               
+               <table class="attentionTable attn_note">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">Note</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>You will also need output for displacement, SPC forces, and stress. These output types are turned on by default.</p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">OK</span></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;<span class="uiTerm">Structural Output Requests</span> dialog box
+                           </p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/edit_new.gif" border="0">&nbsp; <span class="uiTerm">Edit</span> (<span class="uiTerm">Lanczos Data</span>)
+               </p>
+               
+            </li>
+            <li>
+               
+               <table cellspacing="0" class="input_field" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="90">
+                     
+                     <col span="1" width="190*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Name</span></p>
+                           
+                        </td>
+                        
+                        <td class="border1b" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">60 modes</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table cellspacing="0" class="input_field" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="90">
+                     
+                     <col span="1" width="190*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Number of Desired Modes</span></p>
+                           
+                        </td>
+                        
+                        <td class="border1b" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">60</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">OK</span></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;both dialog boxes</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+         </ul>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/gateway/standard/save.gif" border="0"> &nbsp; <span class="uiTerm">Save</span> (Quick Access toolbar)
+         </p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

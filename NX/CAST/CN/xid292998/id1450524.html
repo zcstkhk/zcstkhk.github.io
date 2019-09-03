@@ -1,0 +1,111 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Optional: Define additional flexible bodies</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=id1450524.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Optional: Define additional flexible bodies</h2>
+         <p>For simplicity, you have defined only one of the suspension components as a flexible body. If time permits, you can repeat the steps in this activity to define the remaining suspension components as flexible. </p>
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>In Advanced Simulation, create a FEM file, Simulation file, and SOL 103 Flexible Body solution for each of the other suspension arms.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>In Advanced Simulation, solve each solution to generate the .rfi file for each flexible body.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>In Motion Simulation, create a flexible link for each additional flexible body.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Add all of the flexible links to the existing motion solution.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Solve the motion solution. Note that NX Nastran will run automatically to solve the modal solution again for each flexible body. The entire solve may take several minutes to complete.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Animate the results. </p>
+               
+               <p>Each flexible body has its own post view, which you can edit individually. In the <span class="uiTerm">Motion Navigator</span>, under the <span class="uiTerm">Animation</span> node for the solution, right-click the flexible link to edit and choose <span class="uiTerm">Edit Post View</span>.
+               </p>
+               
+               <p>Also, when you have multiple flexible links, color contour plots are displayed only for links of a single result type. To specify the flexible link to display, in the <span class="uiTerm">Motion Navigator</span>, under the <span class="uiTerm">Animation</span> node for the solution, right-click the flexible link and choose <span class="uiTerm">Set Legend Visible</span>. The contour legend will indicate the time increment and min/max result values for all links of this result type. The contour plots for links of other result types will be displayed in gray. 
+               </p>
+               
+               <p>In the following example, the post view for the blue suspension arm was set to <span class="uiTerm">Stress - Element-Nodal</span> and the post views for the other flexible links were set to <span class="uiTerm">Displacement - Nodal</span>. The blue suspension arm was set to <span class="uiTerm">Set Legend Visible</span>, so only its contour plot is displayed in the animation.
+               </p>
+               
+            </li>
+            
+         </ol>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/activities/advanced/f1_car_flex_anim_all.gif"></p>
+         <table border="0" cellpadding="0" cellspacing="0" class="tab-blue">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="10">
+               
+               <col span="1" width="*">
+               
+               <col span="1" width="10">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td class="tab_left" colspan="1" height="26" rowspan="1" width="10"></td>
+                  
+                  <td class="tab_middle" colspan="1" height="26" rowspan="1" width="*">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">File</span></p>
+                     
+                  </td>
+                  
+                  <td class="tab_right" colspan="1" height="26" rowspan="1" width="16"></td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><span class="uiTerm">Close All parts</span></p>
+               
+            </li>
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

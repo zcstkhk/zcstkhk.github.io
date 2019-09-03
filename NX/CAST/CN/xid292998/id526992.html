@@ -1,0 +1,340 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>1D connections project</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=id526992.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>1D connections project</h2>
+         <p>In Advanced Simulation, 1D connection elements are typically used to join dissimilar meshes and transmit loads. The following project uses an RBE3 spider element to apply a torsional load to a shaft modeled using solid elements.</p>
+         <div class="division">
+            
+            <h3>Objective</h3>
+            
+            <p>A shaft with a double-D cross section is shown below. Model the shaft with solid elements and use an RBE3 spider element to apply a torsional load. Using the SOL 101 Linear Statics - Global Constraints solution sequence, determine the amount the shaft twists.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/1D_connections/1D_connections_objective.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Required data</h3>
+            <a name="genid_xid292998_1219" id="genid_xid292998_1219"></a><h4></h4>
+            <table border="0" cellpadding="4" cellspacing="2" width="375" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="91*">
+                  
+                  <col span="1" width="97*">
+                  
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Property</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Value</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Part </p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="fileName">double_D_rod.prt</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Solution sequence</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">SOL 101 Linear Statics - Global Constraints</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Idealization</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">None</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Material</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Aluminum 2014</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Mesh</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>CHEXA8</p>
+                        
+                        <p class="no-bottom-margin">Element size <span class="userInput">2.5</span> mm
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Constraints</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Fix one end of the shaft</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Loads</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Apply a <span class="userInput">25</span> N-m torsional moment
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/1D_connections/1D_connections_model.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Notes</h3>
+            
+            <p>A summary of the steps to complete the analysis is listed below.</p>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>Open the part file and start Advanced Simulation. Create new FEM and Simulation files.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Define the material and the physical properties and create a 3D mesh collector.</p>
+                  
+                  <div class="activityDiv">
+                     <p>For a detailed description of how to complete this step, see the <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" href="#" onclick="popUpPageType('id741176.html','activity');return(false);">Define mesh properties with mesh collectors</a> activity.
+                     </p>
+                  </div>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>To create a CHEXA8 mesh, use the <span class="uiTerm">3D Swept Mesh</span> command. Enter <span class="userInput">2.5</span> mm for the element size, select <span class="uiTerm">On-Zero Triangles</span> from the <span class="uiTerm">Attempt Quad Only</span> list, and assign the mesh to the mesh collector you created.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>To create an RBE3 spider element at one end of the model, use the <span class="uiTerm">1D Connection</span> command.
+                  </p>
+                  
+                  <ol type="a" start="1">
+                     
+                     <li>
+                        
+                        <p>From the <span class="uiTerm">Type</span> list, select <span class="uiTerm">Point to Face</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Define the source point using the <span class="uiTerm">Point Dialog</span> and enter <span class="userInput">-120</span> for the Y-coordinate.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Select the end of the shaft as the target face.</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>From the <span class="uiTerm">Type</span> list, select <span class="uiTerm">RBE3</span>.
+                        </p>
+                        
+                     </li>
+                     
+                  </ol>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Make the Simulation the work part.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>To constrain the model, use the <span class="uiTerm">Fixed Translation Constraint</span> command.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>To apply the 25 N-m torsional moment, use the <span class="uiTerm">Moment</span> command. Select the point created with the RBE3 mesh, enter <span class="userInput">25</span> N-m for the magnitude, and select the <span class="uiTerm">YC-Axis</span> as the direction.
+                  </p>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">Note</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p>When creating the torsional moment, be sure the units are correct.</p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Solve the model.</p>
+                  
+               </li>
+               
+            </ol>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Expected Results</h3>
+            
+            <p>To access the analysis results, in the <span class="uiTerm">Simulation Navigator</span>, double-click <span class="uiTerm">Results</span>. To view a contour plot of rotation about the Y-axis, in the <span class="uiTerm">Post Processing Navigator</span>, expand <span class="uiTerm">Solution 1</span> if necessary. Next, expand <span class="uiTerm">Rotation-Nodal</span> and double-click <span class="uiTerm">Y</span>. The resulting contour plot (in degrees) should look similar to the one shown below.
+            </p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/1D_connections/1D_connections_results.png"></p>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">Note</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>Because solid elements do not possess rotational DOF, all the nodal rotations for the solid elements are zero. However, because 1D connection elements possess all six DOF, moments can be applied to and rotations can be measured with the source point for the 1D connection. An RBE3 spider element is used for the 1D connection because it is flexible, which allows the cross section to distort.</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+            <p>Use the <span class="uiTerm">Identify Results</span> command to determine the rotation about the Y-axis of the source point for the RBE3 spider. The result (in degrees) is shown below.
+            </p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/1D_connections/1D_connections_results2.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Completed project</h3>
+            
+            <p>For your reference, a completed model for this project is located in the <span class="pathName">..\projects\solved_project_models</span> folder.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

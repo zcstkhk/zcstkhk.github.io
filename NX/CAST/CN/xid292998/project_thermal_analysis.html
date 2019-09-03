@@ -1,0 +1,283 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Thermal analysis project</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=project_thermal_analysis.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Thermal analysis project</h2>
+         <p>Advanced Simulation possesses the capability to solve steady-state thermal problems like the following.</p>
+         <div class="division">
+            
+            <h3>Objective</h3>
+            
+            <p>The heat sink shown below is used to cool an integrated circuit (IC). When mounted to the heat sink, the IC covers the entire mounting face. Use the SOL 153 Steady State Nonlinear Heat Transfer solution sequence to calculate the mounting face temperature required for the heat sink to dissipate 74 W of heat to 25 C air.</p>
+            <a name="genid_xid292998_1227" id="genid_xid292998_1227"></a><div class="figureContainer">
+               <table align="center">
+                  <tr>
+                     <td>
+                        <div class="figure">
+                           <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/thermal/thermal_part.png" border="0"></div>
+                        </div>
+                     </td>
+                  </tr>
+               </table>
+               <h4><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_blue/blue_ball1.gif" border="0">&nbsp;indicates mounting face
+               </h4>
+            </div>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Required data</h3>
+            <a name="genid_xid292998_1228" id="genid_xid292998_1228"></a><h4></h4>
+            <table border="0" cellpadding="4" cellspacing="2" width="375" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="91*">
+                  
+                  <col span="1" width="97*">
+                  
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Property</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Value</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Part</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="fileName">heat_sink.prt</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Solution sequence</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">SOL 153 Steady State Nonlinear Heat Transfer</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Idealization</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">The body and boundary conditions are symmetric about two planes. Model one quarter of the body as indicated</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Material</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">2014 Aluminum</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Mesh</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>CHEXA8</p>
+                        
+                        <p>Element size <span class="userInput">1.5</span> mm
+                        </p>
+                        
+                        <p class="no-bottom-margin">3D swept mesh</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Constraints</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>Apply a convective constraint to all surfaces except the mounting face and the planes of symmetry</p>
+                        
+                        <p>Use a convection coefficient of <span class="userInput">8.0</span> W/m<sup>2</sup>-C and an air temperature of <span class="userInput">25</span> C
+                        </p>
+                        
+                        <p class="no-bottom-margin">Planes of symmetry are adiabatic. Surfaces without thermal loads or constraints behave adiabatically</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Loads</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Apply a uniform heat flux of <span class="userInput">0.0297</span> W/mm<sup>2</sup> to the mounting face to simulate a total heat input of 74 W
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/thermal/thermal_model.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Notes</h3>
+            
+            <p>To use symmetry:</p>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>Promote the body in the idealized part.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Split the body along the planes of symmetry.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>In the FEM, turn off the display of the unused polygon bodies.</p>
+                  
+               </li>
+               
+            </ol>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Expected Results</h3>
+            
+            <p>The calculated temperature distribution (in C) is shown below.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/thermal/thermal_results.png"></p>
+            
+            <p>The average mounting face temperature needed for the heat sink to dissipate 74 W of heat is about 105 C. You obtain this temperature using the averaging feature of the <span class="uiTerm">Identify Results</span> command.
+            </p>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>Under the <span class="uiTerm">Results</span> tab, in the <span class="uiTerm">Post Processing</span> group, select the <span class="uiTerm">Identify Results</span> command.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>In the <span class="uiTerm">Identify</span> dialog box, from the <span class="uiTerm">Pick</span> list, select <span class="uiTerm">Feature Face</span>.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Select the mounting face.</p>
+                  
+               </li>
+               
+            </ol>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Completed project</h3>
+            
+            <p>For your reference, a completed model for this project is located in the <span class="pathName">..\projects\solved_project_models</span> folder.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

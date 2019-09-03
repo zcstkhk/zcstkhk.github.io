@@ -1,0 +1,316 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Cyclic symmetry project</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=project_cyclic_symmetry.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Cyclic symmetry project</h2>
+         <p>Cyclic symmetry occurs when a structure and loading are repeated about an axis. <span class="uiTerm">Automatic Coupling</span> in Advanced Simulation allows you to easily create cyclic symmetric models by automatically coupling the displacements occurring on cyclic symmetric surfaces.
+         </p>
+         <div class="division">
+            
+            <h3>Objective</h3>
+            
+            <p>A marine propeller is shown below. Create a cyclic symmetric model and use the SOL 101 Linear Statics - Global Constraints solution sequence to examine stresses in the propeller when it spins at 5000 rpm.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/cyclic_symmetry/cyclic_symmetry_propeller.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Required data</h3>
+            <a name="genid_xid292998_1234" id="genid_xid292998_1234"></a><h4></h4>
+            <table border="0" cellpadding="4" cellspacing="2" width="375" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="91*">
+                  
+                  <col span="1" width="97*">
+                  
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Property</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Value</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Part</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="fileName">propeller.prt</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Solution sequence</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">SOL 101 Linear Statics - Global Constraints</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Idealization</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">See note regarding cyclic symmetry</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Material</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Steel</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Mesh</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>CTETRA10</p>
+                        
+                        <p>Element size <span class="userInput">0.15</span> in
+                        </p>
+                        
+                        <p class="no-bottom-margin">3D tetrahedral mesh seeded with a 2D dependent mesh on cyclic symmetric faces</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Constraints</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">See note regarding constraints</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Loads</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p>Apply a centrifugal load</p>
+                        
+                        <p class="no-bottom-margin">Angular velocity <span class="userInput">5000</span> rpm
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Notes</h3>
+            
+            <p>To model the structure using cyclic symmetry:</p>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>Open the part file and start Advanced Simulation. Create idealized part, FEM, and Simulation files.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>After making the idealized part the displayed part, use the <span class="uiTerm">Promote</span> command to promote the body.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>The propeller geometry is repeated three times. Use the <span class="uiTerm">Split Body</span> command to isolate one instance of the repeated geometry.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>After making the FEM the displayed part, turn off the display of the unused geometry.</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/cyclic_symmetry/cyclic_symmetry_split_body.png"></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Define the material and the physical properties and create a 3D mesh collector.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Use the <span class="uiTerm">2D Dependent Mesh</span> command to create a seed mesh of CTRIA6 elements on the cyclic symmetric faces. Select <span class="uiTerm">Symmetric</span> as the 2D dependent mesh type and select <span class="uiTerm">Cylindrical</span> as the <span class="uiTerm">Reference CSYS</span>. When the <span class="uiTerm">2D Mesh</span> dialog box opens, select <span class="uiTerm">CTRIA6</span> as the element type, enter an element size of <span class="userInput">0.15</span> in, and clear <span class="uiTerm">Export Mesh to Solver</span>.
+                  </p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/cyclic_symmetry/cyclic_symmetry_seed_mesh.png"></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Use the 2D seed mesh to create a solid mesh of CTETRA10 elements. In the <span class="uiTerm">3D Tetrahedral Mesh</span> dialog box, enter an element size of <span class="userInput">0.15</span> in. Assign the mesh to the mesh collector you created previously.
+                  </p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/cyclic_symmetry/cyclic_symmetry_tet_mesh.png"></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Use the <span class="uiTerm">Assign Nodal Coordinate System</span> command to define a cylindrical CSYS as the nodal displacement CSYS. The <span class="uiTerm">Assign Nodal Coordinate System</span> command is found under the <span class="uiTerm">Nodes and Elements</span> tab in the <span class="uiTerm">Nodes</span> group.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>After making the Simulation the displayed part, constrain the nodes on the bore of the propeller in the tangential and axial directions. To avoid conflicting constraints, exclude the polygon edges of the bore that are also used to define edges of the dependent face.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Use the <span class="uiTerm">Automatic Coupling</span> command to couple the DOF of symmetric node pairs.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Optionally, resize the constraint symbols.</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/cyclic_symmetry/cyclic_symmetry_coupled_dof.png"></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Use the <span class="uiTerm">Rotation</span> command to apply a centrifugal load for an angular velocity of <span class="userInput">5000</span> rpm.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Solve the model.</p>
+                  
+               </li>
+               
+            </ol>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Expected Results</h3>
+            
+            <p>A contour plot of von Mises stress (in psi) is shown below.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/cyclic_symmetry/cyclic_symmetry_von_mises_stress.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Completed project</h3>
+            
+            <p>For your reference, a completed model for this project is located in the <span class="pathName">..\projects\solved_project_models</span> folder.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

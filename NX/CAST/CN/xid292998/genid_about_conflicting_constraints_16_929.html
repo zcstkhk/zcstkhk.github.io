@@ -1,0 +1,27 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>About conflicting constraints</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=genid_about_conflicting_constraints_16_929.html">
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>About conflicting constraints</h2>
+         <p>Coupling the DOF of node pairs created a constraint that conflicts with the fixed translation constraint. The conflict occurs along the four edges of the model shared by the dependent face of the coupling constraint and faces having the fixed translation constraint. In the illustration, these edges are shown in magenta.</p>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/activities/boundary_conditions/constraints/excluded_nodes_before.gif"></p>
+         <p>If you attempt to solve this model, the conflicting constraints would cause the solve to terminate.</p>
+         <p>You can resolve the conflicting constraints by excluding the edges where the conflicting constraint occurs, from the fixed translation constraint. The nodes on the excluded edges will still be fixed because they are coupled to fixed nodes on the independent face. </p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Generate stress contour results</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=generate_stress_contour_results.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Generate stress contour results</h2>
+         <p>Next, you will evaluate <span class="uiTerm">Stress</span> Response Results for all elements on the model, and select the time point in the response function where stress is highest. Use the following steps, referring back to the previous page for details if necessary:
+         </p>
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>In the <span class="uiTerm">Evaluate Response Results</span> dialog box, select <span class="uiTerm">Stress</span> as the <span class="uiTerm">Requested Result</span> (clear the <span class="uiTerm">Displacement</span> check box).
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Select all the elements in the model.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Select <span class="uiTerm">From XY Graph</span> as the <span class="uiTerm">Method</span>.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Under <span class="uiTerm">Point Value</span>, click the <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/rs_sel_natural_freq.gif" border="0"> button.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>In the <span class="uiTerm">Equation Selection</span> list, select <span class="uiTerm">2_(16E_VONMTOP)</span> and click <span class="uiTerm">OK</span>.
+               </p>
+               
+               <table class="attentionTable attn_note">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">Note</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>The file name may be different based on the element that you selected when you generated the elemental stress function in a previous step (the number 16 in the above file name is the element ID).</p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+            
+            <li>
+               
+               <p>In the plotted elemental stress function, select the time point where stress is highest, and then click <span class="uiTerm">OK</span> to generate the response results.
+               </p>
+               
+            </li>
+            
+         </ol>
+         <p>In the next step, you will view the contour plot of these stress results as well as the displacement results you generated earlier.</p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

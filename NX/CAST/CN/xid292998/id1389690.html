@@ -1,0 +1,277 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Define the PSD function</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=id1389690.html">
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Define the PSD function</h2>
+         
+         <p>Use the Function Tools for Response Simulation utility to create the PSD function.</p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>For your convenience, the completed PSD function is also included in the provided <span class="fileName">PSDExample.afu</span> file.
+                  </p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/function_tools_response_simulation.gif" border="0"> &nbsp; <span class="uiTerm">Function Tools for Response Simulation </span> (<span class="uiTerm">Response Simulation</span> group)
+         </p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>This utility requires the Java Runtime Environment (JRE) version 1.7. You can install the JRE from <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" class="links" href="#" onclick="top.openFileURL('www.oracle.com')">www.oracle.com</a>.
+                  </p>
+                  
+                  <p>If you encounter Java memory errors while trying to open the Function Tools for Response Simulation utility, set this environment variable in your <span class="fileName">ugii_env.dat</span> file: <span class="codeText">UGII_JVM_OPTIONS=-Xmx64M</span>. Then, restart NX.
+                  </p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <ul class="unmarkedList">
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="tab_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="tab_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Random PSD</span></p>
+                           
+                        </td>
+                        
+                        <td class="tab_right" colspan="1" rowspan="1" width="16"></td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Excitation Function Creation</span></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/radio-on.gif" border="0">&nbsp; <span class="uiTerm">Method2</span></p>
+               
+            </li>
+            <li>
+               
+               <p>Enter values for the function as shown below.</p>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/fan/fan_10.gif" border="0"></p>
+               
+            </li>
+            <li>
+               
+               <table cellspacing="0" class="input_field" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="90">
+                     
+                     <col span="1" width="190*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Record Name</span></p>
+                           
+                        </td>
+                        
+                        <td class="border1b" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">Random Example</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p>Enter a new name for the AFU file.</p>
+               
+            </li>
+            <li>
+               
+               <table cellspacing="0" class="input_field" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="90">
+                     
+                     <col span="1" width="190*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">AFU File</span></p>
+                           
+                        </td>
+                        
+                        <td class="border1b" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">PSDExample1</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">OK</span></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/close_window.gif" border="0">&nbsp; the <span class="uiTerm">Function Tools for Response Simulation</span> dialog box
+               </p>
+               
+            </li>
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

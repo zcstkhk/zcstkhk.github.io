@@ -1,0 +1,428 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Contact analysis project</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=project_contact_analysis.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Contact analysis project</h2>
+         <p>The <span class="uiTerm">Surface-to-Surface Contact</span> feature in Advanced Simulation can be used to resolve interference between parts. For example, consider shrink-fit construction of a cylindrical pressure vessel. The cylinders are fabricated in such a way that they interfere when at a common temperature. The interference is overcome by heating the outer cylinder. The resulting thermal expansion allows the outer cylinder to slip over the inner cylinder. As the outer cylinder cools, it shrinks onto the inner cylinder, creating a contact pressure at the interface. The contact pressure produces residual stresses, which enable the pressure vessel to withstand higher operating pressures.
+         </p>
+         <div class="division">
+            
+            <h3>Objective</h3>
+            
+            <p>At room temperature, two cylinders have a 0.15 mm radial interference. Use the SOL 101 Linear Statics - Global Constraints solution sequence to find the contact pressure that arises at the interface when the outer cylinder is shrink fit onto the inner cylinder. Assume the ends of the pressure vessel are fixed so that axial displacement cannot occur.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/contact/shrink_fit_cylinder.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Required data</h3>
+            <a name="genid_xid292998_1232" id="genid_xid292998_1232"></a><h4></h4>
+            <table border="0" cellpadding="4" cellspacing="2" width="375" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="91*">
+                  
+                  <col span="1" width="97*">
+                  
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Property</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Value</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Part</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="fileName">shrink_fit.prt</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Solution sequence</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">SOL 101 Linear Statics - Global Constraints</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Idealization</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p>See note regarding axisymmetry</p>
+                        
+                        <p class="no-bottom-margin">See note regarding plane strain</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Material</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Steel</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Mesh</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">CHEXA20</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Constraints</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">See notes regarding surface-to-surface contact</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Loads</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">None</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/contact/contact_model.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Notes</h3>
+            
+            <p>Although SOL 101 Linear Statics - Global Constraints supports <span class="uiTerm">Edge-to-Edge Contact</span> in axisymmetric structural modeling, use geometry idealization, constraints, and <span class="uiTerm">Surface-to-Surface Contact</span> to create the model.
+            </p>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>Idealize the cylinder as a wedge.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Apply constraints to the wedge that force it to behave in an axisymmetric fashion.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Define <span class="uiTerm">Surface-to-Surface Contact</span> between the inner and outer portions of the wedge.
+                  </p>
+                  
+               </li>
+               
+            </ol>
+            
+            <p>Because the ends of the pressure vessel are fixed, it is unnecessary to model the entire length of the wedge. Modeling a representative slice of the wedge is sufficient. By constraining axial displacements, the model will mimic plane strain.</p>
+            
+            <p>To create this model:</p>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>Open the part file and start Advanced Simulation. Create FEM and Simulation files. Be sure to create an idealized part file when doing so.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>After displaying the idealized part, use the <span class="uiTerm">Promote</span> command to promote the bodies in the idealized part.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Use the <span class="uiTerm">Split Body</span> command to create a 5 mm thick wedge having an angular sweep of 3&deg; as shown below.
+                  </p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/contact/symmetry_drawing1.png"></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Display the FEM file and turn off the unused polygon bodies to isolate the wedge.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Create a mesh collector.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Use the <span class="uiTerm">Mesh Control</span> command to specify four elements through the radial thickness of each wedge and one element through the depth and transverse thickness of each wedge.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Use the <span class="uiTerm">3D Swept Mesh</span> command to mesh both wedges. Assign both meshes to the mesh collector you created.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>After making the Simulation file the displayed part, constrain all DOF normal to the RZ-planes to enforce axisymmetry. To enforce plane strain, constrain all DOF in the axial direction throughout the model.</p>
+                  
+                  <ol type="a" start="1">
+                     
+                     <li>
+                        
+                        <p>Select the <span class="uiTerm">User Defined Constraint</span> command.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Select the two polygon faces comprising plane <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball1.gif" border="0"> in the illustration below.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>From the <span class="uiTerm">Displacement CSYS</span> list, select <span class="uiTerm">Cylindrical</span>. Click <span class="uiTerm">CSYS of Object</span> and select the edge indicated below.
+                        </p>
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/contact/edge_selection.png"></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Set the DOF normal to plane <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball1.gif" border="0"> and in the axial direction to <span class="uiTerm">Fixed</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Repeat for plane <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball2.gif" border="0"> in the illustration below.
+                        </p>
+                        
+                     </li>
+                     
+                  </ol>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Constrain all the remaining DOF in the axial direction to complete enforcing plane strain.</p>
+                  
+                  <ol type="a" start="1">
+                     
+                     <li>
+                        
+                        <p>Select the <span class="uiTerm">User Defined Constraint</span> command.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Select the polygon faces comprising planes <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball3.gif" border="0">,<img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball4.gif" border="0">, <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball5.gif" border="0">, and <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball6.gif" border="0">.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>To avoid conflicting constraints, exclude from the selection edges where constraints are already applied.</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Set the DOF in the axial direction to <span class="uiTerm">Fixed</span>.
+                        </p>
+                        
+                     </li>
+                     
+                  </ol>
+                  
+               </li>
+               
+            </ol>
+            
+            <p>In the following illustration:</p>
+            
+            <ul class="unmarkedList">
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball1.gif" border="0"> is the visible RZ-plane.
+                  </p>
+                  
+               </li>
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball2.gif" border="0"> is the hidden RZ-plane.
+                  </p>
+                  
+               </li>
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball3.gif" border="0"> is the visible R&Theta;-plane.
+                  </p>
+                  
+               </li>
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball4.gif" border="0"> is the hidden R&Theta;-plane.
+                  </p>
+                  
+               </li>
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball5.gif" border="0"> is the visible &Theta;Z-plane.
+                  </p>
+                  
+               </li>
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball6.gif" border="0"> is the hidden &Theta;Z-plane.
+                  </p>
+                  
+               </li>
+            </ul>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/contact/face_definition_graphic.png"></p>
+            
+            <p>Because of the interference condition, normals to the contacting regions point in opposing directions. By specifying a negative <span class="uiTerm">Min Search Distance</span> when defining <span class="uiTerm">Surface-to-Surface Contact</span>, the software searches for contact in the opposite direction of the normals.
+            </p>
+            
+            <p>The default settings do not request contact pressure results. Edit the solution to enable contact pressure output. In the <span class="uiTerm">Solution</span> dialog box, under the <span class="uiTerm">Case Control</span> tab, click <span class="uiTerm">Create Modeling Object (Output Requests)</span>. In the <span class="uiTerm">Structural Output Requests</span> dialog box, under the <span class="uiTerm">Contact Result</span> tab, select <span class="uiTerm">Enable BCRESULTS Request</span>.
+            </p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Expected Results</h3>
+            
+            <p>A contour plot of contact pressure (in MPa) is shown below.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/contact/contact_pressure_contour_plot.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Completed project</h3>
+            
+            <p>For your reference, a completed model for this project is located in the <span class="pathName">..\projects\solved_project_models</span> folder.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

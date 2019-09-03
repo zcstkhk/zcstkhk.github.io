@@ -1,0 +1,507 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Post-processing project</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=id526017.html">
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Post-processing project</h2>
+         <p>Advanced Simulation contains a suite of post-processing tools for displaying analysis results. The following exercise demonstrates some of these tools.</p>
+         <div class="division">
+            
+            <h3>Objective</h3>
+            
+            <p>A cantilevered I-beam is shown below. Using the SOL 101 Linear Statics - Global Constraints solution sequence, perform a structural analysis and use the post-processing tools to graph the transverse shear stress acting through the web of the beam.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/post_processing/post_processing_objective.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Required data</h3>
+            <a name="genid_xid292998_1214" id="genid_xid292998_1214"></a><h4></h4>
+            <table border="0" cellpadding="4" cellspacing="2" width="375" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="91*">
+                  
+                  <col span="1" width="97*">
+                  
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Property</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="silver" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Value</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Part</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="fileName">I_beam.prt</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Solution sequence</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">SOL 101 Linear Statics - Global Constraints</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Idealization</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">None</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Material</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Steel</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Mesh</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>CHEXA8</p>
+                        
+                        <p class="no-bottom-margin">Element size <span class="userInput">0.2</span> in
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Constraints</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Fix the end at the wall support</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Loads</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Apply a <span class="userInput">3600</span> lbf load to the free end in the indicated direction
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/post_processing/post_processing_model.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Notes</h3>
+            
+            <p>A summary of the steps to complete the analysis is listed below.</p>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>Open the part file and start Advanced Simulation. Create new FEM and Simulation files.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>In the <span class="uiTerm">Simulation Navigator</span>, expand <span class="uiTerm">Polygon Geometry</span> and clear <span class="uiTerm">Polygon Body (2)</span>.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Define the material and the physical properties and create a 3D mesh collector.</p>
+                  
+                  <div class="activityDiv">
+                     <p>For a detailed description of how to complete this step, see the <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" href="#" onclick="popUpPageType('id741176.html','activity');return(false);">Define mesh properties with mesh collectors</a> activity.
+                     </p>
+                  </div>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Mesh the model with the <span class="uiTerm">3D Swept Mesh</span> command. Select an end of the I-beam and use the following settings:
+                  </p>
+                  
+                  <ol type="a" start="1">
+                     
+                     <li>
+                        
+                        <p>Set element type to <span class="uiTerm">CHEXA8</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Set element size to <span class="userInput">0.2</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Select <span class="uiTerm">On-Zero Triangles</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Clear <span class="uiTerm">Automatic Creation</span> and assign the mesh to the mesh collector created in the previous step.
+                        </p>
+                        
+                     </li>
+                     
+                  </ol>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">Note</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p>For this model, CHEXA8 elements are used to produce a highly ordered mesh with a line of nodes lying on the centerline of the web.</p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Make the Simulation the work part.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>To constrain the model, use the <span class="uiTerm">Fixed Translation Constraint</span> command.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>To apply the 3600 lbf force, use the <span class="uiTerm">Force</span> command. Distribute the force over the end of the beam.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Solve the model.</p>
+                  
+               </li>
+               
+            </ol>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Expected Results</h3>
+            
+            <p>To access the analysis results, in the <span class="uiTerm">Simulation Navigator</span>, double-click <span class="uiTerm">Results</span>.
+            </p>
+            
+            <p>The transverse shear stress for the I-beam is given by the YZ stress component. To view a contour plot of the YZ stress component, in the <span class="uiTerm">Post Processing Navigator</span>, expand <span class="uiTerm">Solution 1</span>. Next, expand <span class="uiTerm">Stress-Element-Nodal</span> and double-click <span class="uiTerm">YZ</span>. The resulting contour plot (in psi) should look similar to the one shown below.
+            </p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/post_processing/post_processing_results1.png"></p>
+            
+            <p>Now graph the transverse shear stress acting through the web of the beam:</p>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>Display the results using undeformed geometry. Use the <span class="uiTerm">Edit Post View</span> command. In the <span class="uiTerm">Post View</span> dialog box, clear <span class="uiTerm">Deformation</span>.
+                  </p>
+                  
+                  <p>The resulting contour plot (in psi) should look similar to the one depicted below.</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/post_processing/post_processing_results1_undeformed.png"></p>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">Note</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p>Later you will select node locations on a cutting plane. Using undeformed geometry allows the node locations and cutting plane to coincide.</p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Use the <span class="uiTerm">Edit Post View</span> command to display the stress results on a cutting plane some distance from either end of the beam.
+                  </p>
+                  
+                  <p>In the <span class="uiTerm">Post View</span> dialog box:
+                  </p>
+                  
+                  <ol type="a" start="1">
+                     
+                     <li>
+                        
+                        <p>From the <span class="uiTerm">Display on</span> list, select <span class="uiTerm">Cutting Plane</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Click the <span class="uiTerm">Options</span> button.
+                        </p>
+                        
+                     </li>
+                     
+                  </ol>
+                  
+                  <p>In the <span class="uiTerm">Cutting Plane</span> dialog box:
+                  </p>
+                  
+                  <ol type="a" start="1">
+                     
+                     <li>
+                        
+                        <p>From the <span class="uiTerm">Cut Plane</span> list, select <span class="uiTerm">Y</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Select <span class="uiTerm">Show Clipped Ghost</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>From the <span class="uiTerm">Clip Side</span> list, select <span class="uiTerm">Negative</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Enter <span class="userInput">8.0</span> for the slider position.
+                        </p>
+                        
+                     </li>
+                     
+                  </ol>
+                  
+                  <p>The resulting contour plot (in psi) should look similar to the one shown below.</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/post_processing/post_processing_results2.png"></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Collect the stress values for the nodes lying on the centerline of the web. In the <span class="uiTerm">Post Processing Navigator</span>, right-click <span class="uiTerm">Post View 1</span> and choose <span class="uiTerm">New Path</span>. In the <span class="uiTerm">Path</span> dialog box, select <span class="uiTerm">Coordinates</span> from the <span class="uiTerm">Method</span> list and use the probe to identify nodes on the centerline of the web at the top and bottom of the cross section.
+                  </p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/post_processing/post_processing_results3.png"></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Graph the results along the path. In the <span class="uiTerm">Post Processing Navigator</span>, right-click <span class="uiTerm">Post View 1</span> and choose <span class="uiTerm">New Graph</span>.
+                  </p>
+                  
+                  <p>In the <span class="uiTerm">Graph</span> dialog box:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>In the <span class="uiTerm">X Axis</span> group, from the <span class="uiTerm">Define By</span> list, select <span class="uiTerm">Path Length</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>In the <span class="uiTerm">Y Axis</span> group, select <span class="uiTerm">Define By Path</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Select <span class="uiTerm">Include Intersections</span>.
+                        </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/post_processing/post_processing_graph.png"></p>
+                  
+               </li>
+               
+            </ol>
+            
+            <p>Interpretation of the graph can be improved by editing the default format settings. Before you edit the graph format, create an <span class="uiTerm">XY Graph Template</span> where you will save the edited format. If you do not create a graph template, the formatting changes you make are saved in the default template.
+            </p>
+            
+            <p>To activate the graph template that you created, in the <span class="uiTerm">XY Function Navigator</span>, under <span class="uiTerm">XY Graph Templates</span>, right-click the graph template and select <span class="uiTerm">Activate</span>.
+            </p>
+            
+            <p>Under the <span class="uiTerm">Results</span> tab, in the <span class="uiTerm">XY Graph</span> group, use the <span class="uiTerm">Editing</span> command to:
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Specify the Y-axis range to be from <span class="userInput">0</span> to <span class="userInput">4000</span> and change the Y-axis label to <span class="userInput">Stress (psi)</span>.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Specify the X-axis range to be from <span class="userInput">0</span> to <span class="userInput">5</span> and change the X-axis label to <span class="userInput">Position (in)</span>.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Change the title of the graph to <span class="userInput">Transverse Shear Stress vs. Position</span>.
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>After editing the graph formatting, save the graph template. After formatting the graph, it will look similar to the following:</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/projects/post_processing/post_processing_graph_edited.png"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Completed project</h3>
+            
+            <p>For your reference, a completed model for this project is located in the <span class="pathName">..\projects\solved_project_models</span> folder.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

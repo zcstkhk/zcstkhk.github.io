@@ -1,0 +1,130 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2013 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Review the modes from Response Simulation</title>
+      <meta http-equiv="refresh" content="0;url=index.html?goto=id1389680.html">
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Review the modes from Response Simulation</h2>
+         
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/simulation_navigator_tab.gif" border="0"> &nbsp; <span class="uiTerm">Simulation Navigator</span></p>
+         
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0">&nbsp; <span class="uiTerm">Normal Modes [38]</span> (under the <span class="uiTerm">Response Simulation 1</span> node)
+               </p>
+               
+               <table class="attentionTable attn_note">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">Note</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>The number 38 indicates the number of normal modes that were output. This means that the MEFFMASS threshold filtered out 22 of the 60 modes that you requested.</p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="45">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="banner_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="banner_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Response Simulation Details View</span></p>
+                           
+                        </td>
+                        
+                        <td class="banner_right" colspan="1" rowspan="1" width="45"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+               <p>This panel displays the dynamic characteristics (frequency, mass, damping, and stiffness) for each normal mode solved in the response dynamics solution.</p>
+               
+               <p>Modes with an asterisk character (*) in the # Mode column are considered &quot;active&quot; in your response evaluations. </p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/fan/fan_06.gif"></p>
+               
+               <p>Typically, you want the total effective mass in the direction of the applied force to be 80% or higher. In this model, you apply the loads in only the Z-direction. The total effective mass in the Z-direction is approximately 87%.</p>
+               
+               <table class="attentionTable attn_tip">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">Tip</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>If you want to include more mass, rerun the normal modes solution with either or both of the following changes:</p>
+                        
+                        <ul>
+                           
+                           <li>
+                              
+                              <p>Request that the software calculate more modes.</p>
+                              
+                           </li>
+                           
+                           <li>
+                              
+                              <p>Decrease the MEFFMASS threshold so the software retains more modes for the response simulation.</p>
+                              
+                           </li>
+                           
+                        </ul>
+                        
+                        <p>For this example, you do not need to rerun the solution.</p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>
