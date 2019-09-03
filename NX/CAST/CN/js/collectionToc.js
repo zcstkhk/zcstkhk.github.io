@@ -841,8 +841,8 @@ d223e382.addChild(d223e385);
 d223e386=new Topic("Advanced Simulation Processes and Solutions Activities (NX 9)","topicSet","d223e386","xid292998/index.html","","");
 d223e382.addChild(d223e386);
 
-/*
-d223e388=new Part("PCB Exchange Tutorials","d223e388","","");
+
+d223e388=new Part("PCB Exchange Activities","d223e388","","");
 d223e382.addChild(d223e388);
 
 d223e390=new Topic("开始课程之前的准备","topicSet","d223e390","pcbx_tutorials/id778571.html","","");
@@ -859,6 +859,5 @@ d223e388.addChild(d223e396);
 
 d223e398=new Topic("Thermal analysis of a PC assembly","topicSet","d223e398","pcbx_tutorials/id779406.html","","");
 d223e388.addChild(d223e398);
-*/
 
 toc=d223e2;
