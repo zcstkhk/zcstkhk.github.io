@@ -838,6 +838,9 @@ d223e382.addChild(d223e384);
 d223e385=new Topic("模具设计入门","topicSet","d223e385","moldwizard_intro/index.html","","");
 d223e382.addChild(d223e385);
 
+d223e386=new Topic("Advanced Simulation Processes and Solutions Activities (NX 9)","topicSet","d223e386","xid292998/index.html","","");
+d223e382.addChild(d223e386);
+
 /*
 d223e388=new Part("PCB Exchange Tutorials","d223e388","","");
 d223e382.addChild(d223e388);
