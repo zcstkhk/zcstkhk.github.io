@@ -1,0 +1,113 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>通过曲线网格对话框的设置组</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>通过曲线网格对话框的设置组</h2>
+         
+         <p><strong>体类型</strong>允许您指定<strong>片体</strong>或<strong>实体</strong>，对于实体，选定的曲线必须形成封闭环。</p>
+         
+         <p><strong>重新构建</strong>选项仅可用于<strong>法向构造</strong>选项。 </p>
+         
+         <p><span class="uiTerm">Rebuild</span> is available in the <span class="uiTerm">Section</span> direction and the <span class="uiTerm">Lofting</span> direction depending on the <span class="uiTerm">Output Surface Options</span> choice, and whether or not the <span class="uiTerm">Preserve Shape</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_on.gif" border="0"> check box is selected.
+         </p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>It is always available in the <span class="uiTerm">Lofting</span> direction.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>It is available in the <span class="uiTerm">Section</span> direction for the <span class="uiTerm">Normal</span> and <span class="uiTerm">Spline Points</span> <span class="uiTerm">Output Surface Construction</span> setting and if the <span class="uiTerm">Preserve Shape</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_off.gif" border="0"> check box is cleared.
+               </p>
+               
+            </li>
+            
+         </ul>
+         
+         <p><span class="uiTerm">Rebuild</span> constructs a high-quality surface by redefining the degree and/or segments of the sections. If the sections have different degree or segmentation, the output surface may be too complex or not smooth. This could prevent continuity between surfaces.
+         </p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><span class="uiTerm">None</span> &ndash; turns <span class="uiTerm">Rebuild</span> off.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">Degree and Tolerance</span> &mdash; Rebuilds the surface using the specified degree. Higher degree generally reduces the chance of unwanted inflections and sharp changes in curvature. NX inserts knots as required to achieve the G0, G1 and G2 tolerance settings.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">Auto Fit</span> &mdash; Creates the smoothest possible surface within the specified <span class="uiTerm">Maximum Degree</span> and <span class="uiTerm">Maximum Segments</span>. NX tries to rebuild the surface without adding segments, up to the maximum degree.
+               </p>
+               
+               <p>If the surface is out of the tolerance range, segments are added up to the maximum number you specify. If the surface is still out of the tolerance range, the surface is created and an error message displays.</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>There are four <span class="uiTerm">Tolerances</span>. Not all are available at all times.
+         </p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><span class="uiTerm">Intersection</span> is the allowable distance between the <span class="uiTerm">Primary</span> and <span class="uiTerm">Cross</span> curves.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">G0 (Position)</span></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">G1 (Tangent)</span></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">G2 (Curvature)</span></p>
+               
+               <p>The <span class="uiTerm">G1</span> and <span class="uiTerm">G2</span> continuity tolerances let you control the accuracy of the rebuilt surface in relation to the input curves. The rebuilt surface will not deviate from the input curves greater than the values specified for these tolerances.
+               </p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

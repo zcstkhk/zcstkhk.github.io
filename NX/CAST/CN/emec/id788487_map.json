@@ -1,0 +1,8 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开部件",file:"id788491.html",type:"topic",parent:""},
+{id:"d7e3",title:"创建一个面铣工序",file:"id967538.html",type:"topic",parent:""},
+{id:"d7e4",title:"建立切削区域",file:"id967540.html",type:"topic",parent:""},
+{id:"d7e5",title:"设置进给率和速度",file:"id967662.html",type:"topic",parent:""},
+{id:"d7e6",title:"指定切削模式",file:"id967664.html",type:"topic",parent:""},
+{id:"d7e7",title:"生成并查看刀轨",file:"id967666.html",type:"topic",parent:""},
+{id:"d7e8",title:"显示材料移除",file:"id967668.html",type:"topic",parent:""}]}

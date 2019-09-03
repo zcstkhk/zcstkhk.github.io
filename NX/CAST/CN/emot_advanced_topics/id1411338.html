@@ -1,0 +1,83 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>工作流</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>工作流</h2>
+         
+         <p>可以使用 NX 或者 Simulink 作为主程序运行协同仿真。</p>
+         
+         <p>以下步骤对于两种工作流来说是一样的。</p>
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>在 Simulink 中创建控制系统文件。</p>
+               <p>控制系统工程在 Matlab Simulink 中创建一个控制框图(*.mdl 文件)，该框图应该为集成 NX Plant 块预留一个空间。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>指定 MATLAB 的位置。</p>
+               <p>如果使用 NX 作为协同仿真的主程序，必须在 NX <strong>用户默认设置</strong>对话框中指定 MATLAB 可执行文件的位置。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在运动仿真中激活<strong>协同仿真</strong>环境。</p>
+               <p>必须在创建运动仿真时，或者在<strong>环境</strong>对话框中激活<strong>协同仿真</strong>环境选项。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>创建一个<strong>控制/动力学</strong>运动解算方案。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>创建工厂输入。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>将工厂输入添加到力\力矩或者运动驱动中。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>创建工厂输出。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>决定使用 NX 还是 Simulink 作为协同仿真的主程序。</p>
+               <p>当您从运动仿真中运行求解过程时，每次您更改控制系统时都需要一次集成的步骤。如果您的机构没有经过多次更改，并且您的基本注重点是要优化控制系统，可能从 Simulink 开始运行求解过程要更方便些。</p>
+               
+            </li>
+            
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

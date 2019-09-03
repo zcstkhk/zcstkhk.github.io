@@ -1,0 +1,263 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>装配约束类型</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>装配约束类型</h2>
+         <a name="ndxgenid_eamc_11"></a>
+         
+         
+         <table cellspacing="2" width="100%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="77*">
+               
+               <col span="1" width="122*">
+            </colgroup>
+            
+            <tr bgcolor="silver" valign="top">
+               
+               <th colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">装配约束类型</p>
+                  
+               </th>
+               
+               <th colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">描述</p>
+                  
+               </th>
+               
+            </tr>
+            
+            <tr bgcolor="#F0F0F0" valign="top">
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/component_position_commands/assembly_constraints/assy_constraint_angle_icon.gif" border="0"></p>
+                  
+                  <p class="no-bottom-margin"><strong>角度</strong></p>
+                  
+               </td>
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">定义两个对象间的角度尺寸。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr bgcolor="#F0F0F0" valign="top">
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/component_position_commands/assembly_constraints/assy_constraint_bond_icon.gif" border="0"></p>
+                  
+                  <p class="no-bottom-margin"><strong>胶合</strong></p>
+                  
+               </td>
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p>将组件&ldquo;焊接&rdquo;在一起，使它们作为刚体移动。</p>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                          <p class="attn_title">注释</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                        <p>胶合约束只能应用于组件，或组件和装配级的几何体。其他对象不可选。                        </p></td>
+                    </tr>
+                 </table>
+                  
+              </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/component_position_commands/assembly_constraints/assy_constraint_center_icon.gif" border="0"></p>
+                  
+                  <p class="no-bottom-margin"><strong>中心</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+               <p>使一对对象之间的一个或两个对象居中，或使一对对象沿另一个对象居中。</p></td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/component_position_commands/assembly_constraints/assy_constraint_concentric_icon.gif" border="0"></p>
+                  
+                  <p class="no-bottom-margin"><strong>同心</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">约束两个组件的圆形边或椭圆形边，以使中心重合，并使边的平面共面。</p></td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/component_position_commands/assembly_constraints/assy_constraint_distance.gif" border="0"></p>
+                  
+                  <p class="no-bottom-margin"><strong>距离</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">指定两个对象之间的最小 3D 距离。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/component_position_commands/assembly_constraints/assy_constraint_fit_icon.gif" border="0"></p>
+                  
+                  <p class="no-bottom-margin"><strong>拟合</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>将半径相等的两个圆柱面结合在一起。此约束对确定孔中销或螺栓的位置很有用。</p>
+               <p>如果以后半径变为不等，则该约束无效。</p></td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/component_position_commands/assembly_constraints/assy_constraint_fix_icon.gif" border="0"></p>
+                  
+                  <p class="no-bottom-margin"><strong>固定</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>将组件固定在其当前位置上。</p>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">注释</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p class="no-bottom-margin">在需要隐含的静止对象时，固定约束会很有用。如果没有固定的节点，整个装配可以自由移动。</p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/component_position_commands/assembly_constraints/assy_constraint_parallel_icon.gif" border="0"></p>
+                  
+                  <p class="no-bottom-margin"><strong>平行</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">将两个对象的方向矢量定义为相互平行。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/component_position_commands/assembly_constraints/assy_constraint_perp_icon.gif" border="0"></p>
+                  
+                  <p class="no-bottom-margin"><strong>垂直</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>将两个对象的方向矢量定义为相互垂直。</p>
+                  <p class="no-bottom-margin">&nbsp;</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/component_position_commands/assembly_constraints/assy_constraint_touchalign_icon.gif" border="0"></p>
+                  
+                  <p class="no-bottom-margin"><strong>接触对齐</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>约束两个组件，使它们彼此接触或对齐。</p>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                          <p class="attn_title">注释</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                        <p><strong>接触对齐</strong>是最常用的约束。</p></td>
+                    </tr>
+                 </table>
+                  
+              </td>
+               
+            </tr>
+            
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

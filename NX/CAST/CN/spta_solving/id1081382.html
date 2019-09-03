@@ -1,0 +1,150 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>NX Nastran 仿真文件</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>NX Nastran 仿真文件</h2>
+         
+         <p>对于 NX Nastran，将在求解模型时生成以下文件：</p>
+         
+         <table border="1" cellpadding="4" cellspacing="2" width="100%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="37*">
+               
+               <col span="1" width="161*">
+            </colgroup>
+            
+            <thead>
+               
+               <tr bgcolor="silver">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">文件类型</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">描述</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+               <tr bgcolor="#F0F0F0" valign="top">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">*.dat</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p>NX Nastran 二进制输入文件</p>
+                     
+                     <p>包含模型数据、解算方案选项以及输出请求</p>
+                     
+                     <p>可以在求解开始时使用 NX 或文本编辑器进行编辑</p>
+                     
+                     <p class="no-bottom-margin">这个文件也被称为输入“甲板”。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#F0F0F0" valign="top">
+                  
+                  <td colspan="1" height="118" rowspan="1">
+                     
+                     <p class="no-bottom-margin">*.f06</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" height="118" rowspan="1">
+                     
+                     <p>包含比如位移以及应力等结果数据，诊断信息、警告以及错误也将被写入这个文件中</p>
+                     
+                     <p class="no-bottom-margin">.f06 文件中的信息对于排除求解问题十分重要</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#F0F0F0" valign="top">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">*.f04</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">包含辅助监视并调整分析作业表现的信息</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">*.log</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">包含比如运行分析所在计算机的名称等系统信息，它也包含在分析过程中遇到的系统错误</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">*.op2</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p>从求解器中输出的结果</p>
+                     
+                     <p class="no-bottom-margin">NX 将在后处理时读取这个二进制文件</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

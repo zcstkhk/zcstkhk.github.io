@@ -1,0 +1,224 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>过渡选项</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>过渡选项</h2>
+         <p><strong>过渡</strong> — 使用决定插补类型的角度或长度手柄，来创建后续基本曲线段的偏置曲线。将从基线的片段及其相应的偏置曲线中创建直纹曲面。</p>
+         <table class="attentionTable attn_tip">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">提示</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p> 您可以右击<strong>角度</strong>和<strong>长度</strong>手柄，以快速访问如下所示的过渡选项。 </p>
+                  
+               </td>
+            </tr>
+         </table>
+         <table border="0" cellpadding="2" cellspacing="3" width="90%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="99*">
+               
+               <col span="1" width="105*">
+               
+               <col span="1" width="95*">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr bgcolor="silver">
+                  
+                  <td align="center" colspan="3" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="literalText">过渡选项</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td align="center" bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>该表格列出了过渡设置应用在(3)选定手柄(1)与下一个手柄(2)之间在选定边的方向上。</p>
+                     
+                     <p class="no-bottom-margin">这些插图编号适用于这个表格中的所有图像。</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="left"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/law_extension/law_extension_law_extnsion_trans.png"></p>
+                     
+                  </td>
+                  
+                  <td align="left" bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <ul class="unmarkedList">
+                        <li class="condense">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_1_small.gif" border="0"> 为过渡设置选定的手柄</p>
+                           
+                        </li>
+                        <li class="condense">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_2_small.gif" border="0"> 过渡设置的端点</p>
+                           
+                        </li>
+                        <li class="condense">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_3_small.gif" border="0"> 被修改的截面曲线 — 手柄之间的段</p>
+                           
+                        </li>
+                     </ul>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#F0F0F0">
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>恒定</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/law_extension/law_extension_law_extnsion_ex2.png"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">为中点(1)和端点手柄(2)之间的分段创建过渡，保持固定的开始值。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#F0F0F0">
+                  
+                  <td align="center" colspan="1" height="22" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>线性</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" height="22" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/law_extension/law_extension_law_extnsion_ex1.png"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" height="22" rowspan="1">
+                     
+                  <p class="no-bottom-margin">为中点(1)和端点手柄(2)之间的分段创建过渡，它们从(1)处的起始值线性变化到(2)处的终点值。</p></td>
+                  
+               </tr>
+               
+               <tr bgcolor="#F0F0F0">
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>最小/最大</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/law_extension/law_extension_law_extnsion_ex4.png"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">为中间(1)和端点手柄(2)之间的分段创建三次或 S 形过渡。它们从起始点(1)到端点(2)的值变化是非线性的。分段的端切线与其邻近的分段对齐。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#F0F0F0">
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>圆角</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/law_extension/law_extension_law_extnsion_ex3.png"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">为中间(1)和端点手柄(2)之间的分段创建过渡。这些片段在相邻曲线分段之间创建一个平滑的桥接曲线。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#F0F0F0">
+                  
+                  <td align="center" colspan="1" height="88" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>对所有应用过渡</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" height="88" rowspan="1"></td>
+                  
+                  <td colspan="1" height="88" rowspan="1">
+                     
+                     <p class="no-bottom-margin">(仅对起始手柄可选)将第一个分段的过渡应用到所有的分段。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#F0F0F0">
+                  
+                  <td colspan="1" height="98" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>设置原点参考</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" height="98" rowspan="1"></td>
+                  
+                  <td colspan="1" height="98" rowspan="1">
+                     
+                     <p class="no-bottom-margin">(仅对角度手柄可选)将角度的方位重置到0（最初的参考点）。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

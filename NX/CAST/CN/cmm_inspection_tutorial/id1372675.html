@@ -1,0 +1,288 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>打开检测设置文件并链接到 PMI</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>打开检测设置文件并链接到 PMI</h2>
+         
+         <p>在这个练习中，您将打开包含要对齐的部件文件的检测设置文件，您将加载所有设备组件，然后将检测设置文件链接到部件文件的产品制造信息(PMI)数据。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>如果您还没有进行这些步骤，请<a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" class="links" href="javascript:void(0)" onclick="popUpPage('cmm_inspection_tutorial/index.html?goto=xid465634.html&amp;vars=-aux,-home,-nav','link','menubar=yes,status=no,resizable=yes,toolbar=no,scrollbars=yes,location=yes,directories=no,height=400,width=600,left=10,top=10');return(false);">下载</a>训练材料并设置装配加载选项。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>选择<strong>文件&rarr;打开</strong>并在下面的文件夹中打开 <span class="codeText">4hole_pmi_plane_line_pt.prt</span>：</p>
+                  
+                  <p><span class="codeText">[路径]\alignment_2011_06_10\</span></p>
+                  
+                  <p>其中<span class="codeText">[路径]</span>是您解压对齐文件的目录。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>On the <strong>Navigator</strong> toolbar, click <strong>Machine View</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/nx_cmm/navigator/machine_view.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>Load a virtual CMM.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <ol type="a">
+                     <li>
+                        
+                        
+                        <p>In the <strong>Inspection Navigator</strong>, double-click <strong>GENERIC_MACHINE</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Generic Machine</strong> dialog box, click <strong>Retrieve Machine from Library</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/nx_cmm/generic_machine/retrieve_machine_from_libra.gif" border="0">.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Library Class Selection</strong> dialog box, in the <strong>Machine</strong> list, double-click <strong>CMM</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Search Result</strong> dialog box, from the <strong>Matching Items</strong> list, double-click <strong>dea_swift</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Part Mounting</strong> dialog box, in the <strong>Placement</strong> group, select <strong>Use Part Mount Junction</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>Click <strong>CSYS Dialog</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/common/csys_dialog.gif" border="0">.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>CSYS</strong> dialog box, from the <strong>Type</strong> list, select <strong>Absolute CSYS</strong>, and click <strong>OK</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Part Mounting</strong> dialog box, click <strong>Select Part</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/assemblies/extraction_path/select_component.gif" border="0">, and in the graphics window, click the solid body of the four-hole inspection part.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>Click <strong>OK</strong>.
+                        </p>
+                        
+                        
+                        <div class="stepResult">
+                           
+                           <p>An <strong>Information</strong> window reports the status of your machine load, including the location of the machine and related objects.
+                           </p>
+                           
+                        </div>
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>Close the <strong>Information</strong> window. The CMM is now loaded.
+                        </p>
+                        
+                        
+                     </li>
+                  </ol>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>Load a probe head.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <ol type="a">
+                     <li>
+                        
+                        
+                        <p>In the <strong>3 Axis Gantry Cmm</strong> dialog box, in the <strong>Library</strong> group, click <strong>Retrieve Devices from Library</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/nx_cmm/generic_machine/retrieve_devices_from_libra.gif" border="0">.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Library Class Selection</strong> dialog box, double-click <strong>Head</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Search Result</strong> dialog box, in the <strong>Matching Items</strong> list, double-click <strong>Renishaw_PH10M</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                  </ol>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>Load a probe.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <ol type="a">
+                     <li>
+                        
+                        
+                        <p>In the <strong>Library</strong> group, click <strong>Retrieve Tools from Library</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/nx_cmm/generic_machine/retrieve_tools_from_libra.gif" border="0">.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Search Criteria</strong> dialog box, click <strong>OK</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Search Result</strong> dialog box, in the <strong>Matching Items</strong> group, double-click <strong>SP25_SH2_A-5003-0063-01-A</strong>.
+                        </p>
+                        
+                        
+                        <div class="stepResult">
+                           
+                           <p>The probe does not appear in the graphics window but will display when you run animations.</p>
+                           
+                        </div>
+                        
+                     </li>
+                  </ol>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>Click <strong>OK</strong> to close the <strong>3 Axis Gantry Cmm</strong> dialog box.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>On the <strong>Navigator</strong> toolbar, click <strong>Program Order View</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/nx_cmm/navigator/program_order_view.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>On the <strong>Operations</strong> toolbar, click <strong>Link to PMI</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/nx_cmm/operations/link_to_pmi.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Link PMI</strong> dialog box, accept the default settings (<strong>Create Paths</strong> = <strong>Yes</strong>, <strong>Tool</strong> = <strong>Auto</strong>) and click <strong>OK</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>An <strong>Information</strong> window reports the status of all PMI notations that were successfully linked to your inspection program.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>Close the <strong>Information</strong> window and choose <strong>File</strong>&rarr;<strong>Save</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         <div class="stepListResult">
+            
+            <p>The <strong>Inspection Navigator</strong> now contains sensors, features, inspection paths, tolerances, and outputs that are automatically generated from PMI. You are now ready to set up your program and begin the process of defining part alignment.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>轻量级剖视图概述</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>轻量级剖视图概述</h2>
+         
+         <p>使用<strong>轻量级剖视图</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/pmi/section_view/lightweight_section_view.gif" border="0"> 命令来创建模型简单剖视图的可视化表示，并以3D 剖视图显示结果。轻量级剖视图由图形窗口中的剪切平面定义，但并不切除真实的模型几何体。剪切是由平面定义，而不是由曲线定义的。您可以剪切选定的组件或体，而保持其它不受影响的组件或体的显示。</p>
+         
+         <p>这种剖视图不影响您部件文件的大小，并且比使用<strong>剖视图</strong>命令创建的剖视图更新更快。</p>
+         
+         <p>您可以创建两种轻量级剖视图：</p>
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p><strong>一个平面</strong></p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>仍然显示未切除的几何体。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p><strong>方块</strong></p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>对于选定的组件或体，只有位于方块内部的材料才会显示。您可以对非常大的模型使用这种剖视图。</p>
+                  
+               </div>
+            </div>
+         </div>
+         
+         <table border="0" cellpadding="5" width="90%" align="center">
+            
+            <thead>
+               
+               <tr>
+                  
+                  <td align="center" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">完整模型</p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">一个平面剖切</p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">方块剖切</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td align="center" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/pmi/lightweight_section_view/before_lightweight_section.png"></p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/pmi/lightweight_section_view/plane_lightweight_section.png"></p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1" valign="middle">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/pmi/lightweight_section_view/box_lightweight_section.png"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         
+         <div class="division">
+            
+            <h3>方块类型的 PMI 轻量级剖视图以及组件选择</h3>
+            
+            <p>您创建方块类型的 PMI 轻量级剖视图时，您可以从装配中选择一个组件来定义方块，如果您选择了一个组件，则选定组件的边界框将定义方块的边界，方块的位置与选定组件是关联的。</p>
+            
+         </div>
+         
+         
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="152">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">PMI</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>PMI→剖视图</strong>下拉菜单→<strong>轻量级剖视图</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/pmi/section_view/lightweight_section_view.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>产品制造信息→剖视图→轻量级剖视图</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">部件导航器</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">在<strong>模型视图</strong>下方，右击要编辑的模型视图名称</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

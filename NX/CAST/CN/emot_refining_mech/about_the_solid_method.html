@@ -1,0 +1,47 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>关于实体接触类型</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>关于实体接触类型</h2>
+         
+         <p>RecurDyn <span class="uiTerm">实体</span>3D 接触类型将在配对的实体接触时在它们之间生成力。接触体(亦即由于穿透而重叠在一起的体)为实体。</p>
+         
+         <p>对于大多数构建接触的情况，您可以在<STRONG>基本</STRONG>选项卡中定义参数，比如<STRONG>刚度</STRONG>、<STRONG>材料阻尼</STRONG>，而无须更改<STRONG>高级</STRONG>选项卡中的默认参数设置。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/refining/solid_contact.gif"></p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p><strong>小平面</strong>以及<strong>拟合</strong>类型的接触向后兼容在 NX 6.0中创建的运动机构。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         
+         <p>接触的配对体中的第一个实体，称为操作体，其中必须包含连杆，第二个实体T称为基本体，不必包含连杆。</p>
+         
+         <p>接触的配对体必须为实体，而不能使用其它几何体，比如曲线或点。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

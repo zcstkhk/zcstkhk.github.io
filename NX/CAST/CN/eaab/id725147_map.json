@@ -1,0 +1,9 @@
+{identifier:"id",label:"title",items:[
+{id:"d8e2",title:"设置装配加载选项并打开装配文件",file:"id999438.html",type:"topic",parent:""},
+{id:"d8e3",title:"查看并编辑装配显示",file:"id940460.html",type:"topic",parent:""},
+{id:"d8e4",title:"为装配文件计算重量",file:"id940462.html",type:"topic",parent:""},
+{id:"d8e5",title:"完全打开部件以包含重量数据",file:"id940464.html",type:"topic",parent:""},
+{id:"d8e6",title:"赋予重量值",file:"id940466.html",type:"topic",parent:""},
+{id:"d8e7",title:"对整个装配重新计算重量属性",file:"id940468.html",type:"topic",parent:""},
+{id:"d8e8",title:"计算部件质量",file:"id940470.html",type:"topic",parent:""},
+{id:"d8e9",title:"定义一个最大重量",file:"id940472.html",type:"topic",parent:""}]}

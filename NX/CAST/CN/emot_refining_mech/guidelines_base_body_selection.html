@@ -1,0 +1,52 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>选择接触体指南</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>选择接触体指南</h2>
+         
+         <p>定义3D 接触时，您必须指定基本体与操作体，接触的精度取决于您如何指定这些体。</p>
+         
+         <p>对于操作体，选择在仿真中运动更多的体。例如，如果您正在构建滚动的车轮与路面之间的接触，那么操作体应该是车轮，路面应该是基本体。</p>
+         
+         
+         <p>指定基本体时，遵循下列原则：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>如果其中一个体是固定的，选择固定的体。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>选择受约束最多的体(亦即自由度最少的体)。基本体位置和方位的变化小于操作体的运动。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>选择较大的体。在动力学分析中，质量较大的几何体通常更稳定。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

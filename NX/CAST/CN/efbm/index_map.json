@@ -1,0 +1,14 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"基于特征的加工",file:"id1127424.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"基于特征加工介绍",type:"topicMap",parent:"",children:[
+{id:"d5e6",title:"基于特征的加工",file:"overview_fbm.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"铣削支持的基于特征加工",file:"fbm_milling_support.html",type:"topic",parent:"d5e5"},
+{id:"d5e8",title:"车削支持的基于特征加工",file:"fbm_turning_support.html",type:"topic",parent:"d5e5"},
+{id:"d5e9",title:"电火花加工支持的基于特征加工",file:"fbm_wedm_support.html",type:"topic",parent:"d5e5"},
+{id:"d5e10",title:"基于特征加工的工作流",file:"workflow_fbm.html",type:"topic",parent:"d5e5"}]},
+{id:"d5e12",title:"加工特征",file:"machining_features.html",type:"topic",parent:"",children:[
+{id:"d5e13",title:"创建加工设置并查找特征",file:"id1172587.html",type:"activity",parent:"d5e12"}]},
+{id:"d5e15",title:"优化",file:"optimization.html",type:"topic",parent:"",children:[
+{id:"d5e16",title:"优化定心钻子程序",file:"id1172644.html",type:"activity",parent:"d5e15"}]}
+]}

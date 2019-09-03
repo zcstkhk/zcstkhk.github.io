@@ -1,0 +1,11 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开部件",file:"rotating_assem_open_the_part.html",type:"topic",parent:""},
+{id:"d7e3",title:"设置角色",file:"mtn_role_adv_full.html",type:"topic",parent:""},
+{id:"d7e4",title:"重置对话框内存",file:"id353012.html",type:"topic",parent:""},
+{id:"d7e5",title:"创建仿真",file:"create_a_simulation.html",type:"topic",parent:""},
+{id:"d7e6",title:"创建活塞连杆",file:"create_piston_link.html",type:"topic",parent:""},
+{id:"d7e7",title:"创建连杆连杆",file:"create_connrod_link.html",type:"topic",parent:""},
+{id:"d7e8",title:"创建曲柄连杆",file:"create_crank_link.html",type:"topic",parent:""},
+{id:"d7e9",title:"显示实体",file:"display_the_solid_bodies.html",type:"topic",parent:""},
+{id:"d7e10",title:"添加实体到连杆中",file:"add_solid_bodies_to_links.html",type:"topic",parent:""},
+{id:"d7e11",title:"定义材料属性",file:"add_material_properties.html",type:"topic",parent:""}]}

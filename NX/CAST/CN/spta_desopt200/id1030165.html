@@ -1,0 +1,233 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>查看模型</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>查看模型</h2>
+         <p>提供的仿真模型中包含预先定义好的物理和材料属性、约束以及载荷条件。本练习将主要介绍 SOL 200解算方案的创建、求解以及后处理。</p>
+         <div class="division">
+            
+            <h3>物理属性和材料</h3>
+            
+            <table border="0" cellpadding="4" cellspacing="2" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+               </colgroup>
+               
+               <tbody valign="top">
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p><strong>类型</strong>: PSHELL</p>
+                        
+                        <p><strong>名称</strong>: Plate 
+                        </p>
+                        
+                        <p><strong>厚度</strong>: 0.15 in
+                        </p>
+                        
+                        <p class="no-bottom-margin"><strong>材料</strong>: Aluminum 
+                        </p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p><strong>类型</strong>: PSHELL 
+                        </p>
+                        
+                        <p><strong>名称</strong>: Web 
+                        </p>
+                        
+                        <p><strong>厚度</strong>: 0.20 inches
+                        </p>
+                        
+                        <p class="no-bottom-margin"><strong>材料</strong>: Aluminum 
+                        </p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p><strong>类型</strong>: PBARL
+                        </p>
+                        
+                        <p><strong>名称</strong>: Web Cap 
+                        </p>
+                        
+                        <p><strong>横截面</strong>: BAR 
+                        </p>
+                        
+                        <p><strong>尺寸</strong>: 0.25 in x 0.25 in</p>
+                        
+                        <p class="no-bottom-margin"><strong>材料</strong>: Aluminum 
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         <div class="division">
+            
+            <h3>约束</h3>
+            
+            <table border="0" cellpadding="4" cellspacing="2" width="369" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="83*">
+                  
+                  <col span="1" width="107*">
+               </colgroup>
+               
+               <tbody valign="top">
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>拐角平移固定约束</p>
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/desopt200/constraints1.png"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>后侧边 X 和 Y 固定约束</p>
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/desopt200/constraints2.png"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <table border="0" cellpadding="4" cellspacing="2" width="278" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="100*">
+               </colgroup>
+               
+               <tbody valign="top">
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>沿周长固定 Z 方向</p>
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/desopt200/constraints3.png"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         <div class="division">
+            
+            <h3>载荷 (用于子工况 1)</h3>
+            
+            <table border="0" cellpadding="4" cellspacing="2" frame="void" rules="none" width="371" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="95*">
+                  
+                  <col span="1" width="102*">
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1" valign="top">
+                        
+                        <p>沿前侧边分布的轴向载荷</p>
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/desopt200/loads1.png"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1" valign="top">
+                        
+                        <p>平板上的压力载荷</p>
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/desopt200/loads2.png"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         <div class="division">
+            
+            <h3>载荷 (用于子工况 2)</h3>
+            
+            <table border="0" cellpadding="4" cellspacing="2" frame="void" rules="none" width="210" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="100*">
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1" valign="top">
+                        
+                        <p>集中力</p>
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/desopt200/loads3.png"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>摩擦状态</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>摩擦状态</h2>
+         
+         <p>静摩擦在运动副处于静止状态时发挥作用，运动副开始移动时，求解器将逐渐把静摩擦变为动摩擦。</p>
+         
+         <p>使用<strong>静摩擦</strong>来定义静摩擦系数，使用<strong>动摩擦</strong>来定义动摩擦系数。</p>
+         
+         <p>求解器通过将运动副的速度与<strong>静摩擦过渡速度</strong>阈值进行对比，以确定运动副的当前状态。</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>运动副速度小于<strong>静摩擦过渡速度</strong>阈值时，求解器将使用<strong>静摩擦</strong>*法向力来计算有效摩擦。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>运动副速度处于<strong>静摩擦过渡速度</strong>阈值的1到1.5倍时，求解器将使用 STEP 函数来逐渐把摩擦系数从<strong>静摩擦</strong>向<strong>动摩擦</strong>过渡。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>滑动副速度超过<strong>静摩擦过渡速度</strong>阈值的1.5倍时，求解器将使用<strong>动摩擦</strong>*法向力来计算有效摩擦。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

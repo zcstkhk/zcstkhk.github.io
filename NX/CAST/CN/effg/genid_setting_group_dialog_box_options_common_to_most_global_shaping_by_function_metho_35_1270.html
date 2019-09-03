@@ -1,0 +1,62 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>大多整体变形方法公用的设置组选项</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>大多整体变形方法公用的设置组选项</h2>
+         <p><strong>过渡</strong>将定义要对片体进行的修改。不适用于&ldquo;按曲面&rdquo;和&ldquo;按曲线&rdquo;类型，选项包括：</p>
+         <ul>
+            
+            <li>
+               
+               <p><strong>匹配相切</strong> — 在区域边界处匹配已变形片体的相切性。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>受控制的形状</strong> — 只匹配区域边界处的位置，从而在区域边界有一个角度。</p>
+               
+               <ul class="unmarkedList">
+                  <li>
+                     
+                     <p><strong>形状控制</strong>滑块可以更改曲线的斜率。范围是 0.0 到 1.0。&ldquo;按函数变形&rdquo;产生在中心具有最高值和零斜率的 S 外形，并且在区域边界处下降到零。使用此滑块可控制下降的速度。</p>
+                     
+                  </li>
+               </ul>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>按规律</strong> — 使用规律子函数选项对片体进行变形。在此情况下，&ldquo;区域中的点&rdquo;(t=0)的值必须是 1，并且区域边界(t=1)上的值必须为 0。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>曲率连续</strong> — 在区域边界处匹配已变形片体的曲率连续性。</p>
+               
+            </li>
+            
+         </ul>
+         <p><strong>保留输入片体</strong>将创建新的片体而不修改输入片体。</p>
+         <p><strong>体类型</strong> — 默认情况下，<strong>整体变形</strong>将生成片体。选择<strong>实体</strong>后可允许<strong>整体变形</strong>将生成的片体缝合到实体中。片体必须为封闭片体。</p>
+         <p><strong>距离公差</strong>将指定用于确定两个点是否相等的公差。</p>
+         <p><strong>角度公差</strong>将指定用于确定两个角度是否相等的公差。</p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>查看剩余未求解的约束</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>查看剩余未求解的约束</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>将您的光标停在<strong>状态</strong>列的图标上。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>错误约束节点的状态图标 <img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/cn_column_status_conflicts.png" border="0"> 有这个工具提示：与其它约束冲突 <span class="messageText">。</span></p>
+                     
+                     <p>各个错误约束组件节点状态图标 <img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/cn_column_status_error.png" border="0"> 有这个工具提示：<span class="messageText">约束不一致</span>。</p>
+                     <br>
+                     
+                     <p>各个警告约束节点状态图标 <img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/cn_column_status_references_deleted.png" border="0"> 有这个工具提示：<span class="messageText">引用的组件已被删除或抑制</span>。</p>
+                     
+                     <p>在这个例子中，是警告节点子对象的组件节点是：</p>
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p><strong>des06_GKengine</strong>，它的状态图标 <img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/cn_column_status_partially_constrained.png" border="0">有这个工具提示：<span class="messageText">部分加载</span>。</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p><strong>des06_GK_Frame</strong>，它的状态图标 <img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/cn_column_status_error.png" border="0"> 有这个工具提示：<span class="messageText">约束不一致</span>。</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                     <p>所有未求解的装配约束都包含了 <strong>des06_GK_engine</strong> 和 <strong>des06_GK_Frame</strong>。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>约束导航器</strong>中，单独选择各个组件，并在图形窗口中查看它们。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/constraintnav_ht_engine.png"></p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/constraintnav_ht_frame.png"></p>
+                     
+                     <p>您想要更近一些查看这些组件和约束。</p>
+                     
+                     <p>所有这些组件都是约束不一致，所以<strong>按组件状态</strong>模式现在有用了，这个模式有一个不一致约束组件的文件夹。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>右击第一列的列表题并选择<strong>按组件状态分组</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <table bgcolor="white" border="0" cellpadding="0" cellspacing="0" class="navigator" width="90%" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" width="100*">
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/cn_cn_top_level_work_part.png" border="0">工作部件</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr valign="middle">
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/cn_cn_folder_children.png" border="0"> 状态 = 不一致约束 (3)
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr valign="middle">
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/cn_cn_folder_children.png" border="0"> 状态 = 未约束 (2)
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr valign="middle">
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/cn_cn_folder_children.png" border="0"> 状态 = 完全约束 (6)
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr valign="middle">
+                              
+                              <td class="text_bolditalic" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/cn_cn_folder_children.png" border="0"> 状态 = 部分约束 (49)
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr valign="middle">
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/cn_cn_folder_nochildren.png" border="0"> 状态 = 固定 (0)
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr valign="middle">
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/cn_cn_folder_nochildren.png" border="0"> 状态 = 在布置中忽略约束 (0)
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr valign="middle">
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/cn_cn_folder_nochildren.png" border="0"> 状态 = 约束受抑制 (0)
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr valign="middle">
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/cn_cn_folder_nochildren.png" border="0"> 状态 = 已卸载几何体 (0)
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr valign="middle">
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/cn_cn_folder_nochildren.png" border="0"> 状态 = 已关闭组件 (0)
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                     <p>您想要找出为什么这个模式中说有三个不一致约束的组件而不是两个。</p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Declare and initialize variables</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Declare and initialize variables</h2>
+         <p>Some variables used within the looped section of this project must be declared and initialized before processing begins. Add the following lines below the lines added in the previous step.</p><pre class="codeExample "><span class="userInput">    ' Variable definitions/initializations
+    Dim myCounter As Integer = 0 'used as counter
+    Dim NULLTAG As Tag = NXOpen.Tag.Null
+    Dim objectTag As Tag = NXOpen.Tag.Null
+    Dim myPropertyTable As CAE.PropertyTable = Nothing
+    Dim myPhysicalPropertyTable As CAE.PhysicalPropertyTable = Nothing
+
+</span></pre><table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>NULLTAG is used for comparison later</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>The lines of code for myPropertyTable and myPhysicalPropertyTable create these objects prior to the loop so they aren't recreated each pass through the loop. Their values are set within the loop.</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

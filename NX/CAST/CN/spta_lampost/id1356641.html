@@ -1,0 +1,124 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>NX 复合层合板求解器支持</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>NX 复合层合板求解器支持</h2>
+         
+         <p>可以将由 NX 复合层合板创建的复合结构导出至以下结构求解器：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>Nastran (NX 与 MSC)</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>ANSYS</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Abaqus</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>LS-DYNA</p>
+               
+            </li>
+            
+         </ul>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>只能写出 LS-DYNA 求解器输入文件，NX 不支持 LS-DYNA 求解器，无法后处理 LS-DYNA 结果。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <a name="genid_solution_and_post_processing_39_723"></a>
+         
+         
+         
+         <h3>解算方案和后处理</h3>
+         
+         
+         
+         <p>可以在 NX 中使用 Nastran、ANSYS 或 Abaqus 求解有限元解算方案。</p>
+         
+         <p>在<strong>后处理导航器</strong>中显示模型的结果时，可以查看以下内容：</p>
+         <ul>
+           <li>
+             <p>壳单元合应力</p>
+           </li>
+           <li>
+             <p>体单元力 </p>
+           </li>
+           <li>
+             <p>层片应变、应力和失效指数</p>
+           </li>
+           <li>
+             <p>对于 Nastran，胶合失效指数、层片和胶合强度比</p>
+           </li>
+         </ul>
+         
+         <p>NX 可在层片坐标系中显示层片结果。在<strong>后处理视图</strong>中，NX 可通过<strong>原生</strong>来指定层片坐标系。 </p>
+         
+         
+         <p>通过高级层合板后处理报告元解算方案，可以：</p>
+         <ul>
+           <li>
+             <p>使用汇总来快速标识关键区域</p>
+           </li>
+           <li>
+             <p>在所有层片上为多个载荷工况包络层片结果： </p>
+             <ul>
+               <li>
+                 <p>层片应力和应变</p>
+               </li>
+               <li>
+                 <p>层片和胶合失效指数</p>
+               </li>
+               <li>
+                 <p>层片和胶合安全裕度 </p>
+               </li>
+               <li>
+                 <p>层片和胶合强度比</p>
+               </li>
+             </ul>
+           </li>
+           <li>
+             <p>以表格格式排序和过滤结果</p>
+           </li>
+           <li>
+             <p>使用修改的层合板定义重新计算层片结果，而不启动新的解算方案           </p>
+           </li>
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

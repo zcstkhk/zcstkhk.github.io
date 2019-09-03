@@ -1,0 +1,57 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>定义边到边粘连</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>定义边到边粘连</h2>
+         
+         <p>使用<strong>边到边粘连</strong>命令连接两条边可以防止所有方向上的相对运动。NX Nastran 粘连连接是连结不同网格的简单有效方法。</p>
+         
+         <p>可以使用<strong>边到边粘连</strong>命令来定义以下选定元素之间的粘连连接：</p>
+         <ul>
+           <li>
+             <p>2D 单元边 (CQUAD4, CQUAD8, CQUADR, CTRIA3, CTRIA6, CTRIAR)。</p>
+           </li>
+           <li>
+             <p>2D 轴对称单元边 (CTRAX3, CQUADX4, CTRAX6, CQUADX8)。</p>
+           </li>
+           <li>
+             <p>多边形边。</p>
+             <p>注释：如果选择多边形边来定义源单元边或目标单元边，则软件会将粘连应用于与这些边关联的 2D 单元。</p>
+           </li>
+         </ul>
+         
+         <p>使用<strong>边到边粘连</strong>命令时：</p>
+         <ul>
+           <li>
+             <p>正在粘连边的单元必须近乎与该边相切。例如，两个垂直单元的边无法粘连。</p>
+           </li>
+           <li>
+             <p>使用 2D 轴对称单元，可以在 XY 平面或 XZ 平面中定义单元。</p>
+           </li>
+         </ul>
+         
+         <p>要将一条边粘连到另一条边，首先必须定义粘连定义的源区域和目标区域。<em>区域</em>是希望发生粘连或发生接触的一段模型中单元边的集合。使用<strong>仿真区域</strong>命令定义受粘连条件影响的区域。</p>
+        <p>使用<strong>边到边粘连</strong>命令，可以选择 2D 单元的边来定义源边和目标边。</p>
+         <p>求解模型时，NX Nastran 在定义的源区域和目标区域之间生成粘连单元。<em>粘连单元</em>就像刚性弹簧一样连接、约束边和曲面。NX Nastran 始终使用类似于焊接用途的公式创建这种连接。这对应于 BGPARM 模型数据输入项的 GLUETYPE=2 选项。</p>
+         <p>粘合边上的节点不一定要重合。</p>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/glue/edge_to_edge_gluing.png"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

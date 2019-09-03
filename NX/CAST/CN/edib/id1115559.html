@@ -1,0 +1,174 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>回弹补偿</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/vehicle_automation/die_engineering/springback_compensation.gif" border="0">&nbsp;回弹补偿</h2>
+         
+         <p>使用<strong>回弹补偿</strong>命令来调整冲压钣金部件的冲模面，以补偿在成形过程后出现的回弹。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/die_engineering/operations/stamping_operation/springback_comp.png"></p>
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>成形过程中出现的回弹</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>原始部件</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>补偿特征</p>
+               
+            </li>
+            
+         </ol>
+         
+         <p>钣金在冲压力释放后会形成按压回弹，由于材料的弹性回复，金属要按照其原始方向返回一点角度，您可以通过增大变形来补偿这个回弹角度，使金属回弹至所需的形状。</p>
+         
+         <p>回弹补偿将逼近冲模面要达到生成所需形状所需的的补偿形状，并且保留原始产品片体的拓扑形状。</p>
+         
+         <p></p>
+         
+         
+         <p>您可以通过下列输入来获取特征的回弹补偿：</p>
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>一步成形特征</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>选择一个一步可成形性分析特征来定义几何输入。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>小平面体</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>在图形窗口中选择拱形体上的小平面体以及小平面体产品片体。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>文件中的点</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>选择包含点的 XYZ 坐标的数据文件，来表示拱形体。</p>
+                  
+               </div>
+            </div>
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>开始→所有应用模块→车辆制造自动化→冲模工程</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">先决条件</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">您必须处于建模应用模块中。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>冲模工程&rarr;检查工具</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/vehicle_automation/die_engineering/checking_tools.gif" border="0"> <strong>&rarr;回弹补偿</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/vehicle_automation/die_engineering/springback_compensation.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>工具→车辆制造自动化→冲模工程→设计检查工具→回弹补偿</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

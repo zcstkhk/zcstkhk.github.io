@@ -1,0 +1,110 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>切换建模模式</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>切换建模模式</h2>
+         <p>在&ldquo;建模&rdquo;应用模块中，您可以在历史记录模式和无历史记录模式之间切换。 </p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>如果切换模式，则大多数特征将丢失。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p>从<strong>历史记录模式</strong>切换到<strong>无历史记录模式</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                 <ul>
+                    <li>
+                      <p>模型参数将被移除。</p>
+                    </li>
+                    <li>
+                      <p>如果某个特征支持无历史记录模式，则它将转换为局部特征。这包括边倒圆、倒斜角、孔以及螺纹特征。这些特征的表达式也会进行转换。 </p>
+                    </li>
+                    <li>
+                      <p>有些同步建模特征也会转换为局部特征。其中包括线性尺寸、角度尺寸及径向尺寸特征。这些特征的表达式也会进行转换。</p>
+                    </li>
+                     
+                    <li>
+                        
+                       <p>草图和基准从父特征与子特征中孤立出来，放置于<strong>未用项</strong>文件夹中。可以显示草图以查看设计者的意图，但这些草图不再与其他特征<span id="popup1" dojoType="dijit.layout.ContentPane" class="popup glossaryLink">关联</span>。</p>
+                        
+                    </li>
+                     
+                    <li>
+                        
+                       <p>所有其他参数将从模型中的所有体和曲线特征中移除。不存在局部特征以外的特征。 </p>
+                        
+                    </li>
+                     
+                  </ul>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p>从<strong>无历史记录模式</strong>切换到<strong>历史记录模式</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>模型再次被去参数化。该模型中的大多数局部特征被移除。</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>草图和基准保留为可编辑特征。您可以使用草图来创建新特征。</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+            </div>
+         </div>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>切换建模模式时，仅在工作部件中发生模式更改。</p>
+                  <p>保存部件文件时，也保存建模模式。 </p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div dojoType="dijit.TooltipDialog" id="popup1_dialog" class="glossaryPopup" style="display:none;" closable="true">
+            <div class="exitGlossaryPopup"><a href="#" onclick="closeToolTipDialog('popup1_dialog')"><img src="../xps3/graphics/exit2.png"></a></div>
+            <p><span class="glossaryTerm">关联性：</span>模型各个单独部分之间的关系。对父对象所作的更改会填充到子对象中。</p>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

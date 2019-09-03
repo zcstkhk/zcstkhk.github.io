@@ -1,0 +1,66 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Convergence and chattering</title>
+   </head>
+   <body>
+      <div class="contentType_bestPractice">
+         <h2>Convergence and chattering</h2>
+         <a name="ndxgenid_sptd_glue_25"></a>
+         
+         <a name="ndxgenid_sptd_glue_26"></a>
+         
+         <a name="ndxgenid_sptd_glue_27"></a>
+         
+         <a name="ndxgenid_sptd_glue_28"></a>
+         
+         <a name="ndxgenid_sptd_glue_29"></a>
+         
+         
+         <p>Convergence and chattering are conditions where the contact will not settle on a solution within the allotted number of iterations. This can occur when a small normal load is applied to a relatively stiff contact location.</p>
+         
+         <p>To address this issue, you can modify these contact solution attributes:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><span class="uiTerm">Max Iterations Force Loop</span> &mdash; Increase the number of iterations to 20.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">Contact Force Tolerance</span> &mdash; Increase the tolerance to a maximum value of 0.1.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">Contact Changes for Convergence</span> &mdash; Change the percentage of active contact elements to 0.01 or less.
+               </p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/contact/contact_solution_params_chattering_des.png"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

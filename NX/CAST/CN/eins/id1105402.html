@@ -1,0 +1,49 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Configure your server</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Configure your server</h2>
+         <p>If you are using a UNIX web server such as Apache, you only need to update the server Mime Types so that the server recognizes the JavaScript extension correctly.</p>
+         <p>To do this you must edit the <span class="titleReference">mime.types</span> file, which is usually in the <span class="titleReference">&lt;server&nbsp;root&gt;/etc</span> directory, depending on what server you are using.
+         </p>
+         <ul>
+            
+            <li>
+               
+               <p>Open the <span class="fileName">mime.types</span> file on your web server and add the following line, if necessary:
+               </p>
+               
+               <ul class="unmarkedList">
+                  <li>
+                     
+                     <p><span class="codeText">application/x-javascript js</span></p>
+                     
+                  </li>
+               </ul>
+               
+            </li>
+            
+            <li>
+               
+               <p>After you have added the line above, restart your server.</p>
+               
+            </li>
+            
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

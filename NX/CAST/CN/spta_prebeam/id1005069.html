@@ -1,0 +1,86 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>插入直线以构造滑轨</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>插入直线以构造滑轨(rail)</h2>
+         
+         <p>使用<strong>直线</strong>命令来插入关联几何体，以便您可以使用<strong>1D 网格</strong>命令来划分网格。</p>
+         
+         <p>创建四个连接中点和圆心的线段，如下图所示。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/idealization/ladder_comp_points.png"></p>
+         
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/menu.gif" border="0">&nbsp;<strong>插入&rarr;曲线&rarr;直线</strong></p>
+         
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/idealization/snap_point_mid_arc.png" border="0"></p>
+               <p><strong>启用捕捉点</strong>—<strong>中点</strong>、<strong>圆弧中心</strong>(选择条)</p>
+               
+               <p>(不选择其它捕捉点选项)
+               </p>
+               
+            </li>
+            <li>
+               
+               <p>选择点以沿滑轨创建四条线段，如下面的动画所示。</p>
+               
+               <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;"><script type="dojo/method">
+      flashData= {
+          swfSrc : '../xps3/graphics/xpsPlayer.swf',
+          graphSrc : '../graphics/graphicLibrary/nx_dss/adv_sim/meshing/1d/insert_lines.gif',
+          align : 'center',
+          base : './',
+          height : '188',
+          width : '304',
+          bgcolor : '#FFFFFF',
+          flashVersion : '7',         
+          looping : 'false',
+          play : 'true',
+          menu : 'true',
+          parameters : 'mySound=false,dependentFile1=..%2Fgraphics%2FgraphicLibrary%2Fnx_dss%2Fadv_sim%2Fmeshing%2F1d%2Finsert_lines.swf,dependentFile2=..%2Fxps3%2Fgraphics%2Fnav_buttons.txt'
+      }
+      top.loadFlash(this,flashData);
+    </script></div>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb2.gif" border="0"> <strong>接受</strong>，在选择完成两个点之后</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/idealization/ladder_right_rail.png"></p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb2.gif" border="0"> 旋转部件以查看另一个滑轨</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/idealization/ladder_rotated.png"></p>
+               
+            </li>
+            <li>
+               
+               <p>重复上述步骤以在另一个滑轨上创建四条一样的线段</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/idealization/ladder_rails_complete.png"></p>
+               
+            </li>
+         </ul>
+         
+         <p>保持<strong>直线</strong>对话框打开以在下一步中使用。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

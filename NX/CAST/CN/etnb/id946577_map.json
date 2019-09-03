@@ -1,0 +1,8 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开部件并设置首选项",file:"id946581.html",type:"topic",parent:""},
+{id:"d7e3",title:"创建工序",file:"id1065107.html",type:"topic",parent:""},
+{id:"d7e4",title:"确认切削区域空间范围",file:"id1065109.html",type:"topic",parent:""},
+{id:"d7e5",title:"设置切削深度",file:"id1065111.html",type:"topic",parent:""},
+{id:"d7e6",title:"生成刀轨",file:"id1065113.html",type:"topic",parent:""},
+{id:"d7e7",title:"添加轮廓刀路",file:"id1065115.html",type:"topic",parent:""},
+{id:"d7e8",title:"定义面和直径",file:"id1065117.html",type:"topic",parent:""}]}

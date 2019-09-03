@@ -1,0 +1,128 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Part Modules</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Part Modules</h2>
+         
+         <p>Part Modules enable designers to divide the features in a single complex part into logical groups. This division allows the designer to focus on one area of the complex part at a time because it is easier to display and update that area. </p>
+         
+         <p>Each Part Module contains a specific group of features internal to the main part file. In the following example, all the sketches, extrudes, and blends for the highlighted portion are in one Part Module.</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/pmod_overview2.png"></p>
+         
+         <p>You can create multiple Part Modules in the main part file and move their features to corresponding external Linked Part Module files. Each external Linked Part Module file is linked to its corresponding Part Module in the main part file using interpart WAVE references. </p>
+         
+         <p>Linked Part Modules allow multiple designers to concurrently work on a single complex part. Designers on the team can change design elements in their Linked Part Modules, with minimal or no effect on the rest of the files. A typical workflow for a design team would be controlled by a principal designer. The principal designer:</p>
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>Creates Part Modules in unfinished states in the main part file and then breaks these off into separate Linked Part Module files which are distributed to members of the design team.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Updates each Linked Part Module feature in the main part file to view the designer&rsquo;s progress and ensure that continuing downstream work is based on the latest geometry in the main part file.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Merges the completed Linked Part Module files into the main part file. </p>
+               
+            </li>
+            
+         </ol>
+         
+         <p>In the following example, the frame mount and primary drive bracket in a motorcycle transmission case are designed in external Linked Part Modules.</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/pmod_overview3.png"></p>
+         
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Modeling, Shape Studio</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Toolbar</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Feature Replay</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p><span class="uiTerm">Format</span>&rarr;<span class="uiTerm">Part Module</span></p>
+                     
+                     <p class="no-bottom-margin">The menu contains additional commands that are not available on the toolbar.</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

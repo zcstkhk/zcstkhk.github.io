@@ -1,0 +1,94 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>指派壳单元厚度</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>指派壳单元厚度</h2><a name="ndxgenid_spta_2dmesh_32"></a>
+         <a name="ndxgenid_spta_2dmesh_33"></a>
+         <a name="ndxgenid_spta_2dmesh_34"></a>
+         
+         
+         <p>求解器、单元公式以及模型的需要将决定如何指派壳单元的厚度，您可以：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>在物理属性表中指派网格收集器的默认厚度，您可以把2D 壳单元的默认厚度定义为一个常数值或者一个 NX 表达式</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>从中面数据指定单元继承厚度信息，您只能在2D 网格与中面关联时这么做，对于网格，在<strong>网格关联数据</strong>对话框中，将<strong>厚度源</strong>设置为<strong>中面</strong></span></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><a name="ndxgenid_spta_2dmesh_38"></a>
+               使用字段来定义网格的壳厚度，对于网格，在<strong>网格关联数据</strong>中指定，将<strong>厚度源</strong>设置为<strong>字段</strong></span></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>为选定的单元或节点定义拐角节点厚度，在<strong>单元相关数据</strong>中输入<strong>拐角节点厚度值</strong><a name="ndxgenid_spta_2dmesh_39"></a>
+                  <a name="ndxgenid_spta_2dmesh_40"></a>
+                  
+               </p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/meshing/2d/thickness_options.png"></p>
+         <a name="id1056636"></a>
+         
+         
+         
+         <h3>壳厚度优先顺序</h3>
+         
+         
+         
+         <p>由于厚度值可以分配给网格收集器、单个网格、选定的单元或者选定的节点，软件将按优先顺序确定写入到求解器输入文件中的厚度值：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>不管您如何定义壳厚度，您都必须在物理属性表中为网格收集器指定一个默认的厚度</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在网格关联数据中定义的中面和基于字段的厚度值将覆盖默认厚度</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在单元相关数据中定义的拐角节点厚度值将覆盖中面和基于字段的厚度值</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

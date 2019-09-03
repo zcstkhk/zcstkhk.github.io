@@ -1,0 +1,209 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>移动面溢出选项</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>移动面溢出选项</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>打开 <span class="fileName">syn3_assembly_engine</span>。</p>
+                  
+                  <p>如果已经打开了该部件，请点击<strong>打开部件</strong>信息框中的<strong>更改显示部件</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/move_face/01move_face.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>双击如图所示的右侧箱体部件以使之成为工作部件。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/move_face/60move_face.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>同步建模</strong>工具条上的<strong>修改面</strong>下拉菜单中，选择<strong>移动面</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/modeling/direct_modeling/move_face.gif" border="0" alt="Insert&gt; Synchronous Modeling&gt; Move Face" title="Insert&gt; Synchronous Modeling&gt; Move Face">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>选择如图所示面。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/move_face/61move_face.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>变换</strong>组的<strong>运动</strong>列表中，选择<strong>点到点</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在选择条上的<strong>选择范围</strong>列表中，选择<strong>整个装配</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>选择如图所示边的端点作为<strong>出发点</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/move_face/62move_face.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>选择如图所示右侧盖板部件的端点作为<strong>终止点</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/move_face/63move_face.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>在<strong>设置</strong>组中，设置如下参数：</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p><strong>移动行为</strong> = <strong>移动和改动</strong></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><strong>溢出行为</strong> = <strong>延伸更改面</strong></p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/move_face/64move_face.png"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>NX 将延伸被修改的面以形成与模型的完整相交。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>在<strong>溢出行为</strong>列表中选择<strong>延伸截断面</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/move_face/65move_face.png"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>NX 将延伸并截断截断产生延展边的移动面。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>在<strong>溢出行为</strong>列表中选择延伸入射面。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/move_face/66move_face.png"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>NX 将延伸移动面直至遇到固定面。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_12">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/move_face/67move_face.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

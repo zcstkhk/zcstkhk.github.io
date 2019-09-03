@@ -1,0 +1,55 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>检查自由单元边和非歧义单元边</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>检查自由单元边和非歧义单元边</h2>
+         
+         <p>使用<strong>单元边</strong>命令可查找：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>2D 网格中的自由(未连接)单元边。<em>自由</em>单元边是只由一个单元引用的边。例如，在片体内部的自由单元边可以指示模型中未完全相连(缝合)的区域。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>模型中的非歧义单元边。<em>非歧义</em>单元边是由两个以上单元面共享的边。当基础几何元素为非歧义元素时，会出现非歧义单元边。例如，在高级仿真中，当您在包含筋板的部件上生成中面时，生成的几何体可能是非歧义的。然后，可以使用<strong>缝合边</strong>命令确保，在网格划分之前非歧义面已完全缝合在一起。</p>
+               <p>当您需要在求解之前验证模型中的面完全缝合时，显示所有非歧义单元边的功能会很有作用。检查模型中非歧义面相交的区域时，可以使用<strong>非歧义边</strong>选项来确认这些相交面上的单元也缝合在一起。</p>
+               <p>注释：对于 2D 单元，使用<strong>单元边</strong>命令时，应首先清除<strong>网格收集器显示</strong>或<strong>网格显示</strong>对话框中的<strong>单元厚度与偏置</strong>复选框。厚度和偏置显示会导致<strong>单元边</strong>命令所用的临时图形难以可视化。</p>
+            </li>
+            
+         </ul>
+         
+         <a name="genid_spta_meshqual_15" id="genid_spta_meshqual_15"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/meshing/non_manifold_edges.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>单元边检查的结果。具有自由边的单元(上图中以洋红色显示)；非歧义单元边(上图中以青色显示)</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

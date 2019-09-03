@@ -1,0 +1,284 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>在方块 A 上创建矢量力</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>在方块 A 上创建矢量力</h2>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/icon_list3.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/motion/motion/vector_force.gif" border="0"> <strong>矢量力</strong>(<strong>运动</strong>工具条<strong>→载荷</strong>下拉菜单) </p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <table cellspacing="0" class="option_list" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="86">
+                     
+                     <col span="1" width="185*">
+                     
+                     <col span="1" width="20">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>类型</strong></p>
+                           
+                        </td>
+                        
+                        <td class="border1a" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">幅值和方向</p>
+                           
+                        </td>
+                        
+                        <td class="nopadding" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="top" src="../graphics/nonLocalized/nx_dss/icons/images/option_arrow_no_border.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+            </li>
+            <li>译者注： 在 NX 中文版中，此处将 <strong>Magnitude</strong> 翻译为幅值，这很明显是不对的，因为此处定义的力大小并没有变化，因此将其修正为<strong>大小</strong>，后同，不再赘述。</li>
+            <li>
+              
+              <table cellspacing="0" class="option_list" width="300">
+                
+                <colgroup span="1">
+                  
+                  <col span="1" width="86">
+                  
+                  <col span="1" width="185*">
+                  
+                  <col span="1" width="20">
+                  
+                </colgroup>
+                
+                <tbody>
+                  
+                  <tr>
+                    
+                    <td class="label2" colspan="1" rowspan="1">
+                      
+                      <p class="no-bottom-margin"><strong>类型过滤器</strong></p>
+                      
+                     </td>
+                    
+                    <td class="border1a" colspan="1" rowspan="1">
+                      
+                      <p class="no-bottom-margin">曲线</p>
+                      
+                     </td>
+                    
+                    <td class="nopadding" colspan="1" rowspan="1">
+                      
+                      <p class="no-bottom-margin"><img align="top" src="../graphics/nonLocalized/nx_dss/icons/images/option_arrow_no_border.gif" border="0"></p>
+                      
+                     </td>
+                    
+                   </tr>
+                  
+                 </tbody>
+                
+               </table>
+              
+              <table class="attentionTable attn_tip">
+                <tr>
+                  <td valign="top">
+                    <p class="attn_title">提示</p>
+                   </td>
+                  <td class="attention_main">
+                    
+                    <p><strong>类型过滤器</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/type_filter.gif" border="0"> 位于工具条区域的选择条上。</p>
+                    
+                   </td>
+                 </tr>
+               </table>
+              
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/mb1.gif" border="0"> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_blue/blue_ball1.gif" border="0"></p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/activities/loads/blocks_vector_force_1.gif"></p>
+               
+            </li>
+            <li>
+               
+               <p>这个选择将自动把力的原点判断为边的中点，如果您的选择没有正确判断原点，您可以使用<strong>指定原点</strong>选项来进行纠正。</p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/gateway/vector_constructor/yc_axis_negative.gif" border="0"> <strong>–YC 轴</strong>(<strong>指定方位</strong>)
+               </p>
+               
+               <p>这是操作连杆的标记坐标系的—Y 轴，在仿真开始时，这个坐标系与绝对坐标系一致。</p>
+               
+               <p>但是，由于<strong>矢量力</strong>的类型为<strong>大小和方向</strong>，当方块旋转时，标记坐标系也会随着旋转，矢量力与标记坐标系的相对方位会保持不变。</p>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="45">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="banner_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="banner_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>大小</strong></p>
+                           
+                        </td>
+                        
+                        <td class="banner_right" colspan="1" rowspan="1" width="45"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table cellspacing="0" class="input_field" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="90">
+                     
+                     <col span="1" width="190*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>值</strong></p>
+                           
+                        </td>
+                        
+                        <td class="border1b" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">1</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+               <p>在仿真的每一个时间步，施加的力都会是恒定的1 lbf。</p>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>确定</strong></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/activities/loads/blocks_vector_force_5.gif"></p>
+               
+               <table class="attentionTable attn_note">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">注释</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>您可以通过增加<strong>运动首选项</strong>中的<strong>图标比例</strong>大小，或者增大<strong>矢量力</strong>对话框中的<strong>显示比例</strong>大小，来增大力图标在图形窗口中的显示大小。</p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

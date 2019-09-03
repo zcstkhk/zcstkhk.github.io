@@ -1,0 +1,111 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Keep Assembly Constraints</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Keep Assembly Constraints</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>A new <span class="uiTerm">Keep Assembly Constraints</span> option is available in the <span class="uiTerm">Part Mounting</span> dialog box. When you replace a machine tool in a CAM setup, you can use this option to retain assembly constraints between the part, blank, or fixture and the machine tool model. Constraints between components of the machine tool assembly are not affected.
+            </p>
+            
+            <p>Typically you replace a machine with a modified version of the same machine, for example when you modify the kinematic model by editing an axis, changing travel limits, adding a new machine component, and so on. When you replace the machine tool with the same machine tool, all constraints are retained. </p>
+            
+            <p>If you need to set up the part on a different machine, the constraints on the part will be missing geometry. You must edit the constraints that have missing geometry and select the corresponding geometry on the replacement machine. </p>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>Why should I use it?</h3>
+            
+            <p>You need not recreate assembly constraints that position the part on the machine. </p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Manufacturing</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Operation Navigator</span></p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Machine Tool</span> view&rarr;right-click the machine node&rarr;<span class="uiTerm">Edit</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Machine parameters dialog box&rarr;<span class="uiTerm">Retrieve Machine From Library</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/generic_machine/retrieve_machine_from_library.gif" border="0">&rarr;<br/><span class="uiTerm">Library Class Selection</span> dialog box&rarr;Select class of machine to retrieve&rarr;<br/><span class="uiTerm">Search Result</span> dialog box&rarr;select a machine&rarr;<br/><span class="uiTerm">Part Mounting</span> dialog box&rarr;<span class="uiTerm">Placement</span> group&rarr;<br/><span class="uiTerm">Positioning</span> list&rarr;<span class="uiTerm">Keep Assembly Constraints</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

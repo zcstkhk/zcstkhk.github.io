@@ -1,0 +1,11 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"设置装配加载选项并打开装配文件",file:"id970477.html",type:"topic",parent:""},
+{id:"d7e3",title:"准备单独为组件定位",file:"id970078.html",type:"topic",parent:""},
+{id:"d7e4",title:"为子装配的第一个实例替代位置",file:"id970481.html",type:"topic",parent:""},
+{id:"d7e5",title:"将活塞约束到拉杆上",file:"id970483.html",type:"topic",parent:""},
+{id:"d7e6",title:"约束剩下的活塞子装配",file:"id970485.html",type:"topic",parent:""},
+{id:"d7e7",title:"新建布置",file:"id970487.html",type:"topic",parent:""},
+{id:"d7e8",title:"定位 Middle 布置",file:"id970493.html",type:"topic",parent:""},
+{id:"d7e9",title:"定位 right 布置",file:"id970495.html",type:"topic",parent:""},
+{id:"d7e10",title:"定位 left 布置",file:"id970497.html",type:"topic",parent:""},
+{id:"d7e11",title:"测试装配布置的运动",file:"id970499.html",type:"topic",parent:""}]}

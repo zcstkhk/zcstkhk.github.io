@@ -1,0 +1,53 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>优化迭代的分析结果</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>优化迭代的分析结果</h2>
+         
+         <p>可以查看优化的选定迭代中 FE 分析结果的等值线图。默认情况下，将保存第一次和最后一次迭代的结果。</p>
+         
+         <p>例如，在对最后一次迭代的位移和应力结果进行任何优化更改前，即优化从模型中移除单元后，可以比较第一次迭代中的位移和应力结果。</p>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/topo_opt/results_pp.png"></p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>优化可在迭代优化过程中生成伪载荷工况以供内部使用。可以忽略名为 PSEUDO_LOAD_LC、出现在<strong>后处理导航器</strong>结果列表中的载荷工况。模型中的每个设计约束都会产生其中三个伪载荷工况。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <div class="division">
+            
+            <h3>材料密度结果</h3>
+            
+            <p><strong>标准化材料密度 — 单元</strong>结果可显示优化对设计趋于中单元所进行的更改。</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/topology_optimization/topo_post_4.png"></p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

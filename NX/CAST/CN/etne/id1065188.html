@@ -1,0 +1,99 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>定义切屑控制</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>定义切屑控制</h2>
+         
+         
+         <p>切削控制将允许您指定在插削时清除切屑的方法。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>刀轨设置</strong>组中的<strong>切削参数</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/cutting_parameters.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>刀轨参数</strong>对话框的<strong>切屑控制</strong>选项卡中，从<strong>切屑控制</strong>列表中选择<strong>恒定安全设置</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <div class="verbose">
+                        <p><strong>恒定安全设置</strong>选项将允许您定义等深度插削移动，这个选项允许刀具在每次步进之后完全退出槽，而<strong>恒定倒角</strong>选项则不是，退刀移动将帮助您把切削清除出槽。</p>
+                     </div>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>恒定增量</strong>输入框中键入<strong>0.1</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>安全距离</strong>输入框中键入<strong>0.25</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <div class="verbose">
+                        <p>恒定增量值将定义退刀与退刀之间切削的深度，<strong>安全距离</strong>值将定义刀具在退刀时退到槽上方的距离。</p>
+                     </div>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>操作</strong>组中的<strong>生成</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/generate.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/turning/groove_od_graphic2.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

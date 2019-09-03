@@ -1,0 +1,74 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>滚球与扫掠截面</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>滚球与扫掠截面</h2>
+         
+         <div class="division">
+            
+           <h3>滚球</h3>
+            
+            <p>大部分面倒圆都是使用<strong>滚球</strong>方法创建的。</p>
+            
+            <p>通过一个与两组输入面恒定接触的滚动球来计算倒圆面。</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/face_blend/face_blends_ball_vs_swept.png"></p>
+            
+            <p>如果使用默认的<strong>修剪和缝合选项</strong>，NX 将</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>修剪输入面到倒圆面</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>修剪倒圆面到输入面</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>将两个输入面和倒圆面缝合在一起</p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>扫掠截面</h3>
+            
+            <p>如果曲面是不规则的(有缺口)，可以使用<strong>扫掠曲面</strong>方法。</p>
+            
+            <p>沿选定的脊线扫掠截面曲线来计算倒圆面。</p>
+            
+            <p>面倒圆的截面是由脊线来控制的，可以是圆形的，也可以是二次曲线。</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/face_blend/face_blends_ball_vs_swept_1.png"></p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Rotate enhancements</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Rotate enhancements</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>During interactive view rotation in NX, the default center of view rotation and the display of the rotation center are now enhanced.</p>
+            
+            <p>NX derives the default center of rotation from:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>An arbitrary center of rotation located in the center of the visible geometry of the work part.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>The displayed part in assembly design, when the work part is outside the view.</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>If view sectioning is enabled, NX adjusts the rotation center, if necessary, to the unclipped region of the model.</p>
+            
+         </div>
+         
+         
+         <p>The new <span class="uiTerm">Display Center of Rotation</span> Visualization preference lets you display the center of rotation in the graphics window. The display color for the active center of rotation depends on your selection of the <span class="uiTerm">Handles</span> Visualization preferences.
+         </p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><span class="uiTerm">Preselection</span> color is displayed when NX derives the center of rotation from visible geometry.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">Active Handle</span> color is displayed when you select an alternative rotation point or axis using the <span class="uiTerm">Set Rotation Reference</span> command.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">Selection</span> color is displayed when you click and hold the middle mouse button to set a temporary center of rotation.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">OrientXpress</span> color is displayed when the center of rotation is the center of the view.
+               </p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>These enhancements are applicable for interactive view rotations performed using the middle mouse button, or a 3D input device.</p>
+         
+         <table class="attentionTable attn_example">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Example</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>In the following graphic, the center of rotation is displayed in the <span class="uiTerm">Active Handle</span> color, which is set to <span class="uiTerm">Blue</span>.
+                  </p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/fundamentals/rotate_handle_color.png"></p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <div class="division">
+            
+            <h3>Why should I use it?</h3>
+            
+            <p>These enhancements can significantly improve interactive display during rotation by keeping the model part visible rather than rotating it out of view.</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Toolbar</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Visualization</span>&rarr;<span class="uiTerm">Visualization Preferences</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/visualization/visualization_preferences.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Preferences</span>&rarr;<span class="uiTerm">Visualization</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p><span class="uiTerm">View/Screen</span> tab&rarr;<span class="uiTerm">Session Settings</span> group&rarr;<span class="uiTerm">Display Center of Rotation</span> check box
+                     </p>
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Handles</span> tab&rarr;<span class="uiTerm">Part Settings</span> group&rarr;<span class="uiTerm">Preselection</span> or <span class="uiTerm">Selection</span> or <span class="uiTerm">Handles</span> or <span class="uiTerm">Active handles</span> or <span class="uiTerm">OrientXpress</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

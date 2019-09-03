@@ -1,0 +1,70 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Installing CAST to a web server</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Installing CAST to a web server</h2>
+         <p>The <span class="literalText">Network/Web Access</span> and <span class="literalText">Custom</span> installations let you configure CAST so that it is accessed from a web server on your intranet.
+         </p>
+         <p>The advantage of this is that you can run a full install of CAST once onto a web server, then configure all other systems to use the HTML source files from that installation. The CAST part files from that installation could also be used by all other systems.</p>
+         <p>If you plan on putting CAST on a web server, you should use the CAST installation to install these source files directly into the folder structure of your web server.</p>
+         <p>Here is an example of how you would run a Custom installation on the Windows machine that is running your web server.</p>
+         <ul>
+            
+            <li>
+               
+               <p>Specify that CAST will be running off a web server, then enter your server's URL when requested &ndash; for example:<br/><span class="pathName">http://my.server.com/castnx/html/index.html</span></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>When prompted for the location of the HTML source files, enter a path location somewhere within the folder structure of your web server &ndash; for example: <br/><span class="pathName">d:\inetpub\wwwroot\nxcast</span> 
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>When prompted for the location of the CAST part files, put them in a location other systems can access. For example, you could put the files into a public shared folder so other people can map a network drive to access them, like this:<br/><span class="pathName">d:\public\nxcast</span> 
+               </p>
+               
+            </li>
+            
+         </ul>
+         <p>After the HTML source files and part files have been installed, you can install CAST on other systems and point them to this installation of CAST.</p>
+         <p>To install CAST onto a different Windows machine, rerun the installation using the <span class="literalText">Network/Web Access</span> installation.
+         </p>
+         <ul>
+            
+            <li>
+               
+               <p>Specify that CAST will be running from a web server, then enter the URL of the server where you just installed the CAST source files. It should be the same URL you entered above.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>When prompted for the location of the CAST part files you can enter the drive letter of the mapped drive with the path to the location of the part files. For example: <br/><span class="pathName">h:\castnx</span> 
+               </p>
+               
+            </li>
+            
+         </ul>
+         <p>When you run CAST from either of these two machines, it opens your web browser pointing to the URL that you specified in the installation.</p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

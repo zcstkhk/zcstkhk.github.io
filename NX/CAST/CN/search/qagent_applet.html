@@ -1,0 +1,96 @@
+<!-- $Id: $-->
+<!--
+bcprt
+ecprt
+-->
+<html>
+<head>
+	<meta name="jobjects/quest" content="ignore-start">
+	<link rel ="stylesheet" type="text/css" href="qagent.css">
+</head>
+
+<body>
+<script language="JavaScript">
+
+	function OnAppletStart() { // Don't change function name - called by applet
+		parent.onPageLoaded();
+	}
+	function OnSearchResults(hitCount) { // Don't change function name - called by applet
+		parent.appendResults(parent.qaview, document.QuestAgent, hitCount)
+	}
+	function OnHighlightingDone(hlPage) { // Don't change function name - called by applet
+		parent.handleHighlightedDocument(hlPage);
+	}
+
+	if (parent.searchableTopicSets != null && parent.searchableTopicSets.length > 0) {
+
+		document.writeln('<APPLET');
+		document.writeln('CODEBASE = "../"');
+		document.writeln('CODE     = "com.jobjects.quest.agent.LiveConnectApplet"');
+		document.writeln('ARCHIVE  = "qagent.jar"');
+		document.writeln('NAME     = "QuestAgent"');
+		document.writeln('ID       = "QuestAgent"');
+		document.writeln('ALT      = "JObjects QuestAgent search applet (http://www.jobjects.com)"');
+		document.writeln('WIDTH    = 1');
+		document.writeln('HEIGHT   = 1');
+		document.writeln('MAYSCRIPT');
+		document.writeln('>');
+		document.writeln('');
+		document.writeln('<PARAM NAME="js.OnAppletStart" VALUE="OnAppletStart">');
+		document.writeln('<PARAM NAME="js.OnSearchResults" VALUE="OnSearchResults">');
+		document.writeln('<PARAM NAME="js.OnNoLCPage" VALUE="qagent_nojs.html">');
+		document.writeln('<PARAM NAME="js.OnNoLCFrame" VALUE="_top">');
+
+		document.writeln('<PARAM NAME="KeywordsInContext" VALUE="yes">');
+
+		document.writeln('<PARAM NAME="msg.no_query_specified" VALUE="' + parent.msg_no_query_specified + '">');
+		document.writeln('<PARAM NAME="msg.collection_list_empty" VALUE="' + parent.msg_collection_list_empty + '">');
+		document.writeln('<PARAM NAME="msg.collection_not_available" VALUE="' + parent.msg_collection_not_available + '">');
+		document.writeln('<PARAM NAME="msg.no_valid_terms_in_query" VALUE="' + parent.msg_no_valid_terms_in_query + '">');
+		document.writeln('<PARAM NAME="msg.no_variable_in_query" VALUE="' + parent.msg_no_variable_in_query + '">');
+		document.writeln('<PARAM NAME="msg.index_param_not_specified" VALUE="' + parent.msg_index_param_not_specified + '">');
+		document.writeln('<PARAM NAME="msg.query_is_constant_true" VALUE="' + parent.msg_query_is_constant_true + '">');
+		document.writeln('<PARAM NAME="msg.query_is_constant_false" VALUE="' + parent.msg_query_is_constant_false + '">');
+		document.writeln('<PARAM NAME="msg.search_in_progress" VALUE="' + parent.searchingText + '... ' + parent.pleaseWaitText + '">');
+		document.writeln('<PARAM NAME="msg.search_canceled" VALUE="' + parent.msg_search_canceled + '">');
+		document.writeln('<PARAM NAME="msg.nothing_found" VALUE="' + parent.nothingFoundText + '">');
+		document.writeln('<PARAM NAME="msg.hits_found" VALUE="' + parent.msg_hits_found + '">');
+		document.writeln('<PARAM NAME="msg.hits_found_all" VALUE="' + parent.msg_hits_found + '">');
+		document.writeln('<PARAM NAME="msg.query_parser.not_expected" VALUE="' + parent.msg_query_parser_not_expected + '">');
+		document.writeln('<PARAM NAME="msg.query_parser.not_expected_after_token" VALUE="' + parent.msg_query_parser_not_expected_after_token + '">');
+		document.writeln('<PARAM NAME="msg.query_parser.not_expected_end_after_token" VALUE="' + parent.msg_query_parser_not_expected_end_after_token + '">');
+		document.writeln('<PARAM NAME="msg.query_parser.not_expected_in_phrase" VALUE="' + parent.msg_query_parser_not_expected_in_phrase + '">');
+		document.writeln('<PARAM NAME="msg.query_parser.empty_request" VALUE="' + parent.msg_query_parser_empty_request + '">');
+		document.writeln('<PARAM NAME="msg.query_parser.not_expected_end" VALUE="' + parent.msg_query_parser_not_expected_end + '">');
+		document.writeln('<PARAM NAME="msg.query_parser.binary_operator_usage" VALUE="' + parent.msg_query_parser_binary_operator_usage + '">');
+		document.writeln('<PARAM NAME="msg.can_not_add_to_phrase" VALUE="' + parent.msg_can_not_add_to_phrase + '">');
+
+
+		var topicSetIDs = new Array();
+
+		for(var i=0; i<parent.searchableTopicSets.length; i++)
+			topicSetIDs.push(parent.searchableTopicSets[i].id);
+
+		document.write('<PARAM NAME="collections" VALUE="all ' + topicSetIDs.join(' ') + '">');
+		document.write('<PARAM NAME="collections.index" VALUE="search/merged_data">');
+
+		document.writeln('<PARAM NAME="collection.all.name" VALUE="' + parent.entireHelpText + '">');
+
+		for (var i=0; i<parent.searchableTopicSets.length; i++)
+			document.writeln('<PARAM NAME="collection.' + parent.searchableTopicSets[i].id + '.name" VALUE="' + parent.searchableTopicSets[i].title.replace("\"","&quot;") + '">');
+
+
+
+
+		document.writeln("</APPLET>");
+
+
+	}
+	else {
+		alert("No topicSets are searchable.");
+	}
+
+
+</script>
+</body>
+</html>

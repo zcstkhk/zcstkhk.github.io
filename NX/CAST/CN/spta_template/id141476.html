@@ -1,0 +1,117 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Modify the .pax file</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>修改.pax 文件</h2>
+         <p>在这一步中，您将修改 <span class="fileName">ugs_cae_templates_custom.pax</span> 文件以在<strong>新建</strong>对话框中创建一个新的选项卡。</p>
+         <p>.pax 文件中含有一串很长的条目列表，各个条目都以一个标签起始，比如<span class="codeText">&lt;PaletteEntry id=&quot;d1&quot;&gt;</span>，并以标签<span class="codeText">&lt;/PaletteEntry&gt;</span>结束。</p>
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>在文本编辑器中打开 <span class="fileName">ugs_cae_templates_custom.pax</span> 文件。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在第一个<span class="codeText">&lt;Presentation&gt;</span>单元中，将 <span class="codeText">FileNewTab </span>的属性值更改为<span class="codeText"><span class="userInput">“Custom”</span></span>。</p>
+               <p>下一次运行 NX 时，将会有一个 <strong>Custom</strong> 选项卡出现在<strong>新建</strong>对话框中。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>删除除了标签为 <span class="codeText">id=&quot;d2&quot;</span>之外的所有标签条目，这个条目定义了 <span class="fileName">FemNxNastranMetric.fem</span> 文件中的设置。</p>
+               <p>定制的模板将会基于这个模板条目。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>将 <span class="codeText">PaletteEntry</span>单元的 <span class="codeText">id</span> 属性值修改为<span class="codeText">“<span class="userInput">d1</span></span>”。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>将 <span class="codeText">PreviewImage</span> 单元的 <span class="codeText">location</span> 属性值修改为“<span class="codeText"><span class="userInput">adv_fem_template_custom.jpg</span></span>”。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>将 <span class="codeText">Filename</span> 单元的内容修改为 <span class="codeText"> <span class="userInput">FemNXNastranMetric_custom.fem</span></span>。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>保存<span class="fileName">.pax</span> 文件。</p>
+               
+            </li>
+            
+         </ol>
+         <p>您的文件看起来应该如下所示，已经更改的区域显示为粗体。</p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>这个文本已经被编辑并排版格式以更好地显示，您的.pax 文件格式可能会不同。</p>
+                  
+               </td>
+            </tr>
+         </table><pre class="codeExample ">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+...
+  &lt;Presentation 
+    name=&quot;Simulation templates&quot; 
+    bitmap=&quot;sheet_and_block.bmp&quot; 
+    FileNewTab=&quot;
+<span class="userInput">Custom</span>&quot; 
+    application=&quot;All&quot; 
+    UserMasterModel=&quot;No&quot;/&gt;
+    &lt;PaletteEntry 
+      id=&quot;
+<span class="userInput">d1</span>&quot;&gt;
+    &lt;References/&gt;
+    &lt;Presentation 
+      name=&quot;NX Nastran&quot; 
+      description=&quot;Empty NX Nastran Fem&quot;&gt;
+        &lt;PreviewImage 
+          type=&quot;UGPart&quot; 
+          location=&quot;
+<span class="userInput">adv_fem_template_custom.jpg</span>&quot;/&gt;
+    &lt;/Presentation&gt;
+    &lt;ObjectData class=&quot;CaeFemTemplate&quot;&gt;
+      &lt;Filename&gt;
+        
+<span class="userInput">FemNxNastranMetric_custom.fem</span>
+      &lt;/Filename&gt;
+      &lt;Units&gt;
+        Metric
+      &lt;/Units&gt;
+    &lt;/ObjectData&gt;
+  &lt;/PaletteEntry&gt;
+
+&lt;/Palette&gt;</pre>
+         <p>用户界面更改已经完成，在下一步中，您将设置新建 FEM 文件模板。</p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

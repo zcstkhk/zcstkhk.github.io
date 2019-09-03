@@ -1,0 +1,89 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>选定面或单元的层合板定义</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>选定面或单元的层合板定义</h2>
+         
+         <p>可使用<strong>查看层合板</strong>命令显示选定的面或单元的层合板物理属性。此命令允许您轻松查看选定单元的层合板定义和关键层片结果信息。</p>
+         <p>在 FEM 文件中，为选定的多边形面或单元面显示该信息。多边形面中的所有单元必须位于同一个区域内。在仿真文件中，为选定单元显示该信息。在仿真文件中必须显示层片结果。</p>
+        <p>该信息在命令对话框中显示，包含以下内容：</p>
+         <ul>
+           <li>
+             <p>层合板草图以及层片数和总厚度 (1)。</p>
+           </li>
+           <li>
+             <p>层片铺层信息，具体包括全局层片 ID、层片的材料组合、厚度和角度 (2)。</p>
+           </li>
+           <li>
+             <p>选定结果的最小值和最大值以及出现极值处的层片 ID (3)。(仅限仿真文件)           </p>
+           </li>
+         </ul>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_zones/view_laminate_pp.png"></p>
+         
+         <p>可以在<strong>后处理导航器</strong>中双击层合板结果类型中的一种以便在仿真文件中显示层片结果：</p>
+         
+         
+         <div class="division">
+            
+           <div>
+             <h3>位于何处？</h3>
+           </div>
+           <p>在 FEM 文件中<strong>查看层合板</strong>           </p>
+           <table border="1" cellpadding="6" cellspacing="2" class="locator">
+             <colgroup span="1">
+               <col span="1" width="149">
+               <col span="1" width="*">
+             </colgroup>
+             <tr valign="top">
+               <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">应用模块</p></td>
+               <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">高级仿真</p></td>
+             </tr>
+             <tr>
+               <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">先决条件</p></td>
+               <td class="locator_noshade" colspan="1" height="" rowspan="1" valign="bottom"><p class="no-bottom-margin">必须在 FEM 文件中计算区域</p></td>
+             </tr>
+             <tr>
+               <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">仿真导航器</p></td>
+               <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">右键单击<strong>区域节点→查看层合板</strong></p></td>
+             </tr>
+           </table>
+           <p>在仿真文件中<strong>查看层合板</strong></p>
+           <table border="1" cellpadding="6" cellspacing="2" class="locator">
+             <colgroup span="1">
+               <col span="1" width="149">
+               <col span="1" width="*">
+             </colgroup>
+             <tr valign="top">
+               <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">应用模块</p></td>
+               <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">高级仿真</p></td>
+             </tr>
+             <tr>
+               <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">先决条件</p></td>
+               <td class="locator_noshade" colspan="1" height="" rowspan="1" valign="bottom"><p class="no-bottom-margin">结果必须显示在“后处理”中</p></td>
+             </tr>
+             <tr>
+               <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">工具条</p></td>
+               <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin"><strong>层合板→查看层合板</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/laminates/view_laminate.gif" border="0"></p></td>
+             </tr>
+           </table>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

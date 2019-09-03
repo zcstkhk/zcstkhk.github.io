@@ -1,0 +1,11 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"NX 8 - NX 8.5 Shape Studio transition",file:"xid309017.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"Fit Surface",file:"xid377765.html",type:"topic",parent:"",children:[{id:"d5e6",title:"Fit surfaces to facet bodies to create a faucet knob",file:"xid387642.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e8",title:"X-Form enhancements",file:"xid377783.html",type:"topic",parent:"",children:[{id:"d5e9",title:"X-form enhancements",file:"xid481549.html",type:"activity",parent:"d5e8"}]},
+{id:"d5e11",title:"Styled Blend and Silhouette Flange law option enhancements",file:"xid293254.html",type:"topic",parent:""},
+{id:"d5e13",title:"Law Extension enhancements",file:"xid452835.html",type:"topic",parent:"",children:[{id:"d5e14",title:"Create a law extension flange on a duct end piece",file:"xid465459.html",type:"activity",parent:"d5e13"}]},
+{id:"d5e17",title:"Highlight Lines",file:"xid377596.html",type:"topic",parent:""},
+{id:"d5e19",title:"Local Radius Analysis",file:"xid377827.html",type:"topic",parent:""},
+{id:"d5e21",title:"Show End Points",file:"xid293282.html",type:"topic",parent:""}
+]}

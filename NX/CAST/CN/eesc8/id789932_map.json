@@ -1,0 +1,8 @@
+{identifier:"id",label:"title",items:[
+{id:"d15e2",title:"打开部件并更改渲染样式",file:"id789936.html",type:"topic",parent:""},
+{id:"d15e3",title:"更改 WCS 的位置",file:"id923328.html",type:"topic",parent:""},
+{id:"d15e4",title:"捕捉动态 WCS 到圆弧中心",file:"id923330.html",type:"topic",parent:""},
+{id:"d15e5",title:"将 WCS 的轴与边对齐",file:"id923332.html",type:"topic",parent:""},
+{id:"d15e6",title:"反转 WCS 的方向",file:"id923334.html",type:"topic",parent:""},
+{id:"d15e7",title:"使用旋转手柄",file:"id923336.html",type:"topic",parent:""},
+{id:"d15e8",title:"通过输入指定值来把 WCS 旋转到指定的角度",file:"id923340.html",type:"topic",parent:""}]}

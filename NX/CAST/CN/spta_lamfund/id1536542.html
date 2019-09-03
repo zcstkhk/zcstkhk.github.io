@@ -1,0 +1,180 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Defining a layup using the lamination shorthand format</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Defining a layup using the lamination shorthand format</h2>
+         
+         <p>Use the <strong>Import Layup Using Shorthand Format</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/laminates/import_layup_using_shorthand_format.gif" border="0"> option to quickly define a layup using the lamination shorthand format. You can specify a thickness and a material for all the plies.
+         </p>
+         
+         <p>You enter the shorthand notation in the <strong>Shorthand String</strong> box in the <strong>Shorthand Format</strong> dialog box. The shorthand notation has the following conventions:
+         </p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>A ply layup is contained inside [] (square brackets).</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Ply angles are separated by / (forward slash).</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Ply groups are contained inside () (parentheses).</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Symmetry is indicated by the suffix _s (underscore and <span class="emphasis">s</span>). For a symmetric layup, the suffix is placed after the square brackets. For a symmetric group, the suffix is placed after the parentheses.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The core ply is indicated by &lsquo; (apostrophe).</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>A repeated layup, group, or ply is indicated by _# (underscore and number sign) where # indicates the number of repetitions.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>+ (plus) and &ndash; (minus) in front of a number indicate the positive and negative angles.</p>
+               
+            </li>
+            
+         </ul>
+         
+         <table class="attentionTable attn_example">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Example</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>When you enter <span class="variableText">[(+-45)_s(0/90)_3]</span>, your ply layup is composed of 10 plies and 5 groups as shown in the following graphic. Group 2 is a symmetric repeat of group 1. Groups 4 and 5 are non-symmetric repeats of group 3.
+                  </p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_shorthand_format/ply_layup_4545090groups.gif"></p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <p>The following table shows additional examples of the shorthand format and the layups created using these formats.</p>
+         <a name="genid_spta_lamfund_50" id="genid_spta_lamfund_50"></a><table frame="box" rules="all" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+               <col span="3">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr align="center">
+                  
+                  <td align="left" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Shorthand format</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">[-45/0/45/90]_2</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">[0/+-45/90&rsquo;]_s</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">[45_3/+-30_2]</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">[+-60/- -45/+-++- -5]</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Ply layup with angles and ply numbers</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_shorthand_format/ply_layup_4504590r.gif"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_shorthand_format/ply_layup_0454590cs.gif"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_shorthand_format/ply_layup_45454530-3030-30.gif"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_shorthand_format/ply_layup_6045555555.gif"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

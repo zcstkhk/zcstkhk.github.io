@@ -1,0 +1,16 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"零件明细表",file:"id1122629.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"部件属性",type:"topicMap",parent:"",children:[
+{id:"d5e6",title:"属性",file:"genid_attributes_140_2837.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"零件明细表和属性",file:"genid_parts_lists_and_attributes_47_1167.html",type:"topic",parent:"d5e5"},
+{id:"d5e8",title:"创建部件属性",file:"id1538004.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e10",title:"零件明细表",type:"topicMap",parent:"",children:[
+{id:"d5e11",title:"零件明细表",file:"genid_parts_list_227_1446.html",type:"topic",parent:"d5e10"},
+{id:"d5e12",title:"Teamcenter Integration 零件明细表概述",file:"partlist_pl_tceng_ov.html",type:"topic",parent:"d5e10"}]},
+{id:"d5e13",title:"默认零件明细表",file:"id698026.html",type:"topic",parent:""},
+{id:"d5e14",title:"零件明细表级别",file:"edit_edit_levels_ovw.html",type:"topic",parent:""},
+{id:"d5e15",title:"自动符号标注",file:"id1535337.html",type:"topic",parent:""},
+{id:"d5e16",title:"指派属性到零件明细表列",file:"id1537779.html",type:"activity",parent:""},
+{id:"d5e17",title:"添加标注并编辑零件明细表等级",file:"id727162.html",type:"activity",parent:""}
+]}

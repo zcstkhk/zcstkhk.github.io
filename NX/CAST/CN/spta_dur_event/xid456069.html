@@ -1,0 +1,381 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>创建轴搜索耐久性对象</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>创建轴搜索耐久性对象</h2>
+         <p>轴搜索耐久性对象将定义耐久性求解器如何确定：</p>
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>结构的关键载荷路径。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>最容易形成与传播裂缝的方向。</p>
+               
+            </li>
+            
+         </ol>
+         <p>由于疲劳是一个表面现象，只会在单元的自由面上计算损伤值，并且用到平面应力假设。</p>
+         <p>静态事件将使用称为轴搜索静态的轴搜索耐久性对象，瞬态事件将使用称为轴搜索瞬态的轴搜索耐久性对象。</p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <table cellspacing="0" class="option_list" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="86">
+                     
+                     <col span="1" width="185*">
+                     
+                     <col span="1" width="20">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>对象类型</strong></p>
+                           
+                        </td>
+                        
+                        <td class="border1a" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">轴搜索</p>
+                           
+                        </td>
+                        
+                        <td class="nopadding" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="top" src="../graphics/nonLocalized/nx/icons/images/option_arrow_no_border.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/durability/edit.gif" border="0">&nbsp;<strong>编辑</strong></p>
+               
+            </li>
+            <li>
+               
+               <table cellspacing="0" class="input_field" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="90">
+                     
+                     <col span="1" width="190*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>名称</strong></p>
+                           
+                        </td>
+                        
+                        <td class="border1b" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">Axis Search static</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table cellspacing="0" class="option_list" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="86">
+                     
+                     <col span="1" width="185*">
+                     
+                     <col span="1" width="20">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>单元面应力轴</strong></p>
+                           
+                        </td>
+                        
+                        <td class="border1a" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">双轴</p>
+                           
+                        </td>
+                        
+                        <td class="nopadding" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="top" src="../graphics/nonLocalized/nx/icons/images/option_arrow_no_border.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+               <p>当您把<strong>单元面应力轴</strong>设置为<strong>双轴</strong>时，垂直于裂缝传播方向施加的力也将参与计算裂缝的增长。</p>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>确定</strong></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;<strong>轴搜索</strong>对话框</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/durability/clone.gif" border="0">&nbsp;<strong>克隆</strong></p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/durability/edit.gif" border="0">&nbsp;<strong>编辑</strong></p>
+               
+            </li>
+            <li>
+               
+               <table cellspacing="0" class="input_field" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="90">
+                     
+                     <col span="1" width="190*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>名称</strong></p>
+                           
+                        </td>
+                        
+                        <td class="border1b" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">Axis Search transient</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="4" cellspacing="0" frame="box" width="330">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="20">
+                     
+                     <col span="1" width="0*">
+                     
+                     <col span="1" width="0*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/radio-on.gif" border="0"></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>最大损伤</strong></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">(位于<strong>应力轴搜索方法</strong>组中)</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+               <p>当您选择<strong>最大损伤</strong>法时，耐久性求解器将计算单元自由面上每个方向的损伤，以确定主载荷方向、它的损伤以及寿命值。</p>
+               
+            </li>
+            <li>
+               
+               <table cellspacing="0" class="input_field" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="90">
+                     
+                     <col span="1" width="190*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>搜索分辨率</strong></p>
+                           
+                        </td>
+                        
+                        <td class="border1b" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">30</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>确定</strong></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;所有对话框</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

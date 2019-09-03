@@ -1,0 +1,144 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>壳网格与参考平面之间的关系</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>壳网格与参考平面之间的关系</h2>
+         
+         <p>壳偏置将取代壳网格的层合板参考平面。</p>
+         
+         <p>偏置参考平面的层合板中面与指定壳偏置不同：壳偏置在处理器与偏置中定义，方向为单元法向，从参考平面到单元节点。在指定壳偏置的同时偏置层合板中面是完全可能的。</p>
+         <a name="genid_spta_lamproc_19" id="genid_spta_lamproc_19"></a><table border="1" cellpadding="4" cellspacing="2" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="2">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">具有零壳偏置的层合板(1)</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_physical_property/offset_distance_no_mid.gif"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_physical_property/offset_distance_no_specify.gif"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">具有非零壳偏置的层合板(2)</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" height="180" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_physical_property/offset_distance_mid.gif"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" height="180" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_physical_property/offset_distance_specify.gif"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1"></td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center" class="no-bottom-margin">中面参考平面</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center" class="no-bottom-margin">User specified reference plane</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         
+         <p>加号 <img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_physical_property/node_location.gif" border="0"> 表示网格单元面，即节点平面。</p>
+         
+         
+         
+         
+         <div class="division">
+            
+            <h3>定义壳偏置</h3>
+            
+            <p>对于下列求解器，在<strong>网格相关数据</strong>对话框中定义壳偏置：</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>NX Nastran</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>MSC Nastran</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>LS-DYNA</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>对于 ANSYS，您无法定义壳偏置。</p>
+            
+            <p>对于 Abaqus，在<strong>层合板建模器</strong>对话框的<strong>求解器属性</strong>组中定义偏置。</p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

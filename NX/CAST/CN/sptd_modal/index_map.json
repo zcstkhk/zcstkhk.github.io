@@ -1,0 +1,12 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"Modal analysis",file:"id1298341.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"Modal analysis",file:"genid_modal_analysis_introduction_20_228.html",type:"topic",parent:""},
+{id:"d5e7",title:"Using materials for a modal analysis",file:"genid_using_materials_for_a_modal_analysis_24_244.html",type:"topic",parent:""},
+{id:"d5e9",title:"Defining boundary conditions for a modal analysis",file:"genid_defining_boundary_conditions_for_a_modal_analysis_23_339.html",type:"topic",parent:""},
+{id:"d5e11",title:"Setting modal solution attributes",file:"genid_setting_modal_solution_attributes_33_683.html",type:"topic",parent:""},
+{id:"d5e14",title:"Reviewing modal analysis results",file:"genid_reviewing_modal_analysis_results_21_583.html",type:"topic",parent:""},
+{id:"d5e16",title:"Animating mode shapes",file:"genid_animating_mode_shapes_16_278.html",type:"topic",parent:""},
+{id:"d5e18",title:"Review",file:"id1622610.html",type:"topic",parent:""},
+{id:"d5e20",title:"Modal analysis",file:"xid481218.html",type:"activity",parent:""}
+]}

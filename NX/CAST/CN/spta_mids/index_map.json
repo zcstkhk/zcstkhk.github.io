@@ -1,0 +1,16 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"中面",file:"id1298163.html",type:"topic",parent:""},
+{id:"d5e5",title:"划分网格前创建中面",file:"id150866.html",type:"topic",parent:""},
+{id:"d5e7",title:"几何体理想化",file:"id150816.html",type:"topic",parent:""},
+{id:"d5e9",title:"中面创建命令",file:"id1040270.html",type:"topic",parent:""},
+{id:"d5e11",title:"选择合适的部件进行中面创建",file:"id1040262.html",type:"topic",parent:""},
+{id:"d5e12",title:"在创建中面前准备修改理想化部件",file:"xid486923.html",type:"topic",parent:""},
+{id:"d5e14",title:"通过配对面来创建中面",file:"id1040264.html",type:"topic",parent:""},
+{id:"d5e16",title:"视频：创建中面",file:"id1320581.html",type:"topic",parent:""},
+{id:"d5e18",title:"按面对创建中面的工作流",file:"id1082522.html",type:"topic",parent:""},
+{id:"d5e20",title:"划分中面的网格",file:"id741196.html",type:"activity",parent:""},
+{id:"d5e22",title:"使用变化厚度生成中面",file:"id931336.html",type:"activity",parent:""},
+{id:"d5e24",title:"缝合中面的边",file:"id341480.html",type:"topic",parent:""},
+{id:"d5e27",title:"划分网格前缝合中面",file:"id741286.html",type:"activity",parent:""},
+{id:"d5e29",title:"复习",file:"id1320545.html",type:"topic",parent:""}
+]}

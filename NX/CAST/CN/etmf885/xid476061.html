@@ -1,0 +1,155 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Export a tool</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Export a tool</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Machine Tool</span> view of the <span class="uiTerm">Operation Navigator</span>, double-click the tool named <span class="literalText">MILL-.25TD-.25R-15DEG</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Milling Tool-5 Parameters</span> dialog box, in the <span class="uiTerm">Library</span> group, click <span class="uiTerm">Export Tool to Library</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_tool/export_tool_to_library.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Select Target Class</span> dialog box, select <span class="literalText">END_MILL_NON_INDEXABLE</span> and click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Template Attributes</span> dialog box, click <span class="uiTerm">OK</span> without assigning an attribute.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>By choosing not to assign a holding system, you are making the tool available for any holding system. </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Export Tool to Library</span> dialog box, make a note of the names of the new tool and new holder that were exported.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>The <span class="fileName">ugti0201</span> prefix for the tool name indicates the library type and subtype of the tool. You can verify this by examining your update tool library file.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>In your operating system, use a text editor to open your <span class="fileName">...\tool\english|tool_database.dat</span> file.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>In the comment section, approximately 190 lines into the file, the subtypes for the milling tool type <span class="codeText">02</span> are identified, as shown by these truncated lines:
+                     </p>
+                     <pre class="codeExample indent ">
+#    T   Lib Type    ST  ...
+#    --------------|-----...
+#    02  Milling     01  ...
+#    02  Milling     02  ...
+#    02  Milling     03  ...
+...</pre>
+                     <p>Subtype <span class="codeText">01</span> in the <span class="codeText">ST</span> column is identified in the <span class="codeText">Lib Subtype</span> column as <span class="codeText">End Mills Non-indexable</span>.
+                     </p>
+                     
+                     <p>Because you chose a non-indexable end mill, with type 02 and subtype 01, the automatically assigned name starts with <span class="fileName">ugti0201</span>.
+                     </p>
+                     
+                     <p>The rest of the name is defined by the default starting number for user tools, which your administrator can set up in the customer defaults, and by the next available number in the sequence.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>Close the text editor, and in NX, in the <span class="uiTerm">Export Tool to Library</span> dialog box, click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Milling Tool-5 Parameters</span> dialog box, click <span class="uiTerm">Cancel</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>Choose <span class="uiTerm">Help</span>&rarr;<span class="uiTerm">Log File</span>, and search for the name of your tool in the <span class="uiTerm">Information</span> window.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>The information in the log file includes the names and locations of the library files that were updated, the tool file and the holder file. The file path names include folders that designate the units, <span class="fileName">english</span> or <span class="fileName">metric</span>. Adjacent lines also show the tool, shank, and holder parameters that appeared in the editing dialog box when you clicked <span class="uiTerm">Export Tool to Library</span></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>Close the part without saving it.</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

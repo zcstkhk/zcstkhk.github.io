@@ -1,0 +1,127 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>替换产品</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>替换产品</h2>
+         
+         
+         <p>当前，<strong>mnf14_Product.1</strong>(PART_1 — 如图绿色所示)作为已被冲压定向的产品。用 <strong>mnf14_Product.2</strong>(PART_2 — 如图品红色所示) 来替换此产品并更新工艺路线与操作。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/die_engineering/activities/product_replace/productreplace_part1_2.gif"></p>
+         
+         <p>要实现此您必须将 <strong>mnf14_Lineup.Product</strong> 设为工作部件；否则您将收到一条信息工作部件中不含要编辑的工艺路线。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在装配导航器中，右击<strong> mnf14_Lineup.Product </strong>并选择<strong>设为工作部件</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>其它部件仍是打开与未抑制的。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>右击 <strong>mnf14_Lineup.Product</strong> 并选择<strong>设为显示部件</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>冲模工程</strong>工具条上的<strong>产品替换</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/vehicle_automation/die_engineering/product_replace.gif" border="0" alt="Tools &gt; Vehicle Manufacturing Automation &gt; Die Engineering &gt; Product Replace" title="Tools &gt; Vehicle Manufacturing Automation &gt; Die Engineering &gt; Product Replace">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>产品替换</strong>对话框中，点击<strong>选择步骤</strong>下方的<strong>旧产品</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/vehicle_automation/product_replace/old_product.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p><strong>旧产品</strong>选择步用于选择代表要替换的工艺路线中的产品。</p>
+                     
+                     <p>注意到 <strong>PART_1</strong>将在视图中高亮显示。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/die_engineering/activities/product_replace/productreplace_part_1_highlighted.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>选择步骤</strong>下方的<strong>新产品</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/vehicle_automation/product_replace/new_product.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p><strong>新产品</strong>选择步用于选择您想要在工艺路线中替换旧产品的片体。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在图形窗口中选择片体 <strong>PART_2</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/die_engineering/activities/product_replace/productreplace_part_2_highlighted.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>点击两次<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p><strong>产品替换</strong>对话框将发生变化，让您查看并修改工艺路线中的所有工序。</p>
+                     
+                     <p>图形窗口将切换为两个视窗。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/die_engineering/activities/product_replace/productreplace_dual_display.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,8 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开部件文件",file:"id358148.html",type:"topic",parent:""},
+{id:"d7e3",title:"重置对话框内存",file:"id353012.html",type:"topic",parent:""},
+{id:"d7e4",title:"创建 FEM 和仿真文件",file:"id358152.html",type:"topic",parent:""},
+{id:"d7e5",title:"创建网格收集器",file:"id968861.html",type:"topic",parent:""},
+{id:"d7e6",title:"划分部件网格",file:"id358154.html",type:"topic",parent:""},
+{id:"d7e7",title:"使用不同的单元重新划分部件网格",file:"id358156.html",type:"topic",parent:""},
+{id:"d7e8",title:"使用基于表面曲率的大小变化",file:"id358158.html",type:"topic",parent:""}]}

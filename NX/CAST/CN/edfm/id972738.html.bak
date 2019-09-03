@@ -1,0 +1,149 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>应用平行度公差到臂的顶面</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>应用平行度公差到臂的顶面</h2>
+         
+         
+         <p>您首先需要在<strong>特征控制框</strong>对话框中构建公差，然后使用普通指引线将它附着到部件中。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>打开 <span class="fileName">drf5_drf_gdt_dwg</span>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/text_editor/drafting_activities_gdt_gdt2_160.png"></p>
+                     
+                     <p>图纸页 &ldquo;Sheet 1&rdquo; 工作</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>注释</strong>工具条上的<strong>基准和 FCF</strong> 下拉菜单中，选择<strong>特征控制框</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/drafting/drafting_annotation/feature_control_frame.gif" border="0" alt="Insert &gt; Annotation &gt; Feature Control Frame" title="Insert &gt; Annotation &gt; Feature Control Frame">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p><strong>在特征控制框</strong>对话框顶部的右侧，点击<strong>重置</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/rail/reset.gif" border="0"> 按钮。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>指引线</strong>组中，确保<strong>类型</strong>是设置为<strong>普通</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>框</strong>组的<strong>特性</strong>列表中，选择<strong>平行度</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>确保<strong>框样式</strong>是设置为<strong>单框</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>在<strong>公差</strong>子组中，键入<span class="uiTerm">0.2</span>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/symbols/drafting_activities_gdt_gdt2_125.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>在<strong>第一基准参考</strong>子组中，点击<strong>基准字母</strong>列表 <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_1_small.gif" border="0"> 并选择<strong> A</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/symbols/drafting_activities_gdt_gdt2_135.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>将光标移动到部件边上，以使它高亮显示。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/symbols/drafting_activities_gdt_gdt2_145.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>当指引线符号出现在光标上时，按住鼠标左键并将符号拖动到合适的位置，然后单击以放置形位公差符号。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/symbols/drafting_activities_gdt_gdt2_155.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>单击鼠标中键以关闭<strong>特征控制框</strong>对话框。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

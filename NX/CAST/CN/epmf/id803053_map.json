@@ -1,0 +1,14 @@
+{identifier:"id",label:"title",items:[
+{id:"d9e2",title:"打开部件并编辑工序",file:"id803062.html",type:"topic",parent:""},
+{id:"d9e3",title:"定义毛坯几何体",file:"id970370.html",type:"topic",parent:""},
+{id:"d9e4",title:"定义切削层",file:"id970432.html",type:"topic",parent:""},
+{id:"d9e5",title:"定义第二个切削层范围",file:"id970434.html",type:"topic",parent:""},
+{id:"d9e6",title:"生成并确认刀轨",file:"id970436.html",type:"topic",parent:""},
+{id:"d9e7",title:"指定切削区域",file:"id970438.html",type:"topic",parent:""},
+{id:"d9e8",title:"生成并确认刀轨",file:"id970440.html",type:"topic",parent:""},
+{id:"d9e9",title:"延伸切削区域",file:"id970442.html",type:"topic",parent:""},
+{id:"d9e10",title:"重新定义毛坯几何体",file:"id970444.html",type:"topic",parent:""},
+{id:"d9e11",title:"再次更改毛坯几何体",file:"id970446.html",type:"topic",parent:""},
+{id:"d9e12",title:"更改切削方向",file:"id970448.html",type:"topic",parent:""},
+{id:"d9e14",title:"定义毛坯几何体和距离",file:"id970450.html",type:"topic",parent:""},
+{id:"d9e15",title:"编辑切削层",file:"id970452.html",type:"topic",parent:""}]}

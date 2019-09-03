@@ -1,0 +1,189 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Add the tool rack to the machine assembly</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Add the tool rack to the machine assembly</h2>
+         
+         <p>When you define pockets for your tool rack using junctions, those junctions do not move with the tool rack if it is moved to a different location on the machine. In this activity, you will constrain the tool rack to the table to ensure that it cannot be moved. You will also use the NX Machine Tool Builder to add the tool rack to the CMM machine assembly.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>Click the <strong>Assembly Navigator</strong> tab <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/assembly_navigator_tab.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Assembly Navigator</strong>, right click <strong>ACR1_308_mm</strong> and choose <strong>Assembly Constraints</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Assembly Constraints</strong> dialog box, from the <strong>Type</strong> list, select <strong>Bond</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>In the graphics window, click the CMM table.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/machines/tool_rack_03a.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>Click the rack.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/machines/tool_rack_03b.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Assembly Constraints</strong> dialog box, click <strong>Create Constraint</strong>, and then click <strong>OK</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>The rack is now constrained to the table and can only be moved with it.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>Click the <strong>Machine Tool Navigator</strong> tab <img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/isv/machine_tool_builder/mtb_icon.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Machine Tool Navigator</strong>, right-click <strong>MACHINE_BASE</strong> and choose <strong>Insert</strong>&rarr;<strong>Machine Component</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Create Machine Component</strong> dialog box, in the <strong>Name</strong> box, type <span class="userInput">TOOL_RACK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>In the graphics window, select the tool rack.</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Junctions</strong> section, clear the <strong>Name</strong> box.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_12">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Classify Component</strong> section, select the <strong>_DEVICE</strong> check box.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_13">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Device Details</strong> section, in the <strong>Device ID</strong> box, type <span class="userInput">TR1</span>, and click <strong>OK</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_14">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Machine Tool Navigator</strong>, expand the <strong>MACHINE_BASE</strong> node.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p><strong>TOOL_RACK</strong> is the last node beneath <strong>MACHINE_BASE</strong>.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_15">
+               <div class="stepAction">
+                  
+                  <p>Choose <strong>File</strong>&rarr;<strong>Save</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         <div class="stepListResult">
+            
+            <p>The tool rack is now constrained and is part of the CMM machine. You are ready to begin defining tool rack pockets.</p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

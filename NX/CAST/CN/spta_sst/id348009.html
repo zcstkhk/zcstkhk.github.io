@@ -1,0 +1,95 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Creating meshes using primitives volumes</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Creating meshes using primitives volumes</h2>
+         <p>You can define a mesh:</p>
+         <ul>
+            
+            <li>
+               
+               <p>On geometry created in the Modeling application or imported from other CAD modeling packages.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Using primitives in the FEM file to create structured 2D or 3D meshes based on a simple geometric form type. You must specify the size, location, and orientation based on an associated coordinate system, and mesh density of the elements. </p>
+               
+            </li>
+            
+         </ul>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/maya/sst_satellite/sst_pres006.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/maya/sst_satellite/sst_pres008.gif" border="0"></p>
+         <p>You can define primitives by:</p>
+         <ul>
+            
+            <li>
+               
+               <p><span class="uiTerm">Points</span> &mdash; Allow you to specify three-dimensional coordinates to define key points to provide the shape information of the primitive.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">Parameters</span> &mdash; Allow you to define the primitive in relation to the X, Y, and Z-axes of a coordinate system using angular and linear values. 
+               </p>
+               
+            </li>
+            
+         </ul>
+         <p>You can position the primitive with respect to the global coordinate system by translating or rotating the primitive's origin. You can define a primitive mesh and define a mesh collector to assign material, physical, and thermo-optical properties to it. Alternatively, you can define a mesh collector first and then assign the primitive mesh you create to it. </p>
+         <p>When you create a primitive with 2D elements, the top side of each 2D element faces a specific direction by default, depending on the type of primitive.</p>
+         <ul>
+            
+            <li>
+               
+               <p>With three-dimensional primitives, such as the <span class="uiTerm">Box Primitive</span> or <span class="uiTerm">Sphere Primitive</span>, the top sides of the associated 2D elements face outward, away from the primitive. 
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>With two-dimensional primitives, such as the <span class="uiTerm">Rectangle Primitive</span> or <span class="uiTerm">Disc Primitive</span> that you create by specifying parameters, the top sides of the associated 2D elements face the +Z direction. 
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>With two-dimensional primitives, such as the <span class="uiTerm">Rectangle Primitive</span> or <span class="uiTerm">Disc Primitive</span>, that you create by selecting points, the top sides of the associated 2D elements are determined by the right hand rule, using the sequence P1, P2, P3 to define a rotation. 
+               </p>
+               
+            </li>
+            
+         </ul>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>3D elements have no top or bottom side, so the rules do not apply to primitives created with these elements (example: Solid Brick Primitive, Solid Cylinder Primitive). </p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

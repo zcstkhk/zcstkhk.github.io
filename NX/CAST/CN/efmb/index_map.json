@@ -1,0 +1,17 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"基准特征",file:"id1073251.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"基准 CSYS",file:"create_features_modl_datumcsys_overview.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"基准 CSYS 示例",file:"create_features_modl_datumcsys_examples.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"基准 CSYS 类型",file:"datum_csys_types.html",type:"topic",parent:"d5e5"},
+{id:"d5e8",title:"更新和编辑基准 CSYS",file:"create_features_modl_datumcsys_edit.html",type:"topic",parent:"d5e5"},
+{id:"d5e9",title:"创建偏置基准 CSYS",file:"id655618.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e11",title:"基准平面",file:"create_features_feat_datum_plane_ov.html",type:"topic",parent:"",children:[
+{id:"d5e12",title:"基准平面的应用",file:"id220691.html",type:"topic",parent:"d5e11"},
+{id:"d5e13",title:"创建基准平面来支持设计意图",file:"id1385894.html",type:"activity",parent:"d5e11"}]},
+{id:"d5e15",title:"基准轴",file:"feat_datum_axis_ov.html",type:"topic",parent:"",children:[
+{id:"d5e16",title:"基准轴的应用",file:"id220641.html",type:"topic",parent:"d5e15"},
+{id:"d5e17",title:"在圆柱面上创建基准",file:"id655608.html",type:"activity",parent:"d5e15"}]}
+
+
+]}

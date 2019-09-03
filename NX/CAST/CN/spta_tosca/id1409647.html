@@ -1,0 +1,42 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>光顺优化的结构</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>光顺优化的结构</h2>
+         
+         <p>对于设计区域内的每个单元，优拓扑化将指派相对密度，其大小在 0(软单元)到 1(硬单元)之间。产生的模型具有类似于块的材料分布，可能难以可视化。</p>
+         
+         <p>完成优化迭代后，软件可以运行创建过渡的光顺过程，从而实现更为连续的材料分布。在光顺过程中，软件将使用材料密度的 ISO 曲面来创建几何体边界逼近，然后使用这个边界创建新几何体。</p>
+         
+         <p>对于已光顺的模型，优化过程可生成 NX Nastran BDF 文件。在&ldquo;建模&rdquo;应用模块中创建最终模型时，还可以导出 STL 或 IGES 切面文件以用于参考。 </p>
+         
+         <a name="genid_spta_tosca_22"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/topo_opt/simplified_smoothing_example.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>1) 原先的模型；(2) 优化的模型；(3) 光顺后的优化模型</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

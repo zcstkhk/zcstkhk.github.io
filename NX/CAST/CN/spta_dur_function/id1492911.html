@@ -1,0 +1,76 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>基于函数的耐久性工作流</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>基于函数的耐久性工作流</h2>
+         <table cellspacing="2" width="95%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="13*">
+               
+               <col span="1" width="42*">
+               
+               <col span="1" width="135*">
+            </colgroup>
+            
+            <tr valign="top">
+               
+               <th bgcolor="#c0c0c0" colspan="2" rowspan="1">
+                  
+                  <p class="no-bottom-margin">步骤</p>
+                  
+               </th>
+               <th bgcolor="#c0c0c0" rowspan="1">汇总</th>
+               
+            </tr>
+            
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>1.</p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>加载或创建应力或应变历程的 AFU 函数。</p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>因为<strong>计算损伤</strong>命令将评估存储在 AFU 文件中的应力或应变历程函数，所以需要在 <strong>XY 函数导航器</strong>中加载该函数。</p>
+                <p>要获得应力和应变函数，可以：</p>
+                <ul>
+                  <li>
+                    <p>使用 <strong>XY 函数编辑器</strong>命令创建 XY 表函数。</p>
+                  </li>
+                  <li>
+                    <p>从外部文件导入数据。</p>
+                  </li>
+                  <li>
+                    <p>使用<strong>分析应变片</strong>命令可从应变片数据中获得该函数。</p>
+                  </li>
+                </ul></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>2.</p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>创建疲劳耐久性对象。</p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>疲劳耐久性对象可定义疲劳寿命准则和用于<strong>计算损伤</strong>命令的循环应力-应变模型。</p></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>3.</p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>计算应力或应变历程引起的耐久性损伤。</p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>计算损伤</strong>命令可对多个应力或应变函数执行周期计数，从而标识所有应力或应变周期并计算已标识周期所引起的损伤。</p>
+                <p>疲劳损伤结果可以存储为电子表格或 CSV 文件格式。</p>
+                <p>可以修改公称范围框和平均框定义。也可以编辑或创建疲劳耐久性对象。</p>
+                <p>必须指定对其应用该函数的材料。</p></td>
+            </tr>
+            
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

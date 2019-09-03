@@ -1,0 +1,14 @@
+{identifier:"id",label:"title",items:[
+{id:"d9e2",title:"打开仿真文件",file:"id952516.html",type:"topic",parent:""},
+{id:"d9e3",title:"重置对话框内存",file:"id412719_2.html",type:"topic",parent:""},
+{id:"d9e4",title:"求解解算方案并查看动画",file:"id952522.html",type:"topic",parent:""},
+{id:"d9e5",title:"开始高级仿真",file:"id952546.html",type:"topic",parent:""},
+{id:"d9e6",title:"创建仿真和 FEM 文件",file:"id952532.html",type:"topic",parent:""},
+{id:"d9e7",title:"将柔性体有限元模型与机构连接",file:"id952540.html",type:"topic",parent:""},
+{id:"d9e8",title:"对部件划分网格",file:"id952534.html",type:"topic",parent:""},
+{id:"d9e9",title:"创建节点组",file:"id1581847.html",type:"topic",parent:""},
+{id:"d9e10",title:"定义材料属性",file:"id952536.html",type:"topic",parent:""},
+{id:"d9e11",title:"显示仿真文件",file:"id952548.html",type:"topic",parent:""},
+{id:"d9e12",title:"定义连接自由度",file:"id952550.html",type:"topic",parent:""},
+{id:"d9e14",title:"求解模型",file:"id952542.html",type:"topic",parent:""},
+{id:"d9e15",title:"查看模态形状",file:"id952577.html",type:"topic",parent:""}]}

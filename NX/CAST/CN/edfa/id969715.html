@@ -1,0 +1,92 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>使用 Teamcenter Integration for NX 创建非主模型图纸</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>使用 Teamcenter Integration for NX 创建非主模型图纸</h2>
+         
+         
+         
+         <p>使用 Teamcenter Integration for NX 来创建非主模型图纸的过程与在原生环境中创建图纸id过程是类似的。但是，您可能需要从数据库中选择引用(主模型)部件，而不是从文件夹中，您可能还需要知道它与主模型部件的关系。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>文件→新建</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>新建</strong>对话框中的<strong>图纸</strong>选项卡。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>选择其中一个<strong>图纸</strong>模板。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>使用默认名称或者在<strong>数据集名称</strong>输入框中键入想要的值。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>如果您选择的是<strong>空白</strong>图纸模板，您还需要在<strong>关系</strong>列表中指定与主模型部件的关系，如果您选择了一个已建立关系的模板，则不会显示该列表。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>工作部件默认显示在对话框的<strong>引用部件</strong>组。如果工作部件中不包含主模型，点击<strong>浏览</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>以创建非主模型图纸，将打开<strong>制图</strong>应用模块并显示模板。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>选择<strong>文件→保存</strong>以保存非主模型图纸。非主模型图纸文件将被添加到数据库中，并与引用部件关联。第一次保存该项时，将打开<strong>命名部件</strong>对话框，以便您可以在将它保存到 Teamcenter 数据库中之前查看并修改名称、位置以及属性。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

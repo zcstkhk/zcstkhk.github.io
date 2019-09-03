@@ -1,0 +1,59 @@
+#! NX/KF 7.5
+
+DefClass: SampleReferencesTable_1 (%TableData);
+
+(String Modifiable)ParameterValue: ug_askAttrValue_("", "PART_ATTRIBUTE", "ATTRIBUTE_1");
+(List Parameter Modifiable)Rows: PopulateTableRows:(ParameterValue:);
+
+(Method List)PopulateTableRows:(String $ParameterValue)
+  @{ $list1 << if ($ParameterValue = "1")
+      then 
+      {
+        {"18", "NEW STANDARDS DRAWING PROCEDURE L", "1818"}, {"17", "NEW STANDARDS DRAWING PROCEDURE K", "1717"}, 
+        {"16", "NEW STANDARDS DRAWING PROCEDURE J", "1616"}, {"15", "NEW STANDARDS DRAWING PROCEDURE I", "1515"}, 
+        {"14", "NEW STANDARDS DRAWING PROCEDURE H", "1414"}, {"13", "NEW STANDARDS DRAWING PROCEDURE G", "1313"}, 
+        {"12", "NEW STANDARDS DRAWING PROCEDURE F", "1212"}, {"11", "NEW STANDARDS DRAWING PROCEDURE E", "1111"}, 
+        {"10", "NEW STANDARDS DRAWING PROCEDURE D", "1010"}, {"9", "NEW STANDARDS DRAWING PROCEDURE C", "9999"},  
+        {"8", "NEW STANDARDS DRAWING PROCEDURE B", "8888"},  {"7", "NEW STANDARDS DRAWING PROCEDURE C", "7777"},
+        {"6", "STANDARD DRAWING PROCEDURE - STEEL", "6666"}, {"5", "NEW STANDARDS DRAWING PROCEDURE A", "5555"},
+        {"4", "STANDARD DRAWING PROCEDURE - PIPING", "4444"},{"3", "BOAT YARD REFERENCE DRAWING", "3333"},
+        {"2", "STANDARD DRAWING PROCEDURE", "2222"},         {"1", "E12345 PROCEDURE WITH APPENDIX A", "1111"},  
+        {"NO", "TITLE", "CAGE CODE"},                        {" ","REFERENCES"," "} 
+      }
+      else 
+      {
+
+                                                             {"Item", "P/N", "L"}, 
+        {"1", "TN-101599-150", "15.0"},                      {"2", "TN-101599-200", "20.0"},
+        {"3", "TN-101599-225", "22.5"},                      {"4", "TN-101599-250", "25.0"},
+        {"5", "TN-101599-275", "27.5"},                      {"6", "TN-101599-300", "30.5"},
+        {"7", "TN-101599-325", "32.5"},                      {"8", "TN-101599-350", "35.0"},
+        {"9", "TN-101599-375", "37.5"},                      {"10","TN-101599-400", "40.0"},
+        {"11","TN-101599-425", "42.5"},                      {"12","TN-101599-450", "45.0"},
+        {"13","TN-101599-475", "47.5"},                      {"14","TN-101599-500", "50.0"},
+        {"15","TN-101599-525", "52.5"},                      {"16","TN-101599-550", "55.0"},
+        {"17","TN-101599-575", "57.5"},                      {"18","TN-101599-600", "60.0"},
+        {"19","TN-101599-625", "62.5"},                      {"20","TN-101599-650", "65.0"},
+        {"21","TN-101599-675", "67.5"},                      {"22","TN-101599-700", "70.0"},
+        {"23","TN-101599-725", "72.5"},                      {"24","TN-101599-750", "75.0"},
+        {"25","TN-101599-775", "77.5"},                      {"26","TN-101599-800", "80.0"},
+        {"27","TN-101599-825", "82.5"},                      {"28","TN-101599-850", "85.0"},
+        {"29","TN-101599-875", "87.5"},                      {"30","TN-101599-900", "90.0"},
+        {"31","TN-101599-925", "92.5"},                      {"32","TN-101599-950", "95.0"},
+        {"33","TN-101599-975", "97.5"},                      {"34","TN-101599-1000", "100.0"},
+        {"35","TN-101599-525", "52.5"},                      {"36","TN-101599-550", "55.0"},
+        {"37","TN-101599-575", "57.5"},                      {"38","TN-101599-600", "60.0"},
+        {"39","TN-101599-625", "62.5"},                      {"40","TN-101599-650", "65.0"},
+        {"41","TN-101599-675", "67.5"},                      {"42","TN-101599-700", "70.0"},
+        {"43","TN-101599-725", "72.5"},                      {"44","TN-101599-750", "75.0"},
+        {"45","TN-101599-775", "77.5"},                      {"46","TN-101599-800", "80.0"},
+        {"47","TN-101599-825", "82.5"},                      {"48","TN-101599-850", "85.0"},
+        {"49","TN-101599-875", "87.5"},                      {"50","TN-101599-900", "90.0"},
+        {"51","TN-101599-925", "92.5"},                      {"52","TN-101599-950", "95.0"},
+        {"53","TN-101599-975", "97.5"},                      {"54","TN-101599-1000", "100.0"},
+ 
+                                         
+      };
+   };
+ 
+

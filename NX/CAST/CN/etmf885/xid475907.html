@@ -1,0 +1,232 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Shift the tool down by a constant value</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Shift the tool down by a constant value</h2>
+         
+         
+         <p>You will shift the tool down 4 mm and observe the differences in the tool path.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Drive Method</span> group, in the <span class="uiTerm">Method</span> row, click <span class="uiTerm">Edit</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/edit.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>The <span class="uiTerm">Contour Profile Drive Method</span> dialog box is displayed.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Contact Position</span> group, set the following:
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <ul class="unmarkedList">
+                        <li>
+                           
+                           <p><span class="uiTerm">Ring Height</span> = <span class="uiTerm">Constant</span></p>
+                           
+                        </li>
+                        <li>
+                           
+                           <p><span class="uiTerm">Distance</span> = <span class="userInput">4</span> <span class="uiTerm">mm</span></p>
+                           
+                        </li>
+                     </ul>
+                     
+                     <p>The <span class="uiTerm">Ring Height</span> option controls how much tool shift is allowed in the tool path.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>The <span class="uiTerm">Contour Profile</span> dialog box is displayed.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Actions</span> group, click <span class="uiTerm">Generate</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/generate.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/variable_contour/act_vap_ring_height_replay2a.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">Verify</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/verify.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>Click the tool path at the locations shown to see the tool placement.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/variable_contour/act_vap_ring_height_replay2c.png"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>Notice the differences in the tool path and where the tool contacts the wall.</p>
+                     
+                     <table border="0" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1">
+                           
+                           <col span="1">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td align="center" colspan="2" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">Shift distance</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">None</p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">4 mm</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/variable_contour/act_vap_ring_height_replay1d1.png"></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/variable_contour/act_vap_ring_height_replay2d1.png"></p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/variable_contour/act_vap_ring_height_replay1d2.png"></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/variable_contour/act_vap_ring_height_replay2d2.png"></p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/variable_contour/act_vap_ring_height_replay1d3.png"></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/variable_contour/act_vap_ring_height_replay2d3.png"></p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span> to close the <span class="uiTerm">Tool Path Visualization</span> dialog box.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

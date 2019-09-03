@@ -1,0 +1,397 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>定义层合板层片的材料</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>定义层合板层片的材料</h2>
+         
+         <p>层合板层片可以引用：</p>
+         <ul>
+           <li>
+             <p>各向同性和正交各向异性的 NX 材料</p>
+           </li>
+           <li>
+             <p>使用<strong>层片材料</strong>对象创建的纤维强化的和核心层片材料</p>
+           </li>
+         </ul>
+         <p><strong>层片材料</strong>是层合板特定的对象，它为层片指派材料属性。不能像标准 NX 材料那样进行管理。</p>
+         
+         
+         
+         <table border="0" cellpadding="10" cellspacing="0" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/laminates/micromechanics/plylayup_ply_material.gif"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <a name="id852026" id="id852026"></a>
+         
+         
+         
+         <h2>层合板的各向同性材料属性</h2>
+         
+         
+         
+         <table border="0" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr valign="top">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <ul>
+                        
+                        <h4>必须的属性</h4>
+                        
+                        <li class="condense">
+                           
+                           <p class="no-bottom-margin">质量密度(RHO)</p>
+                           
+                        </li>
+                        
+                        <li class="condense">
+                           
+                           <p>需要三个属性中的两个：</p>
+                           
+                           <ul>
+                              
+                              <li class="condense">
+                                 
+                                 <p class="no-bottom-margin">杨氏模量(E)</p>
+                                 
+                              </li>
+                              
+                              <li class="condense">
+                                 
+                                 <p class="no-bottom-margin">泊松比(NU)</p>
+                                 
+                              </li>
+                              
+                              <li class="condense">
+                                 
+                                 <p class="no-bottom-margin">剪切模量(G)</p>
+                                 
+                              </li>
+                              
+                           </ul>
+                           
+                        </li>
+                        
+                        <li class="condense">
+                           
+                           <p class="no-bottom-margin">第三个属性使用以下关系来计算：<em>G</em> = <em>E</em>/(2(1+<em>ν</em>))</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <ul>
+                        
+                        <h4>可选属性</h4>
+                        
+                        <li class="condense">
+                           
+                           <p class="no-bottom-margin">Tsai-Wu 相互作用系数(F12)</p>
+                           
+                        </li>
+                        
+                        <li class="condense">
+                           
+                           <p class="no-bottom-margin">热膨胀系数(A)</p>
+                           
+                        </li>
+                        
+                        <li class="condense">
+                           
+                           <p class="no-bottom-margin">导热系数(K)</p>
+                           
+                        </li>
+                        
+                        <li class="condense">
+                           
+                           <p class="no-bottom-margin">比热(CP)</p>
+                           
+                        </li>
+                        
+                        <li class="condense">
+                           
+                           <p class="no-bottom-margin">应力/应变极限</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>未定义的应力极限值：</p>
+                  
+                  <ul>
+                     
+                     <li class="condense">
+                        
+                        <p>如果尚未定义所有应变极限值，则设为0.0</p>
+                        
+                     </li>
+                     
+                     <li class="condense">
+                        
+                        <p>如果已定义所有应变极限值，则使用应变极限值来计算</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         
+         <a name="id852041" id="id852041"></a>
+         
+         
+         
+         <h2>层合板的正交各向异性材料属性</h2>
+         
+         
+         
+         <table border="0" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr valign="top">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <ul>
+                        
+                        <h4>必须的属性</h4>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">质量密度(RHO)</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">杨氏模量(E1 and E2)</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">泊松比(NU12)</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">剪切模量(G12、G13以及 G23)</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <ul>
+                        
+                        <h4>可选属性</h4>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">Tsai-Wu 相互作用系数(F12)</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">热膨胀系数(A1 与 A2)</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">导热系数(K1 与 K2)</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">比热(CP)</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">应力/应变极限</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>正交各向异性应力极限值的计算方法与各向同性材料的计算方法相同。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         
+         <a name="id851991" id="id851991"></a>
+         
+         
+         
+         <h2>各向同性与正交各向异性材料的其它注释</h2>
+         
+         
+         
+         <ul>
+            
+            <li>
+               
+               <p>各向同性与正交各向异性材料的<strong>参考温度</strong>属性都被层合板的<strong>参考温度</strong>覆盖。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>NX 复合层合板不会在第三个方向上使用的属性：</p>
+               
+               <ul>
+                  
+                  <li class="condense">
+                     
+                     <p><strong>杨氏模量(E3)</strong></p>
+                     
+                  </li>
+                  
+                  <li class="condense">
+                     
+                     <p> <strong>泊松比(NU13)</strong>与<strong>泊松比(NU23)</strong></p>
+                     
+                  </li>
+                  
+                  <li class="condense">
+                     
+                     <p><strong>热膨胀系数(A3)</strong></p>
+                     
+                  </li>
+                  
+                  <li class="condense">
+                     
+                     <p>应力极限<strong>拉伸(ST3)</strong>、应变极限<strong>拉伸(XT3)</strong></p>
+                     
+                  </li>
+                  
+                  <li class="condense">
+                     
+                     <p>应力极限<strong>压缩</strong><strong>(SC3)</strong>、应变极限<strong>压缩</strong><strong>(XC3)</strong></p>
+                     
+                  </li>
+                  
+                  <li class="condense">
+                     
+                     <p>应力极限<strong>剪切(S13)</strong>与<strong>剪切(S23)</strong>、应变极限<strong>剪切</strong><strong>(X13)</strong> 与<strong>剪切</strong><strong>(X23)</strong></p>
+                     
+                  </li>
+                  
+                  <li class="condense">
+                     
+                     <p><strong>导热系数(K3)</strong></p>
+                     
+                  </li>
+                  
+               </ul>
+               
+               
+            </li>
+            
+         </ul>
+         
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

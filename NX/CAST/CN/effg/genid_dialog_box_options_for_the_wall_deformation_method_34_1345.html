@@ -1,0 +1,50 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>用于壁变形方法的对话框选项</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>用于壁变形方法的对话框选项</h2>
+         <p><strong>壁变形</strong>沿给定方向对壁进行变形，并保持与相邻圆角相切。</p>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/global_shaping/gs_wall_deform.png"></p>
+         <p><strong>区域限制</strong> — 选择一条或多条开放曲线(<strong>曲线 1</strong> 和<strong>曲线   2</strong>)作为要修改的区域边界。在这些曲线外，变形为零。</p>
+         <p><strong>目标曲线</strong> — 选择曲线以指定沿曲线的变形高度。</p>
+         <p><strong>偏置选项</strong>：</p>
+         <ul>
+            
+            <li>
+               
+               <p><strong>值</strong> — 用于指定沿<strong>目标曲线</strong>的恒定偏置值。必须提供<strong>偏置</strong>值。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>规律控制</strong> — 使用规律子函数来通过规律指定高度。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>在曲线上</strong> — 指定开放曲线作为加冠高度。变形的片体将插补指定的曲线。</p>
+               
+            </li>
+            
+         </ul>
+         <p><strong>区域偏置曲线</strong> — 选择两条开放曲线(<strong>区域偏置曲线 1</strong> 和<strong>区域偏置曲线 2</strong>)来定义区域偏置边界。这两条曲线之间的区域是沿垂直于<strong>目标曲线</strong>的每个截面按恒定值偏置得来的。偏置量由截面上<strong>目标曲线</strong>的高度确定。</p>
+         <p><strong>投影方向</strong> — 指定将两条<strong>区域限制曲线</strong>和两条<strong>区域偏置曲线</strong>投影到平面上的方向。如果投影的点在<strong>区域限制曲线</strong>之外，则该点处的变形为零。如果投影的点在两条投影的<strong>区域偏置曲线</strong>之内，则偏置将是沿垂直于<strong>目标曲线</strong>的每个截面的一个恒定值。</p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

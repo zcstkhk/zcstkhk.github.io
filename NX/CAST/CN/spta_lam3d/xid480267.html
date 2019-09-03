@@ -1,0 +1,137 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Plies and 3D mesh elements</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Plies and 3D mesh elements</h2>
+         
+         <p>In the <span class="uiTerm">Solid Laminate Modeler</span> dialog box, you define:
+         </p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>The stacking recipe.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The stacking sequence, by creating plies and ply groups.</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>The procedures and commands you use are similar to those you use for the 2D zone-based process.</p>
+         
+         <p>All plies of a solid laminate physical property are defined on each 3D element.</p>
+         
+         <table class="attentionTable attn_example">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Example</p>
+               </td>
+               <td class="attention_main">
+                  <a name="genid_spta_lam3d_14" id="genid_spta_lam3d_14"></a><table border="0" align="center">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1">
+                        
+                        <col span="1">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/laminates/lam_physical_property/ply_sketcher_lam_ppt_pr.gif"></p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/extrusion/pad_5layers.gif"></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+                  <p>As there are 3 plies in the laminate and 5 layers in the 3D mesh, the model has a total of 15 plies.</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <a name="xid480343" id="xid480343"></a>
+         
+         
+         
+         <h2>Creating 2D and 3D laminates from existing laminates</h2>
+         
+         
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><span class="uiTerm">Copy as Shell Laminate</span> <img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_nav_icons/create_laminate_physical_properties.gif" border="0"></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>Use this command to create a 2D shell laminate physical property table from the selected 3D solid laminate physical property table.</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><span class="uiTerm">Copy as Solid Laminate</span> <img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_nav_icons/copy_as_solid_laminate.gif" border="0"></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>Use this command to create a 3D solid laminate physical property table from the selected 2D shell laminate physical property table.</p>
+                  
+               </div>
+            </div>
+         </div>
+         
+         <p>The copied physical property has the same ply layup and stacking recipe as its 2D or 3D counterpart.</p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>These commands are supported only in the Nastran and Abaqus solver environments.</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

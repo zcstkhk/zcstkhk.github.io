@@ -1,0 +1,120 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>WAVE PMI 链接器</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>WAVE PMI 链接器</h2>
+         <div class="estimatedTime">
+            <p>预计完成这堂课需要：5&ndash;7  分钟</p>
+         </div>
+         <div></div>
+         
+         <p>使用<strong>WAVE PMI 链接器</strong>来将 PMI 从一个部件WAVE 链接到另一个部件，以创建关联副本，这样其它操作，比如加工，就可以引用 PMI。源 PMI 的内容如果发生变化，则目标部件中的 PMI 也将更新。您可以选择目标部件以及源部件。</p>
+         
+         <p>所有包含 PMI 或它的相依几何体都必须完全加载才能 WAVE 链接 PMI。如果在部分加载的组件中选择 PMI，或者选定 PMI 所引用的组件为部分加载，那么必须完全加载组件才能激活 PMI 的 WAVE 链接。</p>
+         
+         <div class="division">
+            
+           <h3>WAVE 链接目标几何体</h3>
+            
+            <p>您可以选择<strong>体</strong>或<strong>拓扑结构</strong>来进行 WAVE 链接。</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p><strong>体</strong> &ndash; NX 将会WAVE 链接整个实体，其中包含了 PMI 要关联到的边/面</p>
+                  
+              </li>
+               
+               <li>
+                  
+                  <p><strong>拓扑结构</strong> &ndash; NX 将会把 WAVE 链接的边/面作为单独的 WAVE 链接的特征</p>
+                  
+               </li>
+               
+           </ul>
+            
+         </div>
+         
+         
+         <p>通过创建 PMI 对象的 WAVE 链接，您可以使用<strong>装配 WAVE 部件间链接浏览器</strong>或<strong>关系浏览器</strong>来跟踪部件之间对象的关系。</p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>如果您只想在父级装配中看见组件 PMI，那么您可以使用 PMI 装配过滤器，而不是创建 PMI 的关联副本。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">PMI</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>插入→关联复制→WAVE PMI 链接器</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         <a name="id1385007" id="id1385007"></a><div id="footer"></div>
+      </div>
+   </body>
+</html>

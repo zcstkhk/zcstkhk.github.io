@@ -1,0 +1,84 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>创建接触对齐约束</title>
+   </head>
+   <body>
+      <div class="contentType_procedure">
+         <h2>创建接触对齐约束</h2>
+         
+        <p>接触对齐约束可约束两个组件，使其彼此接触或对齐。这是最常用的约束。</p>
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>在<strong>装配</strong>工具条上，单击<strong>装配约束</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assemblies/mate_component.gif" border="0">。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在<strong>装配约束</strong>对话框中，将<strong>类型</strong>设置为<strong>接触对齐</strong>。</p>
+            </li>
+            <li>
+              <p>如果不想使用设置的默认值，请选中<strong>设置</strong>并修改这些设置：</p>
+              <ul>
+                <li>
+                  <p><strong>布置</strong>指定是否要将约束应用于其他装配布置。<strong>使用组件属性</strong>遵从<strong>组件属性</strong>对话框的参数页上的<strong>布置</strong>设置。<strong>应用到已使用的</strong>将在当前所使用的布置中应用约束。</p>
+                </li>
+                <li>
+                  <p><strong>动态定位</strong>指定希望 NX 解算约束，并在创建每个约束时移动组件。</p>
+                </li>
+                <li>
+                  <p><strong>关联</strong>指定在退出<strong>装配约束</strong>对话框后保持约束。</p>
+                </li>
+                <li>
+                  <p><strong>移动曲线和管线布置对象</strong>指定在约束中使用管线布置对象和相关的非关联装配拥有的曲线(即在<strong>装配约束</strong>对话框中未选中<strong>关联</strong>复选框时创建的曲线)时，是否希望它们移动。这不同于通常的行为，即在约束中使用装配级几何体时，该几何体是固定的，并且只会移动组件。</p></li></ul></li>
+            <li>
+              <p>将<strong>方位</strong>设置为下列选项之一：</p>
+              <ul>
+                <li>
+                  <p><strong>首选接触</strong> — 当接触和对齐解都可能时显示接触约束。（在大多数模型中，接触约束比对齐约束更常用。）</p>
+                  <p><strong>首选接触</strong> — 当接触约束过度约束装配时，将显示对齐约束。</p>
+                </li>
+                <li>
+                  <p><strong>接触</strong> — 约束对象，使其曲面法向在反方向上。</p>
+                </li>
+                <li>
+                  <p><strong>对齐</strong> — 约束对象，使其曲面法向在相同的方向上。</p>
+                </li>
+                <li>
+                  <p><strong>自动判断中心/轴</strong> — 指定在选择圆柱面或圆锥面时，NX 将使用面的中心或轴而不是面本身作为约束。</p>
+                </li>
+              </ul>
+           </li>
+            
+            <li>
+               
+               <p>单击<strong>选择两个对象</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/common/select.gif" border="0">(如果需要)，并选择两个对象进行约束。</p>
+               <p>可以使用<strong>点构造器</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/common/point_constructor.gif" border="0"> 来帮助您选择对象。</p>
+            </li>
+            <li>
+              <p>如果有两个解，则单击<strong>返回上一个约束</strong> <img src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/common/reverse_direction.gif" border="0" align="bottom"> 可以在可能的解之间翻转。</p>
+            </li>
+            <li>
+              <p>完成添加约束后，单击<strong>确定</strong>或<strong>应用</strong>。</p>
+            </li>
+            
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

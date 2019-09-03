@@ -1,0 +1,7 @@
+{identifier:"id",label:"title",items:[
+{id:"d13e2",title:"打开部件",file:"screw_joints_open_the_part.html",type:"topic",parent:""},
+{id:"d13e3",title:"重置对话框内存",file:"id353012_dup6.html",type:"topic",parent:""},
+{id:"d13e4",title:"在门闩上创建滑动副",file:"create_slider_joint_on_latch.html",type:"topic",parent:""},
+{id:"d13e5",title:"创建螺旋副",file:"create_screw_joint_latch.html",type:"topic",parent:""},
+{id:"d13e6",title:"创建解算方案",file:"create_a_solution_screw.html",type:"topic",parent:""},
+{id:"d13e7",title:"查看机构运动",file:"animate_the_mechanism_screw.html",type:"topic",parent:""}]}

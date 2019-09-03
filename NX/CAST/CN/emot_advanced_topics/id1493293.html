@@ -1,0 +1,114 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>复习</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>复习</h2>
+         <div id="topQuestionsContainer">
+            <div class="questionsHeader">
+               <div class="headerTitle">
+                  <p>问题</p>
+               </div>
+               <div class="quesionButtons">
+                  <div class="qButton" id="qButton_1">
+                     <p>1</p>
+                  </div>
+                  <div class="qButton" id="qButton_2">
+                     <p>2</p>
+                  </div>
+               </div>
+            </div>
+            <div id="questionsContainer">
+               <div class="question" id="question1" answered="false" numanswers="4" questiontype="fillInBlank">
+                  <p>在下面的例子中，假设您正在高级仿真中将这个挖掘机的铲斗定义为柔性体。在运动机构中铲斗顶部的两个孔(图中的1)间定义一个旋转副，一个力载荷被应用到其中一个齿(2)上。<br><br>
+                  在高级仿真中，您在求解 SOL 103 柔性体解算方案前必须应用哪个约束？
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/adv_topics/flexible_body_review_1.png"></p>
+                  </p>
+                  <p class="questionInstruction">选择一个</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q3a1" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q3a1" type="radio" correct="no" name="question3Grp"></td>
+                           <td>
+                              <p>一个固定平移约束和一个销钉约束</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q3a2" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q3a2" type="radio" correct="yes" name="question3Grp"></td>
+                           <td>
+                              <p>一个固定边界自由度约束和一个自由边界自由度约束</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q3a3" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q3a3" type="radio" correct="no" name="question3Grp"></td>
+                           <td>
+                              <p>一个用户定义的约束和一个销钉约束</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q3a4" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q3a4" type="radio" correct="no" name="question3Grp"></td>
+                           <td>
+                              <p>两个固定约束</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div class="question" id="question2" answered="false" numanswers="4" questiontype="fillInBlank">
+                  <p>在求解 SOL 103 柔性体解算方案之后，当您在运动仿真中创建柔性连杆时， 必须将什么文件与连杆关联，以显示机构中柔性体的动力学表现？</p>
+                  <p class="questionInstruction">选择一个</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q4a1" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q4a1" type="radio" correct="yes" name="question4Grp"></td>
+                           <td>
+                              <p>.RFI 文件</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q4a2" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q4a2" type="radio" correct="no" name="question4Grp"></td>
+                           <td><p>.DAT 文件 (Nastran 输入文件) </p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q4a3" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q4a3" type="radio" correct="no" name="question4Grp"></td>
+                           <td><p>.OP2 文件</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q4a4" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q4a4" type="radio" correct="no" name="question4Grp"></td>
+                           <td><p>.MDF 文件</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div id="showFeedbackContainer"><span showLabel="true" id="feedbackButton" title="Show feedback" dojoType="xps.form.Button" onClick="showQuestionFeedback()">显示答案</span></div>
+            </div>
+            <div class="helpTextContainer">
+               <p class="questionFeedback" id="incorrect">错误！</p>
+               <p class="questionFeedback" id="correct">正确！</p>
+               <div class="questionHelp" id="questionHelp1">
+                  <p>在各个柔性体通过运动仿真中的运动副或衬套连接到机构的连接节点处，创建固定边界自由度约束来定义连接自由度。在运动仿真中应用到柔性体上的力、力矩、弹簧或者阻尼器的各个连接节点处，创建一个自由边界自由度约束以定义载荷自由度。</p>
+               </div>
+               <div class="questionHelp" id="questionHelp2">
+                  <p>当在高级仿真中求解 SOL 103 柔性体模态解算方案时，求解器将柔性体的质量和刚度减少到模态空间，以表示它的动力学行为，这些减少的矩阵保存在 RecurDyn Rflex 输出文件(.rfi)中。在运动仿真中，将.rfi 文件与连杆关联以创建柔性连杆。</p>
+               </div>
+            </div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>生成并确认刀轨</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>生成并确认刀轨</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>右击 <strong>CAVITY_MILL_1</strong> 并选择<strong>生成</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/generate.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/cavity_milling/manufacturing_activities_cavity_graphic311.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>刀轨生成</strong>信息框中点击<strong>是</strong>以显示警告。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>阅读警告信息并关闭<strong>信息</strong>窗口。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>在<strong>工序导航器</strong>的<strong>程序顺序视图</strong>中，注意到工序已不再被抑制。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/cavity_milling/manufacturing_activities_cavity_graphic308.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>双击 <strong>CAVITY_MILL_1</strong> 以查看工序参数。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>将打开<strong>型腔铣</strong>对话框。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>刀轨设置</strong>组中的<strong>切削参数</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/cutting_parameters.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>将打开<strong>切削参数</strong>对话框。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>空间范围</strong>选项卡。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>这个工序已移除75%的剩余材料，由于这超过了您指定的最小体积，工序将被取消抑制，刀轨将被用在这个工序中。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>以关闭<strong>切削参数</strong>对话框。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>以关闭<strong>型腔铣</strong>对话框。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>在<strong>工序导航器</strong>的<strong>程序顺序视图</strong>中，右击 <strong>NC_PROGRAM</strong> 并选择<strong>刀轨</strong>&rarr;<strong>确认</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>将打开<strong>刀轨可视化</strong>对话框。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>2D 动态</strong>选项卡。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>动态材料移除允许您清楚地看到连续长度变化的刀具如何加工处理中的工件。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>播放</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/simulation/simulation_post_control/play.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/cavity_milling/manufacturing_activities_cavity_graphic310.gif"></p>
+                     
+                     <p>第一个工序将使用较短的刀具切削离型腔侧面较近的区域，以移除大部分材料，同时避免刀具夹持器碰撞。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_12">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>以关闭<strong>刀轨可视化</strong>对话框。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>在这个练习中，您手工定义了一个使用连续长度变化刀具的工序序列，以粗加工型腔，同时检查刀具夹持器碰撞。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_13">
+               <div class="stepAction">
+                  
+                  <p>关闭部件。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

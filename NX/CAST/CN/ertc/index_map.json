@@ -1,0 +1,12 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"创建修复路径",file:"id1144869.html",type:"topic",parent:""},
+{id:"d5e4",title:"修复路径概述",file:"healpath.html",type:"topic",parent:""},
+{id:"d5e5",title:"修复路径方法",file:"id1538012.html",type:"topic",parent:""},
+{id:"d5e6",title:"延伸",file:"id1539722.html",type:"topic",parent:""},
+{id:"d5e8",title:"使用直接和交点方法创建修复路径",file:"id970536.html",type:"topic",parent:"",children:[
+{id:"d5e9",title:"管线方案",file:"plan_the_routing.html",type:"topic",parent:"d5e8"},
+{id:"d5e10",title:"使用直接方法和交点方法创建路径",file:"id1129083.html",type:"activity",parent:"d5e8"}]},
+{id:"d5e12",title:"创建平行于 WCS 轴的管线段",file:"id970541.html",type:"topic",parent:"",children:[
+{id:"d5e13",title:"管线方案",file:"plan_the_routing_path2.html",type:"topic",parent:"d5e12"},
+{id:"d5e14",title:"使用 WCS 轴方法创建管线路径",file:"id1129099.html",type:"activity",parent:"d5e12"}]}
+]}

@@ -1,0 +1,361 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>验证层合板</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>验证层合板</h2>
+         
+         <p>可以依据下列对象验证层合板：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>总体密度</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>热稳定性，通过查看其总体热膨胀系数</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>刚度，通过查看其刚度矩阵及其等效系数</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>强度，通过访问安全系数与一指的结构和温度载荷条件</p>
+               
+            </li>
+            
+         </ul>
+         <a name="id851906"></a>
+         
+         
+         
+         <h3>层合板建模器中的其它组</h3>
+         
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/laminates/lam_physical_property/validation_group.gif"></p>
+         
+         <table border="0" cellpadding="5" cellspacing="0" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/laminates/information.gif" border="0"><strong> 层合板信息到文本窗口</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">在<strong>信息</strong>窗口中显示验证结果</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/laminates/strength_analysis_to_spreadsheet.gif" border="0"> <strong> <strong>层合板信息到电子表格</strong></strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">将验证结果发送到电子表格</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/laminates/csv_file.gif" border="0"><strong> 层合板信息至 CSV 文件</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">将验证结果发送至 CSV 文件</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/laminates/analyze_laminate_strength.gif" border="0"> <strong>分析层合板强度</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p>确认层合板阻止以下加载条件的能力：</p>
+                     <ul>
+                       <li>
+                         <p>膜力</p>
+                       </li>
+                       <li>
+                         <p>弯矩</p>
+                       </li>
+                       <li>
+                         <p>横向剪切力</p>
+                       </li>
+                       <li>
+                         <p>温度负载</p>
+                       </li>
+                  </ul></td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/laminates/plot_failure_envelopes.gif" border="0"> <strong>失效包络绘图</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">显示层片失效包络，该失效包络显示层片在组合加载下可承受多少应力。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <a name="id1588771"></a>
+         
+         
+         
+         <h3>工作表中的层片信息</h3>
+         
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/laminates/theory/validation_group_excel.gif"></p>
+         
+         <table border="1" cellpadding="5" cellspacing="0" width="95%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr bgcolor="#f7f7f7">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">层合板属性</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>求解器属性</strong>和<strong>层合板属性</strong>组的回显</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#f7f7f7">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">材料</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">在层合板中使用的所有 NX 材料的回显，显示其相关属性</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#f7f7f7">
+                  
+                  <td colspan="1" height="29" rowspan="1">
+                     
+                     <p class="no-bottom-margin">层片材料</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" height="29" rowspan="1">
+                     
+                     <p class="no-bottom-margin">在层合板中使用的所有<strong>层片材料</strong>的回显，显示其相关属性</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#f7f7f7">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">层合板定义</p></td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">层合板的回显，显示层片总数和总厚度</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#f7f7f7">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">层合板等价属性</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <ul>
+                       <li>
+                         <p>A、B、D 和 S 矩阵</p>
+                       </li>
+                       <li>
+                         <p>等价工程属性 </p>
+                       </li>
+                       <li>
+                         <p>对称和平衡检查的结果</p>
+                       </li>
+                       <li>
+                         <p>等价 <strong>PSHELL MAT2</strong> 卡的内容</p>
+                       </li>
+                  </ul></td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <a name="id852231"></a>
+         
+         
+         
+         <h3>验证层片强度</h3>
+         
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/laminates/theory/validation_group_strength.gif"></p>
+         
+         <p>在开始有限元仿真之前，验证层合板承载的能力：</p>
+         
+         <ul>
+            
+            <li>
+              <p>膜力</p>
+            </li>
+            <li>
+              <p>弯矩</p>
+            </li>
+            <li>
+              <p>横向剪切力</p>
+            </li>
+            <li>
+              <p>温度负载</p>
+            </li>
+            
+         </ul>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>所有载荷分量都将同时应用到层合板上。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <a name="id852206"></a>
+         
+         
+         
+         <h3>强度分析结果</h3>
+         
+         
+         
+         <p>点击<strong>导出到电子表格</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/laminates/strength_analysis_to_spreadsheet.gif" border="0"> 或<strong>导出到 CSV 文件</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/laminates/csv_file.gif" border="0"> 来根据以下对象查看载荷对层合板的影响：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>层片应力或应变</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>层片与胶合失效指数</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>层片与胶合安全系数</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>将计算在层片顶部、中间以及底部位置的结果以用于输出。</p>
+         
+         <p>点击<strong>绘制应力和应变随层合板厚度的变化图</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/laminates/plot_stress_and_strain_through_laminate_thickness.gif" border="0"> 命令，可将层片 (12) 或层合板 (XY) 坐标系中的应力或应变分量显示为层合板厚度的函数。可以可视方式标识层合板中高应力或高应变的层片。</p>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/laminates/theory/stress_strain_through_lam.gif"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

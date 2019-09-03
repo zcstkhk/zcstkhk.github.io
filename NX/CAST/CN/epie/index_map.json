@@ -1,0 +1,26 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"专用的 PMI",file:"xid481055.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"PMI 注释概述",file:"genid_pmi_notes_overview_631_10337.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"一般注释",file:"prod_def_proddef_attrib_gen_note.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"创建并编辑一般注释",file:"id967160.html",type:"activity",parent:"d5e5"},
+{id:"d5e8",title:"企业标识",file:"prod_def_proddef_attrib_enterprise.html",type:"topic",parent:"d5e5"},
+{id:"d5e9",title:"材料规格",file:"prod_def_proddef_attrib_material.html",type:"topic",parent:"d5e5"},
+{id:"d5e10",title:"部件标识",file:"prod_def_proddef_attrib_part.html",type:"topic",parent:"d5e5"},
+{id:"d5e11",title:"工艺说明",file:"prod_def_proddef_attrib_process.html",type:"topic",parent:"d5e5"},
+{id:"d5e12",title:"URL 注释",file:"prod_def_proddef_attrib_url.html",type:"topic",parent:"d5e5"},
+{id:"d5e13",title:"创建不同类型的 PMI 注释",file:"id967176.html",type:"activity",parent:"d5e5"},
+{id:"d5e14",title:"特定注释",file:"prod_def_proddef_attrib_spec_note.html",type:"topic",parent:"d5e5"},
+{id:"d5e15",title:"坐标注释",file:"prod_def_pmi_note_coordinate.html",type:"topic",parent:"d5e5"},
+{id:"d5e16",title:"定位器指示符",file:"prod_def_proddef_attrib_locator.html",type:"topic",parent:"d5e5"},
+{id:"d5e18",title:"用户定义的 PMI",file:"prod_def_user_defined_pmi_ov.html",type:"topic",parent:"d5e5"},
+{id:"d5e19",title:"字符串注释",file:"prod_def_proddef_attrib_string.html",type:"topic",parent:"d5e5"},
+{id:"d5e20",title:"数字注释",file:"prod_def_proddef_attrib_number.html",type:"topic",parent:"d5e5"},
+{id:"d5e21",title:"整数注释",file:"prod_def_proddef_attrib_integer.html",type:"topic",parent:"d5e5"},
+{id:"d5e22",title:"复习：PMI 注释",file:"id1540294.html",type:"topic",parent:"d5e5"}]},
+{id:"d5e24",title:"安全标记",file:"id1383323.html",type:"topic",parent:"",children:[
+{id:"d5e25",title:"政府安全性信息",file:"genid_government_security_information_57_809.html",type:"topic",parent:"d5e24"},
+{id:"d5e26",title:"公司所有权信息",file:"prod_def_pmi_company_proprietary_ov.html",type:"topic",parent:"d5e24"},
+{id:"d5e27",title:"导出控制",file:"prod_def_pmi_export_control_ov.html",type:"topic",parent:"d5e24"},
+{id:"d5e28",title:"使用 PMI 安全标记",file:"id967186.html",type:"activity",parent:"d5e24"}]}
+]}

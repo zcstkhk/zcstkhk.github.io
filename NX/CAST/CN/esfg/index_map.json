@@ -1,0 +1,7 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"外形轮廓铣",file:"id1074709.html",type:"topic",parent:""},
+{id:"d5e4",title:"外形轮廓铣概述",file:"id802886.html",type:"topic",parent:""},
+
+{id:"d5e6",title:"外形轮廓铣驱动工序",file:"genid_profile_drive_operations_10_529.html",type:"topic",parent:"",children:[
+{id:"d5e7",title:"创建外形轮廓铣驱动工序",file:"id945679.html",type:"activity",parent:"d5e6"}]}
+]}

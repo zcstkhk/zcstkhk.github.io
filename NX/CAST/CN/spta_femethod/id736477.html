@@ -1,0 +1,269 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>有限元方法</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>有限元方法</h2>
+         
+         <p>有限元方法是用来实现有限元分析的数字程序，有限元方法可以用在结构、流体机械以及热传导等其它问题上。</p>
+         
+         <p>使用最小势能原则，有限元方法可以用来求解静态结构问题，基本公式为：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>当结构处于静态平衡时，势能 &Pi; 最小</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>结构的势能等于结构的应变能 &Lambda; 减去外力的工作势能 <span class="emphasis">W</span></p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/fea_basics/theory/what_is_fem_eq.png"></p>
+         <a name="id736479"></a>
+         
+         
+         
+         <h3>有限元网格</h3>
+         
+         <a name="ndxgenid_spta_femethod_13"></a>
+         <a name="ndxgenid_spta_femethod_14"></a>
+         <a name="ndxgenid_spta_femethod_15"></a>
+         
+         
+        <p>通过把结构分为离散的称为<span class="emphasis">单元</span>的区域来创建<span class="emphasis">有限元网格</span>，单元之间相互连接的点称为<span class="emphasis">节点</span>。</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>单元都是简单的几何体，比如2D 问题中的三角形或者四边形，以及3D 问题中的四面体和六面体</p>
+               
+           </li>
+            
+            <li>
+               
+               <p>节点是施加力和约束的地方，并会计算它们的反作用力和位移</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>结构的应变能是单元应变能 &Lambda;<sup>(<span class="emphasis">e</span>)</sup> 的总和</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>单元应变能是单元应力场{<span class="emphasis">&sigma;</span><sup>(<span class="emphasis">e</span>)</sup>}与单元应变场{<span class="emphasis">&epsilon;</span><sup>(<span class="emphasis">e</span>)</sup>}的内积，然后在单元体积<span class="emphasis"> V</span><sup>(<span class="emphasis">e</span>)</sup> 下积分</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>本构矩阵[<span class="emphasis">E</span><sup>(<span class="emphasis">e</span>)</sup>]与应力及应变有关</p>
+               
+            </li>
+            
+        </ul>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/fea_basics/theory/fe_mesh_eq.png"></p>
+         <a name="id736481"></a>
+         
+         
+         
+         <h3>假定的位移场</h3>
+         
+         <a name="ndxgenid_spta_femethod_17"></a>
+         <a name="ndxgenid_spta_femethod_18"></a>
+         <a name="ndxgenid_spta_femethod_19"></a>
+         
+         
+        <p>要评估单元应变能的表达式，必须对单元的位移场做一些假设</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>单元内任意位置的位移都是节点位移的插值</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>插值函数通常称为<span class="emphasis">形状函数</span></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>假设的位移场{<span class="emphasis">d</span><sup>(<span class="emphasis">e</span>)</sup>}是形状函数矩阵[<span class="emphasis">N</span><sup>(<span class="emphasis">e</span>)</sup>]与节点位移{<span class="emphasis">D</span><sup>(<span class="emphasis">e</span>)</sup>}的乘积</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>单元应变场由假定的位移场微分得出</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/fea_basics/theory/displacement_field_eq.png"></p>
+         <a name="id736483"></a>
+         
+         
+         
+         <h3>单元刚度</h3>
+         
+         <a name="ndxgenid_spta_femethod_21"></a>
+         <a name="ndxgenid_spta_femethod_22"></a>
+         <a name="ndxgenid_spta_femethod_23"></a>
+         <a name="ndxgenid_spta_femethod_24"></a>
+         
+         
+        <p>单元刚度矩阵[<span class="emphasis">k</span><sup>(<span class="emphasis">e</span>)</sup>]，与节点位移以及单元应变能有关</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>单元刚度矩阵是根据形状函数[<span class="emphasis">B</span><sup>(<span class="emphasis">e</span>)</sup>]的导数以及本构矩阵来表示的</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>单元刚度矩阵中的项是通过在单元体积下积分获得的</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/fea_basics/theory/element_stiffness_eq.png"></p>
+         <a name="id754852"></a>
+         
+         
+         
+         <h3>平衡方程</h3>
+         
+         <a name="ndxgenid_spta_femethod_26"></a>
+         <a name="ndxgenid_spta_femethod_27"></a>
+         
+         
+        <p>平衡方程是通过使结构势能最小化获得的</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>全局位移矢量{<span class="emphasis">D</span>}包含所有节点位移的集合</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>结构的应变能是根据全局位移矢量以及全局刚度矩阵[<span class="emphasis">K</span>]来表示的，后者是表示整个结构的刚度的矩阵</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>外力的工作势能表示为全局位移矢量与外力矢量{<span class="emphasis">F</span>}(包括施加在该节点上的外力)的内积</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/fea_basics/theory/equilibrium_eq.png"></p>
+         <a name="id736485"></a>
+         
+         
+         
+         <h3>全局刚度</h3>
+         
+         <a name="ndxgenid_spta_femethod_29"></a>
+         <a name="ndxgenid_spta_femethod_30"></a>
+         
+         
+        <p>全局刚度矩阵是单元刚度矩阵的集合</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>单元刚度矩阵的大小将会增加以与全局位移矢量相一致</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>将会把各个单元刚度矩阵的相应部分相加，以生成全局刚度矩阵</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/fea_basics/theory/global_stiffness.png"></p>
+         <a name="id736487"></a>
+         
+         
+         
+         <h3>求解和结果恢复</h3>
+         
+         <a name="ndxgenid_spta_femethod_32"></a>
+         <a name="ndxgenid_spta_femethod_33"></a>
+         <a name="ndxgenid_spta_femethod_34"></a>
+         
+         
+        <p>全局刚度矩阵集合后，平衡方程将会被分割，以把已知的节点位移 <span class="emphasis">D</span><sub><span class="emphasis">0</span></sub> 和未知的节点位移 <span class="emphasis">D</span><sub><span class="emphasis">U</span></sub> 分离，这么做也把外力矢量 <span class="emphasis">F 分割为</span>：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>已知的输入力 <span class="emphasis">P</span>，用在节点位移未知的地方</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>未知的反作用力 <span class="emphasis">R</span>，用在节点位移已知的地方</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>分割后的平衡方程将会被求解以得出未知的节点位移，根据节点位移，其它结果，比如反作用力、应变、应力等等都可以计算，这些最终的计算被称为<span class="emphasis">结果恢复</span>。</p>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/fea_basics/theory/solving_eq.png"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

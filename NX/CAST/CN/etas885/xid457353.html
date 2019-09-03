@@ -1,0 +1,124 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Create the linked mirror part</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Create the linked mirror part</h2>
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>Open <span class="fileName">asm2_85_housing_rt</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/linked_mirror_part/linked_mirror_part_2.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>In the background of the <span class="uiTerm">Assembly Navigator</span>, right-click and make sure <span class="uiTerm">WAVE Mode</span> is active.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Assembly Navigator</span>, right-click <span class="literalText">asm2_85_housing_rt</span> and choose <span class="uiTerm">WAVE&rarr;Create Linked Mirror Part</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Create Linked Mirror Part</span> dialog box, in the <span class="uiTerm">Linked Mirror Part Name</span> box, type <span class="literalText">***_housing_lt</span>, where *** represents your initials.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Objects to Mirror</span> group, in the list box, select <span class="literalText">MODEL</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Mirror Plane</span> group, from the <span class="uiTerm">Specify Plane</span> list, select <span class="uiTerm">YC&ndash;ZC Plane</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/common/yc-zc_plane.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/linked_mirror_part/linked_mirror_part_3.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>Expand the <span class="uiTerm">Settings</span> group and click <span class="uiTerm">Non-exact Mirror &ndash; Keep Broken Links</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>Creating the linked mirror part as non-exact lets you make modifications without losing them when the mirror part updates from the source part.</p>
+                     
+                     <p>Keeping broken links prevents features that are dependent on the linked geometry from being deleted. You can reparent the broken links when it is convenient.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>The new part contains the linked mirror body. If you try to assemble the two halves at this time, the long mounting studs will interfere with each other and the alignment tabs will overlap.</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/linked_mirror_part/linked_mirror_part_4.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

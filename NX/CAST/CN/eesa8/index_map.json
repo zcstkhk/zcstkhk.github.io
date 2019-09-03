@@ -1,0 +1,76 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"开始使用 NX",file:"id1042896.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"NX 概述",file:"id785026.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"打开部件",file:"id785451.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"更改显示的部件",file:"id1100904.html",type:"topic",parent:"d5e5"},
+{id:"d5e8",title:"关闭部件和重新打开部件",file:"id785456.html",type:"topic",parent:"d5e5"},
+{id:"d5e9",title:"打开、关闭和重新打开部件",file:"id789391.html",type:"activity",parent:"d5e5"},
+{id:"d5e10",title:"NX 应用模块",file:"id785386.html",type:"topic",parent:"d5e5"},
+{id:"d5e11",title:"基本环境应用模块",file:"id785391.html",type:"topic",parent:"d5e5"},
+{id:"d5e12",title:"NX 主窗口",file:"id785441.html",type:"topic",parent:"d5e5"},
+{id:"d5e13",title:"新建部件文件",file:"id785371.html",type:"topic",parent:"d5e5",children:[
+{id:"d5e14",title:"保存选项",file:"id785461.html",type:"topic",parent:"d5e13"},
+{id:"d5e15",title:"从模板新建部件并保存",file:"id789489.html",type:"activity",parent:"d5e13"}]}]},
+
+{id:"d5e17",title:"退出 NX",file:"id785016.html",type:"topic",parent:""},
+
+{id:"d5e19",title:"NX 用户界面",file:"id785041.html",type:"topic",parent:"",children:[
+{id:"d5e20",title:"视频：NX 用户界面",file:"id1542147.html",type:"topic",parent:"d5e19"},
+{id:"d5e21",title:"标题栏",file:"id785656.html",type:"topic",parent:"d5e19"},
+{id:"d5e22",title:"资源条",file:"id785701.html",type:"topic",parent:"d5e19",children:[
+{id:"d5e23",title:"资源条 – 导航器",file:"id785696.html",type:"topic",parent:"d5e22"},
+{id:"d5e24",title:"资源条 – 集成的浏览器窗口(仅限于 Windows 操作系统)",file:"id785691.html",type:"topic",parent:"d5e22"},
+{id:"d5e25",title:"资源条 – 资源板",file:"id785686.html",type:"topic",parent:"d5e22"},
+{id:"d5e26",title:"更改资源条显示",file:"id789495.html",type:"activity",parent:"d5e22"}]},
+{id:"d5e27",title:"提示行和状态行",file:"id785651.html",type:"topic",parent:"d5e19"},
+{id:"d5e28",title:"工具条",file:"id785046.html",type:"topic",parent:"d5e19",children:[
+{id:"d5e29",title:"常用工具条",file:"id785551.html",type:"topic",parent:"d5e28"},
+{id:"d5e30",title:"工具条的移动、停靠和取消停靠",file:"id785576.html",type:"topic",parent:"d5e28"},
+{id:"d5e31",title:"工具条上的按键",file:"id785546.html",type:"topic",parent:"d5e28"},
+{id:"d5e32",title:"推断式工具条(仅限于 Windows 操作系统)",file:"id786311.html",type:"topic",parent:"d5e28"},
+{id:"d5e33",title:"使用工具条",file:"id789629.html",type:"activity",parent:"d5e28"},
+{id:"d5e34",title:"定制工具条",file:"id785536.html",type:"topic",parent:"d5e28",children:[
+{id:"d5e35",title:"使用定制对话框更改工具条",file:"id978137.html",type:"topic",parent:"d5e34"},
+{id:"d5e36",title:"添加或移除按钮",file:"id785541.html",type:"topic",parent:"d5e34"},
+{id:"d5e37",title:"重置工具条",file:"id785591.html",type:"topic",parent:"d5e34"},
+{id:"d5e38",title:"定制工具条",file:"id789641.html",type:"activity",parent:"d5e34"}]}]},
+{id:"d5e39",title:"菜单栏",file:"id785021.html",type:"topic",parent:"d5e19",children:[
+{id:"d5e40",title:"什么是菜单栏？",file:"id785426.html",type:"topic",parent:"d5e39"},
+{id:"d5e41",title:"助记符",file:"id785431.html",type:"topic",parent:"d5e39"},
+{id:"d5e42",title:"使用助记符",file:"id789653.html",type:"activity",parent:"d5e39"},
+{id:"d5e43",title:"定制菜单",file:"id785411.html",type:"topic",parent:"d5e39",children:[
+{id:"d5e44",title:"创建与移除组",file:"id785406.html",type:"topic",parent:"d5e43"},
+{id:"d5e45",title:"放置命令并对菜单栏上的命令进行分组",file:"id789659.html",type:"activity",parent:"d5e43"},
+{id:"d5e46",title:"更多定制功能",file:"id785586.html",type:"topic",parent:"d5e43"}]}]},
+{id:"d5e47",title:"视图快捷菜单与迷你选择条",file:"id785521.html",type:"topic",parent:"d5e19",children:[
+{id:"d5e48",title:"定制视图快捷菜单",file:"id978139.html",type:"topic",parent:"d5e47"},
+{id:"d5e49",title:"打开与定制视图快捷菜单",file:"id789671.html",type:"activity",parent:"d5e47"}]},
+{id:"d5e50",title:"全屏显示",file:"id785516.html",type:"topic",parent:"d5e19",children:[
+{id:"d5e51",title:"视频：全屏显示",file:"id1542062.html",type:"topic",parent:"d5e50"},
+{id:"d5e52",title:"工具条管理器",file:"id785526.html",type:"topic",parent:"d5e50"},
+{id:"d5e53",title:"集合工具条",file:"id1007432.html",type:"topic",parent:"d5e50"},
+{id:"d5e54",title:"使用全屏显示",file:"id789677.html",type:"activity",parent:"d5e50"}]},
+{id:"d5e55",title:"其它布局定制功能",file:"id785006.html",type:"topic",parent:"d5e19",children:[
+{id:"d5e56",title:"定制键盘快捷键",file:"id785376.html",type:"topic",parent:"d5e55"}]},
+{id:"d5e57",title:"对话框概述",file:"id979453.html",type:"topic",parent:"d5e19",children:[
+{id:"d5e58",title:"自动完成命令输入",file:"id775049.html",type:"topic",parent:"d5e57"},
+{id:"d5e59",title:"对话框中的可视化提示",file:"id785671.html",type:"topic",parent:"d5e57"},
+{id:"d5e60",title:"对话框中的选项",file:"id785681.html",type:"topic",parent:"d5e57",children:[
+{id:"d5e61",title:"选项卡",file:"id785646.html",type:"topic",parent:"d5e60"},
+{id:"d5e62",title:"单选按钮和复选框",file:"id785636.html",type:"topic",parent:"d5e60"},
+{id:"d5e63",title:"滑动条",file:"id785641.html",type:"topic",parent:"d5e60"},
+{id:"d5e64",title:"列表",file:"id785631.html",type:"topic",parent:"d5e60"},
+{id:"d5e65",title:"对话框滑轨",file:"id785676.html",type:"topic",parent:"d5e60"}]}]},
+{id:"d5e66",title:"渲染样式概述",file:"id785471.html",type:"topic",parent:"d5e19",children:[
+{id:"d5e67",title:"渲染样式设置",file:"id785476.html",type:"topic",parent:"d5e66"},
+{id:"d5e68",title:"更改渲染样式",file:"id789700.html",type:"activity",parent:"d5e66"}]},
+{id:"d5e70",title:"颜色设置",file:"id785001.html",type:"topic",parent:"d5e19",children:[
+{id:"d5e71",title:"编辑背景颜色",file:"id789706.html",type:"activity",parent:"d5e70"},
+{id:"d5e72",title:"更改对象颜色",file:"id789712.html",type:"activity",parent:"d5e70"}]},
+{id:"d5e73",title:"设计逻辑",file:"id786971.html",type:"topic",parent:"d5e19",children:[
+{id:"d5e74",title:"根据当前参数值定义一个孔",file:"id798132.html",type:"activity",parent:"d5e73"}]}]},
+
+{id:"d5e76",title:"开始下一个课程",file:"id275386.html",type:"topic",parent:""}
+
+]}

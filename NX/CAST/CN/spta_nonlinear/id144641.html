@@ -1,0 +1,66 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>考虑材料塑性情形</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>考虑材料塑性情形</h2><a name="ndxgenid_spta_nonlinear_12"></a>
+         <a name="ndxgenid_spta_nonlinear_13"></a>
+         
+         
+         <p>SOL 101 线性静态解算方案：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>假设应力与应变成线性正比关系</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>使用在材料定义中输入的杨氏模量值来确定徐行应力/应变情形。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>SOL 106 解算方案求解材料塑性：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>使用在材料定义中输入的应力/应变数据来确定塑性与弹性应力/应变综合作用的情形</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>计算在载荷移除后的塑性(永久)应变</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>如果 SOL 101 解算方案得出的应力大于材料屈服强度，那么您应该考虑使用 SOL 106 解算方案。</p>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/solutions/nonlinear_static/stress_strain.png"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

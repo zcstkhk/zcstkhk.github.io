@@ -1,0 +1,1097 @@
+*** BEGIN MATERIAL
+Material Name       : Steel
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.5830 0.5640 0.5480
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.1000
+Mirror Factor       : 0.8000
+Refraction Red      : 2.6220
+Refraction Green    : 2.2460
+Refraction Blue     : 1.8350
+Absorption Red      : 3.4670
+Absorption Green    : 3.1720
+Absorption Blue     : 2.8760
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Silver
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.9730 0.9550 0.9080
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.1000
+Mirror Factor       : 0.8000
+Refraction Red      : 0.1380
+Refraction Green    : 0.1280
+Refraction Blue     : 0.1570
+Absorption Red      : 4.3770
+Absorption Green    : 3.1740
+Absorption Blue     : 2.3440
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Aluminum
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.9000 0.9220 0.9240
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.1000
+Mirror Factor       : 0.4000
+Refraction Red      : 1.8010
+Refraction Green    : 0.8630
+Refraction Blue     : 0.5920
+Absorption Red      : 8.0020
+Absorption Green    : 6.3830
+Absorption Blue     : 5.3410
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Gold
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.9520 0.6970 0.3890
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.1000
+Mirror Factor       : 0.8000
+Refraction Red      : 0.1860
+Refraction Green    : 0.5900
+Refraction Blue     : 1.5180
+Absorption Red      : 3.7560
+Absorption Green    : 2.2970
+Absorption Blue     : 1.8970
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Chromium
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.6400 0.6690 0.6950
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.1000
+Mirror Factor       : 0.6000
+Refraction Red      : 3.7490
+Refraction Green    : 2.8690
+Refraction Blue     : 1.8370
+Absorption Red      : 4.3640
+Absorption Green    : 4.4400
+Absorption Blue     : 4.0100
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Cobalt
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.6930 0.6490 0.6120
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.1000
+Mirror Factor       : 0.6000
+Refraction Red      : 2.2860
+Refraction Green    : 1.9730
+Refraction Blue     : 1.6940
+Absorption Red      : 4.3580
+Absorption Green    : 3.6970
+Absorption Blue     : 3.1940
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Copper
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.9290 0.6130 0.5400
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.1000
+Mirror Factor       : 0.6000
+Refraction Red      : 0.3020
+Refraction Green    : 1.0510
+Refraction Blue     : 1.1680
+Absorption Red      : 3.9160
+Absorption Green    : 2.5820
+Absorption Blue     : 2.3380
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Iron
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.5630 0.5630 0.5630
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.4000
+Diffuse Factor      : 0.4000
+Specular Factor     : 0.4000
+Roughness           : 0.4000
+Mirror Factor       : 0.2000
+Refraction Red      : 2.3600
+Refraction Green    : 2.3600
+Refraction Blue     : 2.3600
+Absorption Red      : 3.2090
+Absorption Green    : 3.2090
+Absorption Blue     : 3.2090
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Nickel
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.6630 0.5960 0.5200
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.1000
+Mirror Factor       : 0.4000
+Refraction Red      : 2.1310
+Refraction Green    : 1.7260
+Refraction Blue     : 1.6280
+Absorption Red      : 3.9320
+Absorption Green    : 3.1050
+Absorption Blue     : 2.5810
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Lead
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.6250 0.6890 0.6850
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.4000
+Diffuse Factor      : 0.4000
+Specular Factor     : 0.4000
+Roughness           : 0.4000
+Mirror Factor       : 0.1000
+Refraction Red      : 2.0200
+Refraction Green    : 2.2630
+Refraction Blue     : 1.7210
+Absorption Red      : 3.5210
+Absorption Green    : 4.3020
+Absorption Blue     : 3.8010
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Tin
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.8170 0.8000 0.7250
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.1000
+Mirror Factor       : 0.3000
+Refraction Red      : 1.4540
+Refraction Green    : 1.1100
+Refraction Blue     : 0.7580
+Absorption Red      : 5.0790
+Absorption Green    : 4.2170
+Absorption Blue     : 2.8160
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Zinc
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.7440 0.7480 0.7300
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.1000
+Mirror Factor       : 0.3000
+Refraction Red      : 2.4540
+Refraction Green    : 1.5110
+Refraction Blue     : 0.9560
+Absorption Red      : 5.1420
+Absorption Green    : 4.1990
+Absorption Blue     : 3.2160
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Mercury
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.7800 0.7790 0.7730
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.1000
+Mirror Factor       : 0.8000
+Refraction Red      : 2.2500
+Refraction Green    : 1.4260
+Refraction Blue     : 1.0340
+Absorption Red      : 5.5150
+Absorption Green    : 4.4640
+Absorption Blue     : 3.7480
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Tungsten
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.5080 0.4920 0.4670
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.1000
+Mirror Factor       : 0.5000
+Refraction Red      : 3.6950
+Refraction Green    : 3.4530
+Refraction Blue     : 3.3380
+Absorption Red      : 2.8300
+Absorption Green    : 2.7140
+Absorption Blue     : 2.4980
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Graphite
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.3650 0.2990 0.2910
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.3000
+Mirror Factor       : 0.1000
+Refraction Red      : 2.9250
+Refraction Green    : 2.6630
+Refraction Blue     : 2.6300
+Absorption Red      : 1.7370
+Absorption Green    : 1.3320
+Absorption Blue     : 1.2860
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Platinum
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.6830 0.6290 0.5810
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.1000
+Mirror Factor       : 0.8000
+Refraction Red      : 2.4890
+Refraction Green    : 2.0540
+Refraction Blue     : 1.8140
+Absorption Red      : 4.3890
+Absorption Green    : 3.5810
+Absorption Blue     : 3.0670
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Palladium
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.7430 0.6900 0.6490
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.1000
+Mirror Factor       : 0.8000
+Refraction Red      : 1.8370
+Refraction Green    : 1.5820
+Refraction Blue     : 1.3850
+Absorption Red      : 4.5290
+Absorption Green    : 3.7040
+Absorption Blue     : 3.1800
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Titanium
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.5890 0.5750 0.5630
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.1000
+Mirror Factor       : 0.6000
+Refraction Red      : 2.6920
+Refraction Green    : 2.3450
+Refraction Blue     : 1.8870
+Absorption Red      : 3.5540
+Absorption Green    : 3.3270
+Absorption Blue     : 3.0160
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Commercial Brass
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.8260 0.5900 0.5060
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.3000
+Mirror Factor       : 0.2000
+Refraction Red      : 0.8230
+Refraction Green    : 1.1220
+Refraction Blue     : 1.1310
+Absorption Red      : 3.7200
+Absorption Green    : 2.5840
+Absorption Blue     : 2.1810
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Red Brass
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.8230 0.5990 0.5180
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.1000
+Mirror Factor       : 0.3000
+Refraction Red      : 0.9140
+Refraction Green    : 1.1440
+Refraction Blue     : 1.1220
+Absorption Red      : 3.7990
+Absorption Green    : 2.6740
+Absorption Blue     : 2.2390
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Cartridge Brass
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.8120 0.6250 0.5560
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.1000
+Mirror Factor       : 0.5000
+Refraction Red      : 1.1860
+Refraction Green    : 1.2080
+Refraction Blue     : 1.0930
+Absorption Red      : 4.0360
+Absorption Green    : 2.9430
+Absorption Blue     : 2.4110
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Naval Brass
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.8050 0.6430 0.5810
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.1000
+Mirror Factor       : 0.8000
+Refraction Red      : 1.3670
+Refraction Green    : 1.2520
+Refraction Blue     : 1.0730
+Absorption Red      : 4.1940
+Absorption Green    : 3.1220
+Absorption Blue     : 2.5260
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : A Bronze
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.8310 0.5960 0.5050
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.3000
+Mirror Factor       : 0.4000
+Refraction Red      : 0.7230
+Refraction Green    : 1.0820
+Refraction Blue     : 1.1190
+Absorption Red      : 3.7140
+Absorption Green    : 2.5860
+Absorption Blue     : 2.1410
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : C Bronze
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.8280 0.6410 0.5540
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.1000
+Mirror Factor       : 0.4000
+Refraction Red      : 0.8860
+Refraction Green    : 1.0880
+Refraction Blue     : 1.0390
+Absorption Red      : 4.0170
+Absorption Green    : 2.9490
+Absorption Blue     : 2.2910
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Stainless Steel
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.5890 0.5750 0.5620
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.1000
+Mirror Factor       : 0.8000
+Refraction Red      : 2.6920
+Refraction Green    : 2.3450
+Refraction Blue     : 1.8870
+Absorption Red      : 3.5540
+Absorption Green    : 3.3270
+Absorption Blue     : 3.0160
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Solder
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.7210 0.7450 0.7050
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.3000
+Mirror Factor       : 0.1000
+Refraction Red      : 1.7370
+Refraction Green    : 1.6870
+Refraction Blue     : 1.2390
+Absorption Red      : 4.3000
+Absorption Green    : 4.2590
+Absorption Blue     : 3.3070
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Monel
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.7010 0.5850 0.5170
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.1000
+Mirror Factor       : 0.1000
+Refraction Red      : 1.4790
+Refraction Green    : 1.3920
+Refraction Blue     : 1.3180
+Absorption Red      : 3.6470
+Absorption Green    : 2.8270
+Absorption Blue     : 2.4150
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Iconel
+Material Type       : Metal
+Color Shader        : Plain
+Reflectance Shader  : Conductor
+Color               : 0.6490 0.6170 0.5730
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.1000
+Diffuse Factor      : 0.1000
+Specular Factor     : 0.8000
+Roughness           : 0.3000
+Mirror Factor       : 0.1000
+Refraction Red      : 2.1870
+Refraction Green    : 1.9140
+Refraction Blue     : 1.6330
+Absorption Red      : 3.8450
+Absorption Green    : 3.3850
+Absorption Blue     : 2.9620
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Red
+Material Type       : Plastic
+Color Shader        : Plain
+Reflectance Shader  : Plastic
+Color               : 1.0000 0.0000 0.0000
+Translucency        : 0.0000 0.0000 0.0000
+Specular Color      : 1.0000 1.0000 1.0000
+Ambient Factor      : 1.0000
+Diffuse Factor      : 0.7500
+Specular Factor     : 0.5000
+Roughness           : 0.4000
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Yellow
+Material Type       : Plastic
+Color Shader        : Plain
+Reflectance Shader  : Plastic
+Color               : 1.0000 1.0000 0.0000
+Translucency        : 0.0000 0.0000 0.0000
+Specular Color      : 1.0000 1.0000 1.0000
+Ambient Factor      : 1.0000
+Diffuse Factor      : 0.7500
+Specular Factor     : 0.5000
+Roughness           : 0.4000
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Green
+Material Type       : Plastic
+Color Shader        : Plain
+Reflectance Shader  : Plastic
+Color               : 0.0000 1.0000 0.0000
+Translucency        : 0.0000 0.0000 0.0000
+Specular Color      : 1.0000 1.0000 1.0000
+Ambient Factor      : 1.0000
+Diffuse Factor      : 0.7500
+Specular Factor     : 0.5000
+Roughness           : 0.4000
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Cyan
+Material Type       : Plastic
+Color Shader        : Plain
+Reflectance Shader  : Plastic
+Color               : 0.0000 1.0000 1.0000
+Translucency        : 0.0000 0.0000 0.0000
+Specular Color      : 1.0000 1.0000 1.0000
+Ambient Factor      : 1.0000
+Diffuse Factor      : 0.7500
+Specular Factor     : 0.5000
+Roughness           : 0.4000
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Blue
+Material Type       : Plastic
+Color Shader        : Plain
+Reflectance Shader  : Plastic
+Color               : 0.0000 0.0000 1.0000
+Translucency        : 0.0000 0.0000 0.0000
+Specular Color      : 1.0000 1.0000 1.0000
+Ambient Factor      : 1.0000
+Diffuse Factor      : 0.7500
+Specular Factor     : 0.5000
+Roughness           : 0.4000
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Magenta
+Material Type       : Plastic
+Color Shader        : Plain
+Reflectance Shader  : Plastic
+Color               : 1.0000 0.0000 1.0000
+Translucency        : 0.0000 0.0000 0.0000
+Specular Color      : 1.0000 1.0000 1.0000
+Ambient Factor      : 1.0000
+Diffuse Factor      : 0.7500
+Specular Factor     : 0.5000
+Roughness           : 0.4000
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : White
+Material Type       : Plastic
+Color Shader        : Plain
+Reflectance Shader  : Plastic
+Color               : 1.0000 1.0000 1.0000
+Translucency        : 0.0000 0.0000 0.0000
+Specular Color      : 1.0000 1.0000 1.0000
+Ambient Factor      : 1.0000
+Diffuse Factor      : 0.7500
+Specular Factor     : 0.5000
+Roughness           : 0.4000
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Black
+Material Type       : Plastic
+Color Shader        : Plain
+Reflectance Shader  : Plastic
+Color               : 0.0000 0.0000 0.0000
+Translucency        : 0.0000 0.0000 0.0000
+Specular Color      : 1.0000 1.0000 1.0000
+Ambient Factor      : 1.0000
+Diffuse Factor      : 0.7500
+Specular Factor     : 0.5000
+Roughness           : 0.4000
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Clear
+Material Type       : Glass
+Color Shader        : Plain
+Reflectance Shader  : Dielectric
+Color               : 1.0000 1.0000 1.0000
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.0000
+Diffuse Factor      : 0.0000
+Specular Factor     : 0.9000
+Roughness           : 0.1000
+Mirror Factor       : 0.9000
+Transmission        : 0.9000
+Refraction          : 1.5100
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Silica
+Material Type       : Glass
+Color Shader        : Plain
+Reflectance Shader  : Dielectric
+Color               : 1.0000 1.0000 1.0000
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.0000
+Diffuse Factor      : 0.0000
+Specular Factor     : 0.9000
+Roughness           : 0.1000
+Mirror Factor       : 0.9000
+Transmission        : 0.9000
+Refraction          : 1.4600
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Soda-lime
+Material Type       : Glass
+Color Shader        : Plain
+Reflectance Shader  : Dielectric
+Color               : 1.0000 1.0000 0.9500
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.0000
+Diffuse Factor      : 0.0000
+Specular Factor     : 0.9000
+Roughness           : 0.1000
+Mirror Factor       : 0.9000
+Transmission        : 0.9000
+Refraction          : 1.5100
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Diamond
+Material Type       : Glass
+Color Shader        : Plain
+Reflectance Shader  : Dielectric
+Color               : 1.0000 1.0000 1.0000
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.0000
+Diffuse Factor      : 0.0000
+Specular Factor     : 0.9000
+Roughness           : 0.1000
+Mirror Factor       : 0.9000
+Transmission        : 0.9000
+Refraction          : 2.4100
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Pyrex
+Material Type       : Glass
+Color Shader        : Plain
+Reflectance Shader  : Dielectric
+Color               : 1.0000 1.0000 1.0000
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.0000
+Diffuse Factor      : 0.0000
+Specular Factor     : 0.9000
+Roughness           : 0.1000
+Mirror Factor       : 0.9000
+Transmission        : 0.9000
+Refraction          : 1.6700
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Flint
+Material Type       : Glass
+Color Shader        : Plain
+Reflectance Shader  : Dielectric
+Color               : 1.0000 1.0000 0.9000
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.0000
+Diffuse Factor      : 0.0000
+Specular Factor     : 0.9000
+Roughness           : 0.1000
+Mirror Factor       : 0.9000
+Transmission        : 0.9000
+Refraction          : 1.7000
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Plexiglass
+Material Type       : Glass
+Color Shader        : Plain
+Reflectance Shader  : Dielectric
+Color               : 0.9000 1.0000 0.9000
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.0000
+Diffuse Factor      : 0.0000
+Specular Factor     : 0.9000
+Roughness           : 0.1000
+Mirror Factor       : 0.9000
+Transmission        : 0.9000
+Refraction          : 1.4600
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Lubricating Oil
+Material Type       : Other
+Color Shader        : Plain
+Reflectance Shader  : Dielectric
+Color               : 0.9100 0.6200 0.3600
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.0000
+Diffuse Factor      : 0.3000
+Specular Factor     : 0.7000
+Roughness           : 0.1000
+Mirror Factor       : 0.0500
+Transmission        : 0.8500
+Refraction          : 1.4000
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Water
+Material Type       : Other
+Color Shader        : Plain
+Reflectance Shader  : Dielectric
+Color               : 0.8500 0.8500 0.9000
+Translucency        : 0.0000 0.0000 0.0000
+Ambient Factor      : 0.0000
+Diffuse Factor      : 0.0000
+Specular Factor     : 0.9000
+Roughness           : 0.1000
+Mirror Factor       : 0.9000
+Transmission        : 0.9000
+Refraction          : 1.3200
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN MATERIAL
+Material Name       : Black Rubber
+Material Type       : Other
+Color Shader        : Plain
+Reflectance Shader  : Plastic
+Color               : 0.0500 0.0500 0.0500
+Translucency        : 0.0000 0.0000 0.0000
+Specular Color      : 1.0000 1.0000 1.0000
+Ambient Factor      : 1.0000
+Diffuse Factor      : 0.5000
+Specular Factor     : 0.1000
+Roughness           : 0.5000
+Background Material : False
+*** END MATERIAL
+
+*** BEGIN TEXTURE
+Texture Name        : Smooth
+Texture Type        : Finish
+Transparency Shader : None
+Displacement Shader : None
+Texture Space Shader: WCS Auto Axis
+Pattern Shader      : None
+Texture Scale       : 1.0000
+*** END TEXTURE
+
+*** BEGIN TEXTURE
+Texture Name        : Eroded 20%
+Texture Type        : Finish
+Transparency Shader : Eroded
+Displacement Shader : None
+Texture Space Shader: WCS Auto Axis
+Pattern Shader      : None
+Trans. Scale        : 1.0000
+Coverage            : 0.2000
+Fuzz                : 0.1000
+Texture Scale       : 1.0000
+*** END TEXTURE
+
+*** BEGIN TEXTURE
+Texture Name        : Cast
+Texture Type        : Finish
+Transparency Shader : None
+Displacement Shader : Casting
+Texture Space Shader: WCS Auto Axis
+Pattern Shader      : None
+Disp. Scale         : 0.2500
+Casting Amplitude   : 0.2000
+Dented Amplitude    : 0.2000
+Dented Scale        : 0.2500
+Dented Threshold    : 0.7000
+Detail              : 3
+Texture Scale       : 1.0000
+*** END TEXTURE
+
+*** BEGIN TEXTURE
+Texture Name        : Rough
+Texture Type        : Finish
+Transparency Shader : None
+Displacement Shader : Rough
+Texture Space Shader: WCS Auto Axis
+Pattern Shader      : None
+Disp. Scale         : 1.0000
+Amplitude           : 0.2000
+Detail              : 3
+Sharpness           : 1
+Texture Scale       : 1.0000
+*** END TEXTURE
+
+*** BEGIN TEXTURE
+Texture Name        : Transparent Grid
+Texture Type        : Pattern
+Transparency Shader : Wrapped Grid
+Displacement Shader : None
+Texture Space Shader: WCS Auto Axis
+Pattern Shader      : None
+Trans. Scale        : 1.0000
+Width               : 0.8000
+Height              : 0.8000
+Grid Size           : 0.2000
+Transparency        : 0.0000
+Texture Scale       : 1.0000
+*** END TEXTURE
+
+*** BEGIN TEXTURE
+Texture Name        : Solid Grid
+Texture Type        : Pattern
+Transparency Shader : None
+Displacement Shader : None
+Texture Space Shader: UV
+Pattern Shader      : Wrapped Image
+U Scale             : 1.0000
+V Scale             : 1.0000
+U Offset            : 0.0000
+V Offset            : 0.0000
+Image Mode          : Wrap
+Image File Name     : F:\v17_new_parts\stu\group.tif
+*** END TEXTURE
+
+*** BEGIN LIGHT
+Light Name          : Default 1 Ambient
+Light Type          : Ambient
+Coords              : Fixed with Part
+Intensity           : 0.2000
+Color               : 1.0000 1.0000 1.0000
+*** END LIGHT
+
+*** BEGIN LIGHT
+Light Name          : Default 2 Up-Right Dist
+Light Type          : Distant
+Coords              : Fixed to Observer
+Generate Shadows    : False
+Intensity           : 1.0000
+Color               : 1.0000 1.0000 1.0000
+From                : 0.8000 0.0000 0.4000
+To                  : 0.0000 0.0000 0.0000
+Shadow Detail       : 256
+Shadow Quality      : 4
+Shadow Softness     : 1.0000
+*** END LIGHT
+
+*** BEGIN LIGHT
+Light Name          : Std Eye
+Light Type          : Eye
+Coords              : Fixed with Part
+Intensity           : 1.0000
+Color               : 1.0000 1.0000 1.0000
+*** END LIGHT
+
+*** BEGIN LIGHT
+Light Name          : Std Z Distant
+Light Type          : Distant
+Coords              : Fixed with Part
+Generate Shadows    : False
+Intensity           : 0.7000
+Color               : 1.0000 1.0000 1.0000
+From                : 0.0000 0.0000 200.0000
+To                  : 0.0000 0.0000 0.0000
+Shadow Detail       : 256
+Shadow Quality      : 4
+Shadow Softness     : 1.0000
+*** END LIGHT
+
+*** BEGIN LIGHT
+Light Name          : Std Z Point
+Light Type          : Point
+Coords              : Fixed with Part
+Generate Shadows    : False
+Intensity           : 1.0000
+Color               : 1.0000 1.0000 1.0000
+Location            : 1.3389 5.9131 2.7550
+Fall Off            : Constant
+Shadow Detail       : 256
+Shadow Quality      : 4
+Shadow Softness     : 1.0000
+*** END LIGHT
+
+*** BEGIN LIGHT
+Light Name          : Std Z Spot
+Light Type          : Spot
+Coords              : Fixed with Part
+Generate Shadows    : False
+Allow Scattering    : False
+Intensity           : 1.0000
+Color               : 1.0000 1.0000 1.0000
+Location            : 1.3206 5.8585 2.7051
+To                  : 0.0000 2.5000 0.0000
+Fall Off            : Constant
+Cone Angle          : 60.0000
+Cone Delta Angle    : 15.0000
+Beam Fall Off       : 0.0000
+Shadow Detail       : 256
+Shadow Quality      : 4
+Shadow Softness     : 1.0000
+*** END LIGHT
+
+*** BEGIN LIGHT
+Light Name          : Std Up-Right Dist
+Light Type          : Distant
+Coords              : Fixed with Part
+Generate Shadows    : False
+Intensity           : 0.7000
+Color               : 1.0000 1.0000 1.0000
+From                : 12000.0000 12000.0000 3000.0000
+To                  : 0.0000 0.0000 0.0000
+Shadow Detail       : 256
+Shadow Quality      : 4
+Shadow Softness     : 1.0000
+*** END LIGHT
+
+*** BEGIN LIGHT
+Light Name          : Std Up-Left Dist
+Light Type          : Distant
+Coords              : Fixed with Part
+Generate Shadows    : False
+Intensity           : 0.7000
+Color               : 1.0000 1.0000 1.0000
+From                : -12000.0000 6000.0000 12000.0000
+To                  : 0.0000 0.0000 0.0000
+Shadow Detail       : 256
+Shadow Quality      : 4
+Shadow Softness     : 1.0000
+*** END LIGHT
+
+*** BEGIN LIGHT
+Light Name          : left_shadow
+Light Type          : Distant
+Coords              : Fixed with Part
+Generate Shadows    : True
+Intensity           : 0.7000
+Color               : 1.0000 1.0000 1.0000
+From                : 122.9770 131.1194 87.6605
+To                  : 0.0000 0.0000 0.0000
+Shadow Detail       : 256
+Shadow Quality      : 4
+Shadow Softness     : 1.0000
+*** END LIGHT
+
+*** BEGIN LIGHT
+Light Name          : spot_shadow
+Light Type          : Spot
+Coords              : Fixed with Part
+Generate Shadows    : True
+Allow Scattering    : False
+Intensity           : 1.0000
+Color               : 1.0000 1.0000 1.0000
+Location            : 0.0000 6.9516 6.8459
+To                  : -0.3922 0.3192 1.1234
+Fall Off            : Constant
+Cone Angle          : 60.0000
+Cone Delta Angle    : 15.0000
+Beam Fall Off       : 0.0000
+Shadow Detail       : 256
+Shadow Quality      : 4
+Shadow Softness     : 1.0000
+*** END LIGHT
+

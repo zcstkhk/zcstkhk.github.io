@@ -1,0 +1,223 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Simulation enhancements</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Simulation enhancements</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>Simulation is enhanced to improve support of integrated simulation and verification, or ISV:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>When you start ISV with CSE simulation and the <span class="uiTerm">Visualization</span> option is set to <span class="uiTerm">Machine Code Simulate</span>, NX checks for the following critical errors before simulation starts:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>Tools with the same number, for any simulation.</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Tools with the number 0 for simulation of an external code file.</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Spindle speed of 0, inherited tool number of 0, and inherited fixture offset of 0, for simulation of an internal operation.</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>When you define a simulation collision pair that includes the in-process workpiece (IPW), the IPW is no longer automatically enabled. NX simulates that collision pair only when&nbsp;you turn on the IPW.</p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         
+         <p></p>
+         
+         
+         <div class="division">
+            
+            <h3>Why should I use it?</h3>
+            
+            <p>Advance error detection saves you simulation time.</p>
+            
+            <p>You can control whether collision checking for the IPW is performed by turning the IPW on or off.</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <p>Collision checking</p>
+            
+            <table cellpadding="6" cellspacing="2" class="locator" frame="box" rules="all">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin">Application</p>
+                        
+                     </td>
+                     
+                     <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin">Manufacturing</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin">Toolbar</p>
+                        
+                     </td>
+                     
+                     <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Operations</span>&rarr;<span class="uiTerm">Simulate Machine</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/manufacturing/manufacturing_operations/simulate_machine.gif" border="0"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Operation Navigator</span></p>
+                        
+                     </td>
+                     
+                     <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin">Right click an operation or program&rarr;<span class="uiTerm">Tool Path</span>&rarr;<span class="uiTerm">Simulate</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Simulation control Panel</span></p>
+                        
+                     </td>
+                     
+                     <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Simulation Settings</span> group&rarr;<span class="uiTerm">Options</span>&rarr;<span class="uiTerm">Simulation Options</span> dialog box&rarr;<span class="uiTerm">Collision Detection</span> group&rarr;<span class="uiTerm">Collision Detection</span> list&rarr;select <span class="uiTerm">On</span>&rarr;<span class="uiTerm">Specify Collision Pairs</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/simulation_options/specify_collision_pairs.gif" border="0"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p>IPW control</p>
+            
+            <table cellpadding="6" cellspacing="2" class="locator" frame="box" rules="all">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Simulation Control Panel</span></p>
+                        
+                     </td>
+                     
+                     <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Simulation Settings</span> group&rarr;<span class="uiTerm">Options</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/simulation_options.gif" border="0"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin">Location in dialog box</p>
+                        
+                     </td>
+                     
+                     <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Simulation Options</span> dialog box&rarr;<span class="uiTerm">In Process Workpiece</span> group&rarr;<span class="uiTerm">In Process Workpiece</span> list&rarr;<span class="uiTerm">Off</span> or <span class="uiTerm">Motion Based</span> or <span class="uiTerm">Length Increment</span>.
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

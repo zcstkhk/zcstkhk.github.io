@@ -1,0 +1,53 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>准备几何体以用于梁的构建</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>准备几何体以用于梁的构建</h2><a name="ndxgenid_spta_prebeam_8"></a>
+         
+         
+         <p>可以在 FEM 文件中的多边形边上创建1D 网格，但是在大多数情况下，在主模型或理想化部件文件中创建关联点或曲线会更好，这能更好地定义节点位置和梁位置。</p>
+         
+         <p>部件文件显示时，高级仿真中提供了很多曲线创建命令，一些有用的命令包括：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>插入&rarr;基准/点&rarr;点</strong>：使用<strong>点</strong>命令来定义端点和节点位置</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>插入&rarr;曲线&rarr;直线</strong>：使用<strong>直线</strong>命令来连接捕捉的点或者现有点</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>插入&rarr;来自曲线集的曲线&rarr;投影曲线</strong>：使用<strong>投影曲线</strong>来把曲线或点投影到邻近的几何体(比如中面)上</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/meshing/1d/beam_mod_prep.png"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

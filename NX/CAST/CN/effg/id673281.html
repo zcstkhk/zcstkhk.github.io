@@ -1,0 +1,92 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>大致偏置对话框</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>大致偏置对话框</h2>
+         <p><strong>偏置 CSYS</strong> — 让您可以为偏置选择或构造一个坐标系(CSYS)，其中 Z 方向指明偏置方向，X 方向指明步进或剖切方向，Y 方向指明步距跨越方向。默认的 CSYS   为当前的工作 CSYS。</p>
+         <p><strong>CSYS 构造器</strong> — 让您通过使用标准的 <strong>CSYS 构造器</strong>为偏置选择或构造一个 CSYS。当偏置   CSYS 选择步骤处于激活状态时可用。</p>
+         <p><strong>偏置距离</strong> — 让您指定偏置的距离。此字段值和<strong>偏置偏差</strong>中指定的值一同起作用。如果希望偏置背离指定的偏置方向，则可以为偏置距离输入一个负值。</p>
+         <p>默认值(测量单位是英寸时为 1，测量单位是公制单位时为10)，用在每个工作会话的开始。</p>
+         <p><strong>偏置偏差 — </strong>让指定偏置的偏差。您输入的值表示允许的偏置距离范围。</p>
+         <p>该值与<strong>偏置距离</strong>值一起使用。例如，如果偏置距离是10且偏差是1，则允许的偏置距离在9和11之间。通常，偏差值应该远大于建模距离公差。</p>
+         <p>默认值(测量单位是英寸时为 1，测量单位是公制单位时为10)，用在每个工作会话的开始。</p>
+         <p><strong>步进距离</strong> — 让您指定步距跨越距离。<strong>步进距离</strong>将控制用在曲面计算中的数目。</p>
+         <p><strong>曲面生成方法 — </strong>让您指定当系统建立大致偏置曲面时使用的方法。</p>
+         <ul>
+            
+            <li>
+               
+               <p><strong>点云</strong> — NX 将使用与和<strong>点云</strong>选项所采用的完全相同的方法来构造曲面。选择该方法将启用<strong>曲面控制</strong>选项，它用于指定曲面的补片数目。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>通过曲线组</strong> —— NX 将使用与<strong>通过曲线组</strong>选项所采用的完全相同的方法来构造曲面。注意，如果指定该选项，则<strong>边界修剪</strong>选项不可用。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>粗略拟合</strong> — NX 将使用一种方法来创建曲面，这种方法的精度虽然不如其他方法高，但是在其他方法都无法创建曲面时，这种方法却可以。在偏置精度不太重要，且由于曲面自相交使得其他方法无法生成曲面，或如果这些方法生成的曲面很糟糕时，可以使用&ldquo;粗略拟合&rdquo;。</p>
+               
+            </li>
+            
+         </ul>
+         <p><strong>显示截面预览</strong> — 在使用<strong>通过曲线组</strong>方法和<strong>粗略拟合</strong>法的同时可以使用预览选项，从而可了解将用于创建大致偏置曲面的截面曲线。可以使用预览来标识在指定了坐标系和参数时可能出现的糟糕的截面曲线数据。</p>
+         <p><strong>投影方向</strong> — 使用预览选项和通过曲线与大至拟合方法来观察用于创建大至偏置曲面的截面曲线。您可以使用预览来检查不好的截面曲线数据，这些数据可能和坐标系以及参数都可以指定。</p>
+         <p><strong>曲面控制</strong> — 让您决定使用多少补片来建立片体。该选项仅适用于<strong>点云</strong>曲面生成方法。</p>
+         <ul>
+            
+            <li>
+               
+               <p><strong>系统定义</strong> — 在建立新的片体时 NX 将自动添加经过计算数目的 U 向补片来给出优化结果。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>用户定义</strong> — 启用 U 向补片字段，用于指定在建造片体过程中所允许的 U 向补片数目。该值必须至少为 1。</p>
+               
+            </li>
+            
+         </ul>
+         <p><strong>边界修剪</strong> — 让您指定新的片体的修剪类型。它只适用于<strong>点云</strong>曲面生成方法。</p>
+         <ul>
+            
+            <li>
+               
+               <p><strong>不修剪</strong> — 片体以近似矩形图样创建，并且不修剪。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>修剪</strong> — 片体根据偏置中使用的曲面边界修剪。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>边界曲线</strong> — 不修剪片体，但是在片体上对应于在使用&ldquo;修剪&rdquo;选项时发生修剪的边界创建一条曲线。</p>
+               
+            </li>
+            
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

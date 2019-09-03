@@ -1,0 +1,287 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>底面和壁铣削中的精确定位示例</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>底面和壁铣削中的精确定位示例</h2>
+         
+         <p>您可以使用 2.5 D 空间范围的<strong>切削区域空间范围</strong>选项。空间范围可以侧重于底面，也可以侧重于壁。</p>
+         
+         <table bgcolor="white">
+            
+            <colgroup align="center" span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody valign="middle">
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/floor_containment.png"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/manufacturing_dialogs/cd_cut_region_containment_1.png"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="2" rowspan="1">
+                     
+                     <p class="no-bottom-margin">侧重于底面的空间范围</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/wall_containment.png"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/manufacturing_dialogs/cd_cut_region_containment_2.png"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="2" height="28" rowspan="1">
+                     
+                     <p class="no-bottom-margin">侧重于壁的空间范围</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>要对切削刀具加强控制，则选择<strong>精确定位</strong>选项。此选项需要更多的处理时间来将刀具定位到部件几何体。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div class="division">
+            
+           <h3>侧重于底面的空间范围</h3>
+            
+            <p>下例是精确定位关闭时的典型用例。在这些情况下，生成的刀轨是相同的，不管精确定位是打开还是关闭，均是如此。</p>
+            
+            <p>在以下示例中，使用尖角刀具来加工切削区域，并且未选中<strong>精确定位</strong>复选框 <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_off.gif" border="0">。</p>
+            
+            <ul class="unmarkedList">
+               <li>
+                  
+                  <p>切削区域受限制，并直接按底面的边界修剪。不管您使用的是拐角半径刀具还是尖角刀具，刀具行为均相同。</p>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/floor_wall_exact_postition_4.png" border="0"></p>
+                  
+               </li>
+               <li>
+                  
+                  <p>刀刃穿过一个或多个底面时，不会涉及到任何壁。</p>
+                  
+                  <table frame="box" rules="all">
+                     
+                     <colgroup span="1">
+                        
+                        <col align="center" span="1">
+                        
+                        <col align="center" span="1">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/cut_region_containment_01.png"></p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/cut_region_containment_02.png"></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+                  <p></p>
+                  
+               </li>
+               <li>
+                  
+                  <p>刀刃穿过底面区域时，不会对壁进行过切。</p>
+                  
+                  <table frame="box" rules="all">
+                     
+                     <colgroup align="center" span="1">
+                        
+                        <col span="1">
+                        
+                        <col span="1">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/cut_region_containment_03.png"></p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/cut_region_containment_04.png"></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/cut_region_containment_05.png"></p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/cut_region_containment_06.png"></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+                  <p></p>
+                  
+               </li>
+            </ul>
+            
+            <p>由于此选项会影响生成的刀轨，因此，以下示例是打开精确定位的典型用例。</p>
+           <p>在以下示例中，刀具被精确定位到底面。与所选底面相邻的底面圆角被视为底面的延续。选中<strong>精确定位</strong>复选框 <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_on.gif" border="0">。</p>
+            <ul class="unmarkedList">
+            <li>
+              <p><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/floor_wall_exact_postition_10.png" border="0"></p>
+              <ul>
+                 <li>
+                   <p>如果刀具拐角半径大于底面圆角半径，NX 会将材料留在圆角区域中。</p>
+                 </li>
+                 <li>
+                   <p>如果刀具拐角半径小于底面圆角半径，NX 会将材料留在壁和圆角区域中。</p>
+                 </li>
+                     
+               </ul>
+                  
+              </li>
+               <li>
+                  
+                  <p>下例显示了带拐角半径的刀具切削底面的情况。</p>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/floor_wall_exact_postition_11.png" border="0"></p>
+                  <ul>
+                     <li>
+                       <p>(1) 底面和底面圆角被切削。</p>
+                     </li>
+                     <li>
+                       <p>(2) 底面和底面圆角被切削，但不包括壁。</p>
+                     </li>
+                     <li>
+                       <p>(3) 底面和底面圆角被切削，且底面切削区域按壁几何体进行修剪，以避免切削至切口区域。</p>
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>侧重于壁的空间范围</h3>
+            
+            <p>在下例中，未选中<strong>精确定位</strong>复选框 <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_off.gif" border="0">。</p>
+            
+            <ul class="unmarkedList">
+               <li>
+                  
+                  <p>刀具沿着壁走刀，但没有精确定位，将材料留在壁和底面圆角中。</p>
+                  <p>如果是用于粗加工工序，这将不是问题。</p>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/floor_wall_exact_postition_9.png" border="0"></p>
+                  
+               </li>
+            </ul>
+            
+            <p>在下例中，已选中<strong>精确定位</strong>复选框 <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_on.gif" border="0">。</p>
+            
+            <ul class="unmarkedList">
+               <li>
+                  
+                  <p>如果只选择壁或选择底面和壁的组合，刀具将沿着所有切削层的壁走刀，并将刀具准确定位至每个切削层的壁。</p>
+                  <p>如果要创建精加工工序，这可能是很关键的。</p>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/floor_wall_exact_postition_12.png" border="0"></p>
+                  
+               </li>
+            </ul>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

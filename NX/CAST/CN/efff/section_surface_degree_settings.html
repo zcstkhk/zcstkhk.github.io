@@ -1,0 +1,189 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>阶次设置</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>阶次设置</h2>
+         
+         <div class="division">
+            
+            <h3>U 向阶次</h3>
+            
+            <p>有三个选项：<strong>二次</strong>、<strong>三次</strong>以及<strong>五次</strong>。</p>
+            
+            <div class="defList">
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p><strong>二次</strong></p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <p>这个选项将创建一个真实的，精确的二次曲线形状，且没有任何曲率反向。</p>
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p>用参数表示可能非常不均匀。 </p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>Rho 值允许在0.0001和0.9999之间</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+               </div>
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p><strong>三次</strong></p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <p>这个选项创建的曲线与二次曲线形状很相似，所不同的是会使用一个更好的参数来创建曲面。</p>
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p><strong>三次</strong>沿着整条曲线分布流线，但是不会创建精确的三次形状</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>在创建多项式三次截面时，允许的最大 Rho 值是0.75</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+               </div>
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p><strong>五次</strong></p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p>曲面的阶次为5</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>补片之间的曲面为C2连续(曲率连续)</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+               </div>
+            </div>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>V 向阶次</h3>
+            
+            <p>V 向阶次将控制截面曲面在 V 向(平行于脊线)上的阶次和形状。</p>
+            
+            <p>有三种重新构建选择：<strong>无</strong>、<strong>阶次和公差</strong>以及<strong>自动拟合。</strong></p>
+            
+            <div class="defList">
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p><strong>无</strong></p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p>如果不想重新定义输入曲线的阶次以及结点时，选择这个选项。</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+               </div>
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p><strong>阶次和公差</strong></p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p>通过指定输入曲线的阶次，以在 V 向上优化曲面</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>让您指定阶次。将插入必要的结点以达到指定的公差</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+               </div>
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p><strong>自动拟合</strong></p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p>让您指定<strong>最高阶次</strong>以及<strong>最大段数</strong></p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>让您指定 C0(位置)、C2(相切)以及C3(曲率)公差。</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+               </div>
+            </div>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

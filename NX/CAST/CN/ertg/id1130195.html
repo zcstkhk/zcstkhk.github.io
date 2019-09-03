@@ -1,0 +1,127 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>定义锚点位置</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>定义锚点位置</h2>
+         
+         
+         <p>您必须通过指定点来定义锚点的位置，您可以通过偏置圆弧中心点来达到这个目的。</p>
+         
+         <p>如果您显示了 WCS，那么您会发现在构建这个部件时，两个凸台正好位于 XC 轴的平行线上。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/activities/qualify_part/qualify_qual1_620.png"></p>
+         
+         <p>这意味着您可以选择其中一个凸台的中心点，然后沿 XC 轴的方向偏置这个点。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>确保<strong>过滤器</strong>是设置为<strong>点</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>点击选择条上的<strong>点对话框</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/common/point_constructor.gif" border="0" alt="Point Dialog" title="Point Dialog">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>类型</strong>列表中选择<strong>圆弧中心/椭圆中心/球心</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/point_constructor/arc_ellipse_sphere_center.gif" border="0" alt="圆弧中心/椭圆中心/球心" title="圆弧中心/椭圆中心/球心">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>对于参考点，选择任意一个凸台的圆弧中心。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>输出坐标系</strong>组的<strong>参考</strong>列表中，选择 <strong>WCS</strong>。
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>注意到 <strong>XC</strong> 为<strong>&ndash;203.2</strong>，将这个值修改为<strong>0.0</strong>然后回车。
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>将在您指定的位置，即两个端口的中间点出现一个表示锚点符号的 X 标记。</p>
+                     
+                     <div class="verbose">
+                       <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/activities/qualify_part/qualify_qual1_630.png"></p>
+                     </div>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <div class="verbose">
+                        <p>对话框中将显示已在部件中定义好的锚点。</p>
+                     </div>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

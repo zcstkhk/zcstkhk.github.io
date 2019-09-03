@@ -1,0 +1,264 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Load a virtual CMM machine</title>
+   </head>
+   <body>
+      <div class="contentType_procedure">
+         <h2>Load a virtual CMM machine</h2>
+         
+         <p>This example shows you how to load a generic CMM machine, the probe head that connects a probe to the machine, and the probe itself.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>If you have not already done so, create an inspection setup file.</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>On the <strong>Navigator</strong> toolbar, click <strong>Machine View</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/nx_cmm/navigator/machine_view.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult"></div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Inspection Navigator</strong>, double-click <strong>GENERIC_MACHINE</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Generic Machine</strong> dialog box, load a virtual CMM by doing the following.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <ol type="a">
+                     <li>
+                        
+                        
+                        <p>Click <strong>Retrieve Machine from Library</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/nx_cmm/generic_machine/retrieve_machine_from_libra.gif" border="0">.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Library Class Selection</strong> dialog box, from the <strong>Machine</strong> list, double-click <strong>CMM</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Search Result</strong> dialog box, from the <strong>Matching Items</strong> list, double-click the preferred machine.
+                        </p>
+                        
+                        
+                     </li>
+                  </ol>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Part Mounting</strong> dialog box, position the part to be inspected on the CMM by doing the following:
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <ol type="a">
+                     <li>
+                        
+                        
+                        <p>From the <strong>Placement</strong> group, select <strong>Use Part Mount Junction</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>Click <strong>CSYS dialog</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/common/csys_dialog.gif" border="0">.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>CSYS</strong> dialog box, from the <strong>Type</strong> list, select <strong>Absolute CSYS</strong> and click <strong>OK</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Part Mounting</strong> dialog box, click <strong>Select Part</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/assemblies/extraction_path/select_component.gif" border="0">, and in the graphics window, click the solid body of your inspection part.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>Click <strong>OK</strong>.
+                        </p>
+                        
+                        
+                        <div class="stepResult">
+                           
+                           <p>An information window reports the status of your machine load, including the location of the machine and related objects.</p>
+                           
+                        </div>
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>Close the information window.</p>
+                        
+                        
+                        <div class="stepResult">
+                           
+                           <p>The inspection part has loaded on the CMM machine, and the <strong>Generic Machine</strong> dialog box is renamed to match your selected CMM machine description.
+                           </p>
+                           
+                           <table class="attentionTable attn_note">
+                              <tr>
+                                 <td valign="top">
+                                    <p class="attn_title">Note</p>
+                                 </td>
+                                 <td class="attention_main">
+                                    
+                                    <p>If the inspection part is not visible or is not placed correctly, you can later change its position by starting the Assemblies application and using <strong>Move Component</strong> in the <strong>Assemblies</strong> toolbar.
+                                    </p>
+                                    
+                                 </td>
+                              </tr>
+                           </table>
+                           
+                        </div>
+                        
+                     </li>
+                  </ol>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>In the renamed dialog box, load the head that will rotate the probe around your inspection part by doing the following.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <ol type="a">
+                     <li>
+                        
+                        
+                        <p>Click <strong>Retrieve Devices from Library</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/nx_cmm/generic_machine/retrieve_devices_from_libra.gif" border="0">.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Library Class Selection</strong> dialog box, double-click <strong>Head</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Search Result</strong> dialog box, in the <strong>Matching Items</strong> group, double-click the preferred probe head.
+                        </p>
+                        
+                        
+                        
+                     </li>
+                  </ol>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>In the renamed dialog box, load the probe that will connect to the probe head by doing the following.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <ol type="a">
+                     <li>
+                        
+                        
+                        <p>Click <strong>Retrieve Tools from Library</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/nx_cmm/generic_machine/retrieve_tools_from_libra.gif" border="0">.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Search Criteria</strong> dialog box, click <strong>OK</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Search Result</strong> dialog box, in the <strong>Matching Items</strong> group, select one or more probes and click <strong>OK</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                  </ol>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>In the renamed dialog box, click <strong>OK</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>The machine, head, and probe are now loaded and appear in the <strong>Inspection Navigator - Machine</strong> view. The probe is not visible until you run inspection path or machine simulations.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

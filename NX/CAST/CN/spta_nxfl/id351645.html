@@ -1,0 +1,195 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Flow boundary conditions</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Flow boundary conditions</h2>
+         <p>The <span class="uiTerm">Flow Boundary Condition</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/simulation/advanced_simulation/flow_boundary_condition.gif" border="0"> simulation object models:
+         </p>
+         <ul>
+            
+            <li>
+               
+               <p>Devices that move the fluid, such as fans or pumps.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The known movement of the entire model through a stationary fluid. An example is the analysis of air flowing around a moving object. </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Openings in the boundary of the fluid domain through which fluid enters or exits at a specified pressure, such as a vent or other passive opening. </p>
+               
+            </li>
+            
+         </ul>
+         <p>To obtain good results, you must specify a sufficiently dense 3D flow mesh adjoining a <span class="uiTerm">Flow Boundary Condition</span>. For accurate modeling, the solver needs at least three fluid elements across the face of any flow boundary condition. 
+         </p>
+         <p>The following are the basic <span class="uiTerm">Flow Boundary Condition</span> types:
+         </p>
+         <table border="1" cellpadding="2" cellspacing="1" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <h4>Inlet / Outlet</h4>
+                     <ul class="unmarkedList">
+                        <li>
+                           
+                           <p class="no-bottom-margin">Models the flow of fluids in or out of the flow domain at a known rate. The boundary condition must lie on the free faces of models.</p>
+                           
+                        </li>
+                     </ul>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     <a name="genid_spta_nxfl_19"></a><div class="figureContainer">
+                        <table align="center">
+                           <tr>
+                              <td>
+                                 <div class="figure">
+                                    <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/maya/powersupply/inlet_example.gif" border="0"></div>
+                                 </div>
+                              </td>
+                           </tr>
+                        </table>
+                        <h4>Outlet fan face lying on the free faces of 3D fluid elements</h4>
+                     </div>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <h4>Opening</h4>
+                     <ul class="unmarkedList">
+                        <li>
+                           
+                           <p class="no-bottom-margin">Models openings that allow fluid to flow into or out of the flow domain. The direction of the flow is determined by to the solution.  The boundary condition must lie on the free faces of models.</p>
+                           
+                        </li>
+                     </ul>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     <a name="genid_spta_nxfl_20"></a><div class="figureContainer">
+                        <table align="center">
+                           <tr>
+                              <td>
+                                 <div class="figure">
+                                    <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/maya/powersupply/outlet_example.gif" border="0"></div>
+                                 </div>
+                              </td>
+                           </tr>
+                        </table>
+                        <h4>Opening faces adjacent to free faces of 3D fluid elements</h4>
+                     </div>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <h4>Internal Fan</h4>
+                     <ul class="unmarkedList">
+                        <li>
+                           
+                           <p class="no-bottom-margin">Models a fan inside a flow domain where an outlet direction must be specified. The boundary condition must lie in an internal face with matching nodes on either sides. Ensure this by using mesh matting conditions on these faces.</p>
+                           
+                        </li>
+                     </ul>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     <a name="genid_spta_nxfl_21"></a><div class="figureContainer">
+                        <table align="center">
+                           <tr>
+                              <td>
+                                 <div class="figure">
+                                    <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/maya/ccage/cardcage4022.gif" border="0"></div>
+                                 </div>
+                              </td>
+                           </tr>
+                        </table>
+                        <h4>Two internal fan faces in an electronics card cage</h4>
+                     </div>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <h4>Recirculation Loop</h4>
+                     <ul class="unmarkedList">
+                        <li>
+                           
+                           <p class="no-bottom-margin">Models the extraction and the subsequent return of fluid from and to the flow model. The boundary condition must lie on the free faces of models.</p>
+                           
+                        </li>
+                     </ul>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     <a name="genid_spta_nxfl_22"></a><div class="figureContainer">
+                        <table align="center">
+                           <tr>
+                              <td>
+                                 <div class="figure">
+                                    <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/simulation_objects/maya/pres146.gif" border="0"></div>
+                                 </div>
+                              </td>
+                           </tr>
+                        </table>
+                        <h4>Extract face and return face lying on the free faces of fluid elements </h4>
+                     </div>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

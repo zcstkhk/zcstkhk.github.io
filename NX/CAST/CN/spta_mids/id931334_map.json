@@ -1,0 +1,11 @@
+{identifier:"id",label:"title",items:[
+{id:"d8e2",title:"打开部件文件",file:"id931338.html",type:"topic",parent:""},
+{id:"d8e3",title:"重置对话框内存",file:"id353012_1.html",type:"topic",parent:""},
+{id:"d8e4",title:"创建 FEM 和仿真文件",file:"id931348.html",type:"topic",parent:""},
+{id:"d8e5",title:"显示理想化部件",file:"id931354.html",type:"topic",parent:""},
+{id:"d8e6",title:"提升部件",file:"id934792.html",type:"topic",parent:""},
+{id:"d8e7",title:"生成外壁的中面",file:"id931362.html",type:"topic",parent:""},
+{id:"d8e8",title:"生成薄肋板的中面",file:"id935582.html",type:"topic",parent:""},
+{id:"d8e9",title:"生成厚肋板的中面",file:"id935587.html",type:"topic",parent:""},
+{id:"d8e10",title:"显示 FEM 文件",file:"id931350.html",type:"topic",parent:""},
+{id:"d8e11",title:"缝合 FEM 文件",file:"id935697.html",type:"topic",parent:""}]}

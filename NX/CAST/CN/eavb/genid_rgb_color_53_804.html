@@ -1,0 +1,109 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>RGB 公差</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>RGB 公差</h2>
+         
+         <p>RGB 公差将把公差范围内的颜色设置为透明的像素点。公差等于透明色的值+ RGB 公差值。</p>
+         <p>RGB 公差可以从0变化到255。</p>
+         <ul>
+           <li>
+             <p>0 = 非常严格的<strong>透明色</strong>附着公差</p>
+           </li>
+           <li>
+             <p>255 = 非常宽松的<strong>透明色</strong>附着公差</p>
+           </li>
+         </ul>
+         <p>有时候，设为透明的图像区域并不是纯色显示，这时就会导致贴花显示非常凌乱，要避免这个情况，增加 <strong>RGB 公差</strong>值。</p>
+         
+         
+         <table bgcolor="#E0E0E0" border="0" cellpadding="2" cellspacing="1" width="90%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" height="26" rowspan="1">
+                     
+                     <p><strong>实例：</strong></p>
+                     
+                     <p>下图中，<strong>透明色</strong>是深灰色，但商标边缘周围有一些像素点将会显示为与 RGB 值有些许不同的灰色。</p>
+                     <p>当您增加 <strong>RGB 公差</strong>值时，<strong>透明色</strong>将变得更加透明。</p>
+                     
+                     <table border="0" cellpadding="2" cellspacing="1" width="90%" align="center">
+                        
+                        <colgroup align="center" span="1">
+                           
+                           <col span="1">
+                           
+                           <col span="1">
+                           
+                           <col span="1">
+                           
+                       </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                             <td colspan="1" rowspan="1">
+                                 
+                               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/render_view/decal/decal_rgb_tolerance_0.png"></p>
+                                 
+                                <p class="no-bottom-margin">RGB 公差 = 0</p>
+                                 
+                              </td>
+                              
+                             <td colspan="1" rowspan="1">
+                                 
+                               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/render_view/decal/decal_rgb_tolerance_5.png"></p>
+                                 
+                                <p class="no-bottom-margin">RGB 公差 = 5</p>
+                                 
+                              </td>
+                              
+                             <td colspan="1" rowspan="1">
+                                 
+                               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/render_view/decal/decal_rgb_tolerance_10.png"></p>
+                                 
+                                <p class="no-bottom-margin">RGB 公差 = 15</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                    </table>
+                     
+                 </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

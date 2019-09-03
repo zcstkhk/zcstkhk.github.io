@@ -1,0 +1,32 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Example: Assigning external superelements in the bulk data file</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Example: Assigning external superelements in the bulk data file</h2>
+         
+         <p>In this example, two instances of the same external superelement are represented in the system model. The following ASSIGN statements appears in the File Management section of the .dat file.</p>
+         <pre class="codeExample indent ">$*  NX Superelement ID: 4
+ASSIGN INPUTT2='<span class="variableText">path\filename_0.op2</span>' UNIT=31
+$*  NX Superelement ID: 7
+ASSIGN INPUTT2='<span class="variableText">path\filename_0.op2</span>' UNIT=32
+</pre>
+         <p>You can click <span class="uiTerm">Preview</span> in the <span class="uiTerm">Solution</span> dialog box at any time to confirm that all superelements in the model are correctly assigned.
+         </p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

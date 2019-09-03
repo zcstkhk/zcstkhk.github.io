@@ -1,0 +1,53 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>求解 NX Nastran 模态解算方案</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>求解 NX Nastran 模态解算方案</h2>
+         
+         <p>在 <strong>SOL 103 柔性体</strong>解算方案的<strong>解算方案</strong>对话框中，您必须指定求解的模态数以及要恢复的结果类型，默认情况下，选择的是应力和位移结果。         </p>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/flex_bodies/solution_attributes.gif"></p>
+         
+         
+         <p>求解将产生多个结果文件，千万不要删除、移动或者重命名：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>.dat &mdash; Nastran 输入文件，在以后的结果恢复中需要用到。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>.op2 &mdash; 包含模型几何体和从模态分析中得到的组件模态结果。</p>
+               
+            </li>
+            
+            <li>_0.op2 &mdash; 在 RecurDyn 求解中显示柔性体时加载。</li>
+            <li>
+              
+              <p>.rfi &mdash; RecurDyn Rflex 输入文件，在 RecurDyn 求解中表示柔性体时需要使用。</p>
+            </li>
+            
+         </ul>
+         
+         <p>记住.rfi 文件的位置，因为您在运动仿真中创建柔性连杆时需要指明它。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

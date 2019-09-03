@@ -1,0 +1,75 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Nastran 解算方案监视器</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Nastran 解算方案监视器</h2>
+         
+         <p>NX Nastran <strong>解算方案监视器</strong>将实时显示关于当前求解进度的信息，有些解算方案监视器绘制的信息包括：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>解算方案信息</strong> &mdash; 显示.f04 文件</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>稀疏矩阵求解器</strong> &mdash; 绘制已完成方程的数量</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>迭代求解器收敛</strong> &mdash; 绘制迭代计算的收敛信息</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>特征值抽取</strong> &mdash; 绘制抽取的特征值数量</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>需要 Nastran 版本 6.0 或更高。</p>
+         
+         <a name="genid_spta_solving_42"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/solving/sparse_matrix_monitor.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>稀疏矩阵求解器监视器</h4>
+         </div>
+         
+         
+         <p>在求解过程中，一个或多个图像将显示生成的进度或收敛信息，您可以通过点击显示在监视器窗口上方的选项卡来访问各个图像，可以在图像生成过程中实时查看，或者在求解完成时查看所有图像。</p>
+         
+         <p>显示的信息取决于您正在运行的 NX Nastran 版本、模型设置以及解算方案类型。</p>
+         
+         <p>使用解算方案监视器来监视求解器的收敛，并评估解算所需的剩余时间，根据监视器的输出，您可能想取消求解、改善模型或者调整仿真参数。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

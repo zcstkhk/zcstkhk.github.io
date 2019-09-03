@@ -1,0 +1,41 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>关于柔性体模态解算方案</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>关于柔性体模态解算方案</h2>
+         
+         <p>您将使用高级仿真应用模块来创建柔性体的有限元模型并进行 NX Nastran SOL 103柔性体模态分析。这个模态分析将求解柔性体的自然频率和模态形状。</p>
+         
+         <p>SOL 103 柔性体模态解算方案将使用模态形状来计算柔性体的模态质量和模态刚度。由于求解器通常只计算柔性体所有模态的一个子集，因此模态质量和刚度是柔性体的缩减表示。求解器将把这些缩减矩阵保存在 RecurDyn Rflex 输出文件(.rfi)中。</p>
+         
+         <p>然后，在运动仿真中，将.rfi 文件与连杆关联以创建柔性连杆。</p>
+         <a name="genid_emot_advanced_topics_60"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/flex_bodies/mode_shapes.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>模态形状示例</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

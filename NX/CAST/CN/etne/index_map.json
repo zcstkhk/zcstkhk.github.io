@@ -1,0 +1,8 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"槽加工以及螺纹车削工序",file:"id1083517.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"外侧开槽",file:"groove_od.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"创建外侧开槽工序",file:"id947330.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e8",title:"外侧螺纹加工",file:"thread_od.html",type:"topic",parent:"",children:[
+{id:"d5e9",title:"创建外侧螺纹加工工序",file:"id947339.html",type:"activity",parent:"d5e8"}]}
+]}

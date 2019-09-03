@@ -1,0 +1,1 @@
+chamfered_boss;des14_udf_chamferd_boss.prt;des14_udf_chamferd_boss.cgm;/Metric/Bosses;

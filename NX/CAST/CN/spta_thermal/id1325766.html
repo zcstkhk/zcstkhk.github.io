@@ -1,0 +1,64 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>复习</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>复习</h2>
+         <div id="topQuestionsContainer">
+            <div class="questionsHeader">
+               <div class="headerTitle">
+                  <p>问题</p>
+               </div>
+               <div class="quesionButtons">
+                  <div class="qButton" id="qButton_1">
+                     <p>1</p>
+                  </div>
+               </div>
+            </div>
+            <div id="questionsContainer">
+               <div class="question" id="question1" answered="false" numanswers="3" questiontype="allThatApply">
+                  <p>假设您正在创建一个反射对称的热模型，应该应用什么边界条件到位于对称平面上的节点？</p>
+                  <p class="questionInstruction">可以选择多个您认为正确的答案</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a1" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q1a1" type="checkbox" correct="yes" name="question1Grp"></td>
+                           <td>
+                           <p>在垂直于对称平面方向上的零热通量</p></td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a2" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q1a2" type="checkbox" correct="no" name="question1Grp"></td>
+                           <td>
+                              <p>温度</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a3" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q1a3" type="checkbox" correct="yes" name="question1Grp"></td>
+                           <td>
+                              <p>无</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div id="showFeedbackContainer"><span showLabel="true" id="feedbackButton" title="Show feedback" dojoType="xps.form.Button" onClick="showQuestionFeedback()">显示答案</span></div>
+            </div>
+            <div class="helpTextContainer">
+               <p class="questionFeedback" id="incorrect">错误！</p>
+               <p class="questionFeedback" id="correct">正确！</p>
+               <div class="questionHelp" id="questionHelp1">
+                  <p>对于热分析中的对称平面，对称平面上的热通量为零，可以通过在垂直于对称平面方向上应用零热通量，或者不应用边界条件到位于对称平面上的节点，如果不在位于模型外部面上的节点上应用边界条件，节点在垂直于对称平面的方向上将表现为绝热。</p>
+               </div>
+            </div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

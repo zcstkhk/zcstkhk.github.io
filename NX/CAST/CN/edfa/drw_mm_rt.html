@@ -1,0 +1,63 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>NX 制图方法和主模型工作流</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>NX 制图方法和主模型工作流</h2>
+         <p>NX 可提供不同的方法来创建图纸。您可以使用：</p>
+         <ul>
+           <li>
+             <p>2D 制图过程，并从不引用任何 3D 模型几何体的新图纸开始。</p>
+           </li>
+           <li>
+             <p>3D 制图过程，并且可以将图纸直接放在包含 3D 数据的装配或部件文件中。</p>
+           </li>
+           <li>
+             <p>主模型工作流，并将模型文件与图纸文件分开管理。建议在使用 3D 数据时使用此工作流。</p>
+           </li>
+         </ul>
+         <div class="division">
+            
+           <h3>3D 制图(利用主模型工作流)</h3>
+            
+            <p>此产品设计过程通常包含来自不同专业领域人员的输入，他们使用不同的 NX 应用模块并共享同一个模型。这种团队导向型的产品设计称为<em>并行工程</em>。通过让团队同时处理部件、部件的组件或图纸，主模型工作流支持此类型的环境。</p>
+            <p>主模型是一个部件文件，它是装配的唯一组件，其包含的数据通常来自一个下游应用模块，例如：</p>
+            <ul>
+              <li>
+                <p>制图</p>
+              </li>
+              <li>
+                <p>加工</p>
+              </li>
+              <li>
+                <p>分析</p>
+              </li>
+            </ul>
+            <p>您可以将主模型工作流用于装配或单个部件。对于单个部件，您可以在其他设计人员修改模型几何体的同时创建详细图纸。要完成此任务，您需要创建一个正好只有一个组件的装配部件文件。组件部件是主模型，并且您可以在装配部件中创建图纸。 </p>
+            <p>例如，制图者新建一个部件文件用于包含图纸。原始部件的几何体随后将作为组件被添加到图纸文件中。这样，模型几何体无需真正成为图纸文件的一部分即可位于图纸中。主模型和图纸分别位于不同的部件文件。</p>
+            <p>由于图纸包含在单独的文件中，下游用户不需要具有几何体的写权限。这可以防止意外修改，并保留设计的完整性。</p>
+            <p>在非主模型工作流中，图纸包含在部件中。</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/drawings/create_edit_sheet/non_master_model.gif"></p>
+            
+            <p>在主模型工作流中，部件将作为组件被添加到图纸文件中。</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/drawings/create_edit_sheet/master_model.gif"></p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

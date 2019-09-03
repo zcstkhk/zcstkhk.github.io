@@ -1,0 +1,11 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开部件并显示工序导航器",file:"id802821.html",type:"topic",parent:""},
+{id:"d7e3",title:"定义材料",file:"id970073.html",type:"topic",parent:""},
+{id:"d7e4",title:"指定工件几何体",file:"id970075.html",type:"topic",parent:""},
+{id:"d7e5",title:"编辑刀具",file:"id970292.html",type:"topic",parent:""},
+{id:"d7e6",title:"更改加工方法",file:"id970294.html",type:"topic",parent:""},
+{id:"d7e7",title:"创建工序",file:"id970296.html",type:"topic",parent:""},
+{id:"d7e8",title:"设置加工数据",file:"id970298.html",type:"topic",parent:""},
+{id:"d7e9",title:"生成并确认刀轨",file:"id970300.html",type:"topic",parent:""},
+{id:"d7e10",title:"更改切削模式",file:"id970302.html",type:"topic",parent:""},
+{id:"d7e11",title:"生成并确认刀轨",file:"id970304.html",type:"topic",parent:""}]}

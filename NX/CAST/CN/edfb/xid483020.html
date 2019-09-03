@@ -1,0 +1,192 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>定义边界和区域</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>定义边界和区域</h2>
+         
+         <p><strong>边界和区域</strong>命令可将关联的边界和区域添加到部件中活动的图纸页。图纸的边界是定义图纸页的外边界的线。图纸区域是图纸页上单独的矩形单元格，图纸页的竖直方向上显示字母而水平方向上显示数字。</p>
+         <p>边界线和区域标记线的颜色、线型和宽度设置都基于常规 NX 曲线的用户默认设置和首选项。区域标签的颜色、线型和宽度设置都基于常规文本注释的用户默认设置和首选项。</p>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/customize/automation_tools/border_and_zone_1.gif"></p>
+         
+         
+         <p>对于边界，您可以：</p>
+         <ul>
+           <li>
+             <p>控制它们的外观和宽度(1)</p>
+           </li>
+           <li>
+             <p>控制水平和竖直中心标记的外观和延伸尺寸(2)</p>
+           </li>
+           <li>
+             <p>控制修剪标记的外观和大小(3)</p>
+           </li>
+         </ul>
+         <ul>
+         <li>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/customize/automation_tools/border_and_zone_2.png"></p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>您可以将区域类型设置为：</p>
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>无</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>不创建图纸页区域。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>标准</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>根据当前制图标准创建图纸页区域。这是默认值。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>定制</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>用于指定不重复的区域参数，如大小、原点和边距。</p>
+                  
+               </div>
+            </div>
+         </div>
+         
+         <p>您也可以：</p>
+         <ul>
+         <li>
+           <p>控制区域标签的外观、大小和字体(4)</p>
+           </li>
+            <li>
+              <p>控制区域分割线的外观和大小(5)</p>
+            </li>
+            <li>
+               
+              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/customize/automation_tools/border_and_zone_3.png"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在设置<strong>使用图纸页区域栅格</strong>时，显示区域栅格</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/customize/automation_tools/border_and_zone_4.gif"></p>
+               
+            </li>
+            
+         </ul>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>您应考虑在哪一层上创建边界和区域。您可能会希望将边界和区域放置在通常不会选择的层上。例如，借助 NX 提供的模板，图纸边界和标题块始终位于第 255 和 256 层。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         
+         <p></p>
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">制图</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>图纸格式→边界和区域</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/drafting/drawing_format/borders_and_zones.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>工具→图纸格式→边界和区域</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

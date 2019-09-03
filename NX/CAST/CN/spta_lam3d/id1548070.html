@@ -1,0 +1,232 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Create a 3D swept mesh</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Create a 3D swept mesh</h2>
+         <p></p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/icon_list3.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/3d_swept_mesh.gif" border="0"> <span class="uiTerm">3D Swept Mesh</span> (<span class="uiTerm">Advanced Simulation</span> toolbar, <span class="uiTerm">Mesh Drop-down</span> list)
+         </p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <table cellspacing="0" class="option_list" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="86">
+                     
+                     <col span="1" width="185*">
+                     
+                     <col span="1" width="20">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Type</span></p>
+                           
+                        </td>
+                        
+                        <td class="border1a" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Until Target</span></p>
+                           
+                        </td>
+                        
+                        <td class="nopadding" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="top" src="../graphics/nonLocalized/nx_dss/icons/images/option_arrow_no_border.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0"> Select the bottom face as the source face.
+               </p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/laminates/lam_global_layup/bottomface_seletion.gif"></p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0"> <span class="uiTerm">Select Target Face (0)</span></p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0"> Select the top face as the target face.
+               </p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/laminates/lam_physical_property/topface_seletion_zb3.gif"></p>
+               
+            </li>
+            <li>
+               
+               <p>To determine the element size, measure the thickness of the pad. For the Nastran PCOMPS card, it is better to have only one row of elements in the thickness as each element contains all the plies.</p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/analysis/analysis/distance.gif" border="0"> <span class="uiTerm">Measure Distance</span> (<span class="uiTerm">Utility</span> toolbar)
+               </p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0">&nbsp;<img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_red/ball_red_1.gif" border="0">&nbsp;<img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_red/ball_red_2.gif" border="0"> 
+               </p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/laminates/lam_physical_property/distance_measure.gif"></p>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">OK</span></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table cellspacing="0" class="input_field" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="90">
+                     
+                     <col span="1" width="190*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Source Element Size</span></p>
+                           
+                        </td>
+                        
+                        <td class="border1b" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">5</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">OK</span></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+         </ul>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/laminates/lam_physical_property/solid_mesh.gif"></p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

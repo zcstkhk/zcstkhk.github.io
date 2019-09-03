@@ -1,0 +1,140 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>最小化多个载荷工况的最大响应值</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>最小化多个载荷工况的最大响应值</h2>
+         
+         <p>如果优化基于 SOL 101 线性静态解算方案，那么您可以使用 <strong>MinMax</strong> 目标来最小化多个载荷工况的最大响应值。 </p>
+         <p>例如，假设存在两个载荷工况，每个载荷工况指定有两个节点。设计<strong>目标</strong>设为 <strong>MinMax</strong>，组<strong>操作符</strong>设为<strong>总和</strong>。各载荷工况中每个节点的响应值相加，得到各载荷工况的一个响应值。随后，软件确定当前最大载荷工况总和值并对此载荷工况执行最小化优化。</p>
+        <p>下表描述从 <strong>MinMax</strong> 公式项而言有效的设计响应类型。</p>
+         
+         
+         <table border="1" cellpadding="4" cellspacing="2" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="2">
+            </colgroup>
+            
+            <thead>
+               
+               <tr valign="top">
+                 <td colspan="1" rowspan="1" align="center"><p>柔度项</p></td>
+                 <td colspan="1" rowspan="1" align="center"><p>材料体积项</p></td>
+                 <td colspan="1" rowspan="1" align="center"><p>固有频率项</p></td>
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+               <tr valign="top">
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/topo_opt/stiffness_minmax_eq.png" border="0"></p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/topo_opt/volume_minmax_eq.png" border="0"></p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/topo_opt/eigenfreq_minmax_eq.png" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         
+         <div class="division">
+            
+           <h3>示例：最小和 MinMax 公式比较</h3>
+            
+            <p>此示例中，设计目标的设计响应具有三个载荷工况，每个的载荷都不相同。设计目标设为 <strong>STRAIN_ENERGY</strong>，<strong>总和</strong>（即最大化结构刚度），并施加体积设计约束以将体积缩小到原有体积的 40%。</p>
+            <a name="genid_spta_tosca_15"></a><div class="figureContainer">
+               <table align="center">
+                  <tr>
+                     <td>
+                        <div class="figure">
+                           <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/topo_opt/minmax_example_1.png" border="0"></div>
+                        </div>
+                     </td>
+                  </tr>
+               </table>
+               <h4>施加有三个独立载荷(1、2 和 3)而(4)处固定的模型</h4>
+            </div>
+            
+            <table border="0" cellpadding="4" cellspacing="2" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr bgcolor="#B0B0B0">
+                    <td colspan="1" rowspan="1"><p>具有<strong>最小</strong>目标的优化模型 </p>
+                      <p>Min C1 + C2 + C3</p></td>
+                    <td colspan="1" rowspan="1"><p>具有 <strong>MinMax</strong> 目标的优化模型 </p>
+                      <p>Min Max {C1 + C2 + C3}</p></td>
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr bgcolor="#F0F0F0">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/topo_opt/minmax_example_2.png"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/topo_opt/minmax_example_3.png"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p>此示例采用 <strong>MinMax</strong> 公式，各载荷工况均具有相同的刚度，从而使设计更坚固。</p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

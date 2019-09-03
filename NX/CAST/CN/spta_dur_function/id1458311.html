@@ -1,0 +1,326 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>计算包含分支应变历史的响应函数</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>计算包含分支应变历史的响应函数</h2>
+         <p>使用<strong>为应变片进行评估</strong>命令，来计算对强迫激励响应的分支应变历史。</p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/simulation_navigator_tab.gif" border="0"> <strong>仿真导航器</strong></p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0"> <span class="uiTerm">Event_1</span></p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb3.gif" border="0"> <strong>为应变片进行评估</strong></p>
+               
+            </li>
+            <li>
+               
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="45">
+                     
+                     <col span="1" width="*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="banner_left" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td class="banner_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>响应片</strong></p>
+                           
+                        </td>
+                        
+                        <td class="banner_right" colspan="1" rowspan="1" width="45">
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0"> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_1.gif" border="0"> <strong>应变片</strong></p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/durability/bracket_02.gif"></p>
+               
+            </li>
+            <li>
+               
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="45">
+                     
+                     <col span="1" width="*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="banner_left" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td class="banner_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>响应请求</strong></p>
+                           
+                        </td>
+                        
+                        <td class="banner_right" colspan="1" rowspan="1" width="45">
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               
+               <table cellspacing="0" class="option_list" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="86">
+                     
+                     <col span="1" width="185*">
+                     
+                     <col span="1" width="20">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>数据分量</strong></p>
+                           
+                        </td>
+                        
+                        <td class="border1a" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">所有分支</p>
+                           
+                        </td>
+                        
+                        <td class="nopadding" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="top" src="../graphics/nonLocalized/nx/icons/images/option_arrow_no_border.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>确定</strong></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+         </ul>
+         <p>响应函数中包含分支应变历史。<img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/durability/response_functions_strain_gage.gif" border="0"></p>
+         <p>在<strong>仿真导航器</strong>中，查看三个响应函数节点：</p>
+         <table border="0" cellpadding="0" cellspacing="0" class="navigator" width="500" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="100*">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr valign="middle">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_bent_minus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/lock_event.gif" border="0">&nbsp;Event_1
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="middle">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape_minus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/create_excitations.gif" border="0">&nbsp;激励
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="middle">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_bent.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/red_ball.gif" border="0">&nbsp;Excitation_1
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="middle">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/ruler_and_legend.gif" border="0">&nbsp;模态表示</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="" valign="middle">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_bent_minus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/ruler_and_legend.gif" border="0">&nbsp;响应函数(Response Functions)</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="middle">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_bent.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/curve.gif" border="0">&nbsp;leg_strain_1_(214E_LEG1TOP)
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="middle">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_bent.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/curve.gif" border="0">&nbsp;leg_strain_2_(214E_LEG2TOP)
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="middle">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_bent.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/curve.gif" border="0">&nbsp;leg_strain_3_(214E_LEG3TOP)
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/simulation_post_control/return_to_model.gif" border="0"> <strong>返回到模型</strong>(<strong>布局管理器</strong>工具条)</p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

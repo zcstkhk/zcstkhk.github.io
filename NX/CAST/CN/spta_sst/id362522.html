@@ -1,0 +1,123 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Defining orbits</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Defining orbits</h2>
+         <p>Use an <span class="uiTerm">Orbit</span> modeling object to define the orbit, calculation positions, spacecraft attitude, sun, and planet characteristics. Use an <span class="uiTerm">Orbit</span> modeling object in conjunction with an <a href="#" onclick="loadFile('id357702.html')"><span class="uiTerm">Orbital Heating</span></a> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/simulation/advanced_simulation/orbital_heating.gif" border="0"> simulation object to simulate the thermal effects of an orbit. 
+         </p>
+         <div class="division">
+            
+            <h3>Orbital parameters</h3>
+            
+            <p>The options on the <span class="uiTerm">Orbit Parameters</span> tab let you define the orbital parameters or select a predefined orbit. 
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>For the <span class="uiTerm">Geostationary</span> and <span class="uiTerm">Geosynchronous</span> orbit types, the <span class="uiTerm">Orbit Parameters</span> tab is inactive. This is because only one geostationary or geosynchronous orbit is defined for each planet. 
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>For <span class="uiTerm">Planet Earth</span>, some special classical <span class="uiTerm">Orbit Types</span> are already partially defined:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Sun-synchronous</span></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Shuttle</span> 
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Molniya</span> 
+                        </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Sun planet characteristics</h3>
+            
+            <p>The options on the <span class="uiTerm">Sun Planet Characteristics</span> tab let you define the planet size, period, gravity, and Albedo fluxes for the planet. The options also define the time of year and solar flux. The software provides reasonable default values for the selected planet. Solar flux values should always be verified. 
+            </p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Spacecraft orientation</h3>
+            
+            <p>To define spacecraft orientation you must define two non-parallel vectors on the model. Associate the vectors with two spatial direction options selected from the <span class="uiTerm">Aim at</span> list and the <span class="uiTerm">Align with</span> lists in the <span class="uiTerm">Orientation Options</span> group on the <span class="uiTerm">Spacecraft Attitude</span> tab. During the orbital simulation, the solver adjusts spacecraft orientation at each calculation position. 
+            </p>
+            
+            <p>If you are modeling a spacecraft that spins to control attitude, you can specify this by defining <span class="uiTerm">Rotation Parameters</span> and/or <span class="uiTerm">Spinning Parameters</span> on the <span class="uiTerm">Spacecraft Attitude</span> tab.
+            </p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Spacecraft positions</h3>
+            
+            <p>The options on the Calculation Positions page let you specify:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Whether the orbit you are specifying is a <span class="uiTerm">Full Orbit</span> or a <span class="uiTerm">Partial Orbit</span>.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>The angular interval between two calculation points. </p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>The solver calculates black body, solar, earth and Albedo view factors and resulting heat loads at each calculation position on the orbit. All calculation positions are referenced from the start angle, the spacecraft position at the beginning of the transient analysis. </p>
+            
+            <p>Regardless of any intermediate calculations you specify, the software calculates results at both the initial position of the spacecraft and the last defined position of the spacecraft. These two calculation positions are respectively 0&deg; and 360&deg; from the start angle for a full orbit, or the start angle and the end angle for a partial orbit. </p>
+            
+            <p>The software defines four additional calculation positions when solving orbits with eclipse. Two are located at the start of the eclipse region and two at its end to capture the rapid heat flux variation that occurs in these regions.  </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

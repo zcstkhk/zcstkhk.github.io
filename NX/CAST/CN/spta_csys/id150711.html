@@ -1,0 +1,60 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>节点坐标系</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>节点坐标系</h2>
+         
+         <p><a name="ndxgenid_spta_csys_22"></a>
+            <a name="ndxgenid_spta_csys_23"></a>
+            <a name="ndxgenid_spta_csys_24"></a>节点坐标系是指派给一个或多个节点的局部坐标系：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><em>节点位移坐标系</em>为结构自由度提供节点参考系</p>
+               <p>定义节点位移限制时要使用位移坐标系。例如，如果想把一个节点限定在 X 自由度，则参照节点的位移坐标系中的 X 方向。 </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><em>节点参考坐标系</em>为节点坐标(栅格位置)提供节点参考系</p>
+               <p>为某个节点集指派节点参考坐标系后，可根据绝对坐标系重定位或重定向参考坐标系，从而轻松移动这些节点(及其附加单元)。这在处理附加网格等情况时十分有用。 </p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>使用<strong>指派节点坐标系</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/simulation_edit_mesh/assign_nodal_displacement_coordinate_sy.gif" border="0"> 命令将位移或参考坐标系指派到节点。</p>
+         
+         <a name="genid_spta_csys_26"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/boundary_conditions/techniques/cs_disp.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>上图中圆圈区域内是一个被指派到节点位移坐标系的局部坐标系</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

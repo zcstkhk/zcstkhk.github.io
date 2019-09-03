@@ -1,0 +1,42 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>公差</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>公差         </h2>
+         <p>有些曲面不能根据指定的参数精确地创建，因此，就需要使用公差选项。</p>
+         <p>公差可以在<strong>建模首选项</strong>对话框的<strong>常规</strong>选项卡中进行设置。</p>
+         <p><strong>距离公差</strong>可以控制理论曲面和 NX 所创建的结果曲面之间的最大距离。使用近似创建特征建模方法都要根据这个公差进行。</p>
+         <p><strong>角度公差</strong>是在对应点的曲面法向之间的最大允许角度，或在对应点的曲线切矢之间的最大允许角度。有些建模命令需要这个参数。</p>
+         <p>尽管有时<strong>距离公差</strong>已经满足要求，但却可能需要添加更多的段来满足<strong>角度公差</strong>要求。如果发现所创建的面数据太大或创建所需要的时间过长，就有可能要增大角度公差或者尽可能让角度公差大些，使其在允许范围之内。</p>
+         <p><strong>优化曲线</strong>复选框允许在选定的曲线线串中的缝隙含有更大的公差。选中时，优化曲线公差因子乘以公差等于总容许公差。</p>
+         <p>如果选中了<strong>优化曲线</strong>，它用于<strong>直纹</strong>、<strong>通过曲线组</strong>、<strong>通过曲线网格</strong>、<strong>沿引导线扫掠</strong>、<strong>扫掠</strong>、<strong>截面曲线</strong>以及<strong>规律延伸</strong>曲面命令。</p>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/mesh_surface_section_strings/optimize_curve_in_section.png"></p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_1_small.gif" border="0"> 为截面选择的原始曲线，其中含有缝隙</p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_2_small.gif" border="0"> 用于生成曲面的优化后的曲线</p>
+               
+            </li>
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

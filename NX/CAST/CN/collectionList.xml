@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+--><collection xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" file="collectionList.xml" name="CAST Online Library" project="nx85-xps4" titleFrame="true" version="XPS30" bgcolor="#f6f6f6" collectionHomeFile="index.html" launchFile="index.html" expandPartNode="false"><list xmlns="" name="What's new"><book file="etgw885/toc.xml" name="Gateway and visualization transition" searchType="none" media="online" id="etgw885"/><book file="etmd885/toc.xml" name="Modeling transition" searchType="none" media="online" id="etmd885"/><book file="etsk885/toc.xml" name="Sketching transition" searchType="none" media="online" id="etsk885"/><book file="etss885/toc.xml" name="Shape Studio transition" searchType="none" media="online" id="etss885"/><book file="etas885/toc.xml" name="Assemblies transition" searchType="none" media="online" id="etas885"/><book file="etdr885/toc.xml" name="Drafting transition" searchType="none" media="online" id="etdr885"/><book file="etpi885/toc.xml" name="PMI transition" searchType="none" media="online" id="etpi885"/><book file="etsm885/toc.xml" name="Sheet metal transition" searchType="none" media="online" id="etsm885"/><book file="etmf885/toc.xml" name="Manufacturing transition" searchType="none" media="online" id="etmf885"/></list><list xmlns="" name="NX Basics"><book file="eesa/toc.xml" name="Your first day with NX" searchType="none" media="online" id="eesa"/><book file="eesb/toc.xml" name="Make design changes" searchType="none" media="online" id="eesb"/><book file="eesc/toc.xml" name="Create a model from scratch" searchType="none" media="online" id="eesc"/><book file="eesd/toc.xml" name="Create and update production drawings" searchType="none" media="online" id="eesd"/><book file="eese/toc.xml" name="Fit the pieces together" searchType="none" media="online" id="eese"/></list><list xmlns="" name="Visualization tools"><book file="eava/toc.xml" name="Rendering in NX" searchType="none" media="online" id="eava"/><book file="eavb/toc.xml" name="Materials and textures" searchType="none" media="online" id="eavb"/><book file="eavc/toc.xml" name="Lighting" searchType="none" media="online" id="eavc"/><book file="eavd/toc.xml" name="Visualization design tools" searchType="none" media="online" id="eavd"/><book file="eavf/toc.xml" name="High quality image animation" searchType="none" media="online" id="eavf"/></list><list xmlns="" name="Design"><list name="Sketching"><book file="eska/toc.xml" name="Sketching essentials" searchType="none" media="online" id="eska"/><book file="eskb/toc.xml" name="Intermediate sketching" searchType="none" media="online" id="eskb"/></list><list name="Expressions"><book file="eexa/toc.xml" name="Creating expressions" searchType="none" media="online" id="eexa"/><book file="eexb/toc.xml" name="Using expressions" searchType="none" media="online" id="eexb"/><book file="eexc/toc.xml" name="Expressions in spreadsheets" searchType="none" media="online" id="eexc"/></list><list name="Feature modeling"><book file="efmg/toc.xml" name="Overview of modeling" searchType="none" media="online" id="efmg"/><book file="efmb/toc.xml" name="Datum features" searchType="none" media="online" id="efmb"/><book file="efma/toc.xml" name="Extrude, revolve, and sweep profiles" searchType="none" media="online" id="efma"/><book file="efmo/toc.xml" name="Shell and offset faces" searchType="none" media="online" id="efmo"/><book file="efmd/toc.xml" name="Trim and split bodies" searchType="none" media="online" id="efmd"/><book file="efmc/toc.xml" name="Holes and threads" searchType="none" media="online" id="efmc"/><book file="efme/toc.xml" name="Blend and chamfer edges" searchType="none" media="online" id="efme"/><book file="efmf/toc.xml" name="Edit and organize features" searchType="none" media="online" id="efmf"/><book file="efmh/toc.xml" name="Copying features" searchType="none" media="online" id="efmh"/><book file="efmj/toc.xml" name="Draft and scale bodies" searchType="none" media="online" id="efmj"/><book file="efmm/toc.xml" name="Extract geometry" searchType="none" media="online" id="efmm"/><book file="efmn/toc.xml" name="Combine bodies" searchType="none" media="online" id="efmn"/><book file="efmp/toc.xml" name="Introduction to Knowledge Fusion" searchType="none" media="online" id="efmp"/></list><list name="Freeform modeling"><book file="effz/toc.xml" name="Introduction to freeform modeling" searchType="none" media="online" id="effz"/><book file="effa/toc.xml" name="Using meshes of curves" searchType="none" media="online" id="effa"/><book file="effb/toc.xml" name="Swept and N-sided" searchType="none" media="online" id="effb"/><book file="effc/toc.xml" name="Trim/extend, face blends, bounded planes, thicken" searchType="none" media="online" id="effc"/><book file="effd/toc.xml" name="Editing freeform features 1" searchType="none" media="online" id="effd"/><book file="effe/toc.xml" name="Using point data" searchType="none" media="online" id="effe"/><book file="efff/toc.xml" name="Sections and extensions" searchType="none" media="online" id="efff"/><book file="effg/toc.xml" name="Offset, global shape, enlarge, and quilt" searchType="none" media="online" id="effg"/><book file="effh/toc.xml" name="Transition shapes" searchType="none" media="online" id="effh"/><book file="effj/toc.xml" name="Editing freeform features 2" searchType="none" media="online" id="effj"/></list><list name="Synchronous Modeling"><book file="esym/toc.xml" name="Introduction to synchronous modeling" searchType="none" media="online" id="esym"/></list><list name="Curves"><book file="ecva/toc.xml" name="Points and point sets" searchType="none" media="online" id="ecva"/><book file="ecvb/toc.xml" name="Fundamental curves" searchType="none" media="online" id="ecvb"/><book file="ecvc/toc.xml" name="Splines" searchType="none" media="online" id="ecvc"/><book file="ecvd/toc.xml" name="Additional curves" searchType="none" media="online" id="ecvd"/><book file="ecve/toc.xml" name="Editing curves" searchType="none" media="online" id="ecve"/></list><list name="Product and Manufacturing Information"><book file="epia/toc.xml" name="Create and place PMI" searchType="none" media="online" id="epia"/><book file="epib/toc.xml" name="PMI dimensioning" searchType="none" media="online" id="epib"/><book file="epic/toc.xml" name="PMI annotation" searchType="none" media="online" id="epic"/><book file="epid/toc.xml" name="Supplemental geometry" searchType="none" media="online" id="epid"/><book file="epie/toc.xml" name="Specialized PMI" searchType="none" media="online" id="epie"/><book file="epif/toc.xml" name="Lightweight section views" searchType="none" media="online" id="epif"/><book file="epig/toc.xml" name="Search and reports" searchType="none" media="online" id="epig"/><book file="epih/toc.xml" name="PMI data reuse" searchType="none" media="online" id="epih"/></list><list name="Die Engineering">
+
+Die Engineering courses
+
+
+nx
+collection
+cast_course_groups
+
+
+<book file="edia/toc.xml" name="Getting started with Die Engineering" searchType="none" media="online" id="edia"/>
+<book file="edib/toc.xml" name="Die Engineering layout and processing" searchType="none" media="online" id="edib"/>
+<book file="edic/toc.xml" name="Die Engineering analysis and checking tools" searchType="none" media="online" id="edic"/>
+
+</list></list><list xmlns="" name="Drafting"><list name="Drafting"><book file="edfa/toc.xml" name="Introduction to drafting" searchType="none" media="online" id="edfa"/><book file="edfb/toc.xml" name="Drawings and views" searchType="none" media="online" id="edfb"/><book file="edfj/toc.xml" name="Centerline symbols" searchType="none" media="online" id="edfj"/><book file="edfc/toc.xml" name="Linear dimensions" searchType="none" media="online" id="edfc"/><book file="edfd/toc.xml" name="Radial dimensions" searchType="none" media="online" id="edfd"/><book file="edfe/toc.xml" name="Dimensions with appended text" searchType="none" media="online" id="edfe"/><book file="edff/toc.xml" name="Notes and labels" searchType="none" media="online" id="edff"/><book file="edfo/toc.xml" name="Plotting drawings" searchType="none" media="online" id="edfo"/><book file="edfg/toc.xml" name="Simple and stepped section views" searchType="none" media="online" id="edfg"/><book file="edfh/toc.xml" name="Revolved and half section views" searchType="none" media="online" id="edfh"/><book file="edfm/toc.xml" name="GD&amp;T symbols" searchType="none" media="online" id="edfm"/><book file="edfn/toc.xml" name="Ordinate dimensions" searchType="none" media="online" id="edfn"/><book file="edfk/toc.xml" name="Additional drafting symbols" searchType="none" media="online" id="edfk"/><book file="edfl/toc.xml" name="2D drafting tools" searchType="none" media="online" id="edfl"/></list><list name="Drafting for assemblies"><book file="edaa/toc.xml" name="Assembly drawings" searchType="none" media="online" id="edaa"/><book file="edab/toc.xml" name="Parts lists" searchType="none" media="online" id="edab"/></list></list><list xmlns="" name="Assembly modeling"><list name="Assemblies"><book file="eama/toc.xml" name="Basic assembly concepts" searchType="none" media="online" id="eama"/><book file="eamb/toc.xml" name="Creating assemblies" searchType="none" media="online" id="eamb"/><book file="eamc/toc.xml" name="Positioning assembly components" searchType="none" media="online" id="eamc"/><book file="eamd/toc.xml" name="Assembly arrangements and arrays" searchType="none" media="online" id="eamd"/><book file="eame/toc.xml" name="Assembly revisions and component replacements" searchType="none" media="online" id="eame"/><book file="eamf/toc.xml" name="Assembly sequencing and motion" searchType="none" media="online" id="eamf"/><book file="eamg/toc.xml" name="Assemblies – clearance and analysis" searchType="none" media="online" id="eamg"/><book file="eamh/toc.xml" name="Assembly cloning and interpart expressions" searchType="none" media="online" id="eamh"/><book file="eamj/toc.xml" name="Deformable components" searchType="none" media="online" id="eamj"/><book file="eamk/toc.xml" name="Part families" searchType="none" media="online" id="eamk"/></list><list name="Advanced assemblies"><book file="eaaa/toc.xml" name="Component grouping" searchType="none" media="online" id="eaaa"/><book file="eaab/toc.xml" name="Advanced weight management" searchType="none" media="online" id="eaab"/><book file="eaac/toc.xml" name="Product outlines and representations" searchType="none" media="online" id="eaac"/><book file="eaad/toc.xml" name="Wrap Assembly and Linked Exterior feature" searchType="none" media="online" id="eaad"/><book file="eaae/toc.xml" name="Assembly clearance" searchType="none" media="online" id="eaae"/></list><list name="WAVE Engineering"><book file="ewva/toc.xml" name="Interpart modeling and WAVE" searchType="none" media="online" id="ewva"/><book file="ewvc/toc.xml" name="WAVE top-down design" searchType="none" media="online" id="ewvc"/><book file="ewvd/toc.xml" name="Design a complex part collaboratively using Part Modules" searchType="none" media="online" id="ewvd"/></list></list><list xmlns="" name="Simulation"><list name="Advanced Simulation"><list name="Advanced Simulation fundamentals">
+
+Advanced Simulation fundamentals
+
+
+nx
+cae_courseware
+
+
+<book file="spta_femethod/toc.xml" name="Advanced Simulation and the finite element method" searchType="none" media="online" id="spta_femethod"/>
+<book file="spta_modprep/toc.xml" name="Model preparation with Synchronous Modeling" searchType="none" media="online" id="spta_modprep"/>
+<book file="spta_meshintro/toc.xml" name="Introduction to meshing" searchType="none" media="online" id="spta_meshintro"/>
+<book file="spta_physprop/toc.xml" name="Physical, material, mesh, and element properties" searchType="none" media="online" id="spta_physprop"/>
+<book file="spta_bcovr/toc.xml" name="Boundary conditions overview" searchType="none" media="online" id="spta_bcovr"/>
+<book file="spta_loadcnst/toc.xml" name="Loads and constraints" searchType="none" media="online" id="spta_loadcnst"/>
+<book file="spta_selent/toc.xml" name="Selecting entities" searchType="none" media="online" id="spta_selent"/>
+<book file="spta_solving/toc.xml" name="Solving" searchType="none" media="online" id="spta_solving"/>
+<book file="spta_postintro/toc.xml" name="Introduction to post-processing" searchType="none" media="online" id="spta_postintro"/>
+<book file="spta_postview/toc.xml" name="Post views and reports" searchType="none" media="online" id="spta_postview"/>
+
+</list><list name="FE modeling with solid elements">
+
+FE modeling with solid elements
+
+
+nx
+collection
+cast_course_groups
+
+
+<book file="spta_georepair/toc.xml" name="Repairing imported geometry for solid meshing" searchType="none" media="online" id="spta_georepair"/>
+<book file="spta_geoabst/toc.xml" name="Working with polygon geometry" searchType="none" media="online" id="spta_geoabst"/>
+<book file="spta_3dmesh/toc.xml" name="Tetrahedral meshing techniques" searchType="none" media="online" id="spta_3dmesh"/>
+<book file="spta_meshctrl/toc.xml" name="Improving mesh quality with mesh controls" searchType="none" media="online" id="spta_meshctrl"/>
+<book file="spta_swept/toc.xml" name="Hexahedral meshing techniques" searchType="none" media="online" id="spta_swept"/>
+<book file="spta_hexex/toc.xml" name="Example: Hex meshing a bracket" searchType="none" media="online" id="spta_hexex"/>
+
+</list><list name="FE modeling with shell elements">
+
+FE modeling with shell elements
+
+
+nx
+collection
+cast_course_groups
+
+
+<book file="spta_mids/toc.xml" name="Midsurfaces" searchType="none" media="online" id="spta_mids"/>
+<book file="spta_2dmesh/toc.xml" name="2D meshing" searchType="none" media="online" id="spta_2dmesh"/>
+<book file="spta_weldex/toc.xml" name="Example: Shell meshing a welded structure" searchType="none" media="online" id="spta_weldex"/>
+<book file="spta_strutex/toc.xml" name="Example: Shell meshing a strut" searchType="none" media="online" id="spta_strutex"/>
+<book file="spta_meshqual/toc.xml" name="Mesh quality and model completeness" searchType="none" media="online" id="spta_meshqual"/>
+<book file="spta_manmesh/toc.xml" name="Manual meshing" searchType="none" media="online" id="spta_manmesh"/>
+<book file="spta_meshrep/toc.xml" name="Mesh repair" searchType="none" media="online" id="spta_meshrep"/>
+
+</list><list name="FE modeling with beam elements">
+
+FE modeling with beam elements
+
+
+nx
+collection
+cast_course_groups
+
+
+<book file="spta_prebeam/toc.xml" name="Beam modeling" searchType="none" media="online" id="spta_prebeam"/>
+<book file="spta_postbeam/toc.xml" name="Beam post-processing" searchType="none" media="online" id="spta_postbeam"/>
+
+</list><list name="FE modeling of symmetry">
+
+FE modeling of symmetry
+
+
+nx
+collection
+cast_course_groups
+
+
+<book file="spta_symmetry/toc.xml" name="Modeling symmetrical parts" searchType="none" media="online" id="spta_symmetry"/>
+<book file="spta_bladex/toc.xml" name="Example: Analyzing a bladed rotor" searchType="none" media="online" id="spta_bladex"/>
+
+</list><list name="Modeling laminate and composite parts">
+
+Modeling laminate and composite parts
+
+
+nx
+collection
+cast_course_groups
+
+
+<book file="spta_lamproc/toc.xml" name="Zone-based process" searchType="none" media="online" id="spta_lamproc"/>
+<book file="spta_lamlayup/toc.xml" name="Ply-based process" searchType="none" media="online" id="spta_lamlayup"/>
+<book file="spta_lampost/toc.xml" name="Solution and post processing" searchType="none" media="online" id="spta_lampost"/>
+
+</list><list name="Analysis solutions and techniques">
+
+Analysis solutions and techniques
+
+
+nx
+collection
+cast_course_groups
+
+
+<book file="spta_linstat/toc.xml" name="Linear static analysis" searchType="none" media="online" id="spta_linstat"/>
+<book file="spta_modal/toc.xml" name="Modal analysis" searchType="none" media="online" id="spta_modal"/>
+<book file="spta_thermal/toc.xml" name="Thermal (heat transfer) analysis" searchType="none" media="online" id="spta_thermal"/>
+<book file="spta_buckl/toc.xml" name="Linear buckling analysis" searchType="none" media="online" id="spta_buckl"/>
+<book file="spta_glue/toc.xml" name="Gluing and contact" searchType="none" media="online" id="spta_glue"/>
+<book file="spta_csys/toc.xml" name="Coordinate systems" searchType="none" media="online" id="spta_csys"/>
+<book file="spta_fields/toc.xml" name="Defining boundary conditions using fields" searchType="none" media="online" id="spta_fields"/>
+<book file="spta_nonlinear/toc.xml" name="Introduction to nonlinear analysis" searchType="none" media="online" id="spta_nonlinear"/>
+<book file="spta_graphing/toc.xml" name="Graphing results" searchType="none" media="online" id="spta_graphing"/>
+
+</list><list name="Response, durability, and optimization">
+
+Response, durability, and optimization
+
+
+nx
+collection
+cast_course_groups
+
+
+<book file="spta_response/toc.xml" name="Response Simulation" searchType="none" media="online" id="spta_response"/>
+<book file="spta_dur_event/toc.xml" name="Event-based durability" searchType="none" media="online" id="spta_dur_event"/>
+<book file="spta_dur_function/toc.xml" name="Function-based durability" searchType="none" media="online" id="spta_dur_function"/>
+<book file="spta_geoopt/toc.xml" name="Geometry optimization" searchType="none" media="online" id="spta_geoopt"/>
+<book file="spta_desopt200/toc.xml" name="DESOPT 200 optimization" searchType="none" media="online" id="spta_desopt200"/>
+<book file="spta_tosca/toc.xml" name="Topology optimization" searchType="none" media="online" id="spta_tosca"/>
+
+</list><list name="Thermal and flow analysis">
+
+Thermal and flow analysis
+
+
+nx
+collection
+cast_course_groups
+
+
+<book file="spta_nxth/toc.xml" name="Modeling thermal systems" searchType="none" media="online" id="spta_nxth"/>
+<book file="spta_nxfl/toc.xml" name="Modeling internal flows" searchType="none" media="online" id="spta_nxfl"/>
+<book file="spta_esc/toc.xml" name="Analyzing coupled thermal and flow systems " searchType="none" media="online" id="spta_esc"/>
+<book file="spta_sst/toc.xml" name="Modeling radiation in space applications" searchType="none" media="online" id="spta_sst"/>
+<book file="spta_mapping/toc.xml" name="Mapping thermal and flow results" searchType="none" media="online" id="spta_mapping"/>
+
+</list><list name="Large models and system analysis">
+
+Large models and system analysis
+
+
+nx
+collection
+cast_course_groups
+
+
+<book file="spta_1d_conn/toc.xml" name="1D connections" searchType="none" media="online" id="spta_1d_conn"/>
+<book file="spta_flexbody/toc.xml" name="Flexible body analysis" searchType="none" media="online" id="spta_flexbody"/>
+<book file="spta_afem/toc.xml" name="Assembly FEMs" searchType="none" media="online" id="spta_afem"/>
+<book file="spta_super/toc.xml" name="Superelement analysis" searchType="none" media="online" id="spta_super"/>
+<book file="spta_system/toc.xml" name="System modeling with external superelements" searchType="none" media="online" id="spta_system"/>
+
+</list><list name="Data management and customization">
+
+Data management and customization
+
+
+nx
+collection
+cast_course_groups
+
+
+<book file="spta_simfiles/toc.xml" name="CAE file management" searchType="none" media="online" id="spta_simfiles"/>
+<book file="spta_tcsim/toc.xml" name="Teamcenter Integration for Simulation" searchType="none" media="online" id="spta_tcsim"/>
+<book file="spta_template/toc.xml" name="Using templates" searchType="none" media="online" id="spta_template"/>
+<book file="spta_impex/toc.xml" name="Importing and exporting analysis data" searchType="none" media="online" id="spta_impex"/>
+
+</list></list><list name="Design Simulation"><list name="Design Simulation processes">
+
+Design Simulation processes
+
+
+nx
+cae_courseware
+
+
+<book file="sptd_femethod/toc.xml" name="Design Simulation and the finite element method" searchType="none" media="online" id="sptd_femethod"/>
+<book file="sptd_modprep/toc.xml" name="Model preparation with Synchronous Modeling" searchType="none" media="online" id="sptd_modprep"/>
+<book file="sptd_meshintro/toc.xml" name="Meshing" searchType="none" media="online" id="sptd_meshintro"/>
+<book file="sptd_loadcnst/toc.xml" name="Loads and constraints" searchType="none" media="online" id="sptd_loadcnst"/>
+<book file="sptd_solving/toc.xml" name="Solving" searchType="none" media="online" id="sptd_solving"/>
+<book file="sptd_postintro/toc.xml" name="Introduction to post-processing" searchType="none" media="online" id="sptd_postintro"/>
+
+</list><list name="Design Simulation solutions">
+
+Design Simulation solutions
+
+
+nx
+cae_courseware
+
+
+<book file="sptd_linstat/toc.xml" name="Linear static analysis" searchType="none" media="online" id="sptd_linstat"/>
+<book file="sptd_modal/toc.xml" name="Modal analysis" searchType="none" media="online" id="sptd_modal"/>
+<book file="sptd_thermal/toc.xml" name="Thermal (heat transfer) analysis" searchType="none" media="online" id="sptd_thermal"/>
+<book file="sptd_buckl/toc.xml" name="Linear buckling analysis" searchType="none" media="online" id="sptd_buckl"/>
+<book file="sptd_glue/toc.xml" name="Gluing and contact" searchType="none" media="online" id="sptd_glue"/>
+<book file="sptd_geoopt/toc.xml" name="Geometry optimization" searchType="none" media="online" id="sptd_geoopt"/>
+
+</list></list><list name="Motion Simulation"><book file="emot_intro/toc.xml" name="Introduction to Motion Simulation" searchType="none" media="online" id="emot_intro"/><book file="emot_links_constraints/toc.xml" name="Creating links and constraints" searchType="none" media="online" id="emot_links_constraints"/><book file="emot_motion_results/toc.xml" name="Adding motion and analyzing results" searchType="none" media="online" id="emot_motion_results"/><book file="emot_refining_mech/toc.xml" name="Refining the mechanism" searchType="none" media="online" id="emot_refining_mech"/><book file="emot_advanced_topics/toc.xml" name="Advanced topics" searchType="none" media="online" id="emot_advanced_topics"/></list><list name="NX Open for CAE"><book file="nx_open_cae/toc.xml" name="Using NX Open to automate CAE workflows" searchType="none" media="online" id="nx_open_cae"/></list></list><list xmlns="" name="Machining"><list name="Common manufacturing functions"><book file="emea/toc.xml" name="Operation Navigator" searchType="none" media="online" id="emea"/><book file="emeb/toc.xml" name="Manufacturing objects" searchType="none" media="online" id="emeb"/><book file="emec/toc.xml" name="Manufacturing operations and postprocessing" searchType="none" media="online" id="emec"/><book file="emee/toc.xml" name="Wizards and shop documentation" searchType="none" media="online" id="emee"/></list><list name="Planar and cavity milling">
+
+Planar and cavity milling courses
+
+
+nx
+collection
+cast_course_groups
+
+
+<book file="epma/toc.xml" name="Planar milling" searchType="none" media="online" id="epma"/>
+<book file="epmb/toc.xml" name="Engrave text" searchType="none" media="online" id="epmb"/>
+<book file="epme/toc.xml" name="Floor and wall milling" searchType="none" media="online" id="epme"/>
+<book file="epmf/toc.xml" name="Cavity milling" searchType="none" media="online" id="epmf"/>
+<book file="epmg/toc.xml" name="Z-level milling" searchType="none" media="online" id="epmg"/>
+
+</list><list name="Surface contouring"><book file="esfa/toc.xml" name="Area milling" searchType="none" media="online" id="esfa"/><book file="esfb/toc.xml" name="Flow cutting" searchType="none" media="online" id="esfb"/><book file="esfc/toc.xml" name="Radial cut pattern" searchType="none" media="online" id="esfc"/><book file="esfd/toc.xml" name="Engraving text on a contoured surface" searchType="none" media="online" id="esfd"/><book file="esff/toc.xml" name="Multi-axis surface contouring" searchType="none" media="online" id="esff"/><book file="esfg/toc.xml" name="Contour profiling" searchType="none" media="online" id="esfg"/></list><list name="Drilling"><book file="edrl/toc.xml" name="Drilling" searchType="none" media="online" id="edrl"/></list><list name="Turning"><book file="etna/toc.xml" name="Turning workflow" searchType="none" media="online" id="etna"/><book file="etnb/toc.xml" name="Rough and finish turning" searchType="none" media="online" id="etnb"/><book file="etnd/toc.xml" name="Centerline drilling" searchType="none" media="online" id="etnd"/><book file="etne/toc.xml" name="Groove and thread operations" searchType="none" media="online" id="etne"/><book file="etnf/toc.xml" name="Multiple spindles and IPW" searchType="none" media="online" id="etnf"/></list><list name="Thread milling"><book file="ethd/toc.xml" name="Thread milling" searchType="none" media="online" id="ethd"/></list><list name="Feature-based machining"><book file="efbm/toc.xml" name="Feature-based machining" searchType="none" media="online" id="efbm"/></list></list><list xmlns="" name="Other courses"><list name="Check-Mate"><book file="eckm/toc.xml" name="Check-Mate" searchType="none" media="online" id="eckm"/></list><list name="Routing Mechanical">
+
+Routing Mechanical courses
+
+
+nx
+self_paced
+cast_course_groups
+
+
+<book file="erta/toc.xml" name="Creating linear paths" searchType="none" media="online" id="erta"/>
+<book file="ertc/toc.xml" name="Creating heal paths" searchType="none" media="online" id="ertc"/>
+<book file="ertg/toc.xml" name="Qualifying parts" searchType="none" media="online" id="ertg"/>
+<book file="ertd/toc.xml" name="Placing parts" searchType="none" media="online" id="ertd"/>
+<book file="ertb/toc.xml" name="Adding stock" searchType="none" media="online" id="ertb"/>
+<book file="erte/toc.xml" name="Managing Routing assemblies" searchType="none" media="online" id="erte"/>
+<book file="ertj/toc.xml" name="Creating runs and spools" searchType="none" media="online" id="ertj"/>
+<book file="erth/toc.xml" name="Creating logical diagrams" searchType="none" media="online" id="erth"/>
+
+</list><list name="Weld Assistant"><book file="ewld/toc.xml" name="Weld Assistant" searchType="none" media="online" id="ewld"/></list></list><list xmlns="" name="Projects"><book file="eexd/toc.xml" name="Expressions projects" searchType="none" media="online" id="eexd"/><book file="efmq/toc.xml" name="Modeling projects" searchType="none" media="online" id="efmq"/><book file="edfp/toc.xml" name="Drafting projects" searchType="none" media="online" id="edfp"/><book file="eamm/toc.xml" name="Assembly projects" searchType="none" media="online" id="eamm"/><book file="emfp/toc.xml" name="Manufacturing projects" searchType="none" media="online" id="emfp"/></list><list xmlns="" name="Help"><book file="ehtc/toc.xml" name="How to use the CAST Online Library" searchType="none" media="online" id="ehtc"/><book file="eins/toc.xml" name="CAST Online Library installation guide" searchType="none" media="online" id="eins"/></list></collection>

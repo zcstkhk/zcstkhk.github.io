@@ -1,0 +1,3856 @@
+<MatML_Doc>
+  <Material>
+    <BulkDetails>
+      <Name>MANTEN (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">2.034000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">2.500000e-001</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">3.172000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">5.654000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">9.170000e+002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-9.500000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">2.600000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-4.700000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">3.241000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">1.103000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.930000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>304/160 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.862000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">2.551000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">7.446000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">2.413000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-1.500000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">1.020000e+000</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-6.900000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">7.171000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">2.399000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">3.600000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>304/327 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.724000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">7.446000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">9.515000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">2.275000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-1.200000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">8.900000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-7.700000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">8.756000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">2.324000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.700000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>310/145 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.931000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">2.206000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">6.412000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.655000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-1.500000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">6.000000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-5.700000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">3.447000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">1.889000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">2.600000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>GAINEX (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">2.013000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">3.930000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">5.102000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">8.067000e+002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-7.000000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">8.600000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-6.500000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">3.723000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">7.860000e+002</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.100000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>H11/660 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">2.068000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">2.034000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">2.586000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">3.172000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-7.700000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">8.000000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-7.400000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">2.344000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">3.785000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">7.000000e-002</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>RQC100 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">2.034000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">8.825000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">9.308000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.241000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-7.000000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">6.600000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-6.900000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">5.998000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">1.434000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.400000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>10B62 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.931000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">1.510000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">1.641000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.779000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-6.700000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">3.200000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-5.600000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">9.653000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">2.130000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.600000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>1005/90 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.999000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">2.620000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">3.447000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">6.412000e+002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-1.090000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">1.000000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-3.900000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">2.275000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">4.619000e+002</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.200000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>1005/327 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.999000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">3.999000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">4.137000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">5.378000e+002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-7.300000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">1.100000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-4.100000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">2.482000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">4.895000e+002</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.100000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>1015/80 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">2.068000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">2.275000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">4.137000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">8.270000e+002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-1.100000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">9.500000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-6.400000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">2.413000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">9.446000e+002</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">2.200000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>1045/225 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.999000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">6.343000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">7.239000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.227000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-9.500000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">1.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-6.600000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">4.137000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">1.344000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.800000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>1045/390 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">2.068000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">1.276000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">1.344000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.586000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-7.400000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">4.500000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-6.800000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">7.584000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">1.813000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.700000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>1045/410 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.999000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">1.365000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">1.448000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.862000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-7.300000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">6.000000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-7.000000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">8.274000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">2.310000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.460000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>1045/450 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">2.068000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">1.517000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">1.586000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.793000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-7.000000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">3.500000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-6.900000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">9.653000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">2.096000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.500000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>1045/500 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">2.068000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">1.689000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">1.827000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">2.275000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-8.000000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">2.500000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-6.800000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">1.276000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">2.682000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.200000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>1045/595 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">2.068000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">1.862000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">2.241000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">2.723000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-8.100000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">7.000000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-6.000000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">1.724000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">3.847000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.300000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>1020 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">2.034000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">2.620000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">4.413000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">8.963000e+002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-1.200000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">4.100000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-5.100000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">2.620000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">7.722000e+002</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.800000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>1040 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.999000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">3.447000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">6.205000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.538000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-1.400000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">6.100000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-5.700000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">3.447000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">1.682000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.800000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>1144 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.965000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">7.171000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">9.308000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">9.997000e+002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-8.000000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">3.200000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-5.800000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">7.171000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">1.186000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.500000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>1541F (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">2.062000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">8.894000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">9.515000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.276000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-7.600000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">6.800000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-6.500000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">8.894000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">1.758000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.700000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>4130/258 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">2.206000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">7.791000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">8.963000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.276000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-8.300000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">9.200000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-6.300000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">5.654000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">1.289000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.300000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>4130/365 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.999000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">1.358000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">1.427000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.696000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-8.100000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">8.900000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-6.900000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">8.274000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">1.717000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.200000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>4142/380 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">2.068000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">1.379000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">1.413000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.827000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-8.000000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">4.500000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-7.500000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">8.274000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">2.089000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.700000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>4142/400 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.999000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">1.448000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">1.551000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.896000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-9.000000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">5.000000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-7.500000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">8.963000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">2.117000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.600000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>4142/450 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">2.068000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">1.586000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">1.758000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.999000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-8.000000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">4.000000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-7.300000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">1.069000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">2.289000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.500000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>4142/475 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">2.068000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">1.896000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">1.931000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">2.172000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-8.100000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">9.000000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-6.100000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">1.344000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">2.972000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.300000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>4142/560 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">2.068000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">1.689000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">2.241000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">2.654000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-8.900000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">7.000000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-7.600000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">1.724000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">3.654000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.200000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>4340/243 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.931000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">6.343000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">8.274000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.200000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-9.500000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">4.500000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-5.400000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">4.551000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">1.386000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.800000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>4340/409 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.999000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">1.372000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">1.469000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.999000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-9.100000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">4.800000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-6.000000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">8.274000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">2.234000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.500000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>5160/430 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.931000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">1.531000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">1.669000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.931000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-7.100000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">4.000000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-5.700000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">9.997000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">2.310000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.500000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>52100 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">2.068000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">1.924000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">2.013000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">2.586000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-9.000000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">1.800000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-5.600000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">1.324000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">3.399000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.600000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>9262/260 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">2.068000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">4.551000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">9.239000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.041000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-7.100000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">1.550000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-4.700000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">5.240000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">1.379000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.500000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>9262/280 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.931000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">7.860000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">9.997000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.220000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-7.300000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">4.100000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-6.000000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">6.481000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">1.358000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.200000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>9262/410 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.999000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">1.379000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">1.565000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.855000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-5.700000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">3.800000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-6.500000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">1.048000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">2.013000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">8.900000e-002</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>950X/150 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">2.068000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">3.447000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">3.447000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">6.274000e+002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-7.500000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">3.500000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-5.400000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">3.378000e+001</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">7.929000e+002</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.340000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>980X (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.944000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">5.654000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">6.964000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.055000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-8.000000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">2.100000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-5.300000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">5.654000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">1.248000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.340000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>VAN80 (WATSON AND TOPPER "AN EVALUA...")</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.951000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">5.654000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">6.964000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.055000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-8.000000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">2.100000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-5.300000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">5.585000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">1.248000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.340000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>.18NI200 (LANDGRAF, "CYCLIC DEFORMA...")</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.862000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">1.586000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">1.517000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.655000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-6.500000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">3.000000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-6.200000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">1.034000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">1.841000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">9.000000e-002</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>.18NI250 (LANDGRAF, "CYCLIC DEFORMA...")</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.862000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">1.965000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">1.862000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">2.137000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-7.100000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">8.000000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-7.900000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">1.344000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">2.172000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">7.500000e-002</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>.18NI300 (LANDGRAF, "CYCLIC DEFORMA...")</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.793000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">1.999000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">1.999000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">2.241000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-7.000000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">6.000000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-7.500000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">1.482000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">2.337000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">8.000000e-002</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>1100/26 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">6.895000e+004</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">9.653000e+001</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">1.103000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.896000e+002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-1.060000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">1.800000e+000</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-6.900000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">6.067000e+001</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">1.724000e+002</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.500000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>2014T6 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">6.895000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">4.619000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">5.102000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">8.481000e+002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-1.060000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">4.200000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-6.500000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">4.137000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">9.722000e+002</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.600000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>2024T351 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">7.308000e+004</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">3.792000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">4.688000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.103000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-1.240000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">2.200000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-5.900000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">4.275000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">6.550000e+002</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">6.500000e-002</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>2024T4 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">7.033000e+004</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">3.034000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">4.757000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.014000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-1.100000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">2.100000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-5.200000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">4.413000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">1.151000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">8.000000e-002</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>5456H311 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">6.895000e+004</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">2.344000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">3.999000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">7.239000e+002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-1.100000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">4.600000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-6.700000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">3.585000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">8.205000e+002</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.600000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>7075T6 (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">7.102000e+004</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">4.688000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">5.792000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.317000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-1.260000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">1.900000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-5.200000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">5.240000e+002</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">1.675000e+003</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">1.460000e-001</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>A538A (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.862000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">1.482000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">1.517000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">1.655000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-6.500000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">3.000000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-6.200000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">1.034000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">9.000000e-002</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>A538B (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.862000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">1.793000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">1.862000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">2.137000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-7.100000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">8.000000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-7.100000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">1.344000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">7.500000e-002</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Material>
+    <BulkDetails>
+      <Name>A538C (SAE J1099, FEB. 1975)</Name>
+      <Class>
+        <Name>DURABILITY</Name>
+      </Class>
+      <Source source=""/>
+      <PropertyData property="Material Type">
+        <Data format="string">IsotropicMaterial</Data>
+      </PropertyData>
+      <PropertyData property="Version">
+        <Data format="string">1.0</Data>
+      </PropertyData>
+      <PropertyData property="Category">
+        <Data format="string"></Data>
+      </PropertyData>
+      <PropertyData property="Mass Density (RHO)_1">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="Youngs Modulus (E)_2">
+        <Data format="exponential">1.793000e+005</Data>
+      </PropertyData>
+      <PropertyData property="PoissonsRatio">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="MatlNonlinearityType">
+        <Data format="integer">1</Data>
+        <Qualifier>PLASTIC</Qualifier>
+      </PropertyData>
+      <PropertyData property="YieldFunctionCriterion">
+        <Data format="integer">1</Data>
+        <Qualifier>von Mises</Qualifier>
+      </PropertyData>
+      <PropertyData property="HardeningRule">
+        <Data format="integer">1</Data>
+        <Qualifier>Isotropic</Qualifier>
+      </PropertyData>
+      <PropertyData property="CSYSOption">
+        <Data format="integer">0</Data>
+        <Qualifier>Existing</Qualifier>
+      </PropertyData>
+      <PropertyData property="Yield Strength_5">
+        <Data format="exponential">1.931000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Ultimate Tensile Strength_6">
+        <Data format="exponential">1.999000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Fatigue Strength Coefficient_14">
+        <Data format="exponential">2.241000e+003</Data>
+      </PropertyData>
+      <PropertyData property="FatigueStrengthExp">
+        <Data format="exponential">-7.000000e-002</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctCoeff">
+        <Data format="exponential">6.000000e-001</Data>
+      </PropertyData>
+      <PropertyData property="FatigueDuctExp">
+        <Data format="exponential">-7.500000e-001</Data>
+      </PropertyData>
+      <PropertyData property="Yield Strength_23">
+        <Data format="exponential">1.482000e+003</Data>
+      </PropertyData>
+      <PropertyData property="Strength Coefficient_15">
+        <Data format="exponential">0.000000e+000</Data>
+      </PropertyData>
+      <PropertyData property="CyclicStrainHardeningExp">
+        <Data format="exponential">8.000000e-002</Data>
+      </PropertyData>
+    </BulkDetails>
+  </Material>
+  <Metadata>
+    <PropertyDetails id="Mass Density (RHO)_1">
+      <Name> MassDensity </Name>
+      <Units name="kg/mm^3" description="kilograms per millimeter cubed">
+        <Unit>
+          <Name> kg/mm^3 </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="Youngs Modulus (E)_2">
+      <Name> YoungsModulus </Name>
+      <Units name="N/mm^2(MPa)" description="Newtons per millimeter squared">
+        <Unit>
+          <Name> N/mm^2(MPa) </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="Initial Yield Point (LIMIT1)_3">
+      <Name> InitialYieldPoint </Name>
+      <Units name="N/mm^2(MPa)" description="Newtons per millimeter squared">
+        <Unit>
+          <Name> N/mm^2(MPa) </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="Initial Friction Angle (LIMIT2)_4">
+      <Name> InitialFrictionAngle </Name>
+      <Units name="degrees" description="degrees">
+        <Unit>
+          <Name> degrees </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="Yield Strength_5">
+      <Name> Yield </Name>
+      <Units name="N/mm^2(MPa)" description="Newtons per millimeter squared">
+        <Unit>
+          <Name> N/mm^2(MPa) </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="Ultimate Tensile Strength_6">
+      <Name> UltTensile </Name>
+      <Units name="N/mm^2(MPa)" description="Newtons per millimeter squared">
+        <Unit>
+          <Name> N/mm^2(MPa) </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="Tsai-Wu Interaction Coefficient (F12)_7">
+      <Name> TsaiWuInteraction </Name>
+      <Units name="mm^4/N^2" description="Millimeters power four per Newton squared">
+        <Unit>
+          <Name> mm^4/N^2 </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="Max Stress Tension (ST)_8">
+      <Name> MaxStressTension </Name>
+      <Units name="N/mm^2(MPa)" description="Newtons per millimeter squared">
+        <Unit>
+          <Name> N/mm^2(MPa) </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="Max Stress Compression (SC)_9">
+      <Name> MaxStressCompression </Name>
+      <Units name="N/mm^2(MPa)" description="Newtons per millimeter squared">
+        <Unit>
+          <Name> N/mm^2(MPa) </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="Max Stress Shear (SS)_10">
+      <Name> MaxInPlaneShearStress </Name>
+      <Units name="N/mm^2(MPa)" description="Newtons per millimeter squared">
+        <Unit>
+          <Name> N/mm^2(MPa) </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="Max Strain Tension (XT)_11">
+      <Name> MaxStrainTension </Name>
+      <Units name="mm/mm" description="millimeters per millimeter">
+        <Unit>
+          <Name> mm/mm </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="Max Strain Compression (XC)_12">
+      <Name> MaxStrainCompression </Name>
+      <Units name="mm/mm" description="millimeters per millimeter">
+        <Unit>
+          <Name> mm/mm </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="Max Strain Shear (XS)_13">
+      <Name> MaxInPlaneShearStrain </Name>
+      <Units name="mm/mm" description="millimeters per millimeter">
+        <Unit>
+          <Name> mm/mm </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="Fatigue Strength Coefficient_14">
+      <Name> FatigueStrengthCoeff </Name>
+      <Units name="N/mm^2(MPa)" description="Newtons per millimeter squared">
+        <Unit>
+          <Name> N/mm^2(MPa) </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="Strength Coefficient_15">
+      <Name> CyclicStrengthCoeff </Name>
+      <Units name="N/mm^2(MPa)" description="Newtons per millimeter squared">
+        <Unit>
+          <Name> N/mm^2(MPa) </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="Temperature (TREF)_16">
+      <Name> RefTemp </Name>
+      <Units name="C" description="Celsius">
+        <Unit>
+          <Name> C </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="Phase Change Temperature_17">
+      <Name> PhaseTemp </Name>
+      <Units name="C" description="Celsius">
+        <Unit>
+          <Name> C </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="Phase Change Temperature Range_18">
+      <Name> PhaseTempRange </Name>
+      <Units name="C" description="Celsius">
+        <Unit>
+          <Name> C </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="IR Scattering Coefficient_19">
+      <Name> IrScatterCoeff </Name>
+      <Units name="1/mm" description="coefficient per millimeter">
+        <Unit>
+          <Name> 1/mm </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="IR Extinction Coefficient_20">
+      <Name> IrExtinctCoeff </Name>
+      <Units name="1/mm" description="coefficient per millimeter">
+        <Unit>
+          <Name> 1/mm </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="Solar Scattering Coefficient_21">
+      <Name> SolarScatterCoeff </Name>
+      <Units name="1/mm" description="coefficient per millimeter">
+        <Unit>
+          <Name> 1/mm </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="Solar Extinction Coefficient_22">
+      <Name> SolarExtinctCoeff </Name>
+      <Units name="1/mm" description="coefficient per millimeter">
+        <Unit>
+          <Name> 1/mm </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="Yield Strength_23">
+      <Name> CyclicYieldStrength </Name>
+      <Units name="N/mm^2(MPa)" description="Newtons per millimeter squared">
+        <Unit>
+          <Name> N/mm^2(MPa) </Name>
+        </Unit>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="Category">
+      <Name> Category </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="PoissonsRatio">
+      <Name> PoissonsRatio </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="ShearModulus">
+      <Name> ShearModulus </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="StructuralDamping">
+      <Name> StructuralDamping </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="StressStrainCurve">
+      <Name> StressStrainCurve </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="MatlNonlinearityType">
+      <Name> MatlNonlinearityType </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="YieldFunctionCriterion">
+      <Name> YieldFunctionCriterion </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="HardeningRule">
+      <Name> HardeningRule </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="CSYSOption">
+      <Name> CSYSOption </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="FatigueStrengthExp">
+      <Name> FatigueStrengthExp </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="FatigueDuctCoeff">
+      <Name> FatigueDuctCoeff </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="FatigueDuctExp">
+      <Name> FatigueDuctExp </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="CyclicStrainHardeningExp">
+      <Name> CyclicStrainHardeningExp </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="WorkHardening">
+      <Name> WorkHardening </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="FormingLimit">
+      <Name> FormingLimit </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="PlasticStrainRatio">
+      <Name> PlasticStrainRatio </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="InitialStrain">
+      <Name> InitialStrain </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="HardeningExponent">
+      <Name> HardeningExponent </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="StrengthCoefficient">
+      <Name> StrengthCoefficient </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="AnisotropyCoefficientR0">
+      <Name> AnisotropyCoefficientR0 </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="AnisotropyCoefficientR45">
+      <Name> AnisotropyCoefficientR45 </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="AnisotropyCoefficientR90">
+      <Name> AnisotropyCoefficientR90 </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="ThermalExpansion">
+      <Name> ThermalExpansion </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="ThermalConductivity">
+      <Name> ThermalConductivity </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="SpecificHeat">
+      <Name> SpecificHeat </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="LatentHeat">
+      <Name> LatentHeat </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="PhaseSpecificHeat">
+      <Name> PhaseSpecificHeat </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+    <PropertyDetails id="ElecResist">
+      <Name> ElecResist </Name>
+      <Units>
+        <Unitless/>
+      </Units>
+    </PropertyDetails>
+  </Metadata>
+</MatML_Doc>

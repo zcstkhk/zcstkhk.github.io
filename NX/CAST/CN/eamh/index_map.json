@@ -1,0 +1,20 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"装配克隆和部件间表达式",file:"id1073849.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"装配克隆",file:"cloning.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"创建克隆装配",file:"func_details_clone_create.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"克隆默认设置及异常",file:"func_details_clone_name_defaults.html",type:"topic",parent:"d5e5"},
+{id:"d5e8",title:"冲突解决",file:"func_details_clone_conflict_resolve.html",type:"topic",parent:"d5e5"},
+{id:"d5e9",title:"层叠处理示例",file:"disposition_cascade.html",type:"topic",parent:"d5e5"},
+{id:"d5e10",title:"Teamcenter Integration 的唯一克隆装配选项",file:"func_details_clone_in_ugmgr.html",type:"topic",parent:"d5e5"},
+{id:"d5e11",title:"克隆装配注释",file:"id979050.html",type:"topic",parent:"d5e5"},
+{id:"d5e12",title:"克隆一个脚轮装配",file:"id728508.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e14",title:"部件间表达式",file:"interpart_exp.html",type:"topic",parent:"",children:[
+{id:"d5e15",title:"部件间表达式概述",file:"ipe_ov.html",type:"topic",parent:"d5e14"},
+{id:"d5e16",title:"创建一个引用部件间表达式",file:"ipe_reference_ht.html",type:"topic",parent:"d5e14"},
+{id:"d5e17",title:"部件间更新",file:"interpart_modeling_interpart_update_ov.html",type:"topic",parent:"d5e14"},
+{id:"d5e18",title:"编辑部件间引用",file:"ipe_edit_refs_ht.html",type:"topic",parent:"d5e14"},
+{id:"d5e19",title:"创建引用表达式",file:"id728534.html",type:"activity",parent:"d5e14"},
+{id:"d5e20",title:"NX 关系浏览器",file:"wave_relations_browser_ov.html",type:"topic",parent:"d5e14"},
+{id:"d5e21",title:"NX 关系浏览器",file:"id728586.html",type:"activity",parent:"d5e14"}]}
+]}

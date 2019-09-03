@@ -1,0 +1,86 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Review</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>复习</h2>
+         <div id="topQuestionsContainer">
+            <div class="questionsHeader">
+               <div class="headerTitle">
+                  <p>问题</p>
+               </div>
+               <div class="quesionButtons">
+                  <div class="qButton" id="qButton_1">
+                     <p>1</p>
+                  </div>
+                  <div class="qButton" id="qButton_2">
+                     <p>2</p>
+                  </div>
+               </div>
+            </div>
+            <div id="questionsContainer">
+               <div class="question" id="question1" answered="false" numanswers="2" questiontype="fillInBlank">
+                  <p>对或错。一个 CAD 模型只能用作一个理想化部件的组件。</p>
+                  <p class="questionInstruction">请选择一个答案</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a1" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q1a1" type="radio" correct="no" name="question1Grp"></td>
+                           <td>
+                              <p>对</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a2" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q1a2" type="radio" correct="yes" name="question1Grp"></td>
+                           <td>
+                              <p>错</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div class="question" id="question2" answered="false" numanswers="2" questiontype="fillInBlank">
+                  <p>在操作系统级别重命名 CAE 文件是否是好的实践？</p>
+                  <p class="questionInstruction">请选择一个答案</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a1" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q2a1" type="radio" correct="no" name="question2Grp"></td>
+                           <td>
+                              <p>是</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a2" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q2a2" type="radio" correct="yes" name="question2Grp"></td>
+                           <td>
+                              <p>不是</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div id="showFeedbackContainer"><span showLabel="true" id="feedbackButton" title="Show feedback" dojoType="xps.form.Button" onClick="showQuestionFeedback()">请选择一个答案</span></div>
+            </div>
+            <div class="helpTextContainer">
+               <p class="questionFeedback" id="incorrect">错误！</p>
+               <p class="questionFeedback" id="correct">正确！</p>
+               <div class="questionHelp" id="questionHelp1">
+                  <p>一个 CAD 部件可以用作多个理想化部件的组件，因为不同的分析可能需要不同的几何体理想化。例如，理想化部件对模态分析很有效，而对应力分析就可能忽略了重大的特征。</p>
+               </div>
+               <div class="questionHelp" id="questionHelp2">
+                  <p>在操作系统级别重命名(或移动)CAE 文件可能会破坏装配关系和 CAD 关联，因此使用<strong>另存为</strong>命令来重命名(或重新放置)CAE 是最好的。</p>
+               </div>
+            </div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

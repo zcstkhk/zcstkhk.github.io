@@ -1,0 +1,71 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument">
+   <head>
+      <title>复习</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>复习</h2>
+         <div id="topQuestionsContainer">
+            <div class="questionsHeader">
+               <div class="headerTitle">
+                  <p>问题</p>
+               </div>
+               <div class="quesionButtons">
+                  <div class="qButton" id="qButton_1">
+                     <p>1</p>
+                  </div>
+               </div>
+            </div>
+            <div id="questionsContainer">
+               <div class="question" id="question1" answered="false" numanswers="4" questiontype="fillInBlank">
+                  <p>在生成装配布置前关闭<strong>运动序列输出到运动仿真模块</strong>首选项的一个优势是什么？</p>
+                  <p class="questionInstruction">请选择一个答案。</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q7a1" class="hideBlock" src="../xps3/graphics/redX.png"></img></td>
+                           <td><input id="q7a1" type="radio" correct="no" name="question7Grp"></input></td>
+                           <td>
+                              <p>您可以在布置中包含未定义为装配组件的连杆。</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q7a2" class="hideBlock" src="../xps3/graphics/redX.png"></img></td>
+                           <td><input id="q7a2" type="radio" correct="no" name="question7Grp"></input></td>
+                           <td>
+                              <p>您可以捕捉任意位置处的布置，而无需考虑装配约束。</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q7a3" class="hideBlock" src="../xps3/graphics/greenCheck.png"></img></td>
+                           <td><input id="q7a3" type="radio" correct="yes" name="question7Grp"></input></td>
+                           <td>
+                              <p>您可以和其他设计师分享布置，而后者无需访问应用模块。</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q7a4" class="hideBlock" src="../xps3/graphics/redX.png"></img></td>
+                           <td><input id="q7a4" type="radio" correct="no" name="question7Grp"></input></td>
+                           <td>
+                              <p>您可以生成装配布置，而无需先生成装配序列。</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div id="showFeedbackContainer"><span showLabel="true" id="feedbackButton" title="Show feedback" dojoType="xps.form.Button" onClick="showQuestionFeedback()">显示答案</span></div>
+            </div>
+            <div class="helpTextContainer">
+               <p class="questionFeedback" id="incorrect">错误！</p>
+               <p class="questionFeedback" id="correct">正确！</p>
+               <div class="questionHelp" id="questionHelp1">
+                  <p> 如果未选中<strong>运动序列输出到运动仿真模块</strong>复选框，布置将储存在主模型部件中，那样就可以在建模应用模块中查看运动结果，而无需进入运动仿真应用模块。</p>
+               </div>
+            </div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

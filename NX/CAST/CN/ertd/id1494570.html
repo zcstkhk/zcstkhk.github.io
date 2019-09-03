@@ -1,0 +1,154 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>切割弯头</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>切割弯头</h2>
+         <div class="estimatedTime">
+            <p>预计完成这堂课需要：6&ndash;8  分钟</p>
+         </div>
+         <div></div>
+         
+         <p><strong>切割弯头</strong>命令允许您通过切割弯头，来在非正交的拐角处插入一个标准弯头。</p>
+         
+         <p>使用<strong>切割弯头</strong>来在拐角大于 90&deg;并小于180&deg;的拐角处插入一个标准弯头。<strong>切割弯头</strong>需要选定的弯头部件是某个弯头部件族的族成员。在弯头部件表中的 ELBOW_ANG 特性值必须大于90&deg;，才能作为切割弯头进行仿制。弯头部件族的种子部件需要使用名为 <span class="fileName">elbow_ang</span> 和 <span class="fileName">radius</span> 的表达式来构建。</p>
+         <a name="ndxgenid_ertd_67"></a>
+         
+         
+         <table border="0" align="center">
+            
+            <colgroup span="1">
+               
+               <col align="center" span="1">
+               
+               <col align="center" span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     <a name="genid_ertd_68" id="genid_ertd_68"></a><div class="figureContainer">
+                        <table align="center">
+                           <tr>
+                              <td>
+                                 <div class="figure">
+                                    <div><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/commands/place_part/cut_elbow_seed.png" border="0"></div>
+                                 </div>
+                              </td>
+                           </tr>
+                        </table>
+                        <h4>种子部件</h4>
+                     </div>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     <a name="genid_ertd_69" id="genid_ertd_69"></a><div class="figureContainer">
+                        <table align="center">
+                           <tr>
+                              <td>
+                                 <div class="figure">
+                                    <div><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/commands/place_part/cut_elbow.png" border="0"></div>
+                                 </div>
+                              </td>
+                           </tr>
+                        </table>
+                        <h4>Cut Elbows</h4>
+                     </div>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <p>表达式 <span class="fileName">elbow_ang</span> 决定了当前的弯头角度，表达式 <span class="fileName">radius</span> 控制的是弯头的半径。管线将会使用这些表达式的值来确定最终的切割弯头。
+         </p>
+         
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table cellspacing="2" class="locator" frame="box">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>机械管线布置</strong>和<strong>管道和布管</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>机械管线布置</strong>&rarr;<strong>工具</strong>下拉菜单&rarr;<strong>切割弯头</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/routing/routing_mechanical/cut_elbow.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>工具&rarr;切割弯头</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         <a name="id1640042" id="id1640042"></a><div id="footer"></div>
+      </div>
+   </body>
+</html>

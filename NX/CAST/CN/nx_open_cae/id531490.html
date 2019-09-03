@@ -1,0 +1,275 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Additional edits</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Additional edits</h2>
+         <p>When editing journals to create applications, you often find that you need to include features, functions, and settings that were not defined in the original journals. The following examples all add functionality to your application without needing to rerecord the journals.</p>
+         <p>In the first example, you will set an additional undo mark for the CreateFem function.</p>
+         <div class="action">
+            
+            <p>Locate the CreateFem function near the top of the file.</p>
+            
+         </div>
+         <div class="action">
+            
+            <p>Locate the following comment block and add the highlighted.</p>
+            
+         </div><pre class="codeExample indent ">    ' ----------------------------------------------
+    '   Dialog Begin New Part File
+    ' ----------------------------------------------
+    Dim markId2 As Session.UndoMarkId
+<span class="userInput">    markId2 = theSession.SetUndoMark(Session.MarkVisibility.Visible, &quot;Enter Advanced Simulation&quot;)
+    Dim markId3 As Session.UndoMarkId  ' Changed Id to 3
+</span></pre><div class="action">
+            
+            <p>Remove the following highlighted lines.</p>
+            
+         </div><pre class="codeExample indent ">Dim markId3 As Session.UndoMarkId  ' Changed Id to 3
+
+<span class="userInput">    markId2 = theSession.SetUndoMark(Session.MarkVisibility.Invisible, &quot;New Part File&quot;)
+
+    theSession.DeleteUndoMark(markId2, Nothing)
+
+    Dim markId3 As Session.UndoMarkId
+</span>    markId3 = theSession.SetUndoMark(Session.MarkVisibility.Invisible, &quot;New Part File&quot;)
+</pre><div class="action">
+            
+            <p>Add the following highlighted lines.</p>
+            
+         </div><pre class="codeExample indent ">    fileNew1.Destroy()
+<span class="userInput">     Dim markId31 As Session.UndoMarkId
+    markId31 = theSession.SetUndoMark(Session.MarkVisibility.Visible, &quot;Start&quot;)
+
+    theSession.SetUndoMarkName(markId31, &quot;New FEM Dialog&quot;)
+    ' Added lines &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+    Dim part1 As Part = CType(theSession.Parts.FindObject(&quot;bottle&quot;), Part)
+    Dim partLoadStatus1 As PartLoadStatus
+    Dim status1 As PartCollection.SdpsStatus
+    status1 = theSession.Parts.SetDisplay(part1, False, True, partLoadStatus1)
+    workFemPart = Nothing
+    workPart = theSession.Parts.Work
+    displayFemPart = Nothing
+    displayPart = theSession.Parts.Display
+    ' End of added lines &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+</span>    Dim markId4 As Session.UndoMarkId
+    markId4 = theSession.SetUndoMark(Session.MarkVisibility.Visible, &quot;Start&quot;)
+</pre><div class="action">
+            
+            <p>Remove the following highlighted lines.</p>
+            
+         </div><pre class="codeExample indent ">    ' End of added lines &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+<span class="userInput">    Dim markId4 As Session.UndoMarkId
+    markId4 = theSession.SetUndoMark(Session.MarkVisibility.Visible, &quot;Start&quot;)
+
+    theSession.SetUndoMarkName(markId4, &quot;New FEM Dialog&quot;)
+
+</span>    ' ----------------------------------------------
+    '   Dialog Begin New FEM
+</pre><div class="action">
+            
+            <p>Add the following highlighted lines, and change the markId value, immediately following the section above.</p>
+            
+         </div><pre class="codeExample indent ">    '   Dialog Begin New FEM
+    ' ----------------------------------------------
+<span class="userInput">    Dim markId4 As Session.UndoMarkId
+    markId4 = theSession.SetUndoMark(Session.MarkVisibility.Visible, &quot;New FEM&quot;)
+
+    theSession.SetUndoMarkName(markId4, &quot;New FEM Dialog&quot;)
+
+</span>    Dim markId5 As Session.UndoMarkId
+    markId<span class="userInput">4</span> = theSession.SetUndoMark(Session.MarkVisibility.Invisible, &quot;New FEM&quot;)
+
+    theSession.DeleteUndoMark(markId5, Nothing)
+</pre><div class="action">
+            
+            <p>Locate the following Dim statement, and modify it as shown below and add the indicated lines.</p>
+            
+         </div><pre class="codeExample indent ">Dim femPart1 As CAE.FemPart = CType(workFemPart, CAE.FemPart)
+</pre><p>Change to:</p><pre class="codeExample indent ">    Dim femPart1 As CAE.FemPart = CType(<span class="userInput">nXObject1</span>, CAE.FemPart)
+    
+<span class="userInput">    Dim partLoadStatus2 As PartLoadStatus
+    Dim status2 As PartCollection.SdpsStatus
+    status2 = theSession.Parts.SetDisplay(femPart1, False, True, partLoadStatus2)
+    workPart = Nothing
+    workFemPart = CType(theSession.Parts.BaseWork, CAE.FemPart)
+    displayPart = Nothing
+    displayFemPart = CType(theSession.Parts.BaseDisplay, CAE.FemPart)
+    Dim femPart2 As CAE.FemPart = CType(workFemPart, CAE.FemPart)
+    
+    theSession.Parts.SetWork(femPart2)
+    workFemPart = CType(theSession.Parts.BaseWork, CAE.FemPart)
+    ' End of added lines &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+    Dim femPart3 As CAE.FemPart = CType(workFemPart, CAE.FemPart)
+</span>
+        Dim femSynchronizeOptions1 As CAE.FemSynchronizeOptions
+        femSynchronizeOptions1 = femPart<span class="userInput">3</span>.NewFemSynchronizeOptions()
+</pre><div class="action">
+            
+            <p>Locate the following Dim statement and modify the femPart number.</p>
+            
+         </div><pre class="codeExample indent ">Dim femPart2 As CAE.FemPart = CType(workFemPart, CAE.FemPart)</pre><p>Change to:</p><pre class="codeExample indent ">Dim femPart<span class="userInput">4</span> As CAE.FemPart = CType(workFemPart, CAE.FemPart)</pre><div class="action">
+            
+            <p>Remove the following highlighted lines.</p>
+            
+         </div><pre class="codeExample indent "><span class="userInput">Dim part1 As Part = CType(theSession.Parts.FindObject(&quot;bottle&quot;), Part)
+</span>
+Dim bodies1(0) As Body
+<span class="userInput">Dim body1 As Body = CType(part1.Bodies.FindObject(&quot;restage_test-parametric-SW.SLDPRT(3)&quot;), Body)
+</span>
+</pre><div class="action">
+            
+            <p>Modify the markId value to 4 in the following highlighted line.</p>
+            
+         </div><pre class="codeExample indent ">    workFemPart = CType(theSession.Parts.BaseWork, CAE.FemPart) 
+
+    femSynchronizeOptions1.Dispose()
+    theSession.DeleteUndoMark(markId<span class="userInput">4</span>, Nothing)
+
+    ' ----------------------------------------------
+    '   Menu: Tools-&gt;Journal-&gt;Stop Recording
+</pre><p>In this example, you will add code to immediately save your files after creating the new FEM file.</p>
+         <div class="action">
+            
+            <p>Locate the end of the CreateFem journal code, as indicated by the following comment:</p>
+            
+         </div><pre class="codeExample indent ">' ----------------------------------------------
+'   Menu: Tools-&gt;Journal-&gt;Stop Recording
+' ----------------------------------------------
+End Sub</pre><div class="action">
+            
+            <p>Add the following code shown in bold above the <span class="codeText">End Sub</span> line:
+            </p>
+            
+         </div><pre class="codeExample indent ">    ' ----------------------------------------------
+....'   Menu: Tools-&gt;Journal-&gt;Stop Recording
+....' ----------------------------------------------
+<span class="userInput">
+    ' ----------------------------------------------
+    '   Menu: File-&gt;Save All
+    ' ----------------------------------------------
+    Dim anyPartsModified1 As Boolean
+    Dim partSaveStatus1 As PartSaveStatus
+    theSession.Parts.SaveAll(anyPartsModified1, partSaveStatus1)
+    partSaveStatus1.Dispose()
+</span>
+End Sub
+</pre><p>In this example, you modify the settings for the <span class="uiTerm">Append FEM</span> dialog box to enable node and element offsets. This will ensure that the generic application does not create models with label conflicts.
+         </p>
+         <div class="action">
+            
+            <p>Locate the <span class="codeText">AppendFem</span> function.
+            </p>
+            
+         </div>
+         <div class="action">
+            
+            <p>Remove the following highlighted lines.</p>
+            
+         </div><pre class="codeExample indent ">theSession.SetUndoMark(Session.MarkVisibility.Invisible, &quot;Append Fem&quot;)
+
+<span class="userInput">    theSession.DeleteUndoMark(markId2, Nothing)
+
+    Dim markId3 As Session.UndoMarkId
+    markId3 = theSession.SetUndoMark(Session.MarkVisibility.Invisible, &quot;Append Fem&quot;)
+
+</span>    Dim femPart1 As CAE.FemPart = CType(workFemPart, CAE.FemPart)
+</pre><div class="action">
+            
+            <p>Locate the variable declaration <span class="codeText">Dim idSpec1 As CAE.FEModel.IdSpecificationObject</span>.
+            </p>
+            
+            <p>This variable is used to specify the current dialog box options.</p>
+            
+         </div>
+         <p>Change the values for <span class="codeText">NodeIdOffset</span> and <span class="codeText">ElementIdOffset</span> to <span class="codeText">True</span>, and change the markId value in the last line.
+         </p><pre class="codeExample indent ">Dim idSpec1 As CAE.FEModel.IdSpecificationObject
+idSpec1.FemObjectPrependName = &quot;TestPlates_f&quot;
+idSpec1.NodeStartId = 1
+idSpec1.NodeIdOffset = <span class="userInput">True</span>
+idSpec1.ElementStartId = 1
+idSpec1.ElementIdOffset = <span class="userInput">True</span>
+idSpec1.PhysicalPropertyTableStartId = 2
+idSpec1.PhysicalPropertyTableIdOffset = False
+fEModel1.AppendFemodel(fEModel2, idSpec1)
+
+theSession.DeleteUndoMark(markId<span class="userInput">2</span>, Nothing)
+</pre><p>After appending the test plate FEM, insert code to fit the model to the graphics window and automatically save the parts.</p>
+         <div class="action">
+            
+            <p>Locate the end of the AppendFem journal code, as indicated by the following comment:</p>
+            
+         </div><pre class="codeExample indent ">' ----------------------------------------------
+'   Menu: Tools-&gt;Journal-&gt;Stop Recording
+' ----------------------------------------------</pre><div class="action">
+            
+            <p>Above the Stop Recording comment, add the following code highlighted in bold:</p>
+            
+         </div><pre class="codeExample indent ">    theSession.DeleteUndoMark(markId2, Nothing)
+    theSession.SetUndoMarkName(markId1, &quot;Append Fem&quot;)
+<span class="userInput">        ' ----------------------------------------------
+        '   Menu: Fit
+        workFemPart.ModelingViews.WorkView.Fit()
+        ' ----------------------------------------------
+        ' Menu: File-&gt;Save (added)
+        Dim femPart5 As CAE.FemPart = CType(workFemPart, CAE.FemPart)
+        Dim partSaveStatus1 As PartSaveStatus
+        partSaveStatus1 = femPart5.Save(BasePart.SaveComponents.True, BasePart.CloseAfterSave.False)
+        partSaveStatus1.Dispose()
+</span>
+' ----------------------------------------------
+'   Menu: Tools-&gt;Journal-&gt;Stop Recording  
+' ----------------------------------------------</pre><p>In the final example, you will add a new class member and a <span class="codeText"><span class="variableText">Try Statement</span></span> to the <span class="codeText">faceSelect</span> dialog box code to allow access to a listing window. You will add two declarations for variables used with the selection of the body to mesh and the element size for the applied mesh.
+         </p>
+         <div class="action">
+            
+            <p>Add the ReDim line and remove the theDlxFileName line, highlighted in the following code.</p>
+            
+         </div><pre class="codeExample indent ">'----------------------
+'Constructor for NX Styler class
+'--------------------------------
+Public Sub New()
+    Try
+        theSession = Session.GetSession()
+        Dim journal As String = theSession.ExecutingJournal
+        Dim testFile As System.IO.FileInfo = My.Computer.FileSystem.GetFileInfo(journal)
+        Dim folderPath As String = testFile.DirectoryName
+        ' dialog is expect to to be next to vb file. 
+        theDlxFileName = My.Computer.FileSystem.CombinePath(folderPath, &quot;faceSelect.dlx&quot;)
+        testFile = My.Computer.FileSystem.GetFileInfo(theDlxFileName)
+        If Not testFile.Exists Then
+            theDlxFileName = &quot;faceSelect.dlx&quot;
+        End If
+        theUI = UI.GetUI()
+<span class="userInput">        theDlxFileName = &quot;faceSelect.dlx&quot;
+</span>        theDialog = theUI.CreateDialog(theDlxFileName)
+        theDialog.AddApplyHandler(AddressOf apply_cb)
+        theDialog.AddOkHandler(AddressOf ok_cb)
+        theDialog.AddUpdateHandler(AddressOf update_cb)
+        theDialog.AddInitializeHandler(AddressOf initialize_cb)
+        theDialog.AddDialogShownHandler(AddressOf dialogShown_cb)
+        <span class="userInput">ReDim bodies(0)</span>
+    Catch ex As Exception
+        '---- Enter your exception handling code here -----
+</pre><div class="action">
+            
+            <p>Save the <span class="literalText">createAppendApp.vb</span> file.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

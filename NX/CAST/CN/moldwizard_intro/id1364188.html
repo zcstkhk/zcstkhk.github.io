@@ -1,0 +1,237 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>初始化模具设计项目</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>初始化模具设计项目</h2>
+         
+         
+         <p>要初始化项目，您需要提供名称、单位、材料以及模板配置。当您初始化时，您将根据模板装配创建一个新的工装装配。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在 NX 中，选择<strong>文件&rarr;打开</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>打开</strong>对话框中，导航至您的 <span class="pathName">cardholder</span> 文件夹，然后选择部件文件 <span class="fileName">cardholder</span> 并点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/mold_wizard/activities/introductory_topics/cardholder_open.png"></p>
+                     
+                     <p>这与您刚才打开的部件不同！</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>旋转部件以查看装配。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>注意到您在部件 <span class="fileName">cardholder_validate</span> 中发现的交叉面在这个部件中已被倒圆角，以移除底切材料。</p>
+                     
+                     <table border="0" cellpadding="2" cellspacing="1" align="center">
+                        
+                        <colgroup align="center" span="1">
+                           
+                           <col span="1">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><span class="fileName">cardholder_validate</span></p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/mold_wizard/activities/introductory_topics/undercut_faces.png"></p>
+                     
+                     <table border="0" cellpadding="2" cellspacing="1" align="center">
+                        
+                        <colgroup align="center" span="1">
+                           
+                           <col span="1">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><span class="fileName">cardholder</span></p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/mold_wizard/activities/introductory_topics/undercut_faces_blended.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>选择<strong>开始&rarr;所有应用模块&rarr;注塑模向导</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>注塑模向导</strong>工具条上的<strong>初始化项目</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/wizards/mold_wizard/initialize_project.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>将自动选中名片盒实体。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在<strong>项目设置</strong>组中，确保路径中显示的是名片盒部件文件夹的完整路径，并且<strong>名称</strong>输入框中包含 <span class="literalText">cardholder</span>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>从<strong>材料</strong>列表中选择 <strong>ABS</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>当您选择材料时，<strong>收缩率</strong>输入框将会自动更新。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>从<strong>配置</strong>列表中选择 <strong>Mold.V1</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>在注塑模向导中包含多种标准模板装配，每种都用于特定的用途，Mold.V1 是推荐的默认模板，这是因为它：</p>
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p>支持分型集结构，其中包含了收缩、注塑以及分型组件。</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>使用混合的子装配来创建混合的型腔、型芯或者工件。</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>拥有一套用于模具装配中所有产品的命名规则。</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>(可选)在<strong>属性</strong>组中，对于 <strong>Customer_Name</strong>，键入您公司的名字，对于 <strong>Designer_Name</strong>，键入您的名字。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>在<strong>设置</strong>组中，从<strong>项目单位</strong>列表中选择<strong>毫米</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>默认情况下，单位与产品模型是对应的。</p>
+                     
+                     <p>您可以在用户默认设置中控制注塑模向导的默认单位。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定。</strong></p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>将为模具创建一个装配结构，我们将在下一步查看这个结构。</p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

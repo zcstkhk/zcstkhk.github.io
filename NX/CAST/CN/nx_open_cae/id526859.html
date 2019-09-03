@@ -1,0 +1,58 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Editing code to create an application</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Editing code to create an application</h2>
+         
+         <p>While you can use the Journal utility and Block Styler to quickly generate NX-compliant code, simply concatenating output files from these tools does not result in a usable application. You must edit the concatenated code in order to create a runnable application that will meet your users' needs. The languages supported by NX Open are flexible and powerful, and the kinds of changes and additions needed will vary widely depending on your application's requirements and the goals of your users. However, certain modifications are required in almost every instance:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>You must create a new <span class="codeText">Main()</span> routine to call the subroutines in your application.
+               </p>
+               
+               <p>In the output from the Journal utility and Block Styler, each separate file is defined by a single <span class="codeText">Main()</span> routine. When you combine several code output files, you need to redefine each component <span class="codeText">Main()</span> as a subroutine, and create a new <span class="codeText">Main()</span> routine that calls these routines.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Enable any custom dialog boxes.</p>
+               
+               <p>If your application uses custom dialog boxes, you need to modify the code to ensure that it calls the appropriate custom dialog box at user interaction points.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Add functionality as needed.</p>
+               
+               <p>When you record a journal, information specific to the model data in NX at the time is saved with the journal file. Examples of such information include file paths and geometry selection. In order to create a general-purpose application, you need to remove or replace any model-specific code to make the application usable with a wide variety of model data. For example, you may want to replace hard-coded file paths with a variable, or replace recorded geometry selection steps with a simple <span class="codeText">Try</span> loop.
+               </p>
+               
+               <p>You can also edit your application to include standard NX functionality not captured in the initial journals. </p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

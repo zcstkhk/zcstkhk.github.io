@@ -1,0 +1,96 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>全局照明—基于图像的打光</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>全局照明—基于图像的打光</h2>
+         
+         <p>使用基于图像打光时的全局照明效果最好。</p>
+         
+         <p>基于图像的打光是一种部件渲染技术，使用图像作为光源、反射以及阴影的参考。</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>一般来说用作背景的图像将用作基于图像打光的参考</p>
+               
+               
+            </li>
+            
+            <li>
+               
+               <p>选定的图像被映射到包含要渲染部件的球面上</p>
+               
+               
+            </li>
+            
+            <li>
+               
+               <p>这个球面将作为内部光源来照亮部件</p>
+               
+               <p>这将允许部件上的光源采用指定背景图像中的光源特性</p>
+               
+               
+            </li>
+            
+         </ul>
+         <a name="genid_eava_95" id="genid_eava_95"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx/gateway/render_view/visual_effects/ibl_ref_anim_small.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>基于图像打光的概念</h4>
+         </div>
+         
+         <p>高动态范围图像较常规格式的图像包含了更多的照明信息，捕捉场景中所有的实际光源信息—包括自然光源与人造光源。</p>
+         <p>IBL 可以使用以下格式：         </p>
+         <ul>
+            
+            <li>
+               
+               <p>EXR 和 HDR(高动态范围图像)</p>
+               
+               <p>鼓励使用高动态范围图像，因为高动态范围图像中包含更精细的颜色信息。</p>
+               
+               <p>使用后，光源与反射中的颜色显示将更佳。</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/visualization/general_concepts/ibl_1.png"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>TIF、JPEG、LWI(低动态范围图像)</p>
+               
+               <p>不推荐使用低动态范围图像，因为使用 LDR 图像时，会因为缺少颜色饱和度和深度而发生泛白现象。</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/visualization/general_concepts/ibl_2.png"></p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>使用<strong>场景编辑器</strong>对话框中的<strong>全局照明</strong>选项卡来编辑基于图像打光的参数，比如光源精度和颜色饱和度。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

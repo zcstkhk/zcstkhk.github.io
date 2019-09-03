@@ -1,0 +1,122 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>层合板复合过程</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>层合板复合过程</h2>
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectHorz" style="width:120px;">
+                  <p>基于区域的过程</p>
+               </div>
+               <div class="defMeaning defMeaningHorz" style="margin-left:125px;">
+                  
+                  <p>该过程中可创建层合板物理属性并将其指派到网格收集器。</p>
+                  
+                  <p>您定义 2D 和 3D 单元上的层合板。您也可以将2D 单元拉伸为实体单元。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz" style="width:120px;">
+                  <p>基于层片的过程</p>
+               </div>
+               <div class="defMeaning defMeaningHorz" style="margin-left:125px;">
+                  
+                  <p>该过程中可定义铺层的全局层片以及它们使模型中的不同多边形面或 2D 网格产生皱褶的方式。根据皱褶数据，软件自动生成全局铺层所表示的层合板物理属性并将其指派到网格收集器中的相应单元。</p>
+                  
+                  <p>您仅在 2D 单元上定义层合板。2D 单元可以拉伸为体单元。</p>
+                  
+               </div>
+            </div>
+         </div>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_global_layup/bycicle_wheel_rod_draping.gif"></p>
+         
+         
+         <p>在基于层片的过程中，单个物理属性可引用具有数个层合板补片或层片落料的部件的不同层片数据。</p>
+         
+         <table class="attentionTable attn_example">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">示例</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <table border="0" align="center">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1">
+                        
+                        <col span="1">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              <a name="genid_spta_lamfund_9" id="genid_spta_lamfund_9"></a><div class="figureContainer">
+                                 <table align="center">
+                                    <tr>
+                                       <td>
+                                          <div class="figure">
+                                             <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_global_layup/multiple_laminate_patches.gif" border="0"></div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </table>
+                                 <h4>基于层片的过程</h4>
+                              </div>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              <a name="genid_spta_lamfund_10" id="genid_spta_lamfund_10"></a><div class="figureContainer">
+                                 <table align="center">
+                                    <tr>
+                                       <td>
+                                          <div class="figure">
+                                             <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_physical_property/multiple_laminate_patches2.gif" border="0"></div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </table>
+                                 <h4>基于区域的过程</h4>
+                              </div>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+                  <p>在基于层片的过程中，需要一个具有三个全局层片的层合板物理属性。</p>
+                  
+                  <p>在基于区域的过程中，需要四个不同的层合板物理属性。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

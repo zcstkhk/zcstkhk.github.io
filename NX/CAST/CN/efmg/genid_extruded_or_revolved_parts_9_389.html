@@ -1,0 +1,63 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>拉伸、回转以及扫掠的部件</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>拉伸、回转以及扫掠的部件</h2>
+         <p>您用于创建模型的方法取决于部件的特性和形状，当然也需要考虑下游的用途。</p>
+         <p>如果您的部件中含有沿固定方向的恒定截面，那么您可以创建一个草图并拉伸，以生成模型，然后添加更多其它特征以完成模型。</p>
+         <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;">
+           <script type="dojo/method">
+      flashData= {
+          swfSrc : '../xps3/graphics/xpsPlayer.swf',
+          graphSrc : '',
+          align : 'center',
+          base : './',
+          height : '178',
+          width : '279',
+          bgcolor : '#FFFFFF',
+          flashVersion : '7',         
+          looping : 'false',
+          play : 'true',
+          menu : 'true',
+          parameters : 'mySound=false,dependentFile1=..%2Fgraphics%2FnonLocalized%2Fnx%2Ficons%2Fanimations%2Fflash%2Fmodeling%2Fextrude.swf,dependentFile2=..%2Fxps3%2Fgraphics%2Fnav_buttons.txt'
+      }
+      top.loadFlash(this,flashData);
+           </script>
+         </div>
+         <p>如果您的部件中含有可绕某个轴旋转的恒定截面，那么您可以创建一个草图并回转以生成模型。</p>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/introductory_topics/modeling_overview_revolve.png"></p>
+         <p>如果您的部件中含有沿某个路径移动的恒定截面，那么您可以创建一个草图，然后沿着路径扫掠草图然后添加更多其它特征以完成模型。</p>
+        <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;"><script type="dojo/method">
+      flashData= {
+          swfSrc : '../xps3/graphics/xpsPlayer.swf',
+          graphSrc : '',
+          align : 'center',
+          base : './',
+          height : '178',
+          width : '279',
+          bgcolor : '#FFFFFF',
+          flashVersion : '7',         
+          looping : 'false',
+          play : 'true',
+          menu : 'true',
+          parameters : 'mySound=false,dependentFile1=..%2Fgraphics%2FnonLocalized%2Fnx%2Ficons%2Fanimations%2Fflash%2Fmodeling%2Fswept.swf,dependentFile2=..%2Fxps3%2Fgraphics%2Fnav_buttons.txt'
+      }
+      top.loadFlash(this,flashData);
+    </script></div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

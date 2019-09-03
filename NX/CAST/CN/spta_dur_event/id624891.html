@@ -1,0 +1,332 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>了解静态事件的载荷变化</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>了解静态事件的载荷变化</h2>
+         <p>载荷变化会将应力或应变的静态变换为循环应力或应变时间历程，由此计算出耐久性结果。</p>
+         <p>载荷变化的定义如下：</p>
+         <ul>
+           <li>
+             <p>静态解算方案子工况的应力或应变结果</p>
+           </li>
+           <li>
+             <p>半单位或完整单位周期函数定义一个周期</p>
+           </li>
+           <li>
+             <p>载荷缩放因子</p>
+           </li>
+           <li>
+             <p>平均应力</p>
+           </li>
+         </ul>
+         <p>加载历史 <em>F</em>(<em>t</em>) 计算如下：</p>
+         <p><em>F</em>(<em>t</em>) = <em>S</em> ∙ (<em>a</em>∙<em>f</em>(<em>t</em>) + <em>σm</em>)</p>
+        <p>其中：</p>
+         <ul>
+           <li>
+             <p><em>S</em> 是静态应力或应变</p>
+           </li>
+           <li>
+             <p><em>a</em> 是比例因子</p>
+           </li>
+           <li>
+             <p><em>f</em>(<em>t</em>) 是单位周期函数</p>
+           </li>
+           <li>
+             <p><em>σm</em> 是平均应力           </p>
+           </li>
+         </ul>
+         <div class="division">
+            
+           <h3>周期函数</h3>
+            
+            <p>周期函数描述加载和卸载应力或应变时应力或应变历程的情形。支持以下周期模式类型：</p>
+            <ul>
+              <li>
+                <p>半单位周期 </p>
+              </li>
+              <li>
+                <p>完整单位周期</p>
+              </li>
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+            <h3>半单位周期</h3>
+            
+            <p>在半单位周期函数中，结构最初处于松弛或无应力状态。对结构加载到最大应力，然后卸载并退回到无应力状态。</p>
+            
+            <table border="0" cellpadding="2" cellspacing="1" width="75%" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="35%">
+                  
+                  <col span="1">
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <table border="1" cellpadding="2" cellspacing="1" frame="void" width="100%" align="center">
+                           
+                           <colgroup span="1">
+                              
+                              <col span="1">
+                              
+                              <col span="1">
+                              
+                              <col span="1" width="25%">
+                              
+                              <col span="1">
+                           </colgroup>
+                           
+                           <tbody>
+                              
+                              <tr>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin">时间，t</p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin">0</p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin">0.5</p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin">1</p>
+                                    
+                                 </td>
+                                 
+                              </tr>
+                              
+                              <tr>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"><span class="emphasis">f</span>(<span class="emphasis">t</span>)
+                                    </p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin">0</p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin">1</p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin">0</p>
+                                    
+                                 </td>
+                                 
+                              </tr>
+                              
+                           </tbody>
+                           
+                        </table>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/ps_wizards/durability_wizard/half_unit_cycle_graph.gif"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         <div class="division">
+            
+            <h3>完整单位周期</h3>
+            
+            <p>在完整单位周期函数中，结构最初处于松弛状态或无应力位置。然后将它加载到最大应力，接着卸载到无应力状态，之后重新加载到最大负应力，最后重新卸载到无应力状态。 </p>
+            
+            <table border="0" cellpadding="2" cellspacing="1" width="75%" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="35%">
+                  
+                  <col span="1">
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <table border="1" cellpadding="2" cellspacing="1" frame="void" width="100%" align="center">
+                           
+                           <colgroup span="1">
+                              
+                              <col span="1" width="40%">
+                              
+                              <col span="2">
+                              
+                              <col span="2">
+                              
+                              <col span="1">
+                           </colgroup>
+                           
+                           <tbody>
+                              
+                              <tr>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin">时间，t</p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin">0</p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin">0.25</p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin">0.5</p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin">0.75</p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin">1</p>
+                                    
+                                 </td>
+                                 
+                              </tr>
+                              
+                              <tr>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"><span class="emphasis">f</span>(<span class="emphasis">t</span>)
+                                    </p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin">0</p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin">1</p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin">0</p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin">-1</p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin">0</p>
+                                    
+                                 </td>
+                                 
+                              </tr>
+                              
+                           </tbody>
+                           
+                        </table>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/ps_wizards/durability_wizard/full_unit_cycle_graph.gif"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         <div class="division">
+            
+            <h3>比例因子</h3>
+            
+            <p>比例因子用于线性缩放应力结果。使用比例因子有助于避免为不同加载值执行重复求解。</p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>平均应力</h3>
+            
+            <p>将平均应力偏置应用于载荷变化，可修改周期函数的无应力状态。当结构处于卸载状态而不是无应力状态时，对其施加的是平均应力。</p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

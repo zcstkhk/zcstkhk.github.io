@@ -1,0 +1,136 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>在浏览器中显示 WAVE 链接</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>在浏览器中显示 WAVE 链接</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>装配</strong>工具条上的<strong>关系浏览</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assemblies/relations_browser.gif" border="0" alt="Assemblies &gt; WAVE &gt; Relations Browser" title="Assemblies &gt; WAVE &gt; Relations Browser">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>在<strong>关系</strong>选项卡的<strong>父级部件</strong>列中，注意链接体 (3)以及(4)的父级部件的名称。现在它们的父级部件名称显示为 <strong>wav3_reparent_counter_weight</strong>。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>展开<strong>状态</strong>列。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>注意链接体 (3)和(4)的状态为<strong>最新</strong>。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>部件间关系视图</strong>选项卡中，选择 <strong>wav3_reparent_design_assembly</strong> 节点。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <table class="attentionTable attn_tip">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">提示</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>如果未显示 <strong>wav3_reparent_design_assembly</strong> 节点，在 <strong>wav3_reparent_counter_weight</strong> 节点上，点击<strong>显示第一级父对象</strong> <img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/resolve_broken_links/show_first_level_parents.png" border="0">。</p>
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/resolve_broken_links/12_resolve_broken_links.png"></p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>在刚开始这个练习的那一次打开<strong>关系浏览器</strong>时，没有显示设计装配，现在也有了平衡重的缩略图而主轴承和杆轴承并没有缩略图，并且也不显示它们到设计装配的链接。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/resolve_broken_links/08_resolve_broken_links.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>右击主轴承节点，然后选择<strong>完全加载选定的部件</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>当部件只是部分加载时，NX 关系浏览器将不会图形化显示部件缩略图，也不会显示它们可能含有的任何父级关系。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/resolve_broken_links/09_resolve_broken_links.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>右击杆轴承节点并选择<strong>完全加载选定的部件</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>既然已完全加载了所有的组件，注意到组件与设计装配间的 WAVE 链接都将图形化显示。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/resolve_broken_links/10_resolve_broken_links.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>关闭 <strong>NX 关系浏览器</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>关闭所有部件。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

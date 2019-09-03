@@ -1,0 +1,115 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>基于区域过程的网格创建</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>基于区域过程的网格创建</h2>
+         
+         <p>使用下列命令创建合适的2D 和3D 网格：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>3D 扫掠</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/3d_swept_mesh.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>2D 网格</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/2d_mesh.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>2D 映射网格</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/2d_mapped_mesh.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>位于<strong>单元操作</strong>工具条上的命令</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p>层合板物理属性支持以下2D Nastran 单元类型：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>CQUAD4</strong>、<strong>CQUAD8</strong>、<strong>CQUADR</strong></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>CTRIA3</strong>、<strong>CTRIA6</strong>、<strong>CTRIAR</strong></p>
+               
+            </li>
+            
+         </ul>
+         <a name="id851851"></a>
+         
+         
+         
+         <h3>材料方向</h3>
+         
+         
+         
+         <p>通过设置材料方向，创建的层合板坐标系在网格上都一致。</p>
+         
+         <p>您可能需要考虑创建不同的网格或者收集器，以定义不同的材料坐标系。</p>
+         
+         <p>材料方向在<strong>网格相关数据</strong>对话框中设置，通过右击以下求解器的网格节点即可：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>NX Nastran</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>MSC Nastran</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>ANSYS</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>LS-DYNA</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>对于 Abaqus，材料方向在<strong>层合板建模器</strong>对话框的<strong>求解器属性</strong>组中设置。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>曲线拟合方法</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>曲线拟合方法</h2>
+         <p>曲线拟合方法可以在<strong>建模首选项</strong>对话框的<strong>自由曲面</strong>选项卡中找到。</p>
+         <p>它将控制样条必须逼近线串时使用的拟合方法。如果结果可以被任意阶次的样条复制，则将创建该样条。</p>
+         <div class="verbose">
+            <p><strong>三次</strong>将使用阶次为3的样条，如果您需要将样条数据传递到另一个仅支持三次样条的系统中，则应该使用该选项。</p>
+         </div>
+         <div class="verbose">
+            <p><strong>五次</strong>使用阶次为5的样条。用五次拟合方法创建的曲线可以更好地复制实际曲线的曲率属性。</p>
+         </div>
+         <div class="verbose">
+            <p><strong>高级</strong>允许您在复制曲线时指定样条的最大阶次和段数。</p>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>智能选择器选项</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>智能选择器选项</h2>
+         
+         <p>您可以使用不同的标准来确定不同的多边形几何体如何以及是否相关。</p>
+         
+         <p>例如，这些标准确定被认为相切的两个面间的最大角度，或被认为是圆角面的最小和最大半径。默认标准值适合大多数应用，但是您可能还想要调整这些标准，例如，处理很小或很大的部件的时候。</p>
+         
+         <p><a name="ndxgenid_spta_selent_16"></a>
+            点击选择条上的<strong>智能选择器选项</strong> <img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/general_capabilities/selection_techniques/smart_selector.png" border="0"> 来控制这些标准。</p>
+         
+         <p>例如，假设您要从某部件中的一些圆柱面中进行选择。通过指定圆柱和圆角面的最小和最大角度，可更有效地过滤选择，以便只选择所要的面，如下图所示。 </p>
+         
+         <a name="genid_spta_selent_17"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/general_capabilities/selection_techniques/cyl_selection1.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>最小角度设置为 150，最大角度设置为 360。软件将选择圆柱形孔以及两个部分圆柱形面。</h4>
+         </div>
+         <a name="genid_spta_selent_18"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/general_capabilities/selection_techniques/cyl_selection2.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>最小角度设置为 200，最大角度设置为 360。软件仅选择圆柱形孔。</h4>
+         </div>
+         <a name="genid_spta_selent_19"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/general_capabilities/selection_techniques/cyl_selection3.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>最小角度设置为 150，最大角度设置为 200。软件仅选择两个部分圆柱形面。</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

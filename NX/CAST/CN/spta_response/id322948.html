@@ -1,0 +1,79 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>传感器</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>传感器</h2>
+         <a name="ndxgenid_spta_response_78"></a>
+         <a name="ndxgenid_spta_response_79"></a>
+         
+         
+        <p>传感器是在模型上定义、要在该处查看响应函数结果的节点位置。您可以使用一个或多个传感器来模仿实际测试。例如，传感器可以表示加速计的位置。或者，您的部件的某个特定位置处可能具有某些规定，如加速度限制。使用传感器，可以捕获该位置处的响应结果。 </p>
+        <p>传感器可用来捕获下列类型的响应：<strong>位移</strong>、<strong>速度</strong>、<strong>加速度</strong>和<strong>反作用力</strong>。您在传感器定义中选择的每个节点都会生成一个响应函数。</p>
+        <p>存储传感器时所使用的名称反映了节点以及在其中评估传感器的方向。例如，Sensor_1_2_(99X+)_1 表示 Sensor_1 在正 X 方向中节点 99 处的函数 2 结果。</p>
+         
+         <a name="genid_spta_response_80"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div class="figureBox"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/solutions/response_simulation/rs_sensor_sample.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>传感器捕捉节点上的反作用力</h4>
+         </div>
+         <a name="id910989"></a>
+         
+         
+         
+         <h3>应变片</h3>
+         
+         <a name="ndxgenid_spta_response_82"></a>
+         <a name="ndxgenid_spta_response_83"></a>
+         
+         
+        <p>使用应变片指定模型上的节点或单元位置，以便在该位置的指定方向上评估应力或应变结果。应变片定义：</p>
+        <ul>
+          <li>
+            <p>位置 </p>
+          </li>
+          <li>
+            <p>应力或应变结果的坐标系</p>
+          </li>
+          <li>
+            <p>应力或应变结果的分量</p>
+          </li>
+        </ul>
+        <p>在定义应变片后，可创建分析事件，然后对模型上的选定应变片执行评估。<strong>评估应变片</strong>命令可为选定数据分量(例如，XX、YY、XY、Von Mises 或应变片的分支)生成应力或应变结果。</p>
+         
+         <a name="genid_spta_response_84"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div class="figureBox"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/solutions/response_simulation/rs_strain_gage.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>捕捉单元面上三个方向的应力的 0-45-90 应变花应变片</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

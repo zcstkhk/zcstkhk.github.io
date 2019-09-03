@@ -1,0 +1,104 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>设计约束</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>设计约束</h2>
+         
+         <p>可以定义设计约束以在优化中放置真实边界。</p>
+         
+         <p>例如，假设您创建了一个<strong>应力/应变</strong>类型的设计响应，并将设计目标设为使其最小化，在这种情况下，拓扑优化将创建尽可能刚性的结构，而不考虑最终的重量。您可以创建<strong>体积</strong>类型的设计约束来使体积减少至50%模型初始体积，优化然后将创建在这种体积约束下最具刚度的结构。</p>
+         
+         <p>与设计目标类似，设计约束将引用设计响应，设计约束将限制设计响应值，如果不满足约束，优化结果即不可行。</p>
+         
+         <p>支持的设计约束包括：</p>
+         
+         <table border="0" cellpadding="4" cellspacing="2" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+            </colgroup>
+            
+            <thead>
+               
+               <tr bgcolor="silver">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Nastran 解算方案</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">支持的设计约束</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+               <tr bgcolor="#F0F0F0">
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">SOL 101 线性静态 &ndash; 全局约束</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p>体积</p>
+                     
+                     <p>位移 </p>
+                     
+                     <p class="no-bottom-margin">反作用力</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#F0F0F0">
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">SOL 103 实特征值</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p>体积</p>
+                     
+                     <p class="no-bottom-margin">频率</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

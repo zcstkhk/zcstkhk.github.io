@@ -1,0 +1,116 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>从其它焊接或中转系统中导入焊接</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>从其它焊接或中转系统中导入焊接</h2>
+         
+         
+         <p>使用电子表格文件(*.csv 格式)从其它焊接或中转系统中导入焊接位置。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>显示<strong>焊接助理</strong>工具条。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>点击工具条上的<strong>导入 CSV 文件</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/wizards/weld_assistant/import_welds.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>选择 <span class="fileName">wld1_import_weld_csv.csv</span> 并点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>焊接已被导入。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/weld/activities/drafting/weld_activities_weldsymbols_annotate_assy_nx5a.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>如果出现导入信息框，点击<strong>是</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <table class="attentionTable attn_caution">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">注意</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>当您通过*.csv(comma separated value)文件导入点时，它们将丢失它们的相连部件信息并保持“保留的”状态，当 NX 点焊特征的相连面链接不再存在时，也会出现“保留的”状态。焊点将保留相连的部件信息，但丢失了装配内部的位置信息，<strong>连接面查找器</strong>可以让您快速识别相连的部件，并移除它们的“保留的”状态。</p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>部件导航器</strong>中，查看已经导入到这个装配中的焊接。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>如果可以看到钣金和已经连接的部件数的相关信息，点焊将会根据这些信息被分组并放置到一个特征集中，如果没有，将由单个点构成特征集。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>右击任意<strong>保留的焊接</strong>特征并选择<strong>属性</strong>，以查看<strong>特征属性</strong>列表。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p><strong>取消</strong>对话框。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

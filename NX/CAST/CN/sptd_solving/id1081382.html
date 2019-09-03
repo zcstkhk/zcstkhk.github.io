@@ -1,0 +1,151 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>NX Nastran solution files</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>NX Nastran solution files</h2>
+         
+         <p>For NX Nastran, the following files are generated when you solve the model.</p>
+         
+         <table border="1" cellpadding="4" cellspacing="2" width="100%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="37*">
+               
+               <col span="1" width="161*">
+               
+            </colgroup>
+            
+            <thead>
+               
+               <tr bgcolor="silver">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">File type</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Description</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+               <tr bgcolor="#F0F0F0" valign="top">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">*.dat</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p>NX Nastran ascii input file</p>
+                     
+                     <p>Contains the model data, solution options, and output requests. </p>
+                     
+                     <p>You can edit this file at the beginning of the solve process within NX or in a text editor. </p>
+                     
+                     <p class="no-bottom-margin">This file is also referred to as an input &ldquo;deck.&rdquo;</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#F0F0F0" valign="top">
+                  
+                  <td colspan="1" height="118" rowspan="1">
+                     
+                     <p class="no-bottom-margin">*.f06</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" height="118" rowspan="1">
+                     
+                     <p>Contains results such as displacements and stresses. Diagnostic information, warnings, and errors are also written to this file. </p>
+                     
+                     <p class="no-bottom-margin">The information in the .f06 file is important for debugging solution problems.</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#F0F0F0" valign="top">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">*.f04</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Contains information that helps you monitor and tune the performance of your analysis job.</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">*.log</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Contains system information such as the name of the computer on which the analysis was run. It also contains any system errors encountered during the analysis.</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">*.op2</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p>Results output from the solve. </p>
+                     
+                     <p class="no-bottom-margin">NX reads this binary file during post-processing.</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

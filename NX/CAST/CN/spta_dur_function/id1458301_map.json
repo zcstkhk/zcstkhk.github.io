@@ -1,0 +1,10 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开仿真文件",file:"id1458307.html",type:"topic",parent:""},
+{id:"d7e3",title:"重置对话框内存",file:"id1458305.html",type:"topic",parent:""},
+{id:"d7e4",title:"创建应变片",file:"id1458309.html",type:"topic",parent:""},
+{id:"d7e5",title:"计算包含分支应变历史的响应函数",file:"id1458311.html",type:"topic",parent:""},
+{id:"d7e6",title:"分析应变片应变花数据",file:"id1458313.html",type:"topic",parent:""},
+{id:"d7e7",title:"查看应变器分析器的结果",file:"id1458315.html",type:"topic",parent:""},
+{id:"d7e8",title:"计算耐久性损伤",file:"id1458317.html",type:"topic",parent:""},
+{id:"d7e9",title:"查看疲劳评估结果",file:"id1458319.html",type:"topic",parent:""},
+{id:"d7e10",title:"保存并关闭",file:"id1458331.html",type:"topic",parent:""}]}

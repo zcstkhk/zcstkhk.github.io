@@ -1,0 +1,24 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"编辑自由曲面特征 1",file:"id1050372.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"编辑自由曲面特征",file:"edit_free_form.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"编辑特征参数概述",file:"id670786.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"可回滚编辑概述",file:"id670871.html",type:"topic",parent:"d5e5"},
+{id:"d5e8",title:"编辑通过曲线组特征的参数",file:"id1536607.html",type:"activity",parent:"d5e5"},
+{id:"d5e9",title:"替换通过曲线组特征的定义曲线",file:"id717127.html",type:"activity",parent:"d5e5"},
+{id:"d5e10",title:"编辑可变扫掠曲面的参数",file:"xid487831.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e12",title:"法向反向",file:"reverse_normal.html",type:"topic",parent:"",children:[
+{id:"d5e13",title:"法向反向概述",file:"genid_reverse_normal_overview_42_434.html",type:"topic",parent:"d5e12"},
+{id:"d5e14",title:"法向反向对话框",file:"id670881.html",type:"topic",parent:"d5e12"},
+{id:"d5e15",title:"反转曲面法向",file:"id717259.html",type:"activity",parent:"d5e12"}]},
+{id:"d5e17",title:"修剪片体",file:"trim_sheet.html",type:"topic",parent:"",children:[
+{id:"d5e18",title:"修剪片体",file:"fff_trmsht.html",type:"topic",parent:"d5e17"},
+{id:"d5e19",title:"使用曲面及曲线来修剪片体",file:"fff_trmsht_ht.html",type:"topic",parent:"d5e17"},
+{id:"d5e20",title:"修剪片体",file:"xid481609.html",type:"activity",parent:"d5e17"}]},
+{id:"d5e22",title:"编辑边界概述",file:"genid_edit_boundary_overview_40_531.html",type:"topic",parent:"",children:[
+{id:"d5e23",title:"编辑原片体或编辑副本",file:"genid_edit_original_sheet_or_edit_a_copy_17_988.html",type:"topic",parent:"d5e22"},
+{id:"d5e24",title:"编辑片体边界对话框",file:"genid_the_edit_sheet_boundary_dialog_box_21_851.html",type:"topic",parent:"d5e22"},
+{id:"d5e25",title:"替换边的步骤",file:"genid_replace_edge_procedure_23_1176.html",type:"topic",parent:"d5e22"},
+{id:"d5e26",title:"替换边边界对象",file:"genid_replace_edge_bounding_objects_26_957.html",type:"topic",parent:"d5e22"},
+{id:"d5e27",title:"使用边界来修剪曲面的边",file:"id717133.html",type:"activity",parent:"d5e22"}]}
+]}

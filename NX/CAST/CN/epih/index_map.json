@@ -1,0 +1,10 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"PMI 数据重用",file:"xid481076.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"继承 PMI",file:"preferences_pref_inherit_pmi_ov.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"继承 PMI 数据",file:"id967242.html",type:"activity",parent:"d5e5"},
+{id:"d5e7",title:"复习：继承 PMI",file:"id1542106.html",type:"topic",parent:"d5e5"}]},
+{id:"d5e9",title:"PMI 双向编辑",file:"pmi_general_info_pmi_edit_rt.html",type:"topic",parent:"",children:[{id:"d5e10",title:"PMI 双向编辑",file:"id967257.html",type:"activity",parent:"d5e9"}]},
+{id:"d5e12",title:"WAVE PMI 链接器",file:"id1457617.html",type:"topic",parent:"",children:[
+{id:"d5e13",title:"将 PMI 从一个部件WAVE 链接到另一个部件",file:"id1385009.html",type:"activity",parent:"d5e12"}]}
+]}

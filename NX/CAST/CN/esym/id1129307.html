@@ -1,0 +1,214 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>删除实体的外部面</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>删除实体的外部面</h2>
+         
+         
+         <p>您需要创建该部件的新实体模型，以用于空气流体分析，这个新实体模型需要是原始用于加工的实体模型的关联副本。为了创建新的实体模型，您将先创建原始实体模型的副本，然后删除所有的外部面，以便您拥有表示节气门内部流体的实体模型。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>打开 <span class="fileName">syn3_120167</span>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/delete_face/delete_faces_01.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>部件导航器</strong>中，右击<strong>体 (1)</strong>并选择<strong>在此抽取体</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/delete_face/delete_faces_01.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>右击<strong>体 (1)</strong>并选择<strong>隐藏</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>右击<strong>抽取的体 (2)</strong>并选择<strong>重命名</strong>，然后键入<strong>空气流体</strong>并回车。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在选择条上，确保已显示<strong>全选(选定的除外)</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/selection_bar/all_but_selected.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>该选项只有在您选择对象后才激活。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>同步建模</strong>工具条上的<strong>删除面</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/modeling/direct_modeling/delete_face.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>点击对话框标题栏上的<strong>重置</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/rail/reset.gif" border="0">，以将对话框以及选择条返回至默认设置。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>在选择条上的<strong>面规则</strong>列表中，选择<strong>区域面</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>状态栏将显示<strong>选择区域的种子面</strong>，您只需要为每个区域定义一个种子面。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>选择内部的面作为<strong>种子面</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/delete_face/delete_faces_02.png"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>状态栏将显示<strong>选择区域的边界面，或按 MB2 来完成区域</strong>。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>选择四个与开口相邻的面作为边界面，其中有一个面位于部件底部。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/delete_face/delete_faces_03.png"></p>
+                     
+                     <table class="attentionTable attn_note">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">注释</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>边界面并不包含在您定义的区域面中，它们只是用于限制区域的范围。</p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>状态栏将显示<strong>选择区域的边界面，或按 MB2 来完成区域</strong>。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>单击鼠标中键以完成第一个区域边界。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_12">
+               <div class="stepAction">
+                  
+                  <p>在选择条上，点击<strong>全选(选定的除外)</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/selection_bar/all_but_selected.gif" border="0">，以选择实体的所有外部面。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/delete_face/delete_faces_04.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_13">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>将删除所有的外部面，并且边界面将填补开口，这个实体表示节气门内部的空气流体，这个过程可以在任何边界面为平面的时候使用，如果边界面中包含曲面，您可能需要在使用<strong>删除面</strong>命令前先填补这些面。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/delete_face/delete_faces_05.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_14">
+               <div class="stepAction">
+                  
+                  <p>右击<strong>抽取的体 (2)</strong>并选择<strong>隐藏</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

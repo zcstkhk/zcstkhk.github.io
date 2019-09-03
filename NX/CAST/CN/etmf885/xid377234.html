@@ -1,0 +1,192 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Multi-Blade axis control enhancements</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Multi-Blade axis control enhancements</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>The <span class="uiTerm">Automatic</span> tool axis option is enhanced to change the lead angle as necessary to avoid collisions.
+            </p>
+            
+            <p>Enhancements to Multi-Blade axis controls let you do the following:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Align the tool automatically to the blade profile with the <span class="uiTerm">Swarf Blade</span> option.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Explicitly control the lead angle for zig zag motions from the leading edge to the trailing edge, and from the trailing edge to the leading edge.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Specify a <span class="uiTerm">Minimum Lead Angle</span> value to prevent heal digging.
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Swarf Blade</h3>
+            
+            <p>You can use the <span class="uiTerm">Swarf Blade</span> tool axis option as a base for any <span class="uiTerm">Multi Blade</span> operation. For operations other than <span class="uiTerm">Blade Finish</span>, NX uses the <span class="uiTerm">Swarf Blade</span> orientation as the initial tool alignment for cuts adjacent to the blades and splitters. The tool axis orientation is not sensitive to UV alignment, and the blade surface can contain multiple UV patches.
+            </p>
+            
+            <p>To finish cut blades using the side of the tool for swarf cutting or flank milling, set the <span class="uiTerm">Number of Cuts</span> option to a positive value of 1 or higher.
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>If <span class="uiTerm">Cut Levels</span> = 1, set <span class="uiTerm">Tilt Clearance Angle</span> to 0.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>If <span class="uiTerm">Cut Levels</span> &gt; 1, you can add a small <span class="uiTerm">Tilt Clearance Angle</span> value to prevent the tool from rubbing against the finished upper levels. For example, 0.2 degrees.
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+            <table align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1"></td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td align="center" colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/multi_blade_tool_axis_swarf.png"></p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Axis</span> = <span class="uiTerm">Swarf Blade</span>, <span class="uiTerm">Range Depth</span> = <span class="uiTerm">Specify</span>, <span class="uiTerm">Number of Cuts</span> = 1
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         
+         <p></p>
+         
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Manufacturing</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1">
+                     
+                     <p>[Multi Blade] operation dialog box:</p>
+                     
+                     <ul class="unmarkedList">
+                        <li>
+                           
+                           <p class="no-bottom-margin">(<span class="uiTerm">Swarf Blade</span>) <span class="uiTerm">Tool Axis</span> group
+                           </p>
+                           
+                        </li>
+                        <li>
+                           
+                           <p class="no-bottom-margin">(Lead angles, minimum lead angle) <span class="uiTerm">Tool Axis</span> group&rarr;<span class="uiTerm">Automatic</span>&rarr;<span class="uiTerm">Edit</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/edit.gif" border="0">&rarr;<span class="uiTerm">Automatic</span> dialog box&rarr;<span class="uiTerm">Tool Axis</span> group
+                           </p>
+                           
+                        </li>
+                     </ul>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+            <p></p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>修复自由边</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>修复自由边</h2>
+         
+         
+         <p>如果网格中含有自由单元边，可以使用以下选项来修复它：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>如果含有问题边，可以使用<strong>缝合边</strong>命令来缝合自由边，无论是使用自动还是手动缝合</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>如果存在大量的自由单元边或者不见划分网格失败，那么可能需要在<strong>建模</strong>应用模块中修复底层的主模型几何体</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>如果只有少数局部自由单元边，使用手动手动节点和单元操作直接修复问题区域</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>尝试增加网格划分算法中使用的公差(注释：过大的公差可能会在模型其它区域引起不可预测的结果)</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/meshing/mesh_repair/free_edges.png"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

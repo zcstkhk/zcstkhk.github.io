@@ -1,0 +1,88 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Where is NX data in Teamcenter?</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Where is NX data in Teamcenter?</h2>
+         
+         <p>Native NX users are accustomed to browsing through operating system folders in search of part <span class="literalText">(.prt)</span> files. 
+         </p>
+         <a name="ndxgenid_spta_tcsim_14"></a>
+         
+         
+         <ul>
+            
+            <li>
+               
+               <p>Teamcenter stores the part <span class="literalText">(.prt)</span> files in a database and uses data objects to symbolically represent them. Data objects function as a reference to the actual object in the database.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Teamcenter Integration for NX folders look like folders in a file system, although they are more like envelopes: they carry messages and information but do not have your parts, assemblies, or drawings in them.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Using this symbolic reference, access to a single object can be made available to many users.</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>Items <img align="bottom" src="../graphics/graphicLibrary/teamcenter/end_user/integration_for_nx/basic_concepts/end_user_integration_lmd_i_item.gif" border="0"> and item revisions <img align="bottom" src="../graphics/graphicLibrary/teamcenter/end_user/integration_for_nx/basic_concepts/end_user_integration_lmd_i_item_revision.gif" border="0"> are the fundamental objects used to manage information in Teamcenter.
+         </p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>Items are structures that represent a product, part, or component. Items can contain other data objects, including other items and folders.</p><a name="ndxgenid_spta_tcsim_15"></a>
+               
+               
+               <p align="left"><img align="bottom" src="../graphics/graphicLibrary/teamcenter/end_user/integration_for_nx/basic_concepts/end_user_integration_item_rev_blue_expanded.gif"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Item revisions are used to manage changes (revisions) to your product information.</p><a name="ndxgenid_spta_tcsim_16"></a>
+               
+               
+               <p align="left"><img align="bottom" src="../graphics/graphicLibrary/teamcenter/end_user/integration_for_nx/basic_concepts/end_user_integration_item_blue_rev_expanded.gif"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Item revisions contain information related to a revision in addition to the NX dataset. Datasets manage data files created by applications outside of Teamcenter. This example is an NX dataset.</p><a name="ndxgenid_spta_tcsim_17"></a>
+               
+               
+               <p align="left"><img align="bottom" src="../graphics/graphicLibrary/teamcenter/end_user/integration_for_nx/basic_concepts/end_user_integration_item_blue_rev_blue_nxdataset.gif"></p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p>This is a simple overview which may be redundant if the students have taken the prerequisite Teamcenter course.</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

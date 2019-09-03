@@ -1,0 +1,170 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>细分段选项</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>细分段选项</h2>
+         
+         <p></p>
+         
+         <div class="division">
+            
+            <h3>类型</h3>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_electrical/commands/subdivide_segment/4_Route_seg_subdivide_segment.png"></p>
+            
+            <p>您可从<strong>类型</strong>列表中选择四个不同的选项来细分一个管线布置线段。管线控制点将会根据您使用的<strong>类型</strong>来放置在您使用的线段上。</p>
+            
+            <div class="defList">
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p>在点上</p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <p>此方法为默认方法。它允许您使用屏幕拾取的点来放置管线控制点，然后您可以使用<strong>再分割点</strong>组中的选项来调节新的管线控制点位置，您也可以沿着线段拖动点。</p>
+                     
+                  </div>
+               </div>
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p>等分段</p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <p>将线段分割成为相等弧长的几段。</p>
+                     
+                  </div>
+               </div>
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p>弧长段数</p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <p>指定线段要进行分割的起始和终止百分比，您可以进行屏幕拾取或者输入文本，再然后输入在指定起点和终点之间想要的线段的数量。您还需要为新的管线控制点指定一个弧长，来计算从起始点的增量。放置将会在线段数量或者终止的百分比满足使结束，无论哪一个首先发生。您可以通过定义很大数量的线段数目来强迫后者的行为，在起点和终点直接的拆分线段的正确数量，将会在点击<strong>应用</strong>或<strong>确定</strong>后反映在<strong>段数</strong>输入框中。</p>
+                     
+                  </div>
+               </div>
+            </div>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">注释</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>屏幕拾取即如果控制点在选择球范围内，则捕捉路径线段上的控制点位置，否则，将使用距离光标最近的线段上的位置。您也可以通过选择另外一个对象来指明该位置，NX 将把其它对象的屏幕拾取位置投影到管线段上。</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>再分割点</h3>
+            
+            <p>当您在<strong>类型</strong>列表中选择<strong>在点上</strong>时，<strong>再分割点</strong>组将变为可用。</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_electrical/commands/subdivide_segment/4_Route_seg_subdivide_segment_1.png"></p>
+            
+            <p>在<strong>位置</strong>列表中，您可以选择：</p>
+            
+            <ul class="unmarkedList">
+               <li>
+                  
+                  <p><strong>弧长百分比</strong> &ndash; 将会在弧长百分比的位置分割管线段。</p>
+                  
+               </li>
+               <li>
+                  
+                  <p><strong>通过点</strong> &ndash; 将会在用户指定点处把线段细分。</p>
+                  
+               </li>
+            </ul>
+            
+            <p><strong>反向</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/common/reverse_direction.gif" border="0"> 将更改再分割点的测量终点。</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>再分割段</h3>
+            
+            <p>对于<strong>等分段</strong>和<strong>弧长段数</strong>类型，<strong>再分割段</strong>组将变为可用。</p>
+            
+            <table border="0" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        <a name="genid_erta_92" id="genid_erta_92"></a><div class="figureContainer">
+                           <table align="center">
+                              <tr>
+                                 <td>
+                                    <div class="figure">
+                                       <div><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/commands/subdivide_segment/equal_arc_length.png" border="0"></div>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </table>
+                           <h4>等分段的输入项</h4>
+                        </div>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        <a name="genid_erta_93" id="genid_erta_93"></a><div class="figureContainer">
+                           <table align="center">
+                              <tr>
+                                 <td>
+                                    <div class="figure">
+                                       <div><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/commands/subdivide_segment/arc_length_segments.png" border="0"></div>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </table>
+                           <h4>弧长段数的输入项</h4>
+                        </div>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

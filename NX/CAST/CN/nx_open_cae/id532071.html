@@ -1,0 +1,365 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Add meshing functionality</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Add meshing functionality</h2>
+         <p>In the following examples, you enhance the meshing functionality to include options and settings that were not captured when you created the journal.</p>
+         <p>In the first example, you specify a mesh collector for the resulting mesh.</p>
+         <div class="action">
+            
+            <p>Locate the MeshBottle routine near the top of the file.</p>
+            
+         </div>
+         <div class="action">
+            
+            <p>Locate the lines beginning with the string <span class="codeText">mesh2dBuilder1</span>.
+            </p>
+            
+         </div>
+         <p>Add code to turn off automatic mesh collector creation, and specify that the mesh use the collector <span class="literalText">TestPlates_f_ThinShell(1)</span>.
+         </p>
+         <div class="action">
+            
+            <p>Remove the following highlighted lines. </p>
+            
+         </div><pre class="codeExample indent ">Dim meshCollector1 As CAE.MeshCollector
+<span class="userInput">meshCollector1 = mesh2dBuilder1.ElementType.DestinationCollector.ElementContainer
+</span>
+mesh2dBuilder1.ElementType.DestinationCollector.ElementContainer = meshCollector1
+<span class="userInput">mesh2dBuilder1.GeometryUsageType = CAE.Mesh2dBuilder.GeometryType.Main
+
+mesh2dBuilder1.GeometryUsageType = CAE.Mesh2dBuilder.GeometryType.Main</span>
+theSession.SetUndoMarkName(markId1, &ldquo;2d Mesh Dialog&rdquo;)</pre><table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>If you are instructed to remove a line that is duplicated in your file, remove the duplicate lines as well.</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div class="action">
+            
+            <p>Add the following highlighted lines.</p>
+            
+         </div><pre class="codeExample indent ">mesh2dBuilder1 = meshManager1.CreateMesh2dBuilder(nullCAE_Mesh2d)
+<span class="userInput">mesh2dBuilder1.GeometryUsageType = CAE.Mesh2dBuilder.GeometryType.Main
+        mesh2dBuilder1.ElementType.DestinationCollector.AutomaticMode = False
+</span>
+        Dim meshCollector1 As CAE.MeshCollector<span class="userInput"> = CType(meshManager1.FindObject(&quot;MeshCollector[TestPlates_f_ThinShell(1)]&quot;), CAE.MeshCollector)</span>
+mesh2dBuilder1.ElementType.DestinationCollector.ElementContainer = meshCollector1  
+<span class="userInput">
+</span>theSession.SetUndoMarkName(markId1, &quot;2D Mesh Dialog&quot;)
+<span class="userInput">         mesh2dBuilder1.PropertyTable.SetIntegerPropertyValue(&quot;meshing method&quot;, 1)
+        Dim expression1 As Expression
+        expression1 = mesh2dBuilder1.PropertyTable.GetScalarPropertyValue(&quot;quad mesh overall edge size&quot;)
+        Dim unit1 As Unit = CType(workFemPart.UnitCollection.FindObject(&quot;MilliMeter&quot;), Unit)
+</span></pre><div class="action">
+            
+            <p>If the following highlighted block of code exists in your file, remove those lines. These lines are describing how you rotated the part during journal recording.</p>
+            
+         </div><pre class="codeExample indent ">        Dim unit1 As Unit = CType(workFemPart.UnitCollection.FindObject(&quot;MilliMeter&quot;), Unit)
+<span class="userInput">Dim rotMatrix1 As Matrix3x3
+rotMatrix1.Xx = 0.96498578785301
+rotMatrix1.Xy = 0.260160235971694
+rotMatrix1.Xz = -0.0334526659753541
+rotMatrix1.Yx = 0.0173067759002793
+rotMatrix1.Yy = 0.0641068063115667
+rotMatrix1.Yz = 0.997792960935518
+rotMatrix1.Zx = 0.261730595746167
+rotMatrix1.Zy = -0.963434984315851
+rotMatrix1.Zz = 0.0573596220931816
+Dim translation1 As Point3d = New Point3d(16.6678890674889, -157.357261641819, -9.54309773571851)
+workFemPart.ModelingViews.WorkView.SetRotationTranslationScale(rotMatrix1, translation1, 0.497418815766179)
+Dim objects1(30) As DisplayableObject
+</span></pre><table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>The number in the parentheses in the last line may differ due to the number of faces selected <span class="codeText">Dim objects1(30) As DisplayableObject </span>.
+                  </p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div class="action">
+            
+            <p>Continue removing the following lines that represent the faces selected during the journal recording. The number of objects may differ, depending on the faces you have selected.</p>
+            
+         </div><pre class="codeExample indent ">Dim cAEBody1 As CAE.CAEBody = CType(workFemPart.FindObject(&quot;CAE_Body(1)&quot;), CAE.CAEBody)
+<span class="userInput">objects1(0) = cAEBody1
+Dim cAEFace1 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(1)&quot;), CAE.CAEFace)
+objects1(1) = cAEFace1
+Dim cAEFace2 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(2)&quot;), CAE.CAEFace)
+objects1(2) = cAEFace2
+Dim cAEFace3 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(3)&quot;), CAE.CAEFace)
+objects1(3) = cAEFace3
+Dim cAEFace4 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(4)&quot;), CAE.CAEFace)
+objects1(4) = cAEFace4
+Dim cAEFace5 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(5)&quot;), CAE.CAEFace)
+objects1(5) = cAEFace5
+Dim cAEFace6 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(6)&quot;), CAE.CAEFace)
+objects1(6) = cAEFace6
+Dim cAEFace7 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(7)&quot;), CAE.CAEFace)
+objects1(7) = cAEFace7
+Dim cAEFace8 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(8)&quot;), CAE.CAEFace)
+objects1(8) = cAEFace8
+Dim cAEFace9 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(9)&quot;), CAE.CAEFace)
+objects1(9) = cAEFace9
+Dim cAEFace10 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(11)&quot;), CAE.CAEFace)
+objects1(10) = cAEFace10
+Dim cAEFace11 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(12)&quot;), CAE.CAEFace)
+objects1(11) = cAEFace11
+Dim cAEFace12 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(13)&quot;), CAE.CAEFace)
+objects1(12) = cAEFace12
+Dim cAEFace13 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(14)&quot;), CAE.CAEFace)
+objects1(13) = cAEFace13
+Dim cAEFace14 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(15)&quot;), CAE.CAEFace)
+objects1(14) = cAEFace14
+Dim cAEFace15 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(17)&quot;), CAE.CAEFace)
+objects1(15) = cAEFace15
+Dim cAEFace16 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(18)&quot;), CAE.CAEFace)
+objects1(16) = cAEFace16
+Dim cAEFace17 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(19)&quot;), CAE.CAEFace)
+objects1(17) = cAEFace17
+Dim cAEFace18 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(20)&quot;), CAE.CAEFace)
+objects1(18) = cAEFace18
+Dim cAEFace19 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(21)&quot;), CAE.CAEFace)
+objects1(19) = cAEFace19
+Dim cAEFace20 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(22)&quot;), CAE.CAEFace)
+objects1(20) = cAEFace20
+Dim cAEFace21 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(23)&quot;), CAE.CAEFace)
+objects1(21) = cAEFace21
+Dim cAEFace22 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(24)&quot;), CAE.CAEFace)
+objects1(22) = cAEFace22
+Dim cAEFace23 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(25)&quot;), CAE.CAEFace)
+objects1(23) = cAEFace23
+Dim cAEFace24 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(26)&quot;), CAE.CAEFace)
+objects1(24) = cAEFace24
+Dim cAEFace25 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(27)&quot;), CAE.CAEFace)
+objects1(25) = cAEFace25
+Dim cAEFace26 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(28)&quot;), CAE.CAEFace)
+objects1(26) = cAEFace26
+Dim cAEFace27 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(29)&quot;), CAE.CAEFace)
+objects1(27) = cAEFace27
+Dim cAEFace28 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(30)&quot;), CAE.CAEFace)
+objects1(28) = cAEFace28
+Dim cAEFace29 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(31)&quot;), CAE.CAEFace)
+objects1(29) = cAEFace29
+Dim cAEFace30 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(32)&quot;), CAE.CAEFace)
+objects1(30) = cAEFace30
+Dim added1 As Boolean
+added1 = mesh2dBuilder1.SelectionList.Add(objects1)
+mesh2dBuilder1.GeometryUsageType = CAE.Mesh2dBuilder.GeometryType.Main
+Dim rotMatrix2 As Matrix3x3
+rotMatrix2.Xx = 0.954586408961918
+rotMatrix2.Xy = 0.292212773823352
+rotMatrix2.Xz = -0.0581075093223958
+rotMatrix2.Yx = -0.00910021344893912
+rotMatrix2.Yy = 0.223541023412002
+rotMatrix2.Yz = 0.974652038918043
+rotMatrix2.Zx = 0.297795187906678
+rotMatrix2.Zy = -0.929860799080366
+rotMatrix2.Zz = 0.216048421408834
+Dim translation2 As Point3d = New Point3d(60.2260727546026, -212.598008328045, -37.4658003376611)
+workFemPart.ModelingViews.WorkView.SetRotationTranslationScale(rotMatrix2, translation2, 0.828907479673484)
+Dim objects2(0) As DisplayableObject
+objects2(0) = cAEBody1
+Dim removed1 As Boolean
+removed1 = mesh2dBuilder1.SelectionList.RemoveArray(objects2)
+mesh2dBuilder1.GeometryUsageType = CAE.Mesh2dBuilder.GeometryType.Main
+Dim objects3(0) As DisplayableObject
+</span>
+Dim cAEFace31 As CAE.CAEFace = CType(cAEBody1.FindObject(&quot;CAE_Face(10)&quot;), CAE.CAEFace)
+added2 = mesh2dBuilder1.SelectionList.Add(objectsToMesh)</pre><table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>The second set of rotation lines may not be present in your file depending on any rotations that you performed during journal recording. The goal is to remove the rotation and face selection lines since you will be preforming those steps live during journal play back.</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>The <span class="codeText">Dim objects3(0) As DisplayableObject </span> line may have a different number than 3, but the line should still be removed.
+                  </p>
+                  
+               </td>
+            </tr>
+         </table>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>The locator lines shown above may differ in your code. The last line to delete is the <span class="codeText">mesh2dBuilder1.GeometryUsageType = CAE.Mesh2dBuilder.GeometryTypeMain</span>.
+                  </p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div class="action">
+            
+            <p>Remove the following line. The number shown may differ. <span class="codeText">objects3</span> might be <span class="codeText">objects2</span>.
+            </p>
+            
+         </div><pre class="codeExample indent ">objects3(0) = cAEFace31
+</pre><div class="action">
+            
+            <p>Modify the added2 line, and change the markId values. Delete the highlighted line if it exists.</p>
+            
+         </div><pre class="codeExample indent ">    Dim added2 As Boolean
+    added2 = mesh2dBuilder1.SelectionList.Add(objects<span class="userInput">ToMesh</span>)
+
+<span class="userInput">    mesh2dBuilder1.GeometryUsageType = CAE.Mesh2dBuilder.GeometryType.Main
+</span>    Dim markId<span class="userInput">4</span> As Session.UndoMarkId
+    markId<span class="userInput">4</span> = theSession.SetUndoMark(Session.MarkVisibility.Invisible, &quot;2D Mesh&quot;)
+    mesh2dBuilder1.ElementType.ElementDimension = CAE.ElementTypeBuilder.ElementType.Shell
+</pre><p>If a code block such as the following exist, remove it from your application. This is another rotation that was captured during the journal recording.</p><pre class="codeExample indent ">    Dim rotMatrix3 As Matrix3x3
+    rotMatrix3.Xx = 0.900780156859556
+    rotMatrix3.Xy = 0.434275054654946
+    rotMatrix3.Xz = -0.000534707880352661
+    rotMatrix3.Yx = -0.0815783976203283
+    rotMatrix3.Yy = 0.170420285786056
+    rotMatrix3.Yz = 0.981988742926465
+    rotMatrix3.Zx = 0.426544340074714
+    rotMatrix3.Zy = -0.884512353275545
+    rotMatrix3.Zz = 0.188938674847645
+    Dim translation3 As Point3d = New Point3d(64.5012287026283, -157.553770634684, -33.0642680983378)
+    workFemPart.ModelingViews.WorkView.SetRotationTranslationScale(rotMatrix3, translation3, 0.525216974735319)
+</pre><div class="action">
+            
+            <p>Remove the following highlighted lines that follow the <span class="codeText">markId4</span> line above.
+            </p>
+            
+         </div><pre class="codeExample indent "><span class="userInput">    theSession.DeleteUndoMark(markId2, Nothing)
+
+    Dim markId3 As Session.UndoMarkId
+    markId3 = theSession.SetUndoMark(Session.MarkVisibility.Invisible, &quot;2D Mesh&quot;)
+</span>
+</pre><div class="action">
+            
+            <p>Remove the following line.</p>
+            
+         </div><pre class="codeExample indent ">mesh2dBuilder1.PropertyTable.SetIntegerPropertyValue(&quot;meshing method&quot;, 1)
+<span class="userInput">Dim unit1 As Unit = CType(workFemPart.UnitCollection.FindObject(&quot;MilliMeter&quot;), Unit)
+</span>
+mesh2dBuilder1.PropertyTable.SetScalarWithDataPropertyValue(&quot;quad mesh overall edge size&quot;, &quot;3&quot;, unit1)
+</pre><div class="action">
+            
+            <p>Make changes to the following lines to change meshing parameters.</p>
+            
+         </div><pre class="codeExample indent ">        mesh2dBuilder1.PropertyTable.SetIntegerPropertyValue(&quot;quad only option&quot;, 0)
+        mesh2dBuilder1.PropertyTable.SetIntegerPropertyValue(&quot;midnodes&quot;, <span class="userInput">2</span>)
+        mesh2dBuilder1.PropertyTable.SetBooleanPropertyValue(&quot;split poor quads bool&quot;, <span class="userInput">False</span>)
+        Dim nullUnit As Unit = Nothing
+        mesh2dBuilder1.PropertyTable.SetScalarWithDataPropertyValue(&quot;max quad warp&quot;, &quot;5&quot;, nullUnit)
+        mesh2dBuilder1.PropertyTable.SetScalarWithDataPropertyValue(&quot;max jacobian&quot;, &quot;5&quot;, nullUnit)
+        mesh2dBuilder1.PropertyTable.SetBooleanPropertyValue(&quot;mesh format to solver bool&quot;, True)
+        mesh2dBuilder1.PropertyTable.SetBooleanPropertyValue(&quot;mesh transition bool&quot;, <span class="userInput">False</span>)
+        mesh2dBuilder1.PropertyTable.SetScalarWithDataPropertyValue(&quot;mesh size variation&quot;, &quot;50&quot;, nullUnit)
+        mesh2dBuilder1.PropertyTable.SetBooleanPropertyValue(&quot;quad mesh edge match toggle&quot;, <span class="userInput">True</span>)
+</pre><div class="action">
+            
+            <p>Add the following lines to your application file.</p>
+            
+         </div><pre class="codeExample indent ">        mesh2dBuilder1.PropertyTable.SetScalarWithDataPropertyValue(&quot;quad mesh node coincidence tolerance&quot;, &quot;0.0001&quot;, unit1)
+        mesh2dBuilder1.PropertyTable.SetIntegerPropertyValue(&quot;mesh edit allowed&quot;, 0)
+<span class="userInput">        Dim expression14 As Expression
+        expression14 = mesh2dBuilder1.PropertyTable.GetScalarPropertyValue(&quot;quad mesh overall edge size&quot;)
+</span>
+        mesh2dBuilder1.PropertyTable.SetIntegerPropertyValue(&quot;transition edge seeding&quot;, 0)
+<span class="userInput">         workFemPart.Expressions.EditWithUnits(expression14, unit1, &quot;3&quot;)
+                workFempart.Expressions.EditWithUnits(expression14, elmSizeUnit, elmSize)
+</span>
+        mesh2dBuilder1.PropertyTable.SetIntegerPropertyValue(&quot;cylinder curved end num elements&quot;, 6)
+        mesh2dBuilder1.AutoResetOption = False
+</pre><div class="action">
+            
+            <p>Remove the following line.</p>
+            
+         </div><pre class="codeExample indent ">meshes1 = mesh2dBuilder1.CommitMesh()
+<span class="userInput">theSession.DeleteUndoMark(markId2, Nothing)
+</span>theSession.SetUndoMarkName(id1, &quot;2D Mesh&quot;)
+</pre><table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>The number in the above line for markId2 might be markId3 or another number.</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div class="action">
+            
+            <p>Make the following initialization.</p>
+            
+         </div><pre class="codeExample indent ">        Private Shared theUI As UI
+        Private theDlxFileName As String 
+        Private theDialog As NXOpen.BlockStyler.BlockDialog
+<span class="userInput">        ' Added the (=Nothing) to the end of the next line
+        Private theDialog As NXOpen.BlockStyler.BlockDialog = Nothing
+</span>        Private group0 As NXOpen.BlockStyler.UIBlock ' Block type: Group
+        Private selection0 As NXOpen.BlockStyler.UIBlock ' Block type: Selection
+ </pre><div class="action">
+            
+            <p>In the <span class="uiTerm">Bottle Mesh</span> dialog box code, insert the following code block: 
+            </p>
+            
+         </div><pre class="codeExample indent ">        Public Sub New()
+            Try
+                theSession = Session.GetSession()
+<span class="userInput">                Dim journal As String = theSession.ExecutingJournal
+                Dim testFile As System.IO.FileInfo = My.Computer.FileSystem.GetFileInfo(journal)
+                Dim folderPath As String = testFile.DirectoryName
+                ' dialog is expected to be next to the vb file.
+                theDlxFileName = My.Computer.FileSystem.CombinePath(folderPath, &quot;bottleMeshDb.dlx&quot;)
+                testFile = My.Computer.FileSystem.GetFileInfo(theDlxFileName)
+                If Not testFile.Exists Then
+                    theDlxFileName = &quot;bottleMeshDb.dlx&quot;
+                End If
+</span>                theUI = UI.GetUI()
+</pre><div class="action">
+            
+            <p>Remove the following line, directly below the section added above.</p>
+            
+         </div><pre class="codeExample indent ">                theUI = UI.GetUI()
+<span class="userInput">                theDlxFileName = &quot;bottleMeshDb.dlx&quot;
+</span>                theDialog = theUI.CreateDialog(theDlxFileName)
+</pre><div id="footer"></div>
+      </div>
+   </body>
+</html>

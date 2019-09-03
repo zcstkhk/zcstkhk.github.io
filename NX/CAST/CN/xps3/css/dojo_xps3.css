@@ -1,0 +1,273 @@
+
+
+/* --------------------- Dojo TabSplitter Classes -------------- */
+
+.xps .dijitSplitterV, .xps .dijitGutterV {
+  background: #F1F7F8;
+  border-left:0px solid #C3C3C3;
+  border-right:1px solid #C3C3C3;
+}
+
+/* ---------------- Dojo Tab Classes ------------------ */
+
+.xps .dijitTab { 
+  background: url(../graphics/tabContainerSprite.gif) no-repeat 0 -300px;
+  border-bottom:1px solid #C3C3C3;
+}
+.xps .dijitTabInnerDiv {
+  	background: url(../graphics/tabContainerSprite.gif) no-repeat;
+  	background-position: right -400px;
+}
+.xps .dijitTabInnerDiv .dijitTabContent {
+  background: url(../graphics/tabContainerSprite.gif) repeat-x 0 -350px;
+
+}
+
+.xps .dijitTabHover, 
+.xps .dijitTabCloseButtonHover {
+  background: url(../graphics/tabContainerSprite.gif) no-repeat 0px -150px;
+}
+.xps .dijitTabHover .dijitTabInnerDiv, 
+.xps .dijitTabCloseButtonHover .dijitTabInnerDiv {
+  background: url(../graphics/tabContainerSprite.gif) no-repeat right -250px;
+}
+.xps .dijitTabHover .dijitTabInnerDiv .dijitTabContent, 
+.xps .dijitTabCloseButtonHover .dijitTabInnerDiv .dijitTabContent {
+  background: url(../graphics/tabContainerSprite.gif) repeat-x 0 -200px;
+}
+
+
+.xps .dijitTabChecked .dijitTabInnerDiv {
+  background: url(../graphics/tabContainerSprite.gif) no-repeat right -100px;
+}
+.xps .dijitTabChecked, 
+.xps .dijitTabCloseButtonChecked {
+  background: url(../graphics/tabContainerSprite.gif) no-repeat 0px -0px;
+
+}
+.xps .dijitTabChecked .dijitTabInnerDiv .dijitTabContent {
+  background: url(../graphics/tabContainerSprite.gif) repeat-x 0 -50px;
+}
+
+
+.xps .dijitTabContainerRight-tabs .dijitTab {
+	background: url(../graphics/tabContainerSprite.gif) no-repeat left -350px;
+}
+.xps .dijitTabContainerRight-tabs .dijitTabHover .dijitTab {
+	background: url(../graphics/tabContainerSprite.gif) no-repeat left -200px;
+}
+
+.xps .dijitTabContainerLeft-tabs .dijitTabInnerDiv {
+	background: url(../graphics/tabContainerSprite.gif) no-repeat right -350px;
+}
+.xps .dijitTabContainerLeft-tabs .dijitTabHover .dijitTabInnerDiv {
+	background: url(../graphics/tabContainerSprite.gif) no-repeat right -200px;
+}
+
+.xps .dijitTabContainerBottom-spacer, 
+.xps .dijitTabContainerTop-spacer {
+  background:#C3C3C3;
+  border:1px solid #C3C3C3;
+  height:0;
+}
+
+.xps .dijitTabContainerTop-tabs .dijitTabChecked {
+  border-bottom-color:#C3C3C3;
+}
+
+.xps .dijitTabInnerDiv .dijitTabContent {
+  padding:2px 3px 2px 4px;
+}
+
+
+.xps .dijitTabPaneWrapper {
+  border:0;
+
+}
+
+/* ---------------- XPS Button ------------------ */
+
+.xps .dijitButton, .xps .dijitDropDownButton {
+  margin-right:2px;
+}
+
+.xps .dijitButtonNode {
+  height: 21px;
+  background: url(../graphics/xpsButtonSprite.gif) no-repeat right top;
+  border:none;
+  padding:0;
+}
+
+.xps .dijitButtonHover .dijitButtonNode,
+.xps .dijitButtonActive .dijitButtonNode,
+.xps .dijitDropDownButtonHover .dijitButtonNode,
+.xps .dijitDropDownButtonActive .dijitButtonNode {
+  background: url(../graphics/xpsButtonSprite.gif) no-repeat right -21px;
+}
+
+.xps .dijitButtonDisabled .dijitButtonNode,
+.xps .dijitDropDownButtonDisabled .dijitButtonNode {
+  background: url(../graphics/xpsButtonSprite.gif) no-repeat right -42px;
+}
+
+.xps .buttonLeftEdge {
+  height: 21px;
+  background: url(../graphics/xpsButtonSprite.gif) no-repeat left top;
+  border:none;
+  padding:0
+}
+
+.xps .dijitButtonHover .buttonLeftEdge,
+.xps .dijitButtonActive .buttonLeftEdge,
+.xps .dijitDropDownButtonHover .buttonLeftEdge,
+.xps .dijitDropDownButtonActive .buttonLeftEdge {
+  background: url(../graphics/xpsButtonSprite.gif) no-repeat left -21px;
+}
+
+.xps .dijitButtonDisabled .buttonLeftEdge,
+.xps .dijitDropDownButtonDisabled .buttonLeftEdge {
+  background: url(../graphics/xpsButtonSprite.gif) no-repeat left -42px;
+}
+
+.xps .nextIcon {
+	background: url(../graphics/arrowSprite.gif) no-repeat left top;
+	height:16px;
+	width:20px;
+}
+.xps .dijitButtonDisabled .nextIcon {
+	background: url(../graphics/arrowSprite.gif) no-repeat -17px top;
+}
+
+.xps .prevIcon {
+	background: url(../graphics/arrowSprite.gif) no-repeat left -16px;
+	height:16px;
+	width:20px;
+}
+
+.xps .dijitButtonDisabled .prevIcon {
+	background: url(../graphics/arrowSprite.gif) no-repeat -17px -16px;
+}
+
+.xps .collapseTreeIcon {
+	background: url(../graphics/minus_large.gif) no-repeat center center;
+	height:16px;
+	width:12px;
+}
+
+.xps .expandTreeIcon {
+	background: url(../graphics/plus_large.gif) no-repeat center center;
+	height:16px;
+	width:12px;
+}
+
+.xps .dijitButtonText {
+  vertical-align: bottom;
+  margin-top:3px;
+}
+
+.xps .dijitArrowButtonInner {
+  background:transparent url(../graphics/downArrow.gif) no-repeat scroll left top;
+  width:16px;
+}
+
+/* ---------------- Dojo TabContainers ------------------ */
+
+.xps .dijitTabContainerTop-dijitContentPane {
+  padding:0px;
+}
+
+/* ---------------- Dojo Tree ------------------ */
+
+.xps .dijitTreeIsLast {
+  background:transparent;
+}
+
+.xps .dijitTreeNode {
+  background:transparent;
+}
+
+.xps .dijitLeaf {
+  background:transparent;
+}
+
+.xps .dijitFolderClosed {
+  background:transparent;
+}
+
+.xps .dijitFolderOpened {
+  background:transparent;
+}
+
+.xps .dijitTreeIcon {
+  width:0px; 
+}
+
+.xps .activityIcon {
+  width:16px;
+  background: url(../graphics/activity.png) no-repeat;
+  margin-right:3px;
+} 
+
+.xps .dijitTreeExpando {
+  width:8px;
+  cursor:pointer;
+}
+
+.xps .dijitTreeExpandoLeaf {
+  background:transparent;
+}
+
+.xps .dijitTreeExpandoClosed {
+   background: url(../graphics/plus.gif) no-repeat top;
+}
+
+.xps .dijitTreeExpandoOpened {
+  background: url(../graphics/minus.gif) no-repeat top;
+}
+
+.xps .dijitTreeLabelFocused {
+  background:transparent;
+}
+
+.xps .dijitTreeContent {
+  color: #333333;
+}
+
+.xps .dijitTreeLabel, .xps .dijitMenuItemLabel {
+  margin-left:3px;
+  font-family:'Trebuchet MS';
+  font-size:12px;
+}
+
+.xps .dijitTreeNodeHover {
+  color: #e7aa1a;
+  cursor:pointer;
+}
+
+/* ---------------- Dojo Menu ------------------ */
+
+/* give the dropDownMenu a fixed height and add a scrollbar   */
+
+.xps .dijitPopup {
+  /* 
+    NOTE: This is a problem because I only want the height set on the go to popup 
+    This is breaking the glossary popups
+  */
+  max-height:300px;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+
+.xps .glossaryPopupGroup .dijitPopup, .dijitDialogPaneContent > * {
+  overflow:hidden;
+}
+
+.xps .dijitMenu {
+  background-color:#F1F7F8;
+}
+
+.xps .dijitMenuItem {
+  background:none;
+}
+
+

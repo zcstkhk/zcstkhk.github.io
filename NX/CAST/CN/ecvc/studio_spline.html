@@ -1,0 +1,298 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>艺术样条对话框选项</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>艺术样条对话框选项</h2>
+         <a name="ndxgenid_ecvc_10"></a>
+         
+         
+         <table border="1" cellpadding="3" cellspacing="0" width="95%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="150">
+               
+               <col span="1" width="*">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                 <TD rowSpan="1" colSpan="1"><p><strong>类型</strong></p></TD>
+                 <TD rowSpan="1" colSpan="1"><p><strong>通过点</strong>通过延伸曲线使其穿过定义点来创建关联或非关联的样条</p>
+                   <p><strong>根据极点</strong>通过构造和操控样条极点来创建关联或非关联的样条</p></TD>
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>约束</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">用于在定义点或最后一个极点处指派曲率</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                 <TD rowSpan="1" colSpan="1"><p><strong>单段</strong></p></TD>
+                 <TD rowSpan="1" colSpan="1"><p>用于<strong>根据极点</strong>类型，使用用户定义的极点来创建单段曲线</p></TD>
+               </tr>
+               
+               <tr>
+                 <TD rowSpan="1" colSpan="1"><p><strong>匹配的结点位置</strong></p></TD>
+                 <TD rowSpan="1" colSpan="1"><p>仅在定义点所在的位置放置结点，这个情况的一个例外是当曲线没有达到阶次，而需要额外的结点以获取指定的约束时，该选项的功能不适用</p>
+                   <p>该选项只适用于<STRONG>通过点</STRONG>类型</p></TD>
+               </tr>
+               
+               <tr>
+                 <TD rowSpan="1" colSpan="1"><p><strong>封闭的</strong></p></TD>
+                 <TD rowSpan="1" colSpan="1"><p>指定样条的起点和终点为同一点，即形成封闭的环(大部分样条线是不闭合的，即起点和终点是不同的两个点)</p>
+                   <p>该选项不能和<STRONG>匹配的结点位置</STRONG>选项一起使用</p></TD>
+               </tr>
+               
+               <tr>
+                 <TD rowSpan="1" colSpan="1"><p><strong>关联</strong></p></TD>
+                 <TD rowSpan="1" colSpan="1"><p>使样条有关联性，因此它保留了原始创建参数，并与它的父特征参数化相关，关联样条创建的特征名为&ldquo;样条&rdquo;</p>
+                   <p>这个选项在编辑模式下也可用</p></TD>
+               </tr>
+               
+               <tr>
+                 <TD rowSpan="1" colSpan="1"><p><STRONG>设为关联</STRONG></p></TD>
+                 <TD rowSpan="1" colSpan="1"><p>创建关联的艺术样条，该样条与系统创建的新点关联，而与原始的样条不关联</p>
+                   <p>该选项仅在当您选择了现有非关联的、非有理样条时可用</p></TD>
+               </tr>
+               
+               <tr>
+                 <TD rowSpan="1" colSpan="1"><p><strong>阶次</strong></p></TD>
+                 <TD rowSpan="1" colSpan="1"><p>指定样条的精确阶次</p>
+                   <p>根据约束的数目，低阶次的两点样条线可能是多段的</p>
+                   <p>注释：极点数不能少于阶次</p>
+                   <p>该选项与<STRONG>单段</STRONG>选项不能一起使用。</p></TD>
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         
+         <div class="division">
+            
+           <h3>捕捉点</h3>
+            
+            <p><STRONG>艺术样条极点</STRONG>对话框提供了对点选择的可视化反馈信息，当打开对话框后，选择条上的<STRONG>捕捉点</STRONG>选项可用：<A name="ndxgenid_ecvc_11"></A> <a name="ndxgenid_ecvc_11"></a>
+               
+            </p>
+            <a name="genid_ecvc_12" id="genid_ecvc_12"></a><table align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="45">
+                  
+                  <col span="1" width="193">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1" valign="top">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/selection_bar/enable_snap_point.gif"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1" valign="top">
+                        
+                     <p>启用捕捉点</p></td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1" valign="top">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/selection_bar/end_point.gif"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1" valign="top">
+                        
+                     <p>端点</p></td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1" valign="top">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/selection_bar/mid_point.gif"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">中点</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1" valign="top">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/selection_bar/control_point.gif"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">控制点</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1" valign="top">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/selection_bar/intersection_point.gif"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">交点</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/selection_bar/arc_center.gif"></p>
+                        
+                     </td>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">圆心</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/selection_bar/quadrant_point.gif"></p>
+                        
+                     </td>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">象限点</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/selection_bar/existing_point.gif"></p>
+                        
+                     </td>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">现有点</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/selection_bar/point_on_curve.gif"></p>
+                        
+                     </td>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">曲线上的点</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/selection_bar/point_on_surface.gif"></p>
+                        
+                     </td>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">面上的点</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/selection_bar/point_constructor.gif"></p>
+                        
+                     </td>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">点构造器</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

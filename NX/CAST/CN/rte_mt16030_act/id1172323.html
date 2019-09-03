@@ -1,0 +1,217 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Create a subassembly for the wiring harness</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Create a subassembly for the wiring harness</h2>
+         <p>The new subassembly will eventually hold all of the objects that comprise the wiring harness: WAVE linked ports from the various devices, connectors, clamps, routing paths, as well as stock or overstock.</p>
+         <p>To do this you will first create an empty component within the structure of the assembly, then bring the objects you need into it and associate them with the devices in the assembly as you bring them in. You then build the harness around these puts.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>Make sure the Assemblies application is started. (<strong>Start&rarr;Assemblies</strong>)
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>On the <strong>Assemblies</strong> toolbar, from the <strong>Components Drop&ndash;down</strong> list, select <strong>Create New Component</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assemblies/create_new_component.gif" border="0" alt="Assemblies &gt; Components &gt; Create New Component" title="Assemblies &gt; Components &gt; Create New Component">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>New Component File</strong> dialog box, make sure:
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <table border="0" width="250" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" width="72">
+                           
+                           <col span="1" width="143*">
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><strong>Units</strong></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">= <strong>Millimeters</strong></p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><strong>Templates</strong></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">= <strong>Routing Electrical</strong></p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>For Native NX, in the <strong>New File Name</strong> group:
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <ol type="a">
+                     <li>
+                        
+                        
+                        <p>In the <strong>Name</strong> box, type <strong>***_drawer_harness_1</strong>, where <strong>***</strong> represent your initials.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Folder</strong> row, click <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/standard/open.gif" border="0">, and then navigate to your <strong>student_home</strong> folder.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>点击<strong>确定</strong>。
+                        </p>
+                        
+                        
+                     </li>
+                  </ol>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>For Teamcenter Integration, in the <strong>New File Name and Attributes</strong> group:
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <ol type="a">
+                     <li>
+                        
+                        
+                        <p>In the <strong>Number</strong> box, type <strong>***_drawer_harness_1</strong>, where <strong>***</strong> represent your initials.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Revision</strong> row, click <strong>Assign</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>点击<strong>确定</strong>。
+                        </p>
+                        
+                        
+                     </li>
+                  </ol>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>Accept all of the defaults in the <strong>Create New Component</strong> dialog box.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>(You can create an empty component by not selecting any objects.)</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>Open the <strong>Assembly Navigator</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/resource_bar/assembly_navigator.gif" border="0"> to see the new harness component that has been inserted into your assembly.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_electrical/activities/place_part/3_Place_Part_place1_150.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

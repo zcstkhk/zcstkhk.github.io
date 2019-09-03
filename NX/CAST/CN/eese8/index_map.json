@@ -1,0 +1,24 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"定制和在线帮助",file:"id1044016.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"角色",file:"id785496.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"加载角色",file:"id789483.html",type:"activity",parent:"d5e5"},
+{id:"d5e7",title:"创建定制角色",file:"id785491.html",type:"topic",parent:"d5e5",children:[
+{id:"d5e8",title:"加载来自以前发行版本的定制信息",file:"id785506.html",type:"topic",parent:"d5e7"}]}]},
+
+{id:"d5e10",title:"NX 中的电子表格",file:"id786916.html",type:"topic",parent:"",children:[
+{id:"d5e11",title:"使用电子表格",file:"id798150.html",type:"activity",parent:"d5e10"}]},
+
+{id:"d5e13",title:"用户默认设置",file:"id785351.html",type:"topic",parent:""},
+
+{id:"d5e15",title:"帮助菜单",file:"id786766.html",type:"topic",parent:"",children:[
+{id:"d5e16",title:"关联帮助",file:"id786891.html",type:"topic",parent:"d5e15"},
+{id:"d5e17",title:"视频：命令查找器",file:"id1542126.html",type:"topic",parent:"d5e15"},
+{id:"d5e18",title:"命令查找器",file:"id786901.html",type:"topic",parent:"d5e15"},
+{id:"d5e19",title:"查找关于某个命令的更多信息",file:"id798156.html",type:"activity",parent:"d5e15"},
+{id:"d5e20",title:"NX 帮助库",file:"id786886.html",type:"topic",parent:"d5e15",children:[
+{id:"d5e21",title:"搜索帮助库",file:"id786896.html",type:"topic",parent:"d5e20"},
+{id:"d5e22",title:"其它搜索选项",file:"id786881.html",type:"topic",parent:"d5e20"}]},
+{id:"d5e23",title:"探索 NX",file:"id786906.html",type:"topic",parent:"d5e15"}]}
+
+]}

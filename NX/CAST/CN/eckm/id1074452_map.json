@@ -1,0 +1,12 @@
+{identifier:"id",label:"title",items:[
+{id:"d9e2",title:"打开部件并开始创建检查包",file:"id1074456.html",type:"topic",parent:""},
+{id:"d9e3",title:"向检查包添加定制的测试",file:"xid505621.html",type:"topic",parent:""},
+{id:"d9e4",title:"完成并保存新建的检查包",file:"xid505620.html",type:"topic",parent:""},
+{id:"d9e5",title:"查看新建的检查包",file:"id1074561.html",type:"topic",parent:""},
+{id:"d9e6",title:"运行新建的检查包",file:"xid505618.html",type:"topic",parent:""},
+{id:"d9e7",title:"查看结果",file:"id1074567.html",type:"topic",parent:""},
+{id:"d9e8",title:"打开检查包以进行修改",file:"id1074571.html",type:"topic",parent:""},
+{id:"d9e9",title:"向检查包中添加可选值",file:"xid505616.html",type:"topic",parent:""},
+{id:"d9e10",title:"将更改保存到检查包中",file:"xid505617.html",type:"topic",parent:""},
+{id:"d9e11",title:"选择检查包中的参数",file:"id1074573.html",type:"topic",parent:""},
+{id:"d9e12",title:"运行检查包并查看结果",file:"xid505615.html",type:"topic",parent:""}]}

@@ -1,0 +1,104 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>显示控制</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>显示控制</h2>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/visualization/preferences/shading_display_control_dialog.png"></p>
+         
+         <table border="0" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="emphasis">点击下面的链接以获取更多信息。</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p><strong>生成阴影</strong>—创建光线追踪阴影而不是使用阴影贴图(高级光源功能)</p>
+                           
+                           <p class="no-bottom-margin">光线追踪的阴影更尖锐，也更详细，但生成速度更慢，并且不能有软边缘。光线追踪阴影消耗的内存也不如阴影贴图多</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin"><a href="#" onclick="showDialog('xid596881')"><strong>使用子区域</strong></a>—用于选择模型的一个特定区域来着色，而不是对整个视图着色。使用光标在视图中画一个矩形来指定要着色的区域</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin"><a href="#" onclick="showDialog('xid596884')"><strong>使用基于图像打光(IBL)</strong></a> —在模拟所选图像的打光条件时渲染场景</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin"><a href="#" onclick="showDialog('xid596886')"><strong>小平面</strong></a>—控制在几何体上生成多边形的数目，并且影响所生成图像外观的光顺性</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin"><strong>高级选项</strong>—&ndash;设置比如透明度、光线跟踪以及固定摄像机视角等选项</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <p></p>
+         
+         <div dojoType="dijit.Dialog" id="xid596881" title="使用子区域">
+            <div dojoType="dijit.layout.ContentPane" href="xid596881.html" extractContent="true" tabIndex="0"></div>
+         </div>
+         <div dojoType="dijit.Dialog" id="xid596884" title="使用基于图像打光 (IBL)">
+            <div dojoType="dijit.layout.ContentPane" href="xid596884.html" extractContent="true" tabIndex="0"></div>
+         </div>
+         <div dojoType="dijit.Dialog" id="xid596886" title="小平面">
+            <div dojoType="dijit.layout.ContentPane" href="xid596886.html" extractContent="true" tabIndex="0"></div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

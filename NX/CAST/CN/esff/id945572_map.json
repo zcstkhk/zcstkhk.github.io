@@ -1,0 +1,7 @@
+{identifier:"id",label:"title",items:[
+{id:"d9e2",title:"打开部件并创建工序",file:"id945576.html",type:"topic",parent:""},
+{id:"d9e3",title:"定义部件和驱动几何体",file:"id995070.html",type:"topic",parent:""},
+{id:"d9e4",title:"定义切削方向",file:"id995072.html",type:"topic",parent:""},
+{id:"d9e5",title:"定义步距",file:"id995074.html",type:"topic",parent:""},
+{id:"d9e6",title:"定义投影矢量和刀轴",file:"id995076.html",type:"topic",parent:""},
+{id:"d9e7",title:"生成并确认刀轨",file:"id995078.html",type:"topic",parent:""}]}

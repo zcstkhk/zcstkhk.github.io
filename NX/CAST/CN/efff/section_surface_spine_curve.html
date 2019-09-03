@@ -1,0 +1,116 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>如何使用脊线曲线</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>如何使用脊线曲线</h2>
+         
+         <p>创建<strong>截面曲面</strong>时，除了<strong>圆角—桥接</strong>类型之外，都需要<strong>脊线</strong>来控制计算出的截面平面的方位。</p>
+         
+         <p>在脊线的每个点上，NX 都会构造一个与脊线垂直的截面平面。</p>
+         
+         <p> 然后 NX 让平面与每个选定的引导线、肩线、顶线、斜率控制曲线以及面相交，以获得一个点集。</p>
+         
+         <p>下一步，NX 将使用信息来构建二次截面曲线。</p>
+         
+         <p>计算的截面曲线随后将用于生成曲面。</p>
+         
+         <table border="0" cellpadding="2" cellspacing="1" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/section_surface/sectioning_graphic.png"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <ul class="unmarkedList">
+                        <li>
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_1_small.gif" border="0"> 引导线</p>
+                           
+                        </li>
+                        <li>
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_2_small.gif" border="0"> 顶线</p>
+                           
+                        </li>
+                        <li>
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_3_small.gif" border="0"> 脊线</p>
+                           
+                        </li>
+                        <li>
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_4_small.gif" border="0"> 截面平面</p>
+                           
+                        </li>
+                        <li>
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_5_small.gif" border="0"> 计算的截面曲线</p>
+                           
+                        </li>
+                     </ul>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         
+         <p>使用脊线时要注意以下内容：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>脊线必须光顺，且不能太复杂</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>简单的脊线可以产生简单的 U 参数曲线的阵列，并减少产生自相交或过于复杂曲面的风险</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>对于截面曲面，脊线必须近似与起始和终止线串平行</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

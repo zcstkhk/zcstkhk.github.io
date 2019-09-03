@@ -1,0 +1,76 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Auto assign the components</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Auto assign the components</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>At the top of the navigator, click the <strong>Connector ID</strong> column headings to sort the connectors in the order shown below.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_electrical/activities/navigators/5_Assign_Route_graphic_4.gif"></p>
+                     
+                     <p>You can see from the connection list that the name of a component has been assigned to each of the Device IDs in the top assembly. Also notice that there is only one Controller, (CNT), but there are four 4&ndash;pin connectors in the harness subassembly (CNT1 thru CNT4) associated with that device.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>Right-click any column heading and choose <strong>Select All</strong>. Do NOT click as this will resort the column.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>Now you are ready to <span class="emphasis">auto assign</span> components. NX automatically assigns component names to unique components in the wiring harness subassembly.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>Right-click any highlighted row and choose <strong>Auto Assign</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_electrical/activities/navigators/5_Assign_Route_graphic_8.gif"></p>
+                     
+                     <p>A total of five components are automatically assigned. In the device column, the controller (CNT), the processor (PR) and the rotary switch (SW) were auto assigned because they are unique components.  The two meters MT1 and MT2 could not be automatically assigned because they are duplicate components in the assembly. The two connectors associated with the processor and rotary switch (PRC and SWC) were auto assigned, but the six 4-pin connectors associated with the controller and two meters could not be. You must manually assign the remaining components.</p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Teach Features and Find Features enhancements</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Teach Features and Find Features enhancements</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Datum CSYS support</h3>
+            
+            <p>Feature-based machining uses a datum CSYS to position and orient features. Feature teaching now fully supports all CSYS subtypes which reference a point, an edge, or a face of the feature geometry.</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Annotations support</h3>
+            
+            <p>Feature-based machining uses dimension PMI annotations to define feature attributes such as length and depth.</p>
+            
+            <p>The <span class="uiTerm">Teach Features</span> command now supports the following additional PMI dimension types which reference feature geometry:
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>An inferred length dimension between a plane and a straight edge.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>An angle dimension between a plane and a straight edge.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>A dimension to the centerline of a cylindrical face.</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>The <span class="uiTerm">Find features</span> command now recognizes the length and angle dimension tolerances that correspond to the annotation PMI.
+            </p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Support for threaded hole or boss cylindrical faces</h3>
+            
+            <p>The <span class="uiTerm">Teach Features</span> command now supports symbolic thread annotation.
+            </p>
+            
+            <p>The <span class="uiTerm">Find features</span> command now recognizes symbolic threads and can extract the thread attributes. The recognition fails if NX does not find a symbolic thread where one is expected on a feature, or if there are multiple threads on a single feature.
+            </p>
+            
+         </div>
+         
+         
+         <p></p>
+         
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Manufacturing</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Prerequisite</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">You must start Manufacturing with the <span class="uiTerm">cam_general</span>, <span class="uiTerm">feature_machining</span>, or <span class="uiTerm">hole_making</span> cam session configuration.
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Machining Feature Navigator </span></p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Right-click in the background&rarr;<span class="uiTerm">Teach Features</span> or <span class="uiTerm">Find Features</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Toolbar</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Feature</span> toolbar&rarr;<span class="uiTerm">Teach Features</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/manufacturing/feature/teach_features.gif" border="0"> or <span class="uiTerm">Find Features</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/manufacturing/feature/find_features.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

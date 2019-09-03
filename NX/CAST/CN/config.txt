@@ -1,0 +1,50 @@
+<!-- each variable should begin and end with "&" -->
+<!-- UI text -->
+&loginTooltip=Login and Begin&
+&restartTooltip=Restart&
+&previousTooltip=Back&
+&nextTooltip=Next&
+&saveTooltip=Save&
+&submitIncompleteTooltip=Submit-INCOMPLETE&
+&submitCompleteTooltip=Submit&
+&oneAnswerPrompt=Select one:&
+&resultLabel=Results:&
+&multiAnswerPrompt=Select all that apply:&
+&loginText=Enter your Teamcenter User ID so your results will be recorded:&
+&loginLabel=User ID&
+&reviewText=REVIEW ANSWERS BY SELECTING THE QUESTION NUMBERS BELOW:&
+&helpLinksLabel=Review Links:&
+&restartPrompt=Are you sure you want to restart?<br>This will clear all your answers and return you to question #1.&
+&restartYesLabel=Yes&
+&restartNoLabel=Cancel&
+&incompleteSubmitPrompt=You have unanswered questions. If you submit your answers, any unanswered questions will be scored as 0 points. Are you sure you want to submit your answers?&
+&incompleteSubmitYesLabel=Yes&
+&incompleteSubmitNoLabel=Cancel&
+<!-- completionText is shown at the bottom of the results screen -->
+&completionText=<p align="center">YOU HAVE COMPLETED THIS ASSESSMENT<br>AFTER REVIEWING THE RESULTS ABOVE YOU CAN CLOSE THIS WINDOW</p>&
+<!-- noResultsText is shown on the thank you screen when showResults is turned off -->
+&noResultsText=Thank you for completing this assessment.  Your responses have been recorded.&
+&questionText=Question &
+<!-- config variables -->
+&lmsSaveScores=yes&
+&lmsSaveURL=/xps24/servlet/SaveKaData&
+&lmsGetURL=/xps24/servlet/GetKaData&
+<!-- courseName is only used for ASCII - need to remove sometime -->
+&courseName=Bally Teamcenter Enterprise Introduction&
+<!-- Is login required or not? always "yes" for ASCII output; usually "no" for lms output (except for testing) -->
+&loginRequired=no&
+<!-- Is validation required or not? -->
+&loginValidated=no&
+<!-- Path and name of file used for validation requirment -->
+&validationFile=E:\bea\user_projects\mydomain\applications\DefaultWebApp\cgi-bin\usernames.dat&
+<!-- Text ID of input field -->
+<!-- Color of the button used for Next, Login, Previous buttons -->
+&navButtonColor=89A5C7&
+<!-- Path to logo graphic relative to assessment.html -->
+&logoDir=graphics/&
+<!-- The asciiResults variable sets whether a assessment scores file is written to the resultsLocation-->
+&asciiResults=no&
+<!-- no trailing slash on resultsLocation -->
+&resultsLocation=E:\bea\user_projects\mydomain\applications\DefaultWebApp\scores&
+<!-- always keep the doneConfig line at the end of this file -->
+&doneConfig=yes&

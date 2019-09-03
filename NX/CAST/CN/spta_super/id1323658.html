@@ -1,0 +1,107 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Review</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Review</h2>
+         <div id="topQuestionsContainer">
+            <div class="questionsHeader">
+               <div class="headerTitle">
+                  <p>Question</p>
+               </div>
+               <div class="quesionButtons">
+                  <div class="qButton" id="qButton_1">
+                     <p>1</p>
+                  </div>
+                  <div class="qButton" id="qButton_2">
+                     <p>2</p>
+                  </div>
+               </div>
+            </div>
+            <div id="questionsContainer">
+               <div class="question" id="question1" answered="false" numanswers="4" questiontype="allThatApply">
+                  <p>Which of the following statements about boundary DOFs are true?</p>
+                  <p class="questionInstruction">Select all that apply.</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a1" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q1a1" type="checkbox" correct="yes" name="question1Grp"></td>
+                           <td>
+                              <p>In a Guyan reduction, all interior mass is lumped on the boundary DOF.</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a2" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q1a2" type="checkbox" correct="yes" name="question1Grp"></td>
+                           <td>
+                              <p>If only stiffness is reduced in a static condensation, boundary DOF selection is not critical to accuracy.</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a3" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q1a3" type="checkbox" correct="yes" name="question1Grp"></td>
+                           <td>
+                              <p>When the component modes are computed for a dynamic reduction, the fixed boundary DOF are constrained and the free boundary DOF are free.</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a4" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q1a4" type="checkbox" correct="no" name="question1Grp"></td>
+                           <td>
+                              <p>The free/fixed distinction is critical to the accuracy of a subsequent dynamic system run solution.</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div class="question" id="question2" answered="false" numanswers="3" questiontype="fillInBlank">
+                  <p>A dynamic reduction includes:</p>
+                  <p class="questionInstruction">Select one.</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a1" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q2a1" type="radio" correct="no" name="question2Grp"></td>
+                           <td>
+                              <p>Dynamic behavior.</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a2" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q2a2" type="radio" correct="no" name="question2Grp"></td>
+                           <td>
+                              <p>Static behavior.</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a3" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q2a3" type="radio" correct="yes" name="question2Grp"></td>
+                           <td>
+                              <p>Both static and dynamic behavior.</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div id="showFeedbackContainer"><span showLabel="true" id="feedbackButton" title="Show feedback" dojoType="xps.form.Button" onClick="showQuestionFeedback()">Show feedback</span></div>
+            </div>
+            <div class="helpTextContainer">
+               <p class="questionFeedback" id="incorrect">Incorrect.</p>
+               <p class="questionFeedback" id="correct">Correct.</p>
+               <div class="questionHelp" id="questionHelp1">
+                  <p>The free/fixed distinction may not be critical to the accuracy of a subsequent dynamic system run solution if the static portion of the dynamic reduction contributes to the local dynamic behavior at the boundary DOFs.</p>
+               </div>
+               <div class="questionHelp" id="questionHelp2">
+                  <p>A dynamic reduction combines dynamic and static behavior. The component modes comprise the normal modes, and the constraint modes are equivalent to a static condensation or Guyan reduction.</p>
+               </div>
+            </div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

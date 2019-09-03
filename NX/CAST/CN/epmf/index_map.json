@@ -1,0 +1,13 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"型腔铣",file:"id1074655.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"加工型腔",file:"id788856.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"加工一个型腔",file:"id802819.html",type:"activity",parent:"d5e5"}]},
+
+{id:"d5e8",title:"根据处理中的工件加工层",file:"genid_machining_the_level_based_ipw_136_2136.html",type:"topic",parent:"",children:[
+{id:"d5e9",title:"根据处理中的工件加工层",file:"id803049.html",type:"activity",parent:"d5e8"}]},
+{id:"d5e11",title:"加工型芯",file:"genid_machining_a_core_454_9288.html",type:"topic",parent:"",children:[
+{id:"d5e12",title:"加工一个型芯",file:"id803055.html",type:"activity",parent:"d5e11"}]},
+{id:"d5e14",title:"剩余铣",file:"id788866.html",type:"topic",parent:"",children:[
+{id:"d5e15",title:"创建剩余铣工序",file:"id803066.html",type:"activity",parent:"d5e14"}]}
+]}

@@ -1,0 +1,202 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>文件中的点的格式</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>文件中的点的格式</h2>
+         <div class="division">
+            
+            <h3>根据极点、拟合</h3>
+            
+            <p>每个点都由一行它的 XYZ 坐标值来描述，中间由制表符或空格分开。</p>
+            
+            <p>下面是一个点系列，包含5个点来定义一条曲线。</p>
+            
+            <table border="0" frame="box" rules="all" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/splines/splines_graphic46b.gif"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">点的 XYZ 坐标值显示为三列</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>点数据由每行一个点格式化</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>空行将被忽略</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>一旦已经读取每行的最大数目的值以后，其余值将被忽略。</p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+            <h3>通过点</h3>
+            
+            <p>每个点都由一行它的 XYZ 坐标值，以及在同行后缀可选的斜率和曲率半径值来描述，所有值用制表符或空格分开。</p>
+            
+            <p>下面是一个后缀斜率和曲率的点系列文件，包含5个点来定义一条曲线。</p>
+            
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/splines/splines_graphic47a.gif"></p>
+            
+            <table border="1" cellspacing="0" align="center">
+               
+               <thead>
+                  
+                  <tr>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin"><span class="literalText">样条类型</span></p>
+                        
+                     </td>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin"><span class="literalText">点文件类型</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">根据极点</p>
+                        
+                     </td>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">点系列(3部分 &mdash; XYZ)</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">拟合</p>
+                        
+                     </td>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">点系列(3系列 &mdash; XYZ)</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <table border="1" cellspacing="0" align="center">
+               
+               <thead>
+                  
+                  <tr>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin"><span class="literalText">样条类型</span></p>
+                        
+                     </td>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin"><span class="literalText">点文件类型</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">通过点</p>
+                        
+                     </td>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">点系列后缀斜率和曲率(5部分 &mdash; XYZ、斜率、曲率)</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

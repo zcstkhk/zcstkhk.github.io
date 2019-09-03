@@ -1,0 +1,93 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument">
+   <head>
+      <title>复习：删除表达式</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>复习：删除表达式</h2>
+         <div id="topQuestionsContainer">
+            <div class="questionsHeader">
+               <div class="headerTitle">
+                  <p>问题</p>
+               </div>
+               <div class="quesionButtons">
+                  <div class="qButton" id="qButton_1">
+                     <p>1</p>
+                  </div>
+                  <div class="qButton" id="qButton_2">
+                     <p>2</p>
+                  </div>
+               </div>
+            </div>
+            <div id="questionsContainer">
+               <div class="question" id="question1" answered="false" numanswers="3" questiontype="fillInBlank">
+                  <p>您有两个用户定义的表达式：<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Width=12 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Length=Width*2 <br/>
+                  假如您在<strong>表达式</strong>对话框中选择<strong> Width</strong> 并点击<strong>删除</strong>，则会出现什么现象？</p>
+                  <p class="questionInstruction">请选择一个答案。</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a1" class="hideBlock" src="../xps3/graphics/redX.png"></img></td>
+                           <td><input id="q2a1" type="radio" correct="no" name="question2Grp"></input></td>
+                           <td>
+                              <p>Length 将会变为一个常量—24。</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a2" class="hideBlock" src="../xps3/graphics/greenCheck.png"></img></td>
+                           <td><input id="q2a2" type="radio" correct="yes" name="question2Grp"></input></td>
+                           <td>
+                              <p>无法删除表达式 Width。</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a3" class="hideBlock" src="../xps3/graphics/redX.png"></img></td>
+                           <td><input id="q2a3" type="radio" correct="no" name="question2Grp"></input></td>
+                           <td>
+                              <p>两个表达式都将被删除。</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div class="question" id="question2" answered="false" numanswers="2" questiontype="fillInBlank">
+                  <p>可以使用<strong>表达式</strong>对话框删除系统创建的表达式。</p>
+                  <p class="questionInstruction">请选择一个答案。</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q3a1" class="hideBlock" src="../xps3/graphics/greenCheck.png"></img></td>
+                           <td><input id="q3a1" type="radio" correct="yes" name="question3Grp"></input></td>
+                           <td>
+                              <p>错</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q3a2" class="hideBlock" src="../xps3/graphics/redX.png"></img></td>
+                           <td><input id="q3a2" type="radio" correct="no" name="question3Grp"></input></td>
+                           <td>
+                              <p>对</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div id="showFeedbackContainer"><span showLabel="true" id="feedbackButton" title="Show feedback" dojoType="xps.form.Button" onClick="showQuestionFeedback()">显示答案</span></div>
+            </div>
+            <div class="helpTextContainer">
+               <p class="questionFeedback" id="incorrect">错误！</p>
+               <p class="questionFeedback" id="correct">正确！</p>
+               <div class="questionHelp" id="questionHelp1">
+                  <p>无法删除正在使用中的表达式。</p>
+               </div>
+               <div class="questionHelp" id="questionHelp2">
+                  <p>系统表达式永远都是正在被使用，因此无法删除。</p>
+               </div>
+            </div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

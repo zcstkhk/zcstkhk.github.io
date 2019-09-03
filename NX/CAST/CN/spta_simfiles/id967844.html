@@ -1,0 +1,71 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Loading CAE data from the current folder</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>从当前文件夹加载 CAE 数据</h2>
+         
+         <p>如果所有 CAE 模型组件文件和关联的 CAD 部件都存储在一个单独的文件夹中，则可以在加载 CAD 数据时，选择使 NX 搜索当前文件夹。与某一分析有关的所有文件必须驻留在相同的文件夹中。</p>
+         <p>必须使用<strong>从文件夹</strong>加载选项。该选项显示在<strong>文件</strong>→<strong>选项</strong>→<strong>装配加载选项</strong>对话框的<strong>部件版本</strong>组中。</p>
+         <p>如果<strong>部件版本</strong><strong>加载</strong>选项设为<strong>从文件夹</strong>，则该软件仅在当前文件夹中搜索 CAE 模型组件文件以及关联的 CAD 部件。这意味着，所有与分析相关的数据都必须位于同一个文件夹中。</p>
+         <p>在一个单独的文件夹中存储所有所需的数据，有利有弊。</p>
+         
+         <div class="division">
+            
+           <h3>利：</h3>
+            
+            <ul>
+               
+               <li>
+                 <p>部件和组件可以可靠的加载</p>
+               </li>
+               <li>
+                 <p>可以轻松共享模型               </p>
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>弊：</h3>
+            
+            <ul>
+               
+               <li>
+                 <p>无法方便的组织包含多个仿真文件或 FEM 文件的模型，或者基于大型装配部件的模型</p>
+               </li>
+               <li>
+                 <p>如果主模型部件并未与 CAE 模型存储在同一个文件夹中，则必须先手工加载主模型部件，然后才可以更新模型。要加载主模型部件文件，则选择<strong>文件</strong>→<strong>打开</strong></p>
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>建议</h3>
+            
+            <p>对于相当小的模型和独立分析，<strong>从文件夹</strong>选项提供了方便可靠的方法来加载、管理和共享 CAE 模型数据。但是，要支持基于团队的分析、并行工程、组件重用、大型装配、假设研究等等，您可能需要研究如何定义搜索文件夹或使用 PLM 产品(如 Teamcenter for Simulation)。</p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

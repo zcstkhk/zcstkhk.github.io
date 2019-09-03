@@ -1,0 +1,9 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"轻量级剖视图",file:"xid481147.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"轻量级剖视图概述",file:"pmi_section_views_ltwt_sectionvw_ov.html",type:"topic",parent:""},
+{id:"d5e7",title:"在图纸中继承 PMI 轻量级剖视图",file:"id1320059.html",type:"topic",parent:""},
+{id:"d5e9",title:"复习：PMI 轻量级剖视图",file:"id1385742.html",type:"topic",parent:""},
+{id:"d5e11",title:"创建一个平面类型的轻量级剖视图",file:"id967125.html",type:"activity",parent:""},
+{id:"d5e14",title:"创建方块类型的 PMI 轻量级剖视图",file:"id1385199.html",type:"activity",parent:""}
+]}

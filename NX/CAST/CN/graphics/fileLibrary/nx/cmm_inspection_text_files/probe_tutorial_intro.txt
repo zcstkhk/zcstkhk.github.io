@@ -1,0 +1,38 @@
+LOCALIZATION: This text file loads the text below into into the Flash animation 
+that appears toward the bottom of the file "Constructing a CMM probe" 
+in the CMM Inspection Programming tutorials (Contenta id1338015, /en_US/projects/
+nx/nx8_phase1/collections/nx8_tdoc/nx8_collectionToc/Inspection_and_validation/
+inspection_programming_tutorials/inspection_programming_tutorials/body_topics/
+cmm_tutorials_launch/cmm_tutorials_launch/cmm_tutorials_launch/assembling_probes/
+assembling_probes/assembling_probes_intro/1_assembling_probes_intro. Change only 
+the text between = and the second & on each line. Do not change named/numbered 
+variables (&t1-&t5), or the & and = signs below, , and do not add hard returns. 
+If any special characters do not appear correctly in Flash, see http://www.permadi.com/tutorial/urlEncoding/ 
+to determine the correct URL Encoding. Always save the file in UTF-8 format. 
+
+The following text appears at intervals if the user clicks the Text button. It is the same text 
+that is used in the voice scripts (in Perforce, see //XPS/cms/LANGUAGE/ReleaseProjects/
+nx/nx8_phase1/fileLibrary/nx/cmm_inspection_mp3s/probe_animation_tutorial_script.txt).
+
+&t1=A probe tool is a solid model or assembly that is used in CMM Inspection Programming and Manufacturing applications. The shape of the tool is defined by the solid model rather than traditional CAM Manufacturing parameters such as diameter.&
+
+&t2=Tracking points determine the points on the solid that determine programmed paths.&
+
+&t3=In this tutorial, you will:&
+
+&t3a=Assemble the components of an existing star probe model.&
+
+&t4=Set probe tool tracking points and vector directions&
+
+&t5=And optionally, export your probe tool to a library.&
+
+&t6=Once the probe model is saved to the library, you can use it to create inspection programs and run program simulations.& 
+
+This is the text that appears below the buttons at the start of the animation.
+
+&textSelectionButton=Text&
+&soundSelectionButton=Sound&
+
+This is the callout that shows the CMM library location on the user's computer.
+
+&callout=[install location]\CMM_INSPECTION\resource\library\tool\graphics&

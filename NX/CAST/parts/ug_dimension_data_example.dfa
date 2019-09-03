@@ -1,0 +1,10 @@
+#! NX/KF 7.5
+#
+
+#+
+Represents a dimension data object. Dimension data object is used to create an NX dimension.
+#-
+DefClass: DimensionDataExample (%DimensionData);
+
+
+(Canonical Name Parameter Modifiable) DimensionType: Horizontal;

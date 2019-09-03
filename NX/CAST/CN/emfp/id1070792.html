@@ -1,0 +1,269 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Cut the groove on the front face</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Cut the groove on the front face</h2>
+         
+         
+         <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;"><script type="dojo/method">
+      flashData= {
+          swfSrc : '../xps3/graphics/xpsPlayer.swf',
+          graphSrc : '',
+          align : 'center',
+          base : './',
+          height : '398',
+          width : '384',
+          bgcolor : '#000000',
+          flashVersion : '6',         
+          looping : 'true',
+          play : 'true',
+          menu : 'true',
+          parameters : 'mySound=false,dependentFile1=..%2Fgraphics%2FnonLocalized%2Fnx%2Ficons%2Fanimations%2Fflash%2Fmanufacturing%2Fturning_mfg_op5.swf,dependentFile2=..%2Fxps3%2Fgraphics%2Fnav_buttons.txt'
+      }
+      top.loadFlash(this,flashData);
+    </script></div>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>Create a <span class="uiTerm">Groove Face</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/groove_face.gif" border="0"> operation.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>In the <span class="uiTerm">Location</span> group, set the options as shown.
+                     </p>
+                     
+                  </div>
+                  <div class="stepInformation">
+                     
+                     <table frame="void" rules="none" width="230">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><span class="uiTerm">Program</span> = <span class="literalText">PROGRAM</span></p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" height="71" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><span class="uiTerm">Tool</span> = <span class="literalText">OD_GROOVE_L</span></p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" height="25" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><span class="uiTerm">Geometry</span> = <span class="literalText">AVOIDANCE</span></p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><span class="uiTerm">Method</span> = <span class="literalText">LATHE_GROOVE</span></p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Geometry</span> group, in the <span class="uiTerm">Cut Regions</span> row, click <span class="uiTerm">Edit</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/edit.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>You will define trim points that constrain the cut region so that only the groove on the face is cut.</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/turning_project_graphic74.png"></p>
+                     
+                     <p>Define two trim points (1, 2) at the ends of the horizontal lines to define the cut region (3).</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Cut Regions</span> dialog box, in the <span class="uiTerm">Trim Point 1</span> group, from the <span class="uiTerm">Point Option</span> list, select <span class="uiTerm">Specify</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">Inferred Point</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/common/point.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>Select the end of the horizontal line.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <div class="verbose">
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/turning_project_graphic75.png"></p>
+                     </div>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Trim Point 2</span> group, from the <span class="uiTerm">Point Option</span> list, select <span class="uiTerm">Specify</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>Select the end of the horizontal line.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <div class="verbose">
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/turning_project_graphic76.png"></p>
+                     </div>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span> to accept the geometry containment.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>Generate the tool path using a 2D tool display.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/edit_display.gif" border="0"> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/generate.gif" border="0"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/turning_project_graphic78.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span> to complete the operation.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Operation Navigator</span>, right-click in the background and choose <span class="uiTerm">Program Order View</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         <div class="stepListResult">
+            
+            <table bgcolor="white" border="1" cellpadding="0" cellspacing="1" frame="void" rules="none" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td align="left" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">NC_PROGRAM<br/><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/turning_project_graphic500.gif" border="0">PROGRAM<br/><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/turning_project_graphic503.gif" border="0">CENTERLINE_SPOTDRILL<br/><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/turning_project_graphic501.gif" border="0">CENTERLINE_BREAKCHIP<br/><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/turning_project_graphic505.gif" border="0">FACING<br/><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/turning_project_graphic505.gif" border="0">ROUGH_TURN_OD<br/><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/turning_project_graphic504.gif" border="0"><span class="uiTerm">GROOVE_FACE</span><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/turning_project_graphic502.gif" border="0"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,10 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"精车和粗车",file:"id1083448.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"粗车",file:"id935511.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"创建外侧粗车工序",file:"id946579.html",type:"activity",parent:"d5e5"},
+{id:"d5e7",title:"创建面加工工序",file:"id946585.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e9",title:"精车",file:"finish.html",type:"topic",parent:"",children:[
+{id:"d5e10",title:"创建外侧精车工序",file:"id946596.html",type:"activity",parent:"d5e9"},
+{id:"d5e11",title:"显示处理中的工件",file:"id946602.html",type:"activity",parent:"d5e9"}]}
+]}

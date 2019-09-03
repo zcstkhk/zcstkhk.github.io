@@ -1,0 +1,89 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Modeling convection</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Modeling convection</h2>
+         <p>You can model convection implicitly using boundary conditions provided that you define a <span class="uiTerm">Convection to Environment</span> constraint on:
+         </p>
+         <ul>
+            
+            <li>
+               
+               <p>Faces of 3D solids</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>2D elements</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>1D elements with cross area defined</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>0D elements with diameter defined</p>
+               
+            </li>
+            
+         </ul>
+         <p>You can use different types according to the phenomena modeled.</p>
+         <ul>
+            
+            <h4>Convection to Environment</h4>
+            
+            <li>
+               
+               <p>Use this option when you know either the <span class="uiTerm">Convection Coefficient</span> or <span class="uiTerm">Parameter and Exponent</span> and the fluid temperature.
+               </p>
+               
+            </li>
+            
+         </ul>
+         <ul>
+            
+            <h4>Free Convection to Environment</h4>
+            
+            <li>
+               
+               <p>Use this option when you want to use a specific free convection correlation (example: hot air rising). </p>
+               
+            </li>
+            
+         </ul>
+         <ul>
+            
+            <h4>Forced Convection to Environment</h4>
+            
+            <li>
+               
+               <p>Use this option when you want to use a specific forced convection correlation (example: fans). </p>
+               
+            </li>
+            
+         </ul>
+         <p>Both in transient and steady state solves, the solver calculates a single convection coefficient value for the entire convecting surface based on the characteristic information you specify.</p>
+         <p>Convection can also be explicitly model using a coupled NX Thermal and Flow solution by simulating the fluid volume and the embedded volumes and surfaces in a model.</p>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/maya/pcb_mapping/pcbmapping_001.gif"></p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

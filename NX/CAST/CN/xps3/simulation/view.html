@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <title>Activity View</title>
+  </head>
+  <body class="soria xps">
+
+	<div dojoType="dijit.Dialog" id="confirmSimulationDialog" title="...">
+		<table>
+			<tr>
+				<td valign="top"> <img src="../xps3/graphics/info.png"> </td>
+				<td>
+					<p dojoType="dijit.layout.ContentPane" id="simulatedEnv">...</p>
+					<p dojoType="dijit.layout.ContentPane" id="performSteps">...</p>
+					<p><input type="checkbox" name="confirmSim" id="confirmSim"> <span id="dontShowAgain">...</span></p>
+				</td>
+			<tr>
+		</table>
+		<button id="closeButton" dojoType="xps.form.Button" onClick="closeConfirmSimulationDialog()" label="..."></button>
+	</div>
+
+    <div id="topBorderContainer" design="sidebar" dojoType="dijit.layout.BorderContainer" gutters="false" class="borderContainer">
+
+      <!-- left Pane -->
+      <div dojoType="dijit.layout.BorderContainer" gutters="false" region="left" splitter="true" style="width:400px;">
+
+        <div dojoType="dijit.layout.ContentPane" region="top" class="topPane" splitter="false">
+          <div class="topDiv">
+
+            <div class="rightSpacer"></div>
+
+            <div class="navMenu">
+              <span id="leftButton" title="..." dojoType="xps.form.Button" onClick='gotoPrevPage()' iconClass="prevIcon" showLabel="false"></span>
+
+              <span id="dropDownButton" dojoType="xps.form.DropDownButton">
+                <span>...</span>
+                <div class="dropDownMenu" dojoType="dijit.Menu" id="dropDownMenu"></div>
+              </span>
+
+              <span id="rightButton" title="..." dojoType="xps.form.Button" onClick='gotoNextPage()' iconClass="nextIcon" showLabel="false"></span>
+            </div>
+
+            <div class="title" id="topicSetTitle">...</div>
+
+          </div>
+
+        </div>
+
+        <div id="mainDiv" dojoType="dijit.layout.ContentPane" class="mainPane" region="center" extractContent="true" splitter="true">
+          loading main content...
+        </div>
+	  </div>
+
+      <!-- Center Pane -->
+      <div id="simulationPane" dojoType="dijit.layout.ContentPane" class="simulationPane" region="center" extractContent="true" >
+        <div class="loading">loading simulation...</div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

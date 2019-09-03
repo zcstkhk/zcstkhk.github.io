@@ -1,0 +1,131 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>创建装配有限元模型</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>创建装配有限元模型</h2><a name="ndxgenid_spta_afem_15"></a>
+         
+         
+         <p>要创建关联的装配有限元模型，右击<strong>仿真导航器</strong>中的装配部件节点并选择<strong>新建装配有限元模型</strong>。</p>
+         
+         <p>要创建非关联的装配有限元模型：</p>
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>选择<strong>文件&rarr;新建</strong>。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>点击<strong>仿真</strong>选项卡并选择一个装配有限元模型模板。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>清除<strong>映射到部件</strong>复选框。</p>
+               
+            </li>
+            
+         </ol>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/assembly_fem/create_afem.gif"></p>
+         
+         
+         <p>如果创建关联装配有限元模型，则加载的装配部件将显示为装配有限元模型 节点的子级，组件部件显示为装配部件节点的子级。</p>
+         
+         <table border="0" cellpadding="0" cellspacing="0" class="navigator" width="500" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="100*">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/assembly_fem/nav_assyfem.gif" border="0"> 装配有限元模型</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="middle">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/assembly_fem/nav_assy_loaded.gif" border="0">已加载的 CAD 装配</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="middle">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/assembly_fem/nav_comp_ignored.gif" border="0"> CAD 组件部件(<strong>忽略</strong>)</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="middle">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/assembly_fem/nav_comp_ignored.gif" border="0"> CAD 组件部件(<strong>忽略</strong>)</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="middle">
+                  
+                  <td class="text_bolditalic" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/assembly_fem/nav_comp_ignored.gif" border="0"> CAD 组件部件(<strong>忽略</strong>)</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="middle">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/assembly_fem/nav_comp_ignored.gif" border="0"> CAD 组件部件(<strong>忽略</strong>)</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <p>由于 CAD 组件当前未映射到组件有限元模型，因此其状态设置为<strong>忽略</strong>，这表示在分析期间将不考虑这些 CAD 组件。由于新的装配有限元模型 中没有有限元模型 组件，因此图形窗口是空的。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

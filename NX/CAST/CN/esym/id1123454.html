@@ -1,0 +1,88 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>切除肋板</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>切除肋板</h2>
+         
+         
+         <p>下一步，您将在部件顶部的肋板下方创建腔体，为了使肋板内部及外部正确更新，您需要先将肋板从部件中切除，然后创建腔体并把肋板粘贴回部件，下图显示的是完成后的肋板及腔体。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/synchronous_modeling/activities_modeling_synchr_mod_proj1_sc.png"></p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在<strong>同步建模</strong>工具条上的<strong>重用</strong>下拉菜单中，选择<strong>剪切面</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/modeling/direct_modeling/cut_face.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在选择条上的<strong>面规则</strong>列表中，选择<strong>键槽面</strong>，然后点击<strong>包含边界倒圆</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/selection_bar/include_boundary_blends.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>选择肋板的其中一个内侧面，然后点击<strong>应用</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/synchronous_modeling/activities_modeling_synchr_mod_proj1_sel11.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在选择条上的<strong>面规则</strong>列表中，选择<strong>筋板面</strong>，<strong>包含边界倒圆 </strong><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/selection_bar/include_boundary_blends.gif" border="0"> 应该仍然处于选中状态。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>选择肋板的其中一个外部面，然后点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/synchronous_modeling/activities_modeling_synchr_mod_proj1_sel12.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         <div class="stepListResult">
+            
+            <p>在<strong>部件导航器</strong>中，您应该能够看到原始实体，以及两个您刚刚从部件中切除的新片体，您将在稍后把这些片体粘贴回部件中。</p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

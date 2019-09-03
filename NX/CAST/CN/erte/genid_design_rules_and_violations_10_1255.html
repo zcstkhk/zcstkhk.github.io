@@ -1,0 +1,70 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>设计规则与违例</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>设计规则与违例</h2><a name="ndxgenid_erte_33"></a>
+         
+         
+         <p>设计规则(最小折弯半径、最小直线长度、锁定的样条长度以及接头兼容性)是用于检查管线装配是否符合一组预先定义的标准的准则。这些设计规则与设计是并行的，会在管线创建与编辑完成之后立即进行检查，规则可以定义为交互或者批处理。</p>
+         
+         <p>规则将储存在由下列环境变量定义的位置：</p>
+         
+         <ul class="unmarkedList">
+            <li>
+               
+               <p>UGII_ROUTING_DESIGN_RULES_PATH</p>
+               
+            </li>
+         </ul>
+         
+         <p>对于电气管线布置，默认位置为：</p>
+         
+         <ul class="unmarkedList">
+            <li>
+               
+               <p>$UGII_BASE_DIR\ugroute_elec\rules\</p>
+               
+            </li>
+         </ul>
+         
+         <p>对于机械管线布置，默认位置为：</p>
+         
+         <ul class="unmarkedList">
+            <li>
+               
+               <p>$UGII_BASE_DIR\ugroute_mech\rules\</p>
+               
+            </li>
+         </ul>
+         
+         <p>如果设计规则检查出标准违例，就会创建违例对象，并将它附着到引起违例的对象上，并且在视图这哦你高亮显示违例对象，同时打开<strong>设计规则违例</strong>对话框以提示您为什么该对象被判定为违背设计规则，以及违例何时创建或者最后一次更新。删除违例的唯一方法是更改装配以满足设计规则，或者覆写违例，但是您需要提供写入原因或解释。</p>
+         
+         <p>您可以选择发生时就解决违例，或者稍后回过头来解决，要查看当前部件中已有的违例，使用<strong>浏览违例</strong>。</p>
+         <a name="ndxgenid_erte_34"></a>
+         
+         <a name="ndxgenid_erte_35"></a>
+         
+         
+         <p>要手动运行设计规则检查，使用<strong>交互检查</strong>或者<strong>批处理检查</strong>选项。</p>
+         <a name="ndxgenid_erte_36"></a>
+         
+         <a name="ndxgenid_erte_37"></a>
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

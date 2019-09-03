@@ -1,0 +1,82 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>导入和定位光栅图像</title>
+   </head>
+   <body>
+      <div class="contentType_procedure">
+         <h2><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/shape_studio/visualize_shape/raster_image.gif" border="0">&nbsp;导入和定位光栅图像</h2>
+         <p>本例将展示如何在某一部件(在该本例中为矩形)的指定区域内导入并定位光栅图像。</p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>在开始前，确保将渲染样式设为<strong>艺术外观</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/view/studio.gif" border="0">。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>在<strong>可视化形状</strong>工具条上，单击<strong>光栅图像</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/shape_studio/visualize_shape/raster_image.gif" border="0">，或选择<strong>视图</strong>→<strong>可视化</strong>→<strong>光栅图像</strong>。</p>
+               
+               <p><strong>光栅图像</strong>对话框将打开。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在<strong>平面设置</strong>组中，选中<strong>锁定宽高比</strong>复选框。</p>
+            </li>
+            <li>
+              <p>单击<strong>指定 TIFF 图像</strong>。</p>
+              <p><strong>TIFF 图像文件</strong>对话框将打开。</p>
+            </li>
+            <li>
+              <p>导航至所需位置并选择 .tif 文件。</p>
+            </li>
+            <li>
+              <p>单击<strong>确定</strong>以关闭 <strong>TIFF 图像文件</strong>对话框。</p>
+            </li>
+            <li>
+              <p>在<strong>光栅图像</strong>对话框中，在<strong>操作</strong>组中单击<strong>创建光栅图像</strong>。</p>
+              <p>在当前 WCS 原点和方位(位于 XY 平面)上创建片体，然后 TIFF 图像被映射到该片体。</p>
+              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/render_view/raster_images/raster_image_ht1.gif"></p>
+            </li>
+            
+            <li>
+               
+               <p>在矩形内定位铁光栅图像的主体。在光栅图像的区域内定位光标，从而可以看到转换符号 <img align="bottom" src="../graphics/nonLocalized/nx/gateway/render_view/raster_images/translation_symbol.gif" border="0">。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>单击并将光栅图像拖动就位，从而铁的图像可位于矩形内。</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/render_view/raster_images/raster_image_ht_anim.gif"></p>
+            </li>
+            <li>
+              <p>单击<strong>确定</strong>以关闭<strong>光栅图像</strong>对话框。</p>
+              <p>现在可以添加样条来与图像轮廓匹配，并开始开发必要的曲面来定义铁的模型。</p>
+              <p>&nbsp;</p>
+            </li>
+         </ol>
+      </div>
+   </body>
+</html>

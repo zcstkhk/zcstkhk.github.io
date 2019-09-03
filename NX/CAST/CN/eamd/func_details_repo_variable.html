@@ -1,0 +1,205 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>位置替代概述</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>位置替代概述</h2>
+         
+         <p>通过替代命令，可以使组件在更高级别装配中的位置与在其直接父项中的位置不同。组件的新位置会在用于创建替代的装配的所有父装配中显示。</p>
+         <p>替代命令也称为位置替代、组件位置替代、变量定位或变量组件定位。 </p>
+         <p><strong>装配导航器</strong>中的<strong>位置</strong>列显示选定的组件是否被替代；替代是隐式的(由 NX 创建)还是显式的(由您创建)；以及组件的配对约束状态。</p>
+         <p>即使对更低级别装配目标没有写权限，也可以创建或保存替代。</p>
+         
+         <div class="division">
+            
+           <h3>位于何处？</h3>
+            
+            <p>对于装配约束</p>
+            
+            <table cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">装配</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" height="49" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">先决条件</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" height="49" rowspan="1" valign="bottom">
+                     
+                     <p>将<strong>首选项</strong>→<strong>装配</strong>→<strong>交互</strong>设置为<strong>装配约束</strong></p>
+                     
+                     <p class="no-bottom-margin">选择的组件必须具有至少比它高两级的父项。如果未选择任何子装配的子项，则可以选择子装配而不选择组件。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">快捷菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                  <p><strong>装配导航器</strong>→右键单击组件节点→<strong>替代位置</strong>                  </p></td>
+                  
+               </tr>
+               
+            </table>
+            
+            <p>对于配对条件</p>
+            
+            <table cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">装配</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" height="49" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">先决条件</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" height="49" rowspan="1" valign="bottom">
+                     
+                     <p>将<strong>首选项</strong>→<strong>装配</strong>→<strong>交互</strong>设置为<strong>配对条件</strong></p>
+                     
+                     <p class="no-bottom-margin">选择的组件必须具有至少比它高两级的父项。如果未选择任何子装配的子项，则可以选择子装配而不选择组件。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>装配</strong>→<strong>重定位组件</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assemblies/reposition_component.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                  <p><strong>装配</strong>→<strong>组件位置</strong>→<strong>重定位组件</strong>                  </p></td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">快捷菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                  <p><strong>装配导航器</strong>→右键单击组件节点→<strong>替代位置</strong>                  </p></td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td class="locator_shade" colspan="*" rowspan="*" valign="bottom">
+                     
+                     <p class="no-bottom-margin">对话框中的位置</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="*" rowspan="*" valign="bottom">
+                     
+                     <table cellspacing="0" cellpadding="0">
+                       <tr>
+                         <td colspan="*" rowspan="*" valign="center"></td>
+                         <td colspan="*" rowspan="*" valign="center"><p><strong>选项</strong>选项卡→<strong>变量定位</strong>组</p></td>
+                       </tr>
+                  </table></td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

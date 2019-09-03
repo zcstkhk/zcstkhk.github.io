@@ -1,0 +1,191 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>The High Quality Image dialog box</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>高质量图像对话框</h2>
+         
+         <p><STRONG>高质量图像</STRONG>对话框分为三个部分：</p>
+         
+         <table border="0" cellpadding="2" cellspacing="1" width="90%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="53*">
+               
+               <col span="1" width="140*">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/gateway/render_view/high_quality_images/high_quality_shade_dialog.png"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <ol type="1" start="1">
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">渲染方法</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">高质量图像(HQI)选项</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">操作选项</p>
+                           
+                        </li>
+                        
+                     </ol>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         
+         <div class="division">
+            
+            <h3>渲染方法</h3>
+            
+            <p>使用<strong>方法</strong>来指定渲染方法，方法是按越来越真实，同时花费的处理时间也越来越多的顺序来组织的。</p>
+            
+            <p>各种渲染方法表示一种不同的数学成像算法，并且都有特定的特性与应用。</p>
+            
+            <p><a href="#" onclick="showDialog('genid_rendering_methods_84_1664')">可用的渲染方法</a></p>
+            
+            <p><a href="#" onclick="showDialog('genid_shading_methods_153_336')">使用各种渲染方法可用的着色特征</a></p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>高质量图像(HQI)选项</h3>
+            
+            <p><img align="middle" src="../graphics/nonLocalized/nx/icons/icons/dialogs/shape_studio/high_quality_image/image_preferences.gif" border="0"><strong>图像首选项</strong>将控制如下着色选项：</p>
+            
+            <div class="verbose">
+               <ul>
+                  
+                  <li>
+                     
+                     <p>显示颜色</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>图像大小</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>阴影</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>分辨率</p>
+                     
+                  </li>
+                  
+               </ul>
+            </div>
+            
+            <p><img align="middle" src="../graphics/nonLocalized/nx/icons/icons/dialogs/shape_studio/high_quality_image/information.gif" border="0">如果需要信息，可使用<strong>信息</strong>选项：</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>着色过程</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>如何设置模型着色</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>当您使用您不熟悉的模型渲染时，HQI 信息选项会非常有用。</p>
+            
+            <p><img align="middle" src="../graphics/nonLocalized/nx/icons/icons/dialogs/shape_studio/high_quality_image/import_from_lwk_file.gif" border="0"><strong>从 LWK 文件导入</strong>(从目录中导入 Lightworks 文件)通过检索 LWK 文件来定制材料以及光源配置。</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>操作选项</h3>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>如果已经完成图像着色，将会激活<strong>保存</strong>按钮<span class="uiTerm">，此按钮将打开<strong>保存图像</strong>对话框，如果图像文件非常大，您也可以压缩它。</span></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>如果已经完成图像着色，<strong>绘图</strong>按钮将变为可用，在此您可以控制绘图的分辨率与质量。</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/shape_studio/visualize_shape/start_shade.gif" border="0"><strong>开始着色</strong>将会开始图像生成过程。</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/shape_studio/visualize_shape/erase_shade.gif" border="0"><strong>取消着色</strong>将会清除着色的图像。</p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         <div dojoType="dijit.Dialog" id="genid_rendering_methods_84_1664" title="可用的渲染方法">
+            <div dojoType="dijit.layout.ContentPane" href="id787626.html" extractContent="true"></div>
+         </div>
+         <div dojoType="dijit.Dialog" id="genid_shading_methods_153_336" title="使用各种渲染方法可用的着色特征">
+            <div dojoType="dijit.layout.ContentPane" href="id787631.html" extractContent="true"></div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>简化样条曲线</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>简化样条曲线</h2>
+         <div class="estimatedTime">
+           <p>预计完成这堂课需要：3&ndash;5  分钟</p>
+         </div>
+         <div></div>
+         <p><strong>简化 </strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/curves/curve/simplify_curve.gif" border="0" alt="Insert &gt; Curve from Curves &gt; Simplify" title="Insert &gt; Curve from Curves &gt; Simplify"> 命令用于创建一个由最佳拟合直线和圆弧组成的线串。 </p>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/simplify_curve/other_graphic79_nx5.png"></p>
+         <p>在简化选中曲线之前，可以指定原始曲线在转换之后的状态。可以针对原始曲线选择以下选项之一：</p>
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>保持</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>在创建直线和圆弧之后保留原始曲线。在选中曲线的上面创建曲线。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>删除</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>简化之后移除选中曲线。移除选中曲线之后，不能再恢复。(如果选择&ldquo;撤消&rdquo;，可以恢复原始曲线但不再被简化。)</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>隐藏</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>创建简化曲线之后，将选中的原始曲线从屏幕上移除，但并未被删除。</p>
+                  
+               </div>
+            </div>
+         </div>
+         <p>简化样条后，使用<strong>距离公差</strong>将其近似为圆弧及直线。如果样条很长，近似于直线，并使用默认距离公差（0.01 英吋），则将使用半径超出最大部件尺寸限制 1000 x 1000 x 1000 米的大圆弧来近似计算样条。通过增加距离公差可避免该问题。</p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>使用<strong>编辑→显示和隐藏→显示</strong>命令来将隐藏曲线返回到屏幕中。</p>
+                  
+               </td>
+            </tr>
+         </table><a name="id740887" id="id740887"></a><div id="footer"></div>
+      </div>
+   </body>
+</html>

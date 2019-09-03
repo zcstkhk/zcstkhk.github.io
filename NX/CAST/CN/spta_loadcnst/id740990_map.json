@@ -1,0 +1,16 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开部件并开始高级仿真",file:"id321865.html",type:"topic",parent:""},
+{id:"d7e3",title:"重置对话框内存",file:"id353012.html",type:"topic",parent:""},
+{id:"d7e4",title:"创建 FEM 和仿真文件",file:"id154266.html",type:"topic",parent:""},
+{id:"d7e5",title:"显示理想化部件",file:"id154486.html",type:"topic",parent:""},
+{id:"d7e6",title:"提升部件",file:"id970742.html",type:"topic",parent:""},
+{id:"d7e7",title:"创建基准面",file:"id155236.html",type:"topic",parent:""},
+{id:"d7e8",title:"分割顶面",file:"id154681.html",type:"topic",parent:""},
+{id:"d7e9",title:"显示 FEM 文件",file:"id154436.html",type:"topic",parent:""},
+{id:"d7e10",title:"创建网格收集器",file:"xid376959.html",type:"topic",parent:""},
+{id:"d7e11",title:"划分部件网格",file:"id154966.html",type:"topic",parent:""},
+{id:"d7e12",title:"显示仿真文件",file:"id154541.html",type:"topic",parent:""},
+{id:"d7e14",title:"施加压力载荷",file:"id154041.html",type:"topic",parent:""},
+{id:"d7e15",title:"应用固定约束",file:"id195991.html",type:"topic",parent:""},
+{id:"d7e16",title:"求解模型",file:"id218487.html",type:"topic",parent:""},
+{id:"d7e17",title:"显示结果",file:"id155431.html",type:"topic",parent:""}]}

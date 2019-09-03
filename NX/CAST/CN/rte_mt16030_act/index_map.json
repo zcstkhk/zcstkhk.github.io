@@ -1,0 +1,24 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"电气管线布置训练",file:"titlepage.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"审核部件",type:"topicMap",parent:"",children:[
+{id:"d5e6",title:"审核矩形连接器",file:"id1171004.html",type:"activity",parent:"d5e5"},
+{id:"d5e7",title:"审核一个夹子",file:"id1171020.html",type:"activity",parent:"d5e5"},
+{id:"d5e8",title:"Qualify a circular connector",file:"id1171036.html",type:"activity",parent:"d5e5"},
+{id:"d5e9",title:"Qualify a backshell with a built-in path",file:"id1171052.html",type:"activity",parent:"d5e5"}]},
+
+{id:"d5e11",title:"Placing parts",type:"topicMap",parent:"",children:[{id:"d5e12",title:"Create a wiring harness subassembly",file:"id1172319.html",type:"activity",parent:"d5e11"},{id:"d5e13",title:"Place parts in a wiring assembly",file:"id1172335.html",type:"activity",parent:"d5e11"}]},
+
+{id:"d5e15",title:"Routing segments",type:"topicMap",parent:"",children:[{id:"d5e16",title:"Create routing segments for the wiring harness",file:"id1172397.html",type:"activity",parent:"d5e15"},{id:"d5e17",title:"Edit routing paths",file:"id1172413.html",type:"activity",parent:"d5e15"}]},
+
+{id:"d5e19",title:"Working with electrical data",type:"topicMap",parent:"",children:[{id:"d5e20",title:"Import electrical data into a part",file:"id1169794.html",type:"activity",parent:"d5e19"}]},
+
+{id:"d5e23",title:"Assigning components and connections",type:"topicMap",parent:"",children:[{id:"d5e24",title:"Create assignments and wire routings",file:"id1173964.html",type:"activity",parent:"d5e23"},{id:"d5e25",title:"Create status reports",file:"id1173996.html",type:"activity",parent:"d5e23"}]},
+
+{id:"d5e27",title:"Assigning overstock",type:"topicMap",parent:"",children:[{id:"d5e28",title:"Assign overstock",file:"id1174244.html",type:"activity",parent:"d5e27"},{id:"d5e29",title:"Assign overstock at points and intervals",file:"id1174260.html",type:"activity",parent:"d5e27"},{id:"d5e30",title:"Edit overstock",file:"id1174333.html",type:"activity",parent:"d5e27"},{id:"d5e31",title:"Space reservation and stock offset points",file:"id1174292.html",type:"activity",parent:"d5e27"}]},
+
+{id:"d5e33",title:"Create a Formboard",type:"topicMap",parent:"",children:[{id:"d5e34",title:"Create and orient a formboard",file:"id1174397.html",type:"activity",parent:"d5e33"},{id:"d5e35",title:"Bend harness segments and rotate components",file:"id1174429.html",type:"activity",parent:"d5e33"},{id:"d5e36",title:"Annotate the formboard",file:"id1174523.html",type:"activity",parent:"d5e33"}]},
+
+{id:"d5e38",title:"Projects",file:"id985566.html",type:"topic",parent:"",children:[{id:"d5e39",title:"Review the assembly",file:"id1182075.html",type:"activity",parent:"d5e38"},{id:"d5e40",title:"Place parts",file:"id1182161.html",type:"activity",parent:"d5e38"},{id:"d5e41",title:"Create routing segments",file:"id1182177.html",type:"activity",parent:"d5e38"},{id:"d5e42",title:"Assign components and connectors",file:"id1182193.html",type:"activity",parent:"d5e38"},{id:"d5e43",title:"Create a formboard",file:"id1182209.html",type:"activity",parent:"d5e38"}]}
+
+]}

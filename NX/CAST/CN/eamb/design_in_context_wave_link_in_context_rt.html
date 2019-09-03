@@ -1,0 +1,79 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>关联设计选择范围</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>关联设计选择范围</h2>
+         <p>&ldquo;选择&rdquo;条上的<strong>选择范围</strong>(1)和<strong>创建部件间链接</strong>(2)选项有助于您在装配的关联中进行设计。</p>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/interpart_modeling/design_in_context/assy_selection.png"></p>
+         <p>使用<strong>选择范围</strong>选项可指出您需要的选择范围。可在以下范围内选择对象：</p>
+         <ul>
+           <li>
+             <p>整个装配</p>
+           </li>
+           <li>
+             <p>仅当前工作部件</p>
+           </li>
+           <li>
+             <p>工作部件及其组件</p>
+           </li>
+         </ul>
+        <p>从工作部件以外的部件中选择几何体的一些原因如下：</p>
+         <ul>
+           <li>
+             <p>从相邻组件选择面或边以定义工作部件中某个拉伸特征或回转特征的轮廓。</p>
+           </li>
+           <li>
+             <p>选择一个面以定义工作部件中某个拉伸的限制。</p>
+           </li>
+         </ul>
+         <div class="division">
+            
+           <h3>使用建模命令创建 WAVE 链接</h3>
+            
+            <p>您可以从其他组件中直接选择几何体并在许多建模命令执行过程中自动创建 WAVE 链接，具体取决于<strong>选择范围</strong>和<strong>创建部件间链接</strong>的设置。这将在部件之间建立关联关系，使您对一个部件所作的更改可以驱动另一个部件的设计。</p>
+            <p><strong>选择范围</strong>和<strong>创建部件间链接</strong>设置对 WAVE 链接有以下影响：</p>
+            <ul>
+              <li>
+                <p>如果从<strong>选择范围</strong>列表中选择<strong>整个装配</strong>并打开<strong>创建部件间链接</strong>按钮，则从工作部件及其子项以外选择几何体时，将创建 WAVE 链接。</p>
+              </li>
+              <li>
+                <p>如果从<strong>选择范围</strong>列表中选择<strong>整个装配</strong>并关闭<strong>创建部件间链接</strong>按钮，则可以从工作部件以外选择几何体，但不会创建关联的 WAVE 链接。</p>
+              </li>
+              <li>
+                <p>如果从<strong>选择范围</strong>列表中选择<strong>在工作部件和组件内部</strong>，行为将与选择<strong>整个装配</strong>时一样，但只能从工作部件的子项（其中工作部件是装配）中选择部件间几何体。</p>
+              </li>
+              <li>
+                <p>如果从<strong>选择范围</strong>列表中选择<strong>仅在工作部件内部</strong>，则只能在特征创建过程中从工作部件中选择几何体。</p>
+              </li>
+            </ul>
+           <p>选择部件间几何体时，支持对以下选项应用&ldquo;选择意图&rdquo;规则：</p>
+            <ul>
+              <li>
+                <p><strong>在相交处停止</strong></p>
+              </li>
+              <li>
+                <p><strong>跟随圆角</strong></p>
+              </li>
+              <li>
+                <p><strong>特征内成链</strong></p>
+              </li>
+            </ul>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

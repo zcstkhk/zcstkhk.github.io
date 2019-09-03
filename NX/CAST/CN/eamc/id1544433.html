@@ -1,0 +1,196 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>查看并求解警告</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>查看并求解警告</h2>
+         
+         
+         <p>仅剩的一个未求解的约束是一个警告状态，表示它还未被求解，但是它并没有与其它约束冲突。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>如果需要展开<strong>状态 = 警告</strong>节点。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>对<strong>接触 (DES06_GK_FRAME, DES06_GKENGINE)</strong> 节点，将您的光标停在<strong>状态</strong>列中的图标上。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>这个图标的工具提示是：<span class="messageText">引用的对象已被删除或抑制</span>。</p>
+                     
+                    <p>当您查看这个约束时，您会发现您的设计意图不再需要它。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                 <p>删除这个约束</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>警告被解决了，<strong>约束导航器</strong>显示装配中不再有任何约束问题。</p>
+                     
+                     <table bgcolor="white" border="0" cellpadding="0" cellspacing="0" class="navigator" width="90%" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" width="177*">
+                           
+                           <col span="1" width="22*">
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td colspan="2" rowspan="1">
+                                 
+                                <p class="no-bottom-margin">约束导航器</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                <p class="no-bottom-margin">名称 (按约束状态分组)</p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                <p class="no-bottom-margin">状态</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/cn_cn_top_level_work_part.png" border="0"> 工作部件</p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"></p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr valign="middle">
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/cn_cn_folder_nochildren.png" border="0"> 状态 = 错误 (0)
+                                 </p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"></p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr valign="middle">
+                              
+                              <td class="text_bolditalic" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/cn_cn_folder_expanded.png" border="0"> 状态 = 警告 (0)
+                                 </p>
+                                 
+                              </td>
+                              
+                              <td class="text_bolditalic" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"></p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td class="text_bolditalic" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/cn_cn_folder_nochildren.png" border="0"> 状态 = 信息 (0)
+                                 </p>
+                                 
+                              </td>
+                              
+                              <td class="text_bolditalic" colspan="1" rowspan="1">
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td class="text_bolditalic" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/cn_cn_folder_children.png" border="0"> 状态 = 正常 (134)
+                                 </p>
+                                 
+                              </td>
+                              
+                              <td class="text_bolditalic" colspan="1" rowspan="1">
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                 <p>关闭所有部件。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

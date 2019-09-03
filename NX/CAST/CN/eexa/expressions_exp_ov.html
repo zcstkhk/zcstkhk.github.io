@@ -1,0 +1,157 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>表达式</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>表达式</h2>
+         
+         <p><img align="bottom" src="../graphics/nonLocalized/nx/modeling/expressions/expressions_ico.gif" border="0"> 表达式是定义一些特征特性的算术或条件公式。</p>
+         
+         <p>可以使用表达式来控制部件特征之间的关系或者装配中部件之间的关系。例如，可以用长度描述支架的厚度。如果托架的长度改变，则它的厚度会自动更新。表达式可以定义、控制模型的诸多尺寸，如特征或草图的尺寸。</p>
+         <p>表达式内的公式可包括变量、函数、数字、运算符和符号的组合。可将表达式名插入其他表达式的公式字符串中。</p>
+         <p>表达式命名约定分为以下两类：</p>
+        <ul>
+           <li>
+             <p>用户创建的<em>用户表达式</em>。也称之为用户定义的表达式。用户表达式可具有明文名。</p>
+           </li>
+           <li>
+             <p><em>软件表达式</em>，指由 NX 创建的表达式。这些表达式以小写字母 "p" 开头，后面为数字，例如 "p53"。</p>
+           </li>
+         </ul>
+         <p>以下是表达式、其公式与结果值的示例：</p><table cellpadding="2" cellspacing="4" width="95%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="54*">
+               
+               <col span="3" width="163*">
+               
+            </colgroup>
+            
+            <thead>
+               
+               <tr>
+                 <td colspan="1" rowspan="1" align="center" bgcolor="silver"><p>表达式名</p></td>
+                 <td colspan="1" rowspan="1" align="center" bgcolor="silver"><p>其他软件表达式名</p></td>
+                 <td colspan="1" rowspan="1" align="center" bgcolor="silver"><p>公式</p></td>
+                 <td colspan="1" rowspan="1" align="center" bgcolor="silver"><p>值</p></td>
+               </tr>
+               <tr bgcolor="#f0f0f0">
+                 <td colspan="1" rowspan="1" align="center" valign="top"><p>宽度</p></td>
+                 <td colspan="1" rowspan="1" align="center" valign="top"><p>-</p></td>
+                 <td colspan="1" rowspan="1" align="center" valign="top"><p>22</p></td>
+                 <td colspan="1" rowspan="1" align="center" valign="top"><p>22</p></td>
+               </tr>
+               <tr bgcolor="#f0f0f0">
+                 <td colspan="1" rowspan="1" align="center" valign="top"><p>长度</p></td>
+                 <td colspan="1" rowspan="1" align="center" bgcolor="#F4F4F4" valign="top"><p>-</p></td>
+                 <td colspan="1" rowspan="1" align="center" bgcolor="#F4F4F4" valign="top"><p>5*宽度</p></td>
+                 <td colspan="1" rowspan="1" align="center" bgcolor="#F4F4F4" valign="top"><p>110</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1" align="center" bgcolor="#F0F0F0" valign="top"><p>高度</p></td>
+                 <td colspan="1" rowspan="1" align="center" bgcolor="#F4F4F4" valign="top"><p>-</p></td>
+                 <td colspan="1" rowspan="1" align="center" bgcolor="#F4F4F4" valign="top"><p>if(长度&lt;100)(45) else(65)</p></td>
+                 <td colspan="1" rowspan="1" align="center" bgcolor="#F4F4F4" valign="top"><p>65</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1" align="center" bgcolor="#F0F0F0" height="44" valign="top"><p>p39</p></td>
+                 <td colspan="1" rowspan="1" align="center" bgcolor="#F4F4F4" height="44" valign="top"><p>(FLANGE(6) 折弯许用半径公式）</p></td>
+                 <td colspan="1" rowspan="1" align="center" bgcolor="#F4F4F4" height="44" valign="top"><p>(p26+(p64*0.44))*rad((-p24))</p></td>
+                 <td colspan="1" rowspan="1" align="center" bgcolor="#F4F4F4" height="44" valign="top"><p>18.849537</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1" align="center" bgcolor="#F0F0F0" valign="top"><p>p16</p></td>
+                 <td colspan="1" rowspan="1" align="center" bgcolor="#F4F4F4" valign="top"><p>（Extract Region(7) 角度公差）</p></td>
+                 <td colspan="1" rowspan="1" align="center" bgcolor="#F4F4F4" valign="top"><p>45.0</p></td>
+                 <td colspan="1" rowspan="1" align="center" bgcolor="#F4F4F4" valign="top"><p>45</p></td>
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+            </tbody>
+            
+         </table>
+         
+         <div class="division">
+            
+           <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="4" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                  <p><strong>工具</strong>→<strong>表达式</strong>                  </p></td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">部件导航器</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">在<strong>主</strong>面板或<strong>详细信息</strong>面板中，右键单击表达式并选择<strong>在表达式编辑器中编辑</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">对话框</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">在支持的对话框中，单击 <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/common/parameter_entry_options.gif" border="0"> 并选择<strong>公式</strong>。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

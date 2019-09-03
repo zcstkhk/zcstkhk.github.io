@@ -1,0 +1,60 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>CAE 模型文件</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>CAE 模型文件</h2>
+         
+         <p>在高级仿真中，<em>CAE 模型</em>是一组包含执行分析所需全部数据的文件。最简单的 CAE 模型由两个文件组成：               </p>
+         <ul>
+            <li>
+              <p><em>仿真文件</em>，该文件包含边界条件和特定于求解器的数据</p>
+            </li>
+            <li>
+              <p><em>FEM 文件</em>(有限元模型文件)，该文件包含网格数据以及物理属性和材料属性。FEM 文件与 NX 主模型概念保持一致，是仿真文件的组件            </p>
+            </li>
+            
+         </ul>
+         
+         <p>CAE 模型与 CAD 部件 (.prt) 文件中包含的模型几何体相关联。可以将模型与 NX 部件文件相关联，也可以创建<em>理想化部件文件</em>，以管理与实时 CAD 数据无关的特定于分析的几何体修改。</p>
+         
+         <a name="genid_spta_simfiles_8"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/data_management/sim_files/files_overview.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>边界条件 (1)；组件有限元模型文件 (2)；仿真文件 (3)</h4>
+         </div>
+         
+         
+         <p>由于分析数据在多个文件间分割，您可以更加轻松和高效地管理系统资源、支持基于团队的分析和并行工程，以及重用 CAD 几何体和有限元数据进行多项分析。</p>
+         
+         <div class="division">
+            
+           <h3>装配有限元模型文件</h3>
+            
+            <p><em>装配 FEM 文件</em>属于可选文件类型，可用于创建由多个有限元模型文件组成的 CAE 模型。装配有限元模型文件可作为仿真文件的主模型。该文件包含组件有限元模型文件的事例和位置数据，以及连接单元和属性覆盖。</p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

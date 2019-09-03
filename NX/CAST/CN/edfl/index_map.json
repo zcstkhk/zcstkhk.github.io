@@ -1,0 +1,24 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"2D 制图工具",file:"id1520834.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"NX 中的2D 制图过程",file:"id1493789.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"视频：2D 制图过程",file:"id1524192.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"图纸视图",file:"views_view_empty_ov.html",type:"topic",parent:"d5e5"},
+{id:"d5e8",title:"标准视图",file:"id1493793.html",type:"topic",parent:"d5e5"},
+{id:"d5e9",title:"制图中的草图概述",file:"sketch_view_skdrw_view_ov.html",type:"topic",parent:"d5e5",children:[
+{id:"d5e10",title:"制图中的草图限制",file:"sketch_restrictions_rt.html",type:"topic",parent:"d5e9"},
+{id:"d5e11",title:"复制、移动、编辑草图对象",file:"sketcher_sk_global.html",type:"topic",parent:"d5e9"},
+{id:"d5e12",title:"自动标注尺寸",file:"id1493803.html",type:"topic",parent:"d5e9"},
+{id:"d5e13",title:"连续自动标注尺寸",file:"id1493809.html",type:"topic",parent:"d5e9"}]},
+{id:"d5e14",title:"创建2D 图纸",file:"id1493819.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e16",title:"投影到视图",file:"id1493907.html",type:"topic",parent:"",children:[
+{id:"d5e17",title:"投影到视图",file:"id1493911.html",type:"activity",parent:"d5e16"}]},
+{id:"d5e19",title:"复制到3D",file:"views_view_copy3d_ov.html",type:"topic",parent:"",children:[
+{id:"d5e20",title:"视频：使用2D 图纸视图创建3D 模型",file:"id1524152.html",type:"topic",parent:"d5e19"},
+{id:"d5e21",title:"复制到3D",file:"id1493955.html",type:"activity",parent:"d5e19"}]},
+{id:"d5e23",title:"无限长草图直线概述",file:"id961374.html",type:"topic",parent:"",children:[
+{id:"d5e24",title:"创建无限长草图直线",file:"id1493987.html",type:"activity",parent:"d5e23"}]},
+{id:"d5e27",title:"导入 I-deas 制图符号",file:"id1494007.html",type:"topic",parent:""}
+
+
+]}

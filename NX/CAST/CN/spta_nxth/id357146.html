@@ -1,0 +1,54 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Modeling radiation</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>构建辐射</h2>
+         <p>软件将根据辐射单元仿真辐射，求解器将计算所有辐射单元间的黑体视角因子，然后把这些因子与为每个辐射单元定义的热—光属性组合，以计算辐射传导。</p>
+         <p>对于不违反灰体近似的表面，可以计算射线追踪视角因子，而不用计算黑体视角因子。</p>
+         <p>可以计算由下列对象定义的辐射：</p>
+         <ul>
+            
+            <li>
+               
+               <p>3D 实体单元的面</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>2D 壳单元的顶部或底部(根据您指定的单元法向)</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>1D 梁单元的隐含表面(根据您定义的截面属性)</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>0D 集中质量单元(根据您指定的直径)</p>
+               
+            </li>
+            
+         </ul>
+         <p>如果想让单元或单元组参与辐射交换，那么必须应用热—光属性并定义辐射仿真对象来计算这些单元间的视角因子。</p>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/maya/sst_satellite/sst_post_anim.gif"></p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

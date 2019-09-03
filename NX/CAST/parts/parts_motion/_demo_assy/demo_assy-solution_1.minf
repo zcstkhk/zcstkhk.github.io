@@ -1,0 +1,1247 @@
+Input file: E:\Documents\Siemens\NX\parts\parts_motion\_demo_assy\demo_assy-solution_1.minp
+
+Solver running in Simcenter Mode
+
+
+Solver: Simcenter Motion Version 11 (11.0) Apr  5 2017 01:07:25 Intel Release 64bit
+Interface: P11.0.2_P5_rc2 2017-04-05
+Hostname: DESKTOP-LRHGMQR
+OS Type: Windows
+Release: 6.2
+Version: Build 9200
+Machine: 8664
+Integer size:    5000000
+Real size:    5000000
+Mcheps: 0.22204460492503E-15
+LMSMOTGGL is active
+
+[1296]
+Warning (dynamic data element):  When "INTERPOLATED" is selected for the
+print method, the print frequency feature cannot be used.  PRINT.Freq is
+being reset to zero (disabled) and execution is continuing.
+ The GGL formulation is turned on.
+
+[1076]
+Warning:  The data for the driver element "MOTION_bearing_spindle_wheel_RZ" specifies
+"POLYNOMIAL" as the DRiving.function, but all four parameters
+are zero.  Execution is continuing with a zero function for this driver.
+
+License Server is [28000@desktop-lrhgmqr]
+
+Features requiring licenses
+-----------------------
+sc_motion_solver "Motion Solver"
+
+
+[1134]
+Warning:  Prior to assembly the number of constraints, drivers and
+initial conditions is not equal to the number of generalized
+coordinates.  The assembly algorithm will be executed but the
+result will represent one of several possible solutions.
+Number of constraints, drivers, I.C's =                  101
+Number of generalized coordinates     =                   99
+
+[1516]
+Warning: Prior to the assembly analysis one or more constraints are not 
+satisfied within the specified assembly tolerance.  The assembly analysis will
+attempt to adjust the model to achieve this tolerance across all constraints.
+If assembly analysis fails, or if the model assembles to an undesired position
+the following elements whose constraint residuals exceed the specified assembly
+tolerance should be checked:
+                                 Constraint
+.........Element Type.........  ..Number..  ..Violation..  ........Name........
+ Driver element                     1       -.4357787E-01
+MOTION_slider_shock_TZ
+
+Results achieved by the model assembly process without drivers:
+
+  Number of function evaluations =     1
+  Maximum constraint violation   =   0.449063E-11
+
+ Element: aft_lca
+    Coordinate    New Value     Original Value  Difference
+    X             -115.65        -115.65         0.0000    
+    Y              15.260         15.260         0.0000    
+    Z             -4.2672        -4.2672         0.0000    
+    E0            0.50122        0.50122         0.0000    
+    E1           -0.49877       -0.49877         0.0000    
+    E2           -0.50119       -0.50119         0.0000    
+    E3           -0.49882       -0.49882         0.0000    
+
+ Element: axle
+    Coordinate    New Value     Original Value  Difference
+    X             -112.00        -112.00         0.0000    
+    Y              8.5927         8.5927         0.0000    
+    Z            -0.74158       -0.74158         0.0000    
+    E0            0.70711        0.70711         0.0000    
+    E1            0.70711        0.70711         0.0000    
+    E2             0.0000         0.0000         0.0000    
+    E3             0.0000         0.0000         0.0000    
+
+ Element: bell_crank
+    Coordinate    New Value     Original Value  Difference
+    X             -108.66        -108.66         0.0000    
+    Y              5.1654         5.1654         0.0000    
+    Z              4.1991         4.1991         0.0000    
+    E0            0.47969        0.47969         0.0000    
+    E1           -0.54319       -0.54319         0.0000    
+    E2           -0.64930       -0.64930         0.0000    
+    E3           -0.23077       -0.23077         0.0000    
+
+ Element: bottom_shock
+    Coordinate    New Value     Original Value  Difference
+    X             -101.14        -101.14         0.0000    
+    Y              4.2552         4.2552         0.0000    
+    Z              4.6226         4.6226         0.0000    
+    E0            0.73984        0.73984         0.0000    
+    E1            0.76259E-01    0.76259E-01     0.0000    
+    E2           -0.66288       -0.66288         0.0000    
+    E3            0.86046E-01    0.86046E-01     0.0000    
+
+ Element: caliper
+    Coordinate    New Value     Original Value  Difference
+    X             -113.41        -113.41         0.0000    
+    Y              28.885         28.885         0.0000    
+    Z            -0.64063       -0.64063         0.0000    
+    E0            0.49304        0.49304         0.0000    
+    E1            0.50612        0.50612         0.0000    
+    E2            0.49379        0.49379         0.0000    
+    E3            0.50688        0.50688         0.0000    
+
+ Element: fore_lca
+    Coordinate    New Value     Original Value  Difference
+    X             -106.47        -106.47         0.0000    
+    Y              14.784         14.784         0.0000    
+    Z             -4.0648        -4.0648         0.0000    
+    E0            0.58107        0.58107         0.0000    
+    E1           -0.37250       -0.37250         0.0000    
+    E2           -0.61378       -0.61378         0.0000    
+    E3           -0.38324       -0.38324         0.0000    
+
+ Element: mount
+    Coordinate    New Value     Original Value  Difference
+    X             -173.40        -173.40         0.0000    
+    Y             -24.350        -24.350         0.0000    
+    Z             -32.442        -32.442         0.0000    
+    E0            0.68417        0.68417         0.0000    
+    E1            0.87017E-01    0.87017E-01     0.0000    
+    E2           -0.72405       -0.72405         0.0000    
+    E3           -0.93230E-02   -0.93230E-02     0.0000    
+
+ Element: shock_strut
+    Coordinate    New Value     Original Value  Difference
+    X             -111.10        -111.10         0.0000    
+    Y              15.173         15.173         0.0000    
+    Z             -1.0587        -1.0587         0.0000    
+    E0            0.35875        0.35875         0.0000    
+    E1           -0.58934       -0.58934         0.0000    
+    E2           -0.61831       -0.61831         0.0000    
+    E3           -0.37639       -0.37639         0.0000    
+
+ Element: spindle
+    Coordinate    New Value     Original Value  Difference
+    X             -111.72        -111.72         0.0000    
+    Y              24.804         24.804         0.0000    
+    Z             -1.0115        -1.0115         0.0000    
+    E0            0.11043        0.11043         0.0000    
+    E1           -0.84833       -0.84833         0.0000    
+    E2           -0.51670       -0.51670         0.0000    
+    E3            0.34056E-01    0.34056E-01     0.0000    
+
+ Element: the_ground
+    Coordinate    New Value     Original Value  Difference
+    X              0.0000         0.0000         0.0000    
+    Y              0.0000         0.0000         0.0000    
+    Z              0.0000         0.0000         0.0000    
+    E0             1.0000         1.0000         0.0000    
+    E1             0.0000         0.0000         0.0000    
+    E2             0.0000         0.0000         0.0000    
+    E3             0.0000         0.0000         0.0000    
+
+ Element: tire
+    Coordinate    New Value     Original Value  Difference
+    X             -112.00        -112.00         0.0000    
+    Y              33.073         33.073         0.0000    
+    Z            -0.53098       -0.53098         0.0000    
+    E0           -0.92557E-02   -0.92557E-02     0.0000    
+    E1            0.70705        0.70705         0.0000    
+    E2            0.70705        0.70705         0.0000    
+    E3            0.92557E-02    0.92557E-02     0.0000    
+
+ Element: top_shock
+    Coordinate    New Value     Original Value  Difference
+    X             -105.42        -105.42         0.0000    
+    Y              3.2498         3.2498         0.0000    
+    Z              5.1454         5.1454         0.0000    
+    E0            0.52321        0.52321         0.0000    
+    E1            0.31385        0.31385         0.0000    
+    E2            0.67856        0.67856         0.0000    
+    E3            0.40904        0.40904         0.0000    
+
+ Element: uca
+    Coordinate    New Value     Original Value  Difference
+    X             -109.10        -109.10         0.0000    
+    Y              16.735         16.735         0.0000    
+    Z              3.1039         3.1039         0.0000    
+    E0            0.63931        0.63931         0.0000    
+    E1           -0.27421       -0.27421         0.0000    
+    E2           -0.63475       -0.63475         0.0000    
+    E3           -0.33644       -0.33644         0.0000    
+
+ Element: wheel
+    Coordinate    New Value     Original Value  Difference
+    X             -112.00        -112.00         0.0000    
+    Y              34.216         34.216         0.0000    
+    Z            -0.50104       -0.50104         0.0000    
+    E0            0.10821        0.10821         0.0000    
+    E1            0.69878        0.69878         0.0000    
+    E2            0.69571        0.69571         0.0000    
+    E3            0.12647        0.12647         0.0000    
+
+ Element: MOTION_bearing_spindle_wheel_RZ
+    Coordinate    New Value     Original Value  Difference
+    Rel.angle     0.12007E-12    0.12007E-12     0.0000    
+
+[1172]
+The following are redundant constraints and will be deleted from
+the system:
+                                                           Constraint
+   .........Element Type.........   ........Name........   ..Number..
+
+ Element: ball_jt8
+    Type: Spherical joint        Constraint Number    1
+
+ Element: ball_jt7
+    Type: Spherical joint        Constraint Number    1
+
+
+The remaining constraints in which the redundant
+constraints are linearly dependent to are summarized as:
+
+Name: ball_jt8
+     constraint   1 is linearly dependent to:
+
+ Name: mount
+    Constraint:      1  Factor:   0.1349    
+ Name: uca
+    Constraint:      1  Factor:   -1.016    
+ Name: ball_jt9
+    Constraint:      3  Factor:   0.2425E-01
+ Name: ball_jt8
+    Constraint:      3  Factor:  -0.2425E-01
+ Name: ball_jt9
+    Constraint:      1  Factor:    1.000    
+ Name: ball_jt8
+    Constraint:      2  Factor:   0.9748E-01
+ Name: ball_jt9
+    Constraint:      2  Factor:  -0.9748E-01
+
+Name: ball_jt7
+     constraint   1 is linearly dependent to:
+
+ Name: mount
+    Constraint:      1  Factor:  -0.1479    
+ Name: fore_lca
+    Constraint:      1  Factor:    1.036    
+ Name: ball_jt7
+    Constraint:      3  Factor:  -0.4668E-01
+ Name: ball_jt6
+    Constraint:      3  Factor:   0.4668E-01
+ Name: ball_jt6
+    Constraint:      1  Factor:    1.000    
+ Name: ball_jt7
+    Constraint:      2  Factor:  -0.5660E-01
+ Name: ball_jt6
+    Constraint:      2  Factor:   0.5660E-01
+
+Results achieved by the model assembly process with drivers:
+
+  Number of function evaluations =     2
+  Maximum constraint violation   =   0.120753E-03
+
+ Element: aft_lca
+    Coordinate    New Value     Original Value  Difference
+    X             -115.65        -115.65        0.24794E-02
+    Y              15.259         15.260       -0.13099E-02
+    Z             -4.3193        -4.2672       -0.52060E-01
+    E0            0.50000        0.50122       -0.12187E-02
+    E1           -0.49999       -0.49877       -0.12247E-02
+    E2           -0.50230       -0.50119       -0.11080E-02
+    E3           -0.49770       -0.49882        0.11133E-02
+
+ Element: axle
+    Coordinate    New Value     Original Value  Difference
+    X             -112.00        -112.00        0.93284E-03
+    Y              8.5940         8.5927        0.12840E-02
+    Z            -0.76442       -0.74158       -0.22848E-01
+    E0            0.70872        0.70711        0.16179E-02
+    E1            0.70549        0.70711       -0.16179E-02
+    E2           -0.13243E-03     0.0000       -0.13243E-03
+    E3            0.30939E-06     0.0000        0.30939E-06
+
+ Element: bell_crank
+    Coordinate    New Value     Original Value  Difference
+    X             -108.67        -108.66       -0.91885E-02
+    Y              5.1756         5.1654        0.10258E-01
+    Z              4.1937         4.1991       -0.53340E-02
+    E0            0.47640        0.47969       -0.32878E-02
+    E1           -0.54625       -0.54319       -0.30617E-02
+    E2           -0.64760       -0.64930        0.16993E-02
+    E3           -0.23518       -0.23077       -0.44084E-02
+
+ Element: bottom_shock
+    Coordinate    New Value     Original Value  Difference
+    X             -101.14        -101.14       -0.15586E-02
+    Y              4.2605         4.2552        0.52333E-02
+    Z              4.6199         4.6226       -0.27187E-02
+    E0            0.73961        0.73984       -0.23354E-03
+    E1            0.75354E-01    0.76259E-01   -0.90502E-03
+    E2           -0.66325       -0.66288       -0.36640E-03
+    E3            0.86034E-01    0.86046E-01   -0.12585E-04
+
+ Element: caliper
+    Coordinate    New Value     Original Value  Difference
+    X             -113.41        -113.41        0.34720E-02
+    Y              28.887         28.885        0.17518E-02
+    Z            -0.74094       -0.64063       -0.10031    
+    E0            0.49332        0.49304        0.27743E-03
+    E1            0.50580        0.50612       -0.31944E-03
+    E2            0.49402        0.49379        0.22942E-03
+    E3            0.50671        0.50688       -0.17439E-03
+
+ Element: fore_lca
+    Coordinate    New Value     Original Value  Difference
+    X             -106.47        -106.47        0.23469E-02
+    Y              14.782         14.784       -0.18854E-02
+    Z             -4.1128        -4.0648       -0.47986E-01
+    E0            0.58008        0.58107       -0.99108E-03
+    E1           -0.37387       -0.37250       -0.13708E-02
+    E2           -0.61471       -0.61378       -0.92954E-03
+    E3           -0.38192       -0.38324        0.13185E-02
+
+ Element: mount
+    Coordinate    New Value     Original Value  Difference
+    X             -173.40        -173.40        0.32969E-11
+    Y             -24.350        -24.350       -0.42633E-12
+    Z             -32.442        -32.442       -0.11369E-12
+    E0            0.68417        0.68417        0.61062E-14
+    E1            0.87017E-01    0.87017E-01    0.59813E-14
+    E2           -0.72405       -0.72405        0.66613E-14
+    E3           -0.93230E-02   -0.93230E-02   -0.15560E-14
+
+ Element: shock_strut
+    Coordinate    New Value     Original Value  Difference
+    X             -111.09        -111.10        0.75191E-02
+    Y              15.191         15.173        0.17477E-01
+    Z             -1.1137        -1.0587       -0.55068E-01
+    E0            0.35760        0.35875       -0.11481E-02
+    E1           -0.59004       -0.58934       -0.69909E-03
+    E2           -0.61913       -0.61831       -0.82187E-03
+    E3           -0.37504       -0.37639        0.13505E-02
+
+ Element: spindle
+    Coordinate    New Value     Original Value  Difference
+    X             -111.71        -111.72        0.39299E-02
+    Y              24.806         24.804        0.15409E-02
+    Z             -1.1074        -1.0115       -0.95892E-01
+    E0            0.10995        0.11043       -0.47644E-03
+    E1           -0.84836       -0.84833       -0.34159E-04
+    E2           -0.51674       -0.51670       -0.33810E-04
+    E3            0.34237E-01    0.34056E-01    0.18098E-03
+
+ Element: the_ground
+    Coordinate    New Value     Original Value  Difference
+    X              0.0000         0.0000         0.0000    
+    Y              0.0000         0.0000         0.0000    
+    Z              0.0000         0.0000         0.0000    
+    E0             1.0000         1.0000         0.0000    
+    E1             0.0000         0.0000         0.0000    
+    E2             0.0000         0.0000         0.0000    
+    E3             0.0000         0.0000         0.0000    
+
+ Element: tire
+    Coordinate    New Value     Original Value  Difference
+    X             -112.00        -112.00        0.30549E-02
+    Y              33.075         33.073        0.19950E-02
+    Z            -0.63520       -0.53098       -0.10422    
+    E0           -0.88335E-02   -0.92557E-02    0.42227E-03
+    E1            0.70702        0.70705       -0.29675E-04
+    E2            0.70709        0.70705        0.38937E-04
+    E3            0.89705E-02    0.92557E-02   -0.28521E-03
+
+ Element: top_shock
+    Coordinate    New Value     Original Value  Difference
+    X             -105.47        -105.42       -0.45456E-01
+    Y              3.2511         3.2498        0.12858E-02
+    Z              5.1447         5.1454       -0.66338E-03
+    E0            0.52400        0.52321        0.78563E-03
+    E1            0.31374        0.31385       -0.10709E-03
+    E2            0.67835        0.67856       -0.20645E-03
+    E3            0.40846        0.40904       -0.58026E-03
+
+ Element: uca
+    Coordinate    New Value     Original Value  Difference
+    X             -109.10        -109.10        0.13426E-02
+    Y              16.737         16.735        0.12888E-02
+    Z              3.0537         3.1039       -0.50186E-01
+    E0            0.63867        0.63931       -0.64091E-03
+    E1           -0.27621       -0.27421       -0.19983E-02
+    E2           -0.63552       -0.63475       -0.77744E-03
+    E3           -0.33456       -0.33644        0.18776E-02
+
+ Element: wheel
+    Coordinate    New Value     Original Value  Difference
+    X             -112.00        -112.00        0.29411E-02
+    Y              34.218         34.216        0.20250E-02
+    Z            -0.60641       -0.50104       -0.10536    
+    E0            0.10862        0.10821        0.41149E-03
+    E1            0.69868        0.69878       -0.99343E-04
+    E2            0.69579        0.69571        0.85730E-04
+    E3            0.12619        0.12647       -0.27480E-03
+
+ Element: MOTION_bearing_spindle_wheel_RZ
+    Coordinate    New Value     Original Value  Difference
+    Rel.angle      0.0000        0.12007E-12   -0.12007E-12
+
+[1172]
+The following are redundant constraints and will be deleted from
+the system:
+                                                           Constraint
+   .........Element Type.........   ........Name........   ..Number..
+
+ Element: ball_jt7
+    Type: Spherical joint        Constraint Number    1
+
+ Element: ball_jt8
+    Type: Spherical joint        Constraint Number    1
+
+
+The remaining constraints in which the redundant
+constraints are linearly dependent to are summarized as:
+
+Name: ball_jt7
+     constraint   1 is linearly dependent to:
+
+ Name: fore_lca
+    Constraint:      1  Factor:    1.037    
+ Name: mount
+    Constraint:      1  Factor:  -0.1479    
+ Name: ball_jt7
+    Constraint:      3  Factor:  -0.4668E-01
+ Name: ball_jt6
+    Constraint:      3  Factor:   0.4668E-01
+ Name: ball_jt6
+    Constraint:      1  Factor:    1.000    
+ Name: ball_jt7
+    Constraint:      2  Factor:  -0.5660E-01
+ Name: ball_jt6
+    Constraint:      2  Factor:   0.5660E-01
+
+Name: ball_jt8
+     constraint   1 is linearly dependent to:
+
+ Name: mount
+    Constraint:      1  Factor:   0.1349    
+ Name: uca
+    Constraint:      1  Factor:   -1.014    
+ Name: ball_jt9
+    Constraint:      3  Factor:   0.2425E-01
+ Name: ball_jt8
+    Constraint:      3  Factor:  -0.2425E-01
+ Name: ball_jt9
+    Constraint:      1  Factor:    1.000    
+ Name: ball_jt8
+    Constraint:      2  Factor:   0.9748E-01
+ Name: ball_jt9
+    Constraint:      2  Factor:  -0.9748E-01
+
+Number of real data in the system     =    269317
+Number of integer data in the system  =    172499
+
+
+ Time = 0.000000E+00
+*************** initial *****************
+
+Solution of acceleration of generalized coordinates:
+
+ Element: aft_lca
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: axle
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: bell_crank
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: bottom_shock
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: caliper
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: fore_lca
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: mount
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: shock_strut
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: spindle
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: the_ground
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: tire
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: top_shock
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: uca
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: wheel
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: MOTION_bearing_spindle_wheel_RZ
+    Coordinate    Acceleration
+    Rel.angle      0.00000    
+
+ Time = 0.000000E+00
+*************** final *******************
+
+Solution of acceleration of generalized coordinates:
+
+ Element: aft_lca
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: axle
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: bell_crank
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: bottom_shock
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: caliper
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: fore_lca
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: mount
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: shock_strut
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: spindle
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: the_ground
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: tire
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: top_shock
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: uca
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: wheel
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: MOTION_bearing_spindle_wheel_RZ
+    Coordinate    Acceleration
+    Rel.angle      0.00000    
+
+[1172]
+The following are redundant constraints and will be deleted from
+the system:
+                                                           Constraint
+   .........Element Type.........   ........Name........   ..Number..
+
+ Element: ball_jt7
+    Type: Spherical joint        Constraint Number    1
+
+ Element: ball_jt8
+    Type: Spherical joint        Constraint Number    1
+
+
+The remaining constraints in which the redundant
+constraints are linearly dependent to are summarized as:
+
+Name: ball_jt7
+     constraint   1 is linearly dependent to:
+
+ Name: mount
+    Constraint:      1  Factor:  -0.1479    
+ Name: fore_lca
+    Constraint:      1  Factor:    1.037    
+ Name: ball_jt7
+    Constraint:      3  Factor:  -0.4668E-01
+ Name: ball_jt6
+    Constraint:      3  Factor:   0.4668E-01
+ Name: ball_jt6
+    Constraint:      1  Factor:    1.000    
+ Name: ball_jt7
+    Constraint:      2  Factor:  -0.5660E-01
+ Name: ball_jt6
+    Constraint:      2  Factor:   0.5660E-01
+
+Name: ball_jt8
+     constraint   1 is linearly dependent to:
+
+ Name: mount
+    Constraint:      1  Factor:   0.1349    
+ Name: uca
+    Constraint:      1  Factor:   -1.014    
+ Name: ball_jt9
+    Constraint:      3  Factor:   0.2425E-01
+ Name: ball_jt8
+    Constraint:      3  Factor:  -0.2425E-01
+ Name: ball_jt9
+    Constraint:      1  Factor:    1.000    
+ Name: ball_jt8
+    Constraint:      2  Factor:   0.9748E-01
+ Name: ball_jt9
+    Constraint:      2  Factor:  -0.9748E-01
+ Using QR Initial Velocity Method
+
+[1286]
+Warning:  Initial conditions may not be sufficient (DAP2).
+Solution of initial velocities, using QR method:
+
+ Element: aft_lca
+    Coordinate    Velocity
+    X             0.179560    
+    Y            -0.111865    
+    Z             -3.74817    
+    E0           -0.879586E-01
+    E1           -0.880342E-01
+    E2           -0.795455E-01
+    E3            0.803549E-01
+
+ Element: axle
+    Coordinate    Velocity
+    X             0.670006E-01
+    Y             0.805463E-01
+    Z             -1.64445    
+    E0            0.116184    
+    E1           -0.116719    
+    E2           -0.973754E-02
+    E3            0.293749E-03
+
+ Element: bell_crank
+    Coordinate    Velocity
+    X            -0.652162    
+    Y             0.747972    
+    Z            -0.388917    
+    E0           -0.238746    
+    E1           -0.219288    
+    E2            0.124628    
+    E3           -0.317437    
+
+ Element: bottom_shock
+    Coordinate    Velocity
+    X            -0.114337    
+    Y             0.386394    
+    Z            -0.200700    
+    E0           -0.173182E-01
+    E1           -0.674001E-01
+    E2           -0.270071E-01
+    E3           -0.304949E-03
+
+ Element: caliper
+    Coordinate    Velocity
+    X             0.248710    
+    Y             0.896854E-01
+    Z             -7.21630    
+    E0            0.198472E-01
+    E1           -0.229699E-01
+    E2            0.161141E-01
+    E3           -0.121046E-01
+
+ Element: fore_lca
+    Coordinate    Velocity
+    X             0.169737    
+    Y            -0.151805    
+    Z             -3.45184    
+    E0           -0.715360E-01
+    E1           -0.984837E-01
+    E2           -0.666382E-01
+    E3            0.950131E-01
+
+ Element: mount
+    Coordinate    Velocity
+    X            -0.873079E-13
+    Y             0.563814E-12
+    Z            -0.487575E-12
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: shock_strut
+    Coordinate    Velocity
+    X             0.562627    
+    Y              1.24310    
+    Z             -3.96210    
+    E0           -0.809380E-01
+    E1           -0.523798E-01
+    E2           -0.570517E-01
+    E3            0.994171E-01
+
+ Element: spindle
+    Coordinate    Velocity
+    X             0.282430    
+    Y             0.754205E-01
+    Z             -6.90146    
+    E0           -0.340581E-01
+    E1           -0.236439E-02
+    E2           -0.253832E-02
+    E3            0.124792E-01
+
+ Element: the_ground
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: tire
+    Coordinate    Velocity
+    X             0.218089    
+    Y             0.106999    
+    Z             -7.49295    
+    E0            0.302914E-01
+    E1           -0.220579E-02
+    E2            0.283697E-02
+    E3           -0.199307E-01
+
+ Element: top_shock
+    Coordinate    Velocity
+    X             -3.27222    
+    Y             0.123410    
+    Z            -0.637148E-01
+    E0            0.582709E-01
+    E1           -0.847668E-02
+    E2           -0.149828E-01
+    E3           -0.433629E-01
+
+ Element: uca
+    Coordinate    Velocity
+    X             0.945585E-01
+    Y             0.717018E-01
+    Z             -3.61131    
+    E0           -0.465052E-01
+    E1           -0.143607    
+    E2           -0.555448E-01
+    E3            0.135299    
+
+ Element: wheel
+    Coordinate    Velocity
+    X             0.209732    
+    Y             0.109043    
+    Z             -7.57415    
+    E0            0.295053E-01
+    E1           -0.720231E-02
+    E2            0.610529E-02
+    E3           -0.191835E-01
+
+ Element: MOTION_bearing_spindle_wheel_RZ
+    Coordinate    Velocity
+    Rel.angle      0.00000    
+
+Solution of velocities in local coordinates:
+
+ Element: aft_lca
+    Coordinate    Velocity
+    X             0.179560    
+    Y            -0.111865    
+    Z             -3.74817    
+    OMEGA_XL     -0.160877E-01
+    OMEGA_YL     -0.335891    
+    OMEGA_ZL      0.169503E-02
+
+ Element: axle
+    Coordinate    Velocity
+    X             0.670006E-01
+    Y             0.805463E-01
+    Z             -1.64445    
+    OMEGA_XL     -0.329375    
+    OMEGA_YL     -0.133563E-01
+    OMEGA_ZL      0.141865E-01
+
+ Element: bell_crank
+    Coordinate    Velocity
+    X            -0.652162    
+    Y             0.747972    
+    Z            -0.388917    
+    OMEGA_XL     -0.939512    
+    OMEGA_YL      0.531724E-01
+    OMEGA_ZL      0.542589E-02
+
+ Element: bottom_shock
+    Coordinate    Velocity
+    X            -0.114337    
+    Y             0.386394    
+    Z            -0.200700    
+    OMEGA_XL     -0.102141    
+    OMEGA_YL     -0.513700E-01
+    OMEGA_ZL      0.960051E-01
+
+ Element: caliper
+    Coordinate    Velocity
+    X             0.248710    
+    Y             0.896854E-01
+    Z             -7.21630    
+    OMEGA_XL     -0.144500E-01
+    OMEGA_YL      0.732236E-02
+    OMEGA_ZL     -0.710524E-01
+
+ Element: fore_lca
+    Coordinate    Velocity
+    X             0.169737    
+    Y            -0.151805    
+    Z             -3.45184    
+    OMEGA_XL     -0.361982E-04
+    OMEGA_YL     -0.311529    
+    OMEGA_ZL      0.126838    
+
+ Element: mount
+    Coordinate    Velocity
+    X            -0.873079E-13
+    Y             0.563814E-12
+    Z            -0.487575E-12
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: shock_strut
+    Coordinate    Velocity
+    X             0.562627    
+    Y              1.24310    
+    Z             -3.96210    
+    OMEGA_XL      0.329147E-01
+    OMEGA_YL     -0.297635    
+    OMEGA_ZL      0.792907E-02
+
+ Element: spindle
+    Coordinate    Velocity
+    X             0.282430    
+    Y             0.754205E-01
+    Z             -6.90146    
+    OMEGA_XL     -0.455840E-01
+    OMEGA_YL     -0.567683E-01
+    OMEGA_ZL      0.321275E-02
+
+ Element: the_ground
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: tire
+    Coordinate    Velocity
+    X             0.218089    
+    Y             0.106999    
+    Z             -7.49295    
+    OMEGA_XL     -0.145577E-01
+    OMEGA_YL     -0.710304E-01
+    OMEGA_ZL     -0.732251E-02
+
+ Element: top_shock
+    Coordinate    Velocity
+    X             -3.27222    
+    Y             0.123410    
+    Z            -0.637148E-01
+    OMEGA_XL      0.114429E-02
+    OMEGA_YL     -0.115042    
+    OMEGA_ZL     -0.951454E-01
+
+ Element: uca
+    Coordinate    Velocity
+    X             0.945585E-01
+    Y             0.717018E-01
+    Z             -3.61131    
+    OMEGA_XL      0.133705E-04
+    OMEGA_YL     -0.300891    
+    OMEGA_ZL      0.293551    
+
+ Element: wheel
+    Coordinate    Velocity
+    X             0.209732    
+    Y             0.109043    
+    Z             -7.57415    
+    OMEGA_XL     -0.145577E-01
+    OMEGA_YL     -0.647210E-01
+    OMEGA_ZL     -0.301684E-01
+
+Number of real data in the system     =    190284
+Number of integer data in the system  =    124918
+
+
+[1310]
+Warning:  Number of constraints is greater than or equal to the number
+of generalized coordinates.
+  Number of generalized coordinates =                   99
+  Number of constraints             =                   99
+
+Solution of accelerations in local coordinates:
+
+ Element: aft_lca
+    Coordinate    Acceleration
+    X             0.839990E-02
+    Y             -1.22086    
+    Z              1.40050    
+    OMEGAD_XL    -0.107824E-02
+    OMEGAD_YL     0.122139    
+    OMEGAD_ZL     0.482133E-02
+
+ Element: axle
+    Coordinate    Acceleration
+    X            -0.365725E-01
+    Y            -0.884690    
+    Z             0.650827    
+    OMEGAD_XL     0.129671    
+    OMEGAD_YL     0.119526E-01
+    OMEGAD_ZL     0.429547E-01
+
+ Element: bell_crank
+    Coordinate    Acceleration
+    X             0.919008    
+    Y             0.400354    
+    Z            -0.208169    
+    OMEGAD_XL     0.181056    
+    OMEGAD_YL    -0.102470E-01
+    OMEGAD_ZL    -0.104564E-02
+
+ Element: bottom_shock
+    Coordinate    Acceleration
+    X            -0.108397    
+    Y             0.548209    
+    Z            -0.282487    
+    OMEGAD_XL    -0.145674    
+    OMEGAD_YL    -0.609543E-01
+    OMEGAD_ZL     0.255734    
+
+ Element: caliper
+    Coordinate    Acceleration
+    X            -0.184786    
+    Y             -2.65216    
+    Z              3.08062    
+    OMEGAD_XL    -0.446597E-01
+    OMEGAD_YL     0.868303E-02
+    OMEGAD_ZL     0.989143E-01
+
+ Element: fore_lca
+    Coordinate    Acceleration
+    X            -0.812526E-02
+    Y             -1.09685    
+    Z              1.50398    
+    OMEGAD_XL     0.152039E-04
+    OMEGAD_YL     0.130848    
+    OMEGAD_ZL    -0.532744E-01
+
+ Element: mount
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+ Element: shock_strut
+    Coordinate    Acceleration
+    X              1.32587    
+    Y             -1.55147    
+    Z              1.66646    
+    OMEGAD_XL     0.107551    
+    OMEGAD_YL     0.768068E-01
+    OMEGAD_ZL     0.566810    
+
+ Element: spindle
+    Coordinate    Acceleration
+    X            -0.142019    
+    Y             -2.58044    
+    Z              2.75399    
+    OMEGAD_XL     0.678075E-02
+    OMEGAD_YL     0.104109    
+    OMEGAD_ZL    -0.311343E-01
+
+ Element: the_ground
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+ Element: tire
+    Coordinate    Acceleration
+    X            -0.217299    
+    Y             -2.67179    
+    Z              3.55661    
+    OMEGAD_XL    -0.445095E-01
+    OMEGAD_YL     0.989820E-01
+    OMEGAD_ZL    -0.868346E-02
+
+ Element: top_shock
+    Coordinate    Acceleration
+    X              1.24861    
+    Y              2.18145    
+    Z             -1.12844    
+    OMEGAD_XL     0.130464E-01
+    OMEGAD_YL    -0.159355    
+    OMEGAD_ZL    -0.254503    
+
+ Element: uca
+    Coordinate    Acceleration
+    X            -0.186343    
+    Y             -1.54163    
+    Z              1.48720    
+    OMEGAD_XL    -0.563151E-05
+    OMEGAD_YL     0.126732    
+    OMEGAD_ZL    -0.123640    
+
+ Element: wheel
+    Coordinate    Acceleration
+    X            -0.226068    
+    Y             -2.68046    
+    Z              3.66949    
+    OMEGAD_XL    -0.445095E-01
+    OMEGAD_YL     0.963719E-01
+    OMEGAD_ZL     0.241930E-01
+
+Total Number of Bodies             =   14
+
+Total Number of Degrees of Freedom =   85
+Number of Kinematic Constraints    =   85
+Number of Drivers                  =    2
+Number of Initial Conditions       =    0
+Number of Degrees of Freedom       =    0
+
+The number of symbolic factorizations of the Acceleration matrix =                    2
+
+[1349]
+  Final statistics (from DOPRI5) :
+  Number of computed steps            =                  104
+  Number of accepted steps            =                  104
+  Number of rejected steps            =                    0
+  Number of acceleration computations =                    1
+  Number of velocity computations     =                  106
+  Number of position computations     =                  100
+
+    Total elapsed CPU time:  0.8010254    
+    Total clock time:          1

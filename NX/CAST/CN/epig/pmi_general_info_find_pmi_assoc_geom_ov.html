@@ -1,0 +1,251 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>查找与几何体关联的 PMI</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>查找与几何体关联的 PMI</h2>
+         
+         <p>使用<span class="no-bottom-margin"><strong>查找与几何体关联的 PMI</strong></span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/pmi/information/find_pmi_assoc_to_geom.gif" border="0"> 命令来查找当前工作部件中引用选定几何体作为关联对象的全部 PMI。这包括在工作部件中创建的 PMI、WAVE 链接的 PMI，或者使用 PMI 装配过滤器添加到工作部件中的 PMI。</p>
+         
+         <p>当选定几何体是一个或多个 PMI 的关联对象时，NX 将创建临时显示来显示查询结果。</p>
+         <a name="genid_epig_14" id="genid_epig_14"></a><table border="0" rules="cols" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="50%">
+               
+               <col span="1" width="50%">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td align="center" colspan="1" rowspan="1" valign="bottom">
+                     <a name="genid_epig_15" id="genid_epig_15"></a><div class="figureContainer">
+                        <table align="center">
+                           <tr>
+                              <td>
+                                 <div class="figure">
+                                    <div><img align="bottom" src="../graphics/nonLocalized/nx/pmi/information/reports/associated_PMI_query6.gif" border="0"></div>
+                                 </div>
+                              </td>
+                           </tr>
+                        </table>
+                        <h4>当前工作视图，已选择一个面</h4>
+                     </div>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1" valign="bottom">
+                     <a name="genid_epig_16" id="genid_epig_16"></a><div class="figureContainer">
+                        <table align="center">
+                           <tr>
+                              <td>
+                                 <div class="figure">
+                                    <div><img align="bottom" src="../graphics/nonLocalized/nx/pmi/information/reports/associated_PMI_query7.gif" border="0"></div>
+                                 </div>
+                              </td>
+                           </tr>
+                        </table>
+                        <h4>使用查找与几何体关联的 PMI 命令后的视图</h4>
+                     </div>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         
+         <p>在该视图中：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>所有的 PMI 都被放在当前工作图层中</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>即使在选择几何体时与该几何体关联的某些 PMI 对象处于隐藏状态，在该视图中也将显示</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>如果 PMI 与视图相关，并且与在另一个工作视图中选择的几何体关联，仍然会显示该对象，而不考虑创建视图</p>
+               
+            </li>
+            
+         </ul>
+         
+         <table class="attentionTable attn_tip">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">提示</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>进行查询时选择正确的几何体很重要。只会对选定的几何体进行关联 PMI 查找。例如，如果您选择了一个实体进行查询，但 PMI 是与该实体的边关联，则不会显示任何 PMI 作为查询的结果。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <p>您可以放大或旋转来查看查询结果，当您刷新显示、选择另一个视图或方位，或者选择任意命令，都会擦除 PMI 临时显示视图。</p>
+         
+         
+         
+         
+         <div class="division">
+            
+            <h3>查询结果视图</h3>
+            
+            <p>选中<strong>创建查询结果视图</strong>选项时，NX 将在模型视图中把查询结果保存为一个名为<strong>查询结果</strong>的视图，<strong>查询结果</strong>视图显示在<strong>部件导航器</strong>中<strong>模型视图</strong>节点的下方。</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/pmi/information/reports/query_results_view.png"></p>
+            
+            <p><strong>查询结果</strong>视图将覆盖之前进行的任何<span class="no-bottom-margin"><strong>查找与几何体关联的 PMI</strong></span> 操作，如果您想保存上一次的结果，您必须先重命名该视图。</p>
+            
+            
+            
+            
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">PMI</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>信息→产品制造信息→查找与几何体关联的 PMI</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">快捷菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">选择模型几何体，然后右击并选择<strong>查找与几何体关联的 PMI</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+            <p><br/>
+            <strong>从快捷选中时显示对话框</strong>首选项：</p>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">首选项</span>&rarr;<span class="uiTerm">产品制造信息</span>&rarr;<span class="uiTerm">PMI</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">对话框中的位置</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>常规</strong>选项卡→<strong>查找与几何体关联的 PMI</strong> 组→<strong>从快捷选中时显示对话框</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

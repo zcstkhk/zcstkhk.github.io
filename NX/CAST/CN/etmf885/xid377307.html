@@ -1,0 +1,318 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Machining corners</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Machining corners</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>The cut strategies <span class="uiTerm">Towards Corner</span> and <span class="uiTerm">Away from Corner</span> now recognize corners with embedded fillets or chamfers.
+            </p>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/turning/finish_toward_corner_u.png"></p>
+            
+            <p>You use the <span class="uiTerm">Cut Fillets</span> option to control the machining of the fillet or chamfer. Fillets and chamfers can be:
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Added to faces exclusively.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Added to diameters exclusively.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Split in the middle. One segment is added to face and the other to the diameter.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Omitted.</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>For the <span class="uiTerm">Towards Corner</span> cut strategy, the <span class="uiTerm">Cut Fillets</span> option is available only if <span class="uiTerm">Stop Position</span> is set to <span class="uiTerm">None</span>. Also, the following parameters are added to this cut strategy to control the generated cuts:
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Extend at Start</span></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Stop Position</span></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Overlap</span></p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>The <span class="uiTerm">Extend at Start</span> option is available for machining into corners.
+            </p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Extend at Start</h3>
+            
+            <p>Use the <span class="uiTerm">Extend at Start</span> options to machine into corners.
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">None</span> machines only the segments along the diameter and the face. No extensions are made.
+                  </p>
+                  
+                  <p align="left"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/turning/finish_toward_corner_none.png"></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">To Containment Geometry</span> lets you add adjacent segments to the start of the initial cut segment.
+                  </p>
+                  
+                  <p align="left"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/turning/finish_toward_corner_to_containment.png"></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Include Adjacent Chamfers or Rounds</span> lets you add an adjacent chamfer or an adjacent blend to the start of a cut segment.
+                  </p>
+                  
+                  <p align="left"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/turning/finish_toward_corner_include_adj_chamger.png"></p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Stop Position</h3>
+            
+            <p>Use the <span class="uiTerm">Stop Position</span> options to adjust the intersection of the face and diameter cuts. The options can either extend the face cut and shorten the diameter cut, or extend the diameter cut and shorten the face cut. 
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">None</span> stops the tool at the end of the first cut.
+                  </p>
+                  
+                  <p>If the corner contains a fillet or a chamfer, you can adjust the stop position by using the <span class="uiTerm">Cut Fillets</span> option.
+                  </p>
+                  
+                  <p align="left"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/manufacturing_dialogs/turn_stop_at_none.png"></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Distance</span> sets the value for the distance at which the tool stops away from the corner.
+                  </p>
+                  
+                  <p align="left"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/manufacturing_dialogs/turn_stop_at_distance.png"></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Percent of Cut</span> sets the percentage of the cut distance as the distance at which the tool stops away from the corner.
+                  </p>
+                  
+                  <p align="left"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/manufacturing_dialogs/turn_stop_at_percentage.png"></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Point</span> lets you define a position at which the tool stops away from the corner.
+                  </p>
+                  
+                  <p align="left"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/manufacturing_dialogs/turn_stop_at_point.png"></p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Overlap</h3>
+            
+            <p>Use the <span class="uiTerm">Overlap</span> option to ensure a full cleanup in the corner where the two tool paths intersect.
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">None</span> of the tool will overlap.
+                  </p>
+                  
+                  <p align="left"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/manufacturing_dialogs/turn_overlap_modes_none.png"></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Distance</span> of the tool width that will overlap.
+                  </p>
+                  
+                  <p align="left"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/manufacturing_dialogs/turn_overlap_distance.png"></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">% Tool</span> of the tool width that will overlap.
+                  </p>
+                  
+                  <p align="left"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/manufacturing_dialogs/turn_overlap_percentage.png"></p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Manufacturing</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Prerequisite</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p>A Turning finish operation that contains a chamfer or fillet.</p>
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Cut Strategy</span> must be set to <span class="uiTerm">Towards Corner</span> or <span class="uiTerm">Away from Corner</span>.
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p>Finish operation dialog box&rarr;<span class="uiTerm">Path Settings</span> group&rarr;
+                     </p>
+                     
+                     <ul class="hangingList">
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Extend at Start</span></p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Stop Position</span></p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Overlap</span></p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

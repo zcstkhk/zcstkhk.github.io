@@ -1,0 +1,17 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"部件间建模与 WAVE",file:"id1067399.html",type:"topic",parent:""},
+{id:"d5e4",title:"NX 角色",file:"role_for_course.html",type:"topic",parent:""},
+
+{id:"d5e6",title:"部件间建模与 WAVE",file:"id684746.html",type:"topic",parent:"",children:[
+{id:"d5e7",title:"WAVE 工具",file:"genid_wave_tools_35_1583.html",type:"topic",parent:"d5e6"}]},
+{id:"d5e9",title:"部件间建模",file:"id684741.html",type:"topic",parent:"",children:[
+{id:"d5e10",title:"模具基座设计",file:"id1612056.html",type:"activity",parent:"d5e9"},
+{id:"d5e11",title:"WAVE 几何体链接器",file:"genid_the_geometry_linker_769_13180.html",type:"topic",parent:"d5e9"},
+{id:"d5e12",title:"创建一个与它配合部件链接的垫片",file:"id1585939.html",type:"activity",parent:"d5e9"},
+{id:"d5e13",title:"与位置无关的链接对象",file:"copy_geometry_as_pilo_ov.html",type:"topic",parent:"d5e9"},
+{id:"d5e14",title:"设计配合部件",file:"id1614929.html",type:"activity",parent:"d5e9"},
+{id:"d5e15",title:"NX 关系浏览器",file:"relations_browser_ov.html",type:"topic",parent:"d5e9"},
+{id:"d5e16",title:"设计铸件和加工件",file:"id1619149.html",type:"activity",parent:"d5e9"},
+{id:"d5e17",title:"添加特征到 WAVE 链接的体",file:"genid_using_on-assembly_features_221_4712.html",type:"topic",parent:"d5e9"},
+{id:"d5e18",title:"设计铸件",file:"id1619161.html",type:"activity",parent:"d5e9"}]}
+]}

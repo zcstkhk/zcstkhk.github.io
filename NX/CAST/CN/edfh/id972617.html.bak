@@ -1,0 +1,102 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>添加旋转剖视图</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>添加旋转剖视图</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>打开 <span class="fileName">drf5_drf_sect3_dwg</span>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/revolved/DRF_sectioning_sec_act_2_graphic_15.png"></p>
+                     
+                     <p>图纸页 &ldquo;Sheet 1&rdquo; 工作</p>
+                     
+                     <p>这是一个法兰面上带肋板的毂。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/revolved/DRF_sectioning_sec_act_2_graphic_14.png"></p>
+                     
+                     <p>注意沉头孔 <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_1_small.gif" border="0"> 钻在轴的右侧，同时，也有一些小的沉头孔 <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_2_small.gif" border="0"> 钻在法兰腹板上侧。</p>
+                     
+                     <p>您将要创建一个包含这两个特征的旋转剖视图。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>右击俯视图并选择<strong>添加旋转剖视图</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p><strong>旋转剖视图</strong>对话框条打开，并且在光标处出现一个旋转剖切线符号。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/revolved/DRF_revolved_sect_line.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在选择条上，确保捕捉点选项只打开<strong>圆弧中心</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/selection_bar/arc_center.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>选择中心孔以定义旋转点。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/revolved/DRF_sectioning_sec_act_2_graphic_5.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>选择在9点钟方向的孔，以定义第一个分段。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/revolved/DRF_sectioning_sec_act_2_graphic_6.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

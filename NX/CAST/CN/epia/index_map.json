@@ -1,0 +1,19 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"创建并放置 PMI",file:"xid481029.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"PMI 介绍",file:"pmi_general_info_pmi_intro.html",type:"topic",parent:""},
+{id:"d5e7",title:"PMI 首选项",file:"preferences_pmi_prefs_ov.html",type:"topic",parent:""},
+{id:"d5e8",title:"编辑 PMI 首选项",file:"id966048.html",type:"activity",parent:""},
+{id:"d5e9",title:"公差标准以及注释首选项",file:"genid_3d_annotation_standards_14_462.html",type:"topic",parent:""},
+{id:"d5e11",title:"部件导航器中的 PMI",file:"pmi_part_nav_pmi_in_part_nav_ov.html",type:"topic",parent:""},
+{id:"d5e14",title:"模型视图中的 PMI 可见性",file:"pmi_part_nav_visible_model_views_ov.html",type:"topic",parent:""},
+{id:"d5e16",title:"调整 PMI 大小",file:"id1301042.html",type:"topic",parent:""},
+{id:"d5e18",title:"模型视图中 PMI 可见性",file:"id953504.html",type:"activity",parent:""},
+{id:"d5e20",title:"创建其它 PMI 视图",file:"id966034.html",type:"activity",parent:""},
+{id:"d5e22",title:"PMI 装配过滤器",file:"pmi_part_nav_pmi_filters_assy_partnav.html",type:"topic",parent:""},
+{id:"d5e24",title:"PMI 注释平面",file:"pmi_general_info_pmi_annotate_ov.html",type:"topic",parent:""},
+{id:"d5e27",title:"PMI 关联对象",file:"pmi_general_info_pmi_associated_objects.html",type:"topic",parent:""},
+{id:"d5e29",title:"层叠的 PMI",file:"pmi_display_stacked_pmi_ov.html",type:"topic",parent:""},
+{id:"d5e31",title:"创建层叠的 PMI",file:"id966224.html",type:"activity",parent:""},
+{id:"d5e33",title:"复习：层叠 PMI",file:"id1540277.html",type:"topic",parent:""}
+]}

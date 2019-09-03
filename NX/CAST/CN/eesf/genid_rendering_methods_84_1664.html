@@ -1,0 +1,277 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Rendering methods</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>Rendering methods</h2>
+         
+         <table border="0" cellpadding="2" cellspacing="3" width="90%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <th align="center" bgcolor="silver" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Option</p>
+                     
+                  </th>
+                  
+                  <th align="center" bgcolor="silver" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Description</p>
+                     
+                  </th>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" height="23" rowspan="1">
+                     
+                     <p class="no-bottom-margin">&nbsp;<span class="uiTerm">Flat</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" height="23" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Fastest shading method. Each facet is assigned a uniform color. No shadows or reflections</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">&nbsp;<span class="uiTerm">Gouraud</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Provides smooth interpolated colors. Not quite as fast as Flat shading.</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">&nbsp;<span class="uiTerm">Phong</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Provides smoother highlights than Gouraud shading, but otherwise supports the same level of functionality. Offers lighting effects.</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">&nbsp;<span class="uiTerm">Improved</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p>Shading with textures material parameters highlights and shadows. Similar quality to photo-realistic but significantly faster. (Available only with High Quality Image.)</p>
+                     
+                     <p class="no-bottom-margin">Good for images with shiny, polished surfaces.</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">&nbsp;<span class="uiTerm">Preview</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p>Adds support for transparency without the requirement to anti-alias the image.</p>
+                     
+                     <p class="no-bottom-margin">Good for images with shiny, polished surfaces.</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">&nbsp;<span class="uiTerm">Photo-Realistic</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Support anti-aliasing and transparency. Images shaded with this mode could take two to three times longer to render than those using the Improved method. (Available only with High Quality Image.)</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">&nbsp;<span class="uiTerm">Ray Traced</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p>Slower than photo-realistic, but it correctly anti-aliases, or renders, textures. (Available only with High Quality Image.)</p>
+                     
+                     <p class="no-bottom-margin">Can suffer from pixel dropout where detailed features fall between samples.</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">&nbsp;<span class="uiTerm">Ray Traced/FFA  (Feature Following Anti-aliasing)</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p>Same as Ray Traced , but produces highly anti-aliased images at lower resolutions.</p>
+                     
+                     <p>Finds sharp color changes and anti-aliases around features to render as much detail as possible.</p>
+                     
+                     <table border="0" cellpadding="2" cellspacing="1" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/activities/high_quality_images/visualization_activities_ffa_1.gif"></p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td align="center" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">Ray Traced</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td align="center" colspan="1" rowspan="1">
+                                 
+                                 <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/activities/high_quality_images/visualization_activities_ffa_2.gif"></p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td align="center" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">Ray Traced/FFA</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">&nbsp;<span class="uiTerm">Radiosity</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Use this method when physically accurate lighting is required. Indirect lighting in a scene is derived from direct light bouncing off of surfaces before an image is rendered. (Available only with High Quality Image.)</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">&nbsp;<span class="uiTerm">Hybrid Radiosity</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Calculates direct lighting together with radiosity processing for indirect lighting for image rendering. Use this method over Radiosity when precise direct lighting effects are also required. (Available only with High Quality Image.)</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

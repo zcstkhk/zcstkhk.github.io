@@ -1,0 +1,82 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>设计变量</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>设计变量</h2><a name="ndxgenid_spta_desopt200_26"></a>
+         <a name="ndxgenid_spta_desopt200_27"></a>
+         <a name="ndxgenid_spta_desopt200_28"></a>
+         
+         
+         <p>设计变量是为了实现最优设计而允许由求解器改变的独立数量。上限和下限定义了 允许的范围。</p>
+         
+         <p>优化算法将在搜索优化值时调整设计变量。</p>
+         
+         <p>可以在 NX 中使用四种类型的设计变量：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>属性—物理属性字段设计变量，如 PSHELL 中的 T 字段(厚度)、PBEAML 中的 DIM1 等。在 Nastran 中，此类型会创建 DESVAR 和 DVPREL1的组合</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>复合属性—复合属性字段设计变量，如层片厚度(Ti)。此类型会创建 DESVAR 和 DVPREL1 的组合</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>材料—材料属性字段设计变量，. 如 MAT1 材料中的杨氏模量值。在 Nastran 中，此类型会创建 DESVAR 和 DVPREL1 的组合</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>连接性(单元定义中的字段)—单元定义字段设计变量，如 CQUAD4 单元中的 ZOFFS 字段(Z 偏置)。此类型会创建 DESVAR 和 DVPREL1 的组合</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/optimization/design_variable_dialog.png"></p>
+         
+         
+         <p>定义设计变量时，在<strong>初始值</strong>、<strong>下限</strong>以及<strong>上限</strong>中输入的值取决于<strong>关系定义</strong>选项的选择：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>在导出时指派</strong> — 初始值和下限/上限表示比例因子。例如，可使用比例因子 1.0、下限 0.5、上限 2.0 使壳厚度发生变化。如果壳厚度的当前值为0.2，那么解算方案中使用的实际变量范围即为0.1到0.4</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>用户定义</strong> — 初始值和下限/上限表示实际值。例如，可使用起始值 0.2 mm、下限 0.1 mm 和上限 2 mm 使壳厚度发生变化。<strong>常数项</strong>(C0)和<strong>系数</strong>(COEF)字段可以用于根据等式 Pi = C0 + COEF * DVID，来线性调整变量范围(DVID)。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

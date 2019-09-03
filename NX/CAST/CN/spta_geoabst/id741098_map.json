@@ -1,0 +1,10 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开部件并开始高级仿真",file:"id321835.html",type:"topic",parent:""},
+{id:"d7e3",title:"重置对话框内存",file:"id353012.html",type:"topic",parent:""},
+{id:"d7e4",title:"创建 FEM 和仿真文件",file:"id154281.html",type:"topic",parent:""},
+{id:"d7e6",title:"仅显示第一个面",file:"id153836.html",type:"topic",parent:""},
+{id:"d7e7",title:"显示相邻面",file:"id153831.html",type:"topic",parent:""},
+{id:"d7e8",title:"合并面",file:"id153846.html",type:"topic",parent:""},
+{id:"d7e9",title:"划分合并面的网格",file:"id154961.html",type:"topic",parent:""},
+{id:"d7e10",title:"删除2D 网格",file:"id154896.html",type:"topic",parent:""},
+{id:"d7e11",title:"组合面",file:"id153826.html",type:"topic",parent:""}]}

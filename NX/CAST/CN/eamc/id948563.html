@@ -1,0 +1,162 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>查看装配约束</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>查看装配约束</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在<strong>装配导航器</strong>中，选中<strong>接触 (DES06_CASTER_SPACER_1, DES06_CASTER_FORK)</strong>前的复选框以取消抑制该约束。</p>
+                  
+                  <p>随着您取消抑制这个约束，垫片将调整位置以适应拨叉的新位置。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>取消抑制<strong>接触 (DES06_CASTER_SHAFT_1, DES06_CASTER_SPACER_1)</strong>约束。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>在<strong>装配导航器</strong>中，<strong>约束</strong>在最左列和<strong>信息</strong>列都有一个 <img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/component_position_commands/assembly_constraints/assynav_constr_folder_errors.png" border="0"> 图标。</p>
+                     
+                     <p><strong>接触 (DES06_CASTER_SHAFT_1, DES06_CASTER_SPACER_1)</strong>约束和<strong>距离 (DES06_CASTER_FORK, DES06_CASTER_SHAFT_1)</strong>约束的最左列和信息列也都有一个 <img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/component_position_commands/assembly_constraints/assynav_constr_error_conflict.png" border="0"> 图标。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>将您的光标停在<strong>信息</strong>列中的每个图标上并阅读工具提示。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>带错误图标的约束与其它约束冲突。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在资源条上，打开<strong>约束导航器</strong> <img align="bottom" src="../graphics/nonLocalized/nx/assemblies/constraint_navigator/constraint_navigator.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p><strong>装配导航器</strong>和<strong>约束导航器</strong>是互补的，<strong>装配导航器</strong>提供装配结构的细节，而<strong>约束导航器</strong>提供装配约束的细节。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>如果最左列的名称不包含<strong>(按约束分组)</strong>在<strong>约束导航器</strong>背景中右击并选择<strong>按约束分组</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>展开有错误图标的约束节点 <img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/component_position_commands/assembly_constraints/assynav_constr_error_conflict.png" border="0"> ，将您的光标停在<strong>状态</strong>列中的各个图标上，阅读工具提示。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>您可以配置列以将<strong>状态</strong>列排在列表顶端。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>在<strong>约束导航器</strong>背景中右击并选择<strong>按组件分组</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>因为存在冲突的约束，有三个组件约束不一致：拨叉、转轴、垫片。</p>
+                     
+                     <p>因为垫片和拨叉间的接触约束与拨叉和转轴间的距离约束冲突，因此发生错误。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/activities/assembly_constraints/act_edit_assm_constraints4.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>在<strong>装配导航器</strong>中，抑制<strong>接触 (DES06_CASTER_SPACER_1, DES06_CASTER_FORK)</strong>约束。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>因为现在所有约束都可以求解所以没有显示错误，拨叉和垫片也没有显示错误，然而，转轴的<strong>位置度</strong>列中仍然有一个<strong>约束不一致</strong> <img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/component_position_commands/assembly_constraints/assynav_constr_severity_error.png" border="0"> 图标。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>删除刚刚被您抑制的约束。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>您也可以在<strong>约束导航器</strong>中抑制或删除约束。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>在两个导航器中检查转轴组件。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p><strong>des06_caster_shaft_1</strong> 节点仍然有一个<strong>约束不一致</strong> <img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/component_position_commands/assembly_constraints/assynav_constr_severity_error.png" border="0"> 图标，尽管所有约束现在都可以被求解，您想要解开这个不一致性，以便它不会在将来的设计更改中引发问题。</p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

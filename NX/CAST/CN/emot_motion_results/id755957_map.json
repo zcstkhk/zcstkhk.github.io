@@ -1,0 +1,9 @@
+{identifier:"id",label:"title",items:[
+{id:"d16e2",title:"打开仿真",file:"facet_open_assembly.html",type:"topic",parent:""},
+{id:"d16e3",title:"重置对话框内存",file:"id353012_dup9.html",type:"topic",parent:""},
+{id:"d16e4",title:"新建解算方案",file:"sequence_create_solution.html",type:"topic",parent:""},
+{id:"d16e5",title:"捕捉装配序列",file:"capture_the_sequence.html",type:"topic",parent:""},
+{id:"d16e6",title:"回放序列",file:"play_back_sequence.html",type:"topic",parent:""},
+{id:"d16e7",title:"捕捉第一个布置",file:"id1039612.html",type:"topic",parent:""},
+{id:"d16e8",title:"捕捉第二个布置",file:"id1039614.html",type:"topic",parent:""},
+{id:"d16e9",title:"显示布置",file:"play_back_sequence_dup1.html",type:"topic",parent:""}]}

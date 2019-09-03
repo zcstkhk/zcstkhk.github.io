@@ -1,0 +1,101 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>层合板电子表格报告</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>层合板电子表格报告</h2>
+         
+         <p>层合板电子表格报告包含有关以下层合板结果的报告：</p>
+         <ul>
+           <li>
+             <p>壳单元合应力。壳单元应力合力写入材料坐标系</p>
+           </li>
+           <li>
+             <p>层片应力和应变结果的特定分量</p>
+           </li>
+           <li>
+             <p>失效指数、强度比及安全裕度</p>
+           </li>
+         </ul>
+         <p>可以排序和过滤层合板结果。该电子表格还提供列出具有最关键值的单元和层片的每个载荷工况的汇总。</p>
+         <ul>
+           <li>
+             <p>对于壳单元合应力、层片应力及层片应变，临界值是绝对最大值</p>
+           </li>
+           <li>
+             <p>对于失效指数，关键值为最大值</p>
+           </li>
+           <li>
+             <p>对于强度比和安全裕度，关键值为最小值</p>
+           </li>
+         </ul>
+         <p>NX 在您为层合板后处理报告元解算方案指定的结果集中产生层合板电子表格报告。</p>
+         <p>使用可从层合板后处理报告节点中访问的<strong>创建电子表格报告</strong>命令，可以指定结构数据、层合板结果，以及所需的过滤设置。可以为层片结果选择层片坐标系或层合板坐标系。可以使用可在电子表格报告节点中访问的<strong>编辑</strong>命令来更改指定的设置。在指定以下内容时：</p>
+         <ul>
+           <li>
+             <p><strong>求解器壳单元合应力</strong>结构数据，层合板求解器可从结构求解器中获得壳单元合应力并计算层片应力和应变</p>
+           </li>
+           <li>
+             <p><strong>求解器层片应力和应变</strong>结构数据，层合板求解器可从结构求解器中获得层片压力和应变</p>
+           </li>
+         </ul>
+         <p>因为层合板求解器和结构求解器并不采用相同的算法，所以层片应力和应变的计算值在两个结构数据输入选择中可以有所不同。</p>
+         <p>可以将该报告导出至：</p>
+         <ul>
+           <li>
+             <p>Microsoft Excel 电子表格</p>
+           </li>
+           <li>
+             <p>逗号分隔的值 (CSV) 文件</p>
+           </li>
+         </ul>
+         <p>因为 NX 使用当前 FEM 中的层合板属性，所以可以切换失效理论，甚至可以修改层合板而不更新解算结果来执行假设分析。</p>
+         
+         
+         <div class="division">
+            
+           <h3>位于何处？</h3>
+           <table border="1" cellpadding="6" cellspacing="2" class="locator">
+             <colgroup span="1">
+               <col span="1" width="149">
+               <col span="1" width="*">
+             </colgroup>
+             <tr valign="top">
+               <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">应用模块</p></td>
+               <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">高级仿真</p></td>
+             </tr>
+             <tr>
+               <td class="locator_shade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">先决条件</p></td>
+               <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">必须在仿真文件中操作，并且激活层合板后处理报告。</p></td>
+             </tr>
+             <tr>
+               <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">工具条</p></td>
+               <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin"><strong>层合板→电子表格报告</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/durability/excel_spreadsheet.gif" border="0"> </p></td>
+             </tr>
+             <tr>
+               <td class="locator_shade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">菜单</p></td>
+               <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin"><strong>插入→层合板→高级后处理报告→电子表格报告</strong></p></td>
+             </tr>
+             <tr>
+               <td class="locator_shade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">仿真导航器</p></td>
+               <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">右键单击层合板后处理报告节点<strong>→创建电子表格报告</strong></p></td>
+             </tr>
+           </table>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

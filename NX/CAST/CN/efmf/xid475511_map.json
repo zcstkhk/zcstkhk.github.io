@@ -1,0 +1,7 @@
+{identifier:"id",label:"title",items:[
+{id:"d8e2",title:"检查您的用户默认设置",file:"xid486881.html",type:"topic",parent:""},
+{id:"d8e3",title:"创建第一个特征组",file:"xid475603.html",type:"topic",parent:""},
+{id:"d8e4",title:"更改用户默认设置并重启 NX",file:"xid475604.html",type:"topic",parent:""},
+{id:"d8e5",title:"创建另一个带时间戳记的特征组",file:"xid475605.html",type:"topic",parent:""},
+{id:"d8e6",title:"创建浮动特征组",file:"xid481191.html",type:"topic",parent:""},
+{id:"d8e7",title:"使新建的特征自动成为活动特征组的成员",file:"xid481192.html",type:"topic",parent:""}]}

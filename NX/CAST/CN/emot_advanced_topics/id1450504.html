@@ -1,0 +1,63 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>求解运动仿真</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>求解运动仿真</h2>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/motion_navigator_tab.gif" border="0">&nbsp;<strong>运动导航器</strong></p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/mb1.gif" border="0">&nbsp;<img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/node_collapsed.gif" border="0"> <strong>驱动容器</strong>(<strong>Driver Container</strong>)(展开)</p>
+               
+            </li>
+           <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/mb1.gif" border="0"> <strong>Drv001</strong></p>
+               
+            </li>
+            <li>
+               <p>这个位移运动驱动，指派给了震动器中的滑动副，它包含一个仿真路面起伏的随机表函数。</p>
+               
+           </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/mb1.gif" border="0"> <strong>Solution_2</strong></p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/mb3.gif" border="0"> <strong>Solve</strong></p>
+               <p>求解过程可能要花费几分钟才能完成，在 RecurDyn 求解结束后，将自动调用 NX Nastran 以再次运行求解 <strong>SOL 103 柔性体</strong>，Nastran 将使用 RecurDyn 结果文件和原来的 NX Nastran 输入文件以获得柔性体的变形、位移、应力以及其它结果。</p>
+               
+               <table class="attentionTable attn_caution">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">注意</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>不要关闭任何求解窗口，直到所有 NX Nastran 命令行窗口都自动关闭，并且在 NX 状态行出现&ldquo;Nastran 结果恢复完成&rdquo;的信息。</p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

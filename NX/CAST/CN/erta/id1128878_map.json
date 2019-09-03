@@ -1,0 +1,11 @@
+{identifier:"id",label:"title",items:[
+{id:"d8e2",title:"打开部件",file:"id1128882.html",type:"topic",parent:""},
+{id:"d8e3",title:"开始创建第一条管线段",file:"id1128884.html",type:"topic",parent:""},
+{id:"d8e4",title:"创建第二条管线段",file:"id1128886.html",type:"topic",parent:""},
+{id:"d8e5",title:"创建第三条和第四条管线段",file:"id1128888.html",type:"topic",parent:""},
+{id:"d8e6",title:"创建后面的三条管线段",file:"id1128890.html",type:"topic",parent:""},
+{id:"d8e7",title:"创建最后两条管线段",file:"id1128892.html",type:"topic",parent:"",children:[
+{id:"d8e8",title:"在路径的顶点上添加折弯段",file:"id1128929.html",type:"topic",parent:"d8e7"},
+{id:"d8e9",title:"编辑与移除折弯段",file:"id1128930.html",type:"topic",parent:"d8e7"},
+{id:"d8e10",title:"指派倾斜方向",file:"id1128931.html",type:"topic",parent:"d8e7"}]},
+{id:"d8e11",title:"创建向下的倾斜管线段",file:"id1623642.html",type:"topic",parent:""}]}

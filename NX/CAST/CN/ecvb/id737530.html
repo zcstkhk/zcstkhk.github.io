@@ -1,0 +1,244 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>打开部件并创建简单圆角</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>打开部件并创建简单圆角</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>打开 <span class="fileName">ffm3_profile_3</span>，如果<strong>建模</strong>应用模块尚未激活，请开始<strong>建模</strong>应用模块。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/basic_curves/basic_profile_3_nx8.png"></p>
+                     
+                     <p>您的下一个工作是要通过在一些拐角处添加圆角来修剪几何体。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>选择<strong>插入→曲线→基本曲线</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在对话框中，确保<strong>线串模式</strong>复选框已被清除。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <table cellspacing="0" class="check_box" width="300" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" width="20">
+                           
+                           <col span="1" width="180*">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#ECE9D8" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_off.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td bgcolor="#ECE9D8" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">线串模式</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在基本曲线对话框中，点击圆角 <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/curves/basic_curves/fillet.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>当您使用<strong>圆角</strong>命令来创建圆角时，<strong>跟踪条</strong>将不再显示，使用<strong>修剪</strong>命令时也同样如此。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>曲线倒圆</strong>对话框中，将光标移至<strong>方法</strong>按钮以查看创建圆角的方法的名称。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>您可以从创建轮廓右侧顶部和底部的圆角开始。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/basic_curves/basic_graphic98.png"></p>
+                     
+                     <p>可以使用创建圆角时自动修剪垂直和水平直线。</p>
+                     
+                     <div class="verbose">
+                        <p><strong>简单圆角</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/curves/curve_fillet/simple_fillet.gif" border="0"> 是默认激活的创建方法，简单圆角有一些独一无二的特性：</p>
+                     </div>
+                     
+                     <div class="verbose">
+                       <ul>
+                          <LI>
+                            <p _zipIdx="144">它们只能在两条直线间创建</p>
+                          </LI>
+                       </ul>
+                       <ul>
+                          <LI>
+                            <p _zipIdx="144">您必须让选择球一次能选到所有两条直线</p>
+                         </LI>
+                       </ul>
+                       <ul>
+                          <LI>
+                            <p _zipIdx="144">所有的两条直线都会被修剪到创建的圆弧处</p>
+                          </LI>
+                       </ul>
+                     </div>
+                     
+                     <div class="verbose">
+                        <p>如果上述任意特性不能在您创建的圆角中满足，使用<strong>2曲线圆角</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/curves/curve_fillet/2_curve_fillet.gif" border="0"> 代替。</p>
+                     </div>
+                     
+                     <div class="verbose">
+                        <p>当您创建一个圆角时，您需要指定起始的半径。</p>
+                     </div>
+                     
+                     <p>第一个圆角是一个在下侧水平直线和内侧竖直直线之间，半径为<strong>6</strong> mm 的简单圆角。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/basic_curves/basic_graphic99a.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在<strong>曲线倒圆</strong>对话框的<strong>半径</strong>输入框中，键入<strong>6</strong>，如果显示的是其它任何值。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>您也可以通过点击<STRONG>继承</STRONG>生成半径，然后选择一个现有的圆弧、圆或者圆角。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>移动光标到拐角处，确保两条直线都同时在选择球范围之内(哪一条是高亮显示无关紧要)，然后单击。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                    <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/basic_curves/basic_graphic101a.png"></p>
+                     
+                     <p>圆角直接被创建，并且所有直线都被修剪至圆弧。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/basic_curves/basic_fillet1_done.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>如果您未得到正确的圆角，右击并选择<strong>撤销</strong>，然后重试。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>放大到曲线的右上部。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/basic_curves/basic_zoom_nx5.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>当所有直线都在选择球内时，单击以创建圆角，确保另外一条竖直直线不在选择球内。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                    <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/basic_curves/basic_sel_fillet2.png"></p>
+                     
+                     <p>圆角已创建。</p>
+                     
+                     <div class="verbose">
+                       <p>再重复一次，如果您没有得到正确的圆角，右击并选择<strong>撤销</strong>，然后重试。</p>
+                    </div>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/basic_curves/basic_fillet2_done.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>在<STRONG>视图</STRONG>工具条上，点击<STRONG>适合窗口</STRONG>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Set up mesh and select body</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Set up mesh and select body</h2>
+         <p>Meshes in NX have many options. Journaling allows you to see them all. To create a mesh using NXOpen, only the options you want to set are required. The others will use the default settings. Many of the available options are included here for learning purposes. Of key importance are the lines:</p>
+         <p><span class="codeText">myMesh2DBuilder.ElementType.DestinationCollector.AutomaticMode = False</span></p>
+         <p><span class="codeText">myMesh2DBuilder.ElementType.DestinationCollector.ElementContainer = MyMeshCollector</span></p>
+         <p>The ElementContainer line tells NX to use the mesh collector that was created in the previous section. Automatic mode must be set to false in order for the ElementContainer property to be set programmatically. Otherwise the mesh collector will be automatically created and used per the defaults in the NX meshing dialog box.</p>
+         <p>Add the following lines to your routine, below those added in the previous section.</p><pre class="codeExample "><span class="userInput">            ' Setup mesh &amp; options
+            Dim my2DMesh As CAE.Mesh2d = Nothing
+            Dim myMesh2DBuilder As CAE.Mesh2dBuilder = myMeshManager.CreateMesh2dBuilder(my2DMesh)
+            ' Mesh options
+            myMesh2DBuilder.GeometryUsageType = Mesh2dBuilder.GeometryType.Main
+            myMesh2DBuilder.PropertyTable.SetIntegerPropertyValue(&quot;meshing method&quot;, 0)
+            ' Set element size 
+            Dim myExpression As Expression
+            myExpression = myMesh2DBuilder.PropertyTable.GetScalarPropertyValue(&quot;quad mesh overall edge size&quot;)
+            baseFEMPart.Expressions.Edit(myExpression, (myElementSize).ToString)
+            myMesh2DBuilder.PropertyTable.SetScalarPropertyValue(&quot;quad mesh overall edge size&quot;, myExpression)
+            myMesh2DBuilder.PropertyTable.SetBooleanPropertyValue(&quot;split poor quads bool&quot;, True)
+            myMesh2DBuilder.PropertyTable.SetBooleanPropertyValue(&quot;mapped mesh option bool&quot;, True)
+            myMesh2DBuilder.PropertyTable.SetBooleanPropertyValue(&quot;mesh format to solver bool&quot;, True)
+            myMesh2DBuilder.PropertyTable.SetBooleanPropertyValue(&quot;mesh transition bool&quot;, True)
+            myMesh2DBuilder.PropertyTable.SetBooleanPropertyValue(&quot;quad mesh edge match toggle&quot;, True)
+            myMesh2DBuilder.ElementType.ElementDimension = CAE.ElementTypeBuilder.ElementType.Shell
+            myMesh2DBuilder.ElementType.ElementTypeName = &quot;CQUAD4&quot;
+            myMesh2DBuilder.ElementType.DestinationCollector.AutomaticMode = False
+            myMesh2DBuilder.ElementType.DestinationCollector.ElementContainer = MyMeshCollector
+            ' Add body to the selectionlist for meshing
+            Dim myBool As Boolean = Nothing
+            myBool = myMesh2DBuilder.SelectionList.Add(myCAEBody)
+</span></pre><div id="footer"></div>
+      </div>
+   </body>
+</html>

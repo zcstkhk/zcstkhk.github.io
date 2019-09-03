@@ -1,0 +1,38 @@
+{identifier:"id",label:"title",items:[
+
+
+{id:"d5e3",title:"System modeling with external superelements",file:"id1298522.html",type:"topic",parent:""},
+
+
+{id:"d5e5",title:"Using superelements in an assembly FEM",file:"id1267734.html",type:"topic",parent:""},
+
+{id:"d5e7",title:"System modeling workflow",file:"id1290377.html",type:"topic",parent:""},
+
+{id:"d5e9",title:"Generating external superelements for Advanced Simulation system models",file:"id1290378.html",type:"topic",parent:""},
+
+{id:"d5e11",title:"Review",file:"id1323666.html",type:"topic",parent:""},
+{id:"d5e14",title:"Replacing a component FEM with a superelement",file:"id1290379.html",type:"topic",parent:""},
+
+{id:"d5e16",title:"Superelement mapping considerations",file:"id1346401.html",type:"topic",parent:""},
+
+{id:"d5e18",title:"Connecting superelement boundary nodes to the residual",file:"id1346402.html",type:"topic",parent:""},
+
+{id:"d5e20",title:"Superelement displays",file:"id1290380.html",type:"topic",parent:""},
+
+{id:"d5e22",title:"Controlling the display of base FEM approximations",file:"id1346404.html",type:"topic",parent:""},
+
+{id:"d5e24",title:"Supported system model solutions",file:"id1290383.html",type:"topic",parent:""},
+
+{id:"d5e27",title:"Solving the system model",file:"id1290381.html",type:"topic",parent:""},
+
+{id:"d5e29",title:"Example: Assigning external superelements in the bulk data file",file:"id1346427.html",type:"topic",parent:""},
+
+{id:"d5e31",title:"Example: Defining superelement connections and orientation",file:"id1346428.html",type:"topic",parent:""},
+
+{id:"d5e33",title:"Post-processing system models",file:"id1290382.html",type:"topic",parent:""},
+
+{id:"d5e35",title:"Video: post-processing system models",file:"id1371724.html",type:"topic",parent:""},
+
+{id:"d5e37",title:"Modeling with external superelements",file:"id1459469.html",type:"activity",parent:""}
+
+]}

@@ -1,0 +1,135 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Set probe tool properties</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Set probe tool properties</h2>
+         
+         <p>In this activity, you will set your new probe tool to work with CMM Inspection Programming and define the probe mounting junction.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>On the Resource Bar, click the <strong>Inspection Navigator</strong> tab <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/resource_bar/inspection_navigator.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Navigator</strong> toolbar, click <strong>Machine View</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/nx_cmm/navigator/machine_view.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>Rotate the probe so that the CSYS appears as shown below.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/machines/probe_part_18b.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Inspection Navigator</strong>, right-click <strong>GENERIC_MACHINE</strong> and choose <strong>Insert</strong>&rarr;<strong>New Probe</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>If it is not already selected, in the <strong>Create Tool</strong> dialog box, in the <strong>Location</strong> group, select <strong>GENERIC_MACHINE</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Name</strong> box, type a descriptive name of 30 characters or less for the new tool as you want it to appear in the <strong>Inspection Navigator</strong>, and then click <strong>OK</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Probe</strong> dialog box, in the <strong>Mounting Junction</strong> group, click <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/common/csys_dialog.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>CSYS</strong> dialog box, in the <strong>Type</strong> group, select <strong>Absolute CSYS</strong>, and then click <strong>OK</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <table class="attentionTable attn_caution">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">Caution</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>The Renishaw library components were created with the CAD absolute X axis aligned with the tool axis. This coordinate system will be aligned with the tool mount junction specified in the kinematics for the CMM machine or probe head. The CAD absolute X axis of the <strong>Mounting Junction</strong> <span class="emphasis">must</span> be oriented along the tool axis for animations to work correctly. 
+                              </p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>The mounting junction CSYS is now visible, and aligns with the probe CSYS.</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/machines/probe_part_20.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         <div class="stepListResult">
+            
+            <p>The probe tool is now set to work with the CMM and head tools in CMM Inspection Programming. Leave the <strong>Probe</strong> dialog box open for the next activity.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

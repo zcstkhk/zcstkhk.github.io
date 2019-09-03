@@ -1,0 +1,104 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>设置库部件单位</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>设置库部件单位</h2><a name="ndxgenid_ertd_45"></a>
+         
+         
+         <p>示例库提供了英制和公制单位，下方列出的环境变量已为两个单位系统都预先定义。即两个版本的环境变量都已定义，但是英制系统对应的环境变量已被注释，要更改单位系统，将位于 <span class="fileName">Routing Units</span> 下方适合的 UGII_ROUTING_KIT_UNITS 变量注释掉，然后保留另外一个。</p>
+         <a name="ndxgenid_ertd_46"></a>
+         
+         
+         <ul class="unmarkedList">
+            <li>
+               
+               <p>#   Routing Units (管线单位)<br/>UGII_ROUTING_KIT_UNITS=metric<br/> # UGII_ROUTING_KIT_UNITS=inch</p>
+               
+            </li>
+         </ul>
+         
+         <div class="division">
+            
+            <h3>其它特定于机械管线布置的环境变量</h3>
+            
+            <ul class="unmarkedList">
+               <li>
+                  
+                  <p>#   Routing Kit directories (管线套件目录)<br/>UGII_ROUTE_MECH_KIT_DIR=${UGII_BASE_DIR}\ugroute_mech</p>
+                  
+               </li>
+               <li>
+                  
+                  <p>#     Application View File Locations (应用模块视图文件位置)<br/>UGII_ROUTING_APP_VIEW_DIR=${UGII_ROUTE_MECH_KIT_DIR}\appview\</p>
+                  
+               </li>
+            </ul>
+            
+            <ul class="unmarkedList">
+               <li>
+                  
+                  <p>#     Application View Files (应用模块视图文件)<br/>UGII_ROUTE_MECH_APP_VIEW=<br/>${UGII_ROUTE_MECH_KIT_DIR}\appview\&rarr;<br/>ugroute_mech_${UGII_ROUTING_KIT_UNITS}.xml</p>
+                  
+               </li>
+            </ul>
+            
+            <ul class="unmarkedList">
+               <li>
+                  
+                  <p>#     Part Library View Locations (部件库视图位置)<br/>UGII_EPLIB_PART_LIB_VIEW_PATH= <br/>${UGII_ROUTE_MECH_KIT_DIR}\appview\</p>
+                  
+               </li>
+               <li>
+                  
+                  <p>#     Part Table Locations (部件表位置)<br/>UGII_EPLIB_TABLE_PATH= <br/>${UGII_ROUTE_MECH_KIT_DIR}\${UGII_ROUTING_KIT_UNITS}\tables\</p>
+                  
+               </li>
+               <li>
+                  
+                  <p>#     Library Part File Locations (库部件文件位置)<br/>UGII_ROUTE_MECH_PART_PATH= <br/>${UGII_ROUTE_MECH_KIT_DIR}\${UGII_ROUTING_KIT_UNITS}\parts</p>
+                  
+               </li>
+            </ul>
+            
+            <p>要获取更多信息，参见在线帮助文档中的 <strong>CAD&rarr;Routing Systems&rarr;Routing&rarr;Configure Routing applications&rarr;Routing configuration files</strong>.
+            </p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>族成员保存目录</h3>
+            
+            <p><strong>管线部件库</strong>中的各个部件都是一个部件族模板，当您从库中选择一个部件添加到管线装配中时，将生成该部件的族成员，并放在由下面的环境变量定义的默认位置中：</p>
+            <a name="ndxgenid_ertd_47"></a>
+            
+            
+            <ul class="unmarkedList">
+               <li>
+                  
+                  <p>#     Part Family Member Save Location (部件族成员保存位置)<br/>#UGII_ROUTING_MEMBER_SAVE_DIR</p>
+                  
+               </li>
+            </ul>
+            
+            <p>如果您没有定义这个环境变量，部件族成员将会存放在 NX 的启动目录中(如 D:\Program Files\Siemens\NX 9.0\UGII)。</p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

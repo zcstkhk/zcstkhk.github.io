@@ -1,0 +1,115 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>热应力和应变</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>热应力和应变</h2><a name="ndxgenid_spta_thermal_37"></a>
+         <a name="ndxgenid_spta_thermal_38"></a>
+         <a name="ndxgenid_spta_thermal_39"></a>
+         
+         
+         <p>您可以从线性静态分析中计算热应力和应变。</p>
+         
+         <p>在节点温度与参考温度不同时将引起热应变，可以直接将温度指派给节点，或指定几何体温度。</p>
+         
+         <p>在存在热应变的区域可以包含机械载荷载荷，以评估二者的共同影响。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/solutions/thermal/thermal_stress_strain.png"></p>
+         <a name="genid_thermal_stress_analysis_27_546"></a>
+         
+         
+         
+         <h3>热应力分析</h3>
+         
+         <a name="ndxgenid_spta_thermal_41"></a>
+         <a name="ndxgenid_spta_thermal_42"></a>
+         <a name="ndxgenid_spta_thermal_43"></a>
+         
+         
+        <p>热应力分析可以有选择地使用热结果作为结构分析的预载输入。</p>
+         
+         <p>要使用 NX Nastran 的预载属性：</p>
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>在<strong>仿真导航器</strong>中，右击结构解算方案中的子工况并选择<strong>编辑</strong>。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>对于<strong>预载类型</strong>，选择 <strong>NASTRAN 温度</strong>。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>浏览并选择 NX Nastran *.op2 文件，其中包含了温度结果。</p>
+               
+            </li>
+            
+         </ol>
+         
+         <p>要使用 NX 热中的结果，将<strong>预载类型</strong>设置为 <strong>NX 热温度</strong>。</p>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/solutions/thermal/temperature_preload.png"></p>
+         
+         <a name="genid_understanding_a_pre-load_21_494"></a>
+         
+         
+         
+         <h3>了解预载</h3>
+         
+         <a name="ndxgenid_spta_thermal_45"></a>
+         <a name="ndxgenid_spta_thermal_46"></a>
+         
+         
+        <p>指定预载时，求解器：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>从选定的输出文件中读取节点温度数据</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在结构节点上施加温度载荷，网格对于 NX Nastran 必须是相同的，但对 NX 热则不需要</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>计算 &Delta;<span class="variableText">t</span> 时使用材料数据或解算方案属性中的应变自由温度</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>与任何现有的结构载荷一起使用结构材料属性</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

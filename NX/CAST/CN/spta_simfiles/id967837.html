@@ -1,0 +1,70 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>仿真文件</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>仿真文件</h2>
+         
+         <p>仿真 (.sim) 文件具有以下特性：</p>
+         <ul>
+           <li>
+             <p>它是一个 NX 装配</p>
+           </li>
+           <li>
+             <p>它包含的唯一组件是一个 FEM 文件</p>
+           </li>
+           <li>
+             <p>包含用于定义分析的载荷、约束及其他边界条件</p>
+           </li>
+           <li>
+             <p>可以替代在组件 FEM 文件中定义的物理属性、材料属性和显示属性</p>
+           </li>
+           <li>
+             <p>包括特定于求解器的数据，其中包含一个或多个解算方案以及可重用的求解器特定建模对象           </p>
+           </li>
+         </ul>
+         
+         <a name="genid_spta_simfiles_10"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/data_management/sim_files/simfem_simnav.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>仿真导航器中的仿真和组件 FEM</h4>
+         </div>
+         <a name="genid_spta_simfiles_11"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/data_management/sim_files/simfem_assynav.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>装配导航器中的同一个仿真文件</h4>
+         </div>
+         
+         
+         <p>组件 FEM 充当仿真的主模型。您可以在定义仿真时访问 FEM 文件中的网格和多边形几何体。更新 FEM 文件时，基于几何体的载荷、约束和对象也会更新。 </p>
+         <p>由于多个仿真文件可以包含作为组件的同一 FEM，因此可对不同的分析重用网格数据。</p>
+<div id="footer"></div>
+      </div>
+   </body>
+</html>

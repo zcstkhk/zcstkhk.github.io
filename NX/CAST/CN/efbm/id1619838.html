@@ -1,0 +1,241 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>将要加工的几何体识别为特征</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>将要加工的几何体识别为特征</h2>
+         
+         
+         <p>您将使用<strong>查找特征</strong>命令来识别孔、槽、腔体以及用户定义特征。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在资源条上，点击<strong>加工特征</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/resource_bar/machining_feature_navigator.gif" border="0"> 选项卡。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>右击 <strong>mnf8_fbm_guide_plate</strong> 节点并选择<strong>查找特征</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>查找特征</strong>对话框的<strong>类型</strong>列表中，选择<strong>参数化识别</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>要搜索的几何体</strong>组的<strong>搜索方法</strong>列表中，选择<strong>工件</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/activities/feature_based_machining/find_features_search_workpiece.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>要识别的特征</strong>组的列表中，确保已选中<strong>参数化特征</strong>节点旁的复选框 <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/nav_check_on.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>展开<strong>参数化特征</strong>节点：</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">在<strong>参数化特征</strong>节点下方，清除 <strong>Turning</strong> 以及 <strong>WEDM</strong> 旁的复选框。
+                     
+                     <p>您清除了您不想要识别的特征类型。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>清除 <strong>SampleColorFeatures</strong> 旁的复选框。</p>
+                  
+               </div>
+              <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                 您的列表看起来应该和下图类似：</div>
+                  <div class="stepResult">
+                     
+                     <table frame="box" rules="all" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/node_expanded.gif" border="0"> <img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/feature_based_machining/machining_feature_navigator/find_features_node_mixed.png" border="0"> <span class="literalText">Recognition</span></p>
+                                 
+                                 <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/node_expanded.gif" border="0"> <img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/feature_based_machining/machining_feature_navigator/find_features_node_mixed.png" border="0"> <span class="literalText">ParametricFeatures</span></p>
+                                 
+                                 <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/node_collapsed.gif" border="0"> <img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/feature_based_machining/machining_feature_navigator/find_features_node_on.png" border="0"> <span class="literalText">BOSSES</span></p>
+                                 
+                                 <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/node_collapsed.gif" border="0"> <img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/feature_based_machining/machining_feature_navigator/find_features_node_on.png" border="0"> <span class="literalText">CORNER_NOTCHES</span></p>
+                                 
+                                 <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/node_collapsed.gif" border="0"> <img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/feature_based_machining/machining_feature_navigator/find_features_node_on.png" border="0"> <span class="literalText">GROOVES</span></p>
+                                 
+                                 <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/node_collapsed.gif" border="0"> <img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/feature_based_machining/machining_feature_navigator/find_features_node_on.png" border="0"> <span class="literalText">HOLES</span></p>
+                                 
+                                 <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/node_collapsed.gif" border="0"> <img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/feature_based_machining/machining_feature_navigator/find_features_node_on.png" border="0"> <span class="literalText">POCKETS</span></p>
+                                 
+                                 <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/node_collapsed.gif" border="0"> <img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/feature_based_machining/machining_feature_navigator/find_features_node_on.png" border="0"> <span class="literalText">SIDE_NOTCHES</span></p>
+                                 
+                                 <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/node_collapsed.gif" border="0"> <img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/feature_based_machining/machining_feature_navigator/find_features_node_on.png" border="0"> <span class="literalText">SLOTS</span></p>
+                                 
+                                 <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/node_collapsed.gif" border="0"> <img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/feature_based_machining/machining_feature_navigator/find_features_node_on.png" border="0"> <span class="literalText">STEPS</span></p>
+                                 
+                                 <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/node_collapsed.gif" border="0"> <img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/feature_based_machining/machining_feature_navigator/find_features_node_on.png" border="0"> <span class="literalText">SURFACES</span></p>
+                                 
+                                 <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/node_collapsed.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/feature_based_machining/machining_feature_navigator/find_features_node_off.png" border="0"> <span class="literalText">TURNING</span></p>
+                                 
+                                 <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/node_collapsed.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/feature_based_machining/machining_feature_navigator/find_features_node_off.png" border="0"> <span class="literalText">WEDM</span></p>
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-20_low.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/node_collapsed.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/feature_based_machining/machining_feature_navigator/find_features_node_off.png" border="0"> <span class="literalText">SampleColorFeatures</span></p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>在<strong>加工进刀</strong>方向组的<strong>矢量</strong>列表中，选择 <strong>ZC</strong>。</p>
+                  
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>在<strong>已识别的特征</strong>组中，点击<strong>查找特征</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/find_features/find_features.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>处理器将查找特征并将它们添加到<strong>已识别的特征</strong>列表中。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/activities/feature_based_machining/find_features_recognized.png"></p>
+                     
+                     <p>您可以从这个列表中移除不想处理的特征。平面特征不需要铣削，因为您使用<strong>部件轮廓</strong>选项定义毛坯时没有添加偏置。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>在<strong>已识别的特征</strong>列表中，选择特征 <strong>SLOT_RECTANGULAR</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>移除</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/common/delete_blk.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_12">
+               <div class="stepAction">
+                  
+                  <p>选择特征 <strong>SURFACE_PLANAR_RECTANGULAR</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_13">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>移除</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/common/delete_blk.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_14">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>特征将被添加到<strong>加工特征导航器</strong>中。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/activities/feature_based_machining/find_features_found_features.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_15">
+               <div class="stepAction">
+                  
+                  <p>展开<strong>加工特征导航器</strong>并向右滚动以查看<strong>源</strong>列。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>注意到所有特征的<strong>源</strong>列中都显示<strong>已识别</strong>，这表示 NX 已使用<strong>参数化识别</strong>选项找到这些特征。</p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

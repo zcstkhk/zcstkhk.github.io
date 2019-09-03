@@ -1,0 +1,135 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>将分开的曲线连结为一条样条</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>将分开的曲线连结为一条样条</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在<strong>曲线</strong>工具条上，点击<strong>连结曲线</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/curves/curve/join.gif" border="0" alt="Insert &gt; Curve from Curves &gt; Join" title="Insert &gt; Curve from Curves &gt; Join">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p><a href="#" onclick="showDialog('join_options')">更多关于连结的信息</a></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>确保<strong>曲线规则</strong>列表是设置为<strong>相切曲线</strong>，然后选择第一条曲线。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/join_curves/other_graphic80.png"></p>
+                     
+                     <p>所以曲线都将高亮显示。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/join_curves/other_graphic80a_nx8.png"></p>
+                     
+                     <p>您将保留原始的曲线，但要隐藏它们。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>设置</strong>组中，确保已选中<strong>关联</strong>复选框。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>从<strong>输入曲线</strong>列表中，选择<strong>隐藏</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>从<strong>输出曲线类型</strong>列表中，确保选择的是<strong>三次</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>您可以指定距离公差和角度公差来控制结果曲线的精确度。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>对各个公差都使用默认值，然后点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>曲线现在显示为单一颜色 &mdash; 直线和圆弧已被单一曲线替代。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/join_curves/other_graphic82_nx5.png"></p>
+                     
+                     <p>可以显示原来的曲线，以查看它们是否仍在原处。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>选择<strong>编辑→显示和隐藏→反转显示和隐藏</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>原始曲线将出现。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/join_curves/other_graphic79_nx5.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>关闭部件。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div dojoType="dijit.Dialog" id="join_options" title="更多关于连结的信息">
+            <div dojoType="dijit.layout.ContentPane" href="join_options.html" extractContent="true"></div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Sketch Preferences enhancement</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Sketch Preferences enhancement</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <div class="defList">
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p><span class="uiTerm">Constraint Symbol Size</span></p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <p>Sets the initial default size of constraint symbols. After a sketch is created you must use the <span class="uiTerm">Edit</span>&rarr;<span class="uiTerm">Style</span> command to change the size of constraint symbols.
+                     </p>
+                     
+                  </div>
+               </div>
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p><span class="uiTerm">Use Solving Tolerance</span></p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <p>By default this check box is cleared and sketches solve constraints with the tightest possible tolerance. You can assume that sketches solve with no tolerance.</p>
+                     
+                     <p>Selecting this option lets you set the solving tolerance for the sketch. The tolerance specifies the largest possible gap or overlap of your sketch objects. Situations where you might choose to use this tolerance are:</p>
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p>When the model has vastly different scales for different geometries. For example, if some of the dimensions in kilometers while others are in millimeters, solving with tight tolerance most likely leads to conflicting constraints.</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>When sketch offset commands expect the input chain to be end-coincident within the solving tolerance. For example, if you select an external chain of curves to offset and if the chain has gaps or overlaps at the end points, you can set the sketch tolerance to be more than the greatest gap to ensure the offset command is successful.</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+               </div>
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p><span class="uiTerm">Dynamic Sketch Display</span></p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <p>When this option is selected, constraint and vertex symbols do not display if the associated geometry is very small. To see these sketch objects regardless of associated geometry size, clear this check box.</p>
+                     
+                  </div>
+               </div>
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p><span class="uiTerm">Display Constraint Symbols</span></p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <p>Controls the initial display of geometric constraint symbols.</p>
+                     
+                  </div>
+               </div>
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p><span class="uiTerm">Name Prefixes</span></p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <p>Adds a default name when you create a sketch object. The default name <span class="uiTerm">Vertex </span> has been changed to <span class="uiTerm">Point</span>.
+                     </p>
+                     
+                  </div>
+               </div>
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p><span class="uiTerm">Part Settings</span> <span class="uiTerm">Colors</span></p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <p>Sets the default sketch colors.</p>
+                     
+                     <p>The <span class="uiTerm">Conflicting Constraints</span> preference is now named <span class="uiTerm">Conflicting Objects</span>. 
+                     </p>
+                     
+                     <p>The <span class="uiTerm">Unsolved Curves</span> preference is new. Use this preference to set the color for geometry that is overconstrained or has conflicting constraints.
+                     </p>
+                     
+                  </div>
+               </div>
+            </div>
+            
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Modeling, Drafting, Shape Studio, Sheet Metal</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Preferences</span>&rarr;<span class="uiTerm">Sketch</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p><span class="uiTerm">Sketch Style</span> tab, <span class="uiTerm">Constraint Symbol Size</span></p>
+                     
+                     <p><span class="uiTerm">Sketch Style</span> tab, <span class="uiTerm">Use Solving Tolerance</span> check box
+                     </p>
+                     
+                     <p><span class="uiTerm">Session Settings</span> tab, <span class="uiTerm">Display Constraint Symbols</span> check box
+                     </p>
+                     
+                     <p><span class="uiTerm">Session Settings</span> tab, <span class="uiTerm">Display Constraint Symbols</span> check box
+                     </p>
+                     
+                     <p><span class="uiTerm">Session Settings</span> tab, <span class="uiTerm">Name Prefixes</span> group&rarr;<span class="uiTerm">Point</span></p>
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Part Settings</span> tab&rarr;<span class="uiTerm">Conflicting Objects</span>, &amp; <span class="uiTerm">Unsolved Curves</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

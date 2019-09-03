@@ -1,0 +1,120 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>组合投影曲线的步骤</title>
+   </head>
+   <body>
+      <div class="contentType_procedure">
+         <h2>组合投影曲线的步骤</h2>
+         <p><a name="ndxgenid_ecvd_72"></a>
+            要创建由两条现有曲线组合的新曲线：</p>
+         <ul>
+            
+            <li>
+               
+               <p>在<strong>曲线1</strong>组中选择一条曲线线串</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在<strong>曲线2</strong>组中选择<strong>选择曲线</strong>图标，然后选择第二条曲线线串</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>如果需要，指定<strong>投影矢量1</strong>。</p>
+               <p>可以使用对话框中的投影矢量选项来帮助您定义矢量。</p>
+               
+            </li>
+            
+            <li>
+            <p>如果需要，指定<strong>投影矢量2</strong>。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>如果您不想要要组合的投影曲线与输入曲线关联，清除<strong>关联</strong>复选框。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>指定您想要如何处理输入曲线：</p>
+               <p>当输出曲线是关联时，<strong>保留</strong>或<strong>隐藏</strong>。</p>
+               
+               <p>当输出曲线是非关联时，<strong>删除</strong>或<strong>替换</strong>。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>如果想要预览结果，打开<strong>显示结果</strong>。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>点击<strong>确定</strong>或<strong>应用</strong>。</p>
+               
+            </li>
+            
+         </ul>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/combined_projection/freeform_activities_developed_curves_dvcrv_frm_1w1c.gif"></p>
+         <table class="attentionTable attn_tip">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">提示</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>可以使用<strong>编辑→曲线→参数</strong>来更改组合曲线的参数信息。</p>
+                  
+                  <p>如果结果曲线是一条样条，它的阶次由<strong>首选项→建模</strong>(<strong>自由曲面</strong>选项卡)中的<strong>曲线拟合方法</strong>选项控制，这些选项有<span class="uiTerm"><strong>三次</strong></span>、<strong>五次</strong>或<strong>高阶</strong>(您设置最高次数和段数)。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div class="division">
+            
+            <h3>几何体选择</h3>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>可以选择曲线、边、面、草图以及线串</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>二维输入线串：投影矢量默认为线串平面的法向</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>三维线串：必须为所有线串定义投影矢量</p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

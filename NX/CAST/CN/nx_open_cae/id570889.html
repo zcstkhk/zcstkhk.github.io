@@ -1,0 +1,40 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Create and initialize object references</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Create and initialize object references</h2>
+         <p>In order to create the required objects and use the methods to operate on them, the object references to the Base Part, Base FEMPart and Base FEModel need to be declared. The objects that you will need for this project, like a mesh collector, are created using a reference to these objects. Add the highlighted code below <span class="codeText">Sub Main()</span>.
+         </p><pre class="codeExample ">Sub Main()
+<span class="userInput">    ' Create/initialize object references
+    Dim basePart As BasePart = theSession.Parts.BaseWork
+    Dim baseFEMPart As CAE.BaseFemPart = CType(basePart, CAE.BaseFemPart)
+    Dim baseFEModel As CAE.BaseFEModel = CType(baseFEMPart.BaseFEModel, CAE.BaseFEModel)
+</span></pre><table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>The code created up to this point is common to many NXOpen.CAE projects, so this does not need to be rewritten for every project. Copy/paste from a existing project or use the Visual Studio Code Snippet capability to save time and effort.</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

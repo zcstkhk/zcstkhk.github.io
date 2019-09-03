@@ -1,0 +1,145 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>分析分型区域</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>分析分型区域</h2>
+         
+         
+         <p>盘面的主分形面位于名片盒部件的底部。</p>
+         
+         <p>您将使用<strong>区域分析</strong>命令来识别：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>围绕名片盒底部周长的主分型回路。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>名片盒底部开口处的内部回路。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>由型芯构成的所有面。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>由型腔构成的所有面。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>模具分型工具</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/wizards/mold_wizard/parting.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/mold_wizard/activities/introductory_topics/parting_intro_1.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>模具分型工具</strong>工具条上的<strong>区域分析</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/wizards/parting_manager/design_regions.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>分型部件中只包含一个体，它将被自动选中。</p>
+                     
+                     <p>已正确设置 WCS，把 +ZC 方向设为脱模方向，以使默认的脱模方向为正确的。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>检查区域</strong>对话框的<strong>计算</strong>选项卡中，点击<strong>计算</strong> <img align="bottom" src="../graphics/nonLocalized/nx/mold_wizard/calculate.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>区域</strong>选项卡。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>注意到零个面位于<strong>未定义的区域下方</strong>，主分型边以及两个断路(shut-off)区域。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/mold_wizard/activities/introductory_topics/parting_mpv_1.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>设置区域颜色</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/wizards/mpv/set_color_all_faces.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>旋转部件以查看各种面的颜色。</p>
+                  
+                  <p align="left"><img align="bottom" src="../graphics/nonLocalized/nx/mold_wizard/regions_color.png"></p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>正拔模(型腔侧)的面以及负拔模(型芯侧)的面都显示为各自的颜色。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>在<strong>检查区域</strong>对话框中，点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

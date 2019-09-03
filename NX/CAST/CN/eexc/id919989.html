@@ -1,0 +1,209 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>编辑表达式并更新部件</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>编辑表达式并更新部件</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在 C 列中更改下表所示单元格的值，保持其它值不变。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <table bgcolor="white" border="1" cellpadding="2" cellspacing="0" frame="box" rules="all" width="95%" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col align="center" span="1" width="55">
+                           
+                           <col span="1" width="133*">
+                           
+                           <col span="1" width="130*">
+                           
+                           <col span="1" width="131*">
+                           
+                        </colgroup>
+                        
+                        <tbody valign="bottom">
+                           
+                           <tr bgcolor="#F0F0F0">
+                             <td colspan="1" rowspan="1"></td>
+                             <td colspan="1" rowspan="1" align="center"><p>A</p></td>
+                             <td colspan="1" rowspan="1" align="center"><p>B</p></td>
+                             <td colspan="1" rowspan="1" align="center"><p>C</p></td>
+                           </tr>
+                           <tr>
+                             <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>1</p></td>
+                             <td colspan="1" rowspan="1"></td>
+                             <td colspan="1" rowspan="1"></td>
+                             <td colspan="1" rowspan="1" align="right"></td>
+                           </tr>
+                           <tr>
+                             <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>2</p></td>
+                             <td colspan="1" rowspan="1"><p><strong>描述</strong></p></td>
+                             <td colspan="1" rowspan="1"><p><strong>参数</strong></p></td>
+                             <td colspan="1" rowspan="1" align="right"></td>
+                           </tr>
+                           <tr>
+                             <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>3</p></td>
+                             <td colspan="1" rowspan="1"><p>齿轮齿数</p></td>
+                             <td colspan="1" rowspan="1"><p>N</p></td>
+                             <td colspan="1" rowspan="1" align="right"><p>40</p></td>
+                           </tr>
+                           <tr>
+                             <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>4</p></td>
+                             <td colspan="1" rowspan="1"><p>每 mm 所含齿数</p></td>
+                             <td colspan="1" rowspan="1"><p>P</p></td>
+                             <td colspan="1" rowspan="1" align="right"></td>
+                           </tr>
+                           <tr>
+                             <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>5</p></td>
+                             <td colspan="1" rowspan="1"><p>齿厚</p></td>
+                             <td colspan="1" rowspan="1"><p>Thickness</p></td>
+                             <td colspan="1" rowspan="1" align="right"><p>10</p></td>
+                           </tr>
+                           <tr>
+                             <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>6</p></td>
+                             <td colspan="1" rowspan="1"><p>中心轮毂直径</p></td>
+                             <td colspan="1" rowspan="1"><p>hub_dia</p></td>
+                             <td colspan="1" rowspan="1" align="right"><p>40</p></td>
+                           </tr>
+                           <tr>
+                             <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>7</p></td>
+                             <td colspan="1" rowspan="1"><p>中心轮毂高度</p></td>
+                             <td colspan="1" rowspan="1"><p>hub_height</p></td>
+                             <td colspan="1" rowspan="1" align="right"></td>
+                           </tr>
+                           <tr>
+                             <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>8</p></td>
+                             <td colspan="1" rowspan="1"><p>中心孔的直径</p></td>
+                             <td colspan="1" rowspan="1"><p>Hole_dia</p></td>
+                             <td colspan="1" rowspan="1" align="right"><p>15</p></td>
+                           </tr>
+                           <tr>
+                             <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>9</p></td>
+                             <td colspan="1" rowspan="1"><p>中心键槽的长度</p></td>
+                             <td colspan="1" rowspan="1"><p>Key_length</p></td>
+                             <td colspan="1" rowspan="1" align="right"></td>
+                           </tr>
+                           <tr>
+                             <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>10</p></td>
+                             <td colspan="1" rowspan="1"><p>中心键槽的宽度</p></td>
+                             <td colspan="1" rowspan="1"><p>Key_width</p></td>
+                             <td colspan="1" rowspan="1" align="right"></td>
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><span class="literalText">11</span></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1"></td>
+                              
+                              <td colspan="1" rowspan="1"></td>
+                              
+                              <td align="right" colspan="1" rowspan="1"></td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                     <p>现在已经可以更新部件。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>高亮显示所有表达式单元格(B3:C10)并选择<strong>加载项→定义表达式范围</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>选择<strong>加载项→更新 NX 部件</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>电子表格中的所有数据都将传送回部件中。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>关闭电子表格。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>退出电子表格</strong>对话框中，点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在 NX 中，注意到部件已经根据您在电子表格中做出的修改来更新。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p><span class="uiTerm">之前</span></p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/expressions/act1.png"></p>
+                     
+                     <p><span class="uiTerm">之后</span></p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/expressions/spreadsheet_graphic10.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>关闭部件。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

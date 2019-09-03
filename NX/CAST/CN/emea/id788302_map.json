@@ -1,0 +1,8 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开部件并显示工序导航器",file:"id788306.html",type:"topic",parent:""},
+{id:"d7e3",title:"显示机床视图",file:"id967452.html",type:"topic",parent:""},
+{id:"d7e4",title:"显示程序顺序视图",file:"id967454.html",type:"topic",parent:""},
+{id:"d7e5",title:"显示几何视图",file:"id967456.html",type:"topic",parent:""},
+{id:"d7e6",title:"显示加工方法视图",file:"id967458.html",type:"topic",parent:""},
+{id:"d7e7",title:"更改工序顺序",file:"id967460.html",type:"topic",parent:""},
+{id:"d7e8",title:"更改工序的刀具",file:"id967462.html",type:"topic",parent:""}]}

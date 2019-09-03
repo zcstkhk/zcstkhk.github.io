@@ -1,0 +1,64 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>几何体抽取过程</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>几何体抽取过程</h2>
+         
+         <p><a name="ndxgenid_spta_geoabst_17"></a>
+            <a name="ndxgenid_spta_geoabst_18"></a>在 FEM 文件中抽取多边形几何体以优化用于网格划分的方法有两种：</p>
+         
+         <ul>
+            
+            <li>可以在 2D 或 3D 网格划分过程中使用软件的自动抽取功能
+               
+            </li>
+            
+            <li>使用<strong>自动修复几何体</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/auto_heal_geometry.gif" border="0"> 命令以及其它手动清理命令来手动抽取模型，这些命令位于<strong>模型清理</strong>工具条上
+            </li>
+            
+         </ul>
+         
+         <p>不管您在网格划分过程是否选择执行抽取或者使用<strong>自动修复几何体</strong>，抽取过程都是一样的。软件将搜索模型中那些可能阻止软件划分网格或求解模型的小几何特征。抽取过程中，软件将消除：               </p>
+         <ul>
+            <li>
+              <p>较短的边</p>
+            </li>
+            <li>
+              <p>长条面</p>
+            </li>
+            <li>
+              <p>几何体的高度收缩区域            </p>
+            </li>
+            
+         </ul>
+         
+         <a name="genid_spta_geoabst_20"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/abstraction/auto_heal.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>(上) 原始几何体；(下) 使用自动修复几何体后的几何体</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

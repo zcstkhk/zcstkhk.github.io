@@ -1,0 +1,85 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Modeling the space thermal environment</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Modeling the space thermal environment</h2>
+         <p>With the commands available in NX Space Systems Thermal, you can define the: </p>
+         <ul>
+            
+            <li>
+               
+               <p>Orbit, attitude, and articulations of a spacecraft.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Orbital maneuvers.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The celestial body being orbited or specify a body with particular conditions.</p>
+               
+            </li>
+            
+         </ul>
+         <p>The software:</p>
+         <ul>
+            
+            <li>
+               
+               <p>Creates an explicit model of the celestial body to calculate radiative heating for each element in the spacecraft.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Uses the view factors (calculated when you define a <span class="uiTerm">Radiation</span> simulation object) to determine the distribution and absorption of radiative flux. 
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Models eclipses by controlling the direct solar incidence. Heating effects due to planet radiation is still considered. </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Models the specular and transmissive effects for different spectra. </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Computes element shadowing to an accuracy that you specify. </p>
+               
+            </li>
+            
+         </ul>
+         <p>After you define the orbit you can use the <span class="uiTerm">Orbit Visualizer</span> command to display an animation of the spacecraft in the simulated orbit.
+         </p>
+         <p>You can define multiple orbital maneuvers (slews) or different orbit sections in the same simulation, however in the <span class="uiTerm">Orbit Visualizer</span> only the parent orbit will be displayed.
+         </p>
+         <p>You define orbital maneuvers by defining one parent orbit and multiple child orbits. You must ensure that the orbit sections of each orbit match in time and space.</p>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/maya/sst_satellite/sst_obj_4.gif"></p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

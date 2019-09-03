@@ -1,0 +1,61 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Defining orbital heating</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Defining orbital heating</h2>
+         <p>Use an <span class="uiTerm">Orbital Heating</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/simulation/advanced_simulation/orbital_heating.gif" border="0"> simulation object to model spacecraft, their systems, and components which undergo varying solar, albedo, and infrared heating in space using the orbit modeling capabilities of Space Systems Thermal. 
+         </p>
+         <p>You can define an orbit as a complete segment or partial orbit segments. You can also concatenate the segments to model orbital maneuvers. To do this, you must create multiple <span class="uiTerm">Orbital Heating</span> simulation objects with each orbit segment defined by a different <span class="uiTerm">Orbit</span> modeling object.
+         </p>
+         <p>The <span class="uiTerm">Orbital Heating</span> simulation object requests solar, Albedo, and planet view factor calculations for a spacecraft in a defined orbit. This radiation request takes into consideration, eclipses, movement of appendages, spacecraft rotation, and spinning. A radiosity approach is used to determine the reflection and absorption of the incident flux throughout the model. You can recover temperatures, orbital view factors, and heat fluxes for post processing and visualization. 
+         </p>
+         <p>To define an <span class="uiTerm">Orbital Heating</span> simulation object: 
+         </p>
+         <ul>
+            
+            <li>
+               
+               <p>Define a <span class="uiTerm">Thermo-Optical Properties &ndash; Advanced</span> modeling object, for all elements on which you define an <span class="uiTerm">Orbital Heating</span> simulation object. You must specify a value for <span class="uiTerm">Absorptivity</span> under the <span class="uiTerm">Solar Properties</span> group of the  <span class="uiTerm">Thermo-Optical Properties &ndash; Advanced</span> dialog box.   
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Define an <a href="#" onclick="loadFile('id362522.html')"><span class="uiTerm">Orbit</span></a> modeling object, and any necessary articulations. 
+               </p>
+               
+            </li>
+            
+         </ul>
+         <table class="attentionTable attn_tip">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Tip</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>To preview a defined orbit prior to solving the model, click <span class="uiTerm">Display</span> in the <span class="uiTerm">Orbital Heating</span> dialog box. To read a text summary of the defined orbital heating simulation object, click <span class="uiTerm">Information</span>.
+                  </p>
+                  
+               </td>
+            </tr>
+         </table>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/maya/sst_satellite/orbit_visualizer_1.png"></p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

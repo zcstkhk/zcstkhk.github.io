@@ -1,0 +1,49 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>About the model</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>About the model</h2>
+         <p>Use the <span class="uiTerm">Simulation Navigator</span> to explore the existing model. 
+         </p>
+         <div class="division">
+            
+            <h3>Modeling the plug</h3>
+            
+            <p>The model contains a two-body part that resembles a snap-in plug connector. A large displacement nonlinear solution will be used to simulate the assembly of the connector. </p>
+            
+            <p>The solution type is NX Nastran Structural, Advanced Nonlinear (SOL  601, 106). </p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Examine the contact objects</h3>
+            
+            <p>In the <span class="uiTerm">Simulation Navigator</span>, the solution's  <span class="uiTerm">Simulation Objects</span> container lists two face contact objects. 
+            </p>
+            
+            <div class="verbose">
+               <p>The contact graphics are highlighted in the graphics window. The source faces for the contact are on the plug, and the target faces are on the socket. </p>
+            </div>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/activities/workflows/quality/bc_contact1.gif"></p>
+            
+            <p>These contact simulation objects model the regions where the plug will contact the socket as the plug is displaced. </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

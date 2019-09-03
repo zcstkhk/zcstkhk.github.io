@@ -1,0 +1,293 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Drill the 0.600 diameter centerline hole</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Drill the 0.600 diameter centerline hole</h2>
+         
+         
+         <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;"><script type="dojo/method">
+      flashData= {
+          swfSrc : '../xps3/graphics/xpsPlayer.swf',
+          graphSrc : '',
+          align : 'center',
+          base : './',
+          height : '403',
+          width : '379',
+          bgcolor : '#000000',
+          flashVersion : '6',         
+          looping : 'true',
+          play : 'true',
+          menu : 'true',
+          parameters : 'mySound=false,dependentFile1=..%2Fgraphics%2FnonLocalized%2Fnx%2Ficons%2Fanimations%2Fflash%2Fmanufacturing%2Fturning_mfg_op2.swf,dependentFile2=..%2Fxps3%2Fgraphics%2Fnav_buttons.txt'
+      }
+      top.loadFlash(this,flashData);
+    </script></div>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>On the <span class="uiTerm">Insert</span> toolbar, click <span class="uiTerm">Create Operation</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/manufacturing/manufacturing_create/create_operation.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Create Operation</span> dialog box, click <span class="uiTerm">Centerline Breakchip</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/centerline_breakchip.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Location</span> group, set the options as shown.
+                  </p>
+                  
+                  <table frame="void" rules="none" width="230">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"><span class="uiTerm">Program</span> = <span class="literalText">PROGRAM</span></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"><span class="uiTerm">Tool</span> = <span class="literalText">DRILLING_TOOL</span></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td colspan="1" height="25" rowspan="1">
+                              
+                              <p class="no-bottom-margin"><span class="uiTerm">Geometry</span> = <span class="literalText">AVOIDANCE</span></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"><span class="uiTerm">Method</span> = <span class="literalText">LATHE_CENTERLINE</span></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Centerline Breakchip</span> dialog box, in the <span class="uiTerm">Start Point and Depth</span> group, click <span class="uiTerm">Display Start and End</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/display.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>You will display the start point (1) and then specify an end point (2) that defines a depth that drills completely through the part.</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/turning_project_graphic51.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Depth Option</span> list, select <span class="uiTerm">End Point</span> 
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>Select the <span class="uiTerm">Break Through</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_on.gif" border="0"> check box.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">Inferred Point</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/common/point.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>Select the end of the vertical line to define the drilling end point.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <div class="verbose">
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/turning_project_graphic52.gif"></p>
+                     </div>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Centerline Breakchip</span> dialog box, in the <span class="uiTerm">Cycle Type</span> group, expand the <span class="uiTerm">Chip Removal</span> group, and from the <span class="uiTerm">Increment Type</span> list, select <span class="uiTerm">Constant</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation"></div>
+               </div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Constant Increment</span> box, type <span class="literalText">1.00</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_12">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Options</span> group, click <span class="uiTerm">Edit Display</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/edit_display.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_13">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Display Options</span> dialog box, in the <span class="uiTerm">Tool</span> group, from the <span class="uiTerm">Tool Display</span> list, select <span class="uiTerm">2D</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_14">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_15">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Centerline Breakchip</span> dialog box, in the <span class="uiTerm">Actions</span> group, click <span class="uiTerm">Generate</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/generate.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/turning_project_graphic55.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_16">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span> to complete the operation.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         <div class="stepListResult">
+            
+            <table bgcolor="white" border="1" cellpadding="0" cellspacing="1" frame="void" rules="none" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td align="left" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">NC_PROGRAM<br/><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/turning_project_graphic500.gif" border="0">PROGRAM<br/><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/turning_project_graphic503.gif" border="0">CENTERLINE_SPOTDRILL<br/><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/turning_project_graphic501.gif" border="0"><span class="uiTerm">CENTERLINE_BREAKCHIP</span><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/turning_project_graphic502.gif" border="0"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

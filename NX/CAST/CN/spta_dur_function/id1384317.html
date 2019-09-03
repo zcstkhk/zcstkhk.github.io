@@ -1,0 +1,95 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>耐久性损伤评估</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>耐久性损伤评估</h2>
+         
+         <p>使用<strong>评估损伤</strong>命令执行周期计数，以标识工作周期中的所有应力或应变周期并计算由已标识周期引起的损伤。此命令使用 AFU 文件中保存的应力或应变函数。AFU 文件必须已加载到 <strong>XY 函数导航器</strong>中。</p>
+         <p>使用<strong>评估损伤</strong>命令时，即使有限元模型没有应力或应变结果，也可以计算某一位置的损伤。耐久性损伤评估是基于事件的疲劳损伤评估的备选项。</p>
+         <p>疲劳损伤柱状图结果可以存储为电子表格或 CSV 文件格式。</p>
+        <p>必须指定以下参数：</p>
+         <ul>
+           <li>
+             <p>一个或多个应力或应变函数。NX 累积所有指定函数的疲劳损伤结果</p>
+           </li>
+           <li>
+             <p>公称范围框和平均框定义。这些定义从指定函数自动计算得出，但您可以修改它们的值</p>
+           </li>
+           <li>
+             <p>疲劳寿命准则</p>
+           </li>
+           <li>
+             <p>循环应力-应变模型</p>
+           </li>
+           <li>
+             <p>应用指定应力或应变函数的材料           </p>
+           </li>
+         </ul>
+         
+         <p>通过<strong>分析应变片</strong>命令可以获取应变片数据中的应力和应变函数。</p>
+         
+         
+         <div class="division">
+            
+           <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+               </colgroup>
+               
+               <tr valign="top">
+                 <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p>高级仿真</p></td>
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>耐久性</strong>→<strong>评估损伤</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/durability/evaluate_damage.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                 <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p><strong>插入</strong>→<strong>耐久性</strong>→<strong>评估损伤</strong></p></td>
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

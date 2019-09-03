@@ -1,0 +1,255 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Create Linked Mirror Part</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Create Linked Mirror Part</h2>
+         <div class="estimatedTime">
+            <p>Estimated time to complete this lesson: 8&ndash;11  minutes</p>
+         </div>
+         <div></div>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>Use the <span class="uiTerm">Create Linked Mirror Part</span> command to create an associative linked mirror part from a component in the <span class="uiTerm">Assembly Navigator</span>. The source part can be either a piece part or an assembly component. The linked mirror part has the same geometry, feature groups, object groups, attributes, layer structure, product interfaces, and optionally PMI, as the source part.
+            </p>
+            <a name="genid_etas885_7" id="genid_etas885_7"></a><table border="0" rules="none" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><img align="bottom" src="../graphics/graphicLibrary/nx/interpart_modeling/wave/linked_mirror_part/linkmirror_xmpl_source1.png" border="0"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><img align="bottom" src="../graphics/graphicLibrary/nx/interpart_modeling/wave/linked_mirror_part/linkmirror_xmpl_mirror1.png" border="0"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center" class="no-bottom-margin">Source part</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center" class="no-bottom-margin">Mirror part</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            
+         </div>
+         
+         
+         <p>You can:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>Control which objects are mirrored by specifying the reference sets that contain the objects you want. If you select the <span class="uiTerm">Entire Part</span> reference set, everything, including all reference sets, is mirrored.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Control the type of linked mirror part that is created. There are two kinds of linked mirror parts: exact and non-exact. An exact mirror part is an exact replica of the source part. A non-exact mirror part can differ from the source part because of modifications made after its creation.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Provide a template part as a seed part to be used for creating the linked mirror part.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Modify the source part by adding, removing, modifying, or reorganizing geometry. These changes are applied to the mirror part when the mirror part is updated from the source part.</p>
+               
+               <table class="attentionTable attn_note">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">Note</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>To prevent time-consuming updates, trivial changes in the source part are not updated in the linked mirror part until a substantial change triggers the update. For example, changes in show or hide properties, layers, product interfaces, and active <span class="uiTerm">Part Navigator</span> filters are trivial changes.
+                        </p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+            
+         </ul>
+         
+         <p>If you modify an exact mirror part, all modifications are lost when the mirror part updates from the source part. Modifications made to a non-exact mirror part are not lost.</p>
+         
+         <p>When you create a non-exact mirror part, you can specify whether broken links are deleted or kept when the source part is modified.</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>If you delete broken links, features that are dependent on the linked geometry may also be deleted.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>If you keep broken links, you have a chance to reparent dependent features. The broken links remain until you manually delete them.</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>Coordinate systems in NX are right-handed. If the part being mirrored includes a coordinate system, NX mirrors two axes and derives the third axis from the <span class="uiTerm">CSYS Mirror Method</span> option.
+         </p>
+         
+         <p>A few types of PMI views and objects are not copied, including:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>PMI Section Views that are created with the <span class="uiTerm">PMI Section View</span> command
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Linked Section Views that are related to PMI Section Views in the source part</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>PMI objects that are displayed only in PMI Section Views</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>PMI objects that track cut geometry in a PMI Section View</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>PMI objects that reference geometry that is not copied to the linked mirror part. This prevents the creation of retained PMI in the linked mirror part.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Legacy checked GD&amp;T</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div class="division">
+            
+            <h3>Why should I use it?</h3>
+            
+            <p>The <span class="uiTerm">Create Linked Mirror Part</span> command is useful when you want to create an associative mirror part whose data (geometry, PMI, and user-attributes) and organization (object-groups, feature-groups, and reference sets) are associative to the source part.
+            </p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Prerequisite</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Right-click in the background of the <span class="uiTerm">Assembly Navigator</span> and ensure that <span class="uiTerm">WAVE Mode</span> is on.
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Assembly Navigator</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Right-click a component node&rarr;<span class="uiTerm">Create Linked Mirror Part</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         <a name="xid457233" id="xid457233"></a><div id="footer"></div>
+      </div>
+   </body>
+</html>

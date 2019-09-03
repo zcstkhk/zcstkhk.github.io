@@ -1,0 +1,304 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Volume based floor and wall milling</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Volume based floor and wall milling</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>Use the new <span class="uiTerm">Floor and Wall</span> or <span class="uiTerm">Floor and Wall with IPW</span> operation subtypes to efficiently machine prismatic parts and features. The <span class="uiTerm">Floor and Wall</span> and <span class="uiTerm">Floor and Wall with IPW</span> operations replace the Face Milling Area operation, and provide enhanced functionality.
+            </p>
+            
+            <p>When you use these new operations, you can:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Machine floors, walls, and floor and wall combinations simultaneously.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Machine walls and tapered walls that are not bounded by floor geometry.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Contain cut regions and control cut region shape.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Control the blank, and preview it and the cut levels.</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <table align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="2">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td align="center" colspan="3" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/vol_based_25D_milling_3a.png"></p>
+                        
+                        <p class="no-bottom-margin">Part and IPW showing the cut region and cut levels</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td align="center" colspan="1" height="191" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/vol_based_25D_milling_4a.png"></p>
+                        
+                        <p class="no-bottom-margin">Tool path cutting along the wall down to the floor</p>
+                        
+                     </td>
+                     
+                     <td align="center" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">&nbsp;&nbsp;</p>
+                        
+                     </td>
+                     
+                     <td align="center" colspan="1" height="191" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/vol_based_25D_milling_5a.png"></p>
+                        
+                        <p class="no-bottom-margin">Top view of tool path</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Legacy Face Milling operations</h3>
+            
+            <p>NX migrates pre-NX 8.5 Face Milling operations to the appropriate operation type.</p>
+            
+            <table rules="all" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td align="center" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Pre-NX 8.5 Face Milling operations</p>
+                        
+                     </td>
+                     
+                     <td align="center" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">NX 8.5 operations</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1" width="50%">
+                        
+                        <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/face_milling_area.gif" border="0"> <span class="uiTerm">FACE_MILLING_AREA</span> using the <span class="uiTerm">Follow Part</span>, <span class="uiTerm">Follow Periphery</span>, <span class="uiTerm">Profile</span>, <span class="uiTerm">Trochoidal</span>, <span class="uiTerm">Zig</span>, <span class="uiTerm">Zig Zag</span>, or <span class="uiTerm">Zig with Contour</span> cut patterns
+                        </p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p></p>
+                        
+                        <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/floor_and_wall.gif" border="0"> <span class="uiTerm">Floor and Wall</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/face_milling_area.gif" border="0"> <span class="uiTerm">FACE_MILLING_AREA</span> using the <span class="uiTerm">Mixed</span> cut pattern
+                        </p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/face_milling_manual.gif" border="0"> <span class="uiTerm">Face Milling Manual</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/face_milling.gif" border="0"> <span class="uiTerm">FACE_MILLING</span> using boundaries
+                        </p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/face_milling.gif" border="0"> <span class="uiTerm">Face Milling with Boundaries</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>Why should I use it?</h3>
+            
+            <p>Use the <span class="uiTerm">Floor and Wall</span> operation for basic floor and wall milling on prismatic parts.
+            </p>
+            
+            <p>Use the <span class="uiTerm">Floor and Wall with IPW</span> operation for floor and wall milling of prismatic parts when using an IPW to keep track of uncut material.
+            </p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Manufacturing</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Toolbar</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Insert</span>&rarr;<span class="uiTerm">Create Operation</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/manufacturing/manufacturing_create/create_operation.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Insert</span>&rarr;<span class="uiTerm">Operation</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Type</span> list&rarr;<span class="uiTerm">mill_planar</span>&rarr;<span class="uiTerm">Operation Subtype</span> group&rarr;<span class="uiTerm">Floor and Wall</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/floor_and_wall.gif" border="0"> or <span class="uiTerm">Floor and Wall with IPW</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/floor_and_wall_with_ipw.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>分析叶片转子的工作流</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>分析叶片转子的工作流</h2>
+         <p>在这个课程中，您将使用以下工作流求解叶片转子模型。</p>
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>定义网格配对条件来连接单个网格。</p>
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/meshing/mesh_connections/blade_mesh_mating2.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在叶片一侧创建对称2D 依附网格。</p>
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/animations/blade_dependent_mesh.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在模型中的多边形体上创建六面体网格，有些六面体网格使用2D 依附网格作为种子网格。</p>
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/meshing/3d/blade_swept9.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>创建四面体网格，使用锥单元来从四面体单元向六面体单元过渡。</p>
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/meshing/3d/blade_transition.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在模型上定义离心力。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>定义自动耦合以在叶片对称网格上自动创建耦合自由度。</p>
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/boundary_conditions/constraints/blade_auto_coupling5.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>约束模型并移除多余的约束。</p>
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/boundary_conditions/constraints/blade_fixed3.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>求解模型并显示结果。</p>
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/post/blade_post1_small.gif" border="0"></p>
+               
+            </li>
+            
+         </ol>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

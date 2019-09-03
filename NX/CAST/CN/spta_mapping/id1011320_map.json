@@ -1,0 +1,11 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开并查看仿真文件 ",file:"id809981.html",type:"topic",parent:""},
+{id:"d7e3",title:"重置对话框设置",file:"id811011.html",type:"topic",parent:""},
+{id:"d7e4",title:"求解热分析",file:"id1093942.html",type:"topic",parent:""},
+{id:"d7e5",title:"显示热结果",file:"id809966.html",type:"topic",parent:""},
+{id:"d7e6",title:"打开结构解算方案",file:"id809996.html",type:"topic",parent:""},
+{id:"d7e7",title:"创建映射解算方案",file:"id809951.html",type:"topic",parent:""},
+{id:"d7e8",title:"求解映射解算方案",file:"id810006.html",type:"topic",parent:""},
+{id:"d7e9",title:"显示热映射结果",file:"id809961.html",type:"topic",parent:""},
+{id:"d7e10",title:"返回到仿真以创建 Nastran 解算方案",file:"id810001.html",type:"topic",parent:""},
+{id:"d7e11",title:"对梁施加预载",file:"id809986.html",type:"topic",parent:""}]}

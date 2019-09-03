@@ -1,0 +1,63 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>建议的表示用法</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>建议的表示用法</h2>
+         <p>根据应用，可以用各种方法设置表示。下面描述了各种可能的用法：</p>
+         <div class="division">
+            
+           <h3>在与代表的体相同的部件中的表示</h3>
+            
+            <p>在此模式中，表示在与它所代表的实体或片体相同的部件中创建。该体可处于一个引用集中，而小平面化的体则处于不同的引用集中。表示继续同它的体相关联。此工作模式最适于用在：</p>
+            <ul>
+              <li>
+                <p>使用小平面进行<strong>间隙分析</strong>。</p>
+              </li>
+              <li>
+                <p>在继续使用所有组件操作的同时，快速显示装配。</p>
+              </li>
+            </ul>
+</div>
+         <div class="division">
+            
+           <h3>顶层装配中的表示</h3>
+            
+            <p>在此模式中，表示创建于顶层装配，并指向组件体。如果不希望所有这些小平面化的体都处于装配(可为大装配)中，则可能要在主模型模式下工作，在其中使表示部件保留小平面化的体，并将顶层装配包含为主模型。</p>
+            <p>使用此方法，表示继续同它们的体相关联。</p>
+            <p>如果打开此装配而不加载任何组件，则仅加载顶级部件(因此快速)，但整个装配图像仍可用于可视化。现在，可以通过执行组件组脚本或在显示中查找组件来标识要使用的组件，请求获取相关信息以确定其表示的部件，然后在<strong>装配导航器</strong>中打开该部件。打开组件时，实体或片体显示将替换相应的表示显示。</p>
+           <p>此工作模式用于以下情况最有效：</p>
+            <ul>
+              <li>
+                <p>特别快速的装配检索和显示(尽管大多数组件操作因为未加载组件部件而不可用)。</p>
+              </li>
+              <li>
+                <p>显示整个装配时在关联中进行设计。</p>
+              </li>
+            </ul>
+</div>
+        <div class="division">
+            
+          <h3>在子装配中的表示</h3>
+            
+           <p>按照此模式，表示是在子装配中创建的。只有外部面和外部体得以表示出来。所有内部细节均已丢失。这些表示放在引用集中，可用于更高级别的装配。</p>
+            <p>注意，除非可以从显示中移除大量的内部组件，否则用户界面在当前仅选择外部面时不会提供帮助，因此这完全是一个劳动密集型的操作。</p>
+            <p>如果具有任何复杂的组件部件，可能要抑制某些不必要的特征，创建该实体的表示，取消其关联，然后取消抑制这些特征。然后，您将拥有该体的简化表示，每当不需要体的完整细节时便可使用该表示。</p>
+            <p>由于表示取消了关联，因此您必须管理其显示，且显示不会随体的更改而更新。这意味着一旦该体完全过时，便应手工重新生成它。然而，对于那些具有大量您不想在更高级别装配中显示的小特征的组件部件来说，这可能是一种值得的操作模式。</p>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>基准 CSYS 类型</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>基准 CSYS 类型</h2>
+         <p><strong>基准 CSYS</strong>对话框中包含其它用于指定基准坐标系类型的选项。</p>
+         <p>可以在<strong>基准 CSYS</strong>对话框中使用下列类型。</p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/csys_constructor/dynamic.gif" border="0"> <strong>动态</strong>—使您可以手动移动 CSYS 到任何想要的位置或方位，或创建一个关联、相对于选定 CSYS 动态偏置的 CSYS。</p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/csys_constructor/inferred_csys.gif" border="0"> <strong>自动判断</strong>—定义一个与选定几何体相关的 CSYS 或通过 X、Y 和 Z 分量的增量来定义 CSYS。实际所使用的方法是基于您选择的对象和选项。</p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/csys_constructor/origin_x_point_y_point.gif" border="0"> <strong>原点、X 点、Y 点</strong>—根据您选择或定义的三个点来定义 CSYS。X 轴是原点到 X 点的矢量；Y 轴是原点到 X 点的矢量。</p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/csys_constructor/x_axis_y_axis_origin.gif" border="0"> <strong>X 轴，Y 轴，原点</strong>— 根据您选定或定义的一点和两个矢量来定义 CSYS。X 轴和 Y 轴都是矢量；原点为一点。</p>
+               
+               <p><strong>Z 轴，X 轴，原点</strong>以及 <strong>Z 轴，Y 轴，原点</strong>原点的使用方法是一样的。</p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/csys_constructor/plane_x_axis_point.gif" border="0"> <strong>平面，X 轴，点</strong>—基于为 Z 轴选定的平面对象定义 CSYS，投影到 X 轴平面的矢量；以及投影到原点平面的点。</p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/csys_constructor/three_planes.gif" border="0"> <strong>三个平面</strong>—根据三个选定的平面来定义 CSYS。首先选定的两个基准/平面的法矢可指定三条正交轴中的两条。最后选定的基准/平面用于确定原点并派生第三条轴。</p>
+               
+            </li>
+         </ul>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/csys_constructor/absolute.gif" border="0"> <strong>绝对 CSYS</strong>—指定模型空间坐标系作为坐标系。X 轴和 Y 轴是&ldquo;绝对 CSYS&rdquo;的 X 轴和 Y 轴；原点为&ldquo;绝对 CSYS&rdquo;的原点。</p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/csys_constructor/csys_of_current_view.gif" border="0"> <strong>当前视图的 CSYS</strong>—将当前视图的坐标系设置为坐标系。X 轴平行于视图底部；Y 轴平行于视图的侧面；原点为视图的原点(图形屏幕中间)。如果您通过名称来选择，CSYS 将不可见或在不可选择的图层中。</p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/csys_constructor/offset_csys.gif" border="0"> <strong>偏置 CSYS</strong>—根据所选坐标系中所指定 X、Y 和 Z 的增量距离来定义 CSYS。X 轴和 Y 轴为现有 CSYS 的 X 轴和 Y 轴；原点为指定的点。</p>
+               
+            </li>
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

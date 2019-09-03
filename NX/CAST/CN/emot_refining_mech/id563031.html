@@ -1,0 +1,31 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>3D 接触中的小平面表示指南</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>3D 接触中的小平面表示指南</h2>
+         
+         <p>为了更快地求解，RecurDyn 求解器将把接触体的表面分为更小的三角形小平面体。</p>
+         
+         <p>接触体的小平面表示越精确，则接触解算结果越精确，但是求解时间也越长。</p>
+         
+         <p>在大多数情况下，默认的小平面体精度可以较好地平衡解算精度与求解时间，特别是当接触表面光滑并且大小相似时。</p>
+         
+         <p>但是，对于某些类型的几何体，默认小平面表示的精度可能会导致无法很好地跟随几何体形状，并且接触可能脱离光滑面，在这种情况下，您可能需要通过调整<strong>最大小平面大小因子</strong>或者<strong>平面公差因子</strong>来定义更精确的小平面表示。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

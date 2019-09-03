@@ -1,0 +1,13 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"Linear buckling analysis",file:"id1298362.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"Buckling analysis",file:"genid_buckling_analysis_introduction_22_429.html",type:"topic",parent:""},
+{id:"d5e7",title:"Linear buckling assumptions",file:"genid_linear_buckling_assumptions_21_424.html",type:"topic",parent:""},
+{id:"d5e9",title:"Linear buckling formulation",file:"genid_linear_buckling_formulation_25_524.html",type:"topic",parent:""},
+{id:"d5e11",title:"Using materials for a buckling analysis",file:"genid_using_materials_for_a_buckling_analysis_22_255.html",type:"topic",parent:""},
+{id:"d5e14",title:"Defining boundary conditions for a buckling analysis",file:"genid_defining_boundary_conditions_for_a_buckling_analysis_20_487.html",type:"topic",parent:""},
+{id:"d5e16",title:"Setting buckling solution attributes",file:"genid_setting_buckling_solution_attributes_26_400.html",type:"topic",parent:""},
+{id:"d5e18",title:"Reviewing buckling analysis results",file:"genid_reviewing_buckling_analysis_results_18_368.html",type:"topic",parent:""},
+{id:"d5e20",title:"Review",file:"id1325782.html",type:"topic",parent:""},
+{id:"d5e22",title:"Buckling analysis",file:"xid481267.html",type:"activity",parent:""}
+]}

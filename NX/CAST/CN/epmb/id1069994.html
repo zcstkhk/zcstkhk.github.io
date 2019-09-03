@@ -1,0 +1,191 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>在部件中雕刻平面文本</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>在部件中雕刻平面文本</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>打开 <span class="fileName">mnf18_engrave_text_cover_mfg_setup_1</span>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>打开<strong>装配导航器</strong>，右击背景并选择<strong>全部展开</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>清除 <span class="uiTerm"><strong>mnf18_male_cover_mach_plate</strong></span> 以及 <span class="uiTerm"><strong>mnf18_male_cover_stock</strong></span> 前的复选框。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>格式</strong>&rarr;<strong>图层设置</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>选中图层<strong>2</strong>前的复选框 <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/nav_check_on.gif" border="0">，然后点击<strong>关闭</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>现在您可以看到要用来雕刻的文本。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>插入</strong>工具条上的<strong>创建工序</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/manufacturing/manufacturing_create/create_operation.gif" border="0" alt="Insert &gt; Operation" title="Insert &gt; Operation">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>在<strong>创建工序</strong>对话框的<strong>类型</strong>组中，选择 <span class="uiTerm">mill_planar</span>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>在<strong>工序子类型</strong>组中，点击<strong>平面文本</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/planar_text.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>在<strong>位置</strong>组中，设置如下选项：</p>
+                  
+                  <table bgcolor="white" border="0" cellpadding="2" cellspacing="1" class="option_list" frame="box" rules="none" width="314" align="center">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1" width="90">
+                        
+                        <col span="1" width="190*">
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td width="21" colspan="1" rowspan="1" bgcolor="#d3d3d3" class="label1">
+                              
+                              <p class="no-bottom-margin">程序</p>
+                              
+                           </td>
+                           
+                           <td width="282" colspan="1" rowspan="1" class="border1a">
+                              
+                              <p class="no-bottom-margin">1234</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td bgcolor="#d3d3d3" class="label1" colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">刀具</p>
+                              
+                           </td>
+                           
+                           <td class="border1a" colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">ENGRAVE_TOOL_.0625D (铣刀-5 参数)</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td bgcolor="#d3d3d3" class="label1" colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">几何体</p>
+                              
+                           </td>
+                           
+                           <td class="border1a" colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">WORKPIECE</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td bgcolor="#d3d3d3" class="label1" colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">方法</p>
+                              
+                           </td>
+                           
+                           <td class="border1a" colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">MILL_FINISH</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

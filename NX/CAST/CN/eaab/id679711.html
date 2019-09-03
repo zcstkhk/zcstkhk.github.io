@@ -1,0 +1,60 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>重量缓存</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>重量缓存</h2>
+         
+         <p>如果装配组件已经有重量属性缓存(来自单个部件级别已经完成的重量计算)，那么组件数据将在装配内所有其它组件的总和中起作用。</p>
+         
+         <ul>
+            
+            <li class="condense">
+               
+               <p>重量计算可以在装配级别中运行</p>
+               
+            </li>
+            
+            <li class="condense">
+               
+               <p>重量计算可以轮流在组件中运行，而不需要以前的计算</p>
+               
+            </li>
+            
+            <li class="condense">
+               
+               <p>带缓存的组件计算是装配计算的总和。</p>
+               
+            </li>
+            
+            <li class="condense">
+               
+               <p>当一个带计算重量属性的组件部件(随部件储存)被关闭或保存，那些属性将储存在部件的组件和所属的装配中。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>如果子装配在执行重量分析后保存，重量数据会随子装配被缓存，而不是它的组件。</p>
+         
+         <p>在下图中，顶层装配包含一个子装配，编号为<strong>1</strong>，以及一个组件部件，编号为<strong>2</strong>，如果装配被保存，重量属性会随着工作部件被缓存，而不是随组件部件。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/analysis/advanced_weight_management/weight_mgmt_graphic13_1.png"></p>
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

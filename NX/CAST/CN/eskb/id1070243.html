@@ -1,0 +1,158 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>识别并解决过约束情形</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>识别并解决过约束情形</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>打开 <span class="fileName">skt01_over_constrained</span>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/activities/over_constrained0.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>部件导航器</strong>中，右击<strong>拉伸 (1)</strong>并选择<strong>编辑草图</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Edit Sketch</span> box, click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>NX 将在草图任务环境中打开内部草图。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/activities/over_constrained1.png"></p>
+                     
+                     <p>注意到：</p>
+                     <ul>
+                       <li>
+                         <p>参考直线以及角度尺寸以过约束颜色显示</p>
+                       </li>
+                       <li>
+                         <p>NX 将在状态栏上显示关于过约束的信息</p>
+                       </li>
+                     </ul>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>草图工具</strong>工具条上，确保已选择<strong>显示所有约束</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sketcher/sketch_tools/show_all_constraints.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>草图工具</strong>工具条上的<strong>显示/移除约束</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sketcher/sketch_tools/show_remove_constraints.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在<strong>列出以下对象的约束</strong>组中，点击<strong>选定的一个对象</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>在图形窗口中，选择参考直线。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/activities/over_constrained2.png"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p><strong>显示约束</strong>列表将列出 <strong>Line 4</strong>的约束，<strong>Line 4</strong>与 <strong>DATUM18</strong>共线，并且与草图 CSYS 的 X 轴有一个角度尺寸约束。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>在<strong>显示约束</strong>列表中，选择 <strong>DATUM18 与 Line4 共线</strong>(过约束)，并点击<strong>移除高亮显示的</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/activities/over_constrained3.png"></p>
+                     
+                     <p>角度尺寸将以驱动尺寸颜色显示。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>完成草图</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sketcher/sketcher/finish_sketch.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>关闭部件。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,13 @@
+{identifier:"id",label:"title",items:[
+{id:"d9e2",title:"打开仿真",file:"forces_open_simulation.html",type:"topic",parent:""},
+{id:"d9e3",title:"重置对话框内存",file:"id353012_dup2.html",type:"topic",parent:""},
+{id:"d9e4",title:"在方块 A 上创建矢量力",file:"create_vector_force_block_a.html",type:"topic",parent:""},
+{id:"d9e5",title:"创建解算方案并求解",file:"create_solution_force.html",type:"topic",parent:""},
+{id:"d9e6",title:"查看机构运动",file:"animate_mechanism_force.html",type:"topic",parent:""},
+{id:"d9e7",title:"创建分量类型的矢量力",file:"change_vector_force_components.html",type:"topic",parent:""},
+{id:"d9e8",title:"停用方块 A 上的力",file:"xid481375.html",type:"topic",parent:""},
+{id:"d9e9",title:"再次求解并查看机构运动",file:"solve_animate_again_scalar.html",type:"topic",parent:""},
+{id:"d9e10",title:"创建标量力",file:"create_scalar_force.html",type:"topic",parent:""},
+{id:"d9e11",title:"再次求解并查看机构运动",file:"solve_animate_again_vector.html",type:"topic",parent:""},
+{id:"d9e12",title:"创建力函数",file:"create_force_function.html",type:"topic",parent:""},
+{id:"d9e14",title:"再次求解并查看机构运动",file:"solve_animate_again_function.html",type:"topic",parent:""}]}

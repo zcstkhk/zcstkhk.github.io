@@ -1,0 +1,446 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>显示所有装配级的引用集</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>显示所有装配级的引用集</h2>
+         
+         <p>本示例将展示子装配引用集如何使用<strong>应用于所有装配级</strong>选项来为装配提供不同的显示选项。</p>
+         <p>在下图中，显示简单夹钳装配在保存时的情况，并为每个组件显示了<strong>整个部件</strong>条件。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/assemblies_load_options/vise_entire_parts.png"></p>
+         
+         <p>该装配包含四个子装配和一些零件。</p>
+         <p>在示例开始时，子装配不包含任何定义的引用集。</p>
+         
+         <table border="0" cellpadding="2" cellspacing="1" align="center">
+            
+            <colgroup align="center" span="1">
+               
+               <col span="2">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="2" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/assemblies_load_options/vise_handle_and_pieces.png"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="2" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/assemblies_load_options/vise_subassemblies.png"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <table border="0" cellpadding="2" cellspacing="1" frame="void" rules="none" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="70">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_1.gif"></p>
+                     
+                  </td>
+                  
+                  <td align="left" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">手柄</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_2.gif"></p>
+                     
+                  </td>
+                  
+                  <td align="left" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">零件</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_3.gif"></p>
+                     
+                  </td>
+                  
+                  <td align="left" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">活动颚板，包含手柄</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_4.gif"></p>
+                     
+                  </td>
+                  
+                  <td align="left" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">固定颚板</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_5.gif"></p>
+                     
+                  </td>
+                  
+                  <td align="left" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">引导线</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <ol type="1">
+            <li>
+               
+               
+               <p>打开装配时，会为包含该引导线的每个部件显示<strong>模型</strong>引用集，并为其他部件显示<strong>整个部件</strong>显示条件。</p>
+               <ol type="a">
+                 <li>
+                   <p>选择<strong>文件</strong>→<strong>打开</strong>。</p>
+                 </li>
+                 <li>
+                   <p>在<strong>打开</strong>对话框中，单击<strong>选项</strong>。</p>
+                 </li>
+                 <li>
+                   <p>在<strong>装配加载选项</strong>对话框的<strong>引用集</strong>组中，将列表布置为<strong>使用模型</strong>处于顶部，<strong>整个部件</strong>次之。</p>
+                 </li>
+                 <li>
+                   <p>单击<strong>确定</strong>。</p>
+                 </li>
+                 <li>
+                   <p>在<strong>打开</strong>对话框中，选择夹钳装配部件并单击<strong>确定</strong>。</p>
+                 </li>
+               </ol>
+               
+               <div class="stepResult">
+                  
+                  <p>装配打开后，将显示每个<strong>模型</strong>引用集。</p>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/assemblies_load_options/vise_all_model.png" border="0"></p>
+                  
+               </div>
+               
+            </li>
+            <li>
+               
+               
+               <p>在手柄子装配中定义一个<strong>模型</strong>引用集，并在该引用集中使用简化体来替换螺钉中的详细螺纹。</p>
+               
+               
+               <div class="stepInformation">
+                  
+                  <p>螺钉组件的<strong>模型</strong>引用集包含详细螺纹特征。</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/assemblies_load_options/vise_all_model_detail.png"></p>
+                  
+                  <p>可能是因为组件中的小细节过多，重新生成显示的时间才会受到影响。</p>
+                  <p>该螺钉部件包含三个引用集，如下图所示。</p>
+                  
+                  <table border="0" cellpadding="2" cellspacing="1">
+                     
+                     <colgroup align="center" span="1">
+                        
+                        <col span="2">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td colspan="2" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/assemblies_load_options/vise_screw_refsets.png"></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_1.gif"></p>
+                              
+                           </td>
+                           
+                           <td align="left" colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"><strong>模型</strong></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr bgcolor="" valign="middle">
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_2.gif"></p>
+                              
+                           </td>
+                           
+                           <td align="left" colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">简化的</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_3.gif"></p>
+                              
+                           </td>
+                           
+                           <td align="left" colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">符号</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+                  <p>可以通过构造所需的几何体，在任何部件中创建相似的引用集。</p>
+                  
+               </div>
+               
+               <ol type="a">
+                  <li>
+                    <p>如果将手柄子装配作为显示的部件，则显示所有组件的<strong>模型</strong>引用集。</p>
+                  </li>
+                  <li>
+                    <p>将螺钉的引用集更改为其简化引用集。</p>
+                    <div class="stepInformation">
+                      
+                      <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/assemblies_load_options/vise_handle_simplified_screw.png"></p>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <p>根据需要在手柄子装配中创建<strong>模型</strong>引用集。</p>
+                  </li>
+                  <li>
+                    <p>编辑<strong>模型</strong>，将所有组件按照其当前条件包含在内。</p>
+                    <div class="stepInformation">
+                      
+                      <p>在向装配中的引用集添加组件时，装配级引用集将记录所显示组件的引用集。</p>
+                      
+                    </div>
+                     
+                    <div class="stepRemediation">
+                      
+                      <p>如果已选择组件，请取消选择所有组件，然后通过其当前显示的引用集再次选择它们。</p>
+                      
+                    </div>
+                  </li>
+                  <li>
+                     
+                     
+                     <p>在<strong>引用集</strong>对话框的列表中，选择<strong>模型</strong>，然后单击<strong>信息</strong>。</p>
+                     
+                     
+                     <div class="stepRemediation">
+                        
+                        <p>对于<strong>模型</strong>引用集，&ldquo;信息&rdquo;窗口应显示除螺钉以外的所有组件及其<strong>模型</strong>引用集。螺钉将显示其<strong>简化</strong>引用集。</p>
+                        
+                     </div>
+                     
+                     <div class="stepRemediation">
+                        
+                        <p>如果组件未显示所述的引用集，请从引用集中移除错误显示的组件，并显示希望用于这些组件的引用集，然后再次将组件添加到引用集。</p>
+                        
+                     </div>
+                     
+                  </li>
+                  <li>
+                     
+                     
+                     <p>保存手柄子装配，并关闭所有部件。</p>
+                     
+                     
+                  </li>
+               </ol>
+               
+            </li>
+            <li>
+               
+               
+               <p>打开夹钳装配以显示在手柄子装配中创建的<strong>模型</strong>引用集，其中包含螺钉的简化显示。</p>
+               
+               
+               <div class="stepInformation">
+                  
+                  <p>可以使用与最初打开装配相同的步骤，但本次必须在<strong>装配加载选项</strong>对话框中清除<strong>应用于所有装配级</strong>复选框。</p>
+                  
+               </div>
+               
+               <div class="stepResult">
+                  
+                  <p>装配将显示除螺钉以外的所有组件的模型引用集。</p>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/assemblies_load_options/vise_screw_simplified.png" border="0"></p>
+                  
+                  <p>以下原因会导致此情况发生：</p>
+                  <ul>
+                    <li>
+                      <p>手柄子装配具有的模型引用集包含螺钉的简化引用集和其他零件的模型引用集。</p>
+                    </li>
+                    <li>
+                      <p>由于清除了<strong>应用于所有装配级</strong>复选框，因此对引用集的搜索将在手柄子装配处结束。手柄子装配打开后，可以显示定义的模型引用集。</p>
+                    </li>
+                    <li>
+                      <p>其他子装配不包含模型引用集，因此在加载它们时会显示其<strong>整个部件</strong>引用集。<strong>整个部件</strong>只是显示条件，并非真正的引用集，因此将继续在子装配零件中搜索模型引用集。</p>
+                    </li>
+                  </ul>
+                  <p>此时，要在保存装配时将其打开，并显示所有零件的<strong>模型</strong>引用集，请选中<strong>应用于所有装配级</strong>复选框。虽然已找到子装配的<strong>模型</strong>引用集，但仍将对各零件进行检查，而且，如果零件具有<strong>模型</strong>引用集，则会显示该<strong>模型</strong>引用集。</p>
+                  
+               </div>
+               
+            </li>
+            <li>
+               
+               
+               <p>定义手柄子装配中的图纸引用集。</p>
+               
+               
+               <div class="stepInformation">
+                  
+                  <div>
+                    <p>包含详细螺纹的<strong>模型</strong>引用集对于大多数图纸要求而言过于复杂，且简化引用集不会显示这些螺纹。</p>
+                    <p>图纸引用集通常包含简化的几何体、特殊符号、轮廓线或清晰渲染图纸并实现快速视图显示与更新的其他任何几何体。</p>
+                  </div>
+               </div>
+               
+               <ol type="a">
+                  <li>
+                    <p>如果将手柄子装配作为显示的部件，则显示除螺钉以外的所有组件的模型引用集。</p>
+                  </li>
+                  <li>
+                    <p>对于螺钉，显示简化引用集。</p>
+                  </li>
+                  <li>
+                    <p>定义图纸引用集，并为所有组件添加当前显示的引用集。</p>
+                  </li>
+                  <li>
+                    <p>保存子装配，并关闭所有部件。</p>
+                  </li>
+               </ol>
+               
+            </li>
+            <li>
+               
+               
+               <p>打开装配，其图纸引用集位于层次结构列表的顶部。</p>
+               <ol type="a">
+                 <li>
+                   <p>在<strong>装配加载选项</strong>对话框的<strong>引用集</strong>组中，将列表布置为图纸位于顶部，<strong>使用模型</strong>次之，<strong>整个部件</strong>位于第三。</p>
+                 </li>
+                 <li>
+                   <p>根据需要清除<strong>应用于所有装配级</strong>复选框。</p>
+                 </li>
+               </ol>
+               
+               <div class="stepResult">
+                  
+                  <p>装配将再次显示除螺钉以外的所有组件的模型引用集。螺钉随其符号引用集一起显示。</p>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/assemblies_load_options/vise_screw_schematic.png" border="0"></p>
+                  
+                  <p>以下原因会导致此情况发生：</p>
+                  <ul>
+                    <li>
+                      <p>手柄子装配具有图纸引用集，该引用集包含螺钉的符号引用集和其他零件的模型引用集。</p>
+                    </li>
+                    <li>
+                      <p>由于清除了<strong>应用于所有装配级</strong>复选框，因此对引用集的搜索将在手柄子装配处结束。手柄子装配打开后，可以显示定义的图纸引用集。</p>
+                    </li>
+                    <li>
+                      <p>其他子装配不包含任何引用集，因此在加载它们时会显示其<strong>整个部件</strong>引用集。<strong>整个部件</strong>只是显示条件，并非真正的引用集，因此将继续在子装配零件中搜索引用集。</p>
+                    </li>
+                    <li>
+                      <p>没有任何零件包含图纸引用集，但这些零件均包含<strong>模型</strong>引用集。</p>
+                    </li>
+                  </ul>
+                  
+               </div>
+               
+            </li>
+         </ol>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

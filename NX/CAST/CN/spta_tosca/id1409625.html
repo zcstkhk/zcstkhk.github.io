@@ -1,0 +1,58 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>加工与几何限制</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>加工与几何限制</h2>
+         
+         <p>可以通过移除模型特定区域中的单元来限制优化。可能需要： </p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>满足功能需求</p>
+            </li>
+            <li>
+              <p>避免移除其他组件的边缘区域</p>
+            </li>
+            <li>
+              <p>确保可以加工组件</p>
+            </li>
+            <li>
+              <p>控制组件的设计与外观</p>
+            </li>
+            
+         </ul>
+         
+         <p>每个限制都会降低解算的可能性。因此，只应添加解决问题所需的限制。应首先执行不带限制的优化以确定特定问题所需的限制。</p>
+         
+         <a name="genid_spta_tosca_20"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/topo_opt/frozen_areas2.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>排除单元以满足功能需求示例</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

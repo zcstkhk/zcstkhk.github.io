@@ -1,0 +1,8 @@
+{identifier:"id",label:"title",items:[
+{id:"d13e2",title:"打开装配图纸",file:"id727082.html",type:"topic",parent:""},
+{id:"d13e3",title:"添加正交视图到图纸页中",file:"id973264.html",type:"topic",parent:""},
+{id:"d13e4",title:"隐藏组件并添加正交视图",file:"xid453780.html",type:"topic",parent:""},
+{id:"d13e5",title:"创建剖视图",file:"id973651.html",type:"topic",parent:""},
+{id:"d13e6",title:"恢复剖视图中的隐藏组件",file:"id973653.html",type:"topic",parent:""},
+{id:"d13e7",title:"在剖视图中隐藏不同的组件",file:"xid453344.html",type:"topic",parent:""},
+{id:"d13e8",title:"将剖视图转换为快照视图然后替换组件",file:"xid453906.html",type:"topic",parent:""}]}

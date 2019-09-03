@@ -1,0 +1,11 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"孔和螺纹",file:"id1043995.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"孔",file:"hole_adv_hole_feat_ov.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"孔位置选项",file:"xid454096.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"在压缩机底座上创建孔",file:"id1393614.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e9",title:"螺纹",file:"genid_about_threads_18_865.html",type:"topic",parent:"",children:[
+{id:"d5e10",title:"符号螺纹",file:"genid_symbolic_threads_107_2683.html",type:"topic",parent:"d5e9"},
+{id:"d5e11",title:"创建符号螺纹",file:"id698377.html",type:"activity",parent:"d5e9"},
+{id:"d5e12",title:"创建详细螺纹",file:"id698371.html",type:"activity",parent:"d5e9"}]}
+]}

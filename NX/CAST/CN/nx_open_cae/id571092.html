@@ -1,0 +1,46 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Set mesh size and element thickness</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Set mesh size and element thickness</h2>
+         <p>You created a prompt for the element size earlier in the routine. The two commented-out alternatives are shown here. The first one shows setting the element size using the auto element size divided by 2.5, and the second is simply set to 6.0.</p>
+         <p>For simplicity, the mesh thickness will be set as 10% of the mesh size. </p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>The automatic mesh size created by the function shown below may differ slightly than what would be produced with the automatic element size button on the meshing form.</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <p>Add the following lines to your routine, below those added in the previous section.</p><pre class="codeExample "><span class="userInput">            ' Get auto element size, set mesh size, thickness
+            Dim myAutoElementSize As Double = Nothing
+            theUfSession.Sf.GetAutoElementSize(1, myCAEBody.Tag, myAutoElementSize)
+            ' Alternate element size options: 
+            ' Using a calculation on auto element size
+            ' Dim myElementSize As Double = myAutoElementSize / 2.5
+            ' 
+            ' or a hard coded value
+            ' Dim myElementSize As Double = 6.0
+             Dim myThickness As Double = myElementSize * 0.1
+</span></pre><div id="footer"></div>
+      </div>
+   </body>
+</html>

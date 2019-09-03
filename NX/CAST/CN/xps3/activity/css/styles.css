@@ -1,0 +1,28 @@
+/* View Specific Sytles go here */
+
+.topPane {
+  background: url(../graphics/bg_top.gif) left top repeat-x;
+}
+
+.navMenu {
+  /* padding-top: 20px; */
+}
+
+.topDiv .title {
+  font-size:18px;
+}
+
+h2 {
+  font-size:18px;
+}
+
+h3 {
+  font-size:16px;
+  font-weight: bold;
+}
+
+.xps .dijitPopup {
+  /* Need to limit width on navigation drop-down menu...otherwise menu width is determined by the longest menu item, and with long items the menu is wider than the visible part of the screen (the activity window is small), and therefore not visible to the user. */
+  width:300px;
+  overflow-x:auto;
+}

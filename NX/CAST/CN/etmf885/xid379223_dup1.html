@@ -1,0 +1,346 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Siemens Sinumerik 840D thread cutting CYCLE97</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Siemens Sinumerik 840D thread cutting CYCLE97</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>The NX turning processor supports output for the Siemens Sinumerik 840D&rsquo;s <span class="codeText">CYCLE97</span> thread cutting cycle in these operation types:
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Thread OD</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Thread ID</p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>Mapping between Sinumerik variables and MOM variables</h3>
+            
+            
+            <a name="genid_etmf885_191" id="genid_etmf885_191"></a><table border="0" frame="border" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="270">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/turning/cycle97_redballs2.png"></p>
+                        
+                     </td>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <ol type="1" start="1">
+                           
+                           <li class="condense">
+                              
+                              <p class="no-bottom-margin">ROP<br/>Exit path<br/>0</p>
+                              
+                           </li>
+                           
+                           <li class="condense">
+                              
+                              <p class="no-bottom-margin">FPL<br/>End point of thread in the longitudinal axis<br/><span class="codeText">mom_lathe_thread_crest_line_end(2)</span></p>
+                              
+                           </li>
+                           
+                           <li class="condense">
+                              
+                              <p class="no-bottom-margin">PIT<br/>Pitch: 0.001 to 2000 mm<br/><span class="codeText">mom_turn_thread_pitch_lead<br/>mom_number_of_starts</span></p>
+                              
+                           </li>
+                           
+                           <li class="condense">
+                              
+                              <p class="no-bottom-margin">FAL<br/>Finishing allowance<br/><span class="codeText">mom_total_depth_finish_passes_increment<br/>mom_total_depth_finish_passes_number_of_passes</span></p>
+                              
+                           </li>
+                           
+                           <li class="condense">
+                              
+                              <p class="no-bottom-margin">SPL<br/>Start point of thread in the longitudinal axis<br/><span class="codeText">mom_lathe_thread_crest_line_start(2)</span></p>
+                              
+                           </li>
+                           
+                           <li class="condense">
+                              
+                              <p class="no-bottom-margin">TDEP<br/>Thread depth <br/><span class="codeText">mom_turn_cycle_total_depth</span></p>
+                              
+                           </li>
+                           
+                           <li class="condense">
+                              
+                              <p class="no-bottom-margin">APP<br/>Run-in path<br/>0</p>
+                              
+                           </li>
+                           
+                           <li class="condense">
+                              
+                              <p>DM1<br/>Diameter of thread at start point<br/><span class="codeText">mom_lathe_thread_crest_line_start(0)</span></p>
+                              
+                              <p class="no-bottom-margin">DM2<br/>Diameter of thread at end point<br/><span class="codeText">mom_lathe_thread_crest_line_end(0)</span></p>
+                              
+                           </li>
+                           
+                        </ol>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p>The machining cycle type maps the Sinumerik option <span class="uiTerm">VARI</span> to the MOM variable <span class="codeText">mom_turn_cycle97_machining_type</span>.
+            </p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Programming Notes</h3>
+            
+            <p>ROP and APP are always zero in the template.</p>
+            
+            <p>The MOM procedure <span class="codeText">MOM_load_lathe_thread_cycle_params</span> supports cycle97 events in your postprocessor when the <span class="uiTerm">Machine Cycle</span> option is specified.
+            </p>
+            
+            <p>This procedure:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Returns 1 if the <span class="uiTerm">Machine Cycle</span> option is specified and all variables are set successfully.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Returns 0 otherwise.</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>Call the procedure <span class="codeText">MOM_skip_handler_to_event</span> to skip event handling until an event or motion type that you specify is encountered during processing.
+            </p>
+            
+            <p>The following variables are available if you create similar user-defined threading cycles:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p><span class="codeText">mom_lathe_thread_clearance_start</span></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="codeText">mom_lathe_thread_clearance_end</span></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="codeText">mom_lathe_thread_root_line_start</span></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="codeText">mom_lathe_thread_root_line_end</span></p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>Why should I use it?</h3>
+            
+            <p>The post created by Post Builder using the Siemens 840D option has increased support for Siemens controllers.</p>
+            
+            <p>On the shop floor, the machine operator can adjust a single line of code, for example to change the correct finishing allowance for the contour. To make the same change with conventional output, you must recalculate many lines of code using NX Post.</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Manufacturing</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Prerequisite</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Create or edit a turning operation of a type listed in the preceding article.</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Machine Control</span>&rarr;<span class="uiTerm">Motion Output</span>&rarr;<span class="uiTerm">Machine Cycle</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+            <p>&nbsp;</p>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Post Builder</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Prerequisite</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Create or edit a <span class="uiTerm">SIEMENS &mdash; SinumeriK_840D_lathe</span> post.
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Program &amp; Tool Path</span>&rarr;<span class="uiTerm">Custom Command</span>&rarr;<span class="uiTerm">PB_CMD_map_cycle97_param</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

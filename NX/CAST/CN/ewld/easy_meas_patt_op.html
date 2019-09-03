@@ -1,0 +1,634 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>简易测量阵列对话框</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/biw_locator/easy_meas_patt.gif" border="0">&nbsp;简易测量阵列对话框</h2>
+         <table border="0" cellpadding="4" cellspacing="2" width="100%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+            </colgroup>
+            
+            <tbody valign="top">
+               
+               <tr bgcolor="silver">
+                  
+                  <td colspan="2" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>类型</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#F0F0F0">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">类型列表</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <div class="defList">
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><strong>修边和曲面</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                              <p class="no-bottom-margin">使用修边和曲面测量特征创建阵列</p>
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><strong>折边和曲面</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                              <p class="no-bottom-margin">使用折边和曲面测量特征创建阵列</p>
+                              
+                           </div>
+                        </div>
+                     </div>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="silver" colspan="2" height="33" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>曲面矢量面</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/common/select_face.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>选择面</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>让你指定用来生成其它面的种子面</p>
+                     
+                     <p class="no-bottom-margin">指定的曲面必须是其中一个可能包含曲面矢量的面，截面将确定哪个部分会获得阵列点。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/common/reverse_direction.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>反向</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>反转测量矢量创建的方向</p>
+                     
+                     <p class="no-bottom-margin">当选择的面是片体时使用这个选项</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="silver" colspan="2" height="33" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>阵列路径</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/common/curve.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>选择曲线</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">让你指定创建径向部分时使用的路径</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="silver" colspan="2" height="33" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>参数</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>平面方法</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <div class="defList">
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/common/specify_plane.gif" border="0"><strong>自动判断平面</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                              <p class="no-bottom-margin">Parallel, radial sections are created at XC, YC, and ZC locations where possible.</p>
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/biw_locator/parallel_xc.gif" border="0"> <span class="uiTerm">Parallel XC Planes</span></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                              <p class="no-bottom-margin">Parallel, radial sections are created along the XC direction.</p>
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/biw_locator/parallel_yc.gif" border="0"> <span class="uiTerm">Parallel YC Planes</span></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                              <p class="no-bottom-margin">Parallel, radial sections are created along the YC direction.</p>
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/biw_locator/parallel_zc.gif" border="0"> <span class="uiTerm">Parallel ZC Planes</span></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                              <p class="no-bottom-margin">Parallel, radial sections are created along the ZC direction.</p>
+                              
+                           </div>
+                        </div>
+                     </div>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Spacing Method</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>Available when <span class="uiTerm">Plane Method</span> is set to any option except <span class="uiTerm">Infer Planes</span>.
+                     </p>
+                     
+                     <p>Specify one of the following options:</p>
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Grid</span></p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Single Plane</span></p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                     <table border="0" cellpadding="2" cellspacing="1" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1">
+                           
+                           <col span="1">
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 <a name="genid_ewld_167"></a><div class="figureContainer">
+                                    <table align="center">
+                                       <tr>
+                                          <td>
+                                             <div class="figure">
+                                                <div><img align="bottom" src="../graphics/graphicLibrary/nx/weld_assistant/biw_locator/easy_measurement_pattern/easy_meas_op2.png" border="0"></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                    <h4>Grid</h4>
+                                 </div>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 <a name="genid_ewld_168"></a><div class="figureContainer">
+                                    <table align="center">
+                                       <tr>
+                                          <td>
+                                             <div class="figure">
+                                                <div><img align="bottom" src="../graphics/graphicLibrary/nx/weld_assistant/biw_locator/easy_measurement_pattern/easy_meas_op1.png" border="0"></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                    <h4>Single Plane</h4>
+                                 </div>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Grid Increment</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>Available when <span class="uiTerm">Spacing Method</span> is set to <span class="uiTerm">Grid</span>.
+                     </p>
+                     
+                     <p>Specifies the spacing between grid planes.</p>
+                     
+                     <table class="attentionTable attn_example">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">Example</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>Suppose the specifications are as follows:</p>
+                              
+                              <ul>
+                                 
+                                 <li>
+                                    
+                                    <p class="no-bottom-margin">The pattern path curve extends from X=-5 to X=125.</p>
+                                    
+                                 </li>
+                                 
+                                 <li>
+                                    
+                                    <p class="no-bottom-margin"><span class="uiTerm">Plane Method</span> = <span class="uiTerm">Parallel XC Planes</span>.
+                                    </p>
+                                    
+                                 </li>
+                                 
+                                 <li>
+                                    
+                                    <p class="no-bottom-margin"><span class="uiTerm">Grid Increment</span> = 50.0
+                                    </p>
+                                    
+                                 </li>
+                                 
+                              </ul>
+                              
+                              <p class="no-bottom-margin">Then the section planes are defined at XC=0, XC=50, and XC=100.</p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Plane Location</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>Available when the <span class="uiTerm">Spacing Method</span> list is set to <span class="uiTerm">Single Plane</span>.
+                     </p>
+                     
+                     <p class="no-bottom-margin">Specifies the coordinates for locating the plane.</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Number Surface Vectors</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>Specifies the number of surface vectors.</p>
+                     
+                     <p class="no-bottom-margin">If you specify a value of 1, the surface vector is computed based on the <span class="uiTerm">Trim Edge Offset</span> value.
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="28" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Trim Edge Offset</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="28" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Specifies the location of the first surface vector.</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Back Edge Offset</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Specifies the location of the last surface vector.</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Hem Method</span> list
+                     </p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>Available when <span class="uiTerm">Type</span> is set to <span class="uiTerm">Hem and Surface</span>.
+                     </p>
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Mid Point</span> &mdash; Calculates the surface vector at the midpoint of a curve on the hem face.
+                           </p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin"><span class="uiTerm">Normal to Body</span> &mdash; Calculates the surface vector at the intersection of the guide curve and the body coordinate perpendicular to the plane.
+                           </p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Maximum Spacing</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>Lets you set the maximum value for the spacing between the first surface vector and the second surface vector if the number of surface vectors is 2.</p>
+                     
+                     <p>If the width of the flange is greater than the value of the <span class="uiTerm">Trim Edge Offset</span> plus the value of <span class="uiTerm">Maximum Spacing</span>, then the second surface vector is created at a distance that is equal to the value of the <span class="uiTerm">Trim Edge Offset</span> plus the value of <span class="uiTerm">Maximum Spacing</span>, instead of at the specified <span class="uiTerm">Back Edge Offset</span>.
+                     </p>
+                     
+                     <table class="attentionTable attn_example">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">Example</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/weld_assistant/measpatt_max_spacing.png"></p>
+                              
+                              <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_1_small.gif" border="0"> Flange width &lt; <span class="uiTerm">Trim Edge Offset</span> + <span class="uiTerm">Maximum Spacing</span>.
+                              </p>
+                              
+                              <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_2_small.gif" border="0"> Flange width &gt; <span class="uiTerm">Trim Edge Offset</span> + <span class="uiTerm">Maximum Spacing</span>.<br>The second surface vector is created at a distance that is equal to <span class="uiTerm">Trim Edge Offset</span> + <span class="uiTerm">Maximum Spacing</span>.
+                              </p>
+                              
+                              <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_3_small.gif" border="0"> Back edge of the flange.
+                              </p>
+                              
+                              <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_4_small.gif" border="0"> Front edge of the flange.
+                              </p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="silver" colspan="2" height="33" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Settings</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Tolerance</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Specifies the Distance Tolerance. For more information, see the online help for Modeling Preferences.</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Length and Width</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Specifies the length and width for the base of the solid object that is created.</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Height</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Specifies the height of the solid object that is created.</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Grid Angle Tolerance</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>Available when <span class="uiTerm">Plane Method</span> is set to <span class="uiTerm">Infer Planes</span> or <span class="uiTerm">Spacing Method</span> is set to <span class="uiTerm">Grid</span> in the <span class="uiTerm">Parameters</span> group.
+                     </p>
+                     
+                     <p class="no-bottom-margin">Sets the angle tolerance between a path curve tangent and the grid plane used to create a measurement point.</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Minimum Flange Width</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>Lets you set the minimum value for the width of a flange that surface measurement vectors are created on. If the actual width of the flange is less than the specified value, a single surface vector is created in the middle of the flange.</p>
+                     
+                     <table class="attentionTable attn_example">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">Example</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/weld_assistant/measpatt_minflangewidth.png"></p>
+                              
+                              <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_1_small.gif" border="0"> Flange width at the location of the trim vector. At this location, width of the flange is less than <span class="uiTerm">Minimum Flange Width</span>.
+                              </p>
+                              
+                              <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_2_small.gif" border="0"> Only one surface vector is created.
+                              </p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>显示</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>显示</h2>
+         
+         <p>供您选择用于生成 8 位显示像素的转换方法。</p>
+         <p>这些图像初始时被生成真彩色 24 位图像，但被显示于 8 位或 256 色显示上，输出像素需要一些转换。</p>
+         
+         <p>转换方法有：</p>
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>RGB+噪点</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>RGB 算法为在振动发生之前使用附加随机噪点来扩大原先的 RGB 值。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>FS RGB</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>素转换过程使用 Floyd-Steinberg (FS) 振动算法在图片上分布颜色误差。</p>
+                  <p>这是针对 8 位平面显示设备的推荐模式。 </p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>FS RGB + 噪点</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>Floyd-Steinberg 算法为在振动发生之前使用附加随机噪点来扩大最初的 RGB 值。</p>
+                  <p>对于某些图像，该方法避免使用 FS RGB 方法可能造成的人为现象。 </p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>单色</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>像素被转换为黑色和白色并使用 Floyd-Steinberg 算法来振动。 </p>
+                  <p>该模式对 1 位显示设备非常有用。 </p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>灰度</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>各像素被使用 NTSC 颜色到灰度的转换来转换为一种灰的程度。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>最接近的 RGB</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>转换为颜色查询表中最接近的 RGB 值。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>有序抖动</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>一种颜色振动矩阵屏幕像素颜色。这是颜色分辨率转换为屏幕分辨率。</p>
+                  <p>本方法快于 Floyd-Steinberg 振动方式，但容易在输出图像中引入明显的图样。 </p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>TC + 噪点</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>随机杂质被添加到各像素，在这里杂质经特别修改以适应真彩色 (TC) 显示设备。</p>
+                  
+               </div>
+            </div>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

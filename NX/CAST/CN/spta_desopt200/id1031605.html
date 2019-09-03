@@ -1,0 +1,164 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>查看结果</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>查看结果</h2>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/simulation_navigator_tab.gif" border="0"> <strong>仿真导航器</strong></p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/mb1.gif" border="0"> <strong>平板优化</strong>(解算方案) </p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/mb3.gif" border="0"> <strong>浏览</strong></p>
+               
+            </li>
+            <li>
+               
+               <p>在 <strong>Windows 资源管理器</strong>中，浏览至保存仿真文件的文件夹下。</p>
+               
+            </li>
+            <li>
+               
+               <p>在记事本或其它文本编辑器中，打开.f06 文件并滚动到底部以查看设计变量历史。注意到您输入的设计变量标签将在输出中报告。</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/desopt200/results1.png"></p>
+               
+               <p>优化的设计变量在设计循环 5中报告(在上图中高亮显示)，杆单元的高度变小，网和平板的壳单元厚度变大。</p>
+               
+               <table border="1" cellpadding="2" cellspacing="1" width="250" align="center">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="100*">
+                     
+                     <col span="1" width="100*">
+                     
+                     <col span="1" width="100*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td align="center" colspan="1" height="25" rowspan="1">
+                           
+                           <p class="no-bottom-margin">变量标签</p>
+                           
+                        </td>
+                        
+                        <td align="center" colspan="1" height="25" rowspan="1">
+                           
+                           <p class="no-bottom-margin">初始值</p>
+                           
+                        </td>
+                        
+                        <td align="center" colspan="1" height="25" rowspan="1">
+                           
+                           <p class="no-bottom-margin">最终值</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">T-WEB</p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">0.2</p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">0.8195</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr>
+                        
+                        <td colspan="1" height="79" rowspan="1">
+                           
+                           <p class="no-bottom-margin">T-PLATE</p>
+                           
+                        </td>
+                        
+                        <td colspan="1" height="79" rowspan="1">
+                           
+                           <p class="no-bottom-margin">0.15</p>
+                           
+                        </td>
+                        
+                        <td colspan="1" height="79" rowspan="1">
+                           
+                           <p class="no-bottom-margin">0.25127</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">H-BAR</p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">0.25</p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">0.16556</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+               <p>注意到分析的整体目标是重量，但是却显示重量增加，优化算法计算目标的整体范围，但必须满足约束，算法将增加壳单元厚度以满足位移与应力约束，然后尽可能达到目标。</p>
+               
+               <p>完成后关闭文本编辑器窗口。</p>
+               
+            </li>
+            <li>
+               
+               <p>在 NX 中：</p>
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/menu.gif" border="0">&nbsp;<strong>文件&rarr;关闭&rarr;所有部件</strong></p>
+               
+            </li>
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Examine the dependencies in the trim features</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>查看修剪特征中的相依性</h2>
+         
+         <p>草图以及回转特征被用于修剪油箱盖顶部的曲面。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>重复前述步骤以查看特征2、7以及14之间的相依性链。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p><strong>回转 (7)</strong>是<strong>草图 (2)</strong>的一个子特征。</p>
+                     
+                     <p><strong>边倒圆 (14)</strong>是<strong>回转 (7)</strong>的一个子特征。</p>
+                     
+                     <ul class="unmarkedList">
+                        <li class="condense">
+                           
+                           <p><img align="bottom" src="../graphics/graphicLibrary/nx/gateway/activities/essentials-sp/esn_examine-feature2.png" border="0"> <span class="literalText">草图 (2)</span></p>
+                           
+                        </li>
+                        <li class="condense">
+                           
+                           <p><img align="bottom" src="../graphics/graphicLibrary/nx/gateway/activities/essentials-sp/esn_examine_feature-arrow.png" border="0"></p>
+                           
+                        </li>
+                        <li class="condense">
+                           
+                           <p><img align="bottom" src="../graphics/graphicLibrary/nx/gateway/activities/essentials-sp/esn_examine-feature7.png" border="0"> <span class="literalText">回转 (7)</span></p>
+                           
+                        </li>
+                        <li class="condense">
+                           
+                           <p><img align="bottom" src="../graphics/graphicLibrary/nx/gateway/activities/essentials-sp/esn_examine_feature-arrow.png" border="0"></p>
+                           
+                        </li>
+                        <li class="condense">
+                           
+                           <p><img align="bottom" src="../graphics/graphicLibrary/nx/gateway/activities/essentials-sp/esn_examine-feature14.png" border="0"> <span class="literalText">边倒圆 (14)</span></p>
+                           
+                        </li>
+                     </ul>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>抑制<strong>草图 (2)</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>注意到<strong>回转 (7)</strong>也被抑制了。</p>
+                     
+                     <p>注意到<strong>边倒圆 (14)</strong>中含有一个信息警告。</p>
+                     
+                     <p><img align="bottom" src="../graphics/graphicLibrary/nx/gateway/activities/essentials-sp/esn_examine-feature14-info.png" border="0"></p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/gateway/activities/essentials-sp/esn_examine-feature17.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>部件导航器</strong>中，将光标悬浮在<strong>边倒圆 (14)</strong>上方。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>工具提示将告诉您有一个或多个圆角边已由另一特征使用或抑制。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>选中各个特征旁的复选框以取消抑制。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/gateway/activities/essentials-sp/esn_examine-02.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>右击<strong>草图 (2)</strong>并选择<strong>删除</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在<strong>提示</strong>信息框中点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>注意到<strong>回转 (7)</strong>也会受到影响。</p>
+                     
+                     <p><strong>边倒圆 (14)</strong>中的某些边再次丢失。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>按下 Ctrl+Z 以撤销上一个操作。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult"></div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>隐藏<strong>草图 (2)</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>注意到隐藏的草图对后续的特征没有影响。</p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         <div class="stepListResult"></div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

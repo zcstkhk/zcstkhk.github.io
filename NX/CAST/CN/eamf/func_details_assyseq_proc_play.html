@@ -1,0 +1,155 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>回放装配序列</title>
+   </head>
+   <body>
+      <div class="contentType_procedure">
+         <h2>回放装配序列</h2>
+         
+         <p>本例显示如何通过回放序列来检查序列有效性。</p>
+         <ol type="1">
+            <li>
+              <p>在<strong>装配</strong>工具条上，单击<strong>装配序列</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assemblies/assembly_sequences.gif" border="0">。</p>
+            </li>
+            <li>
+              <p>如果要播放的序列未显示在<strong>序列导航器</strong>中，则执行以下步骤：</p>
+              <ol type="a">
+                <li>
+                  <p>右键单击<strong>序列导航器</strong>背景，然后选择<strong>显示所有序列</strong>。</p>
+                </li>
+                <li>
+                  <p>右键单击要回放的序列节点，然后选择<strong>创建关联</strong>。</p>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p>在<strong>序列回放</strong>工具条上，单击以下任一选项：</p>
+              <div class="defList">
+                <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                    <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assembly_sequencing_playback/play_forwards.gif" border="0">&nbsp;&nbsp;向前播放</p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                    
+                    <p>一直播放序列，直至结束，或单击<strong>停止</strong>。</p>
+                    
+                  </div>
+                </div>
+                <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                    <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assembly_sequencing_playback/next_frame.gif" border="0">&nbsp;&nbsp;下一帧</p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                    
+                    <p>从当前步骤播放单帧。</p>
+                    
+                  </div>
+                </div>
+                <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                    <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assembly_sequencing_playback/fast_forward_to_end.gif" border="0">&nbsp;&nbsp;快进到结尾</p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                    
+                    <p>跳至序列结尾。</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+               
+               
+               <p>在播放一个或多个帧之后，以下选项可用：</p>
+               
+               <div class="defList">
+                  <div class="defListItem">
+                     <div class="defObject defObjectVert">
+                        <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assembly_sequencing_playback/play_backwards.gif" border="0">&nbsp;&nbsp;向后播放</p>
+                     </div>
+                     <div class="defMeaning defMeaningVert">
+                        
+                        <p>反向播放序列，直至到达开头或单击<strong>停止</strong>。</p>
+                        
+                     </div>
+                  </div>
+                  <div class="defListItem">
+                     <div class="defObject defObjectVert">
+                        <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assembly_sequencing_playback/previous_frame.gif" border="0">&nbsp;&nbsp;前一帧</p>
+                     </div>
+                     <div class="defMeaning defMeaningVert">
+                        
+                        <p>播放当前步骤之前的帧。</p>
+                        
+                     </div>
+                  </div>
+                  <div class="defListItem">
+                     <div class="defObject defObjectVert">
+                        <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assembly_sequencing_playback/rewind_to_start.gif" border="0">&nbsp;&nbsp;倒回到开始</p>
+                     </div>
+                     <div class="defMeaning defMeaningVert">
+                        
+                        <p>跳至序列开头。</p>
+                        
+                     </div>
+                  </div>
+               </div>
+               
+               
+            </li>
+            <li>
+               
+               
+               <p>使用<strong>序列导航器</strong>来控制回放中较大的步骤。右键单击一个步骤节点，然后选择：</p>
+               
+               <div class="defList">
+                  <div class="defListItem">
+                     <div class="defObject defObjectVert">
+                        <p>转到步骤</p>
+                     </div>
+                     <div class="defMeaning defMeaningVert">
+                        
+                        <dl>
+                          <dd>
+                            <p>跳至该步骤，无须显示中间帧即可重播该步骤。</p>
+                            <p>此选项需对步骤节点执行双击操作。</p>
+                          </dd>
+                        </dl>
+                     </div>
+                  </div>
+                  <div class="defListItem">
+                    <div class="defObject defObjectVert">
+                      <p>播放步骤</p>
+                    </div>
+                    <div class="defMeaning defMeaningVert">
+                      
+                      <p>播放从当前位置到所选步骤的所有帧，在播放完所选步骤后停止。</p>
+                      
+                    </div>
+                  </div>
+               </div>
+               
+               
+               <div class="stepInformation">
+                 
+                 <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_sequencing/assyseq_playback_1_anim.gif"></p>
+                 
+               </div>
+               
+            </li>
+         </ol>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

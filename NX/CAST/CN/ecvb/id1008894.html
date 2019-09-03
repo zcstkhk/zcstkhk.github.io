@@ -1,0 +1,161 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>创建2曲线圆角</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>创建2曲线圆角</h2>
+         
+         
+         <p>下一个圆角在大圆弧左端点与角度直线下端点之间。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/basic_curves/basic_graphic108.png"></p>
+         
+         <p>因为其中一条曲线是圆弧，您必须使用<strong>2曲线圆角</strong>。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在<strong>曲线倒圆</strong>对话框中，点击<strong>2曲线圆角</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/curves/curve_fillet/2_curve_fillet.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>先选择斜直线，然后是圆弧。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                 <div class="stepInformation">
+                     
+                   <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/basic_curves/basic_fillet3_sel_nx5.png"></p>
+                     
+                    <p _zipIdx="361">曲线选择的顺序很重要，<strong>2曲线圆角</strong>是按从第一条选择的曲线顺时针方向旋转到第二条曲线的方向创建。</p>
+                   <p _zipIdx="361">即使直线和圆弧相交，系统也会尝试延伸曲线到圆角。</p>
+                     <p _zipIdx="361">对任意两条曲线，都有四种可能的圆角，您需要让系统知道您想要的是其中那个的哪一条。</p>
+                 </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>单击如图所示的位置以选择合适的圆角中心。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                    <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/basic_curves/basic_fillet3_quadrant_nx5.png"></p>
+                     
+                     <p>圆角已创建，并且所有曲线都被修剪至离它的端点<strong>6</strong> mm 处。。</p>
+                     
+                     <div class="verbose">
+                       <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/basic_curves/basic_fillet3_done_nx5.png"></p>
+                    </div>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在大圆弧与下端水平直线之间创建其它2曲线圆角。(记住按顺时针方向选取直线) </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                    <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/basic_curves/basic_fillet4_goala.png"></p>
+                     
+                     <p>完成后的2曲线圆角看起来像这样。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/basic_curves/basic_fillet4_done.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>先选取竖直直线，然后选择圆，再指定合适的圆角中心，创建一个半径<strong>6</strong> mm 的<strong>2曲线圆角</strong>，如图所示。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                    <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/basic_curves/basic_fillet5_before_done_nx8.png"></p>
+                     
+                     <p>结果看起来应该像这样：</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/basic_curves/basic_fillet5_after_done_nx8.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在圆弧和角度直线之间创建一个半径<strong>6</strong> mm的<strong>2曲线圆角</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>选择如图所示的曲线，然后单击所示的光标位置。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/basic_curves/basic_2_curve_fillet_trim_circle_select_nx8.png"></p>
+                     
+                 </div>
+                  <div class="stepResult">
+                     
+                     <p>结果看起来应该像这样：</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/basic_curves/basic_2_curve_fillet_trim_circle_done_nx8.png"></p>
+                     
+                 </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>在<STRONG>视图</STRONG>工具条上，点击<STRONG>适合窗口</STRONG>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>您的部件现在看起来像这样：</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/basic_curves/basic_fillet6_done_nx8.png"></p>
+                     
+                 </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>关闭所有部件。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

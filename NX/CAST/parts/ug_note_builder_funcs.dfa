@@ -1,0 +1,8 @@
+#! NX/KF 7.5
+#
+
+
+Defun: ug_getNoteData(List $views)
+@{
+   CFunc("KF_get_note_data", "kfdfun");
+}List;

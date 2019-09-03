@@ -1,0 +1,24 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"NX 8 - NX 8.5 Drafting transition",file:"xid309020.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"Drafting user interface enhancements",file:"xid377303.html",type:"topic",parent:""},
+{id:"d5e7",title:"Smart Lightweight views",file:"xid377661.html",type:"topic",parent:"",children:[{id:"d5e8",title:"Create exact and lightweight views",file:"xid458638.html",type:"activity",parent:"d5e7"}]},
+{id:"d5e10",title:"View Creation Wizard enhancements",file:"xid377677.html",type:"topic",parent:"",children:[{id:"d5e11",title:"Utilize the View Creation Wizard",file:"xid458644.html",type:"activity",parent:"d5e10"}]},
+{id:"d5e13",title:"Associative view alignment",file:"xid306822.html",type:"topic",parent:""},
+{id:"d5e16",title:"Hinge view alignment method",file:"xid310561.html",type:"topic",parent:""},
+{id:"d5e18",title:"Width options for lines and symbols",file:"xid310557.html",type:"topic",parent:""},
+{id:"d5e20",title:"Break-out section views with view breaks",file:"xid377206.html",type:"topic",parent:"",children:[{id:"d5e21",title:"Create a Break-out section view with a view break",file:"xid458651.html",type:"activity",parent:"d5e20"}]},
+{id:"d5e23",title:"Update enhancements for associative custom symbols",file:"id1629199.html",type:"topic",parent:""},
+{id:"d5e25",title:"Replace Custom Symbol",file:"id1629206.html",type:"topic",parent:""},
+{id:"d5e27",title:"Custom symbol instance snap point associativity",file:"id1629427.html",type:"topic",parent:"",children:[{id:"d5e28",title:"Replace custom symbols",file:"xid458658.html",type:"activity",parent:"d5e27"}]},
+{id:"d5e31",title:"Standard font support for symbols",file:"xid376870.html",type:"topic",parent:""},
+{id:"d5e33",title:"Crosshatch and Area Fill enhancements",file:"xid376800.html",type:"topic",parent:""},
+{id:"d5e35",title:"Parts list and tabular note enhancements",file:"xid377510.html",type:"topic",parent:""},
+{id:"d5e37",title:"Drafting leader line enhancements",file:"xid377033.html",type:"topic",parent:""},
+{id:"d5e39",title:"Enhancements for view labels and section lines",file:"xid310541.html",type:"topic",parent:""},
+{id:"d5e41",title:"General annotation enhancements",file:"xid377166.html",type:"topic",parent:""},
+{id:"d5e44",title:"Hole table enhancements",file:"xid377693.html",type:"topic",parent:"",children:[{id:"d5e45",title:"Create and update hole tables for multiple solid bodies",file:"xid458663.html",type:"activity",parent:"d5e44"}]},
+{id:"d5e47",title:"Weld symbol enhancements",file:"xid377032.html",type:"topic",parent:""},
+{id:"d5e49",title:"Feature Parameters support for pattern features",file:"id1640732.html",type:"topic",parent:""},
+{id:"d5e51",title:"Drafting Plus",type:"topicMap",parent:"",children:[{id:"d5e52",title:"Drawing Booklet",file:"id1241525.html",type:"topic",parent:"d5e51",children:[{id:"d5e53",title:"Create a drawing booklet",file:"xid458674.html",type:"activity",parent:"d5e52"}]},{id:"d5e54",title:"Move to New View",file:"xid306817.html",type:"topic",parent:"d5e51"},{id:"d5e55",title:"Smash View",file:"xid306818.html",type:"topic",parent:"d5e51"},{id:"d5e56",title:"Importing I-deas curves into sketches",file:"xid306820.html",type:"topic",parent:"d5e51"},{id:"d5e57",title:"Custom symbol smash behavior",file:"xid306821.html",type:"topic",parent:"d5e51"}]}
+]}

@@ -1,0 +1,49 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>子装配有限元模型</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>子装配有限元模型</h2><a name="ndxgenid_spta_afem_21"></a>
+         <a name="ndxgenid_spta_afem_22"></a>
+         
+         
+         <p>子装配有限元模型是用作另一个装配有限元模型中的组件有限元模型的装配有限元模型。子装配有限元模型可以是关联的(映射到 CAD 子装配)，也可以是非关联的。</p>
+         
+         <p>在首次创建关联装配有限元模型时，CAD 装配中的子装配的状态为<strong>忽略</strong>。当 CAD 子装配的状态为<strong>忽略</strong>时，您可以将 CAD 子装配映射到现有装配有限元模型或将 CAD 子装配映射到新装配有限元模型，以定义子装配有限元模型。(或者，可将单个多体有限元模型映射到 CAD 子装配。)</p>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/assembly_fem/sub_afem_nav.png"></p>
+         
+         
+         <p>CAD 子装配相对于关联的有限元模型映射可具有三种不同的状态：</p>
+         
+         <ul>
+            
+            <li>
+              <p><strong>忽略</strong> — 当前没有映射 CAD 子装配；但是，您可以将新的或现有的组件或子装配有限元模型映射到该子装配。</p>
+            </li>
+            <li>
+              <p><strong>未映射</strong> — 当 CAD 子装配的状态为<strong>未映射</strong>时，您不能映射到该 CAD 子装配。但您可以将组件有限元模型映射到该子装配中的 CAD 组件。</p>
+            </li>
+            <li>
+              <p><strong>映射</strong> — 一个组件或子装配有限元模型当前已被映射到该 CAD 子装配。</p>
+            </li>
+         </ul>
+         <p>当 CAD 子装配的状态为<strong>忽略</strong>时，子装配中的各个 CAD 组件具有未定义的状态，并且您不能将组件有限元模型直接映射到子装配 CAD 组件。 </p>
+         <p>要直接将组件有限元模型映射到子装配 CAD 组件(而不将有限元模型与整个子装配关联)，请在<strong>仿真导航器</strong>中右键单击 CAD 子装配，并选择<strong>映射下一级</strong>。CAD 子装配的状态将变成<strong>未映射</strong>，并且子装配组件的状态为<strong>忽略</strong>。</p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

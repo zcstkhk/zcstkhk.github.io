@@ -1,0 +1,30 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>导入的焊接</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>导入的焊接</h2>
+         <p>要导入焊接，*.csv 文件中的标题信息必须包括：Weld_Type(焊接类型)、X_Pos(X 坐标)、Y_Pos(Y 坐标)、Z_Pos(Z 坐标)以及焊接的钣金数。</p>
+         <p>文件中还可以包括：连接部件1、连接部件2以及连接部件3。</p>
+         <p>连接部件的数目取决于焊接的钣金数，比如，如果两个钣金已经被焊接，那么一共将只要两个连接的部件 - 连接部件1和连接部件2.</p>
+         <p>ID 列不能作为*.csv 文件中电子表格的第一列。</p>
+         <p>所有其它指派给焊点的属性位于特性属性下方，不会对它们进行有效性验证。</p>
+         <p>导入的焊点是非关联的固定焊接，意为着它们不会附着到任何面上，并且没有任何创建几何体与它们关联。</p>
+         <p>在点焊导入完成后，你可以编辑点以使它们与现有的面数据关联，这将使它们变为具备完整功能的焊接特征，可以对它们进行编辑、注释或者与其它应用模块共享数据。你可以从电子表格中导入弧焊、电阻点焊。</p>
+         <p>完成导入后，检查机制将会验证焊点是否违背以下规则：在*.csv 文件中不能存在相同的焊接 ID；在现有工作部件与导入的*.csv 文件中的 ID 之间没有冲突；导入的焊接 ID 与组 ID 必须位于由相关焊接首选项设置中指定的范围内。如果违背，则导入失败。</p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

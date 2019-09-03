@@ -1,0 +1,4 @@
+#! NX/KF 4.0
+
+DefClass: MyViewScale_2 (%ViewScale);
+(Number) Scale: 2.0;

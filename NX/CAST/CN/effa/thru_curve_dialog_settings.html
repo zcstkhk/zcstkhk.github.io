@@ -1,0 +1,84 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>过曲线组对话框的设置组中的选项</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>过曲线组对话框的设置组中的选项</h2>
+         
+         <p>根据<strong>输出曲面选项</strong>的选择，以及是否选中<strong>保留形状</strong>复选框，来确定<strong>重新构建</strong>在<strong>截面</strong>以及<strong>放样</strong>方向上是否可用。</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>在<strong>放样</strong>方向上总是可用</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在<strong>截面</strong>方向上对于<strong>法向</strong>以及<strong>样条点输出曲面构造</strong>设置可用</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>通过重新定义截面的阶次或段数来构造高质量的曲面。如果这些截面的结点放置不当，或它们之间存在阶次差异，则输出曲面可能比所需的更为复杂，或等参数线可能过度弯曲。这会使高亮显示错误，且会妨碍曲面间的连续性。</p>
+         
+        <ul>
+            
+            <li>
+               
+               <p><strong>无</strong>：关闭<strong>重新构建</strong></p>
+               
+          </li>
+            
+            <li>
+               
+               <p><strong>阶次和公差</strong>：使用指定的阶次重新构建曲面。您指定的阶次在 U 和 V 向有效。较高阶次的曲线通常会降低不希望的曲率拐点和突变的可能性。NX 按需插入结点，以实现 G0、G1 和 G2 公差设置。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>自动拟合</strong>：在指定的<strong>最高次数</strong>与<strong>最大段数</strong>范围内创建尽可能光顺的曲面。NX 尝试重新构建曲面而不会一直添加段，直至最高次数。</p>
+               
+               <p>如果曲面超出公差范围：</p>
+               <ul>
+                 <li>
+                   <p>添加分段，直至所指定的最大数量。</p>
+                 </li>
+                 <li>
+                   <p>如果曲面仍超出公差范围，创建曲面时会显示一条出错消息。</p></li></ul></li>
+            
+         </ul>
+         
+         <p><strong>公差</strong>将控制与输入截面相关的曲面的精度.</p>
+         <ul class="unmarkedList">
+            <li>
+              <p><strong>G0 (位置)</strong>：指定位置连续的公差。<strong>距离公差</strong>的默认值。</p>
+            </li>
+            <li>
+              <p><strong>G1 (相切)</strong>：指定相切连续的公差。<strong>角度公差</strong>的默认值。</p>
+            </li>
+            <li>
+              <p><strong>G2 (曲率)</strong>：指定曲率连续的公差。默认值为相对公差的 0.1 或 10%。</p>
+            </li>
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

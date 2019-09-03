@@ -1,0 +1,124 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>重新排列渲染集顺序</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>重新排列渲染集顺序</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>右击俯视图边界并选择<strong>样式</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>定义视图的渲染集</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>先从 CYLINDER BLOCK 开始，您创建的各个渲染集将以显示在<strong>视图中的有序渲染集</strong>列表框中的顺序应用到视图。</p>
+                     
+                     <ul class="unmarkedList">
+                        <li>
+                           
+                           <p>CYLINDER BLOCK<br/>CRANKSHAFT<br/>PISTONS_RODS</p>
+                           
+                        </li>
+                     </ul>
+                     
+                     <p>由于 PISTONS_RODS 是列表中的最后一个渲染集，它的显示属性是最后一个应用到视图中的属性，要使曲轴部件以 CRANKSHAFT 渲染集的颜色、线型以及线宽设置显示，您必须重新排列列表的顺序。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>选择 <span class="uiTerm">CRANKSHAFT，然后点击<strong>下移</strong>，使您的渲染集顺序如下所示</span>：</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <table border="0" width="275" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1">
+                           
+                           <col span="1">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td align="center" colspan="2" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><strong>视图中的有序渲染集</strong></p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">CYLINDER BLOCK<br/>PISTONS_RODS<br/>CRANKSHAFT</p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1"></td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>点击两次<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/activities/render_sets/0523_13.png"></p>
+                     
+                     <p>渲染集 CRANKSHAFT 将在所有其它渲染集之后应用到视图，所以现在曲轴部件将以该渲染集的颜色、线型以及线宽设置显示。</p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>样条数据</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>样条数据</h2>
+         <p>创建样条时将储存以下数据：</p>
+         <ul>
+            
+            <li class="condense">
+               
+               <p>曲线阶次</p>
+               
+            </li>
+            
+            <li class="condense">
+               
+               <p>曲线中极点(顶点)的排列</p>
+               
+            </li>
+            
+            <li class="condense">
+               
+               <p>定义曲线段的参数值</p>
+               
+            </li>
+            
+            <li class="condense">
+               
+               <p>定义点(如果已创建)</p>
+               
+            </li>
+            
+            <li class="condense">
+               
+               <p>拟合权重值(如果已创建)</p>
+               
+            </li>
+            
+            <li class="condense">
+               
+               <p>节点位置</p>
+               
+            </li>
+            
+         </ul>
+         <p>样条是非均匀的有理 B-样条，或者 NURBS，NURBS 也可以被认为是自由成形曲线。</p>
+         <div class="verbose">
+            <p><strong>样条</strong>对话框中包含四种创建样条的方法：根据极点、通过点、拟合以及垂直于平面。</p>
+         </div>
+         <div class="verbose">
+            <p><strong>艺术样条</strong>对话框中包含两种创建样条的方法：根据极点和通过点。</p>
+         </div>
+         <p>当使用<strong>根据极点</strong>选项定义样条时，它将向您选择的点(简称为极点)移动，但是不通过它们，除非是端点。</p>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/splines/splines_graphic7.gif"></p>
+         <p>对于使用<strong>根据极点</strong>和<strong>通过点</strong>选项创建的样条，您可以创建单段或多段样条，每一个样条段最多<span class="literalText">25</span>个点(阶次等于<span class="literalText">24</span>)，可以创建多段样条以便您可以使用数量不限的点。</p>
+         <p>默认是多段</p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>如果想要创建单段样条，选中<strong>单段</strong>复选框，这个选项在<strong>艺术样条</strong>—<strong>通过点</strong>中不可用。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div class="division">
+            
+            <h3>定义点和结点</h3>
+            
+            <p>有两种类型的点与样条关联：</p>
+            
+            <p><strong>定义点</strong> &mdash; 用来定义样条的点</p>
+            
+            <p><strong>结点</strong> &mdash; 样条段的端点，单段样条只有两个结点(位于样条曲线的两端)</p>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">注释</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>对于三阶样条(三次样条曲线)，定义点和结点是一样的。</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         <div class="division">
+            
+            <h3>封闭的样条和曲线阶次</h3>
+            
+            <p>封闭的样条连接您定义的第一个和最后一个点，要创建封闭样条，选中<strong>封闭曲线</strong>复选框。</p>
+            
+            <table border="0" frame="box" rules="all" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="literalText">开放的样条</span> 
+                        </p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="literalText">封闭的样条</span> 
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/splines/splines_open_spline.gif"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/splines/splines_closed_spline.gif"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p><span class="uiTerm">曲线阶次</span>让您指定样条阶次(仅当您创建多段样条时可用，对于单段样条，这个设置不可用)</p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>对点指定斜率</h3>
+            
+            <p>您可以对样条指定斜率或曲率，也可以控制样条在任意点的斜率。</p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

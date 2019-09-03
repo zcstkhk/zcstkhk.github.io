@@ -1,0 +1,338 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Contour Profile cleanup passes</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Contour Profile cleanup passes</h2>
+         
+         <p>Use the <span class="uiTerm">Only Cut Along Wall and Floor</span> option to generate a finishing operation that works on the wall and on the floor as needed. This option can be used in the following ways:
+         </p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>To overlap the wall finish passes and the floor finish passes. The floor finish passes often use the wall stock.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>As a cleanup operation to remove uncut blank material left by the larger tool in the previous operation.</p>
+               
+            </li>
+            
+         </ul>
+         
+         <table align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/vap_floor_cleanup_passes.png"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/variable_contour/vap_cleanup_operation.png"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Overlapped operation</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Cleanup operation</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <p>NX generates the tool passes in the following order:</p>
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>Depth passes that cut from the top of the part down to the dual contact point of the current tool.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Side passes that cut away from the wall.</p>
+               
+            </li>
+            
+         </ol>
+         
+         <div class="division">
+            
+            <h3>Only Cut Along Wall and Floor</h3>
+            
+            <table align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="2" rowspan="1">
+                        
+                        <p>1: Multiple depth passes following the floor</p>
+                        
+                        <p>2: Dual contact point of the current tool</p>
+                        
+                        <p class="no-bottom-margin">3: Multiple side passes following the wall</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" height="274" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/vap_only_cut_wall_floor_off.png"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" height="274" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/vap_only_cut_wall_floor_on.png"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td align="center" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Only Cut Along Wall and Floor</span> = <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_off.gif" border="0"></p>
+                        
+                     </td>
+                     
+                     <td align="center" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Only Cut Along Wall and Floor</span> = <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_on.gif" border="0"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p></p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Adjusting stock depth to support horizontal corner cleanup</h3>
+            
+            <p>With the appropriate side and depth stocks, you can use the <span class="uiTerm">Contour Profile</span> operation to clean up horizontal corners.
+            </p>
+            
+            <table cellpadding="4" cellspacing="4" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr valign="top">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>1: Reference tool from the previous operation</p>
+                        
+                        <p>2: Upper contact point of the reference tool</p>
+                        
+                        <p class="no-bottom-margin">3: Lower contact point of the reference tool</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>4: Current tool</p>
+                        
+                        <p>5: <span class="uiTerm">Depth Stock Offset</span></p>
+                        
+                        <p class="no-bottom-margin">6: <span class="uiTerm">Side Stock Offset</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" height="274" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/vap_multiple_pass_stocks.png"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" height="274" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/vap_multiple_pass_stocks2.png"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">Depth stock and side stock determined from previous operation</p>
+                        
+                     </td>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p><span class="uiTerm">Contour Profile</span> clean up passes:
+                        </p>
+                        
+                        <p class="no-bottom-margin">4 depth passes + 4 side passes</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         
+         <p></p>
+         
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <p></p>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Manufacturing</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Prerequisite</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Contour Profile</span> operation
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Contour Profile</span> operation dialog box&rarr;<span class="uiTerm">Path Settings</span> group&rarr;<span class="uiTerm">Cutting Parameters</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/cutting_parameters.gif" border="0">&rarr;<span class="uiTerm">Cutting Parameters</span> dialog box&rarr;<span class="uiTerm">Multiple Passes</span> tab&rarr;<span class="uiTerm">Output Passes</span> group
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+            <p></p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

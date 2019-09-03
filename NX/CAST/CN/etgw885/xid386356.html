@@ -1,0 +1,141 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Find the extreme items in the ZC direction</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Find the extreme items in the ZC direction</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>Open <span class="fileName">gwy1_85_measurements_2</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/activities/misc_enhancements/extr_measure_open.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>Choose <span class="uiTerm">Analysis</span>&rarr;<span class="uiTerm">Measure Extremes</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>From the <span class="uiTerm">Type</span> list, select <span class="uiTerm">3D Extreme Point</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>You want to find out which of the two close bosses are the tallest.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>From the <span class="uiTerm">Type Filter</span> list, select <span class="uiTerm">Edge</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>With <span class="uiTerm">Select Objects</span> active, select the two circular edges at the top of the two closest bosses.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/activities/misc_enhancements/extr_measure_sel1.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Primary Vector</span> group, use the <span class="uiTerm">Specify Vector</span> drop-down list to select <span class="uiTerm">ZC</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/activities/misc_enhancements/extr_measure_results1.png"></p>
+                     
+                     <p>Notice it found several points. Read and then dismiss the Alerts message.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Secondary Vector</span> group, from the <span class="uiTerm">Specify Vector</span> drop-down list select <span class="uiTerm">&ndash;XC</span>, and click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Results Display</span> group, from the <span class="uiTerm">Annotation</span> drop-down list to select <span class="uiTerm">Show Dimension</span>, and click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/activities/misc_enhancements/extr_measure__results.png"></p>
+                     
+                     <p>There is now only one point identified, and the label is created showing its location value in the absolute coordinate system.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>The annotation label is a temporary display. Press <span class="uiTerm">F5</span> to refresh the graphics window.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

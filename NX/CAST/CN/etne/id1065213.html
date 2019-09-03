@@ -1,0 +1,117 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>指定增量百分比</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>指定增量百分比</h2>
+         
+         
+         <p>百分比允许您将各个刀路的深度增量定义为剩余总粗加工深度的百分比，这将使各个刀路的深度在刀具越深入螺纹时越少。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在<strong>刀轨设置</strong>组的<strong>切削深度</strong>列表中，选择<strong>% 剩余</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>键入下列值以定义增量百分比。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <table border="1" cellpadding="3" cellspacing="0" class="option_list" frame="box" rules="none" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1">
+                           
+                           <col span="1">
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#E0E0E0" colspan="1" rowspan="1">
+                                 
+                                 
+                                 <p class="no-bottom-margin">剩余百分比</p>
+                                 
+                              </td>
+                              
+                              <td align="right" bgcolor="white" colspan="1" rowspan="1" valign="top">
+                                 
+                                 <p class="no-bottom-margin">30.0000 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#E0E0E0" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">最大距离</p>
+                                 
+                              </td>
+                              
+                              <td align="right" bgcolor="white" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">0.01</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#E0E0E0" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">最新距离</p>
+                                 
+                              </td>
+                              
+                              <td align="right" bgcolor="white" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">0.001</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                     <div class="verbose">
+                        <p><strong>最大距离</strong>值用于防止初始刀路切削过深，当刀具到达总深度时，增量深度将变得非常小，因此，要控制刀路数，必须输入<strong>最小距离</strong>增量值以使刀具可以到达总深度。</p>
+                     </div>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

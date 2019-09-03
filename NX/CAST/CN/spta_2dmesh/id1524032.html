@@ -1,0 +1,69 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>抑制片体中的孔</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>抑制片体中的孔</h2>
+         
+         <p>一些模型中可能包含影响整体刚度的孔，在进行结构整体行为分析，而不是孔附近应力分析时，您可能想忽略选定的孔，以消除不必要的网格密度，可以使用<strong>抑制孔</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/suppress_hole.gif" border="0"> 命令来从片体(比如中面片体)中移除孔，您可以移除：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>选定的或者所有直径小于指定阈值的的孔</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在一个面内包含的所有孔</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>跨越多个面的孔</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>圆形以及非圆形孔</p>
+               
+            </li>
+            
+         </ul>
+         
+         <a name="genid_spta_2dmesh_50"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/meshing/2d/suppress_holes_cw.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>(A)在中面上包含一系列4 mm 孔的网格；(B)使用抑制孔命令移除所有直径小于5 mm 的孔后更新的片体网格</h4>
+         </div>
+         
+         
+         <p>可以在创建部件网格之前或之后使用<strong>抑制孔</strong>命令，如果使用<strong>抑制孔</strong>来移除已划分网格的面上的孔，那么必须使用<strong>更新有限元模型</strong>命令来更新网格。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,11 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"创建原理图",file:"id1144904.html",type:"topic",parent:""},
+{id:"d5e4",title:"概述",file:"logical.html",type:"topic",parent:""},
+
+{id:"d5e6",title:"创建2D 原理图",file:"genid_creating_a_2d_diagram_765_12971.html",type:"topic",parent:"",children:[
+{id:"d5e7",title:"创建2D 原理图",file:"id1129211.html",type:"activity",parent:"d5e6"}]},
+{id:"d5e9",title:"在2D 原理图中创建管道通路",file:"genid_comparing_a_2d_diagram_to_a_3d_model_353_6983.html",type:"topic",parent:"",children:[
+{id:"d5e10",title:"在2D 原理图中创建管道通路",file:"id1129227.html",type:"activity",parent:"d5e9"}]},
+{id:"d5e12",title:"比较并解决2D 原理图与3D 模型之间的差异",file:"genid_resolving_discrepancies_between_2d_diagrams_and_3d_models_231_4110.html",type:"topic",parent:"",children:[
+{id:"d5e13",title:"比较并解决2D 原理图与3D 模型之间的差异",file:"id1129243.html",type:"activity",parent:"d5e12"}]}
+]}

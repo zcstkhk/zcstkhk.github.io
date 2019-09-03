@@ -1,0 +1,189 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Display element normals</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>显示单元法向</h2>
+         <p>单元法向将确定哪个面被当做壳单元的顶面，它们的方向定义了顶侧。</p>
+         <p>显示2D 网格收集器的单元法向。</p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/simulation_navigator_tab.gif" border="0"> <strong>仿真导航器</strong></p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0"> &nbsp; <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/node_collapsed.gif" border="0"> <span class="literalText">2D 收集器</span> (如果需要，请展开)
+               </p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0"> &nbsp;<strong>太阳能电池板前部收集器</strong></p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb3.gif" border="0"> <strong>编辑显示</strong></p>
+               
+            </li>
+            <li>
+               
+               
+               <table cellspacing="0" class="option_list" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="196">
+                     
+                     <col span="1" width="185*">
+                     
+                     <col span="1" width="20">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>类型</strong> (2D 单元法向)
+                           </p>
+                           
+                        </td>
+                        
+                        <td class="border1a" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">矢量</p>
+                           
+                        </td>
+                        
+                        <td class="nopadding" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="top" src="../graphics/nonLocalized/nx_dss/icons/images/option_arrow_no_border.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>确定</strong></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+         </ul>
+         <p>对在前面创建的其它网格收集器重复上述步骤：</p>
+         <ul>
+            
+            <li>
+               
+               <p><strong>太阳能电池板背部收集器</strong></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>总线_1收集器</strong></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>辅助燃料箱收集器</strong></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>天线收集器</strong></p>
+               
+            </li>
+            
+         </ul>
+         <table class="attentionTable attn_tip">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">提示</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>您也可以使用网格收集器右键快捷菜单中的<strong>检查全部</strong>&rarr;<strong>单元法向</strong>命令。这些只是临时显示。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/maya/sst_satellite/element_normals_1.gif"></p>
+         <table class="attentionTable attn_warning">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">警告</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>确保所有法向都是指向背离几何体的方向。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <p>如果需要，使用<strong>有限元模型检查</strong>对话框中的<strong>反转法向</strong>命令来纠正单元法向。</p>
+         <p>为了简化模型，并没有铰接太阳能电池板，可以设置<strong>铰接仿真对象</strong>来使它跟随太阳。</p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

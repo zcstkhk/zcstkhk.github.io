@@ -1,0 +1,104 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>使用脚本加载不同部件</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>使用脚本加载不同部件</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>选<strong>装配</strong>&rarr;<strong>高级</strong>&rarr;<strong>脚本</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>脚本</strong>对话框中，点击<strong>定义脚本</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/assemblies/scripts/define_script.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>定义/执行脚本</strong>对话框中，在<strong>过滤器</strong>列表下，选择 <strong>LOAD ONLY FASTENERS</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>选中脚本中的命令显示在<strong>脚本内容</strong>列表中。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>执行</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>紧固件-包括一个未被 <strong>INTERNAL_PARTS</strong> 组件集选中的螺母-被加载了，而其它部件被卸载了。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/activities/script/assemblies_activities_zones_scripts_fasteners.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>过滤器</strong>列表下，选择 <strong>LOAD ONLY BRASS</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>执行</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>所有黄铜部件被加载而其它部件被卸载了。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/activities/script/assemblies_activities_zones_scripts_brass.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>关闭所有部件。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

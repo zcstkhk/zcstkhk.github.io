@@ -1,0 +1,78 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>基于事件的耐久性工作流</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>基于事件的耐久性工作流</h2>
+         <table cellspacing="2" width="95%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="13*">
+               
+               <col span="1" width="42*">
+               
+               <col span="1" width="135*">
+            </colgroup>
+            
+            <tr valign="top">
+              <th colspan="2" rowspan="1" bgcolor="#c0c0c0"><p>步骤</p></th>
+              <th colspan="1" rowspan="1" bgcolor="#c0c0c0"> <p>汇总</p></th>
+            </tr>
+            <tr bgcolor="#F0F0F0" valign="top">
+              <td colspan="1" rowspan="1"><p>1.</p></td>
+              <td colspan="1" rowspan="1"><p>指派疲劳材料属性。</p></td>
+              <td colspan="1" rowspan="1"><p>为要执行耐久性分析的模型部件指派的材料必须具有适当的耐久性和疲劳材料属性。</p>
+                <p>如果不指派疲劳材料属性，则可以替代<strong>解算选项</strong>耐久性对象中的引用材料。</p></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>2.</p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>创建并求解结构分析解算方案。</p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>您创建的结构分析解算方案类型决定了在耐久性分析期间可以创建的事件类型。</p>
+                <p>由于结果文件需要包含用于执行耐久性分析的应力或应变结果集，因此必须在输出请求中指定应力或应变结果。</p></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>3.</p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>创建耐久性求解过程。</p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>耐久性求解过程可以包含多个静态、瞬态和随机事件。</p></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>4.</p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>创建耐久性对象。</p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>耐久性对象可定义 NX 在求解耐久性事件时所用的耐久性求解器设置。由于可在不同的耐久性事件中重用耐久性对象，因此在对耐久性求解器设置进行一次定义后，可在多个事件中使用它们。</p></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>5.</p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>创建事件。</p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>根据结构分析解算方案，可以创建静态事件、瞬态事件或随机事件。</p>
+                <p>对于每个事件，都指定父解算方案、子工况及所需的耐久性对象。可以在事件对话框中直接创建和编辑耐久性对象。</p></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>6. </p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>对耐久性分析结果进行求解。</p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>可以分别对每个事件和耐久性求解过程求解，也可以同时对耐久性求解过程和所有事件求解。</p>
+                <p>耐久性求解过程结果会累积所有活动的静态、瞬态和随机事件中的损伤和寿命结果。将从所有活动的事件中获得最糟情况安全系数。</p></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>7.</p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>对耐久性分析结果进行后处理。</p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>可在<strong>后处理导航器</strong>中的耐久性结果节点下分别查看或累计查看为每个事件请求的结果。</p></td>
+            </tr>
+            
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

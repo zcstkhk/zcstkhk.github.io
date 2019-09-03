@@ -1,0 +1,100 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Modeling internal flows questions</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Modeling internal flows questions</h2>
+         <div id="topQuestionsContainer">
+            <div class="questionsHeader">
+               <div class="headerTitle">
+                  <p>Question</p>
+               </div>
+               <div class="quesionButtons">
+                  <div class="qButton" id="qButton_1">
+                     <p>1</p>
+                  </div>
+                  <div class="qButton" id="qButton_2">
+                     <p>2</p>
+                  </div>
+               </div>
+            </div>
+            <div id="questionsContainer">
+               <div class="question" id="question1" answered="false" numanswers="3" questiontype="allThatApply">
+                  <p> Available turbulence models include:</p>
+                  <p class="questionInstruction">Select all that apply.</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a1" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q1a1" type="checkbox" correct="no" name="question1Grp"></td>
+                           <td>
+                              <p>Spalart-Allmaras</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a2" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q1a2" type="checkbox" correct="yes" name="question1Grp"></td>
+                           <td>
+                              <p>&kappa;-&epsilon; </p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a3" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q1a3" type="checkbox" correct="yes" name="question1Grp"></td>
+                           <td>
+                              <p>Mixing Length</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div class="question" id="question2" answered="false" numanswers="3" questiontype="fillInBlank">
+                  <p>An orthotropic blockage simulation object models:</p>
+                  <p class="questionInstruction">Select one.</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a1" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q2a1" type="radio" correct="yes" name="question2Grp"></td>
+                           <td>
+                              <p>An obstruction with fluid material properties, which impedes the flow in three orthogonal directions with a different resistance value in each direction but does not entirely block the flow.</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a2" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q2a2" type="radio" correct="no" name="question2Grp"></td>
+                           <td>
+                              <p>An obstruction with fluid material properties, which equally impedes the flow with the same resistance values in every direction but does not entirely block the flow. </p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a3" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q2a3" type="radio" correct="no" name="question2Grp"></td>
+                           <td>
+                              <p> A 3D obstruction with solid material properties that blocks the 3D flow and is usually defined to exchange heat with the fluid by convection at its polygon faces. You can also model surface friction.</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div id="showFeedbackContainer"><span showLabel="true" id="feedbackButton" title="Show feedback" dojoType="xps.form.Button" onClick="showQuestionFeedback()">Show feedback</span></div>
+            </div>
+            <div class="helpTextContainer">
+               <p class="questionFeedback" id="incorrect">Incorrect.</p>
+               <p class="questionFeedback" id="correct">Correct.</p>
+               <div class="questionHelp" id="questionHelp1">
+                  <p></p>
+               </div>
+               <div class="questionHelp" id="questionHelp2">
+                  <p>A Flow Blockage simulation object provides a resistance to flow either completely diverting the flow or to let the flow pass through with a slight drop in pressure. </p>
+               </div>
+            </div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

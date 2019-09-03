@@ -1,0 +1,122 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>绕圆柱缠绕曲线</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>绕圆柱缠绕曲线</h2>
+         
+         
+         <p>缠绕与展开很像，使用圆锥、圆柱以及基准平面。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/wrap_unwrap_curve/other_graphic121b2.gif"></p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在图形窗口背景中右击并选择<strong>定向视图→前视图</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/wrap_unwrap_curve/other_graphic124_nx5.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>选择<strong>插入→来自曲线集的曲线→缠绕/展开曲线</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>缠绕/展开曲线</strong>对话框的<strong>类型</strong>列表中，选择<strong>缠绕</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>选择组成矩形的<strong>4</strong>条直线，然后单击鼠标中键以完成曲线几何体选择。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>选择大圆柱的外轮廓面。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在<strong>平面</strong>组中，选择<strong>选择对象</strong>，然后选择图形窗口中的基准平面。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>以关闭对话框并缠绕曲线。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/wrap_unwrap_curve/other_graphic126_nx5.png"></p>
+                     
+                     <p>矩形从基准平面缠绕到大圆柱上，记住被缠绕/展开的几何体是关联的，任何对矩形的编辑将会反应到圆柱上映射的样条中。</p>
+                     
+                     <p><a href="#" onclick="showDialog('other001')">切割线角度的影响</a></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>旋转部件以查看结果。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>关闭部件。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div dojoType="dijit.Dialog" id="other001" title="切割线角度的影响">
+            <div dojoType="dijit.layout.ContentPane" href="other001.html" extractContent="true"></div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>使用相关组件替换组件</title>
+   </head>
+   <body>
+      <div class="contentType_procedure">
+         <h2><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assemblies/substitute_component.gif" border="0">&nbsp;使用相关组件替换组件</h2>
+         
+         <p>本示例将展示如何使用<strong>替换组件</strong>命令在保持装配约束等关系的同时，将某一组件替换为另一组件。在铸件装配中，您将用从相同组件中派生的不同叉替换现有叉。</p>
+         
+         <p><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/component_commands/replace_component/replace_comp_xmpl_start.png" border="0"></p>
+         
+         <ol type="1">
+            <li>
+               
+               
+               <p>在图形窗口中，右键单击该叉并选择<strong>替换组件</strong>。</p>
+               
+               
+               <div class="stepResult">
+                  
+                  <p>将显示<strong>替换组件</strong>对话框，该叉将选定为要替换的组件。</p>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/component_commands/replace_component/replace_comp_xmpl_select_fork.png" border="0"></p>
+                  
+               </div>
+               
+            </li>
+            <li>
+               
+               
+               <p>在<strong>替换件</strong>组中，选择<strong>浏览</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/common/open.gif" border="0">。</p>
+               
+               
+            </li>
+            <li>
+              <p>在<strong>部件名</strong>对话框中，浏览替换叉的位置，选中该叉并单击<strong>确定</strong>。</p>
+            </li>
+            <li>
+              <p>在<strong>替换组件</strong>对话框的<strong>设置</strong>组中，确保已选中<strong>维持关系</strong>复选框。</p>
+            </li>
+            <li>
+              <p>单击<strong>确定</strong>。</p>
+              <div class="stepResult">
+                
+                <p>该叉已替换。由于替换叉是原始叉的版本，因此 NX 可成功维持装配约束等关系。</p>
+                
+                <p><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/component_commands/replace_component/replace_comp_xmpl_end.png" border="0"></p>
+                
+              </div>
+            </li>
+         </ol>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

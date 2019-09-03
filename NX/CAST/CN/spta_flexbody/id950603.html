@@ -1,0 +1,124 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>工作流</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>工作流</h2>
+         
+         <div class="division">
+            
+            <h3>高级仿真步骤</h3>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>创建有限元模型和 NX Nastran SOL 103 柔性体解算方案。<a name="ndxgenid_emot_advanced_topics_47"></a>
+                     
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>在柔性组件上创建有限元网格，并指派材料属性。</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>使用<strong>1D 连接</strong>(蜘蛛单元)或其它约束单元来定义组件与机构的连接点。</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>添加<strong>固定边界自由度</strong>约束来定义连接自由度。</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>添加<strong>自由边界自由度</strong>约束来定义载荷自由度。</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>求解模态解算方案，产生变形连杆的 RecurDyn Rflex 输入(.rfi)文件 。</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>对其它机构中的变形组件重复步骤1&ndash;6。</p>
+                  
+               </li>
+               
+            </ol>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>运动仿真步骤</h3>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>创建<strong>柔体动力学</strong>运动仿真。</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>在柔性组件上创建柔性连杆，让各个.rfi 文件与各自的柔性连杆相关联。</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>创建<strong>柔性体</strong>解算方案并将柔性连杆添加到解算方案中。</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>求解机构。</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>运行<strong>动画</strong>以查看刚体和柔性体的组合运动。</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>绘制模态自由度随时间的变化，以确定选定的模态对柔性体结果的贡献。</p>
+                  <p>可以选择一个或多个柔性体模态，然后绘制模态位移、加速度，或者速度。</p>
+                  
+               </li>
+               
+            </ol>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

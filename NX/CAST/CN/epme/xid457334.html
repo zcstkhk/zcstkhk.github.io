@@ -1,0 +1,975 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>底面壁铣对话框</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>底面壁铣对话框</h2>
+         <p>以下选项在<strong>底面壁</strong>和<strong>底面壁 IPW</strong> 对话框中可用。</p>
+         <table cellpadding="4" cellspacing="5" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="192">
+               
+               <col align="left" span="1">
+               
+            </colgroup>
+            
+            <tr bgcolor="silver" valign="top">
+              <th colspan="2" rowspan="1" align="left"><p><strong>几何体</strong></p></th>
+            </tr>
+            <tr bgcolor="#F0F0F0" valign="top">
+              <td colspan="1" rowspan="1"><p><strong>几何体</strong>列表</p></td>
+              <td colspan="1" rowspan="1"><p>指定当前工序将被指派到的现有<strong>几何体</strong>组。可从该列表中选择<strong>几何体</strong>组，或创建新的<strong>几何体</strong>组。</p></td>
+            </tr>
+            
+            <tr bgcolor="#F0F0F0" valign="top">
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/create_new_geometry.gif" border="0"> <strong>新建</strong></p>
+                  
+               </td>
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">打开<strong>新建几何体</strong>对话框，在对话框中可为当前工序创建新的<strong>几何体</strong>组。新的组出现在<strong>工序导航器</strong>的<strong>几何视图</strong>中，并且可被其他工序继承。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/edit.gif" border="0"> <strong>编辑</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">为当前工序将被指派到的<strong>几何体</strong>组打开一个对话框。在<strong>几何体</strong>组中，可添加或移除几何体对象。删除现有几何体时必须进行确认。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/specify_part.gif" border="0"> <strong>指定部件</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">选择要加工的部件。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/specify_check.gif" border="0"> <strong>指定检查体</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">选择不想加工的区域，如夹具组件。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/specify_cut_area_2.gif" border="0"> <strong>指定切削区底面</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">指定用于定义切削区域的底面。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/specify_wall.gif" border="0"> <strong>指定壁几何体</strong></p></td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>定环绕切削区域的壁。</p>
+                  <p>您可以将壁分成集来管理。您可以拥有一个壁集或多个壁集。</p>
+                  <p>使用多个壁集时，每个集都有自己的隐含底面和每个集的最底层。</p>
+                  <p> 在以下示例中，使用了两个壁集。</p>
+                  
+                  <table frame="void" rules="none" align="center">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td align="center" colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/wall_sets_1-1.gif"></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td align="center" colspan="1" rowspan="1">
+                              
+                              <p>集(1)包含一个壁面</p>
+                              <p>集(2)包含三个壁面</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+                  <p>&nbsp;</p>
+                  
+                  <p>使用一个壁集合时，选定底面的最底层有一个隐含底面。</p>
+                  <p> 在以下示例中，使用了一个壁集。一个壁集包含所有四个壁面。</p>
+                  
+                  <table frame="void" rules="none" align="center">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td align="center" colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/wall_sets_2-1.gif"></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/specify_trim_boundaries.gif" border="0"> <strong>指定修剪边界</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">选择将限定所生成刀轨的边界的类型。<strong>面</strong>、<strong>曲线</strong>和<strong>点</strong>边界选项可用。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_on.gif" border="0"> <strong>自动壁</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>可从与所选切削区域面相邻的面中自动查找壁。</p>
+                  <p>要打开<strong>自动壁</strong>识别功能，必须使用<strong>指定切削区域底面</strong>选项来定义部件体上的加工底面，并且必须将部件体选为<strong>部件几何体</strong>。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+              <td colspan="2" rowspan="1" bgcolor="silver" valign="top"><p><strong>刀具</strong></p></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>刀具</strong>列表 </p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>指定指派给当前工序的现有刀具。可从该列表中选择刀具，或创建新的刀具。</p>
+                <p>此列表中的刀具与<strong>工序导航器</strong>中列出的刀具相同。</p></td>
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/general/tools/ico_t_create_tool.gif" border="0"> <strong>新建</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">打开<strong>新建刀具</strong>对话框，在对话框中可为当前工序定义新的刀具。新的刀具出现在<strong>工序导航器</strong>的<strong>机床视图</strong>中，并可由其他工序继承。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/face_milling/display-edit.gif" border="0"> <strong>编辑或显示</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">打开当前刀具的对话框，可在其中编辑刀具参数。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>输出</strong></p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p> 显示刀具号、调整的长度、刀具补偿和 Z 偏置的当前参数。</p>
+                <p> <strong>刀具号</strong>设置 T 代码号，用于把刀具带入切削位置。</p></td>
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><strong>换刀设置</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_on.gif" border="0"> <strong>手工换刀</strong>允许添加一个程序停止项，从而能够手动换刀</p>
+                     </li>
+                     <li>
+                       <p><strong>夹持器号</strong>用于为刀具夹持器设置指派的编号</p>
+                     </li>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_on.gif" border="0"> <strong>文本状态</strong>用于为换刀指定文本，并在输出过程中将输入的文本添加到加载或转塔命令。软件在进行后处理之前将此文本存储在 MOM 变量中</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+              <td colspan="2" rowspan="1" bgcolor="silver" valign="top"><p><strong>刀轨设置</strong></p></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>方法</strong>列表</p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>指定指派给当前工序的现有<strong>方法</strong>组。可从该列表中选择<strong>方法</strong>组，或创建新的<strong>方法</strong>组。</p></td>
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/general/library/ico_t_create_method.gif" border="0"> <strong>新建</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">打开<strong>新建方法</strong>对话框，在对话框中可为当前工序定义新的<strong>方法</strong>组。新方法出现在<strong>工序导航器</strong>的<strong>加工方法视图</strong>中，可供其他工序使用，如粗加工、精加工或螺纹加工工序。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/edit.gif" border="0"> <strong>编辑</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">打开一个对话框，可在其中编辑所选<strong>方法</strong>组的值。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><strong>切削区域空间范围</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <table cellspacing="5" frame="void" rules="none" align="center">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1">
+                        
+                        <col span="1">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td align="center" colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/floor_containment.png"></p>
+                              
+                           </td>
+                           
+                           <td align="center" colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/manufacturing_dialogs/cd_cut_region_containment_1.png"></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td align="center" colspan="2" rowspan="1">
+                              
+                              <p class="no-bottom-margin"><strong>底面</strong>让刀轨使用侧重于底面的 2.5 D 切削区域空间范围。</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td align="center" colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/wall_containment.png"></p>
+                              
+                           </td>
+                           
+                           <td align="center" colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/manufacturing_dialogs/cd_cut_region_containment_2.png"></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td align="center" colspan="2" rowspan="1">
+                              
+                              <p class="no-bottom-margin"><strong>壁</strong>让刀轨使用侧重于壁的切削区域空间范围。</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><strong>切削模式</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>打开<strong>切削模式</strong>对话框，可在其中定义刀轨的形状。在<strong>底面壁</strong>铣削中，可用选项如下：</p>
+                  
+                  <table frame="void" rules="none" align="center">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1">
+                        
+                        <col span="3">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/cut_pattern/follow_part.gif" border="0"> <strong>跟随部件</strong></p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/cut_pattern/profile.gif" border="0"> <strong>轮廓</strong></p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/cut_pattern/zig.gif" border="0"> <strong>单向</strong></p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/cut_pattern/zig_with_contour.gif" border="0"> <strong>单向轮廓</strong></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/cut_pattern/follow_periphery.gif" border="0"> <strong>跟随周边</strong></p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/cut_pattern/trochoidal.gif" border="0"> <strong>摆线</strong></p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/cut_pattern/zig_zag.gif" border="0"> <strong>往复</strong></p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1"></td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>步距</strong></p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>用于指定切削刀路之间的距离。</p>
+                <ul>
+                  <li>
+                    <p>通过<strong>恒定</strong>可指定连续切削刀路之间的最大距离。可以按当前单位或当前刀具的百分比指定距离。如果刀路之间的指定距离没有用来均匀分割区域，则 NX 会减小刀路之间的距离，以保持恒定步距。</p>
+                  </li>
+                  <li>
+                    <p>通过<strong>残余高度</strong>可指定刀路之间可遗留的最大材料高度。NX 将计算所需的步距，从而使刀路间的残余高度不超过指定高度。所计算出的切削步距可能根据边界形状而变化。</p>
+                    <p>为保护刀具在移除材料时不至于负载过重，最大步距被限制在刀具直径的三分之二以内。</p>
+                  </li>
+                  <li>
+                    <p>通过<strong>刀具平直百分比</strong>可指定连续刀路之间的固定距离作为有效刀具直径的百分比。有效刀具直径是指实际上接触到腔底部的刀刃的直径。对于球头铣刀，系统将整个刀具直径用作有效刀具直径。对于其他刀具，有效刀具直径按 D - 2CR 计算。</p>
+                    <p>如果刀路间距不能平均分割所在区域，NX 将减小刀路间距以保持恒定步距。</p>
+                  </li>
+                  <li>
+                    <p><strong>刀路</strong></p>
+                    <p>用于指定所需刀路数。</p>
+                  </li>
+                  <li>
+                    <p><strong>变量平均值</strong></p>
+                    <p>适用于<strong>单向</strong>、<strong>往复</strong>和<strong>单向轮廓</strong>切削模式。用于指定最小和最大距离值。NX 将先分析第一条刀路，接着分析壁，然后在刀路和壁之间创建相等的间距。</p>
+                  </li>
+                  <li>
+                    <p><strong>精确</strong></p>
+                    <p>用于指定步距。</p>
+                  </li>
+                  <li>
+                    <p><strong>多个</strong></p>
+                    <p>适用于<strong>跟随部件</strong>、<strong>跟随周边</strong>和<strong>轮廓铣</strong>切削模式。 </p>
+                    <p>通过<strong>多个</strong>，可为各大小指定多个步距和相应的刀路数。刀路列表中的第一行对应于最靠近边界的刀路。后续行会朝着腔中心行进。所有刀路的总数不等于要加工的区域时，NX 会对切削区域中心添加或去掉刀路。</p>
+                  </li>
+                </ul></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>平面直径百分比</strong></p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>设置连续刀路之间的固定距离作为有效刀具直径的一个百分比。</p></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>底面毛坯厚度</strong></p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>仅在<strong>底面壁</strong>对话框中可用。</p>
+                <p>设置将移除的可加工区域底面上方毛坯材料的厚度。如果未将工序设置为使用<strong>毛坯几何体</strong>或 <strong>IPW</strong>，则使用该值。</p></td>
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" height="67" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><strong>每刀切削深度</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" height="67" rowspan="1" valign="top">
+                  
+                  <p>设置切削层的最大深度。实际深度将尽可能接近<strong>每刀切削深度</strong>值，并且不会超过它。</p>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">注释</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p class="no-bottom-margin"><strong>底面毛坯厚度</strong>和<strong>最终底面余量</strong>是从面所在平面起，沿垂直于面所在平面的刀轴进行测量的。如果指定的<strong>每刀切削深度</strong>未均匀分割要移除的材料，切削数则被舍入。随后重新计算切削深度以均匀地递增移除余量。</p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+                  <table frame="box" rules="all" align="center">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1">
+                        
+                        <col span="1">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td align="center" colspan="2" rowspan="1">
+                              
+                              <p class="no-bottom-margin">每刀切削深度 = .25</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                          <td colspan="1" rowspan="1"><p>切削深度 = 每刀切削深度值</p></td>
+                          <td colspan="1" rowspan="1"><p>重新计算切削深度</p></td>
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/face_milling/depth_per_cut.gif"></p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/face_milling/depth_per_cut2.gif"></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><strong>Z 向深度偏置</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>在所选壁的底边下设置隐式偏置，且<strong>每刀切削深度</strong>刀路将从此处开始。</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/z_depth_offset_4.gif"></p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>附加刀路</strong></p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>仅对<strong>底面壁</strong>铣削中的<strong>轮廓</strong>切削模式可用。</p>
+                <p>指定一些附加的刀路，可让刀具进入连续同心切削的边界范围。</p></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>距离</strong></p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>设置刀路之间的步距。</p></td>
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/cutting_parameters.gif" border="0"> <strong>切削参数</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">打开<strong>切削参数</strong>对话框，可在其中指定切削方向、刀轨偏置、部件余量和公差值。 </p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" height="87" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/non_cutting_moves.gif" border="0"> <strong>非切削移动</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" height="87" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">打开<strong>非切削移动</strong>对话框，可在其中指定刀具在切削移动之前、之后和之间的位置。 </p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/feeds_and_speeds.gif" border="0"> <strong>进给率和速度</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>打开<strong>进给率和速度</strong>对话框，可在其中指定主轴速度以及切削进给率。可设置刀具行进的速率。</p>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">注释</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p class="no-bottom-margin">可从<strong>方法</strong>组继承进给参数。</p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+              <td colspan="2" rowspan="1" bgcolor="silver" valign="top"><p><strong>机床控制</strong></p></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>开始刀轨事件</strong></p>
+                <p><strong>结束刀轨事件</strong></p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>控制运动的输出。可以指定机床事件，例如换刀、开始和结束事件，或者特殊的后处理命令。</p></td>
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/zlevel_milling/machine_control-copy_from.gif" border="0"> <strong>复制自</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">用于从另一工序或从工序模板中复制特殊的后处理命令。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/edit.gif" border="0"> <strong>编辑</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">用于将后处理命令添加至刀轨的开始或结束位置。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+              <td colspan="2" rowspan="1" bgcolor="silver" valign="top"><p><strong>程序</strong></p></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>程序</strong></p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>用于指定要放入工序的程序。</p></td>
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/create_new_program.gif" border="0"> <strong>新建</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">用于创建新的程序。新程序出现在<strong>工序导航器</strong>的<strong>程序视图</strong>中。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/edit.gif" border="0"> <strong>编辑</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">用于修改选中的程序。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="silver" colspan="2" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><strong>选项</strong></p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/edit_display.gif" border="0"> <strong>编辑显示</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">用于更改刀轨显示选项，例如刀具显示的颜色和类型。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/customize_dialog.gif" border="0"> <strong>定制对话框</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">用于修改此对话框的布局。可以添加、移除或重新组织文本框、按钮和选项。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="silver" colspan="2" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><strong>操作</strong></p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/generate.gif" border="0"> <strong>生成</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">生成刀轨。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/replay.gif" border="0"> <strong>重播</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">刷新图形窗口并重播刀轨。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/verify.gif" border="0"> <strong>确认</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">提供的选项可实现刀轨的动画显示。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/list.gif" border="0"> <strong>列表</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">在<strong>信息</strong>窗口中显示刀轨的文本列表。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="silver" colspan="2" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><strong>预览</strong></p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_on.gif" border="0"> <strong>预览</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>显示切削层，并连续显示关键层的切削区域。</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/vol_based_25D_milling_16.png"></p>
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_on.gif" border="0"> <strong>预览</strong></p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/display.gif" border="0"> <strong>显示</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>如果选中<strong>预览</strong>复选框 <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_on.gif" border="0">，则会显示切削区域和切削层。</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/vol_based_25D_milling_17.png"></p>
+                  
+               </td>
+               
+            </tr>
+            
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

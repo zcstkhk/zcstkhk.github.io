@@ -1,0 +1,95 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>在支架上生成六面体网格概述</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>在支架上生成六面体网格概述</h2>
+         <p>准备扫掠网格划分的一个方法是将体拆分为更小的易划分网格的实体，这个分析工作流如下：</p>
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>使用基于实体的 CAD 装配，可以使在 NX 中创建的，也可以是导入到 NX 中的。</p>
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/modeling/brick_solid1_small.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>为分析编辑或生成 CAD 数据：</p>
+               
+               <ul>
+                  
+                  <li>
+                     
+                     <p>使用 <strong>WAVE 几何体链接器</strong>以从装配组件中复制几何体到工作部件中</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>使用同步建模以及其它建模工具来简化装配组件</p>
+                     
+                  </li>
+                  
+               </ul>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/animations/brick_coplanar.gif"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>将组件拆分为更小的体，以用于扫掠网格划分。</p>
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/modeling/brick_split_body7_small.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在高级仿真中创建 FEM。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>生成网格配对条件。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>应用边密度来控制沿组件厚度方向的单元数量。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>创建2D 映射网格网格作为种子网格，以控制扫掠网格中的单元数量。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>生成扫掠网格，扫掠网格将会生成六面体单元。</p>
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/meshing/3d/brick_swept21_small.gif" border="0"></p>
+               
+            </li>
+            
+         </ol>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

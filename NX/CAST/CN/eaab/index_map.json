@@ -1,0 +1,12 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"高级重量管理",file:"id1073893.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"高级重量管理概述",file:"id679596.html",type:"topic",parent:""},
+{id:"d5e6",title:"重量管理概念",file:"id679731.html",type:"topic",parent:""},
+{id:"d5e7",title:"重量缓存",file:"id679711.html",type:"topic",parent:""},
+{id:"d5e8",title:"计算重量数据",file:"id725143.html",type:"activity",parent:""},
+{id:"d5e9",title:"重量计算中的例外",file:"id679656.html",type:"topic",parent:""},
+{id:"d5e10",title:"为重量管理赋值",file:"id679721.html",type:"topic",parent:""},
+{id:"d5e11",title:"赋予部件重量数据",file:"id679616.html",type:"topic",parent:""},
+{id:"d5e12",title:"使用例外和更改重量值",file:"id725149.html",type:"activity",parent:""}
+]}

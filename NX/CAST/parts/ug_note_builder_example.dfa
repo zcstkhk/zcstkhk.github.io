@@ -1,0 +1,22 @@
+#! NX/KF 7.5
+#
+
+#+
+Represents a dimension data object. Dimension data object is used to create an NX dimension.
+#-
+DefClass: NoteBuilderExample (%NoteBuilder);
+
+#+
+List of annotation data objects. Each object holds sufficient information to create
+an annotation.
+#-
+(List) AnnotationDataObjects: GetAnnotationData:(Views:);
+
+#+
+List of annotation data objects. Each object holds sufficient information to create
+an annotation.
+#-
+(Method List) GetAnnotationData:(List $views)
+@{
+   ug_getNoteData($views);
+};

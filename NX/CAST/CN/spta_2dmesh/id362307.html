@@ -1,0 +1,69 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>定义网格划分方法</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>定义网格划分方法</h2><a name="ndxgenid_spta_2dmesh_13"></a>
+         <a name="ndxgenid_spta_2dmesh_14"></a>
+         <a name="ndxgenid_spta_2dmesh_15"></a>
+         
+         
+         <p>使用 <strong>2D 网格</strong>对话框中的<strong>网格划分方法</strong>选项，可以控制软件用于生成网格的算法：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>使用<strong>细分</strong>网格划分方法时，软件使用递归细分技术在选定面上生成网格。使用递归细分时，软件重复进行分割，然后细分选定几何体以创建网格。使用此方法时，一旦软件生成初始单元集，便会执行一系列清理和光顺操作来提高网格的整体质量</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>使用<strong>铺彻法</strong>时，将铺彻方法与递归细分方法结合使用，以生成结构化程度更高的、边界合格的高质量自由网格。使用这种混合方法，软件能够在面的外边界以及任何内部洞（或&ldquo;环&rdquo;）周围创建结构化程度更高的网格，同时仍旧在面的其余部分生成自由网格</p>
+               
+            </li>
+            
+         </ul>
+         
+         <a name="genid_spta_2dmesh_16"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/meshing/2d/mesh_method1.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>使用细分方法的2D 网格</h4>
+         </div>
+         <a name="genid_spta_2dmesh_17"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/meshing/2d/mesh_method2.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4> 使用铺彻法的2D 网格</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

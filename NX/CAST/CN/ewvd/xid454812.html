@@ -1,0 +1,97 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>内部和外部部件模块</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>内部和外部部件模块</h2>
+         
+         <p>部件模块可作为内部部件模块单独存在于主部件文件中，或者作为外部链接部件模块，使用部件间 WAVE 参考将主部件文件中的部件模块链接至其他部件文件中对应的部件模块。</p>
+         <a name="genid_ewvd_18" id="genid_ewvd_18"></a><table border="0" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="2">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr valign="middle">
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>内部部件模块</strong></p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1"></td>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>外部链接的部件模块</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/part_module/pmod_internal_part_nav.png"></p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-40.gif"></p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/part_module/pmod_external_part_nav.png"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         
+         <p>将内部部件模块转换为外部链接部件模块时：</p>
+         <ul>
+           <li>
+             <p><strong>输入</strong>收集器中的对象是 WAVE 链接的，从主部件文件链接至链接部件模块文件。</p>
+           </li>
+           <li>
+             <p><strong>工作</strong>收集器及其包含的特征将被移到链接部件模块文件中。</p>
+           </li>
+           <li>
+             <p><strong>输出</strong>收集器中的对象是 WAVE 链接的，从链接部件模块文件链接至主部件文件。</p>
+           </li>
+           <li>
+             <p>主部件文件和链接部件模块文件之间的关联得以保留。</p>
+           </li>
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

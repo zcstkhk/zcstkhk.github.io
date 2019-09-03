@@ -1,0 +1,258 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Event-based durability workflow</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Event-based durability workflow</h2>
+         <table cellspacing="2" width="95%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="13*">
+               
+               <col span="1" width="42*">
+               
+               <col span="1" width="135*">
+               
+            </colgroup>
+            
+            <tr valign="top">
+               
+               <th bgcolor="#c0c0c0" colspan="2" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Step</p>
+                  
+               </th>
+               
+               <th bgcolor="#c0c0c0" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Summary</p>
+                  
+               </th>
+               
+            </tr>
+            
+            <tr bgcolor="#F0F0F0" valign="top">
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">1.</p>
+                  
+               </td>
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Assign fatigue material properties.</p>
+                  
+               </td>
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p>The material assigned to the part of the model where you perform the durability analysis must have the appropriate durability and fatigue material properties.</p>
+                  
+                  <p class="no-bottom-margin">If you do not assign fatigue material properties, you can override the referenced material when you create durability events.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">2.</p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">Create and solve the structural analysis solution.</p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>The type of structural analysis solution that you create determines the type of events you can create during the durability analysis.</p>
+                  
+                  <p class="no-bottom-margin">Because the results file needs to contain either stress or strain result sets for performing the durability analysis, you must specify either stress or strain results in the output requests.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">3.</p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">Create the Durability solution process.</p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">A Durability solution process can contain multiple static and transient events.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">4.</p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">Create durability objects.</p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">Durability objects define durability solver settings that NX uses when solving durability events. Because you can reuse durability objects in different durability events, you can define durability solver settings once, and use them in multiple events.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">5.</p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">Create events.</p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>Depending on the structural analysis solution, you can create static events or transient events.</p>
+                  
+                  <p>For each event, you specify the following:</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin">The output results that you want for strength, fatigue life, and fatigue safety.</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin">Methods for calculating strength safety, fatigue life, and fatigue safety.</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin">Methods for calculating stress damage propagation.</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+                  <p>In the case of a transient event, you also specify the part of your loading history on which you perform the durability analysis.</p>
+                  
+                  <p>You can select only a portion of your model to perform the durability analysis.</p>
+                  
+                  <p>You can override the material specified in the file for either of the following reasons:</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin">If all the appropriate durability and fatigue material properties are not set in the FEM file.</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin">If you need to perform what-if scenarios.</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">6. </p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">Solve for durability analysis results.</p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>You can solve each event and the durability solution process separately, or you can solve the durability solution process and all events at the same time.</p>
+                  
+                  <p class="no-bottom-margin">The durability solution process results cumulate damage and life results from all the active static and transient events. Worst case safety factors are taken from all active events.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">7. </p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">Post process durability analysis results.</p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">You can view the results you requested for each event separately and cumulatively under the durability result node in the <span class="uiTerm">Post Processing Navigator</span>.
+                  </p>
+                  
+               </td>
+               
+            </tr>
+            
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

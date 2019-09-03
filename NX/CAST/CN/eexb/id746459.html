@@ -1,0 +1,131 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>重命名表达式</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>重命名表达式</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>打开 <span class="fileName">exp3_wrench_2</span>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/expressions/open_part.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>按下 Ctrl+E 以打开<strong>表达式</strong>对话框。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>如果需要，点击<strong>更多选项</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/common/more.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>列出的表达式</strong>列表中，选择<strong>按名称过滤</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>列出的表达式</strong>列表旁的<strong>过滤器</strong>输入框中，键入 <strong>p1*</strong> 并回车。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/expressions/listed_expressions.png"></p>
+                     
+                     <p>只有那些名称以 <strong>p1</strong>开头的表达式将显示在表达式列表框中。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>选择 <strong>p14(基准平面 (6) 偏置)</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>在<strong>名称</strong>输入框中。键入 <strong>Offset</strong> 作为新名称并回车。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <div>
+                       <div>
+                         <p>表达式 <strong>p14</strong>将被重命名为 <strong>Offset</strong>，由于它不再满足 <strong>p1*</strong>的过滤准则，因此不会再显示在表达式列表框中。</p>
+                         <p>如果有表达式引用之前的表达式 <strong>p14</strong>，那么也会自动将它们更新以引用新的名称。</p>
+                       </div>
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>在<strong>列出的表达式</strong>列表中，选择<strong>命名的</strong>，注意到表达式 <strong>Offset</strong> 将显示在表达式列表框中。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <table class="attentionTable attn_note">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">注释</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>如果您将表达式重命名为与系统表达式类似的名称，比如 <strong>p36</strong>，系统仍然会将其识别为命名的表达式。</p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

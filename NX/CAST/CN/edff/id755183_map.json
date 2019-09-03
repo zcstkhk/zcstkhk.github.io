@@ -1,0 +1,10 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开部件",file:"id755192.html",type:"topic",parent:""},
+{id:"d7e3",title:"设置文字首选项",file:"id971020.html",type:"topic",parent:""},
+{id:"d7e4",title:"为部件名称创建注释",file:"id971202.html",type:"topic",parent:""},
+{id:"d7e5",title:"编辑注释",file:"id971204.html",type:"topic",parent:""},
+{id:"d7e6",title:"移动注释",file:"id971206.html",type:"topic",parent:""},
+{id:"d7e7",title:"将一个现有注释关联到一个视图",file:"id971208.html",type:"topic",parent:""},
+{id:"d7e8",title:"创建一个新注释并将它与正二测视图关联",file:"id971210.html",type:"topic",parent:""},
+{id:"d7e9",title:"查看注释关联性",file:"id971267.html",type:"topic",parent:""},
+{id:"d7e10",title:"编辑注释的字符大小",file:"id971269.html",type:"topic",parent:""}]}

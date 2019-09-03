@@ -1,0 +1,125 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>在装配级别进行编辑</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>在装配级别进行编辑</h2>
+         
+         
+         <p>这两个部件将在注塑模中进行制造，在底部部件中，有些面会在模具的滑道处引起底切，您不需要更改修剪片体的形状来解决这个问题。您已经创建了从设计装配到顶部与底部部件的 WAVE 链接，只要在设计装配中编辑修剪片体，然后更改就会反映到各个组件中。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/create_layout_assembly/15_layout_assy.png"></p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>将涉及装配设为工作部件。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/create_layout_assembly/18_layout_assy.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>部件导航器</strong>中，隐藏<strong>拉伸 (30)</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>您应该能够通过颜色来区分夹具外壳的两半部分。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/create_layout_assembly/19_layout_assy.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>部件导航器</strong>中，选择<strong>草图 (36) “Trim Sheet”</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>该草图确定修剪片体的大小及形状。</p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/create_layout_assembly/20_layout_assy.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>细节</strong>面板中，编辑下列表达式：</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>将表达式 <strong>p201</strong>的值修改为<strong>5</strong></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>将表达式 <strong>p202</strong>的值修改为<strong>10</strong></p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>注意修剪片体不会再在模具中造成底切，当您在设计装配级别中进行更改时，顶部部件与底部部件也将发生变化。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/create_layout_assembly/21_layout_assy.png"></p>
+                     
+                     <table class="attentionTable attn_note">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">注释</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>如果 WAVE 链接的体没有更新，请确保未选中<strong>工具&rarr;更新&rarr;部件间更新&rarr;延迟几何体、表达式和 PMI</strong> 选项。</p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

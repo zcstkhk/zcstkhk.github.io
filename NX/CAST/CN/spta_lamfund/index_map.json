@@ -1,0 +1,21 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"NX 复合层合板基础",file:"xid482604.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"层合板复合过程",file:"genid_laminate_composites_processes_41_1158.html",type:"topic",parent:""},
+{id:"d5e7",title:"层合板术语",file:"genid_laminate_glossary_96_2268.html",type:"topic",parent:""},
+{id:"d5e9",title:"层合板的坐标系",file:"id1458157.html",type:"topic",parent:""},
+{id:"d5e11",title:"层片属性",file:"id851816.html",type:"topic",parent:""},
+{id:"d5e14",title:"定义层合板层片的材料",file:"id852031.html",type:"topic",parent:""},
+{id:"d5e16",title:"层片材料",file:"ply_mat.html",type:"topic",parent:""},
+{id:"d5e18",title:"Fiber-reinforced ply material",file:"xid458821.html",type:"topic",parent:""},
+{id:"d5e20",title:"Defining ply materials",file:"ply_material_book.html",type:"activity",parent:""},
+{id:"d5e22",title:"Core ply material",file:"xid458822.html",type:"topic",parent:""},
+{id:"d5e24",title:"Defining plies and a stacking sequence",file:"id1536534.html",type:"topic",parent:""},
+{id:"d5e27",title:"Commands to create a stacking sequence from scratch",file:"id1536535.html",type:"topic",parent:""},
+{id:"d5e29",title:"Ply groups",file:"id851861.html",type:"topic",parent:""},
+{id:"d5e31",title:"Paste commands",file:"id1536536.html",type:"topic",parent:""},
+{id:"d5e33",title:"Using a spreadsheet or a CSV file to define a layup",file:"id1536543.html",type:"topic",parent:""},
+{id:"d5e35",title:"Defining a layup using the lamination shorthand format",file:"id1536542.html",type:"topic",parent:""},
+{id:"d5e37",title:"Zone-based process on a bicycle mud guard",file:"id852741.html",type:"activity",parent:""},
+{id:"d5e40",title:"Review",file:"xid482630.html",type:"topic",parent:""}
+]}

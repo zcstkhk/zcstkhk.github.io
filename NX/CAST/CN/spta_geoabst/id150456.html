@@ -1,0 +1,58 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>网格划分过程中自动抽取</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>网格划分过程中自动抽取</h2>
+         
+         <p><a name="ndxgenid_spta_geoabst_21"></a>
+            <a name="ndxgenid_spta_geoabst_22"></a>
+            在 2D 或 3D 网格划分过程中，软件可以自动抽取以下几何体以防止问题：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>小于指定小特征公差的边。这将防止软件从划分网格的几何体上创建小边单元</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>宽度(W)小于指定小特征公差的长条面</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/abstraction/automatic/abstract1.gif"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>几何体中的高度收缩区域，收缩区域是曲面上的一个非常狭窄区域，其宽度小于指定的小特征公差</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/abstraction/automatic/abstract4.gif"></p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/abstraction/automatic/sliver.png"></p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/abstraction/automatic/pinched.png"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

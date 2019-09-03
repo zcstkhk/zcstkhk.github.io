@@ -1,0 +1,192 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>拉伸草图然后修改部件</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>拉伸草图然后修改部件</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在<strong>直接草图</strong>工具条上，点击<strong>圆弧</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sketcher/sketch_tools/arc.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>创建一个圆弧以封闭投影曲线。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>创建圆弧时，确保自动创建与实体顶部边的相切约束。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/activities/project_ex3a.gif"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/activities/project_ex3_7.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>特征</strong>工具条上的<strong>拉伸</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/modeling/form_feature/extrude.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>限制</strong>组的<strong>开始</strong>和<strong>结束</strong>列表中，都选择<strong>直至选定对象</strong>，然后选择如图所示的基准平面。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/activities/project_ex4.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>布尔</strong>组的<strong>布尔</strong>列表中，选择<strong>自动判断</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>以完成拉伸。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>同步建模</strong>工具条上的<strong>移动面</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/modeling/synchronous_modeling/move_face.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>选择如图所示的面。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/activities/project_ex5.1.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>在<strong>移动面</strong>对话框中，设置如下参数：</p>
+                  
+                  <p><strong>变换</strong>组：</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p><strong>运动</strong> = <strong>距离</strong></p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+                  <p><strong>设置</strong>组：</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p><strong>移动行为</strong> = <strong>移动和改动</strong></p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>将手柄向部件内部拖动，如图所示，然后点击<strong>确定</strong>以完成移动面。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/activities/project_ex5.png"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>由于草图出现在移动面特征之前，所以草图以及拉伸将不会更新。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/activities/project_ex6.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>在<strong>部件导航器</strong>中，将<strong>移动面 (8)</strong>拖动到<strong>草图 (6)</strong>之前。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/activities/project_ex7.png"></p>
+                     
+                     <p>NX 将更新草图曲线以及拉伸特征.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_12">
+               <div class="stepAction">
+                  
+                  <p>关闭部件。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,19 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"基于区域的过程",file:"id1356661.html",type:"topic",parent:""},
+{id:"d5e7",title:"基于区域的过程概述",file:"id851856.html",type:"topic",parent:""},
+{id:"d5e9",title:"基于区域过程的网格创建",file:"id851811.html",type:"topic",parent:""},
+{id:"d5e11",title:"在 NX 中管理层合板",file:"id851526.html",type:"topic",parent:""},
+{id:"d5e18",title:"层合板建模器",file:"id851841.html",type:"topic",parent:""},
+{id:"d5e19",title:"定义层合板属性",file:"xid476003.html",type:"topic",parent:""},
+{id:"d5e22",title:"堆叠方法",file:"id851891.html",type:"topic",parent:""},
+{id:"d5e24",title:"参考平面位置",file:"id851866.html",type:"topic",parent:""},
+{id:"d5e27",title:"用户定义的参考平面位置",file:"id851901.html",type:"topic",parent:""},
+{id:"d5e29",title:"壳网格与参考平面之间的关系",file:"id1535497.html",type:"topic",parent:""},
+{id:"d5e53",title:"使用基于区域过程来加强挡泥板部件",file:"id852751.html",type:"activity",parent:""},
+{id:"d5e55",title:"验证层合板",file:"id1588770.html",type:"topic",parent:""},
+{id:"d5e57",title:"NX 复合层合板中的失效分析",file:"id852131.html",type:"topic",parent:""},
+{id:"d5e59",title:"失效理论分类",file:"id852106.html",type:"topic",parent:""},
+{id:"d5e61",title:"自行车挡泥板层合板结构完整性分析",file:"id852881.html",type:"activity",parent:""},
+
+{id:"d5e63",title:"复习",file:"id1356696.html",type:"topic",parent:""}
+]}

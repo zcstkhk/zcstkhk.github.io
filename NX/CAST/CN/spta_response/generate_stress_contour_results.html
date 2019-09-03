@@ -1,0 +1,77 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>生成应力云图结果</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>生成应力云图结果</h2>
+         <p>下一步，您将评估模型中所有单元的<strong>应力</strong>响应结果，并选择响应函数中应力最高的时间点，使用下列步骤来进行，如果需要，参考前面的页面：</p>
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>在<strong>评估响应结果</strong>对话框中，选择<strong>应力</strong>作为<strong>请求的结果</strong>(清除<strong>位移</strong>复选框)。
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>选中模型中的全部单元.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>将<strong>方法</strong>选择为<strong>从 XY 图表</strong>。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>点击<strong>点值</strong>下方的 <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/rs_sel_natural_freq.gif" border="0"> 按钮。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在<strong>方程式选择</strong>对话框中，选择<strong>2_(16E_VONMTOP)</strong>并点击<strong>确定</strong>。</p>
+               
+               <table class="attentionTable attn_note">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">注释</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>根据您上一步生成单元应力函数时选择的单元不同，文件名也可能不同(在文件名称上方的数字16为单元 ID)。</p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+            
+            <li>
+               
+               <p>在绘制的单元应力函数中，选择应力最高的时间点，然后点击<strong>确定</strong>以生成响应结果。</p>
+               
+            </li>
+            
+         </ol>
+         <p>在下一步，您将查看这些应力结果的云图，以及您先前生成的位移结果。</p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

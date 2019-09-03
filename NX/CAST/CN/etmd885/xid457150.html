@@ -1,0 +1,215 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Modify a Linked Part Module</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Modify a Linked Part Module</h2>
+         
+         
+         <p>In your role as a secondary designer, you need to modify the mounting features for a heat sink. You can open the Linked Part Module file without having the main design part file open.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>Open <span class="fileName">heat_sink_linked_file</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>Fit the graphics screen.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/linked_pmod/03_linked_pmod.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Part Navigator</span>, right-click <span class="uiTerm">Linked Part Module</span> <span class="literalText">&ldquo;Heat Sink&rdquo;</span> and choose <span class="uiTerm">Expand All</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/linked_pmod/04_linked_pmod.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>Examine the <span class="uiTerm">Part Navigator</span>. Notice that:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>The <span class="uiTerm">Inputs</span> collector has two WAVE-linked features: 
+                        </p>
+                        
+                        <p><img align="bottom" src="../graphics/nonLocalized/nx/modeling/part_navigator/linked_csys.gif" border="0"> <span class="uiTerm">Linked Datum CSYS</span> <span class="uiTerm">(1)</span></p>
+                        
+                        <p><img align="bottom" src="../graphics/nonLocalized/nx/modeling/part_navigator/linkedface.gif" border="0"> <span class="uiTerm">Linked Face</span> <span class="uiTerm">(2)</span></p>
+                        
+                        <p>These are the child features that are WAVE linked to their parent features in <span class="uiTerm">Inputs</span> collector of the main part file.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>The <span class="uiTerm">Work</span> collector has a sketch and two extrude features. This is the collector that moved from the main part file.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>The <span class="uiTerm">Outputs</span> collector has one extracted face. This is the parent feature of the child linked feature that was created in the <span class="uiTerm">Outputs</span> collector in main part file.
+                        </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Work</span> collector, double-click <span class="literalText">Sketch</span> <span class="uiTerm">(4)</span> <span class="uiTerm">&ldquo;SKETCH_001&rdquo;</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>The Linked Part Module is activated and the sketch is open for edit.</p>
+                     
+                     <table class="attentionTable attn_note">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">Note</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>In the following graphic, the linked face is hidden for clarity.</p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/linked_pmod/05_linked_pmod.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>Edit the value of the <span class="uiTerm">p412</span> expression from <span class="userInput">5.8</span> to <span class="userInput">7.6</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/linked_pmod/06_linked_pmod.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>Right-click in the background of the graphics window and choose <span class="uiTerm">Finish Sketch</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sketcher/sketch/finish_sketch.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>NX updates the extrude features. The faces highlighted are now longer.</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/linked_pmod/07_linked_pmod.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Part Navigator</span>, right-click <span class="uiTerm">Linked Part Module</span> <span class="literalText">&ldquo;Heat Sink&rdquo;</span> and choose <span class="uiTerm">Deactivate Part Module</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>The objects in the <span class="uiTerm">Inputs</span> and <span class="uiTerm">Work</span> collectors are hidden and the <span class="uiTerm">Extracted Face</span> in the <span class="uiTerm">Outputs</span> collector is displayed.
+                     </p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/linked_pmod/09_linked_pmod.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>On the <span class="uiTerm">Standard</span> toolbar click, <span class="uiTerm">Save</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/standard/save.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>Right-click <span class="uiTerm">Linked Part Module</span> <span class="literalText">&ldquo;Heat Sink&rdquo;</span> and choose <span class="uiTerm">Make Main Work</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>Because you are playing the roles of both the principal designer and the secondary designer, you chose <span class="uiTerm">Make Main Work</span>. In a true concurrent design environment the principal designer would use the <span class="uiTerm">Update Output References</span> command to update the main part file while the secondary designers continued to make changes to their assigned areas of the part in their Linked Part Module files.
+                     </p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/linked_pmod/08_linked_pmod.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

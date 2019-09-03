@@ -1,0 +1,1036 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>装配导航器列</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/resource_bar/assembly_navigator.gif" border="0">&nbsp;装配导航器列</h2>
+         
+         <p>在<strong>装配导航器</strong>中，可以同时显示预先确定的列和用户定义的列。</p>
+         
+         <p>最左侧的列必须是标识组件的列，例如，<strong>描述性部件名</strong>、<strong>组件名</strong>或<strong>部件名</strong>。可以将用户定义的列移到最左侧的位置，但如果此列为空白，<strong>装配导航器</strong>将显示使用尖括号 (&lt;&gt;) 括起的部件名。如果将用户定义的列移到其他位置，该列将再次变为空白。</p>
+         
+         <p>列及其图标可提供有关<strong>装配导航器</strong>中截面、约束及组件行的信息。</p>
+         
+         <table border="1" cellpadding="4" cellspacing="2" width="95%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+            </colgroup>
+            
+            <thead>
+               
+               <tr bgcolor="silver">
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                  <p>预先确定的列</p></td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">显示的信息</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p><strong>描述性部件名</strong></p>
+                     <p class="no-bottom-margin">&nbsp;</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>在<strong>装配首选项</strong>对话框中定义的描述性部件名可以是以下各项之一：</p>
+                     <ul>
+                       <li>
+                         <p><strong>文件名</strong></p>
+                       </li>
+                       <li>
+                         <p><strong>描述</strong></p>
+                       </li>
+                       <li>
+                         <p><strong>指定的属性</strong></p>
+                       </li>
+                     </ul>
+                  <p>如果描述性部件名不可用，则显示使用尖括号 (&lt;&gt;) 括起的部件名。</p></td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>信息</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>有关组件的附加信息</p>
+                     
+                     <div class="defList">
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_info_refonly_icon.gif" border="0"> <strong>部件仅供参考</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                              <p class="no-bottom-margin"><strong>部件仅供参考</strong></p>
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_info_linkedpart_icon.gif" border="0"> <strong>部件是链接部件</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_partfam_icon.gif" border="0"> <strong>部件是部件族成员</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                           </div>
+                        </div>
+                     </div>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>组件名</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>组件对象的名称</p>
+                     
+                     <p>如果以下条件均适用，则显示用尖括号 (&lt;&gt;) 括起的部件名，而非组件名：</p>
+                     <ul>
+                       <li>
+                         <p>此列在最左侧，因此组件名称位于层次结构树中</p>
+                       </li>
+                       <li>
+                         <p>例如，组件未加载时，组件名称不可用</p>
+                       </li>
+                  </ul></td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>部件名</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">组件的操作系统文件名</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>Read-Only</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>完全加载的组件的读写权限</p>
+                     
+                     <div class="defList">
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_readwrite_icon.gif" border="0"> <strong>读和写</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                           </div>
+                       </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_readonly_icon.gif" border="0"> <strong>只读</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_partfam_icon.gif" border="0"> <strong>只读(部件族成员)</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_partial_load_icon.gif" border="0"> <strong>部分加载</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                           </div>
+                        </div>
+                    </div>
+                     
+                 <p>对于已卸载的组件，此列为空。</p></td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>已修改</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>有关在当前会话中是否对部件进行了修改的信息</p>
+                     
+                     <div class="defList">
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_modified_icon.gif" border="0"> <strong>已修改</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                           </div>
+                        </div>
+                     </div>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>位置</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>组件的定位信息。这些图标显示定位组件时是使用装配约束还是配对条件。黑色图标代表装配约束。浅蓝图标代表配对条件。</p>
+                     
+                     <table class="attentionTable attn_note">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">注释</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                           <p>未约束的组件的图标和未配对的组件的图标相同。请查看工具提示，了解装配是否需要装配约束或配对条件。</p></td>
+                        </tr>
+                     </table>
+                     
+                     <p>白色箭头表示隐式替代，绿色箭头表示显式替代。以下列表显示多个示例，但不包含所有可能的图标。例如，隐式替代或显式替代箭头可以显示在未约束/未配对的组件(白色的圆)上。</p>
+                     
+                     <div class="defList">
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_postn_fc.gif" border="0"> <strong>完全约束</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_postn_fm.gif" border="0"> <strong>完全配对</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_postn_fix.gif" border="0"> <strong>固定</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                             <p class="no-bottom-margin">表明由于固定约束，而没有剩余的自由度。</p>
+</div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_postn_fc_io.gif" border="0"> <strong>完全约束，隐式替代</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                              <p class="no-bottom-margin">表明当前使用的布置中有隐式位置替代。</p>
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_postn_fm_io.gif" border="0"> <strong>完全配对，隐式替代</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_postn_pc.gif" border="0"> <strong>部分约束</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                              <p class="no-bottom-margin">表明组件至少有一个剩余自由度。</p>
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_postn_pm.gif" border="0"> <strong>部分配对</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_postn_pc_eo.gif" border="0"> <strong>部分约束，显式替代</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                             <p class="no-bottom-margin">表明当前使用的布置中有显式位置替代。</p>
+</div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_weight_outsidelimits_icon.gif" border="0"> <strong>约束不一致</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                              <p class="no-bottom-margin">表明两个或更多的约束冲突。</p>
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_postn_dc.gif" border="0"> <strong>延迟约束</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                              <p class="no-bottom-margin">表明存在引用已卸载数据的约束，因此位置可能会更改。</p>
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_postn_uc.gif" border="0"><strong>未约束/未配对</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                             <p class="no-bottom-margin">表明组件包含所有六个自由度，但没有位置替代。</p>
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_postn_uc.gif" border="0"> <strong>被抑制</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                              <p class="no-bottom-margin">表明组件的所有约束均已受到抑制</p>
+                              
+                           </div>
+                        </div>
+                     </div>
+                     
+                     <p>对于约束，可能会出现以下图标中的一个：</p>
+                     
+                     <div class="defList">
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_postn_constr_allgeomloaded.gif" border="0"> <strong>已加载所有几何体</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                              <p class="no-bottom-margin"></p>
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_postn_constr_somegeomunloaded.gif" border="0"> <strong>已卸载某些几何体</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                              <p class="no-bottom-margin"></p>
+                              
+                           </div>
+                        </div>
+                     </div>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>数量</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>装配或子装配中组件的数量，包括装配或子装配本身。</p>
+                  <p>对于已卸载的组件及零件，此列为空。</p></td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>引用集</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>当前引用集的名称。</p>
+                  <p>对于显示部件，此列为空。</p></td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     <a name="assy_navigator_an_possible_cols_out_of_date"></a>
+                    <p class="no-bottom-margin"><strong>过时</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>部件中的过时状态。</p>
+                     
+                     <div class="defList">
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_outofdate_icon.gif" border="0"> <strong>过时</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                              <dl>
+                                <dd>
+                                  <p>表明部件中的一个或多个对象没有自动更新，如：</p>
+                                  <ul>
+                                    <li>
+                                      <p>链接对象</p>
+                                    </li>
+                                    <li>
+                                      <p>约束</p>
+                                    </li>
+                                    <li>
+                                      <p>部件间表达式</p>
+                                    </li>
+                                  </ul>
+                                </dd>
+                              </dl>
+                          </div>
+                        </div>
+                     </div>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>文件描述</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>使用以下命令之一可为文件输入描述：</p>
+                     <ul>
+                       <li>
+                         <p><strong>文件→实用工具→编辑工作部件文件头</strong></p>
+                       </li>
+                       <li>
+                         <p><strong>文件→实用工具→编辑其他部件文件头</strong></p>
+                       </li>
+                     </ul>
+                    <p>如果以下各项均适用，则提供使用尖括号(&lt;&gt;)括起的部件名，而非文件描述：</p>
+                     <ul>
+                       <li>
+                         <p>此列为最左侧的列，因此文件描述位于结构树中。</p>
+                       </li>
+                       <li>
+                         <p>例如，未加载组件或未在文件头中定义描述时，文件描述不可用。</p>
+                       </li>
+                  </ul></td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>单位</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>组件的单位。</p>
+                     
+                     <div class="defList">
+                        <div class="defListItem">
+                           <div class="defObject defObjectHorz">
+                              <p><strong>mm</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningHorz">
+                              
+                              <p class="no-bottom-margin">毫米</p>
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectHorz">
+                              <p><strong>in</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningHorz">
+                              
+                              <p class="no-bottom-margin">英寸</p>
+                              
+                           </div>
+                        </div>
+                     </div>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>重量（磅、克、千克）</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>以磅、克或千克表示组件的质量。</p>
+                     <p>可以显示多个重量列。</p></td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>重量状态</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>重量分析的结果。</p>
+                     
+                     <div class="defList">
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_weight_ok_icon.gif" border="0"> <strong>重量合适</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_weight_asserted_icon.gif" border="0"> <strong>指派的重量</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_weight_unreliable_icon.gif" border="0"> <strong>不可靠的值</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_weight_outsidelimits_icon.gif" border="0"> <strong>超出重量限制</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                           </div>
+                        </div>
+                     </div>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>颜色</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>组件对象的颜色。</p>
+                     
+                  <p>如果没有定义颜色，则此列显示<strong>未设置</strong>。</p></td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>图层</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>组件对象的层。</p>
+                  <p>如果没有设置层，则此列显示<strong>原先的</strong>。</p></td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>形状</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>可变形组件的形状状态。</p>
+                     
+                     <div class="defList">
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_deform_icon.gif" border="0"> <strong>在显示装配部件中已变形</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_deform_outofdate_icon.gif" border="0"> <strong>在显示装配中已过期并已变形</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_deform_undeformed_icon.gif" border="0"> <strong>未变形的组件</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                              <p class="no-bottom-margin">组件部件具有变形定义，但组件对象当前未显示变形状态。</p>
+                              
+                           </div>
+                        </div>
+                     </div>
+                     
+                  <p>对于未定义为可变形的部件，此列为空。</p></td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     <a name="assy_navigator_an_possible_cols_Arrangements"></a>
+                    <p class="no-bottom-margin"><strong>布置</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>显示部件的活动布置。</p>
+                     <p>组件所使用的布置。</p>
+                  <p>如果显示部件只有一种布置，则对于显示部件中的所有组件，此列为空。</p></td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>位置控制</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>在显示的装配中，控制组件位置的最高级别父项。</p>
+                    <p>如果出现以下情况，则此列为空：</p>
+                     <ul>
+                       <li>
+                         <p>组件已卸载。</p>
+                       </li>
+                       <li>
+                         <p>最高级别控制父级为直属父级。</p>
+                       </li>
+                  </ul></td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>抑制控制</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>在显示的装配中，控制组件的抑制状态的是最高级别父项。</p>
+                     <p>如果出现以下情况，则此列为空：</p>
+                     <ul>
+                       <li>
+                         <p>组件已卸载。</p>
+                       </li>
+                       <li>
+                         <p>最高级别控制父级为直属父级。</p>
+                       </li>
+                  </ul></td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>已过滤</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>有关<strong>装配导航器</strong>是否显示已过滤视图的信息。</p>
+                     <p>仅适用于装配或子装配节点。</p>
+                     
+                     <div class="defList">
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_filtered_icon.gif" border="0"> <strong>过滤的节点</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                           </div>
+                        </div>
+                     </div>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>多 CAD</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>有关组件是否来自 JT 文件的信息。</p>
+                     
+                     <div class="defList">
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_multicad_jtderived_icon.gif" border="0"> <strong>JT 派生的</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                           </div>
+                        </div>
+                     </div>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>产品接口</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">包含产品接口几何体的组件。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>警报</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>组件或装配的消息和警告。</p>
+                     <p>例如，组件会显示一条消息，说明指定的半径过大，而无法尝试对其进行编辑。</p>
+                  <p>如果装配存在转换问题，则装配的<strong>警报</strong>列和该装配所有的组件均会显示某些约束存在问题。</p></td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>标注</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>Teamcenter 产品结构编辑器 (PSE) 中组件的序列号。在原生 NX 中，在 制图中创建装配部件列表时，会出现该序列号；组件在<strong>标注</strong>列中的序列号对应于零件明细表中同一组件的行号。该序列号还出现在圆形符号中，您可以在相关的图纸视图中创建圆形符号，以直观地指向组件并标识其零件明细表行号。</p>
+                  <p>在受管模式中（即在 Teamcenter Integration for NX 中），<strong>标注</strong>列显示在<strong>组件属性</strong>对话框中所定义的 CALLOUT 属性。这与 PSE 中的序列号同步。在原生 NX 中，序列号出现在部件列表和圆形符号中。</p></td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>数量</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">装配中组件的数量。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>Check-Mate 结果</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>最近运行的 Check-Mate 测试的结果。</p>
+                     
+                     <div class="defList">
+                        <div class="defListItem">
+                           <div class="defObject defObjectHorz">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_checkmate_pass.gif" border="0"> <strong>通过</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningHorz">
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectHorz">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_checkmate_pass_w_warning.gif" border="0"> <strong>通过(带警告)</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningHorz">
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectHorz">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_checkmate_pass_w_info.gif" border="0"> <strong>通过(带信息)</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningHorz">
+                              
+                           </div>
+                        </div>
+                     </div>
+                     
+                     <div class="defList">
+                        <div class="defListItem">
+                           <div class="defObject defObjectHorz">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_checkmate_failed.gif" border="0"> <strong>失败</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningHorz">
+                              
+                           </div>
+                        </div>
+                     </div>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>表示</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>在其中显示组件的窗体。</p>
+                     
+                     <div class="defList">
+                        <div class="defListItem">
+                           <div class="defObject defObjectHorz">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_representation_all_exact.gif" border="0"> <strong>所有精确表示</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningHorz">
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectHorz">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_representation_all_lightweight.gif" border="0"> <strong>所有轻量级表示</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningHorz">
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectHorz">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_representation_some_lightweight.gif" border="0"> <strong>某些轻量级表示</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningHorz">
+                              
+                           </div>
+                        </div>
+                     </div>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>报告组</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">节点的当前 HD3D 可视报告的图例颜色。如果处于<em>浏览</em>模式，且当前未报告节点，则为空。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>报告属性</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">HD3D 可视报告中节点的报告属性值。如果处于<em>浏览</em>模式，且当前未报告节点，则为空。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>结果如下</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>有关 HD3D 可视报告中的子装配节点是否包含当前相关组中的子项的信息。如果没有设置相关组，则为空。</p>
+                     
+                     <div class="defList">
+                        <div class="defListItem">
+                           <div class="defObject defObjectHorz">
+                              <p><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_navigator/an_an_results_below_matchedcomps.gif" border="0"> <strong>此节点下存在配对的组件</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningHorz">
+                              
+                           </div>
+                        </div>
+                     </div>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

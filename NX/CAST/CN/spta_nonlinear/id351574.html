@@ -1,0 +1,510 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>增加载荷</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>增加载荷</h2>
+         <p>用于增加载荷的方法取决于分析类型和解算方案。</p><a name="genid_incrementing_loads_using_multiple_subcases_106"></a>
+         
+         
+         
+         <h3>使用 SOL 106中的多子工况增加载荷</h3>
+         
+         <a name="ndxgenid_spta_nonlinear_46"></a>
+         <a name="ndxgenid_spta_nonlinear_47"></a>
+         
+         
+        <p>对于解算方案类型 SOL 106，载荷通过两种方式手动增加，您可以：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>创建多个子工况</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>使用<strong>增量数</strong>解算方案属性来把各个子工况拆分为相同数量</p>
+               
+            </li>
+            
+         </ul>
+         
+         <a name="genid_example_of_incrementing_loads_20_473"></a>
+         
+         
+         
+         <h3> SOL 106中的增加载荷示例</h3>
+         
+         <a name="ndxgenid_spta_nonlinear_49"></a>
+         <a name="ndxgenid_spta_nonlinear_50"></a>
+         
+         
+        <p>本示例演示按250磅的增量将载荷增加至1000磅，然后使用相同增量减小载荷。</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>必须为各个载荷步创建八个解算方案子工况</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>最终子工况不包含载荷集，只有约束条件</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>如果<strong>增量数</strong>解算方案属性设为10，那么每个子工况的载荷增量将被再分为25磅</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/solutions/nonlinear_static/increment_example.png"></p>
+         <a name="genid_incrementing_loads_time_as_variable_601"></a>
+         
+         
+         
+         <h3>ADVNL 601，106中随时间变量增加载荷</h3>
+         
+         <a name="ndxgenid_spta_nonlinear_52"></a>
+         <a name="ndxgenid_spta_nonlinear_53"></a>
+         
+         
+        <p>对于解算方案类型 SOL 601，106，时间可以作为一个变量来增加载荷或强迫位移。</p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>SOL 601，106(非线性静态)中的时间仅作为变量，而不作为真实时间。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>在字段中使用<strong>时间</strong>作为自变量来定义载荷或强迫位移</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>定义<strong>时间步</strong>来增加第1步中定义的载荷或强迫位移</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在<strong>解算方案</strong>对话框的<strong>工况控制</strong>选项卡中，<strong>创建时间步间隔</strong>下方，如果需要多个时间步间隔，那您可以调整<strong>时间步定义</strong>字段I，例如，如果使用粗糙的载荷增量一直到某些载荷值，出现了收敛问题，那么就需要在剩余载荷中使用更精细的载荷增量，将在上一次迭代结束后开始连续时间间隔。</p>
+               
+            </li>
+            
+         </ol>
+         <a name="genid_example_of_incrementing_loads_601"></a>
+         
+         
+         
+         <h3>SOL 601，106中增加载荷示例</h3>
+         
+         <a name="ndxgenid_spta_nonlinear_55"></a>
+         <a name="ndxgenid_spta_nonlinear_56"></a>
+         
+         
+        <p>在本示例中，将施加压力载荷，然后移除。</p>
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>使用“时间”作为自变量定义字段，输入的数据为：</p>
+               
+               <ul class="unmarkedList">
+                  <li>
+                     
+                     <p>时间，载荷</p>
+                     
+                  </li>
+                  <li>
+                     
+                     <p>0，0 </p>
+                     
+                  </li>
+                  <li>
+                     
+                     <p>1，-46250 </p>
+                     
+                  </li>
+                  <li>
+                     
+                     <p>2，0 </p>
+                     
+                  </li>
+               </ul>
+               
+            </li>
+            
+            <li>
+               
+               <p>时间步将增加在第1步中定义的载荷。</p>
+               <p>使用10个时间步，时间增量0.2，输出的跳跃因子为5，这个示例最后的载荷增量以及输出为：</p>
+               
+               <table border="1" cellpadding="4" cellspacing="2" frame="void" rules="none" width="95%" align="center">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1">
+                     
+                     <col span="3">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <th align="center" bgcolor="silver" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">增量</p>
+                           
+                        </th>
+                        
+                        <th align="center" bgcolor="silver" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">时间</p>
+                           
+                        </th>
+                        
+                        <th align="center" bgcolor="silver" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">压力</p>
+                           
+                        </th>
+                        
+                        <th align="center" bgcolor="silver" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">输出</p>
+                           
+                        </th>
+                        
+                     </tr>
+                     
+                     <tr>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">1</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">0.2</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">&ndash;9250</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">2</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">0.4</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">&ndash;18500</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">3</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">0.6</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">&ndash;27750</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">4</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">0.8</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">&ndash;37000</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">5</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">1</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">&ndash;46250</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">是</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">6</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">1.2</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">&ndash;37000</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">7</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">1.4</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">&ndash;27750</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">8</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">1.6</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">&ndash;18500</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">9</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">1.8</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">&ndash;9250</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">10</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">2</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">0</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">是</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            
+         </ol>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/solutions/nonlinear_static/advnl_example_plot.png"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

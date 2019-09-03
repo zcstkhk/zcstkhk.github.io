@@ -1,0 +1,101 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>端口</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>端口</h2>
+         
+         <p>端口是已审核部件中最基本的对象，在与其它已审核部件、型材或者管线路径之间作为关联的连接点，一共有两种类型的端口：</p>
+         <a name="ndxgenid_ertg_10"></a>
+         
+         <a name="ndxgenid_ertg_11"></a>
+         
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>连接件</strong>端口放置在一个部件中使之可以用于管线布置。它们用于部件放置与对齐，也用于部件定向(clocking)。端口也作为路径的连接点。</p>
+               
+               <p>当在路径中添加型材时，它将被修剪以匹配端口。</p>
+               <a name="genid_ertg_12" id="genid_ertg_12"></a><div class="figureContainer">
+                  <table align="center">
+                     <tr>
+                        <td>
+                           <div class="figure">
+                              <div><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/commands/qualify_part/qualify_fitting_port.png" border="0"></div>
+                           </div>
+                        </td>
+                     </tr>
+                  </table>
+                  <h4>端口元素</h4>
+               </div>
+               
+               <ol type="1" start="1">
+                  
+                  <li>
+                     
+                     <p>原点</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>对齐矢量</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>方位矢量(可选)</p>
+                     
+                  </li>
+                  
+               </ol>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>固定件</strong>端口是支撑型材，但不会对型材进行修剪的连接。例如，吊钩中在管道通路的轴方向包含一个固定端口，路径将会穿过固定端口的对齐矢量。</p>
+               <a name="ndxgenid_ertg_13"></a>
+               
+               <a name="ndxgenid_ertg_14"></a>
+               
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/commands/qualify_part/qualify_fixture_port.png"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>多个</strong>端口用在电气管线布置中，用于指定引脚连接。</p>
+               <a name="ndxgenid_ertg_15"></a>
+               
+               <a name="ndxgenid_ertg_16"></a>
+               
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/commands/qualify_part/qualify_multi_port.png"></p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>创建端口时，您可以接受 NX 提供的默认名称，也可以将它修改成您想要的名称。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

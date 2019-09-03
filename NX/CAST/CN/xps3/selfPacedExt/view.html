@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <title>Self Paced View</title>
+  </head>
+  <body class="soria xps">
+
+    <div id="topBorderContainer" dojoType="dijit.layout.BorderContainer" gutters="false" class="borderContainer">
+
+      <!-- Top Pane -->
+      <div dojoType="dijit.layout.ContentPane" region="top" class="topPane" splitter="false">
+        <div class="topDiv">
+          <div class="navMenu">
+            <span id="leftButton" title="..." dojoType="xps.form.Button" onClick='gotoPrevPage()' iconClass="prevIcon" showLabel="false"></span>
+
+            <span id="dropDownButton" dojoType="xps.form.DropDownButton">
+              <span>...</span>
+              <div class="dropDownMenu" dojoType="dijit.Menu" id="dropDownMenu"></div>
+            </span>
+
+            <span id="rightButton" title="..." dojoType="xps.form.Button" onClick='gotoNextPage()' iconClass="nextIcon" showLabel="false"></span>
+          </div>
+          <div class="title" id="topicSetTitle">...</div>
+        </div>
+
+      </div>
+
+      <!-- Left Pane -->
+      <div id="tocContainer" dojoType="dijit.layout.ContentPane" region="left" splitter="true" class="auxPane" style="width:300px;">
+
+        <div id="tabContainer" dojoType="dijit.layout.TabContainer" style="padding-top: 10px;">
+          <div id="tocTab" dojoType="dijit.layout.LinkPane" extractContent="true" style="background:#F1F7F8;" href="../xps3/selfPacedExt/toc.html">
+            <img src="../xps3/graphics/contents.gif"> <span id="topicsTab">...</span>
+          </div>
+
+		  <!--
+          <div id="searchTab" dojoType="dijit.layout.LinkPane" href="../xps3/selfPacedExt/search.html">
+            <img src="../xps3/graphics/search.gif"> <span id="searchTab">...</span>
+          </div>
+		  -->
+        </div>
+
+      </div>
+
+      <!-- Center Pane -->
+      <div id="mainDiv" dojoType="dijit.layout.ContentPane" class="mainPane" region="center" extractContent="true">
+        <div class="loading">loading main content...</div>
+      </div>
+
+    </div>
+  </body>
+</html>

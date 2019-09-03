@@ -1,0 +1,220 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>扫掠特征的引导线</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/modeling/surface/swept.gif" border="0">&nbsp;扫掠特征的引导线</h2>
+         <p>引导线串控制扫掠方向上体的方位和比例。</p>
+         <p>引导线串可以由一个对象或多个对象组成，并且每个对象既可以是曲线、实体边，也可以是实体面。每条引导线串的所有对象都必须是光顺且连续的。</p>
+         <p>如果所有的引导线串形成了闭环，则可以将第一个截面线串重新选择为最后一个截面线串。</p>
+         <p>可以选择一条、两条或三条引导线。</p>
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>一条引导线</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>将一条引导线用于简单的平移扫掠。 </p>
+                  <p>使用方位及缩放选项，可以沿扫掠控制截面线串的方位及比例。</p>
+                  <a name="genid_effb_12" id="genid_effb_12"></a><div class="figureContainer">
+                     <table align="center">
+                        <tr>
+                           <td>
+                              <div class="figure">
+                                 <div><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/swept/sweep_guideref_1a.png" border="0"></div>
+                              </div>
+                           </td>
+                        </tr>
+                     </table>
+                     <h4>截面通过一条引导线进行扫掠，并使用恒定面积规律进行缩放</h4>
+                  </div>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>两条引导线</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>要沿扫掠定向截面时，使用两条引导线。</p>
+                  <p>使用两条引导线时，截面线串沿第二条引导线进行定向。可以使用缩放选项来缩放截面。</p>
+                  <p>缩放可以是横向的，也可以是均匀的。</p>
+                  
+                  <table border="0" cellpadding="2" cellspacing="1" align="center">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="2">
+                        
+                        <col span="3">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr valign="bottom">
+                           
+                           <td colspan="1" rowspan="1">
+                              <a name="genid_effb_13" id="genid_effb_13"></a><div class="figureContainer">
+                                 <table align="center">
+                                    <tr>
+                                       <td>
+                                          <div class="figure">
+                                             <div><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/swept/sweep_guideref_2a.png" border="0"></div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </table>
+                                 <h4>使用一条引导线扫掠的截面</h4>
+                              </div>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1"></td>
+                           
+                           <td colspan="1" rowspan="1">
+                              <a name="genid_effb_14" id="genid_effb_14"></a><div class="figureContainer">
+                                 <table align="center">
+                                    <tr>
+                                       <td>
+                                          <div class="figure">
+                                             <div><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/swept/sweep_guideref_2b.png" border="0"></div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </table>
+                                 <h4>使用两条引导线扫掠并横向缩放的截面</h4>
+                              </div>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1"></td>
+                           
+                           <td colspan="1" rowspan="1">
+                              <a name="genid_effb_15" id="genid_effb_15"></a><div class="figureContainer">
+                                 <table align="center">
+                                    <tr>
+                                       <td>
+                                          <div class="figure">
+                                             <div><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/swept/sweep_guideref_2c.png" border="0"></div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </table>
+                                 <h4>使用两条引导线扫掠并均匀缩放的截面</h4>
+                              </div>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>三条引导线</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>要剪切独立轴上的体时，使用三条引导线。</p>
+                  <p>使用三条引导线时，第一条与第二条引导线用于定义体的方位与缩放。第三条引导线用于剪切该体。</p>
+                  
+                  <table border="0" cellpadding="2" cellspacing="1" frame="void" rules="none" align="center">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="2">
+                        
+                        <col span="2">
+                        
+                        <col span="1">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1" valign="top">
+                              <a name="genid_effb_16" id="genid_effb_16"></a><div class="figureContainer">
+                                 <table align="center">
+                                    <tr>
+                                       <td>
+                                          <div class="figure">
+                                             <div><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/swept/sweep_guideref_3a.png" border="0"></div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </table>
+                                 <h4>使用一条引导线扫掠的截面</h4>
+                              </div>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1" valign="top"></td>
+                           
+                           <td colspan="1" rowspan="1" valign="top">
+                              <a name="genid_effb_17" id="genid_effb_17"></a><div class="figureContainer">
+                                 <table align="center">
+                                    <tr>
+                                       <td>
+                                          <div class="figure">
+                                             <div><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/swept/sweep_guideref_3b.png" border="0"></div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </table>
+                                 <h4>使用两条引导线扫掠的截面</h4>
+                              </div>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1" valign="top"></td>
+                           
+                           <td colspan="1" rowspan="1" valign="top">
+                              <a name="genid_effb_18" id="genid_effb_18"></a><div class="figureContainer">
+                                <table align="center">
+                                    <tr>
+                                       <td>
+                                          <div class="figure">
+                                             <div><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/swept/sweep_guideref_3c.png" border="0"></div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </table>
+                                 <h4>使用三条引导线扫掠的截面</h4>
+                              </div>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </div>
+            </div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

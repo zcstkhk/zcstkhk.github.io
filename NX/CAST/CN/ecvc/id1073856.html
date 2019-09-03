@@ -1,0 +1,64 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>艺术样条</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>艺术样条</h2>
+         <p>艺术样条是创建自由成形曲线的推荐方法，它们都是 NURBs (非均匀有理 B 样条)。</p>
+         <p>有两种基本的方法创建艺术样条：<strong>通过点</strong>以及<strong>根据极点</strong>，每种方法创建的的样条都是样条特征，并且是关联的 —   可以通过使用和创建时一样的对话框编辑。它们都可以在艺术样条对话框中找到。</p>
+         <table border="1" cellpadding="2" cellspacing="0" width="445" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="65*">
+               
+               <col span="1" width="155*">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <TR>
+                 <TD rowSpan="1" colSpan="1"><p><strong>通过点</strong></p></TD>
+                 <TD rowSpan="1" colSpan="1"><p>当要求曲线精确地通过一些位置时使用，在美学的设计方面不是很常用，因为光顺度的控制并不是很重要的因素。</p></TD>
+               </TR>
+               <TR>
+                 <TD rowSpan="1" colSpan="1"><p><strong>根据极点</strong></p></TD>
+                 <TD rowSpan="1" colSpan="1"><p>当您需要一条光顺的样条，并且只精确地通过给定的起始和终止位置，用户定义的位置决定了样条的控制多边形。</p></TD>
+               </TR>
+               
+            </tbody>
+            
+         </table>
+         <p>在下面的例子中，所有的样条都是使用独一无二的位置集来创建：</p>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/studio_spline/splines_spline_comp.png"></p>
+         <p>上方的样条使用<strong>通过点</strong>创建。</p>
+         <p>下方的样条使用<strong>根据极点</strong>创建，控制多边形显示为红色。</p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>有两个命令都叫<strong>样条</strong>，这堂课中讨论的是<strong>艺术样条</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/curves/curve/studio_spline.gif" border="0">，它能创建关联或非关联曲线，位于曲线工具条上，另一个是命令是<strong>样条曲线</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/curves/curve/spline.gif" border="0">，它只能创建非关联的曲线，这个课程中随后就会提及。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,12 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"求解",file:"id1298053.html",type:"topic",parent:""},
+{id:"d5e5",title:"求解模型",file:"id151576.html",type:"topic",parent:""},
+{id:"d5e6",title:"支持的有限元求解器",file:"genid_supported_solvers_26_208.html",type:"topic",parent:""},
+{id:"d5e7",title:"创建解算方案和解算",file:"id1081378.html",type:"topic",parent:""},
+{id:"d5e9",title:"NX Nastran 热分析以及解算方案类型",file:"id151556.html",type:"topic",parent:""},
+{id:"d5e11",title:"NX Nastran 仿真文件",file:"id1081382.html",type:"topic",parent:""},
+{id:"d5e14",title:"定义多个解算方案",file:"id151521.html",type:"topic",parent:""},
+{id:"d5e16",title:"视频：求解模型",file:"id1320104.html",type:"topic",parent:""},
+{id:"d5e18",title:"Nastran 解算方案监视器",file:"id197109.html",type:"topic",parent:""},
+{id:"d5e20",title:"复习",file:"id1519556.html",type:"topic",parent:""}
+]}

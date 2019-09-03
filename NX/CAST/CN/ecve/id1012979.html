@@ -1,0 +1,214 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>修建三条直线到边界圆</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>修建三条直线到边界圆</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在<strong>编辑曲线</strong>工具条上，点击<strong>修建曲线</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/curves/edit_curve/trim_curve.gif" border="0" alt="Edit &gt; Curve &gt; Trim" title="Edit &gt; Curve &gt; Trim">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>这个选项在<strong>基本曲线</strong>对话框中也可以找到。</p>
+                     
+                     <p>由于这个文件中的所有几何体都是共面的，您将使用<strong>最短的3D 距离</strong>选项。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>修剪曲线</strong>对话框的<strong>交点</strong>组中，从<strong>方向</strong>列表选择<strong>最短的3D 距离</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在选择条上的<strong>曲线规则</strong>列表中，选择<strong>单条曲线</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在如图所示的位置附近选择 <strong>LINE1</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/trim_curve/edit_graphic77_nx75.png"></p>
+                     
+                  </div>
+                  <div class="stepInformation">
+                     
+                     <p>这将是要被修建或延伸的一端。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>设置</strong>组中，确保已清除<strong>关联</strong>复选框。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在<strong>输入曲线</strong>列表中，确保选择的是<strong>替换</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>确保已选中<strong>保持选定边界对象</strong>复选框。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>为<strong>边界对象 1</strong>选择圆弧。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/trim_curve/edit_graphic71_nx75.png"></p>
+                     
+                     <p><strong>提示</strong>行要求您为第二个修剪边界选择对象，如果您没有第二个边界对象，可以点击<span class="uiTerm">应用</span>以跳过这一步，并保留对话框以创建其它的修剪。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>应用</strong>以完成修剪。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>直线 1将延伸并修剪到您定义的边界对象。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/trim_curve/edit_graphic87a_nx75.png"></p>
+                     
+                     <p>由于已选中<strong>保持选定边界对象</strong>复选框，您可以继续选择更多的曲线，它们将被修剪到相同的边界对象。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>选择 <strong>LINE2</strong>作为要修剪的对象，确保选择您想要修剪的那一部分。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/trim_curve/edit_graphic79_nx75.png"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>直线被修剪。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>选择 <strong>LINE 3</strong>进行修剪。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/trim_curve/edit_graphic79a_nx75.png"></p>
+                     
+                     <p>直线被修剪。</p>
+                     
+                     <p>当曲线和边界对象有多于一个交点时，曲线将被修剪到与边界对象最近的交点，但是，您也可以指定哪个交点是您想要修剪到的。</p>
+                     
+                     <p>要修剪到指定的交点，在<strong>交点</strong>组的<strong>方法</strong>列表中选择<strong>自动判断</strong>，将提示您选择想要修剪到的点。</p>
+                     
+                     <p>这一次您将修剪 LINE3到它与圆弧的另一个交点。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_12">
+               <div class="stepAction">
+                  
+                  <p>在左端附近选择 <strong>LINE3</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/trim_curve/edit_graphic81_75.png"></p>
+                     
+                     <p>直线将被修剪。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_13">
+               <div class="stepAction">
+                  
+                  <p>在<strong>修剪曲线</strong>对话框中，点击<strong>取消</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/trim_curve/edit_graphic78a_nx75.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_14">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>撤销</strong>(或 Ctrl+Z) <span class="literalText">4</span>次，直到部件返回到它最初的状态。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

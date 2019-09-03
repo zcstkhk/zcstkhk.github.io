@@ -1,0 +1,272 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>更新图纸和视图</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>更新图纸和视图</h2>
+         <div class="estimatedTime">
+           <p>预计完成这堂课需要：6–9  分钟</p>
+         </div>
+         <div></div>
+         <p>在您已经创建若干图纸，并且放置视图到它们上面之后，又对模型进行设计变更，这是很常见的。当您编辑模型然后返回制图应用模块时，NX   将尝试更新图纸，当视图进行更新时，将重新产生所有的轮廓以及隐藏边，以更正它们在视图中的可见性，同时，视图边界也将检查自身并且在需要的时候调整大  小。有时这些更新过程将花费相当长的时间。尤其在当模型很复杂，并且在图纸页中有很多成员视图时。您可以通过延迟视图更新以加快系统响应时间，以便使它们  不会在每次编辑模型后返回制图应用模块时都发生更新。</p>
+         <p>在 NX 中，有很多种方法可以控制您图纸视图的更新。</p>
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>自动更新</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>所有指定为自动更新的视图，将在包含它们的图纸页显示在<strong>制图</strong>中时立即更新。</p>
+                  <div>
+                    <p>要为您将来创建的视图设置<strong>自动更新</strong>首选项，可以：</p>
+                  </div>
+                  <div>
+                    <ul>
+                      <li>
+                        <p>首选项→ 视图，在常规选项卡中，选中自动更新复选框。</p>
+                      </li>
+                    </ul>
+                  </div>
+                 <div>
+                   <p>要编辑现有视图的自动更新首选项，右击视图边界并选择样式，在常规选项卡中，根据需要设置自动更新选项，任何未选中自动更新的视图都需要手动更新。</p>
+                 </div>
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>延迟视图更新</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>当选择首选项→制图后，您可以抑制自动更新视图，当您在<strong>视图</strong>选项卡中选中延迟视图更新复选框，在编辑模型后，指定为自动更新的视图在返回到制图中时，将保持在过时状态，直到您手动更新该视图。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>创建时延迟更新</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>在放置投影视图时，可以选择抑制投影视图的自动更新，当选择<strong>首选项→制图</strong>，并在<strong>视图</strong>选项卡中选中<strong>创建时延迟更新</strong>复选框，所有投影的视图在放置到图纸页上后，将保持过时状态，只要投影视图一放置到图纸上，图纸就会被标记为过时，但是，当部件模型很大、很复杂时，这将加快放置新视图的过程。</p>
+                  
+               </div>
+            </div>
+         </div>
+         <div class="division">
+            
+            <h3>识别过时图纸和视图</h3>
+            
+            <p>有两种方法来识别图纸和它的视图的更新状态，最显而易见的方法就是查看屏幕左下角的图纸页名称，如果您看见的是：</p>
+           <ul>
+              <li>
+                <p>图纸页 &ldquo;Sheet 1&rdquo; 工作 (过时)</p>
+              </li>
+           </ul>
+            
+            <div class="verbose">
+               <p>这表明图纸中的一个或多个成员视图已过时。</p>
+            </div>
+            
+            <div class="verbose">
+               <p>要精确指出是哪些视图，您可以：</p>
+            </div>
+            
+            <div class="verbose">
+              <ul>
+                 <li>
+                   <p>选择<strong>信息→其它→图纸</strong>，然后在<strong>信息</strong>窗口中搜索文本&ldquo;<strong>过时</strong>&rdquo;，或者也可以：</p>
+                 </li>
+               </ul>
+               <ul>
+                 <li>
+                   <p>选择<strong>信息→其它→视图</strong>来查看单个视图的相同信息</p>
+                 </li>
+               </ul>
+            </div>
+            
+            <p>最简单的查看图纸是否过时的方法就是在<strong>部件导航器</strong>中查看视图节点。</p>
+            <p>在这里，您将在节点前面找到一个对号，表明视图、图纸页或者图纸是最新的。</p>
+            
+            <table border="0" cellpadding="2" cellspacing="1" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="46*">
+                  
+                  <col span="1" width="149*">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/views/update/drawings_drawings6_260.png"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">导入的 &ldquo;TOP&rdquo;@19</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p>如果一个秒表符号出现在视图、图纸页或者节点前面，就表明它已过时。</p>
+            
+            <table border="0" cellpadding="2" cellspacing="1" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="47*">
+                  
+                  <col span="1" width="148*">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/views/update/drawings_drawings6_340.png"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">投影 &ldquo;ORTHO&rdquo;@20</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">制图</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>图纸→更新视图</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/drafting/drawing_layout/update_views.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>编辑→视图→更新视图</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">快捷菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">右击视图或图纸页边界→<strong>更新</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">部件导航器</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">右击图纸、图纸页或者视图节点→<strong>更新</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         <a name="id744549" id="id744549"></a><div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>复习</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>复习</h2>
+         <div id="topQuestionsContainer">
+            <div class="questionsHeader">
+               <div class="headerTitle">
+                  <p>问题</p>
+               </div>
+               <div class="quesionButtons">
+                  <div class="qButton" id="qButton_1">
+                     <p>1</p>
+                  </div>
+                  <div class="qButton" id="qButton_2">
+                     <p>2</p>
+                  </div>
+               </div>
+            </div>
+            <div id="questionsContainer">
+               <div class="question" id="question1" answered="false" numanswers="6" questiontype="allThatApply">
+                  <p>下列哪些对象可以定义为设计变量？</p>
+                  <p class="questionInstruction">可以选择多个您认为正确的答案</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a1" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q1a1" type="checkbox" correct="no" name="question1Grp"></td>
+                           <td>
+                              <p>材料属性</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a2" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q1a2" type="checkbox" correct="yes" name="question1Grp"></td>
+                           <td>
+                              <p>壳单元属性</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a3" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q1a3" type="checkbox" correct="no" name="question1Grp"></td>
+                           <td>
+                              <p>网格密度</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a4" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q1a4" type="checkbox" correct="yes" name="question1Grp"></td>
+                           <td>
+                              <p>草图尺寸</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a5" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q1a5" type="checkbox" correct="yes" name="question1Grp"></td>
+                           <td>
+                              <p>特征尺寸</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a6" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q1a6" type="checkbox" correct="yes" name="question1Grp"></td>
+                           <td>
+                              <p>梁截面属性</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div class="question" id="question2" answered="false" numanswers="4" questiontype="fillInBlank">
+                  <p>假设您想要在把部件限制为最大重量时优化模型，您必须创建什么对象以在优化部件中指定最大重量？</p>
+                  <p class="questionInstruction">请选择一个答案</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a1" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q2a1" type="radio" correct="yes" name="question2Grp"></td>
+                           <td>
+                              <p>设计约束</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a2" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q2a2" type="radio" correct="no" name="question2Grp"></td>
+                           <td>
+                              <p>设计变量</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a3" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q2a3" type="radio" correct="no" name="question2Grp"></td>
+                           <td>
+                              <p>设计目标</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a4" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q2a4" type="radio" correct="no" name="question2Grp"></td>
+                           <td>
+                              <p>加工限制</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div id="showFeedbackContainer"><span showLabel="true" id="feedbackButton" title="Show feedback" dojoType="xps.form.Button" onClick="showQuestionFeedback()">显示答案</span></div>
+            </div>
+            <div class="helpTextContainer">
+               <p class="questionFeedback" id="incorrect">错误！</p>
+               <p class="questionFeedback" id="correct">正确！</p>
+               <div class="questionHelp" id="questionHelp1"></div>
+               <div class="questionHelp" id="questionHelp2">
+                  <p>创建设计约束以在优化中放置边界，包括重量、应力、应变、体积以及位移。</p>
+               </div>
+            </div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

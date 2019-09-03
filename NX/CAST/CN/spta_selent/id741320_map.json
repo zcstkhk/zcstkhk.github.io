@@ -1,0 +1,6 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开部件文件",file:"id341511.html",type:"topic",parent:""},
+{id:"d7e3",title:"重置对话框内存",file:"id353012.html",type:"topic",parent:""},
+{id:"d7e4",title:"创建 FEM 和仿真文件",file:"create_a_fem_file_mesh_fillets.html",type:"topic",parent:""},
+{id:"d7e5",title:"在圆角上生成2D 种子网格",file:"id341515.html",type:"topic",parent:""},
+{id:"d7e6",title:"生成3D 网格",file:"id341517.html",type:"topic",parent:""}]}

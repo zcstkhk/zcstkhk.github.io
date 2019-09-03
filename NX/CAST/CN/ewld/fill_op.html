@@ -1,0 +1,618 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>填充对话框</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/wizards/weld_assistant/fill.gif" border="0">&nbsp;填充对话框</h2>
+         <table border="0" cellpadding="4" cellspacing="2" width="100%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+            </colgroup>
+            
+            <tbody valign="top">
+               
+               <tr bgcolor="silver">
+                  
+                  <td colspan="2" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>放置体</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="2" rowspan="1">
+                     
+                     <p class="no-bottom-margin">这个组中进行的选择是用来创建连接部件属性并将连接部件信息出版到 Teamcenter。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#F0F0F0">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/common/select_face.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>选择面</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p>让您指定在其上放置填充层的片体或实体面。</p>
+                     
+                     <p class="no-bottom-margin">您必须为各个想要创建填充特征的体选择至少一个种子面。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#F0F0F0">
+                  
+                  <td colspan="1" height="63" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/common/csys_constructor.gif" border="0"> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/common/csys_infer.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>指定方位</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" height="63" rowspan="1">
+                     
+                     <p class="no-bottom-margin">让您指定沿 ZC、XC、YC 方向的投影。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="63" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>种子面</strong>复选框</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="63" rowspan="1">
+                     
+                     <p>使用所有与选定种子面相邻的面来创建特征。</p>
+                     
+                     <p class="no-bottom-margin">如果您想要指定准确的面来创建特征，那么就清除复选框。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="silver" colspan="2" height="33" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>边界</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="2" rowspan="1">
+                     
+                     <p class="no-bottom-margin">让您使用闭环来为填充区域生成边界，选择条上的捕捉点选项可用。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>边界方法</strong>列表</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <div class="defList">
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><strong>矩形</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                              <p class="no-bottom-margin">指定矩形填充边界，这个矩形被投影到放置体上。</p>
+                              
+                           </div>
+                        </div>
+                        <div class="defListItem">
+                           <div class="defObject defObjectVert">
+                              <p><strong>曲线</strong></p>
+                           </div>
+                           <div class="defMeaning defMeaningVert">
+                              
+                              <p>使用点构造器指定封闭的边界。</p>
+                              
+                              <p class="no-bottom-margin">投影方向是沿着动态 CSYS 的 ZC 轴，如果是投影到体上，并且有两种可能的闭环方案，使用的是沿 ZC 轴最远的环。</p>
+                              
+                           </div>
+                        </div>
+                     </div>
+                     
+                     <table border="0" cellpadding="2" cellspacing="1" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1">
+                           
+                           <col span="1">
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 <a name="genid_ewld_87"></a><div class="figureContainer">
+                                    <table align="center">
+                                       <tr>
+                                          <td>
+                                             <div class="figure">
+                                                <div><img align="bottom" src="../graphics/graphicLibrary/nx/weld_assistant/commands/fill/fill_rectangle.png" border="0"></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                    <h4>矩形</h4>
+                                 </div>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 <a name="genid_ewld_88"></a><div class="figureContainer">
+                                    <table align="center">
+                                       <tr>
+                                          <td>
+                                             <div class="figure">
+                                                <div><img align="bottom" src="../graphics/graphicLibrary/nx/weld_assistant/commands/fill/fill_curve.png" border="0"></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                    <h4>曲线</h4>
+                                 </div>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>再分割区域</strong>复选框</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>将边界内定义的区域沿 XC 或者 YC 方向细分，您可以使用<strong>矩形定义</strong>组中的选项更改区域。</p>
+                     
+                     <table border="0" cellpadding="2" cellspacing="1" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1">
+                           
+                           <col span="1">
+                           
+                           <col span="1">
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 <a name="genid_ewld_89"></a><div class="figureContainer">
+                                    <table align="center">
+                                       <tr>
+                                          <td>
+                                             <div class="figure">
+                                                <div><img align="bottom" src="../graphics/graphicLibrary/nx/weld_assistant/commands/fill/fill_subdv_no.png" border="0"></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                    <h4>未选中</h4>
+                                 </div>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 <a name="genid_ewld_90"></a><div class="figureContainer">
+                                    <table align="center">
+                                       <tr>
+                                          <td>
+                                             <div class="figure">
+                                                <div><img align="bottom" src="../graphics/graphicLibrary/nx/weld_assistant/commands/fill/fill_subdv_xc.png" border="0"></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                    <h4>选中再分割区域复选框，并且宽度方向设置为 XC</h4>
+                                 </div>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 <a name="genid_ewld_91"></a><div class="figureContainer">
+                                    <table align="center">
+                                       <tr>
+                                          <td>
+                                             <div class="figure">
+                                                <div><img align="bottom" src="../graphics/graphicLibrary/nx/weld_assistant/commands/fill/fill_subdv_yc.png" border="0"></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                    <h4>选中再分割区域复选框，并且宽度方向设置为 YC</h4>
+                                 </div>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                     <p class="no-bottom-margin">如果选定的用来指定方位的点位于指定的填充范围内，那么沿长度方向的分区中心线将面向 CSYS 原点。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/common/point_constructor.gif" border="0"> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/common/point.gif" border="0"></p>
+                     
+                     <p><strong>拐角 1</strong></p>
+                     
+                     <p class="no-bottom-margin"><strong>拐角 2</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>当<strong>边界方法</strong>设置为<strong>矩形</strong>时可用。</p>
+                     
+                     <p class="no-bottom-margin">让您制动用来定义矩形区域的第一和第二个拐角。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/common/point_constructor.gif" border="0"> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/common/curve.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>选择曲线或点</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>当<strong>边界方法</strong>设置为<strong>曲线</strong>时可用。</p>
+                     
+                     <p class="no-bottom-margin">让您指定若干点以形成一个封闭的边界。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="silver" colspan="2" height="33" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>矩形定义</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>沿宽度</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>当<strong>再分割区域</strong>复选框选中时可用。</p>
+                     
+                     <p class="no-bottom-margin">指定一个方向，区域将会沿该方向细分。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>宽度</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>当<strong>再分割区域</strong>复选框选中时可用。</p>
+                     
+                     <p>指定各个填充层的宽度。</p>
+                     
+                     <p class="no-bottom-margin"><strong>宽度</strong>和<strong>沿宽度</strong>的指定是用来创建中心线，该中心线为填充层的中心线。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>拉伸高度</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">指定边界拉伸的高度，这个操作将创建一个实体。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="silver" colspan="2" height="33" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>内边界</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/common/curve.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>选择曲线</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>如果特征越过开放的内部区域，比如孔时，让您可以指定特征行为。</p>
+                     
+                     <p>如果您指定内部区域或者孔上的曲线，填充将会“落进”该孔内，如果未选择曲线，填充也将会有一个孔。</p>
+                     
+                     <table border="0" cellpadding="2" cellspacing="1" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1">
+                           
+                           <col span="1">
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 <a name="genid_ewld_92"></a><div class="figureContainer">
+                                    <table align="center">
+                                       <tr>
+                                          <td>
+                                             <div class="figure">
+                                                <div><img align="bottom" src="../graphics/graphicLibrary/nx/weld_assistant/commands/fill/fill_innerboundary_1.png" border="0"></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                    <h4>已选择内边界</h4>
+                                 </div>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 <a name="genid_ewld_93"></a><div class="figureContainer">
+                                    <table align="center">
+                                       <tr>
+                                          <td>
+                                             <div class="figure">
+                                                <div><img align="bottom" src="../graphics/graphicLibrary/nx/weld_assistant/commands/fill/fill_innerboundary_2.png" border="0"></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                    <h4>填充“落进”内部区域</h4>
+                                 </div>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="silver" colspan="2" height="33" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>焊接特性</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">焊接特性框</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>列出其它可以用来指定用户定义焊接的属性。</p>
+                     
+                     <p>这些属性在<strong>用户默认设置</strong><span class="no-bottom-margin">对话框&rarr;</span><strong>焊接助理</strong><span class="no-bottom-margin">&rarr;</span><strong>创建</strong><span class="no-bottom-margin">&rarr;</span><strong>填充</strong>选项卡中配置。</p>
+                     
+                     
+                     <p>参见在线帮助以获取更多关于焊接特性的信息。</p>
+                     
+                     <table class="attentionTable attn_tip">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">提示</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p class="no-bottom-margin">要查找用户默认设置，选择<strong>文件&rarr;实用工具</strong>&rarr;<strong>用户默认设置</strong>，然后点击<strong>查找用户默认设置</strong><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/customer_defaults/find_default.gif" border="0">。</p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/common/select.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>从对象继承</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">让您选择一个对象，填充焊将从该对象继承所有特性。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="silver" colspan="2" height="33" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>设置</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>更改视图方位</strong>复选框</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">将工作视图的方位更改为再分割后区域的 XY 平面。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>延伸距离</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>当<strong>再分割区域</strong>复选框选中时可用。</p>
+                     
+                     <p class="no-bottom-margin">设置选定填充子区域延伸的值，要获取更多信息，参见 <a href="#" onclick="loadFile('fill_hand_op.html')">填充手柄</a>。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>公差</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">设置距离公差值，要获取更多信息，参见建模首选项的在线帮助。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

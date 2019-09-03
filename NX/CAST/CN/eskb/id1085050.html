@@ -1,0 +1,124 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>将相切几何体设为备选解</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>将相切几何体设为备选解</h2>
+         
+         
+         <p>第二个设计变更是要您转换圆弧方向，并更新部件以确保可加工，部件中的孔必须保持与圆弧中心的约束。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>选择如图所示的曲线。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/activities/alt_sol_ex4.png"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>NX infers the tangent arc and recreates the arc in the opposite direction. The hole remains constrained to the arc center.</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/activities/alt_sol_ex5.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>NX 将自动判断相切圆弧，并在相反方向上重新创建圆弧，孔将保持与圆弧中心的约束。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/activities/alt_sol_ex3.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>直接草图</strong>工具条上的<strong>圆角</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sketcher/sketch_tools/fillet.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>创建与下图相类似的 15 mm 圆角。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/activities/alt_sol_ex6.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在部件相反侧使用相同方法创建圆角以完成草图。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/activities/alt_sol_ex7.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>直接草图</strong>工具条上的<strong>编辑草图时延迟更新</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sketcher/direct_sketch/delay_update_during_edit_of_sketch.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>按下 Ctrl-Q 以<strong>完成草图</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>关闭部件。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>脚本</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>脚本</h2>
+         
+         <p>使用<strong>脚本</strong>命令来映射一个或多个组件组到操作。</p>
+         
+         <p>您可以像使用一个简单程序一样使用一个脚本来操作装配。</p>
+         
+         <p>您可以使用下列方法定义脚本：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>临时地，只执行一次</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>命名并保存以备重用</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <div class="division">
+            
+            <h3>示例</h3>
+            
+            <p>这个例子加载工作部件附近的组件，卸载不在工作部件附近的组件，并将工作部件附近的组件设置为 SOLID 引用集。</p>
+            
+            <p>假设您有一个名为 <strong>work_part_proximity</strong> 的组件组，它所有的组件都在工作部件的指定距离之内，脚本可以包含以下命令：</p>
+            
+            <ul class="hangingList">
+               
+               <li class="condense">
+                  
+                  <p>打开(work_part_proximity);</p>
+                  
+               </li>
+               
+               <li class="condense">
+                  
+                  <p>关闭(!work_part_proximity);</p>
+                  
+               </li>
+               
+               <li class="condense">
+                  
+                  <p>设置引用集(&quot;SOLID&quot;)(work_part_proximity);</p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table cellspacing="2" class="locator" width="95%">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">装配</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" height="49" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">先决条件</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" height="49" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">高级装配许可证</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>装配</strong>&rarr;<strong>高级</strong>&rarr;<strong>脚本</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

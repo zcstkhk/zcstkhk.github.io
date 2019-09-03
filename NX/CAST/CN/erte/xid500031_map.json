@@ -1,0 +1,12 @@
+{identifier:"id",label:"title",items:[
+{id:"d9e2",title:"打开部件并查看设计规则",file:"xid505363.html",type:"topic",parent:""},
+{id:"d9e3",title:"执行交互设计规则检查",file:"xid500034.html",type:"topic",parent:""},
+{id:"d9e4",title:"编辑上方折弯段的半径",file:"xid500035.html",type:"topic",parent:""},
+{id:"d9e5",title:"编辑下方路径中的折弯半径",file:"xid500036.html",type:"topic",parent:""},
+{id:"d9e6",title:"编辑折弯角度",file:"xid500038.html",type:"topic",parent:""},
+{id:"d9e7",title:"变换路径",file:"xid500039.html",type:"topic",parent:""},
+{id:"d9e8",title:"移动子站 2",file:"xid500040.html",type:"topic",parent:""},
+{id:"d9e9",title:"替代最小管线段长度违例",file:"xid505099.html",type:"topic",parent:""},
+{id:"d9e10",title:"移动球阀",file:"xid505094.html",type:"topic",parent:""},
+{id:"d9e11",title:"旋转阀",file:"xid505095.html",type:"topic",parent:""},
+{id:"d9e12",title:"查看设计规则违例",file:"xid500037.html",type:"topic",parent:""}]}

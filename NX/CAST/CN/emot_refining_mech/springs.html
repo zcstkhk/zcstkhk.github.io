@@ -1,0 +1,90 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>弹簧</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>弹簧</h2>
+         
+         <p>弹簧式用于在其附着对象上施加力或扭矩的柔性单元。<a name="ndxgenid_emot_refining_mech_10"></a>
+            
+         </p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>您可以在两个连杆之间定义弹簧，或者一个连杆和一个现有几何体之间，或者在滑动副上。您还可以将弹簧附着到空间点上。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>您可以在旋转副上定义扭矩弹簧</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>弹簧劲度系数(在 NX 中也称为<strong>刚度</strong>)可以是常量，也可以使用样条函数来定义。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>您可以在弹簧上定义预载</p>
+               
+            </li>
+            
+         </ul>
+         <a name="genid_emot_refining_mech_11" id="genid_emot_refining_mech_11"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/refining/spring_example.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>平移弹簧与扭矩弹簧</h4>
+         </div>
+         
+         
+         <p>求解器支持下列类型的弹簧力：</p>
+         
+         <div class="division">
+            
+            <h3>线性形式</h3>
+            
+            <p>F<sub><em>弹簧</em></sub> = kx(t)</p>
+            
+            <p>k为常量(当刚度类型设置为<strong>表达式</strong>时，在<strong>弹簧</strong>对话框中定义)。</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>非线性形式</h3>
+            
+            <p><span class="emphasis">F<sub><em>弹簧</em></sub> = k(x)x(t) = f(x)</span></p>
+            
+            <p>其中 f(x) 通过刚度与阻尼样条函数来定义。</p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

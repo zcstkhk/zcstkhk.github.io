@@ -1,0 +1,33 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>什么是外部超单元？</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>什么是外部超单元？</h2>
+         
+         <p>超单元是有限元模型一部分的降阶表示。</p>
+         
+         <p>为了提高效率，您可以创建相同模型某些部分的超单元(有时也成为子结构)，然后在一个解算方案中将它们组合在一起。在 NX 中，可以通过使用外部超单元来在装配有限元模型中放置组件有限元模型来达成上述目的。<span class="emphasis"></span></p>
+         
+         <p>如果超单元是在独立求解中生成，并且储存在外部文件中，则被认为是外部的。</p>
+         
+         <p>您指定超单元的边界自由度，边界自由度并未缩减，用于把超单元连接和定向到模型中的剩余节点。</p>
+         
+         <p>子结构中不在边界上的自由度被认为是省略或内部的自由度。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

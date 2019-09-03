@@ -1,0 +1,63 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>拼合对话框中的其他选项</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>拼合对话框中的其他选项</h2>
+         
+         <p><strong>公差</strong> — 可以使用下列公差设置：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>内部距离</strong> — 曲面内部的距离公差</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>内部角度</strong> — 曲面内部的角度公差</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>边距离</strong> — 沿曲面四条边的距离公差</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>边角度</strong> — 沿曲面四条边的角度公差。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>关于公差的提示 — 系统以非常简单的逼近曲面(它不大可能在公差内)开始，然后渐渐地使它更加复杂直到原先的形状复制到指定的公差内为止。如果使用更紧的公差，系统将产生更复杂的结果，消耗存储空间并降低所有后续操作的速度。因此，所使用的公差不应该比所需的更紧。</p>
+         
+         <p>方法是在逼近曲面边的周围使用紧的公差，但是在内部使用松的公差，从而允许较为简单的曲面。如果在非常&ldquo;波动的&rdquo;曲面上使用小的角度公差，则生成更多的补片。如果将两个角度公差都设置为 90 度(默认值)，角度偏差不会被检查到；这会加快处理进度。</p>
+         
+         <p>当选中<strong>显示检查点</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_on.gif" border="0"> 复选框时，在显示拼合曲面的逼近的过程中计算点。使用显示检查点将会略微降低过程的速度。</p>
+         
+         <div class="verbose">
+           <p>显示检查点可以可视化并识别曲面上潜在的问题区域。然后就可以更快地排除和修复问题区域。</p>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

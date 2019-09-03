@@ -1,0 +1,174 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>坐标尺寸</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>坐标尺寸</h2>
+         
+         <p><strong>坐标尺寸</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/drafting/dimension/ordinate.gif" border="0"> 由文本和一条延伸线（可以是直的，也可以有一段折线）组成。坐标尺寸描述了从被称为坐标原点的公共点到对象上某个位置沿坐标基线的距离。 </p>
+         
+         <p>坐标原点有两个互相垂直轴或基线。您还可以通过矢量方法来指定第一条坐标基线的方向。第二条基线将垂直于第一条基线自动创建。如果不指定，则默认方向是图纸的水平与竖直方向。</p>
+         
+         
+         <table border="1" cellpadding="1" frame="border" rules="groups" width="400" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="408*">
+               
+            </colgroup>
+            
+            <thead>
+               
+               <tr>
+                  
+                  <td align="center" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">坐标尺寸集</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td align="left" colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/ordinate/drf_ord_ov1.gif"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td align="left" colspan="1" rowspan="1" valign="top"><ol type="1" start="1">
+                     <li>
+                       <p>坐标原点</p>
+                     </li>
+                     <li>
+                       <p>坐标集名</p>
+                     </li>
+                     <li>
+                       <p>坐标边距</p>
+                     </li>
+                     <li>
+                       <p>具有用户定义方向的基线</p>
+                     </li>
+                     <li>
+                       <p>垂直基线</p>
+                     </li>
+                     <li>
+                       <p>带折线的坐标尺寸</p>
+                     </li>
+                        
+                    </ol>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <p>NX 将自动指定坐标集名。您也可以选择不显示坐标名。还可以在坐标原点处显示用户定义符号。</p>
+        <p>坐标尺寸与距离基线某一偏置的边距对齐。可以定义边距。如果不定义边距，当您在正交位置放置第一个尺寸时，NX 将自动判断边距。</p>
+         <a name="ordinate_set" id="ordinate_set"></a>
+         <p id="ordinate_set2">坐标原点、坐标集名和边距组成了一个坐标集。您必须先有一个坐标集才能创建或编辑坐标尺寸。坐标尺寸集由坐标尺寸和坐标集组成。</p>
+        <p>请注意： </p>
+        <ul>
+           <li>
+             <p>应在单视图中创建坐标尺寸集。创建坐标尺寸集(其中的基准原点在一个视图中，边距和尺寸放置在另一个视图中)将导致出现意外结果，例如，与多个视图相关联的坐标尺寸不能移动/复制或导出。</p>
+           </li>
+           <li>
+             <p>如果在一个成员视图的扩展视图中创建坐标尺寸，则也必须在该扩展的成员视图中执行任何编辑操作。</p>
+           </li>
+        </ul>
+        <div class="division">
+            
+          <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">制图</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>尺寸→坐标尺寸</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/drafting/dimension/ordinate.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>插入→尺寸→坐标</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

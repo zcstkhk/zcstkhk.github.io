@@ -1,0 +1,12 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开部件文件",file:"id319962.html",type:"topic",parent:""},
+{id:"d7e3",title:"重置对话框内存",file:"id353012.html",type:"topic",parent:""},
+{id:"d7e4",title:"创建 FEM 和仿真文件",file:"id154216.html",type:"topic",parent:""},
+{id:"d7e5",title:"显示理想化部件",file:"id154501.html",type:"topic",parent:""},
+{id:"d7e6",title:"提升部件",file:"id948738.html",type:"topic",parent:""},
+{id:"d7e7",title:"创建中面",file:"id154701.html",type:"topic",parent:""},
+{id:"d7e8",title:"显示 FEM 文件",file:"id154366.html",type:"topic",parent:""},
+{id:"d7e10",title:"创建网格收集器",file:"id967969.html",type:"topic",parent:""},
+{id:"d7e11",title:"使用2D 单元划分中面网格",file:"id167861.html",type:"topic",parent:""},
+{id:"d7e12",title:"尝试更改网格大小和方法",file:"id362297.html",type:"topic",parent:""},
+{id:"d7e14",title:"显示单元厚度",file:"id1616227.html",type:"topic",parent:""}]}

@@ -1,0 +1,7 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开部件",file:"harmonic_open_the_part.html",type:"topic",parent:""},
+{id:"d7e3",title:"设置角色",file:"mtn_role_adv_full.html",type:"topic",parent:""},
+{id:"d7e4",title:"重置对话框内存",file:"id353012.html",type:"topic",parent:""},
+{id:"d7e5",title:"向齿轮添加简谐驱动",file:"add_harmonic_driver_collar.html",type:"topic",parent:""},
+{id:"d7e6",title:"创建解算方案",file:"create_a_solution_harmonic.html",type:"topic",parent:""},
+{id:"d7e7",title:"查看机构动画",file:"animate_the_mechanism_harmonic.html",type:"topic",parent:""}]}

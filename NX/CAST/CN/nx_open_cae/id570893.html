@@ -1,0 +1,44 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Seed CycleObjsInPart and set up the Do loop</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Seed CycleObjsInPart and set up the Do loop</h2>
+         <p>This project meshes every body in the part with CQUAD4 elements, using a Do loop to cycle through all of the surfaces. The <span class="codeText">NXOpen.Obj.CycleObjsInPart()</span> function is used to cycle through every object in the part. This function requires the tag of the part to be processed, and the type of object to be located (in this case <span class="codeText">UF_caegeom_type</span>). The tag of the object found is returned. (&ldquo;<span class="codeText">objectTag</span>&rdquo;). If &ldquo;<span class="codeText">objectTag</span>&rdquo; is NULL, that triggers <span class="codeText">CycleObjsInPart</span> to start the process. The process finishes when <span class="codeText">objectTag</span> becomes NULL again, or there are no more objects to cycle through. The loop continues as long as <span class="codeText">objectTag</span> is NOT NULL.
+         </p>
+         <p>Add the following lines below those added in the previous section.</p><pre class="codeExample "><span class="userInput">    Do
+        Dim objType As Integer = 0
+        Dim objSubType As Integer = 0
+        theUfSession.Obj.AskTypeAndSubtype(objectTag, objType, objSubType)
+        If objSubType = NXOpen.UF.UFConstants.UF_caegeom_body_subtype Then
+            myCounter = myCounter + 1 'used to set the name of the meshcollector
+            ' Get the CAEBody object from it's tag - the current returned tag from CycleObjsInPart
+            Dim myCAEBody As CAE.CAEBody = NXObjectManager.Get(objectTag)
+</span></pre><table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>The If test and the Do loop will be completed later in the activity.</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

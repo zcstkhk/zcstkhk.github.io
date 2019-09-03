@@ -1,0 +1,127 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Add a safe move junction to the pocket</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Add a safe move junction to the pocket</h2>
+         
+         <p>In this activity, you will add an additional junction to the tool rack pocket so that during simulations, the machine head moves to a safe point before entering the pocket to retrieve or replace the tool.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Create Machine Component</strong> dialog box, in the <strong>Junctions</strong> section, click <strong>Add New Set</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/common/add_new_set.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>Click <strong>Specify CSYS</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/common/csys_dialog.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>CSYS</strong> dialog box, from the <strong>Type</strong> list, choose <strong>Offset CSYS</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Reference CSYS</strong> section, from the <strong>Reference</strong> list, select <strong>Selected CSYS</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>In the graphics window, select the mount junction CSYS you defined.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/machines/tool_rack_09.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>CSYS</strong> dialog box, in the <strong>Translation</strong> subsection, in the <strong>Y</strong> input box, type <span class="userInput">&ndash;50</span> and click <strong>OK</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>The entry safe point is now defined.</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/machines/tool_rack_10.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Create Machine Component</strong> dialog box, in the <strong>Junctions</strong> section, in the <strong>Name</strong> box, type <span class="userInput">P1_SIM_ENTRY1</span> and press Tab.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <table class="attentionTable attn_caution">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">Caution</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>The conjunction names are important to simulations. The junctions used to position the entry moves must be named <strong>Px_SIM_ENTRYn</strong>, where <strong>x</strong> is the tool pocket identifier and <strong>n</strong> ranges from 1 to 10 so that simulations occur sequentially.
+                              </p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         <div class="stepListResult">
+            
+            <p>The pocket&rsquo;s safe point junction is now defined. Leave the <strong>Create Machine Component</strong> dialog box open for the next activity.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Design a team workflow</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Design a team workflow</h2>
+         
+         
+         <p>Use what you learned in this course and the scenario in the following steps to play the role of both the principal designer and a secondary designer.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>In your role as the principal designer, open <span class="fileName">des18_85_case_on_your_own</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/on_your_own/on_your_own_01.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>Make sure that the <span class="uiTerm">Tools</span>&rarr;<span class="uiTerm">Update</span>&rarr;<span class="uiTerm">Interpart Update</span>&rarr;<span class="uiTerm">Delay Geometry, Expressions, and PMI Update</span> option is not selected.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>Convert the Part Module to a Linked Part Module.</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>In your role as the secondary designer, in the Linked Part Module, extrude the sketch curves as shown and use <span class="userInput">12</span> for the <span class="uiTerm">Start</span> <span class="uiTerm">Distance</span> <span class="uiTerm">Value</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/on_your_own/on_your_own_02.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>Extrude the sketch curves as shown.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/on_your_own/on_your_own_03.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>Unite the five solids.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/on_your_own/on_your_own_04.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>In your role as the principal designer, unite the Linked Part Module to the main body.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/on_your_own/on_your_own_07.png"></p>
+                     
+                     <table class="attentionTable attn_tip">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">Tip</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>Did you define the <span class="uiTerm">Outputs</span> in the Linked Part Module?
+                              </p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>Prepare the main part file for release. Convert the external Linked Part Module to an internal Part Module.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>These are the basics steps that should be used when a design team needs to collaborate on a single part design. The Principal designer:</p>
+                     
+                     <ol type="1" start="1">
+                        
+                        <li>
+                           
+                           <p>Creates Part Modules in unfinished states in the main part file and then breaks these off into separate Linked Part Module files which are distributed to members of the design team. </p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>Updates each Linked Part Module feature in the main part file to view the designer&rsquo;s progress and ensure that continuing downstream work is based on the latest geometry in the main part file.</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>Merges the completed Linked Part Module files into the main part file.</p>
+                           
+                        </li>
+                        
+                     </ol>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>Close all parts.</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

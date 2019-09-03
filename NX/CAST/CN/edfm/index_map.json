@@ -1,0 +1,10 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"形位公差符号",file:"id1056474.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"特征控制框",file:"ann_toolbar_fcf_ov.html",type:"topic",parent:""},
+{id:"d5e7",title:"注释堆叠",file:"ann_stacking.html",type:"topic",parent:""},
+{id:"d5e9",title:"附加的形位公差符号",file:"genid_appending_gdt_symbols_243_3798.html",type:"topic",parent:"",children:[
+{id:"d5e10",title:"附加形位公差符号",file:"id755654.html",type:"activity",parent:"d5e9"}]},
+{id:"d5e12",title:"基准特征符号",file:"drf_datum_feature_symbol_ov.html",type:"topic",parent:"",children:[
+{id:"d5e13",title:"创建独立的形位公差符号",file:"id755660.html",type:"activity",parent:"d5e12"}]}
+]}

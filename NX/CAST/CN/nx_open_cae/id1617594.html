@@ -1,0 +1,65 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>NX CAE 求解器语言概述</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>NX CAE 求解器语言概述</h2>
+         
+         <p>NX CAE 系统架构使用的是中立的求解器设计，这种中立设计支持数量众多的求解器模块，或者嵌入到 NX CAE 内核架构中的求解器语言。</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>NX CAE 的核心架构只对基本的有限元建模概念在性质以及行为方面进行数量非常有限的假设，比如节点、单元、边界条件以及解算方案选项。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>特定于求解器的信息将在求解器 XML 文件中指定，该 XML 文件将确定求解器的有效项，也将驱动 NX 中特殊的求解器环境的用户界面外观。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>当前，NX CAE 求解器语言接口支持众多有限元求解器，比如 Nastran、Abaqus、ANSYS 以及LS-DYNA。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>当您为 CAE 创建 NX Open 应用程序时，您必须使用求解器语言来确定：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>实体的名称字符串</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>给定实体所支持的属性列表，以及这些属性的有效输入。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>划分网格前创建中面</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>划分网格前创建中面</h2><a name="ndxgenid_spta_mids_8"></a>
+         
+         
+         <p>对于某些类型的部件，可以通过在实体上创建中面的方式来简化几何体，以进行 CAE 分析。使用<strong>中面</strong>工具条上的命令可创建 CAD 几何体的简化体，方法是在曲面对之间生成部件中间曲面的近似体。然后可直接对该中面执行 CAE 分析，而不用对原始实体模型执行分析：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>用于简化模型以进行分析</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>最适合薄壁部件</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>可直接在 CAD 几何体上创建，也可在理想化部件上创建</p>
+               
+            </li>
+            
+            <li>包含有关配对曲面的几何厚度的信息。对中面划分网格时，可以使用中面的厚度数据定义网格中单元的厚度
+               
+            </li>
+            
+            <li>
+               
+               <p>通常作为多步骤过程的一部分而创建。创建组成部件中面的所有必需中间片体后，可能需要使用其他建模或多边形几何体命令来确保中面完全缝合</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p>要使用中面命令，必须让理想化部件显示在图形窗口中。</p>
+         
+         <p>要修改理想化部件，必须先使用<strong>提升</strong>或 <strong>WAVE 链接几何体</strong>命令。</p>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/midsurface/midsurface_new_features_noletters.gif"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

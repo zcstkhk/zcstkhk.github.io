@@ -1,0 +1,75 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Setting external superelement solution attributes</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Setting external superelement solution attributes</h2>
+         
+         <p>The following solution options are specific to external superelement solutions:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>Use <strong>Superelement Options</strong> on the <strong>Case Control</strong> tab to create a <strong>Superelement Options</strong> modeling object. These options control the output and format of the external superelement, and are written directly to the EXTSEOUT case control command.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>For dynamic reductions, use the <strong>Number of Generalized DOF</strong> option on the <strong>Case Control</strong> tab to specify the number of SPOINTS to store the reduced modes in the QSET.
+               </p>
+               <p>As a general rule, the number of generalized DOF should be at least as large as the number of requested modes.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Use the options in the <strong>DOF Sets</strong> group on the <strong>Bulk Data</strong> tab to specify the BSET and CSET when defining boundary DOFs explicitly.
+               </p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>The <strong>Element Iterative Solver</strong> option is not available for static condensation solutions.
+         </p>
+         
+         
+         <p>In addition, when defining your superelement solution, consider the following:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>When defining <strong>Output Requests</strong>, you must request the result types in the reduction that you plan to recover in the system model. As a best practice, request only the results you plan to recover. Requesting additional results increases the size of the external superelement unnecessarily, which may offset any efficiency gains.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>When defining the number of component modes for the solution, consider that more component modes increase accuracy, but decrease overall performance. Component modes must not include rigid body modes. If necessary, specify a small, non-zero value for <strong>Frequency Range &ndash; Lower Limit</strong> to avoid rigid body modes.
+               </p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

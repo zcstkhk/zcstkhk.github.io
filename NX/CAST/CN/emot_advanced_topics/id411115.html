@@ -1,0 +1,83 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>高级仿真如何导入载荷</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>高级仿真如何导入载荷</h2>
+         
+         <p>在高级仿真中，<strong>导入运动载荷</strong>命令将导入给定运动对象的反作用力和加速度到一个依赖于时间的边界条件字段中，作为力、力矩或者重力载荷。</p>
+         
+         <p>在有限元模型文件中，导入的载荷显示在运动副原点的单一节点处，该载荷传递节点的位移坐标系与运动副坐标系一致。</p>
+         
+         <p>载荷传递节点不会自动与任何网格关联，您必须手工将载荷传递节点与您的网格连接。<a name="ndxgenid_emot_advanced_topics_17"></a>
+            
+         </p>
+         
+         
+         <p>两个重力载荷也被导入：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>重力(1)</strong> &mdash; 这个重力在运动仿真解算方案中定义，导入到绝对坐标系中，只导入坐标系(不创建节点)。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>重力(2)</strong> &mdash; 连杆的加速度，导入到连杆的质量中心，与反作用载荷平衡。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>由体的角加速度和角速度引起的惯性载荷将不会被导入。</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>如果多个连接发生在相同连杆的相同位置上(比如弹簧和阻尼器)，反作用力将被求和，以创建单个边界条件字段。</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>要获取更多关于边界条件字段的信息，参见高级仿真在线帮助中的<strong>字段</strong>。</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

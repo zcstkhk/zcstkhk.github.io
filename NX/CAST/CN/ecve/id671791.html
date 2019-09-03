@@ -1,0 +1,54 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>其它曲线修剪设置</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>其它曲线修剪设置</h2>
+         <p><strong>修剪边界对象</strong> &mdash; 当这个复选框被清除(默认)，只有选定的曲线被修剪，如果选中这个复选框，选定曲线和边界线串都将被修剪，边界线串也用小圆标记，以告诉您哪个端点将被调整。</p>
+        <p><strong>保持选定边界对象</strong> &mdash; 如果选中这个复选框，选定的边界对象将在修剪后保持选定，以便使其它曲线也可以修剪到它们。</p>
+         <p><strong>曲线延伸段</strong> &mdash; 当您选择要修剪的对象，并且它不会延伸到与边界对象的交界处，选定对象将在可能的情况下延长。</p>
+        <p>对于直线、圆弧以及圆锥，这个选项就是将曲线简单地进行数学延伸。</p>
+         <p>对于样条曲线，您要选择从列表中选择正确的<strong>曲线延伸</strong>形状：</p>
+         <ul>
+            
+            <li class="condense">
+               
+               <p><strong></strong> &mdash; 这个选项从样条从它的端点沿其自然路径延伸</p>
+               
+            </li>
+            
+            <li class="condense">
+               
+               <p><strong>线形</strong> &mdash; 这个选项使用斜率等于曲线端点斜率的直线延伸样条</p>
+               
+            </li>
+            
+            <li class="condense">
+               
+               <p><strong>圆形</strong> &mdash; 这个选项使用半径与样条端点曲率半径相匹配的圆弧延伸样条</p>
+               
+            </li>
+            
+            <li class="condense">
+               
+               <p><strong>无</strong> &mdash; 不延伸样条</p>
+               
+            </li>
+            
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

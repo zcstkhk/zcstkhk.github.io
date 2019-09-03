@@ -1,0 +1,78 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>基于特征加工的工作流</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>基于特征加工的工作流</h2>
+         <ol type="1" start="1">
+            <li>
+              <p>使用 <strong>cam_general</strong>、<strong>feature_machining</strong> 或 <strong>hole_making</strong> CAM 会话配置创建加工设置。</p>
+            </li>
+            <li>
+              <p>指定<strong>工件</strong>几何体。</p>
+            </li>
+            <li>
+              <p>在<strong>加工特征导航器</strong>中使用<strong>查找特征</strong>命令创建加工特征：</p>
+              <ul>
+                <li>
+                  <p>使用<strong>识别特征</strong>来从现有建模特征中创建加工特征</p>
+                </li>
+                <li>
+                  <p>如果没有建模特征，或者有其它几何体未被识别为建模特征，使用<strong>参数化识别</strong></p>
+                </li>
+              </ul>
+              <p>软件将把所有已被加工特征使用的面过滤，以使各个模型面只属于一个特征。</p>
+            </li>
+            <li>
+              <p>使用<strong>创建特征工艺</strong>命令以从加工特征创建几何体组以及工序。</p>
+              <p>软件将：</p>
+              <ul>
+                <li>
+                  <p>应用加工知识库规则到选定特征上，并执行任何需要的测试，只有在所有条件都判断为真时才会在 NX 中应用规则</p>
+                </li>
+                <li>
+                  <p>从刀具数据库中添加刀具</p>
+                </li>
+                <li>
+                  <p>添加需要的工序</p>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td valign="top"><p>注释</p></td>
+                        <td><p>只有在特征的精加工粗糙度大于在规则库中指定的 roughness_value 属性值时，才会创建精加工工序。</p></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </li>
+                <li>
+                  <p>在<strong>信息</strong>窗口中显示工艺结果，其中包含应用的规则顺序，以及所有拒绝工序的原因</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>查看建议的工序以及刀具。</p>
+            </li>
+            <li>
+              <p>生成刀轨</p>
+            </li>
+            <li>
+              <p>如果需要，优化刀轨。</p>
+            </li>
+            
+         </ol>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

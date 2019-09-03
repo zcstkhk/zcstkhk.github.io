@@ -1,0 +1,87 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Implement the workDir variable</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Implement the workDir variable</h2>
+         <div class="action">
+            
+            <p>Locate the <span class="codeText">CreateFem</span> function, near the top of the file.
+            </p>
+            
+         </div>
+         <div class="action">
+            
+            <p>Locate the statement that defines the new FEM file name:</p>
+            <pre class="codeExample indent ">fileNew1.NewFileName = &quot;<span class="variableText">full-path-to-FEM-file</span>&quot;</pre>
+            </div>
+         <div class="action">
+            
+            <p>replace this line by declaring a new variable called <span class="codeText">femPartName</span>, and initialize its value to <span class="codeText">workDir + &quot;<span class="variableText">filename.fem</span>&quot;</span>. Then declaring <span class="codeText">NewFileName</span> equal to <span class="codeText">femPartName</span>.
+            </p>
+            
+         </div><pre class="codeExample indent ">fileNew1.TemplateType = FileNewTemplateType.Item
+
+<span class="userInput">        Dim femPartName As String = workDir + &quot;bottle_f.fem&quot;
+        fileNew1.NewFileName = femPartName
+
+</span>
+
+fileNew1.MasterFileName = &quot;&quot;</pre><div class="action">
+            
+            <p>Locate the statement that defines the new idealized part file name and completes FEM part creation:</p>
+            <pre class="codeExample indent ">femPart2.FinalizeCreation(part1, &quot;<span class="variableText">full-path-to-idealized-part</span>&quot;, ...)
+</pre>
+            </div>
+         <div class="action">
+            
+            <p>Add the following lines, which replace the femPart2 line. The literal path is replaced with the value of the <span class="codeText">iPartName</span> using the <span class="codeText">workDir</span> variable.
+            </p>
+            
+         </div><pre class="codeExample indent ">Dim description1(-1) As String
+<span class="userInput">    ' Changed filename to use workDir variable
+    Dim iPartName As String = workDir + &quot;bottle_f_i.prt&quot;
+    femPart4.FinalizeCreation(part1, iPartName, CAE.FemPart.UseBodiesOption.SelectedBodies, bodies1, femSynchronizeOptions1, &quot;NX NASTRAN&quot;, &quot;Structural&quot;, description1)
+
+    workFemPart = CType(theSession.Parts.BaseWork, CAE.FemPart) 
+
+</span>
+    femSynchronizeOptions1.Dispose()</pre><div class="action">
+            
+            <p>Locate the <span class="codeText">AppendFem</span> function.
+            </p>
+            
+         </div>
+         <div class="action">
+            
+            <p>Locate the <span class="codeText">basePart1</span> statement.
+            </p>
+            
+         </div><pre class="codeExample indent ">basePart1 = theSession.Parts.OpenBase(&quot;D:\UG\testing\TestPlates\TestPlates_f.fem&quot;, partLoadStatus1)
+</pre><div class="action">
+            
+            <p>Above the <span class="codeText">basePart1</span> statement, declare a new variable, <span class="uiTerm">femTestPlateName</span>, and specify its value using the <span class="uiTerm">workDir</span> variable. Then, modify the basePart1 value to use <span class="uiTerm">femTestPlateName</span> in place of the literal path.
+            </p>
+            
+         </div><pre class="codeExample indent ">Dim partLoadStatus1 As PartLoadStatus
+<span class="userInput">        Dim femTestPlateName As String = workDir + &quot;TestPlates\TestPlates_f.fem&quot;
+        basePart1 = theSession.Parts.OpenBase(femTestPlateName, partLoadStatus1)
+
+</span>
+
+   partLoadStatus1.Dispose()</pre><div id="footer"></div>
+      </div>
+   </body>
+</html>

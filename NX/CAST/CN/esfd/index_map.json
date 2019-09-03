@@ -1,0 +1,8 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"在曲面上雕刻文本",file:"id1074694.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"雕刻文本",file:"engraving_text.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"雕刻文本",file:"id944407.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e8",title:"雕刻图案",file:"engraving_a_design.html",type:"topic",parent:"",children:[
+{id:"d5e9",title:"雕刻图案",file:"id945163.html",type:"activity",parent:"d5e8"}]}
+]}

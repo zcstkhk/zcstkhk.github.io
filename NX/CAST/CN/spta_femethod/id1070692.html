@@ -1,0 +1,74 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Advanced Simulation files</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>高级仿真中的文件</h2><a name="ndxgenid_spta_femethod_39"></a>
+         <a name="ndxgenid_spta_femethod_40"></a>
+         <a name="ndxgenid_spta_femethod_41"></a>
+         <a name="ndxgenid_spta_femethod_42"></a>
+         <a name="ndxgenid_spta_femethod_43"></a>
+         <a name="ndxgenid_spta_femethod_44"></a>
+         <a name="ndxgenid_spta_femethod_45"></a>
+         
+         
+         <p>为了支持并行工程及数据重用，高级仿真将把 CAE 模型数据存储在四个独立但是相关的文件中：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><span class="emphasis">仿真</span>文件(.sim)是一个包含 FEM 组件的 NX 装配，边界条件以及解算方案都将储存在仿真文件中</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="emphasis">FEM </span>文件(.fem)充当仿真文件的主模型。节点、单元以及物理和材料属性都将储存在有限元方法文件中，一般来说，FEM 文件中也包含从关联的理想化部件文件中衍生出的多边形几何体</p>
+               
+            </li>
+            
+            <li><span class="emphasis">理想化部件</span>文件(_i.prt)是一个特殊的 NX 装配，它与 FEM 文件相关联，其中包括为了使主模型部件几何体适于分析而对其进行的修改</li>
+            
+            <li>
+               
+               <p><span class="emphasis">主模型部件</span>是理想化部件的一个组件，必须在使用理想化工具修改几何体前提升或者使用 WAVE 链接理想化部件，所有修改都将储存在理想化部件文件中，并保持原始的主模型几何体不变。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <a name="genid_spta_femethod_46"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/in_this_lesson/intro_files.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>从上方顺时针方向：主模型、中面理想化部件、包含网格的 FEM 文件、包含 FEM 文件以及边界条件的仿真文件</h4>
+         </div>
+         
+         
+         <p>要获取关于仿真文件类型的相信信息，包括装配关系、文件关联性、在各个文件储存的数据类型，参见高级仿真在线帮助中的<span class="titleReference">高级仿真文件</span>。</p>
+         
+         <p>要获取关于仿真文件管理的信息以及最佳训练，参见高级仿真在线帮助中的<span class="titleReference">数据管理</span>&rarr;<span class="titleReference">高级仿真文件管理。</span></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

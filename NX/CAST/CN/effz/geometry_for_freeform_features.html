@@ -1,0 +1,104 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>用于自由曲面特征的几何体</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>用于自由曲面特征的几何体</h2>
+         <p>这个课程将介绍大部分创建自由成形曲面的方法，但只会指导您那些涵盖在<span class="emphasis">自由曲面1</span>许可证中，以及某些涵盖在<span class="emphasis">自由曲面2</span>许可证中的方法。在这个主题中，将为您展示所有曲面类型，其中有些类型涵盖在<span class="emphasis">外观造型设计</span>许可证中，将不会在这个课程中进行介绍。</p>
+         <p>可以使用以下类型的几何体来创建自由曲面特征：</p>
+         <ul>
+            
+            <li>
+               
+               <p>点</p>
+               
+            </li>
+            
+         </ul>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/introductory_topics/intro_from_poles.png"></p>
+         <div class="standAloneLink">
+            <p><a href="#" onclick="showDialog('point_geometry_1')"> 由点创建的特征</a></p>
+         </div>
+         <ul>
+            
+            <li>
+               
+               <p>边或曲线线串</p>
+               
+            </li>
+            
+         </ul>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/introductory_topics/intro_through_curves_example.png"></p>
+         <div class="standAloneLink">
+            <p><a href="#" onclick="showDialog('section_strings_1')">由曲线或边创建的特征</a></p>
+         </div>
+         <ul>
+            
+            <li>
+               
+               <p>边/曲线线串沿引导线或轨迹线扫掠</p>
+               
+            </li>
+            
+         </ul>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/introductory_topics/intro_sweep_example.png"></p>
+         <div class="standAloneLink">
+            <p><a href="#" onclick="showDialog('swept')"> 扫掠特征</a></p>
+         </div>
+         <ul>
+            
+            <li>
+               
+               <p>其它几何体，大部分是面</p>
+               
+            </li>
+            
+         </ul>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/introductory_topics/intro_transition_example.png"></p>
+         <div class="standAloneLink">
+            <p><a href="#" onclick="showDialog('features_from_others')">从其他几何体创建的特征</a></p>
+         </div>
+         <ul>
+            
+            <li>
+               
+               <p>从现有面或曲面偏置。</p>
+               
+            </li>
+            
+         </ul>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/introductory_topics/intro_offset_example.png"></p>
+         <div class="standAloneLink">
+            <p><a href="#" onclick="showDialog('offsetting')">从面偏置</a></p>
+         </div>
+         <div dojoType="dijit.Dialog" id="point_geometry_1" title="由点创建的特征 ">
+            <div dojoType="dijit.layout.ContentPane" href="point_geometry_1.html" extractContent="true" tabIndex="0"></div>
+         </div>
+         <div dojoType="dijit.Dialog" id="section_strings_1" title="由曲线或边创建的特征">
+            <div dojoType="dijit.layout.ContentPane" href="section_strings_1.html" extractContent="true" tabIndex="0"></div>
+         </div>
+         <div dojoType="dijit.Dialog" id="swept" title="扫掠特征">
+            <div dojoType="dijit.layout.ContentPane" href="swept.html" extractContent="true" tabIndex="0"></div>
+         </div>
+         <div dojoType="dijit.Dialog" id="features_from_others" title="从其他几何体创建的特征">
+            <div dojoType="dijit.layout.ContentPane" href="features_from_others.html" extractContent="true" tabIndex="0"></div>
+         </div>
+         <div dojoType="dijit.Dialog" id="offsetting" title="从面偏置">
+            <div dojoType="dijit.layout.ContentPane" href="offsetting.html" extractContent="true" tabIndex="0"></div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

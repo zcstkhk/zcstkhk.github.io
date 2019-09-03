@@ -1,0 +1,48 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Replacing a component FEM with a superelement</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Replacing a component FEM with a superelement</h2>
+         
+         <p>To replace a component FEM with its superelement representation, you edit the <span class="uiTerm">FE Model Occurrence Attributes</span> of the component FEM in the context of the assembly FEM. In the <span class="uiTerm">Simulation Navigator</span>, the component icon is bracketed (<span class="literalText">[ ]</span>) to indicate that it is represented by a superelement. 
+         </p>
+         
+         <p></p>
+         
+         <a name="genid_spta_system_18"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/system_modeling/se_simnav.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>A simple system model in the Simulation Navigator. (1) A component represented by the base FEM. (2) A component represented by a superelement.</h4>
+         </div>
+         
+         
+         <p>In the graphics window, the boundary DOF nodes are displayed as unattached markers. You can also display the superelement as either a transparent, lightweight, non-selectable approximation of the base FEM, or a generic superelement symbol. </p>
+         
+         <p>When you replace the base FEM representation with the superelement representation, the superelement ID (SEID) is displayed in the <span class="uiTerm">FE Model Occurrence Attributes</span> dialog box. You may want to refer to the listed superelement ID when post-processing superelement results or troubleshooting the .f06 file.
+         </p>
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

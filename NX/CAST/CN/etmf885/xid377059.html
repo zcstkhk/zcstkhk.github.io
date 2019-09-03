@@ -1,0 +1,248 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Flow Cut enhancements</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Flow Cut enhancements</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>The <span class="uiTerm">Flow Cut</span> drive method is enhanced to semi-finish areas on the part with uncut material, such as corners, deep pockets, or slots. The <span class="uiTerm">Flow Cut Reference Tool</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/flowcut_ref_tool.gif" border="0"> operation references a larger tool to determine the areas on the part where material remains, and then cuts with a smaller tool to remove the material. In previous releases, the <span class="uiTerm">Flow Cut</span> drive method was primarily focused on finishing conditions.
+            </p>
+            
+            <p>The following new Zlevel cut patterns are supported for the <span class="uiTerm">Flow Cut</span> drive method:
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/fixed_contour/zlevel_zig_1.gif" border="0"> <span class="uiTerm">Zlevel Zig</span></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/fixed_contour/zlevel_zig_zag_1.gif" border="0"> <span class="uiTerm">Zlevel Zig Zag</span></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/fixed_contour/zlevel_zig_zag_w_lifts_1.gif" border="0"> <span class="uiTerm">Zlevel Zig Zag with Lifts</span></p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>Use these new cut patterns to machine:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Slots and pockets with steep walls.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Near vertical corners where Zlevel cut patterns give the best results.</p>
+                  
+                  <p>The Zlevel cut patterns keep the tool on a plane in steep areas to prevent tool motions that plunge into the material.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Pockets where there is more material remaining on the floor than in the steep corners.</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>You can also use these cut patterns to remove uncut material that would otherwise remain when the reference tool for a <span class="uiTerm">Flow Cut Reference Tool</span> operation is too large to fit inside a pocket or slot.
+            </p>
+            
+         </div>
+         
+         
+         <p>You specify the cut patterns for steep and non-steep areas separately, and can improve machining results for semi-finishing operations by using one of the Flowcut patterns in non-steep and one of the Zlevel cut patterns in steep areas. Non-steep areas are shallow areas.</p>
+         
+         <p>The <span class="uiTerm">Flowcut Reference Tool</span> operation creates smooth transitions between the Zlevel and Flow Cut cut patterns as well as steep and non-steep regions.
+         </p>
+         
+         <div class="division">
+            
+            <h3></h3>
+            
+            <p>The following example shows areas where the reference tool was too large to fit. Individual steep and non-steep cut patterns are used to remove the remaining material in a single operation.</p>
+            
+            <table align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="2">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/fixed_contour/wng_flowcut_1.png"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">&nbsp;&nbsp;</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/fixed_contour/wng_flowcut_2.png"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td align="center" colspan="1" rowspan="1">
+                        
+                        <p><span class="uiTerm">Non-steep Cut Pattern</span> = <span class="uiTerm">Zig Zag</span></p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Steep Cut Pattern</span> = <span class="uiTerm">Crosscut Zig</span></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">&nbsp;&nbsp;</p>
+                        
+                     </td>
+                     
+                     <td align="center" colspan="1" rowspan="1">
+                        
+                        <p><span class="uiTerm">Non-steep Cut Pattern</span> = <span class="uiTerm">Zig Zag</span></p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Steep Cut Pattern</span> = <span class="uiTerm">Zlevel Zig Zag</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Manufacturing</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Prerequisite</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">The operations must follow a previous milling operation that used a larger tool.</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Toolbar</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Insert</span>&rarr;<span class="uiTerm">Create Operation</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/manufacturing/manufacturing_create/create_operation.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Flowcut Ref Tool</span> dialog box&rarr;<span class="uiTerm">Drive Method</span> group&rarr;<span class="uiTerm">Flow Cut</span>&rarr;<span class="uiTerm">Edit</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/edit.gif" border="0">&rarr;<span class="uiTerm">Flow Cut Drive Method</span> dialog box
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

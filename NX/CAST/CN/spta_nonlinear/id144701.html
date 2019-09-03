@@ -1,0 +1,72 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>使用解算方案类型 SOL 106 的单元</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>使用解算方案类型 SOL 106 的单元</h2><a name="ndxgenid_spta_nonlinear_22"></a>
+         <a name="ndxgenid_spta_nonlinear_23"></a>
+         
+         
+         <p>对于解算类型 SOL 106，为了计算效率，如果非线性影响可以被局部化，那么非线性单元可能会与线性单元组合在一起。</p>
+         
+         <p>支持的非线性单元包括：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>3D 4-节点和10-节点四面体实体单元</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>3D 8-节点和20-节点六面体实体单元</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>3D 6-节点和15-节点五棱柱实体单元</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>2D 4-节点或8-节点四边形，或者3-节点或6-节点三角形薄壳单元</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>1D 2-节点梁、直梁、杆以及弹簧单元</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在定义“接触网格”或“曲面接触网格”网格配对条件时创建缝隙单元。SOL 106 解算方案将把缝隙单元当做非线性缝隙单元，即缝隙条件将随非线性解算方案迭代而更新。</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/solutions/nonlinear_static/rod_process_els.png"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

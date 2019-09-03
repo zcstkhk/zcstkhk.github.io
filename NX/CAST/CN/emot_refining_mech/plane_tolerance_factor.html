@@ -1,0 +1,76 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>接触的体大小不同时</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>接触的体大小不同时</h2>
+         
+         <p><strong>平面公差因子</strong>是一个精度因子，在把接触体表面划分为小平面体时使用，最后会用在接触计算的表示中。</p>
+         
+         <p>对于几乎所有情况，我们推荐您将<strong>平面公差因子</strong>保留为它的默认值<strong>3.0</strong>。</p>
+         
+         <p>当接触的两个体的大小彼此差异很大时，您可能需要将<strong>平面公差因子</strong>进行如下调整：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>较小的体：将默认值增大1</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>较大的体：将默认值减小1</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>也考虑体是否为类球体或类柱体：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>类球体：将默认值增大1</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>类柱体：将默认值减小1</p>
+               
+            </li>
+            
+         </ul>
+         
+         <a name="genid_emot_refining_mech_181" id="genid_emot_refining_mech_181"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/refining/plane_tolerance_factor.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>(1) 平面公差因子；(2) 实际表面；(3) 近似的小平面体</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,623 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>运动副类型及其约束的自由度</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>运动副类型及其约束的自由度</h2>
+         
+         <p>运动仿真中提供了多种运动副，每种运动副都约束了机构中的特定自由度。一般来说，运动仿真中的运动副对象都根据它们的实际对应对象来命名，比如旋转副、滑动副以及万向节。<a name="ndxgenid_emot_links_constraints_84"></a>
+            <a name="ndxgenid_emot_links_constraints_85"></a>
+            
+         </p>
+         
+         
+         <table cellpadding="6" cellspacing="2" frame="box" rules="all" width="515" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="75*">
+               
+               <col span="1" width="74*">
+               
+               <col span="1" width="81*">
+               
+               <col span="1" width="84*">
+               
+               <col span="1" width="137*">
+               
+            </colgroup>
+            
+            <thead>
+               
+               <tr>
+                  
+                  <td align="left" bgcolor="silver" colspan="1" rowspan="2">
+                     
+                     <p class="no-bottom-margin">运动副类型</p>
+                     
+                  </td>
+                  
+                  <td align="left" bgcolor="silver" colspan="1" rowspan="2">
+                     
+                     <p class="no-bottom-margin">命令图标</p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="silver" colspan="3" rowspan="1">
+                     
+                     <p class="no-bottom-margin">约束的自由度</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="silver">
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">平移</p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">旋转</p>
+                     
+                  </td>
+                  
+                  <td align="left" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">总数</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">旋转副</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/links_constraints/revolute_joint.gif"></p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">3</p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">2</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">5</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">滑动副</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/links_constraints/slider_joint.gif"></p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">2</p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">3</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">5</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">柱面副</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/links_constraints/cylindrical_joint.gif"></p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">2</p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">2</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">4</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">螺旋副</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/links_constraints/screw.gif"></p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">n/a </p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">n/a </p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                     
+                     <p>如果使用 RecurDyn 求解器则为5。</p>
+                     
+                     <p class="no-bottom-margin">如果使用 Adams 求解器则为1，但必须与柱面副结合使用。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">万向节</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/links_constraints/universal_joint.gif"></p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">3</p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">1</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">4</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">球面副</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/links_constraints/spherical_joint.gif"></p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">3</p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">0</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">3</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">平面副</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/links_constraints/planar_joint.gif"></p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">1</p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">2</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">3</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">固定</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/links_constraints/fixed_joint.gif"></p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">3</p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">3</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">6</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">等速</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/links_constraints/cv_joint.gif"></p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">3</p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">1</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">4</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">共点</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/links_constraints/atpoint_joint.gif"></p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">3</p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">0</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p>3</p>
+                     
+                     <p class="no-bottom-margin">约束了全部平移自由度。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">共线</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/links_constraints/inline_joint.gif"></p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">2</p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">0</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p>2</p>
+                     
+                     <p class="no-bottom-margin">约束了2个平移自由度。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">共面</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/links_constraints/inplane_joint.gif"></p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">1</p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">0</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p>1</p>
+                     
+                     <p class="no-bottom-margin">约束了1个平移自由度，并将一个连杆的平移运动约束到另一个连杆的 XY 平面上。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">方向</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/links_constraints/orientation_joint.gif"></p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">0</p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">3</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p>3</p>
+                     
+                     <p class="no-bottom-margin">约束了全部旋转自由度。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">平行</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/links_constraints/parallel_joint.gif"></p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">0</p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">2</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p>2</p>
+                     
+                     <p class="no-bottom-margin">约束了2个旋转自由度，以使操作连杆的 Z 轴保持与基本连杆的 Z 轴平行。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">垂直</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/links_constraints/perpendicular_joint.gif"></p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">0</p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">1</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p>1</p>
+                     
+                     <p class="no-bottom-margin">约束了操作连杆与基本连杆上的1个旋转自由度，以确保它们的 Z 轴保持垂直。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

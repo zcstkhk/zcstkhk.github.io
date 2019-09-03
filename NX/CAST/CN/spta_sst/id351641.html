@@ -1,0 +1,304 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Defining thermal couplings</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Defining thermal couplings</h2>
+         <p>Use the <span class="uiTerm">Thermal Couplings</span> family of simulation objects to model:
+         </p>
+         <ul>
+            
+            <li>
+               
+               <p>Heat transfer between the surfaces of solid objects or components that are physically or thermally in contact.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Create generalized conductances defined by a coefficient.</p>
+               
+            </li>
+            
+         </ul>
+         <p>The use of thermal couplings can ease meshing tasks and reduce model size and complexity during the solution.</p>
+         <p>Heat paths can be modeled within the model defining: </p>
+         <ul>
+            
+            <li>
+               
+               <p>Conduction using a <span class="uiTerm">Thermal Coupling</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/simulation/advanced_simulation/thermal_coupling.gif" border="0"> simulation object.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Radiation using a <span class="uiTerm">Thermal Coupling &mdash; Radiation </span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/simulation/advanced_simulation/radiation_thcpl.gif" border="0"> simulation object 
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Conduction and radiation for a perfect contact using a <span class="uiTerm">Surface-to-Surface Contact</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/simulation/advanced_simulation/surf2surf_contact.gif" border="0"> simulation object.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Convection using a <span class="uiTerm">Thermal Coupling &mdash; Convection</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/simulation/advanced_simulation/convection_coupling.gif" border="0"> simulation object.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>One way or user-specified conduction using a <span class="uiTerm">Thermal Coupling &mdash; Advanced</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/simulation/advanced_simulation/advanced_thermal_coupling.gif" border="0"> simulation object.
+               </p>
+               
+            </li>
+            
+         </ul>
+         <p>A complete description on how to manually calculate thermal coupling values is available in the online help.</p>
+         <div class="division">
+            
+            <h3>Conducting heat paths</h3>
+            
+            <p>You usually create a <span class="uiTerm">Thermal Coupling</span> between parallel surfaces. If you create thermal couplings between non-parallel surfaces and edges, you introduce inaccuracies. The farther the two surfaces are from parallel, the greater the inaccuracy.  
+            </p>
+            
+            <p>You define thermal couplings between:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>The faces of 3D meshed bodies</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Faces meshed with 2D elements </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Polygon edges or curves meshed with 1D elements</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Points meshed with 0D elements.</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>Most geometry/mesh combinations are supported. The software uses the area of the primary region and the direction of the surfaces normals to calculate the magnitude of the heat path, as shown in the table.</p>
+            
+            <table border="0" cellpadding="4" cellspacing="2" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr bgcolor="silver">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Select</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Heat Transfer Calculation Area</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">Face of polygon body meshed with 3D elements</p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">Polygon face surface area</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0" valign="top">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Polygon face meshed with 2D elements</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Polygon face surface area</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0" valign="top">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Curve or polygon edge meshed with 1D elements</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Length of polygon edge x perimeter of the associated beam cross section</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0" valign="top">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Mesh point meshed with 0D element</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Surface of a sphere of the 0D element's diameter </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Radiating heat paths</h3>
+            
+            <p>The <span class="uiTerm">Thermal Coupling &mdash; Radiation</span> simulation object models simple radiation between close parallel surfaces, or between objects at great distances. It does this by creating radiative heat paths (radiative conductances) between elements with view factors greater than 0.
+            </p>
+            
+            <p>The <span class="uiTerm">Thermal Coupling &mdash; Radiation</span> simulation object  calculates radiative heat transfer <span class="emphasis">q</span>:
+            </p>
+            
+            <p><span class="emphasis">q</span>=<span class="emphasis">&sigma; x GBVF x &epsilon;<sub>1</sub> x A<sub>1</sub> (T<sub>1</sub><sup>2</sup> + T<sub>2</sub><sup>2</sup>) (T<sub>1</sub> +T<sub>2</sub>)</span></p>
+            
+            <p>You define either of the following:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Element emissivities</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Gray Body View Factor </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Effective Emissivity (Emissivity * Gray Body View Factor) </p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>Where</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p><span class="emphasis">&sigma;</span> is the Stefan-Boltzmann constant.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="emphasis">GBVF</span> is the specified gray body view factor.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="emphasis">&epsilon;<sub>1</sub></span> is the emissivity of the primary elements.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="emphasis">A<sub>1</sub></span> is the area of overlap of the primary element with the secondary element.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="emphasis">T<sub>1</sub></span> is the absolute temperature of the primary elements.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="emphasis">T<sub>2</sub></span> is the absolute temperature of the secondary elements.
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

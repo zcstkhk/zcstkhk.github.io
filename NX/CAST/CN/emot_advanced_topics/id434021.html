@@ -1,0 +1,144 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>标记最大力发生的时间步</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>标记最大力发生的时间步</h2>
+         <p>您将使用电子表格的筛选功能来确定最大力发生的时间步，然后将它标记为运动仿真中“感兴趣的时间步”。</p>
+         <p>在电子表格中执行以下步骤：</p>
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>滚动到电子表格顶部</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>选择标题行(第<strong>2</strong>行)</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>选择<strong>数据</strong>菜单并点击<strong>筛选</strong>按钮</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在 <strong>E</strong> 列(<strong>J002_j_FM</strong>)，点击 <img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/activities/advanced/excel_filter_arrow.gif" border="0"> 筛选箭头并清除<strong>全选</strong>复选框，然后选中最大力(<strong>4010.928</strong>)旁的复选框并点击<strong>确定</strong>。</p>
+               <p></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>电子表格现在只显示出含最大力的记录(最大力发生在多个时间步中)，在列 <strong>A</strong> 中指出了时间步。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>选择电子表格中的行21(时间步<strong>18</strong>)。</p>
+               
+            </li>
+            
+         </ol>
+         <p>在<strong>载荷传递</strong>对话框中执行以下步骤，保持电子表格打开并让<strong>载荷传递</strong>对话框再次显示(对话框已经打开，但可能隐藏在电子表格后面)。</p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/simulation/mtn_move_to_cell.gif" border="0"> <strong>移动至单元格位置</strong></p>
+               <p>动画移动到时间步18，在对话框中，<strong>当前步</strong>输入框应该显示<strong>18</strong>。</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/activities/advanced/load_transfer_4.gif"></p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/simulation/motion_add_one_curve.gif" border="0"> <strong>添加当前的时间步</strong></p>
+               <p>文本行<strong>0.180000 秒</strong>显示在<strong>相关的时间步</strong>列表中。</p>
+               
+            </li>
+            <li>
+               
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>确定</strong></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;<strong>载荷传递</strong>对话框</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+         </ul>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/close_window.gif" border="0"> 直接关闭电子表格，没有必要保存电子表格，除非您想在以后参考它。</p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/standard/save.gif" border="0"> <strong>保存</strong>(<strong>标准</strong>工具条)
+         </p>
+         <p>这将保持捕捉的载荷到运动仿真文件中。</p>
+         <table class="attentionTable attn_caution">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注意</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>在这个时候保存很重要，如果不保存，捕捉的载荷将不会保存到运动仿真文件中。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,17 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"装配 — 间隙与分析",file:"id1073797.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"简单间隙分析",file:"genid_simple_interference_solids_330_5954.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"简单间隙检查",file:"check_clearances_ov.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"使用干涉实体更改模型",file:"id727707.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e9",title:"交互间隙分析",file:"id680966.html",type:"topic",parent:"",children:[
+{id:"d5e10",title:"装配间隙",file:"anly_asmclr_co.html",type:"topic",parent:"d5e9"},
+{id:"d5e11",title:"间隙集",file:"anly_asmclr_clr_set_ov.html",type:"topic",parent:"d5e9"},
+{id:"d5e12",title:"分析",file:"anly_asmclr_analysis_ov.html",type:"topic",parent:"d5e9"},
+{id:"d5e13",title:"交互分析模式",file:"anly_asmclr_interact_mode_co.html",type:"topic",parent:"d5e9"},
+{id:"d5e14",title:"间隙浏览器",file:"anly_asmclr_clr_browser_ov.html",type:"topic",parent:"d5e9"},
+{id:"d5e15",title:"间隙浏览器标志",file:"clear_brow_symbols.html",type:"topic",parent:"d5e9"},
+{id:"d5e16",title:"检查并分析间隙",file:"id727689.html",type:"activity",parent:"d5e9"},
+{id:"d5e17",title:"编辑装配以移除干涉",file:"id727695.html",type:"activity",parent:"d5e9"},
+{id:"d5e18",title:"研究片体间的间隙违例",file:"id727701.html",type:"activity",parent:"d5e9"}]}
+]}

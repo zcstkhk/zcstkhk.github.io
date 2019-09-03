@@ -1,0 +1,172 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Understanding your header information</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>Understanding your header information</h2>
+         
+         <ul>
+            
+            <li>
+               
+               <p><span class="codeText">UNITS/MM,ANGDEC,TEMPC</span> indicates that in the program:
+               </p>
+               
+               <ul>
+                  
+                  <li>
+                     
+                     <p>The units of measurement are in millimeters. The units information is based on the part&rsquo;s units of measurement when the inspection setup file was created.</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>Angles are described in degree decimal form.</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>Temperature units are in Centigrade, as you specified in the <strong>Program Units</strong> group in the <strong>Program Header</strong> dialog box.
+                     </p>
+                     
+                  </li>
+                  
+               </ul>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="codeText">PN(PART_HDR_INFO_ID)=PARTID/'4HOLE_PMI'</span> indicates the current part name. This name is based on the part name that you specified in the <strong>Part Identifier</strong> group in the <strong>Program Header</strong> dialog box.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="codeText">PR(PART_HDR_INFO_RV)=PARTRV/'A'</span> indicates the part revision method that you specified in the <strong>Part Identifier</strong> group in the <strong>Program Header</strong> dialog box.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>For <span class="codeText">R(dt)=REPORT/DATE,TIME</span>, <span class="codeText">R(ag)=REPORT/ALGOR</span>, and <span class="codeText">R(tc)=REPORT/TEMPC</span>:
+               </p>
+               
+               <ul>
+                  
+                  <li>
+                     
+                     <p><span class="codeText">R</span> is a command that places additional information in the machine&rsquo;s output file when the program runs on a CMM.
+                     </p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p><span class="codeText">dt</span> is a variable that lets the CMM report the date and time that the program is run.
+                     </p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p><span class="codeText">ag</span> is a variable that contains the type of algorithm that is used in calculating features when the CMM runs the program.
+                     </p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p> <span class="codeText">tc</span> is a variable that contains the machine temperature, in degrees Celsius, when the CMM runs the program.
+                     </p>
+                     
+                  </li>
+                  
+               </ul>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="codeText">OUTPUT/R(dt)</span>, <span class="codeText">OUTPUT/R(ag)</span>, and <span class="codeText">OUTPUT/R(tc)</span> output the variables defined above to the machine&rsquo;s output file when the program runs.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="codeText">PRCOMP/ON</span> sets probe compensation to &ldquo;ON&rdquo;.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>For <span class="codeText">SNSET/APPRCH,6.000000</span>, <span class="codeText">SNSET/RETRCT,8.000000</span>, <span class="codeText">SNSET/SEARCH, 25.000000</span>, and <span class="codeText">SNSET/DEPTH, 10.00000</span>:
+               </p>
+               
+               <ul>
+                  
+                  <li>
+                     
+                     <p>The <span class="codeText">SNSET</span> command defines and activates CMM sensor settings.
+                     </p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p><span class="codeText">APPRCH</span> sets the distance from the probe to the first feature to be measured.
+                     </p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p><span class="codeText">RETRCT</span> sets the distance that the probe retracts from the last feature to be measured.
+                     </p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p><span class="codeText">SEARCH</span> sets the distance that a probe continues measuring features beyond the <span class="codeText">APPRCH</span> distance. If no feature is found, the program retracts the probe to its initial search point and returns an error.
+                     </p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p><span class="codeText">DEPTH</span> sets the distance that the probe penetrates into a feature along that feature's orientation vector.
+                     </p>
+                     
+                  </li>
+                  
+               </ul>
+               
+            </li>
+            
+         </ul>
+         
+         <p>Most code below these lines consists of sensor data, probe angles, and nominal point locations for each feature you linked to PMI.</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>创建拟合样条</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>创建拟合样条</h2>
+         
+         <p><strong>样条</strong>命令的<strong>拟合</strong>通过使用公差、指定阶次和段数或者模板曲线来近似输入点。</p>
+         
+         <p><strong>拟合</strong>提供对阶次和段数的直接控制。</p>
+         
+         <p><strong>拟合样条：</strong></p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>用来快速生成光顺曲线</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>允许对第一和最后一个点添加斜率控制</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在创建后添加添加约束和曲率条件</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>要创建拟合样条，先选择点数据。选择所有点后，指定参数。</p>
+         
+         <div class="division">
+            
+            <h3>使用拟合创建样条的方法</h3>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p><strong>根据公差</strong><a name="ndxgenid_ecvc_85"></a>
+                      让您指定样条偏离数据点的最大允许距离。</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><strong>根据分段</strong><a name="ndxgenid_ecvc_87"></a>
+                      让您指定样条阶次一级样条中的段数。</p>
+                  
+               </li>
+               
+               <li><strong>根据模板<a name="ndxgenid_ecvc_89"></a></strong>让您使用现有曲线来控制拟合样条的结构，系统将创建相同阶次和形状特性的拟合样条。</li>
+               
+            </ul>
+            
+            <p>将计算平均和最大错误数，最大偏差的点处将出现一个白色方块。</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>更改权重值</h3>
+            
+            <p><strong>更改权重值</strong><a name="ndxgenid_ecvc_89"></a>选项让您可以更改任意数据点的权重值，显示在对话框中的默认值着重稀疏排列的点，即通过密布点找到一个光顺的平均值。权重值没有特定的最大值，权重值越大，曲线越靠近该点；但是，曲线也有可能刚好通过某一个点。如果您将权重值设置为零，相应点则被忽略。分布稀疏的点的权重值要比分布稠密的点的权重值大。</p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

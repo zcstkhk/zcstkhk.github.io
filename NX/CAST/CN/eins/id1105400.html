@@ -1,0 +1,119 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Move the CAST source files</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Move the CAST source files</h2>
+         <p>First, move the CAST source files from the NX directory structure into the directory structure of an existing web server. These source files are the HTML and graphic files that are served by your web server.</p>
+         <p>The CAST source files are located in:</p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p> <span class="pathName">$UGII_BASE_DIR/nxcast/html</span> 
+               </p>
+               
+            </li>
+         </ul>
+         <p>For example, you could use the following commands to manually move and rename the CAST source directory:</p>
+         <ul>
+            
+            <li>
+               
+               <p>Copy CAST source files to the location where your web browser can use them.</p>
+               
+               <ul class="unmarkedList">
+                  <li>
+                     
+                     <p># cp &ndash;r $UGII_BASE_DIR/nxcast/html   \/disk1/apache/share/htdocs/NX</p>
+                     
+                  </li>
+               </ul>
+               
+            </li>
+            
+            <li>
+               
+               <p>Change directory to the location of the web server.</p>
+               
+               <ul class="unmarkedList">
+                  <li>
+                     
+                     <p># cd /disk1/apache/share/htdocs/NX</p>
+                     
+                  </li>
+               </ul>
+               
+            </li>
+            
+            <li>
+               
+               <p>Rename the CAST source directory.</p>
+               
+               <ul class="unmarkedList">
+                  <li>
+                     
+                     <p># mv html castnx</p>
+                     
+                  </li>
+               </ul>
+               
+            </li>
+            
+            <li>
+               
+               <p>Delete original html directory.</p>
+               
+               <ul class="unmarkedList">
+                  <li>
+                     
+                     <p># rm &ndash;r $UGII_BASE_DIR/nxcast/html</p>
+                     
+                  </li>
+               </ul>
+               
+            </li>
+            
+            <li>
+               
+               <p>Create a link from the original location to the location where the source files were copied.</p>
+               
+               <ul class="unmarkedList">
+                  <li>
+                     
+                     <p># ln &ndash;s  /disk1/apache/share/htdocs/NX/castnx  \$UGII_BASE_DIR/nxcast/html</p>
+                     
+                  </li>
+               </ul>
+               
+            </li>
+            
+         </ul>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>When moving the CAST source files, make sure all other directories under <span class="pathName">nxcast/</span> remain in their original location.
+                  </p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

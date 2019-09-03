@@ -1,0 +1,66 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>确保1D 单元方向一致</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>确保1D 单元方向一致</h2>
+         
+         <p><a name="ndxgenid_spta_prebeam_17"></a>在<strong>1D 网格</strong>对话框中，可以使用<strong>自动链选择</strong>选项确保梁单元：               </p>
+         <ul>
+            <li>
+              <p>方向正确</p>
+            </li>
+            <li>
+              <p>自始至终连接正确，以便一个单元的 B 节点连接到下一个单元的 A 节点</p>
+            </li>
+            <li>
+              <p>按顺序进行编号</p>
+            </li>
+            
+         </ul>
+         
+         <p>为每条边或曲线都定义了网格方向。当创建1D 单元的网格时，曲线方向控制着软件生成1D   单元的方向。选择各条边或曲线时，该软件将使用临时箭头图形指示每条曲线的网格方向。这样，您便可以预览单元的生成方向。如果那些临时图形指向的方向冲  突，则最终的梁单元的方向和编号都将不一致。</p>
+         
+         <p>如果先选中<strong>自动链选择</strong>选项，然后选择边或曲线，则该软件将使用您选择的第一条曲线或边的方向来控制所有其他曲线或边的方向。</p>
+         
+         <a name="genid_spta_prebeam_18"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/meshing/1d/1d_auto_chain3.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>(A)不一致的边方向；(B)不一致的网格</h4>
+         </div>
+         <a name="genid_spta_prebeam_19"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/meshing/1d/1d_auto_chain4.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>(C)使用自动链选择；(D) 一致的网格方向</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

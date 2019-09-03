@@ -1,0 +1,110 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>创建一个偏置中心点符号</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>创建一个偏置中心点符号</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>打开 <span class="fileName">drf5_drf_sym4_dwg</span>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/offset_center_point/DRF_util_symb_util_graphic_39.png"></p>
+                     
+                     <p>图纸页 &ldquo;Sheet 1&rdquo; 工作</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>开始<strong>制图</strong>应用模块。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>选择<strong>插入→中心线→偏置中心点符号</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>位置</strong>组的<strong>偏置</strong>列表中，选择<strong>从某个位置算起的竖直距离</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p><strong>从某个位置算起的竖直距离</strong>方法将在 YC 轴上放置一个偏置中心点，它是从圆弧中心偏置一个距离，这个距离是从圆弧中心开始计算，直到指定的屏幕位置。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>设置</strong>组的<strong>显示为</strong>列表中，选择<strong>延伸的中心线</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>选择最大的外圆弧 <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_1_small.gif" border="0"> 来创建偏置符号。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/offset_center_point/DRF_util_symb_util_graphic_13.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>单击屏幕位置 <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_2_small.gif" border="0"> 来放置偏置中心点符号，在这个练习中，它将在竖直(YC)轴上创建。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>偏置中心点的预览结果出现在视图中。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/offset_center_point/DRF_util_symb_util_graphic_14.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

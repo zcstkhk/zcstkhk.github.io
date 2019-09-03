@@ -1,0 +1,120 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Define a trim boundary within a geometry group</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Define a trim boundary within a geometry group</h2>
+         
+         
+         <p>To remove the edge tracing, you will create a MILL_AREA geometry group that contains a trim boundary. The boundary is defined on the bottom face of the part.</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/surf_contour_projects_graphic19.gif"></p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>On the <span class="uiTerm">Insert</span> toolbar, click <span class="uiTerm">Create Geometry</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/manufacturing/manufacturing_create/create_geometry.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Create Geometry</span> dialog box, in the <span class="uiTerm">Type</span> group, from the list, select <span class="uiTerm">mill_contour</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Geometry Subtype</span> group, click <span class="uiTerm">MILL_AREA</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_geometry/mill_area.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Location</span> group, from the <span class="uiTerm">Geometry</span> list, select <span class="uiTerm">WORKPIECE</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Mill Area</span> dialog box, in the <span class="uiTerm">Geometry</span> group, click <span class="uiTerm">Specify Trim Boundaries</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/specify_trim_boundaries.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Trim Boundaries</span> dialog box, under <span class="uiTerm">Trim Side</span>, select <span class="uiTerm">Outside</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>In the graphics window, select the bottom face of the part.</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/surf_contour_projects_graphic19.gif"></p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span> twice to complete the <span class="uiTerm">MILL_AREA</span> geometry group.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>The MILL_AREA geometry group should now appear inside the WORKPIECE group in the <span class="uiTerm">Geometry</span> view of the <span class="uiTerm">Operation Navigator</span>.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

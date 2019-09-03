@@ -1,0 +1,16 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开部件",file:"id957164.html",type:"topic",parent:""},
+{id:"d7e3",title:"查看横截面曲线",file:"id957166.html",type:"topic",parent:""},
+{id:"d7e4",title:"显示主轴",file:"id957168.html",type:"topic",parent:""},
+{id:"d7e5",title:"显示部件边界",file:"id957170.html",type:"topic",parent:""},
+{id:"d7e6",title:"定义初始毛坯边界",file:"id957172.html",type:"topic",parent:""},
+{id:"d7e7",title:"生成刀轨并显示 IPW",file:"id957174.html",type:"topic",parent:""},
+{id:"d7e8",title:"定义第三个工序的毛坯几何体",file:"id957176.html",type:"topic",parent:""},
+{id:"d7e9",title:"定义参考位置",file:"id957178.html",type:"topic",parent:""},
+{id:"d7e10",title:"定义目标位置",file:"id957180.html",type:"topic",parent:""},
+{id:"d7e11",title:"生成刀轨并显示 IPW",file:"id957182.html",type:"topic",parent:""},
+{id:"d7e12",title:"定义第四个工序的毛坯材料",file:"id957184.html",type:"topic",parent:""},
+{id:"d7e14",title:"创建第四个工序",file:"id957186.html",type:"topic",parent:""},
+{id:"d7e15",title:"重新定位刀具",file:"id957188.html",type:"topic",parent:""},
+{id:"d7e16",title:"生成刀轨并显示 IPW",file:"id957190.html",type:"topic",parent:""},
+{id:"d7e17",title:"可视化材料移除",file:"id1073877.html",type:"topic",parent:""}]}

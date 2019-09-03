@@ -1,0 +1,13 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"Open an inspection setup file and link to PMI",file:"id1372675.html",type:"topic",parent:""},
+{id:"d7e3",title:"Define header and DMIS startup information",file:"id1372676.html",type:"topic",parent:""},
+{id:"d7e4",title:"Set the PCS to the MCS",file:"id1372677.html",type:"topic",parent:""},
+{id:"d7e5",title:"Define a teach point and operator instructions",file:"id1372678.html",type:"topic",parent:""},
+{id:"d7e6",title:"Add teach point commands",file:"id1398062.html",type:"topic",parent:""},
+{id:"d7e7",title:"Change from manual mode to program mode",file:"id1372679.html",type:"topic",parent:""},
+{id:"d7e8",title:"Translate the PCS to your teach point location",file:"id1372680.html",type:"topic",parent:""},
+{id:"d7e9",title:"Align the part to the primary datum",file:"id1372681.html",type:"topic",parent:""},
+{id:"d7e10",title:"Define line features for your next alignment",file:"id1398064.html",type:"topic",parent:""},
+{id:"d7e11",title:"Set your PCS Y origin and X alignment",file:"id1398066.html",type:"topic",parent:""},
+{id:"d7e12",title:"Define a measurable point on the last axis",file:"id1398068.html",type:"topic",parent:""},
+{id:"d7e14",title:"Complete and save the final alignment",file:"id1398070.html",type:"topic",parent:""}]}

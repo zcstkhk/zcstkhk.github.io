@@ -1,0 +1,163 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Defining modeling objects</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Defining modeling objects</h2>
+         <p>Use modeling objects to define particular properties for specific entities or for the whole model. You can create or modify modeling objects from the <span class="uiTerm">Modeling Objects Manager</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/simulation/advanced_simulation/modeling_objects.gif" border="0"> or from the solution, simulation objects, loads, and constraint dialog boxes.
+         </p>
+         <p>Some   NX Space Systems Thermal  modeling objects include:</p>
+         <ul>
+            
+            <li>
+               
+               <p><span class="uiTerm">Ablation-Charing</span></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">Active Heater Controller</span></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">Duct Head Loss</span></p>
+               
+            </li>
+            
+            
+            
+            <li>
+               
+               <p><span class="uiTerm">Joint</span></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">Joint &mdash; Orbital Tracker</span></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">Layer</span></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">Monte Carlo Settings</span></p>
+               
+            </li>
+            
+            
+            <li>
+               
+               <p><span class="uiTerm">Orbit</span></p>
+               
+            </li>
+            
+            
+            
+            <li>
+               
+               <p><span class="uiTerm">Thermo-Optical Properties</span> / <span class="uiTerm">Thermo-Optical Properties &mdash; Advanced</span></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">Thermostat</span></p>
+               
+            </li>
+            
+         </ul>
+         <div class="division">
+            
+            <h3>Thermo-optical properties</h3>
+            
+            <p>Use the <span class="uiTerm">Thermo-Optical Properties</span> or <span class="uiTerm">Thermo-Optical Properties &mdash; Advanced</span> modeling objects to define <span class="uiTerm">Emissivity</span>, which is required for all radiation modeling. 
+            </p>
+            
+            <p><span class="uiTerm">Absorptivity</span> is required to model radiative heat transfer in the solar band. To model specular and transmissive effects, you can also define a <span class="uiTerm">Thermo-Optical Properties &mdash; Advanced</span> modeling object with values for: 
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Specular Reflectivity</span></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Transmissivity</span> 
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Index of Refraction</span> 
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>You can model radiation in different bands defining corresponding thermo-optical properties in a <span class="uiTerm">Thermo-Optical Properties &mdash; Advanced</span> modeling object, and choosing one of the following two types:
+            </p>
+            
+            <ul class="unmarkedList">
+               <li>
+                  
+                  <p>Select <span class="uiTerm">Gray</span> to define constant or temperature varying values for infrared <span class="uiTerm">Emissivity</span> and a value for <span class="uiTerm">Absorptivity</span> when want to define properties in the solar spectrum. 
+                  </p>
+                  
+               </li>
+               <li>
+                  
+                  <p>Select <span class="uiTerm">Non-Gray &mdash; Wavelength Dependent</span> to define wavelength dependent values of non-gray <span class="uiTerm">Emissivity</span>, <span class="uiTerm">Specular Reflectivity</span> and <span class="uiTerm">Transmissivity</span>. 
+                  </p>
+                  
+               </li>
+            </ul>
+            
+            <p>Emissivity and absorptivity values can be constant or defined in function of a <span class="emphasis">Bidirectional Reflectance Distribution Function</span> (BRDF). Specular Reflectivity  and Transmissivity can be defined in terms of direction of incidence and angle of incidence.
+            </p>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">Note</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>When you define <span class="uiTerm">Thermo-Optical Properties</span> or <span class="uiTerm">Thermo-Optical Properties &mdash; Advanced</span> for a 2D mesh, you should always first check the element normals to identify the top and bottom sides of the mesh. 
+                     </p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

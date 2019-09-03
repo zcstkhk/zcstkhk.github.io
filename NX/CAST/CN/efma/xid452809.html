@@ -1,0 +1,103 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>使用限制的拉伸</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>使用限制的拉伸</h2>
+         
+         <p>使用<strong>限制</strong>选项来定义总体构造方法以及从截面处开始测量的拉伸特征开始和结束距离。</p>
+         
+         <p><strong>开始</strong>和<strong>结束</strong>限制选项：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>值</strong> — 为拉伸特征的起点与终点指定数值。在截面上方的值为正，在截面下方的值为负。</p>
+               <a name="genid_efma_14" id="genid_efma_14"></a><div class="figureContainer">
+                  <table align="center">
+                     <tr>
+                        <td>
+                           <div class="figure">
+                              <div><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/extrude/extrude_draft_orig.png" border="0"></div>
+                           </div>
+                        </td>
+                     </tr>
+                  </table>
+                  <h4>拉伸前</h4>
+               </div>
+               <a name="genid_efma_15" id="genid_efma_15"></a><div class="figureContainer">
+                  <table align="center">
+                     <tr>
+                        <td>
+                           <div class="figure">
+                              <div><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/extrude/extrude_details_value.png" border="0"></div>
+                           </div>
+                        </td>
+                     </tr>
+                  </table>
+                  <h4>结束限制值为0.7的拉伸</h4>
+               </div>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>对称值</strong> — 在截面两侧应用相同的距离值。</p>
+               <a name="genid_efma_16" id="genid_efma_16"></a><div class="figureContainer">
+                  <table align="center">
+                     <tr>
+                        <td>
+                           <div class="figure">
+                              <div><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/extrude/extrude_details_symmetric.png" border="0"></div>
+                           </div>
+                        </td>
+                     </tr>
+                  </table>
+                  <h4>使用对称值0.7的拉伸</h4>
+               </div>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>直至下一个</strong> — 将拉伸特征沿方向路径延伸到下一个体。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>直至选定对象</strong> — 将拉伸特征延伸到选定的面、基准平面或体。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>直至延伸部分</strong> — 在截面延伸超过所选面的边时，将拉伸特征(如果是体)修剪至该面。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>贯通</strong> — 沿指定方向的路径，延伸拉伸特征，使其完全贯通所有的可选体。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

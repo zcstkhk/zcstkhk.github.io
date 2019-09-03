@@ -1,0 +1,131 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>导入与导出表达式</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>导入与导出表达式</h2>
+         <div class="estimatedTime">
+           <p>预计完成这堂课需要：14–21  分钟</p>
+         </div>
+         <div></div>
+         <p>导出/导入功能可以用来：</p>
+         <ul>
+           <li>
+             <p>将表达式导出到二进制文本文件*.exp 中，在此进行查看与编辑</p>
+           </li>
+           <li>
+             <p>将表达式导入另一个部件中</p>
+           </li>
+         </ul>
+         <p>需要编辑或创建大量表达式时，在文本文本中修改更容易，然后将它们导回到部件中。要编辑该文件，您应该使用可以保存 UTF—8 编码的文本编辑器，比如 Windows 中的记事本。如果 UTF—8编码丢失，则无法将表达式重新导入 NX。</p>
+         <p>文本文件中每行包含一个公式。</p>
+         <p>格式为：名称=值。</p>
+        <p>如果有注释，则格式为：名称=值//注释。</p>
+         <a name="genid_eexb_8" id="genid_eexb_8"></a><table border="1" cellpadding="4" cellspacing="0" width="350" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="1000*">
+               
+            </colgroup>
+            
+            <thead>
+               
+               <tr bgcolor="#D0D0D0" valign="middle">
+                 <td colspan="1" rowspan="1"><p> 示例 </p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1"><p>p20=5</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1"><p>Len=12*cos(60)</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1"><p>Wid=Len/2 // 长宽比</p></td>
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+            </tbody>
+            
+         </table>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>引用测量的表达式在导出时将不再保持原有测量量，例如，如果表达式 <strong>p46(距离测量 (21))</strong>的值为1.5，则在导出的文件中，表达式将变为 <strong>p46=1.5</strong>。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>工具→表达式</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">对话框中的位置</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p><strong>从文件导入表达式 </strong><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/expressions/import.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>导出表达式到文件 </strong><img align="bottom" src="../graphics/nonLocalized/nx/modeling/expressions/exprs_export_ico.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div><a name="id745659" id="id745659"></a><div id="footer"></div>
+      </div>
+   </body>
+</html>

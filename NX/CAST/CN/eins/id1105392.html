@@ -1,0 +1,49 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Create an installation log</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Create an installation log</h2>
+         <p>As a troubleshooting aid or historical reference, you can create an installation log. If you do not wish to create a log of the installation, proceed to the next page.</p>
+         <ul>
+            
+            <li>
+               
+               <p>To create a log, enter the following command:</p>
+               
+               <p><span class="uiTerm">script /usr/tmp/nxcast.log</span> <span class="emphasis">(you may specify any name for the log file)</span></p>
+               
+            </li>
+            
+         </ul>
+         <p>This script command will log any information that appears on your screen including your entries. To append to an existing log file, use <span class="uiTerm">script &ndash;a</span>.
+         </p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>The log will continue until you enter Ctrl+D or exit &lt;CR&gt; to terminate the log session. It cannot be terminated by <span class="fileName">nxcast_install</span>.
+                  </p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

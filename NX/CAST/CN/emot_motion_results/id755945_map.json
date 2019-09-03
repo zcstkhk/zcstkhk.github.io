@@ -1,0 +1,8 @@
+{identifier:"id",label:"title",items:[
+{id:"d15e2",title:"打开仿真",file:"interference_adv_open_simulation.html",type:"topic",parent:""},
+{id:"d15e3",title:"重置对话框内存",file:"id353012_dup8.html",type:"topic",parent:""},
+{id:"d15e4",title:"创建干涉对象",file:"create_the_interference_object_adv.html",type:"topic",parent:""},
+{id:"d15e5",title:"创建并求解解算方案",file:"create_solution_int_adv.html",type:"topic",parent:""},
+{id:"d15e6",title:"追踪相交曲线",file:"trace_intersection_curves.html",type:"topic",parent:""},
+{id:"d15e7",title:"将追踪几何体复制到车身板件组件中",file:"copy_trace_geometry_to_component.html",type:"topic",parent:""},
+{id:"d15e8",title:"将车身板件设为工作部件",file:"make_cowling_work_part.html",type:"topic",parent:""}]}

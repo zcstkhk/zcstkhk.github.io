@@ -1,0 +1,67 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Design Intent</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>设计意图</h2>
+         
+         <p>为了模拟阀的装配序列，您要实现以下任务：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>查看现存的装配结构并思考装配是如何创建的</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>拆卸装配</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>创建序列以显示装配是如何创建的</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>下面的动画演示了各个组件装配的顺序：</p>
+         
+         <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;"><script type="dojo/method">
+      flashData= {
+          swfSrc : '../xps3/graphics/xpsPlayer.swf',
+          graphSrc : '',
+          align : 'center',
+          base : './',
+          height : '363',
+          width : '304',
+          bgcolor : '#FFFFFF',
+          flashVersion : '9',         
+          looping : 'false',
+          play : 'true',
+          menu : 'true',
+          parameters : 'mySound=false,dependentFile1=..%2Fgraphics%2FnonLocalized%2Fnx%2Ficons%2Fanimations%2Fflash%2Fassemblies%2Fassm_valve_seq.swf,dependentFile2=..%2Fxps3%2Fgraphics%2Fnav_buttons.txt'
+      }
+      top.loadFlash(this,flashData);
+    </script></div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

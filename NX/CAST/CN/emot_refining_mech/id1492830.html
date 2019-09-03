@@ -1,0 +1,71 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument">
+   <head>
+      <title>复习</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>复习</h2>
+         <div id="topQuestionsContainer">
+            <div class="questionsHeader">
+               <div class="headerTitle">
+                  <p>问题</p>
+               </div>
+               <div class="quesionButtons">
+                  <div class="qButton" id="qButton_1">
+                     <p>1</p>
+                  </div>
+               </div>
+            </div>
+            <div id="questionsContainer">
+               <div class="question" id="question1" answered="false" numanswers="4" questiontype="allThatApply">
+                  <p>使用标记可以完成哪些事情？</p>
+                  <p class="questionInstruction">可以选择多个您认为正确的答案。</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q5a1" class="hideBlock" src="../xps3/graphics/redX.png"></img></td>
+                           <td><input id="q5a1" type="checkbox" correct="no" name="question5Grp"></input></td>
+                           <td>
+                              <p>在您没有实际几何体时将它作为运动对象的附着点</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q5a2" class="hideBlock" src="../xps3/graphics/greenCheck.png"></img></td>
+                           <td><input id="q5a2" type="checkbox" correct="yes" name="question5Grp"></input></td>
+                           <td>
+                              <p>与传感器一起使用，以监视组件间的距离</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q5a3" class="hideBlock" src="../xps3/graphics/greenCheck.png"></img></td>
+                           <td><input id="q5a3" type="checkbox" correct="yes" name="question5Grp"></input></td>
+                           <td>
+                              <p>绘制连杆上的点的位移图表</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q5a4" class="hideBlock" src="../xps3/graphics/redX.png"></img></td>
+                           <td><input id="q5a4" type="checkbox" correct="no" name="question5Grp"></input></td>
+                           <td>
+                              <p>使用它来捕捉速度</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div id="showFeedbackContainer"><span showLabel="true" id="feedbackButton" title="Show feedback" dojoType="xps.form.Button" onClick="showQuestionFeedback()">显式答案</span></div>
+            </div>
+            <div class="helpTextContainer">
+               <p class="questionFeedback" id="incorrect">错误！</p>
+               <p class="questionFeedback" id="correct">正确！</p>
+               <div class="questionHelp" id="questionHelp1">
+                  <p>传感器可以引用标记来监视组件间的距离。您可以在<strong>作图</strong>命令中引用标记，以绘制位移图表，标记不能作为运动对象的附着点，但您可以使用智能点来附着对象。在捕捉结果数据，比如速度、位移、加速度、力时需要用到标记。</p>
+               </div>
+            </div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

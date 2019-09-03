@@ -1,0 +1,14 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"如何使用 CAST Online Library",file:"id1040643.html",type:"topic",parent:""},
+{id:"d5e4",title:"浏览器和插件要求",file:"browser_requirements.html",type:"topic",parent:""},
+
+{id:"d5e6",title:"CAST 主页",file:"id1073247.html",type:"topic",parent:"",children:[
+{id:"d5e7",title:"帮助与信息部分",file:"id1090049.html",type:"topic",parent:"d5e6"}]},
+{id:"d5e9",title:"课程主页",file:"id1090050.html",type:"topic",parent:""},
+{id:"d5e11",title:"导航",file:"id1040648.html",type:"topic",parent:""},
+
+{id:"d5e13",title:"练习",file:"id1090051.html",type:"topic",parent:"",children:[
+{id:"d5e14",title:"关于练习的一些提示",file:"id1103878.html",type:"topic",parent:"d5e13"}]},
+
+{id:"d5e17",title:"结束课程",file:"id1103879.html",type:"topic",parent:""}
+]}

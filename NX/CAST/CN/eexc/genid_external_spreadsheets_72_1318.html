@@ -1,0 +1,108 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>外部电子表格</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>外部电子表格</h2>
+         <p>可以使用外部电子表格(比如 Microsoft Excel)来计算用在 NX 中的值。</p>
+        <p>外部电子表格通过<strong>表达式</strong>对话框中的许多表达式函数来访问。</p>
+         <table border="1" cellpadding="2" cellspacing="1" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="200*">
+               
+               <col span="1" width="100*">
+               
+               <col span="1" width="800*">
+               
+            </colgroup>
+            
+            <thead>
+               
+               <tr bgcolor="#D0D0D0">
+                 <td colspan="1" rowspan="1"><p>函数</p></td>
+                 <td colspan="1" rowspan="1"><p>返回类型</p></td>
+                 <td colspan="1" rowspan="1"><p>概述</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1"><p>ug_cell_hlookup</p></td>
+                 <td colspan="1" rowspan="1"><p>任意</p></td>
+                 <td colspan="1" rowspan="1"><p>使用水平表格查找来返回给定电子表格中的值，目标是匹配单元格水平行的文本字符串</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1"><p>ug_cell_read</p></td>
+                 <td colspan="1" rowspan="1"><p>任意</p></td>
+                 <td colspan="1" rowspan="1"><p>返回给定电子表格中给定单元格中任意类型的值</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1"><p>ug_cell_vlookup</p></td>
+                 <td colspan="1" rowspan="1"><p>任意</p></td>
+                 <td colspan="1" rowspan="1"><p>使用竖直表格查找来返回给定电子表格中的值，目标是匹配单元格竖直列的文本字符串</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1"><p>ug_excel_read</p></td>
+                 <td colspan="1" rowspan="1"><p>数值</p></td>
+                 <td colspan="1" rowspan="1"><p>返回给定电子表格中给定单元格中的数值</p></td>
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+            </tbody>
+            
+         </table>
+         <p>可以过滤函数列表以仅包含上述函数以及任意特征电子表格函数：</p>
+         <ul>
+            
+            <li>
+               
+               <p>点击<strong>表达式</strong>对话框中的<strong>函数</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/expressions/functions.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在<strong>插入函数</strong>对话框中，从类别列表中选择电子表格类别</p>
+               
+            </li>
+            
+         </ul>
+         <table class="attentionTable attn_tip">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">提示</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>对于任意函数，可以点击<strong>插入函数</strong>对话框中<strong>关于所选函数的信息</strong> <img align="bottom" src="../graphics/nonLocalized/nx/modeling/expressions/spreadsheet_help_about_selected_function.gif" border="0"> 来获取完整的相关信息。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div class="division">
+            
+            <h3><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/expressions/refresh_values_from_external_spreadsheet.gif" border="0">&nbsp;从外部电子表格刷新值</h3>
+            
+            <p>NX 不知道您何时在外部电子表格更改了信息。</p>
+            <p>使用<strong>刷新来自外部电子表格的值</strong>选项以从电子表格中读取数据。</p>
+            <p>可以通过<strong>表达式</strong>对话框来引用多个电子表格。</p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Tool Axis Tilt enhancements</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Tool Axis Tilt enhancements</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>The <span class="uiTerm">Tool Path Tilt</span> dialog box is now renamed <span class="uiTerm">Tilt Tool Axis</span>. New options are added to the dialog box to give you additional control over the tilting behavior of the tool axis.
+            </p>
+            
+         </div>
+         
+         
+         <p>Default tool behavior:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>The tool begins cutting in the original fixed tool axis orientation.</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/tilt_tool_axis/tool_axis_tilt_enhancement_1.png"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>As NX encounters a potential collision, it tilts the tool minimally to avoid the collision and then returns the tool to the original tool axis orientation. NX repeats these tool motions when it encounters the next collision.</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/tilt_tool_axis/tool_axis_tilt_enhancement_2.png"></p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>New Options:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>Use the new <span class="uiTerm">Preferred Tilt from Fixed Axis</span> option to specify a tilt angle value. NX tilts the tool by this value as it attempts to avoid the first collision, and then it returns the tool to its original tool axis orientation. It repeats these motions when it encounters the next collision.
+               </p>
+               
+               <p>In this example, the <span class="uiTerm"> Preferred Tilt from Fixed Axis</span> = <span class="userInput">20</span>.
+               </p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/tilt_tool_axis/tool_axis_tilt_enhancement_3.png"></p>
+               
+               <table class="attentionTable attn_note">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">Note</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>If the value you enter is not appropriate to avoid a collision, NX will allocate a different gouge free tool axis orientation.</p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+            
+            <li>
+               
+               <p>Select the <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_on.gif" border="0"> <span class="uiTerm">Maintain Current Tilt between Collisions</span> check box to keep the tool from tilting back to its origin tool axis orientation between collisions. This option reduces unnecessary rotary tool axis movement.
+               </p>
+               
+               <p>If you select this check box, you can use the <span class="uiTerm">Max Distance Between</span> option to specify the distance within which the tool maintains the current tool axis tilt angle between collisions.
+               </p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/tilt_tool_axis/tool_axis_tilt_enhancement_4.png"></p>
+               
+               <p>If the <span class="uiTerm">Max Distance Between</span> value is less than the actual distance between collisions, the tool returns to the original tool axis orientation after the first collision.
+               </p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/tilt_tool_axis/tool_axis_tilt_enhancement_5.png"></p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <div class="division">
+            
+            <h3>Why should I use it?</h3>
+            
+            <p>You can use the new options to reduce rotary axis changes by controlling whether the tool axis returns to the default tilt between features.</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Manufacturing</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Prerequisite</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p></p>
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">The operation must be a Surface Contouring or Zlevel operation.</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">The tool must have a ball shape (<span class="uiTerm">BALL_MILL</span>, <span class="uiTerm">SPHERICAL_MILL</span>, or <span class="uiTerm">MILL</span>) where the lower radius of the tool = ½ of the diameter of the tool.
+                           </p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">The tool must have a shank and or a holder defined.</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">Before tool path generation, the <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_off.gif" border="0"> <span class="uiTerm">Check Tool and Holder check</span> box must not be selected in the <span class="uiTerm">Cutting Parameters</span> dialog box&rarr;<span class="uiTerm">Containment</span> tab&rarr;<span class="uiTerm">Collision Checking</span> group.
+                           </p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Operation Navigator</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Right click an operation&rarr;<span class="uiTerm">Tool Path</span>&rarr;<img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/tilt_tool_axis/tilt_tool_axis_icon.gif" border="0"> <span class="uiTerm">Tilt Tool Axis</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

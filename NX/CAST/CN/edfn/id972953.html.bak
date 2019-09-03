@@ -1,0 +1,186 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>将坐标原点显示由坐标集名称变为用户定义的符号</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>将坐标原点显示由坐标集名称变为用户定义的符号</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>打开 <span class="fileName">drf5_drf_orddim_dwg</span>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/ordinate/DRF_ord_dimen_orddim_view_4.png"></p>
+                     
+                     <p>图纸页 &ldquo;Sheet 1&rdquo; 工作</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>打开图纸页“Sheet 5”。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/ordinate/DRF_ord_dimen_orddim_view_16.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>双击坐标原点“ORDINATE5”以选择它。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p><strong>坐标尺寸</strong>对话框条出现。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在选择条上，确保只打开捕捉点选项<strong>圆弧中心</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/selection_bar/arc_center.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>右击高亮显示的原点。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/ordinate/DRF_ord_dimen_orddim_view_17.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>选择<strong>样式</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>在<strong>坐标</strong>选项卡中，点击<strong>显示名称样式</strong>列表并选择<strong>用户定义</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>在<strong>显示名称列表</strong>下方的输入框变为可用，点击<strong>注释编辑器</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/drafting/drafting_annotation/note.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>在<strong>文本输入</strong>组的<strong>编辑文本</strong>下方，点击<strong>清除</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/drafting/annotation_editor/clear.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>在<strong>符号</strong>组中，点击<strong>类别</strong>列表，并选择<strong>用户定义</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>在<strong>符号库</strong>列表下方，选择 <span class="uiTerm">DATUM1</span>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_12">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>插入符号 </strong><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/drafting/annotation_editor/insert_symbol.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>符号控制字符串&lt;%DATUM1&gt;将替代“ORDINATE5”。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_13">
+               <div class="stepAction">
+                  
+                  <p>点击两次<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>注意粗体基准符号出现在设置孔的中心处。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/ordinate/DRF_ord_dimen_orddim_edit_origin_style.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_14">
+               <div class="stepAction">
+                  
+                  <p>关闭<strong>坐标尺寸</strong>对话框条。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_15">
+               <div class="stepAction">
+                  
+                  <p>关闭所有部件。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

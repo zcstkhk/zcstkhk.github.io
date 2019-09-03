@@ -1,0 +1,12 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"创建管道通路和管段",file:"id1144911.html",type:"topic",parent:""},
+{id:"d5e4",title:"管道通路和管段",file:"xid506153.html",type:"topic",parent:""},
+
+{id:"d5e6",title:"定义管道通路",file:"genid_define_a_run_312_5293.html",type:"topic",parent:"",children:[
+{id:"d5e7",title:"认识管道通路",file:"genid_identify_the_runs_13_884.html",type:"topic",parent:"d5e6"},
+{id:"d5e8",title:"管道通路导航器",file:"run_spool.html",type:"topic",parent:"d5e6"},
+{id:"d5e9",title:"定义管道通路",file:"id1129259.html",type:"activity",parent:"d5e6"}]},
+{id:"d5e11",title:"定义管段",file:"genid_defining_spools_262_5626.html",type:"topic",parent:"",children:[
+{id:"d5e12",title:"管道通路中的管段",file:"genid_spools_of_the_run_8_304.html",type:"topic",parent:"d5e11"},
+{id:"d5e13",title:"定义管道通路的管段",file:"id1129275.html",type:"activity",parent:"d5e11"}]}
+]}

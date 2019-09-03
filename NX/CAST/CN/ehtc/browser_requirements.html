@@ -1,0 +1,224 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Browser and plug-in requirements</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>浏览器和插件要求</h2>
+         <p>CAST 是以 HTML 的格式提供的，它可以在您本地的浏览器显示。</p>
+         <div class="division">
+            
+           <h3>支持的浏览器</h3>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Windows</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>Internet Explorer 7、8或者9 (32-位版本)*</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Firefox 3.x 或更高**</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>UNIX/Linux</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>Firefox 3.x 或更高**</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Mac</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>Safari 3.x 或更高</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+           <h3>Internet Explorer 注意事项</h3>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>如果您在 Internet Explorer 中有显示页面的问题，您可能需要设置您的浏览器选项来允许显示活动的内容。这通常是在使用 Windows XP Service Pack 2 (SP2)时出现的问题。</p>
+                  
+                  <p>要允许在 Internet Explorer 中显示活动的内容，进行下列操作：</p>
+                  
+                  <ol type="1" start="1">
+                     
+                     <li>
+                        
+                        <p>选择<strong>工具→Internet 选项</strong>。</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>点击<strong>高级</strong>选项卡。</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>在<strong>安全</strong>部分，打开<strong>允许活动内容在“我的电脑”的文件中运行</strong>。</p>
+                        
+                     </li>
+                     
+                  </ol>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>IE9兼容性视图：当打开 http:// 协议或者 file:/// 协议时 HTML 传送完全支持，然而，当视图文件来源于本地安装时，比如   D://，您就可能需要激活兼容性视图，在 IE 9中，操作如下：</p>
+                  
+                  <ol type="1" start="1">
+                     
+                     <li>
+                        
+                        <p>选择<strong>工具/兼容性视图设置</strong>。</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>在<strong>兼容性视图设置</strong>对话框中，选中<strong>以兼容性视图显示所有网站</strong>复选框。</p>
+                        
+                     </li>
+                     
+                  </ol>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+           <h3>**Firefox 注意事项</h3>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>在 Firefox 3.0.5 的默认设置是在新标签页中打开页面，这会影响全局的搜索，因为新链接不是在一个新窗口而是在一个新标签页中打开，用户可以在<strong>工具→选项→标签页</strong>来配置 Firefox 打开一个新窗口而不是新标签页<strong>。</strong></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>大多数用户安装并打开我们的首页是通过 <em>http://</em> 协议，这是完全受支持的，然而，Firefox   有一个默认的安全设置来阻止我们从 UNC path (<em>file:///</em>)正确打开本地帮助，为了改变这一设置，您必须更改 <em>security.fileuri.strict_origin_policy</em> 首选项的值：</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>在地址栏中键入 <strong>about:config</strong></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>在<strong>搜索</strong>输入框中键入 <strong>security.fileuri</strong>，如果 <strong>security.fileuri.strict_origin_policy</strong> 首选项的值是设置为 <strong>true</strong>，便将其改为 <strong>false</strong>。(双击以修改)。</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>重启浏览器 </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+            <h3>下载浏览器</h3>
+            
+            <p>可以从以下网址中下载到免费的浏览器：</p>
+            
+            <ul class="unmarkedList">
+               <li>
+                  
+                  <p> <span class="uiTerm">Internet Explorer</span> &mdash; <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" class="links" href="#" onclick="popUpPage('http://www.microsoft.com','linkURL','menubar=yes,status=yes,resizable=yes,toolbar=yes,scrollbars=yes,location=yes,directories=no')">http://www.microsoft.com</a> 
+                  </p>
+                  
+               </li>
+               <li>
+                  
+                  <p> <span class="uiTerm">Firefox</span> &mdash; <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" class="links" href="#" onclick="popUpPage('http://www.mozilla.org','linkURL','menubar=yes,status=yes,resizable=yes,toolbar=yes,scrollbars=yes,location=yes,directories=no')">http://www.mozilla.org</a> 
+                  </p>
+                  
+               </li>
+               <li>
+                  
+                  <p><span class="uiTerm">Safari</span> &mdash; <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" class="links" href="#" onclick="popUpPage('http://www.apple.com/safari/','linkURL','menubar=yes,status=yes,resizable=yes,toolbar=yes,scrollbars=yes,location=yes,directories=no')">http://www.apple.com</a></p>
+                  
+               </li>
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+           <h3>Flash 插件</h3>
+            
+            <p>为了观看视频，您需要安装 Macromedia Flash player，Flash 5 或更高版本。访问 <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" class="links" href="#" onclick="popUpPage('http://www.macromedia.com/shockwave/download/alternates/','linkURL','menubar=yes,status=yes,resizable=yes,toolbar=yes,scrollbars=yes,location=yes,directories=no')">the Macromedia site</a> 以获取更多有关 Flash player 的信息。</p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

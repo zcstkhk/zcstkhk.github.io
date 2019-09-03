@@ -1,0 +1,59 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Help editing the slider bar holes</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Help editing the slider bar holes</h2>
+         <p>Here is one technique you can use:</p>
+         <ul>
+            
+            <li>
+               
+               <p>Find the expressions used to define the instance array.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Find the expression used to position the first hole to the left end of the bar.</p>
+               
+               <p>This needs to be the distance from the last hole to the end of the bar.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Edit the expression used to define the offset of the instance array. This value should depend on the length of the bar and the distance from the front of the bar to the first hole.</p>
+               
+            </li>
+            
+         </ul>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>If you still need a solution, import the expressions in <span class="fileName">exp4_slider_bar.exp</span>.
+                  </p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

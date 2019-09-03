@@ -1,0 +1,196 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>关键帧对话框</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>关键帧对话框</h2>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/visualization/commands/hqi_animation/key_frames_dialog_box.png"></p>
+         <table cellspacing="2" width="100%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="25">
+               
+               <col span="1" width="106*">
+               
+               <col span="1" width="169*">
+               
+            </colgroup>
+            
+            <tr bgcolor="silver" valign="top">
+               
+               <th align="center" colspan="1" rowspan="1"></th>
+               <th colspan="1" rowspan="1"><p>选项</p></th>
+               <th colspan="1" rowspan="1"> <p>描述</p></th>
+               
+            </tr>
+            
+            <tr bgcolor="#F0F0F0" valign="top">
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><span class="literalText">1</span></p>
+                  
+               </td>
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><strong>关键帧</strong>列表框</p>
+                  
+               </td>
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p>列出在选定动画轨迹中所有关键帧的名称和帧数。</p>
+                  
+                  <p class="no-bottom-margin"><strong>Frame0</strong> 是初始关键帧，不能删除或移动它。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr bgcolor="#F0F0F0" valign="top">
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><span class="literalText">2</span></p>
+                  
+               </td>
+               <td colspan="1" rowspan="1"><p><strong>名称</strong></p></td>
+               <td colspan="1" rowspan="1"><p>用于指定关键帧的名称，或者在关键帧已存在的情况下，显示当前选定关键帧的名称。</p>
+                 <p>关键帧名称应该在轨迹内为唯一的，并且其长度可从 1 到 12 个字符。</p>
+                 <p>如果不指定新名称，则 NX 会通过采用当前名称并对其附加一个数字以创建新名称。</p></td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><span class="literalText">3</span></p>
+                  
+               </td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>步数</strong></p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>指定系统在上一关键帧和当前关键帧之间插入的插值步数。</p>
+                 <p>通过在<strong>步数</strong>框中输入一个正整数值并单击<strong>更新帧</strong>，可以指定当前关键帧的步数。</p>
+                 <p>整数值越高，产生的动画越平滑越长。值越低，产生的动画越短且不平稳。 </p>
+                 <table>
+                   <tbody>
+                     <tr>
+                       <td valign="top"><p>注释</p></td>
+                       <td><ul>
+                         <li>
+                           <p>初始关键帧的步数必须总是为零，因为之前没有帧可用于第一步</p>
+                         </li>
+                         <li>
+                           <p>其他所有的关键帧的帧数必须总为大于零的整数</p>
+                         </li>
+                       </ul></td>
+                     </tr>
+                   </tbody>
+                 </table></td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><span class="literalText">4</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><strong>过渡因子</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>用于在未选择<strong>关键帧选项</strong>对话框中的<strong>使用转台运动</strong>选项时，指定过渡因子以生成圆角并为关键帧生成更加光顺的轨迹路径。</p>
+                  <p>过渡因子为零意味着摄像机沿该轨迹直接移动到关键帧位置，然后急转到下一关键帧。</p>
+                  <p>关键帧中的过渡因子越大，帧之间线性路径的偏差也越大。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="2">
+                  
+                  <p class="no-bottom-margin"><span class="literalText">5</span></p>
+                  
+               </td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>添加/复制</strong></p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>基于现有帧或默认初始关键帧创建新的关键帧。</p></td>
+               
+            </tr>
+            
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>删除</strong></p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>从轨迹中删除关键帧。</p></td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><span class="literalText">6</span></p>
+                  
+               </td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>更新帧</strong></p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>应用对关键帧所作的任何更改。</p>
+                 <p><strong>更新帧</strong>实施对<strong>名称</strong>、<strong>步数</strong>和<strong>过渡因子</strong>选项所作的更改，以及可能使用<strong>旋转</strong>、<strong>缩放</strong>、<strong>平移</strong>或<strong>导航</strong>进行的任何视图方位更改。</p></td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="2">
+                  
+                  <p class="no-bottom-margin"><span class="literalText">7</span></p>
+                  
+               </td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>上移</strong></p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>在<strong>关键帧</strong>列表框中向上移动选定的关键帧。</p></td>
+               
+            </tr>
+            
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>下移</strong></p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>在<strong>关键帧</strong>列表框中向下移动选定的关键帧。</p></td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><span class="literalText">8</span></p>
+                  
+               </td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>关键帧选项</strong></p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>根据需要打开具有设置关键帧转台运动的选项的<strong>关键帧选项</strong>对话框。</p></td>
+               
+            </tr>
+            
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

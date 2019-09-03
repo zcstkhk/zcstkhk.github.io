@@ -1,0 +1,18 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"制图介绍",file:"id1056194.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"使用制图应用模块",file:"prep.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"制图应用模块",file:"draft_app_ov.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"视频：3D 制图过程",file:"id1523962.html",type:"topic",parent:"d5e5"},
+{id:"d5e8",title:"制图界面",file:"intro_drft_ui.html",type:"topic",parent:"d5e5"},
+{id:"d5e9",title:"查看图纸",file:"id741335.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e11",title:"部件导航器中的图纸节点",file:"xid482893.html",type:"topic",parent:"",children:[
+{id:"d5e12",title:"图纸页节点",file:"genid_sheet_nodes_41_754.html",type:"topic",parent:"d5e11"},
+{id:"d5e13",title:"视图节点",file:"genid_view_node_39_645.html",type:"topic",parent:"d5e11"},
+{id:"d5e14",title:"使用部件导航器",file:"id1011651.html",type:"activity",parent:"d5e11"}]},
+{id:"d5e16",title:"创建主模型图纸",file:"genid_creating_a_master_model_drawing_173_3630.html",type:"topic",parent:"",children:[
+{id:"d5e17",title:"NX 制图方法和主模型工作流",file:"drw_mm_rt.html",type:"topic",parent:"d5e16"},
+{id:"d5e18",title:"创建主模型图纸",file:"id744569.html",type:"activity",parent:"d5e16"}]}
+
+
+]}

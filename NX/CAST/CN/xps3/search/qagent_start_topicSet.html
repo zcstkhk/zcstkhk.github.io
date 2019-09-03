@@ -1,0 +1,34 @@
+<!-- $Id: $-->
+<!--
+bcprt
+ecprt
+-->
+<html>
+
+<head>
+	<meta name="jobjects/quest" content="ignore-start"/>
+	<title>Search documents using JObjects QuestAgent</title>
+	<script language="JavaScript" src="../../js/collectionData.js"></script>
+	<script language="JavaScript" src="cookie.js"></script>
+	<script language="JavaScript" src="qagent.js"></script>
+	<script language="JavaScript" src="qagent_ui_text.js"></script>
+ 	<link rel="stylesheet" type="text/css" href="qagent.css"/>
+</head>
+
+<script language="JavaScript">
+	if(top._self.metadata.workingConfigurationMap.searchCollection)
+	{
+		document.writeln('<frameset rows="1,90,*" border="0">');
+	}
+	else
+	{
+		document.writeln('<frameset rows="1,35,*" border="0">');
+	}
+
+	document.writeln('<frame name="qaapplet" src="qagent_applet_topicSet.html"/>');
+	document.writeln('<frame name="qawin"    src="qagent_intro.html"/>');
+	document.writeln('<frame name="qaview"   src="blank.html"/>');
+	document.writeln('</frameset>');
+</script>
+
+</html>

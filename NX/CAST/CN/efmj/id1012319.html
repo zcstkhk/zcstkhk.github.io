@@ -1,0 +1,138 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>拔模类型</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>拔模类型</h2>
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/draft/from_plane.gif" border="0"> <strong>从平面或曲面</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>允许您指定固定平面或曲面。拔模操作对固定平面处的体的横截面未进行任何更改。</p>
+                  <a name="genid_efmj_12" id="genid_efmj_12"></a><div class="figureContainer">
+                     <table align="center">
+                        <tr>
+                           <td>
+                              <div class="figure">
+                                 <div><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/draft/draft_planar_face_plane.png" border="0"></div>
+                              </div>
+                           </td>
+                        </tr>
+                     </table>
+                     <h4>由基准平面定义的拔模</h4>
+                  </div>
+                  <a name="genid_efmj_13" id="genid_efmj_13"></a><div class="figureContainer">
+                     <table align="center">
+                        <tr>
+                           <td>
+                              <div class="figure">
+                                 <div><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/draft/draft_non_planar_1.png" border="0"></div>
+                              </div>
+                           </td>
+                        </tr>
+                     </table>
+                     <h4>由曲面定义的拔模</h4>
+                  </div>
+                  <a name="genid_efmj_14" id="genid_efmj_14"></a><div class="figureContainer">
+                     <table align="center">
+                        <tr>
+                           <td>
+                              <div class="figure">
+                                 <div><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/draft/draft_one_side_parting.png" border="0"></div>
+                              </div>
+                           </td>
+                        </tr>
+                     </table>
+                     <h4>由多个曲面定义的拔模</h4>
+                  </div>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/draft/from_edges.gif" border="0"> <strong>从边</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>用于将所选的边集指定为固定边，并指定这些边的面(指定角度)。当需要固定的边不包含在垂直于方向矢量的平面中时，此选项很有用。</p>
+                  <a name="genid_efmj_15" id="genid_efmj_15"></a><div class="figureContainer">
+                     <table align="center">
+                        <tr>
+                           <td>
+                              <div class="figure">
+                                 <div><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/draft/draft_from_stationary_edges_ex.gif" border="0"></div>
+                              </div>
+                           </td>
+                        </tr>
+                     </table>
+                     <h4>从固定边拔模</h4>
+                  </div>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/draft/tangent_to_faces.gif" border="0"> <strong>与多个面相切</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>用于在保持所选面之间相切的同时应用拔模。此选项用于在塑模部件或铸件中补偿可能的模锁。</p>
+                  <a name="genid_efmj_16" id="genid_efmj_16"></a><div class="figureContainer">
+                     <table align="center">
+                        <tr>
+                           <td>
+                              <div class="figure">
+                                 <div><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/draft/draft_tangent_to_faces_ex.gif" border="0"></div>
+                              </div>
+                           </td>
+                        </tr>
+                     </table>
+                     <h4>拔模移动侧面以保持与顶部相切</h4>
+                  </div>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/draft/to_parting_edges.gif" border="0"> <strong>至分型边</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>用于根据选定的分型边集、指定的角度及固定面来创建拔模面。固定面确定维持的横截面。此拔模类型创建垂直于参考方向和边缘的突出部分的面。</p>
+                  <a name="genid_efmj_17" id="genid_efmj_17"></a><div class="figureContainer">
+                     <table align="center">
+                        <tr>
+                           <td>
+                              <div class="figure">
+                                 <div><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/draft/draft_to_parting_edges_ex0.gif" border="0"></div>
+                              </div>
+                           </td>
+                        </tr>
+                     </table>
+                     <h4>拔模在基准平面定义的分型边处创建凸缘</h4>
+                  </div>
+                  
+               </div>
+            </div>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

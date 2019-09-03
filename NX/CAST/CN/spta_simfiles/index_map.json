@@ -1,0 +1,37 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"CAE 文件管理",file:"id1298530.html",type:"topic",parent:""},
+{id:"d5e5",title:"CAE 模型文件",file:"id967836.html",type:"topic",parent:""},
+{id:"d5e7",title:"仿真文件",file:"id967837.html",type:"topic",parent:""},
+
+{id:"d5e9",title:"FEM 文件",file:"id967838.html",type:"topic",parent:""},
+
+{id:"d5e11",title:"非关联 FEM 文件",file:"id967839.html",type:"topic",parent:""},
+
+{id:"d5e14",title:"关联 FEM 文件",file:"id967840.html",type:"topic",parent:""},
+
+{id:"d5e16",title:"使用关联 FEM 文件",file:"id967841.html",type:"topic",parent:""},
+
+{id:"d5e18",title:"使用多个解算方案",file:"id229404.html",type:"topic",parent:""},
+
+{id:"d5e20",title:"使用多个仿真文件",file:"id229405.html",type:"topic",parent:""},
+
+{id:"d5e22",title:"使用多个 FEM 文件",file:"id229406.html",type:"topic",parent:""},
+
+{id:"d5e24",title:"理想化部件文件",file:"id967842.html",type:"topic",parent:""},
+
+{id:"d5e27",title:"管理 CAE 文件",file:"id974009.html",type:"topic",parent:""},
+
+{id:"d5e29",title:"对 CAE 模型数据使用装配加载选项",file:"id967843.html",type:"topic",parent:""},
+
+{id:"d5e31",title:"从当前文件夹加载 CAE 数据",file:"id967844.html",type:"topic",parent:""},
+
+{id:"d5e33",title:"从保存的文件夹加载 CAE 数据",file:"id967845.html",type:"topic",parent:""},
+
+{id:"d5e35",title:"从搜索文件夹加载 CAE 数据",file:"id967846.html",type:"topic",parent:""},
+
+{id:"d5e37",title:"探索高级仿真文件",file:"id1022934.html",type:"activity",parent:""},
+
+{id:"d5e40",title:"使用 Teamcenter Integration 管理 CAE 数据",file:"id967847.html",type:"topic",parent:""},
+
+{id:"d5e42",title:"复习",file:"id1323283.html",type:"topic",parent:""}
+]}

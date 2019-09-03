@@ -1,0 +1,10 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"补充几何体",file:"xid481142.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"PMI 区域",file:"auxiliary_geometry_regions_ov.html",type:"topic",parent:""},
+{id:"d5e6",title:"创建并编辑圆形 PMI 区域",file:"id966301.html",type:"activity",parent:""},
+{id:"d5e7",title:"复习：PMI 区域",file:"id1540285.html",type:"topic",parent:""},
+{id:"d5e8",title:"PMI 中心线",file:"auxiliary_geometry_centerline_ov.html",type:"topic",parent:""},
+{id:"d5e9",title:"PMI 中心标记",file:"auxiliary_geometry_centermark_ov.html",type:"topic",parent:""},
+{id:"d5e10",title:"创建 PMI 中心线和中心标记",file:"id1390827.html",type:"activity",parent:""}
+]}

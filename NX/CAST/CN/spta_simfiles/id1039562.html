@@ -1,0 +1,90 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Display the FEM file</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>显示 FEM 文件</h2>
+         <p>显示 FEM 文件</p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/simulation_navigator_tab.gif" border="0"> &nbsp;<strong>仿真导航器</strong></p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="45">
+                     
+                     <col span="1" width="*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="banner_left" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td class="banner_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>仿真文件视图</strong></p>
+                           
+                        </td>
+                        
+                        <td class="banner_right" colspan="1" rowspan="1" width="45">
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb12.gif" border="0"> &nbsp; <strong>finite_element_model</strong></p>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/data_management/sim_files/fem_out_of_date.png"></p>
+               
+            </li>
+         </ul>
+         <p>注意到网格并未与主模型部件拓扑匹配，<strong>仿真导航器</strong>中 FEM 文件的图标已变化，并且文件的状态显示为<strong>等待更新</strong>。</p>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/data_management/sim_files/fem_update_pending.png"></p>
+         <p>一般来说，在主模型部件被修改时需要更新网格，因为主模型部件是理想化部件的一个组件，理想化部件将自动反应主模型部件的变更。</p>
+         <p>查看<strong>装配导航器</strong>中的 FEM 文件。</p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/assembly_navigator_tab.gif" border="0"> <strong>装配导航器</strong></p>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/data_management/sim_files/fem_file_assy_nav.png"></p>
+         <p>注意到 FEM 文件并不是一个装配，所以 FEM 文件与理想化部件文件之间的关联并不是一种装配关系。</p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/menu.gif" border="0"> <strong>信息</strong>&rarr;<strong>装配</strong>&rarr;<strong>列出组件</strong></p>
+         <p>NX 将报告无组件部件。</p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/close_window.gif" border="0"> &nbsp;<strong>信息</strong>窗口</p>
+         <p>当 FEM 文件读取修改的理想化部件文件时，它将自动从参数化数据中生成新的多边形几何体，注意在任何对部件几何体的修改传送到 FEM 文件中之前，修改的主模型部件必须已加载并显示。</p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

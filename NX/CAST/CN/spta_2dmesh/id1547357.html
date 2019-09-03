@@ -1,0 +1,42 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>显示壳单元法向</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>显示壳单元法向</h2><a name="ndxgenid_spta_2dmesh_88"></a>
+         <a name="ndxgenid_spta_2dmesh_89"></a>
+         
+         
+         <p>NX 中的中面哪一侧认为是顶面和底面取决于壳单元的法向，壳单元的法向由一个指向顶面的箭头来可视化表示，要显示壳单元法向，使用<strong>有限元模型检查</strong>命令，从下拉菜单中选择<strong>2D 单元法向</strong>，然后点击<strong>显示法向</strong>。</p>
+         
+         <p>您应该检查壳单元法向的一致性，并在求解模型前先纠正任何不一致，定义单元法向的不一致可能导致错误的后处理显示，要反转壳单元法向，使用<strong>有限元模型检查</strong>命令，选择要反转方向的网格，然后点击<strong>显示法向</strong>。</p>
+         
+         <a name="genid_spta_2dmesh_90"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/post_proc/shell_normal_display.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>壳单元法向显示的模型，注意到孔周边的单元法向与其余网格的法向不一致</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

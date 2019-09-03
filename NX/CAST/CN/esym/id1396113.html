@@ -1,0 +1,163 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>带倒斜角拉出面与移动面</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>带倒斜角拉出面与移动面</h2>
+         
+         
+         <p>根据是否有倒斜角，拉出面与移动面的结果将变得不同，您将测试两个命令，以查看区别以及相似之处。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>为了编辑盖板内测的凸台，请旋转部件。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/pull_face/07_pull_face.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>同步建模</strong>工具条上的<strong>修改面</strong>下拉菜单中，选择<strong>移动面</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/modeling/direct_modeling/move_face.gif" border="0" alt="Insert&gt; Synchronous Modeling&gt; Move Face" title="Insert&gt; Synchronous Modeling&gt; Move Face">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>选择如图所示两个凸台的顶面。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/pull_face/02_pull_face.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>距离</strong>屏显输入框中键入<strong>8</strong>并回车。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p>右下角凸台上的面与盖板前侧凸台的移动类似，倒斜角将延伸到被移动面终止处</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>而左上角凸台上的倒斜角将与面一起移动</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/pull_face/08_pull_face.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>移动面</strong>对话框中，点击<strong>取消</strong>以取消特征创建。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在<strong>同步建模</strong>工具条上的<strong>修改面</strong>下拉菜单中，选择<strong>拉出面</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/modeling/direct_modeling/pull_face.gif" border="0" alt="Insert&gt; Synchronous Modeling&gt; Pull Face" title="Insert&gt; Synchronous Modeling&gt; Pull Face">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>选择如图所示两个凸台的顶面。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/pull_face/02_pull_face.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>在<strong>距离</strong>屏显输入框中键入<strong>8</strong>并回车。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p>右下角凸台上的面与盖板前侧凸台的拉出类似，顶面被拉出并且倒斜角面也将延伸，而被拉出面的大小保持不变</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>而左上角凸台上的倒斜角将与面一起被拉出，这与<strong>移动面</strong>命令的结果相同，NX 知道这是一个倒斜角，会将它自动与顶面附着，使之一起运动</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/pull_face/09_pull_face.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>在<strong>拉出面</strong>对话框中，点击<strong>取消</strong>以取消特征创建。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

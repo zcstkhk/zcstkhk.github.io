@@ -1,0 +1,20 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"冲模工程分析与检查工具",file:"id1056707.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"DFM 顾问",file:"dfmadvisor.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"DFM 顾问选项",file:"dfm_dialog.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"非一致性窗口",file:"id947021.html",type:"topic",parent:"d5e5"},
+{id:"d5e8",title:"运行 DFM 顾问",file:"id1104094.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e10",title:"翻边分析",file:"flange_analysis_flange_analy_ov.html",type:"topic",parent:"",children:[
+{id:"d5e11",title:"执行翻边分析",file:"id1104179.html",type:"activity",parent:"d5e10"}]},
+{id:"d5e13",title:"修边角度检查",file:"options_die_trim_angle_check.html",type:"topic",parent:"",children:[
+{id:"d5e14",title:"执行修边角度检查",file:"id1104195.html",type:"activity",parent:"d5e13"}]},
+{id:"d5e16",title:"冲孔级进",file:"options_die_punch_progression.html",type:"topic",parent:"",children:[
+{id:"d5e17",title:"创建冲孔级进",file:"id1104981.html",type:"activity",parent:"d5e16"}]},
+{id:"d5e20",title:"DOL 报告",file:"dol_dol_ov.html",type:"topic",parent:"",children:[
+{id:"d5e21",title:"使用 DOL 报告",file:"id1105207.html",type:"activity",parent:"d5e20"}]},
+{id:"d5e23",title:"分析可成形性 — 一步式",file:"id1110847.html",type:"topic",parent:"",children:[
+{id:"d5e24",title:"使用分析可成形性 — 一步式",file:"id1111156.html",type:"activity",parent:"d5e23"}]},
+{id:"d5e26",title:"未切削区域",file:"uncut_uncut_regions_ov.html",type:"topic",parent:"",children:[
+{id:"d5e27",title:"识别未切削区域",file:"id1112989.html",type:"activity",parent:"d5e26"}]}
+]}

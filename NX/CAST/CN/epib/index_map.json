@@ -1,0 +1,11 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"PMI 尺寸标注",file:"xid481137.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"PMI 尺寸",file:"drafting_functions_pmi_dimension_ov.html",type:"topic",parent:""},
+{id:"d5e6",title:"PMI 尺寸类型",file:"dim_opts_dim_op_ovw.html",type:"topic",parent:""},
+{id:"d5e7",title:"在用户定义的注释平面上创建 PMI",file:"id966240.html",type:"activity",parent:""},
+{id:"d5e8",title:"编辑尺寸关联性",file:"edit_edit_ann_object_assoc_ov.html",type:"topic",parent:""},
+{id:"d5e9",title:"3D 水平和竖直尺寸",file:"id944236.html",type:"topic",parent:""},
+{id:"d5e10",title:"创建3D 水平尺寸",file:"id966289.html",type:"activity",parent:""},
+{id:"d5e11",title:"复习",file:"id1540281.html",type:"topic",parent:""}
+]}

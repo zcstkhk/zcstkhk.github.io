@@ -1,0 +1,77 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>使用自由映射网格</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>使用自由映射网格</h2><a name="ndxgenid_spta_2dmesh_19"></a>
+         <a name="ndxgenid_spta_2dmesh_20"></a>
+         <a name="ndxgenid_spta_2dmesh_21"></a>
+         <a name="ndxgenid_spta_2dmesh_22"></a>
+         
+         
+         <p><a name="ndxgenid_spta_2dmesh_23"></a><strong>2D 网格</strong>、<strong>3D 四面体网格</strong>和 <strong>3D 扫掠网格</strong>对话框上的<strong>尝试自由映射网格划分</strong>选项允许您在自由网格环境中创建类似于映射的网格。这些类型的网格称为&ldquo;自由映射&rdquo;网格。</p>
+         
+         <p>使用自由映射网格时，软件会尝试在所有四边面上以及任何圆柱上创建映射网格。</p>
+         
+         <p>自由映射网格能提供自由网格的灵活性，同时提供结构化程度更高的映射外观。</p>
+         
+         <a name="genid_spta_2dmesh_24"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/meshing/2d/free_quad.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>四边形单元的自由网格</h4>
+         </div>
+         <a name="genid_spta_2dmesh_25"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/meshing/2d/free_mapped_quad.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>四边形单元的自由映射网格</h4>
+         </div>
+         
+         
+         <p>自由映射网格的限制：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>软件只能在四边面和圆柱上创建自由映射网格。在某些情况下，软件可能无法在四边面上创建自由映射网格。当四边面位于受限制区域或与其他面上的现有网格相邻时，会发生这种情况</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>如果面的边界非常歪斜，自由映射网格划分方法实际创建的网格可能会比规则自由网格质量差。因此，软件不会在歪斜角超过 160° 的任何面上创建自由映射</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

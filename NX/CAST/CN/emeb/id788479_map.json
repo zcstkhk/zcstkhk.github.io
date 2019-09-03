@@ -1,0 +1,7 @@
+{identifier:"id",label:"title",items:[
+{id:"d10e2",title:"打开部件并显示程序顺序视图",file:"id788483.html",type:"topic",parent:""},
+{id:"d10e3",title:"生成刀轨",file:"id1011815.html",type:"topic",parent:""},
+{id:"d10e4",title:"创建加工部件顶部的程序对象",file:"id1011817.html",type:"topic",parent:""},
+{id:"d10e5",title:"复制程序对象并重命名",file:"id1011819.html",type:"topic",parent:""},
+{id:"d10e6",title:"使用剪切和粘贴将操作移动到其它程序中",file:"id1011821.html",type:"topic",parent:""},
+{id:"d10e7",title:"重播各个程序以可视化查看刀轨",file:"id1011823.html",type:"topic",parent:""}]}

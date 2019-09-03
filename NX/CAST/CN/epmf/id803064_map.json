@@ -1,0 +1,13 @@
+{identifier:"id",label:"title",items:[
+{id:"d10e2",title:"打开部件并显示工序导航器",file:"id803068.html",type:"topic",parent:""},
+{id:"d10e3",title:"创建工序",file:"id975082.html",type:"topic",parent:""},
+{id:"d10e4",title:"更改刀具显示选项",file:"id975084.html",type:"topic",parent:""},
+{id:"d10e5",title:"更改切削参数",file:"id975086.html",type:"topic",parent:""},
+{id:"d10e6",title:"生成刀轨",file:"id975088.html",type:"topic",parent:""},
+{id:"d10e7",title:"更该刀具参数",file:"id975090.html",type:"topic",parent:""},
+{id:"d10e8",title:"生成刀轨",file:"id975092.html",type:"topic",parent:""},
+{id:"d10e9",title:"通过复制创建工序",file:"id975094.html",type:"topic",parent:""},
+{id:"d10e10",title:"更改刀具参数",file:"id975096.html",type:"topic",parent:""},
+{id:"d10e11",title:"设置刀具显示选项并生成刀轨",file:"id975098.html",type:"topic",parent:""},
+{id:"d10e12",title:"更改刀具参数",file:"id975100.html",type:"topic",parent:""},
+{id:"d10e14",title:"生成并确认刀轨",file:"id975102.html",type:"topic",parent:""}]}

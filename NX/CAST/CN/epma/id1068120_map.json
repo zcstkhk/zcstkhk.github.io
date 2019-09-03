@@ -1,0 +1,8 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"创建加工设置",file:"id1068379.html",type:"topic",parent:""},
+{id:"d7e3",title:"定义部件和毛坯几何体",file:"id1068381.html",type:"topic",parent:""},
+{id:"d7e4",title:"新建加工出部件大致轮廓的铣刀",file:"id1068383.html",type:"topic",parent:""},
+{id:"d7e5",title:"创建工序",file:"id1068385.html",type:"topic",parent:""},
+{id:"d7e6",title:"添加余量到检查边界以获得间隙",file:"id1068387.html",type:"topic",parent:""},
+{id:"d7e7",title:"定义非切削移动",file:"id1068389.html",type:"topic",parent:""},
+{id:"d7e8",title:"生成刀轨",file:"id1068417.html",type:"topic",parent:""}]}

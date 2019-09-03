@@ -1,0 +1,56 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"NX 中的渲染",file:"id1127059.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"可视化工作流",file:"xid505161.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"可视化工作流示例",file:"xid507657.html",type:"topic",parent:"d5e5"}]},
+
+{id:"d5e8",title:"可视化显示模式",file:"xid505182.html",type:"topic",parent:"",children:[
+{id:"d5e9",title:"高级艺术外观显示",file:"id1388439.html",type:"topic",parent:"d5e8"}]},
+
+{id:"d5e11",title:"可视化设计环境",file:"xid597521.html",type:"topic",parent:"",children:[
+{id:"d5e12",title:"真实着色",file:"true_shading_ov.html",type:"topic",parent:"d5e11",children:[
+{id:"d5e13",title:"真实着色工具条",file:"id787711.html",type:"topic",parent:"d5e12",children:[
+{id:"d5e14",title:"全局材料",file:"genid_materials_global_62_611.html",type:"topic",parent:"d5e13"},
+{id:"d5e15",title:"替代材料",file:"genid_materials_object_specific_44_394.html",type:"topic",parent:"d5e13"},
+{id:"d5e16",title:"全局反射图",file:"genid_reflection_maps_70_640.html",type:"topic",parent:"d5e13"},
+{id:"d5e17",title:"背景",file:"genid_backgrounds_119_392.html",type:"topic",parent:"d5e13"},
+{id:"d5e18",title:"阴影/反射/栅格",file:"genid_shadowsreflectiongrids_77_305.html",type:"topic",parent:"d5e13"},
+{id:"d5e19",title:"环境面方位",file:"genid_floorwall_78_532.html",type:"topic",parent:"d5e13"},
+{id:"d5e20",title:"光源",file:"genid_prepackaged_lighting_213_625.html",type:"topic",parent:"d5e13",children:[
+{id:"d5e21",title:"其它光源",file:"genid_other_lighting_30_433.html",type:"topic",parent:"d5e20"}]},
+{id:"d5e22",title:"面的边",file:"genid_face_edges_30_194.html",type:"topic",parent:"d5e13"}]},
+{id:"d5e23",title:"真实着色编辑器",file:"id787716.html",type:"topic",parent:"d5e12",children:[
+{id:"d5e24",title:"真实着色编辑器—全局材料与特定于对象的材料",file:"genid_true_shading_editor_materialsreflectionsbackgrounds_94_788.html",type:"topic",parent:"d5e23"},
+{id:"d5e25",title:"真实着色编辑器 – 底面",file:"genid_true_shading_editor_floor_52_350.html",type:"topic",parent:"d5e23"},
+{id:"d5e26",title:"真实着色编辑器 – 地板效果",file:"genid_true_shading_editor_floor_effects_22_237.html",type:"topic",parent:"d5e23"},
+{id:"d5e27",title:"真实着色编辑器 – 光源",file:"genid_true_shading_editor_lights_20_240.html",type:"topic",parent:"d5e23"}]},
+{id:"d5e28",title:"创建真实着色环境",file:"id798218.html",type:"activity",parent:"d5e12"}]},
+{id:"d5e29",title:"真实艺术外观任务",file:"id1389914.html",type:"topic",parent:"d5e11",children:[
+{id:"d5e30",title:"高级艺术外观渲染方法",file:"id1389912.html",type:"topic",parent:"d5e29"},
+{id:"d5e31",title:"艺术外观全局材料",file:"id1411657.html",type:"topic",parent:"d5e29"}]}]},
+
+{id:"d5e33",title:"场景中的元素",file:"xid598554.html",type:"topic",parent:"",children:[
+{id:"d5e34",title:"透视",file:"xid503361.html",type:"topic",parent:"d5e33"},
+{id:"d5e35",title:"视角",file:"xid505093.html",type:"topic",parent:"d5e33"},
+{id:"d5e36",title:"场景中的光源",file:"xid504958.html",type:"topic",parent:"d5e33"},
+{id:"d5e37",title:"三分法",file:"xid500847.html",type:"topic",parent:"d5e33"},
+{id:"d5e38",title:"可视化场景",file:"xid597084.html",type:"topic",parent:"d5e33"}]},
+
+{id:"d5e41",title:"系统场景",file:"view_sys_vis_scene_ov.html",type:"topic",parent:"",children:[
+{id:"d5e42",title:"预置的系统场景",file:"genid_system_visualization_scenes_79_782.html",type:"topic",parent:"d5e41"}]},
+
+{id:"d5e43",title:"场景编辑器",file:"genid_basic_scene_editor_570_7300.html",type:"topic",parent:"",children:[
+{id:"d5e44",title:"全局照明—基于图像的打光",file:"genid_image-based_lighting_146_2188.html",type:"topic",parent:"d5e43"},
+{id:"d5e45",title:"环境图像资源板",file:"ibl001.html",type:"topic",parent:"d5e43"},
+{id:"d5e46",title:"系统场景与场景编辑器",file:"id798224.html",type:"activity",parent:"d5e43"},
+{id:"d5e47",title:"创建场景并使用3D 圆顶背景来修改",file:"xid386251.html",type:"activity",parent:"d5e43"}]},
+
+{id:"d5e49",title:"高质量图像",file:"hqi_overview.html",type:"topic",parent:"",children:[
+{id:"d5e50",title:"高质量图像对话框",file:"genid_the_high_quality_image_dialog_box_269_2261.html",type:"topic",parent:"d5e49"},
+{id:"d5e51",title:"图像首选项",file:"xid507728.html",type:"topic",parent:"d5e49",children:[
+{id:"d5e52",title:"输出设定",file:"xid507749.html",type:"topic",parent:"d5e51"},
+{id:"d5e53",title:"显示控制",file:"xid596880.html",type:"topic",parent:"d5e51"},
+{id:"d5e54",title:"高级选项",file:"xid596890.html",type:"topic",parent:"d5e51"}]}]},
+
+{id:"d5e56",title:"复习",file:"xid488083.html",type:"topic",parent:""}
+]}

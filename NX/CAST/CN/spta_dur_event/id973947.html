@@ -1,0 +1,122 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>激励载荷</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>激励载荷</h2>
+         
+         <p>使用<strong>新建激励</strong>命令可为静态事件施加载荷变化。在创建静态事件时，可在<strong>静态耐久性事件</strong>对话框中指定激励的类型。以下激励类型可用。</p>
+         <div class="defList">
+           <div class="defListItem">
+                  <div class="defObject defObjectHorz">
+                     <p>载荷图样</p>
+                  </div>
+                  <div class="defMeaning defMeaningHorz">
+                     
+                     <p>通过将静态解子工况中的应力或应变结果乘以半个单位或完整单位周期函数和比例因子，可对循环加载条件进行仿真。也可以指定载荷偏置。</p>
+                     
+                  </div>
+           </div>
+           <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/durability/excitation_load_pattern.gif"></p>
+                  
+                  <p>可以在<strong>载荷图样</strong>对话框中指定载荷图样设置。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>结果路径</p>
+               </div>
+              <div class="defMeaning defMeaningHorz">
+                  
+                  <p>通过对使用不同比例因子的静态解子工况中的应力或应变结果进行重复，可定义加载模式。可由此启用模型谱载荷的载荷工况的准静态缩放。可以多次选择每个子工况，并且对于每个选择，您可以更改比例因子。</p>
+                  
+                <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/durability/excitation_result_path.gif"></p>
+                  
+                 <p>可在<strong>结果路径</strong>对话框中指定结果路径设置。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>激励函数</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>通过将静态解子工况中的应力或应变结果乘以常规 AFU 表函数和比例因子，可对循环加载条件进行仿真。也可以指定载荷偏置。</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/durability/excitation_function.gif"></p>
+                  
+                  <p>可在<strong>函数</strong>对话框中指定激励函数设置。</p>
+                  
+              </div>
+            </div>
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                    <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">高级仿真</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                    <p class="no-bottom-margin">仿真导航器</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">右键单击静态事件节点→<strong>新建激励</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

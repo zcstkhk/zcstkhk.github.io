@@ -1,0 +1,119 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>复习</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>复习</h2>
+         <div id="topQuestionsContainer">
+            <div class="questionsHeader">
+               <div class="headerTitle">
+                  <p>问题</p>
+               </div>
+               <div class="quesionButtons">
+                  <div class="qButton" id="qButton_1">
+                     <p>1</p>
+                  </div>
+                  <div class="qButton" id="qButton_2">
+                     <p>2</p>
+                  </div>
+               </div>
+            </div>
+            <div id="questionsContainer">
+               <div class="question" id="question1" answered="false" numanswers="4" questiontype="fillInBlank">
+                  <p>假设您的设计目标是使四面体单元中的应力最小化，那么在设计响应中。您必须包含什么对象来指定单元类型？</p>
+                  <p class="questionInstruction">请选择一个答案</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a1" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q1a1" type="radio" correct="no" name="question1Grp"></td>
+                           <td>
+                              <p>响应类型</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a2" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q1a2" type="radio" correct="no" name="question1Grp"></td>
+                           <td>
+                              <p>响应标签</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a3" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q1a3" type="radio" correct="no" name="question1Grp"></td>
+                           <td>
+                              <p>卡片名称</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a4" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q1a4" type="radio" correct="yes" name="question1Grp"></td>
+                           <td>
+                              <p>项目代码</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div class="question" id="question2" answered="false" numanswers="5" questiontype="allThatApply">
+                  <p>SOL 200 优化可以修改模型中的什么对象？</p>
+                  <p class="questionInstruction">可以选择多个您认为正确的答案</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a1" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q2a1" type="checkbox" correct="no" name="question2Grp"></td>
+                           <td>
+                              <p>草图中的尺寸</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a2" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q2a2" type="checkbox" correct="yes" name="question2Grp"></td>
+                           <td>
+                              <p>物理属性表中的壳厚度</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a3" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q2a3" type="checkbox" correct="yes" name="question2Grp"></td>
+                           <td>
+                              <p>CONM2 单元的质量</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a4" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q2a4" type="checkbox" correct="yes" name="question2Grp"></td>
+                           <td>
+                              <p>梁横截面的面积</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a5" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q2a5" type="checkbox" correct="yes" name="question2Grp"></td>
+                           <td>
+                              <p>MAT1 材料的杨氏模量</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div id="showFeedbackContainer"><span showLabel="true" id="feedbackButton" title="Show feedback" dojoType="xps.form.Button" onClick="showQuestionFeedback()">显示答案</span></div>
+            </div>
+            <div class="helpTextContainer">
+               <p class="questionFeedback" id="incorrect">错误！</p>
+               <p class="questionFeedback" id="correct">正确！</p>
+               <div class="questionHelp" id="questionHelp1">
+                  <p>应力、应变以及力响应需要项目代码，它将指定单元输出以及分量的类型，例如，CTETRA 单元(单元代码“39”)的应力响应，等效用力分量代码“13”。</p>
+               </div>
+               <div class="questionHelp" id="questionHelp2"></div>
+            </div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

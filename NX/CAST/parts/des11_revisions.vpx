@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<VisualReport date="2009-08-10" time="16:01:54" author="NX 7.0.0.9">
+    <ApplicationHint version="NX 7.0.0.9" application="NX">
+        <Item key="reporting style" value="color"/>
+    </ApplicationHint>
+    <ReportProp name="revisions" scope="component">
+        <Description>
+            Example report. Lists all revisions.
+        </Description>
+    </ReportProp>
+    <Rule name="&apos;New Rule">
+        <Action>
+            <ValueClassifier type="string" manualGrouping="0">
+                <ColorRamp/>
+                <Property key="REV" type="attribute"/>
+            </ValueClassifier>
+        </Action>
+    </Rule>
+    <Action showInLegend="1">
+        <SimpleClassifier>
+            <BasicColor color="-1 -1 -1" deEmphasis="1" colorBehavior="automatic"/>
+        </SimpleClassifier>
+    </Action>
+</VisualReport>

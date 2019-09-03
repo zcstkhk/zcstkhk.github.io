@@ -1,0 +1,298 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>在面上偏置曲线的步骤</title>
+   </head>
+   <body>
+      <div class="contentType_procedure">
+         <h2>在面上偏置曲线的步骤</h2>
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>在<strong>曲线</strong>工具条上，点击<strong>面中的偏置曲线</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/curves/curve/offset_in_face.gif" border="0" alt="Insert &gt; Curve from Curves &gt; Offset in Face" title="Insert &gt; Curve from Curves &gt; Offset in Face">。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>通过以下其中一项定义基本偏置曲线：</p>
+               
+               <ul>
+                  
+                  <li>
+                     
+                     <p>从原始的面中曲线创建<strong>固定</strong>偏置的偏置曲线。</p>
+                     
+                     <ol type="a" start="1">
+                        
+                        <li>
+                           
+                           <p>将<strong>类型</strong>设置为<strong>常数</strong>。</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>选择您想要偏置的一组相连的曲线或边，您选择的线串将成为截面线1:偏置1。</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>单击鼠标中键以完成曲线线串选择，曲线将关闭高亮显示，并且选择的线串上将出现一个<strong>截面线1</strong>标签。</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>再次单击鼠标中键以前进到下一个步骤进行偏置面或平面的选择。</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>选择截面线1所在的体或面，在您先前选择的线串上将出现一个手柄。</p>
+                           
+                           <table class="attentionTable attn_tip">
+                              <tr>
+                                 <td valign="top">
+                                    <p class="attn_title">提示</p>
+                                 </td>
+                                 <td class="attention_main">
+                                    
+                                    <p>如果只有一个体，或者曲线线串是一条面上曲线或边，自动判断一个或多个面，则这一步可能可以跳过。</p>
+                                    
+                                 </td>
+                              </tr>
+                           </table>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>在面上拖动截面线1:偏置1手柄。</p>
+                           <p>图形窗口中将出现一个屏显输入框，持续更新偏置距离值。</p>
+                           
+                           <table class="attentionTable attn_tip">
+                              <tr>
+                                 <td valign="top">
+                                    <p class="attn_title">提示</p>
+                                 </td>
+                                 <td class="attention_main">
+                                    
+                                    <p>要定位偏置曲线，可以：</p>
+                                    
+                                    <p>在屏显输入框中键入距离值并回车<br>
+                                    <span class="emphasis">或</span><br>
+                                    拖动手柄到想要的距离<br>
+                                    您也可以在树形<strong>列表</strong>中选择偏置曲线 1的距离输入，然后再那里更改偏置距离值。</p>
+                                    
+                                 </td>
+                              </tr>
+                           </table>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>如果您想要从原来的截面线1偏置另一个距离，打开<strong>曲线</strong>组中的<strong>列表</strong>，点击<strong>新建</strong>，在图形窗口中再次选择截面线1的曲线线串，然后拖动它到想要的位置，它将成为截面线2:偏置1。</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>当您完成截面线1的偏置曲线创建，可以点击<strong>添加新集</strong>来选择一条新的曲线或边来创建另外的偏置曲线，只要您喜欢，在面上偏置特征可以包含尽可能多的偏置曲线线串。</p>
+                           
+                        </li>
+                        
+                     </ol>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>以距原始面中曲线上的点不同距离创建<strong>可变</strong>偏置曲线。</p>
+                     
+                     <ol type="a" start="1">
+                        
+                        <li>
+                           
+                           <p>将<strong>类型</strong>设置为<strong>可变</strong>。</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>选择一个面或平面。</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>选择要偏置的曲线。</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>在<strong>偏置</strong>组中，设置<strong>规律类型</strong>来定义面中的偏置曲线。</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>为选择的<strong>规律类型</strong>指定参数。</p>
+                           
+                        </li>
+                        
+                     </ol>
+                     
+                  </li>
+                  
+               </ul>
+               
+            </li>
+            
+            <li>
+               
+               <p>您可以随时设置以下选项</p>
+               
+               <ul>
+                  
+                  <li>
+                     
+                     <p><strong>偏置方法</strong>(从以下选项中选择一种)</p>
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p>弦：(默认) 使用线串曲线上各点之间的线段，基于弦距离创建偏置曲线</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>弧长：沿线串曲线的圆弧创建偏置曲线</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>测量：沿面上的最短距离创建偏置曲线</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>相切：沿曲线最初所在面的切线，在一定距离处创建偏置曲线，并将其重新投影到该面上</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>投影距离： 用于按指定的法向矢量在虚拟平面上指定偏置距离</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p><strong>倒圆尖角</strong>(选择以下选项中的一项)
+                     </p>
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p>矢量</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>最适合</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>投影矢量</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p><strong>修剪和延伸偏置曲线 </strong>(选择以下选项中的一项或多项) </p>
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p>在截面内修剪至彼此 (默认)</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>在截面内延伸至彼此 (默认)</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>修剪至面的边</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>延伸至面的边</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>移除偏置曲线内的自相交 (默认)</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </li>
+                  
+               </ul>
+               
+               <p>这些选项将持续影响会话中余下的特征创建，直到您更改它们。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>选择<strong>确定</strong>以完成特征创建。</p>
+               
+            </li>
+            
+         </ol>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

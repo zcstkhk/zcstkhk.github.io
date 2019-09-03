@@ -1,0 +1,15 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"平面铣",file:"id1073908.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"平面铣工序中的边界",file:"genid_boundaries_30_618.html",type:"topic",parent:""},
+{id:"d5e6",title:"部件边界",file:"mfg_boundary-part.html",type:"topic",parent:""},
+{id:"d5e7",title:"毛坯边界",file:"mfg_boundary-blank.html",type:"topic",parent:""},
+{id:"d5e8",title:"检查边界",file:"mfg_boundary-check.html",type:"topic",parent:""},
+{id:"d5e9",title:"平面铣工序中的岛",file:"planar_mill_island_pocket.html",type:"topic",parent:""},
+{id:"d5e10",title:"平面铣工序中的底面",file:"planar_mill_floor_plane.html",type:"topic",parent:""},
+
+{id:"d5e11",title:"平面铣练习",type:"topicMap",parent:"",children:[
+{id:"d5e12",title:"加工部件的外部",file:"id1068377.html",type:"activity",parent:"d5e11"},
+{id:"d5e13",title:"创建开环轮廓铣工序",file:"id1068423.html",type:"activity",parent:"d5e11"},
+{id:"d5e14",title:"加工自相交的刀轨",file:"id1068464.html",type:"activity",parent:"d5e11"}]}
+]}

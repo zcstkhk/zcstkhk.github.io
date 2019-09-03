@@ -1,0 +1,200 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>修改链接的部件模块</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>修改链接的部件模块</h2>
+         
+         
+         <p>如果您是助理设计师，您需要修改加热槽的安装特征。您可以打开链接的部件模块文件，而无需打开主设计文件。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>打开 <span class="fileName">heat_sink_linked_file</span>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>将屏幕窗口调整至合适大小。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/linked_pmod/03_linked_pmod.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>部件导航器</strong>中，右击<strong>链接的部件模块 “Heat Sink”</strong>并选择<strong>全部展开</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/linked_pmod/04_linked_pmod.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>查看<strong>部件导航器</strong>，注意到：</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p><strong>输入</strong>收集器中含有两个 WAVE 链接的特征：</p>
+                        
+                        <p><img align="bottom" src="../graphics/nonLocalized/nx/modeling/part_navigator/linked_csys.gif" border="0"> <strong>链接的基准 CSYS (1)</strong></p>
+                        
+                        <p><img align="bottom" src="../graphics/nonLocalized/nx/modeling/part_navigator/linkedface.gif" border="0"> <strong>链接的面 (2)</strong></p>
+                        
+                        <p>有几个子特征 WAVE 链接到主部件文件的<strong>输入</strong>收集器中的父特征。</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><strong>工作</strong>收集器中包含一个草图以及两个拉伸特征，这是从主部件文件中移动过来的收集器。</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><strong>输出</strong>收集器中含有一个抽取的面，这是主部件文件的<strong>输出</strong>收集器中子链接特征的父特征。</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>工作</strong>收集器中，双击<strong>草图 (4) “SKETCH_001”</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>将激活链接的部件模块，并打开草图以进行编辑。</p>
+                     
+                     <table class="attentionTable attn_note">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">注释</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>下图中，已隐藏链接的面。</p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/linked_pmod/05_linked_pmod.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>编辑表达式 <strong>p142</strong>的值，以使它从<strong>5.8</strong>变为<strong>7.6</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/linked_pmod/06_linked_pmod.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>右击图形窗口背景并选择<strong>完成草图</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sketcher/sketch/finish_sketch.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>NX 将更新拉伸特征，高亮显示的面现在变长。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/linked_pmod/07_linked_pmod.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>在<strong>部件导航器</strong>中，右击<strong>链接的部件模块 “Heat Sink”</strong>并选择<strong>停用部件模块</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p><strong>输入</strong>与<strong>工作</strong>收集器中的对象将被隐藏，并且将显示<strong>输出</strong>收集器中的抽取的面。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/linked_pmod/09_linked_pmod.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>标准</strong>工具条上的<strong>保存</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/standard/save.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>右击<strong>链接的部件模块 “Heat Sink”</strong>并选择<strong>主部件设为工作部件</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>由于您同时扮演总设计师与助理设计师的角色，所以您可以选择<strong>主部件设为工作部件</strong>，在真实的并行设计工程环境中，总设计师将使用<strong>更新输出参考</strong>命令来更新主部件，而助理设计师继续在他们的链接的部件模块文件中继续进行更改。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/linked_pmod/08_linked_pmod.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>编辑外罩孔阵列-可选</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>编辑外罩(housing)孔阵列-可选</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在 <strong>des02_valve_housing</strong> 中创建一个部件间表达式，让<strong>圆形阵列(54) 数量</strong>参数链接到 <strong>des02_valve_yoke</strong> 中，如下所示。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>完成的部件间表达式：&quot;des02_valve_yoke&quot;::p98</p>
+                     <table class="attentionTable attn_tip">
+                       <tr>
+                         <td valign="top"><p class="attn_title">提示</p></td>
+                         <td class="attention_main"><p>要开始这个步骤，选择<strong>工具→表达式</strong>，然后点击<strong>创建单个部件间表达式</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/expressions/create_single_interpart_expression.gif" border="0">。</p></td>
+                       </tr>
+                     </table>
+                     <p>下图显示的是编辑前的 <strong>des02_valve_housing</strong>。<strong>des02_valve_yoke</strong> 组件已被隐藏，以便您可以看清，即使组件阵列有8个实例，但是 <strong>des02_valve_housing</strong> 中孔的数量仍然是6，部件间表达式可以修正这个问题。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/component_array/arrays_instance_a7.png"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>下图显示的是应用部件间表达式后的 <strong>des02_valve_housing</strong>。<strong>des02_valve_housing</strong>现在匹配了组件阵列中的实例数。<strong>des02_washer</strong> 和 <strong>des02_hex_bolt</strong> 被隐藏了。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/activities/component_array/act_comp_array_instance13.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>关闭所有部件。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

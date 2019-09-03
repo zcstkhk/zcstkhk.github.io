@@ -1,0 +1,97 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Working with the NX CAE solver languages: name strings</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Working with the NX CAE solver languages: name strings</h2>
+         
+         <p>For each solver supported by NX CAE, each command or option in the NX CAE applications has two different names:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>The <span class="emphasis">user interface</span> name for the command (entity), option, or property, which is the name that appears in dialog boxes in NX when that particular solver language is active.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>An <span class="emphasis">automation</span> or <span class="emphasis">neutral</span> name that is used by the NX Open code to identify the command, option, or property.
+               </p>
+               
+               <table class="attentionTable attn_note">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">Note</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>Neutral names are case sensitive.</p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+            
+         </ul>
+         
+         <div class="division">
+            
+            <h3>Determining the appropriate name string</h3>
+            
+            <p>When you create an NX Open for CAE application, there are two ways to determine the appropriate name string for a command or entity. You can:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Create a journal for the command (or option or entity). Then, look through the journal to find the appropriate neutral names.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Find the entity in the <span class="titleReference">NX Open for CAE</span> documentation. The name string is always shown in red. It may be a UI name (language specific) or a neutral name. For more information, see <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" href="#" onclick="loadFile('id1616537.html')">NX Open for CAE documentation resources</a>.
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Example: using a journal to determine the name string</h3>
+            
+            <p>For example, when you are working in Advanced Simulation and NX Nastran is your specified solver, you can use the <span class="uiTerm">Gravity</span> dialog box to define an acceleration vector for gravity loading.
+            </p>
+            
+            <p>However, if you wanted to create an NX Open for CAE application to automatically specify a <span class="uiTerm">Gravity</span> value, you would use the neutral name for <span class="uiTerm">Gravity</span>, <span class="codeText">magnitudeDirectionAcceration</span>, in your code, as shown in the sample journal code below:
+            </p>
+            <pre class="codeExample indent ">Dim simBCBuilder1 As CAE.SimBCBuilder
+simBCBuilder1 = simSimulation1.CreateBcBuilderForLoadDescriptor(&quot;magnitudeDirectionAcceration&quot;, &quot;Gravity(1)&quot;, 1)</pre>
+            <p>Notice how only the <span class="codeText">magnitudeDirectionAcceration</span> neutral name is used to identify the command. The user interface name, <span class="uiTerm">Gravity</span>, does not appear in the journal.
+            </p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,19 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"NX 8 - NX 8.5 Sheet metal transition",file:"xid475860.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"Flange enhancement",file:"xid310581.html",type:"topic",parent:""},
+{id:"d5e7",title:"Pattern Feature in NX Sheet Metal",file:"xid376878.html",type:"topic",parent:"",children:[{id:"d5e8",title:"Create patterns of louvers",file:"xid481475.html",type:"activity",parent:"d5e7"}]},
+{id:"d5e10",title:"Dimple enhancements",file:"xid376925.html",type:"topic",parent:""},
+{id:"d5e12",title:"Drawn Cutout enhancements",file:"xid376926.html",type:"topic",parent:""},
+{id:"d5e15",title:"Bead enhancements",file:"xid376927.html",type:"topic",parent:""},
+{id:"d5e17",title:"Bend enhancement",file:"xid376928.html",type:"topic",parent:"",children:[{id:"d5e18",title:"Add dimples and beads to bend regions",file:"xid480977.html",type:"activity",parent:"d5e17"}]},
+{id:"d5e20",title:"Bend Taper enhancements",file:"xid376994.html",type:"topic",parent:""},
+{id:"d5e22",title:"Convert to Sheet Metal enhancement",file:"xid377256.html",type:"topic",parent:""},
+{id:"d5e24",title:"Optimize Face in NX Sheet Metal",file:"xid464257.html",type:"topic",parent:""},
+{id:"d5e26",title:"Convert to Sheet Metal Wizard",file:"xid376995.html",type:"topic",parent:""},
+{id:"d5e29",title:"Cleanup Utility enhancements",file:"xid377257.html",type:"topic",parent:""},
+{id:"d5e31",title:"Closed Corner enhancements",file:"xid434022.html",type:"topic",parent:"",children:[{id:"d5e32",title:"Close uneven corners",file:"xid480838.html",type:"activity",parent:"d5e31"}]},
+{id:"d5e34",title:"Three Bend Corner enhancement",file:"xid434023.html",type:"topic",parent:""},
+{id:"d5e36",title:"Contour Flange enhancement",file:"xid434024.html",type:"topic",parent:""},
+{id:"d5e38",title:"Instance Feature",file:"xid463299.html",type:"topic",parent:""}
+]}

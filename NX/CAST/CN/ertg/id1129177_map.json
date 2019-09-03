@@ -1,0 +1,14 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开并查看部件",file:"id1129181.html",type:"topic",parent:""},
+{id:"d7e3",title:"创建第一个端口",file:"id1129185.html",type:"topic",parent:""},
+{id:"d7e4",title:"创建进口",file:"id1129187.html",type:"topic",parent:""},
+{id:"d7e5",title:"放置端口",file:"id1129189.html",type:"topic",parent:""},
+{id:"d7e6",title:"完成端口",file:"id1129191.html",type:"topic",parent:""},
+{id:"d7e7",title:"重命名端口",file:"id1130189.html",type:"topic",parent:""},
+{id:"d7e8",title:"添加 NPS 分级特性",file:"id1130190.html",type:"topic",parent:""},
+{id:"d7e9",title:"查看特性",file:"id1130191.html",type:"topic",parent:""},
+{id:"d7e10",title:"定义出口",file:"id1130192.html",type:"topic",parent:""},
+{id:"d7e11",title:"为新建的端口继承所需的特性",file:"id1130193.html",type:"topic",parent:""},
+{id:"d7e12",title:"创建锚点",file:"id1130194.html",type:"topic",parent:""},
+{id:"d7e14",title:"定义锚点位置",file:"id1130195.html",type:"topic",parent:""},
+{id:"d7e15",title:"创建引用集",file:"id1130196.html",type:"topic",parent:""}]}

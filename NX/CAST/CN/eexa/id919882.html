@@ -1,0 +1,179 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>创建表达式来控制槽的参数</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>创建表达式来控制槽的参数</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>选择<strong>工具→表达式</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>如果需要，点击<strong>更多选项</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/common/more.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>列出的表达式</strong>列表中，选择<strong>命名的</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>分别创建下列表达式：</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <table border="1" cellpadding="2" cellspacing="0" frame="box" rules="all" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" width="84*">
+                           
+                           <col span="1" width="113*">
+                           
+                           <col span="1" width="108*">
+                           
+                           <col span="1" width="77*">
+                           
+                        </colgroup>
+                        
+                        <thead>
+                           
+                           <tr bgcolor="#D0D0D0">
+                             <td colspan="1" rowspan="1"><p>名称</p></td>
+                             <td colspan="1" rowspan="1"><p>公式</p></td>
+                             <td colspan="1" rowspan="1"><p>量纲</p></td>
+                             <td colspan="1" rowspan="1"><p>单位</p></td>
+                           </tr>
+                           <tr>
+                             <td colspan="1" rowspan="1"><p>Holes</p></td>
+                             <td colspan="1" rowspan="1"><p>4</p></td>
+                             <td colspan="1" rowspan="1"><p>恒定</p></td>
+                             <td colspan="1" rowspan="1" bgcolor="gray"></td>
+                           </tr>
+                           <tr>
+                             <td colspan="1" rowspan="1" height="31"><p>SlotEndAngle</p></td>
+                             <td colspan="1" rowspan="1" height="31"><p>195</p></td>
+                             <td colspan="1" rowspan="1" height="31"><p>角度</p></td>
+                             <td colspan="1" rowspan="1" height="31"><p>度</p></td>
+                           </tr>
+                           <tr>
+                             <td colspan="1" rowspan="1" height="79"><p>SlotStartAngle</p></td>
+                             <td colspan="1" rowspan="1" height="79"><p>SlotEndAngle-75</p></td>
+                             <td colspan="1" rowspan="1" height="79"><p>角度</p></td>
+                             <td colspan="1" rowspan="1" height="79"><p>度</p></td>
+                           </tr>
+                           
+                        </thead>
+                        
+                        <tbody>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                     <div class="verbose">
+                        <table class="attentionTable attn_tip">
+                           <tr>
+                              <td valign="top">
+                                 <p class="attn_title">提示</p>
+                              </td>
+                              <td class="attention_main">
+                                 
+                                 <p>使用<strong>插入名称</strong>来把 <strong>SlotEndAngle</strong> 复制到 <strong>SlotStartAngle</strong> 的公式中。</p>
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                     </div>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>编辑现有的表达式，使之引用您刚才创建的表达式(使用<strong>插入名称</strong>)。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <table border="1" cellpadding="4" cellspacing="0" frame="box" rules="all" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="2">
+                           
+                           <col span="1">
+                           
+                        </colgroup>
+                        
+                        <thead>
+                           
+                           <tr bgcolor="#D0D0D0">
+                             <td colspan="1" rowspan="1" align="center"><p>表达式名称</p></td>
+                             <td colspan="1" rowspan="1" align="center"><p>当前公式</p></td>
+                             <td colspan="1" rowspan="1" align="center"><p>新公式</p></td>
+                           </tr>
+                           <tr>
+                             <td colspan="1" rowspan="1"><p>p5</p></td>
+                             <td colspan="1" rowspan="1"><p>120</p></td>
+                             <td colspan="1" rowspan="1"><p>SlotStartAngle</p></td>
+                           </tr>
+                           <tr>
+                             <td colspan="1" rowspan="1"><p>p7</p></td>
+                             <td colspan="1" rowspan="1"><p>195</p></td>
+                             <td colspan="1" rowspan="1"><p>SlotEndAngle</p></td>
+                           </tr>
+                           <tr>
+                             <td colspan="1" rowspan="1"><p>p30</p></td>
+                             <td colspan="1" rowspan="1"><p>4</p></td>
+                             <td colspan="1" rowspan="1"><p>Holes</p></td>
+                           </tr>
+                           
+                        </thead>
+                        
+                        <tbody>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

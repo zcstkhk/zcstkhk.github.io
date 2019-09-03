@@ -1,0 +1,89 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Defining damping</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>定义阻尼</h2>
+         
+         <p>可以在响应仿真中应用三中类型阻尼。</p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>关于阻尼的进一步讨论，包括方程以及 NX Nastran 物理阻尼单元列表以及响应仿真支持的参数，参见高级仿真在线帮助。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <div class="division">
+            
+            <h3>NX Nastran 物理(非模态)阻尼</h3>
+            
+            <p>对于频率和瞬态事件，可以在模型中定义显式粘滞和结构阻尼，NX Nastran 将在正则模态求解中应用它们。</p>
+            
+            <p>这种阻尼在已知模型中特定单元或材料的阻尼值时很有用，例如，可以在衬套单元中应用物理阻尼作为粘滞阻尼(PBUSH )，或者在材料中作为结构阻尼(材料记录中的<strong>结构阻尼系数 (GE)</strong>)。</p>
+            
+            <p>要定义物理(非模态)阻尼，必须在解算方案属性中添加适当的 NX Nastran 参数，或在 FEM 中添加适当的单元（如阻尼器或衬套）和物理属性。在求解模态解算方案时，NX Nastran 将应用物理阻尼，并在分析过程中将物理阻尼转化为模态阻尼。</p>
+            
+            <p>在求解正则模态与创建响应仿真解算方案后，使用<strong>物理阻尼设置</strong>对话框来激活响应评估中的物理阻尼。</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>用户定义模态阻尼</h3>
+            
+            <p>通常情况下，您并不知道阻尼与模型的物理属性如何关联，可以将粘滞或结构(迟滞)模态阻尼比指派给单个正则模态或所有正则模态。</p>
+            
+            <p>可以在<strong>编辑阻尼系数</strong>对话框中调整模态阻尼比。</p>
+            
+            <p>可以在<strong>响应仿真细节视图</strong>中的<strong>%Phys Visc</strong> 列和 <strong>%Phys Hyst</strong> 列中查看各个模态的阻尼比。</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>雷利阻尼</h3>
+            
+            <p>雷利阻尼是软件对所有正则模态的粘滞模态阻尼比的计算结果。计算得出的阻尼与模型的刚度和质量成比例。要使用雷利阻尼，可使用下列任意方法：</p>
+            <ul>
+              <li>
+                <p>定义阻尼公式中的刚度和质量常数值</p>
+              </li>
+              <li>
+                <p>定义跨正则模态频率范围应用的粘滞阻尼因子              </p>
+              </li>
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>阻尼是累加的</h3>
+            
+            <p>在运行分析时，物理和用户定义的模态阻尼是累加的；阻尼矩阵由所有输入阻尼源组成。例如，由 CDAMPi 单元产生的物理粘滞阻尼加到由 G 求解器参数产生的阻尼以及任何材料阻尼，并加到用户定义的任何模态粘滞阻尼。 </p>
+            <p>例如，在对汽车悬架建模时，可能需要同时使用物理和模态阻尼。减震器具有高度局部化的阻尼，可与粘滞  阻尼器单元一起建模。所产生的物理阻尼将明显抑制减震器中涉及运动的模态，但在模型的其他位置产生非常小的阻尼。要在系统的其余位置分布阻尼，可将 3%   模态粘滞阻尼添加到所有模态。</p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

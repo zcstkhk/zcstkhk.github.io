@@ -1,0 +1,163 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>New Selection Intent rules for Draft and Edge Blend</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>拔模和边倒圆的新增选择意图规则</h2>
+         <p></p>
+         
+         <div class="division">
+            
+            <h3>这是什么？</h3>
+            
+            <p>借助两个新的选择意图曲线规则，可以更加方便地在部件模型中对面组周长和类似筋板的结构进行拔模和倒圆。 </p>
+            
+            <div class="defList">
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p><strong>面的外边</strong></p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <p>选择一组所选面的外围边界。所有选定面将作为单面，并选中该单面的周长边。将多个选定面的公共边从选择中移除。</p>
+                     
+                     <p>可以直接选择面，或者通过选择创建、修改或集合这些体的特征来选择面。</p>
+                     
+                 </div>
+               </div>
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p><strong>筋板顶面边</strong></p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <p>与<strong>面的外边</strong>功能相同，但多了边移除功能。这样可简化筋板或类似筋板的结构的制图或混合。在此规则下，只会为选定面收集相同凸度的周长边。</p>
+                     <a name="genid_etmd885_9" id="genid_etmd885_9"></a><div class="figureContainer">
+                        <table align="center">
+                           <tr>
+                              <td>
+                                 <div class="figure">
+                                    <div><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/edge_blend/DES11056_eg_rib_top_edgeblend.png" border="0"></div>
+                                 </div>
+                              </td>
+                           </tr>
+                        </table>
+                        <h4>应用于类似筋板的结构顶面的外边的边倒圆</h4>
+                     </div>
+                     
+                  </div>
+               </div>
+            </div>
+            
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>为何使用？</h3>
+            
+            <p>如果希望选择选定面的所有周长边，并且希望能够通过选择创建这些周长边的特征或包含这些周长边的组来选择这些周长边，请使用<strong>面的外边</strong>。</p>
+            <p>如果要将<strong>拔模</strong>或<strong>边倒圆</strong>应用到筋板或类似筋板的结构，请使用<strong>筋板顶面边</strong>。         </p>
+         </div>
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                    <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">建模、外观造型设计以及 NX 钣金</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                    <p class="no-bottom-margin">先决条件</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p>仅适用于<strong>边倒圆</strong>和<strong>拔模</strong>命令。</p>
+                     <p>(对于<strong>拔模</strong>命令，必须将<strong>类型</strong>设为<strong>从边</strong>。)</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                    <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>选择条</strong>→<strong>选择意图</strong>下拉菜单</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                    <p class="no-bottom-margin">对话框中的位置</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p><strong>边倒圆</strong>对话框→<strong>要倒圆的边</strong>组→<strong>选择边</strong></p>
+                     <p><strong>拔模</strong>对话框→<strong>固定边</strong>组→<strong>选择边</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

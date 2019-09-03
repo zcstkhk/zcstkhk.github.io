@@ -1,0 +1,55 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>响应仿真的解算方案属性</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>响应仿真的解算方案属性</h2>
+         <a name="ndxgenid_spta_response_25"></a>
+         
+         <a name="ndxgenid_spta_response_26"></a>
+         
+         
+        <p>对于响应仿真，一些关键的 NX Nastran 解算方案属性包括：</p>
+        <ul>
+          <li>
+            <p><strong>输出请求</strong> &mdash; 指定要求解的结果类型，比如位移、应力、加速度等等</p>
+          </li>
+          <li>
+            <p><strong>实数特征值和数据抽取</strong> &mdash; 识别求解类型：Lanczos 或者 Householder</p>
+          </li>
+          <li>
+            <p><strong>Lanczos 方法</strong>或 <strong>Householder 方法</strong> &mdash; 指定解算方案的特征值抽取选项，特征值抽取选项将储存为特定于求解器的对象</p>
+            <p>该选项包含频率范围下限和上限，以及想要的模态数量。</p>
+          </li>
+          <li>
+            <p><strong>频率范围</strong> &mdash; 限制求解器根据各个模态频率计算的模态。例如，如果将范围指定为从1 Hz 到1000 Hz，那么求解器将仅返回频率在这一范围内的模态，如果不需要按频率范围限制模态计算，可以保持这个范围值空白。</p>
+          </li>
+          <li>
+            <p><strong>想要的模态数</strong> &mdash; 位于 EIGRL(如果使用 Householder 类型，则为 EIGR)体积数据输入项的 ND 字段中，这个值是您想让求解器返回的模态数量</p>
+          </li>
+        </ul>
+        <p>可以在解算方案的<strong>动态</strong>子工况中定义这些选项。</p>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/solutions/response_simulation/edit_solution_step_response.png"></p>
+         
+         
+         <p>当然，如果选择了 Lanczos 求解，可以求解自由—自由体的模态，要避免计算刚体模态，可将<strong>刚体模态小于</strong>选项(位于<strong>编辑解算方案</strong>对话框中)中的频率范围设为大于1 Hz。</p>
+         <p>要获取更多信息，参见高级仿真在线帮助中的<em>求解器和解算方案→设置 Nastran 解算方案选项</em>。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

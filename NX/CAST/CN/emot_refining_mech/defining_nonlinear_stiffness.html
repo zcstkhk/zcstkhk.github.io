@@ -1,0 +1,74 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>非线性刚度与阻尼</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>非线性刚度与阻尼</h2>
+         
+         <p>您可以在弹簧、阻尼器以及衬套中构建非线性刚度与阻尼。</p>
+         
+         <p>要定义刚度与/或阻尼，使用刚度与阻尼表格函数，它将生成样条曲线。</p>
+         
+         <p>软件将对函数进行插值，以确定任意位移或速度处的力或扭矩都位于您提供的表的范围内。</p>
+         <a name="genid_emot_refining_mech_44" id="genid_emot_refining_mech_44"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/refining/stiffness_damping_function.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>刚度与阻尼函数图表</h4>
+         </div>
+         
+         
+         <ul>
+            
+            <li>
+               
+               <p>非线性刚度通过力与位移的函数来表示(对于平移对象)，或者扭矩与角度的函数(对于旋转对象)。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>非线性阻尼力与速度的函数来表示(对于平移对象)，或者扭矩与角速度的函数(对于旋转对象)。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>样条曲线在所有点上的斜率都必须是正值。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>负的位移值表示压缩。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>定义运动对象时，选择<strong>样条</strong>作为刚度系数类型，这将会打开 <strong>XY 函数编辑器</strong>，在该编辑器中您可以创建刚度与阻尼表格函数，横坐标数据类型可以是位移、速度、角速度或者角位移，纵坐标数据类型可以是力或扭矩。</p>
+         
+         <p>然后您输入表格值来定义力或扭矩的范围。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

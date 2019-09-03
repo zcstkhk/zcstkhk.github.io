@@ -1,0 +1,98 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>修复路径方法</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>修复路径方法</h2>
+         
+         <p>您使用的修复路径方法将在选定的对象之间查找最短路径，在<strong>设置</strong>组中，<strong>方法</strong>列表列出了在修复路径中构建每个单独线段的八个可能的选项：<strong>直接</strong>、<strong>交点</strong>以及六种 WCS 轴方法。</p>
+         
+         <div class="defList"><a name="ndxgenid_ertc_9"></a>
+            <a name="ndxgenid_ertc_10"></a>
+            
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p>直接</p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>使用一条直线线段连接两个对象。</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/commands/heal_path/healpath_heal1_220.png"></p>
+                  
+               </div>
+            </div><a name="ndxgenid_ertc_11"></a>
+            <a name="ndxgenid_ertc_12"></a>
+            
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p>交点</p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>如果起点矢量与终点矢量共面，则将延伸线段以连接它们的投影交点。</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/commands/heal_path/healpath_heal1_260.png"></p>
+                  
+                  <p>如果起点矢量与终点矢量不共面，则将使用一条垂直线段来连接它们的投影交点。</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/commands/heal_path/healpath_heal1_230.png"></p>
+                  
+               </div>
+            </div><a name="ndxgenid_ertc_13"></a>
+            <a name="ndxgenid_ertc_14"></a>
+            
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p>轴方法</p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>六个轴方法让您指定路径中各段的方向，管线中的各段的方向都将平行于 WCS 的基准轴。</p>
+                  <a name="genid_ertc_15" id="genid_ertc_15"></a><div class="figureContainer">
+                     <table align="center">
+                        <tr>
+                           <td>
+                              <div class="figure">
+                                 <div><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/commands/heal_path/healpath_heal1_240.png" border="0"></div>
+                              </div>
+                           </td>
+                        </tr>
+                     </table>
+                     <h4>ZC XC YC 方法</h4>
+                  </div>
+                  <a name="genid_ertc_16" id="genid_ertc_16"></a><div class="figureContainer">
+                     <table align="center">
+                        <tr>
+                           <td>
+                              <div class="figure">
+                                 <div><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/commands/heal_path/healpath_heal1_280.png" border="0"></div>
+                              </div>
+                           </td>
+                        </tr>
+                     </table>
+                     <h4>YC XC ZC 方法</h4>
+                  </div>
+                  
+                  <p>在这两个示例中，路径的起点位于上方的组件中，终点在下方的泵截止阀中，并且都有一段延伸段。</p>
+                  
+               </div>
+            </div>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>使用拔模的拉伸</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>使用拔模的拉伸</h2>
+         
+         <p>您可以将拔模或斜度添加到拉伸特征的一侧或多侧。</p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>只能将拔模添加到基于平截面的拉伸特征。 </p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <p><strong>拔模</strong>类型：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>从起始限制</strong> — 创建从拉伸起始限制开始的拔模。将在起始限制位置维持拉伸截面的初始大小。</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/extrude/draft_from_start.png"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>从截面</strong> — 创建从拉伸截面开始的拔模，将在截面平面位置维持拉伸截面的初始大小。</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/extrude/draft_from_section.png"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>从截面 — 不对称角</strong> — 在从截面的两侧延伸拉伸特征时可用。将创建一个从拉伸截面开始、在该截面的前后两侧反向倾斜的拔模。</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/extrude/draft_asymmetric.png"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>从截面 — 对称角</strong> — 在从截面的两侧延伸拉伸特征时可用。将创建一个从拉伸截面开始、在该截面的前后两侧以相同角度反向倾斜的拔模。</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/extrude/draft_symmetric.png"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>从截面匹配的终止处</strong> — 在从截面的两侧延伸拉伸特征时可用。创建一个从拉伸截面开始、在该截面的前后两侧反向倾斜的拔模。终止限制处的形状与起始限制处的形状相匹配，并且终止限制处的拔模角将更改，以保持形状的匹配。</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/extrude/draft_matched_ends.png"></p>
+               
+            </li>
+            
+         </ul>
+         
+         <p><strong>角度</strong>选项：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>单个</strong> — 为拉伸特征的所有面添加单个拔模角。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>多个</strong> — 向拉伸特征的每个面相切链指定唯一的拔模角。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

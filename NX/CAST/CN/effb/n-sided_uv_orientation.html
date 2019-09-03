@@ -1,0 +1,122 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>N 边曲面的 UV 方位</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>N 边曲面的 UV 方位</h2>
+         
+         <p> <strong>UV 方位</strong>控制只有在创建<strong>已修剪</strong>的 N 边曲面时才可用。</p>
+         
+         
+         <p>有三种方法可以使用：</p>
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>脊线</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>这种方法是用选择的脊线来定义新曲面的 V 方位。</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>新曲面的 U   向等参数线朝向垂直于选定脊线的方向。 </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>矢量</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>使用指定的矢量来定义新曲面的   V 方位。</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p> 新 N 边曲面的 UV 方位跟随给定的矢量方向。</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>面积</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>这个方法使用两个对角点来为 WCS 平面上的新曲面定义一个矩形 UV 方位。</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>如果您不指定矩形，NX 将使用所选的<strong>外部环</strong>自动进行计算。</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p> 如果选用<strong>修剪边界</strong>复选框，所有的选择的外部环面将被用于相切约束。</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+            </div>
+         </div>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>这些 <strong>UV方位</strong> 方法是可选的，如果不使用这些方法，NX 将会自动选择方位。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

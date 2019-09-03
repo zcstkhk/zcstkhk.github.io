@@ -1,0 +1,9 @@
+{identifier:"id",label:"title",items:[
+{id:"d12e2",title:"打开部件并开始分析可成形性",file:"id1111158.html",type:"topic",parent:""},
+{id:"d12e3",title:"选择展开区域",file:"id1111160.html",type:"topic",parent:""},
+{id:"d12e4",title:"设置边界约束",file:"id1111162.html",type:"topic",parent:""},
+{id:"d12e5",title:"设置材料属性",file:"id1111164.html",type:"topic",parent:""},
+{id:"d12e6",title:"指定脱模方向和厚度",file:"id1111166.html",type:"topic",parent:""},
+{id:"d12e7",title:"创建网格",file:"id1111168.html",type:"topic",parent:""},
+{id:"d12e8",title:"查看不同的展开结果",file:"id1111922.html",type:"topic",parent:""},
+{id:"d12e9",title:"生成一步式可成形性分析报告",file:"id1112917.html",type:"topic",parent:""}]}

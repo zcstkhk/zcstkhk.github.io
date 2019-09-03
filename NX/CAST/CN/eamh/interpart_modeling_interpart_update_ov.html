@@ -1,0 +1,123 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>部件间更新</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>部件间更新</h2><a name="ndxgenid_eamh_34"></a>
+         
+         
+         <p>使用<strong>部件间更新</strong>命令可以帮助您控制模型中的部件间关系是否为最新。部件间关系包括链接几何体、装配约束、部件间表达式和关联度量。<strong>部件间更新</strong>菜单包括：</p>
+         <ul>
+           <li>
+             <p>允许您输入模式(在此模式中您可以延迟更新部件间关系直到所选时间)的命令。准备好退出此模式时，请再次选择此命令以将其停用。</p>
+           </li>
+           <li>
+             <p>允许您更新部件间关系而无须退出延迟模式的命令。</p>
+           </li>
+           <li>
+             <p>允许您输入模式(为了确保该部件间关系为最新，在此模式中可根据需要从当前加载的部件中自动加载数据)的命令。这将有助于保持部件间关系为最新，而不需要停用部分加载或完全加载组件。</p>
+           </li>
+         </ul>
+         <p><strong>部件间更新</strong>命令如下：</p>
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>延迟装配约束</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>延迟受模型更改影响的装配约束的更新。要停用此命令，请再次选择它。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>更新装配约束</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>更新 NX 会话中所有过时的约束。此命令不会停用<strong>延迟装配约束</strong>命令。如果进行影响约束的其他更改，这些约束将再次变为过时状态。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>延迟几何体、表达式和 PMI</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>延迟更新受模型更改影响的部件间几何体、部件间表达式和 WAVE 链接 PMI。要停用此命令，请再次选择它。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>更新几何体、表达式和 PMI</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>更新 NX 会话中所有过时的部件间几何体、部件间表达式和 WAVE 链接 PMI。此命令不会停用<strong>延迟几何体和表达式</strong>命令。如果再进行影响部件间几何体和表达式的其他更改，它们将再次变为过时状态。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>全部更新</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>更新所有过时的约束、部件间几何体和部件间表达式。此命令不会停用<strong>延迟装配约束</strong>和<strong>延迟几何体和表达式</strong>命令。如果进行其他更改，则受影响的约束、部件间几何体和部件间表达式将过时。</p>
+                  
+               </div>
+            </div>
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                  <p><strong>工具</strong>→<strong>更新</strong>→<strong>部件间更新</strong></p></td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

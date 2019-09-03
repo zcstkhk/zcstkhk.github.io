@@ -1,0 +1,149 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>坐标原点</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>坐标原点</h2>
+         <p>所有坐标尺寸都是从称为坐标原点的公共点测量的。除非您为基线指定一个方向，否则将从与图纸底边平行的线开始测量竖直尺寸。水平尺寸从与图纸侧边平行的一条直线开始测量(见下图)。当为基线指定方向时，测量的尺寸从坐标原点开始离基线一定距离并垂直于基线。</p>
+         <table border="1" cellpadding="6" frame="below" rules="groups" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="408*">
+               
+            </colgroup>
+            
+            <thead>
+               
+               <tr bgcolor="" valign="top">
+                  
+                  <th colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">同时具有水平和竖直坐标尺寸的坐标原点</p>
+                     
+                  </th>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td align="left" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/ordinate/62ordimcdr24.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td align="left" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/ordinate/one.gif" border="0"> &mdash; 带竖直延伸线的水平坐标尺寸</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td align="left" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/ordinate/two.gif" border="0"> &mdash; 坐标原点</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td align="left" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/ordinate/three.gif" border="0"> &mdash; 带水平延伸线的竖直坐标尺寸</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <p>可以在以下任意符号处创建坐标原点：</p>
+         <ul>
+           <li>
+             <p>中心标记符号</p>
+           </li>
+           <li>
+             <p>2D 和 3D 中心线</p>
+           </li>
+           <li>
+             <p>螺栓圆（控制点）</p>
+           </li>
+           <li>
+             <p>偏置中心点</p>
+           </li>
+           <li>
+             <p>交点符号</p>
+           </li>
+         </ul><a name="point_constructor_ordinate_origin" id="point_constructor_ordinate_origin"></a><div class="division">
+            
+            <h3>捕捉点</h3>
+            
+            <p>在为坐标原点定义点时，可使用选择条上的捕捉点选项。要指定视图之外的点或从视图上的点偏置的点，请使用<strong>点构造器</strong>。</p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>坐标原点关联性</h3>
+            
+            <p>坐标原点与部件几何体关联。如果与坐标原点关联的几何体移动了，坐标原点也会移动。例如，如果一个圆弧中心被指定为坐标原点，并且后来移动了这个圆弧，则坐标原点随着圆弧一起移动，且所有与坐标原点关联的尺寸都将进行更新。 </p>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">注释</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>当删除关联的部件几何体时，坐标原点不会被删除。这些点将恢复到保留的状态，不考虑所设置的<strong>保留的注释</strong>选项。</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+            <p>可随时通过右键单击坐标集名称或原点符号并选择<strong>编辑关联性</strong>来重新关联坐标原点。如果选择其他点，原点将移至该点，坐标尺寸集中的所有尺寸都将更新以反映更改。</p>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">注释</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>坐标原点不应与基准平面或形位公差基准标记相混淆。</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

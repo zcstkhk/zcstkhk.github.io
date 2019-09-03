@@ -1,0 +1,82 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>约束连杆运动</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>约束连杆运动</h2>
+         
+         <p>您使用运动副来约束连杆的运动。<a name="ndxgenid_emot_links_constraints_51"></a>
+            
+         </p>
+         
+         <p>在一个机构中，自由度描述的是一个连杆关于其它连杆可以如何运动。机构的自由度总数描述的是机构可能的独立运动的数目。</p>
+         
+         <p>如果不受任何约束，机构中的连杆在空间上可以有六个自由度的运动：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>三个平移自由度(X、Y 以及 Z) </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>三个旋转自由度(绕 X、Y 以及 Z 轴) </p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>运动副将约束一个或多个自由度，而允许在剩余自由度上的运动。</p>
+         <a name="genid_emot_links_constraints_52" id="genid_emot_links_constraints_52"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div>
+                           <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;"><script type="dojo/method">
+      flashData= {
+          swfSrc : '../graphics/graphicLibrary/nx_dss/motion/links_constraints/universal_joint_anim.swf',
+          graphSrc : '../graphics/graphicLibrary/nx_dss/motion/links_constraints/universal_joint_anim.gif',
+          align : 'center',
+          base : '.',
+          height : '200',
+          width : '400',
+          bgcolor : '#FFFFFF',
+          flashVersion : '7',         
+          looping : 'false',
+          play : 'false',
+          menu : 'true',
+          parameters : ''
+      }
+      top.loadFlash(this,flashData);
+    </script></div>
+                        </div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>约束连杆运动的运动副</h4>
+         </div>
+         
+         
+         <p>可以使用多种运动副，某些运动副对应实际中的真实运动副，比如旋转副、万向节以及球面副，其它的则可以对特定的自由度进行控制，但是没有真实的对象与之对应。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

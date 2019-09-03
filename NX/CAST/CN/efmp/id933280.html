@@ -1,0 +1,189 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>创建孔</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>创建孔</h2>
+         
+         
+         <p>您将创建一个圆柱，并将它与实体模型求差以创建孔。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在<strong>知识融合导航器</strong>中，右击 <strong>root</strong> 并选择<strong>添加子规则</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>名称</strong>输入框中键入<strong>孔1</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>名称过滤器</strong>输入框中键入 <strong>hole</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>类</strong>列表框中选择 <strong>nx_hole</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>输入参数</strong>列表框中选择 <strong>depth (Number)</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在<strong>参数规则</strong>输入框中键入<strong>25</strong>并点击<strong>应用输入</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/common/apply_typing.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>在<strong>输入参数</strong>列表框中选择 <strong>diameter (Number)</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>在<strong>参数规则</strong>输入框中键入<strong>15</strong>并点击<strong>应用输入</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/common/apply_typing.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>在<strong>输入参数</strong>列表框中选择 <strong>Placement_Face (Any)</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>在<strong>参数规则</strong>输入框中，删除 <strong>nx_null()</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>右击<strong>知识融合导航器</strong>背景并选择<strong>按选择引用</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_12">
+               <div class="stepAction">
+                  
+                  <p>在选择条上的<strong>类型过滤器</strong>列表中，选择<strong>面</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_13">
+               <div class="stepAction">
+                  
+                  <p>在图形窗口中选择实体的顶面。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_14">
+               <div class="stepAction">
+                  
+                  <p>单击鼠标中键。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>将把面的引用 ID 添加到<strong>参数规则</strong>输入框中：<br/><br/>
+                     <span class="codeText">{ug_refObject(&quot;面:C-14-4&quot;,&quot;&quot;)};</span></p>
+                     
+                     <table class="attentionTable attn_tip">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">提示</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>这里的引用 ID 可能会与您部件中的不同。</p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_15">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>应用输入</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/common/apply_typing.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>注意到参数 <strong>Hole_Location</strong> 为 <strong>Point(0,0,0);</strong>。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_16">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/knowledge_fusion/activities/create_simple_kf_8.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

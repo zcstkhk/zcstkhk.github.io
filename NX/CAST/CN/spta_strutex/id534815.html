@@ -1,0 +1,194 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>使用字段定义单元厚度</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>使用字段定义单元厚度</h2>
+         <p>在前面的步骤中，您使用中面定义单元厚度，然后修改了选定单元的拐角厚度，另外一种定义单元厚度的方法是使用空间字段来改变单元厚度。</p>
+         <p>在这个练习中，初始的 FEM 文件中包含两个网格，2d_mesh(1)和2d_mesh(2)，即已用于复制和平移以创建2d_mesh(1)_translated(1)以及2d_mesh(2)_translated(1)的那些网格。</p>
+         <p>您将使用空间字段来定义复制单元的厚度，首先，将基于中面的厚度转化为字段。</p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/simulation_navigator_tab.gif" border="0"> <strong>仿真导航器</strong></p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0">&nbsp;<strong>2d_mesh(1)</strong></p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb3.gif" border="0">&nbsp;<strong>厚度信息</strong></p>
+               
+            </li>
+            <li>
+               
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="45">
+                     
+                     <col span="1" width="*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="banner_left" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td class="banner_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>创建厚度字段</strong></p>
+                           
+                        </td>
+                        
+                        <td class="banner_right" colspan="1" rowspan="1" width="45">
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/table_constructor.gif" border="0">&nbsp;<strong>创建字段</strong>
+               <p>状态栏显示已经成功创建字段。</p>
+            </li>
+            <li>译者注：NX 8.5英文版中<strong>字段</strong>与<strong>场</strong>的原文都是 <strong>field</strong>，此处将其统一译为<strong>字段</strong>，所以在软件中出现<strong>场</strong>时，也写作<strong>字段</strong>，下同，不再提示。</li>
+            <li>
+               
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>取消</strong></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+         </ul>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/simulation_navigator_tab.gif" border="0"> <strong>仿真导航器</strong></p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/node_collapsed.gif" border="0">&nbsp;<strong>字段</strong>(展开)</p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0">&nbsp;<strong>Thickness 2d_mesh(1) field</strong></p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb3.gif" border="0">&nbsp;<strong>重命名</strong></p>
+               
+            </li>
+            <li>
+              <table cellspacing="0" class="input_field" width="300">
+                  
+                 <colgroup span="1">
+                     
+                     <col span="1" width="90">
+                     
+                     <col span="1" width="190*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"></p>
+                           
+                        </td>
+                        
+                        <td class="border1b" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">ribs</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>使用上述步骤为2d_mesh(2)创建厚度字段，并将其重命名为 <span class="userInput">strutcase</span>。
+            </li>
+            <li>
+               
+               <p>现在您已经有两个厚度字段，它们是原始单一厚度信息的副本。</p>
+               
+            </li>
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

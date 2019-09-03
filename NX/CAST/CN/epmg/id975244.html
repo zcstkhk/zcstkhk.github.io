@@ -1,0 +1,211 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>创建新工序并生成刀轨</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>创建新工序并生成刀轨</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>插入</strong>工具条中的<strong>创建工序</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/manufacturing/manufacturing_create/create_operation.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>将打开<strong>创建工序</strong>对话框。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>工序子类型</strong>组中，点击 <strong>深度加工轮廓</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/zlevel_profile.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>位置</strong>组中，指定如下参数：</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <table bgcolor="white" border="0" cellpadding="2" cellspacing="1" class="option_list" frame="box" rules="none" width="220" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" width="90">
+                           
+                           <col span="1" width="190*">
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#d3d3d3" class="label1" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">程序</p>
+                                 
+                              </td>
+                              
+                              <td class="border1" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">1234</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#d3d3d3" class="label1" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">刀具</p>
+                                 
+                              </td>
+                              
+                              <td class="border1" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">BALL_MILL</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#d3d3d3" class="label1" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">几何体</p>
+                                 
+                              </td>
+                              
+                              <td class="border1" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">MILL_AREA</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#d3d3d3" class="label1" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">方法</p>
+                                 
+                              </td>
+                              
+                              <td class="border1" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">MILL_ROUGH</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>以创建工序。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>将打开<strong>深度加工轮廓</strong>对话框。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>刀轨设置</strong>组中的<strong>切削参数</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/cutting_parameters.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>将打开<strong>切削参数</strong>对话框。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>连接</strong>选项卡。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>在<strong>层到层</strong>列表中，选择<strong>沿部件斜进刀</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p><strong>沿部件斜进刀</strong>选项将跟随部件，从一个切削层到下一个切削层，斜削角度为&ldquo;进刀和退刀&rdquo;参数中指定的斜坡角。这种切削具有更恒定的切削深度和残余高度，并且能在部件顶部和底部生成完整刀路。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>将打开<strong>深度加工轮廓</strong>对话框。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>操作</strong>组中 的<strong>生成</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/generate.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

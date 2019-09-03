@@ -1,0 +1,124 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>坐标边距</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>坐标边距</h2>
+         <p>NX 可将坐标尺寸与边距对齐。定义边距是一个可选步骤。如果不定义边距，则 NX 在放置的第一个坐标尺寸周围自动判断边距。您定义的边距是可见。系统自动判断的边距则是不可见的。</p>
+         <table border="1" cellpadding="6" frame="void" rules="groups" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="408*">
+               
+           </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td align="center" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/ordinate/drf_margins_1.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <th align="left" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/ordinate/one.gif" border="0"> 活动的边距</p>
+                     
+                  </th>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <th align="left" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/ordinate/two.gif" border="0"> 不活动的边距</p>
+                     
+                  </th>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td align="left" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">实线表示活动的边距。点线表示不活动的边距。坐标尺寸捕捉到活动边距上的位置。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+        </table>
+         <p>在一个坐标集中可以有多个水平和竖直边距。每个坐标集的水平和竖直边距限制是 32。如果您选择两个共线边距，它们将计为一个边距。如果创建了多个竖直边距（或多个水平边距），则最后创建的将成为活动的边距。 </p>
+         <p>NX 使用活动的边距来放置下一个尺寸。通过双击另一边距，或通过右键单击它并选择<strong>设为活动的</strong>，可使另一边距变为活动的。通过右键单击某边距偏置并选择<strong>移动</strong>，还可对其进行重定义。</p>
+         <p>尺寸总是放在边距线远离视图中心的那一侧。</p>
+         <p>您可以使用&ldquo;边距&rdquo;方法选项或&ldquo;捕捉点&rdquo;选项来创建这些边距。</p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                 <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>坐标尺寸关联到它们在其上放置的边距。如果移动边距，尺寸也随之移动。如果删除边距，则系统将为尺寸自动判断一个边距。</p>
+                  
+               </td>
+           </tr>
+        </table>
+        <div class="division">
+            
+          <h3>位于何处？</h3>
+            
+           <p>在<strong>坐标尺寸</strong>对话条中，单击<strong>定义边距</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/drafting/define_margins.gif" border="0">.
+           </p>
+            
+         </div><a name="margin_origin" id="margin_origin"></a><div class="division">
+            
+           <h3>边距原点</h3>
+            
+            <p>通过将点指定为边距原点来定义边距。当<strong>定义边距</strong>打开时，边距原点显示为一个实心的圆。</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/ordinate/drf_margin_origin.gif"></p>
+            
+            <p>在显示边距原点时：</p>
+            <ul>
+              <li>
+                <p>当光标放在边距原点上面时，通过该边距原点定义的边距会高亮显示。</p>
+                <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/ordinate/drf_margin_origin1.gif"></p>
+                  这可帮助您找到通过某个特定边距原点定义的边距，因为您可以在一个坐标集中有多个边距原点。 </li>
+            </ul>
+           <ul>
+              <li>
+                <p>可见的边距原点还让用户可以使用&ldquo;重新定义&rdquo;和&ldquo;删除&rdquo;快捷选项。</p>
+              </li>
+              <li>
+                <p>当移动边距时，&ldquo;偏置&rdquo;是从边距原点的位置计算的。</p>
+              </li>
+           </ul>
+            
+         </div>
+         <div id="footer"></div>
+   </div>
+   </body>
+</html>

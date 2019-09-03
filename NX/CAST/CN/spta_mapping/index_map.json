@@ -1,0 +1,24 @@
+{identifier:"id",label:"title",items:[
+
+
+{id:"d5e3",title:"映射热和流结果",file:"id1356855.html",type:"topic",parent:""},
+
+
+{id:"d5e5",title:"Mapping overview",file:"id798996.html",type:"topic",parent:""},
+
+{id:"d5e7",title:"Set up a mapping solution",file:"id1375645.html",type:"topic",parent:""},
+
+{id:"d5e9",title:"映射 I 形梁结构分析中的热分布",file:"id809941.html",type:"activity",parent:""},
+
+{id:"d5e11",title:"Mapping zones in the source model",file:"id798371.html",type:"topic",parent:""},
+
+{id:"d5e14",title:"Zone association in target model",file:"id798391.html",type:"topic",parent:""},
+
+
+
+{id:"d5e16",title:"Video: Zones and target sets for mapping solutions",file:"id1376573.html",type:"topic",parent:""},
+
+{id:"d5e18",title:"Optional output formats",file:"id1375757.html",type:"topic",parent:""},
+
+{id:"d5e20",title:"Mapping review questions",file:"id1356861.html",type:"topic",parent:""}
+]}

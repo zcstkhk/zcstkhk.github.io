@@ -1,0 +1,114 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>层合板的坐标系</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>层合板的坐标系</h2>
+         
+         <p>以下图形显示了具有三个层片的层合板的层合板坐标系，以及顶部层片的层片坐标系。</p>
+         <ul>
+           <li>
+             <p>X 和 Y 轴与材料方向坐标系相对应，也称为层合板坐标系。</p>
+           </li>
+           <li>
+             <p>Z 轴垂直于该层合板。</p>
+           </li>
+           <li>
+             <p>1 和 2 轴与层片坐标系相对应。</p>
+           </li>
+         </ul>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_physical_property/laminate_definition.gif"></p>
+         <a name="genid_element_material_and_ply_orientation_22_708" id="genid_element_material_and_ply_orientation_22_708"></a>
+         
+         
+         
+         <h2>单元、材料和层片方向</h2>
+         
+         
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>单元坐标系</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>通过其节点位置以及对节点进行标签的顺序定义。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>材料坐标系</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>独立于网格，用于定向各向异性或正交各向异性属性，例如层状复合材料的属性。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>层片坐标系</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>它的轴 1 与层片的纤维方向对齐。</p>
+                  
+               </div>
+            </div>
+         </div>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <ul>
+                     
+                    <li>根据求解器的不同，材料方向将在网格级别或网格收集器级别定义。 </li>
+                     <li>
+                       <p>在基于层片的过程中，可以在层状复合材料皱褶期间选择计算材料方向。</p>
+                     </li>
+                     
+                  </ul>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         
+         <a name="genid_spta_lamfund_14" id="genid_spta_lamfund_14"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_physical_property/matl_csys.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>(1)单元坐标系；(2)材料坐标系(箭头是 X 轴)</h4>
+         </div>
+         
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

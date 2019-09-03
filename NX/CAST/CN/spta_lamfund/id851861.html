@@ -1,0 +1,101 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Ply groups</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Ply groups</h2>
+         
+         <p>You can create logically linked ply groups in order to efficiently create and subsequently modify complex layups.</p>
+         
+         <p>A group can be a child, a parent, or both. A newly created group is automatically a parent until the children are unlinked or it is deleted.</p>
+         
+         <p>Child groups are linked to parent groups as follows:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>The child group plies cannot be directly deleted or modified.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>When parent group plies are deleted or modified, the same changes are applied to the child group plies. </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>A ply cannot be added to a child group.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>When a ply is added to a parent group, it is automatically added to the child groups according to the link rules. </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>If a child is both a parent and a child, it cannot be directly modified, any modification must be done to its parent. </p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p>Groups may not be nested.</p>
+         
+         <p>To modify the contents of a child group without modifying the parent group, use the <strong>Unlink</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/laminates/lam_unlink_ply_group.gif" border="0"> command to disconnect it from the parent group.
+         </p>
+         <a name="genid_spta_lamfund_44" id="genid_spta_lamfund_44"></a><table border="0" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_physical_property/ply_groups_sketcher.gif"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/laminates/lam_physical_property/ply_groups.gif"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

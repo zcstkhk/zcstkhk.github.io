@@ -1,0 +1,60 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>3D 四面体网格质量</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>3D 四面体网格质量</h2>
+         <a name="ndxgenid_spta_3dmesh_8"></a>
+         
+         <a name="ndxgenid_spta_3dmesh_9"></a>
+         
+         <a name="ndxgenid_spta_3dmesh_10"></a>
+         
+         
+         <p>如果使用<strong>3D 四面体网格</strong>在模型中生成实体网格，软件将自动对生成的单元的质量进行评估。</p>
+         
+         <p>这些质量检查将测量以下内容，例如：</p>
+         <ul>
+           <li>
+             <p>单元与理想大小和形状的偏差的各个方面，例如宽高比。</p>
+           </li>
+           <li>
+             <p>雅可比行列式。</p>
+           </li>
+           <li>
+             <p>是否有任何四面体单元塌陷。</p>
+           </li>
+         </ul>
+         <p>如果软件检测到导致质量检查失败的任何单元，则在图形窗口中高亮显示其位置。</p>
+         
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>对于除雅可比检查以外的所有质量检查，软件将使用在<strong>阈值</strong>对话框中指定的相应的质量阈值。对于<strong>雅可比</strong>检查，在 <strong>3D 四面体网格</strong>对话框中指定的<strong>最大雅可比</strong>值将替代在<strong>阈值</strong>对话框中指定的雅可比值。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <p>如果在生成网格时对网格质量进行评估，您就有可能在尝试对模型求解之前自动或手工更正质量问题。</p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

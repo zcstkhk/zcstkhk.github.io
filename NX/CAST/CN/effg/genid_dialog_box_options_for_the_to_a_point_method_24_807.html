@@ -1,0 +1,45 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>用于目标点方法的对话框选项</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>用于目标点方法的对话框选项</h2>
+         <p><strong>目标点</strong>将使用指定点的最大高度加冠选中的面或片体。区域边界必须封闭。您可以选择多个点。</p>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/global_shaping/gs_to_pt.png"></p>
+         <p>对话框的<strong>目标点</strong>组允许您指定最大变形的点。</p>
+         <p>有两种方法可用：<strong>在点处偏置</strong>以及<strong>通过点</strong>。</p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><strong>在点处偏置</strong> — 在向面上投影时从所选择的（或计算的）测点处测量指定的距离值作为变形面的最终位置</p>
+               
+            </li>
+            <li>
+               
+               <p><strong>通过点</strong> — 将创建最大偏置以通过选定点</p>
+               
+            </li>
+         </ul>
+         <div class="verbose">
+           <p>对于椭圆或矩形，默认为中心点，对于其它的封闭曲线，默认为曲线边界框的中心点。</p>
+         </div>
+         <div class="verbose">
+            <p>如果需要，可以使用点方法列表或<strong>点构造器</strong>来指定点。</p>
+         </div>
+         <p><strong>区域边界</strong>将选择封闭边界曲线作为要修改的区域，在此曲线外，变形为零。</p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

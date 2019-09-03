@@ -1,0 +1,63 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Defining coupled degrees of freedom</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Defining coupled degrees of freedom</h2>
+         <a name="ndxgenid_spta_symmetry_19"></a>
+         
+         <a name="ndxgenid_spta_symmetry_20"></a>
+         
+         
+         <p>With <span class="uiTerm">Automatic Coupling</span>: 
+         </p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>The software pairs the nodes on the independent side of the model with nodes on the dependent side of the model.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The software searches for nodes based on the translation from a designated independent node to a designated dependent node using the search tolerance.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Optionally, the software modifies the displacement coordinate system of all the nodes that participate in the coupling to use the designated coordinate system.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>You specify the directions and rotations in which the software couples the nodes.</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>For a given node pair, the degrees of freedom of the first node becomes the independent and the second becomes the dependent.</p>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/boundary_conditions/constraints/simulation_sim_models_coupled_dof.gif"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

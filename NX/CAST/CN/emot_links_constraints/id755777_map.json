@@ -1,0 +1,11 @@
+{identifier:"id",label:"title",items:[
+{id:"d18e2",title:"打开部件",file:"mixer_open_the_part.html",type:"topic",parent:""},
+{id:"d18e3",title:"重置对话框内存",file:"id353012_dup11.html",type:"topic",parent:""},
+{id:"d18e4",title:"孤立机构",file:"isolate_the_mechanism_cable.html",type:"topic",parent:""},
+{id:"d18e5",title:"创建第一个滑动副",file:"create_first_slider_joint.html",type:"topic",parent:""},
+{id:"d18e6",title:"创建第二个滑动副",file:"create_second_slider_joint_dup1.html",type:"topic",parent:""},
+{id:"d18e7",title:"创建线缆副",file:"create_cable_coupler.html",type:"topic",parent:""},
+{id:"d18e8",title:"创建蜗轮",file:"create_worm_gear.html",type:"topic",parent:""},
+{id:"d18e9",title:"创建齿轮齿条副",file:"create_rack_pinion_couplers.html",type:"topic",parent:""},
+{id:"d18e10",title:"创建解算方案并求解",file:"create_a_solution_gear_dup1.html",type:"topic",parent:""},
+{id:"d18e11",title:"查看机构运动",file:"animate_the_mechanism_dup6.html",type:"topic",parent:""}]}

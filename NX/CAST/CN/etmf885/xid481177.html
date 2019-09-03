@@ -1,0 +1,268 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Orient the OD cutting tool</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Orient the OD cutting tool</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>Open <span class="fileName">mnf16_85_tmp_common_flip_tool_mfg_3</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/turning/flip_tool_1.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>Switch to the <span class="uiTerm">Geometry View</span> of the <span class="uiTerm">Operation Navigator</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">TURN_WORKPIECE_LT</span> node, verify and replay the operations.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/turning/flip_tool_2.png"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/turning/flip_tool_3.png" border="0"></p>
+                     
+                  </div>
+                  <div class="stepRemediation">
+                     
+                     <p>Notice the direction of the tool holder.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">TURNING_WORKPIECE_RT</span> node, verify and replay the operations.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/turning/flip_tool_5.png"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/turning/flip_tool_6.png" border="0"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>The tool holder is not oriented correctly for optimal machining based on the cut direction needed for the Right Spindle. The current tool orientation is best suited for machining on with the Left Spindle.</p>
+                     
+                     <p>In order to machine the part with in the Right Spindle, you will need to reorient the tool and flip it around to avoid collisions. </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">Cancel</span> to close the Tool Path Visualization dialog box.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>Double-click <span class="uiTerm">RGH_TURN_OD_RT</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Suppressed Geometry</span> message box, click <span class="uiTerm">Yes</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>The <span class="uiTerm">Rough Turn OD</span> dialog box is displayed.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Tool Orientation </span>group, set the following:
+                  </p>
+                  
+                  <ul class="hangingList">
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Flip Tool Around Holder</span> = <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/check_box_on.gif" border="0"></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Tracking Point</span> = <span class="uiTerm">Automatic</span></p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>If you select the <span class="uiTerm">Automatic</span> option, NX chooses tracking points depending on holder orientation. Additional tracking points are automatically created when necessary.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>Generate and verify the tool path.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/turning/flip_tool_9.png" border="0"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span> twice to complete the operation.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>Double-click <span class="uiTerm">FIN_TURN_OD_RT</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>The <span class="uiTerm">Rough Turn OD</span> dialog box is displayed.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_12">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Tool Orientation </span>group, set the following:
+                  </p>
+                  
+                  <ul class="hangingList">
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Flip Tool Around Holder</span> = <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/check_box_on.gif" border="0"></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Tracking Point</span> = <span class="uiTerm">Automatic</span></p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_13">
+               <div class="stepAction">
+                  
+                  <p>Generate and verify the tool path.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/turning/flip_tool_9.png" border="0"></p>
+                     
+                  </div>
+                  <div class="stepRemediation">
+                     
+                     <p>Notice that the tool is now in the correct orientation for the operation.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_14">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span> to complete the operation.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_15">
+               <div class="stepAction">
+                  
+                  <p>Close the part without saving it.</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

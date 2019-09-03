@@ -1,0 +1,790 @@
+/* Default stylesheet for XPS 3 */
+   
+a:link { color: #0a3c98;}
+a:visited { color: #0a3c98; }
+a:active { color: #0a3c98; }
+
+a:hover {
+	color: #0a3c98;
+}
+
+ul {
+	font-size: 10pt;
+	margin-top: 0pt; 
+	margin-bottom: 8pt;
+	margin-left: 20pt;
+	padding: 0;
+}
+
+dl {
+	font-size: 10pt;
+	margin-top: 0pt; 
+	margin-bottom: 8pt;
+	margin-left: 10pt;
+	padding: 0; }
+
+ol li {
+	font-size: 10pt;
+    margin-left: 10;
+    padding: 0; }
+    
+/* class used in the title frame */
+.bodytbar {
+	background-color: #0a3c98;
+	background-image: url('../graphics/blu_grad2.jpg');
+	background-repeat: repeat-y;
+	background-position: top right;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+}
+
+/* class defined in the body tag */
+.bodydocs {
+   margin: 0px;
+   font-family: 'Arial', 'Helvetica', sans-serif; 
+   font-weight: normal;
+   font-style: normal;
+   font-size: 16pt;
+   margin-bottom: 10px;
+   color: #000000;
+}
+
+/* default for para elements. */
+p, a, ol  {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 10pt;
+    margin-bottom: 8pt;
+    margin-top: 1pt; 
+    padding-left: 0;
+}
+
+a {
+    margin-left: 0pt;
+    margin-right: 0pt; }
+
+ol {
+  margin-left: 18pt;}
+  
+.statusTitle { 
+   color: #0a3c98;
+   text-align: center;
+   margin-top: 25pt;
+   font-size: 18pt;
+   font-style: normal;
+   font-weight: bold; }
+   
+.statusDate {
+   color: #0a3c98;
+   text-align: center;
+   margin-top: 25pt;
+   font-style: normal; }
+    
+.titlebarText {
+   color: white;
+   font-family: 'Arial', 'Helvetica', sans-serif;
+   font-size: 14pt;
+   font-weight: bold;
+   margin-top:  6pt;
+   text-align: right;
+   margin-right: 5px; }
+
+.topicSetType { 
+   color: darkblue;
+   text-align: center;
+   margin-top: 16pt;
+   font-family: 'Arial', 'Helvetica', sans-serif;
+   font-size: 16pt;
+   font-style: normal; }
+    
+ .figureTable .figure_box {
+   border: 1pt solid black;
+   margin-left: 10px;
+   padding: .1in .1in .1in .1in; }
+ 
+ .figure { 
+   margin-left: .5in;
+   margin-right: .5in;
+   padding: .1in .1in .1in .1in; }
+ 
+ table .figure, table .figure_box {
+   margin: 0;
+   padding: 0;
+   margin-top:5px;}
+	
+   
+/* classes used for the syntax element */
+
+.syntaxName {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.syntax_optional { 
+  font-weight: normal; 
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.syntax_required { 
+  font-weight: bold;
+  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.condense { 
+  font-size: 10pt;
+  margin-top: 0pt; 
+  margin-bottom: 0pt;
+  margin-left: 0;
+  padding: 0;
+}
+  
+.condense p  {
+  font-size: 10pt;
+  margin-top: 0pt; 
+  margin-bottom: 0pt;
+  margin-left: 15;
+  padding: 0;
+}
+   
+ /*  links, used with the link, linkInter, and linkURL elements */
+ .links {
+   text-decoration: underline;
+   font-size: 10pt;
+ }
+     
+/*  footnote link */
+
+  .footnote {
+     text-decoration: underline;
+     color: darkblue;
+     font-size: 8pt; 
+     cursor:pointer; }     
+     
+/*  end of document links */
+
+  .endOfDocLinks {
+     text-decoration: underline;
+     color: #0a3c98; 
+     margin-left: 10pt;
+     margin-right: 10pt; }
+
+
+/* front cover title */
+
+.title_frontCover {
+    font-weight: bold;
+    color: #0a3c98; 
+    text-align: center;
+	line-height: 28pt;
+	margin-top: 10pt; }
+
+/* Controls the titles for the <topic> (level 1), <part> elements */
+
+  .title_topic1, .title_topic2, .title_topic3, .title_topic4, .title_topic5, .title_topic6, .title_part, .title_topic_procedure, .title_topic_activity { 
+	background: #5987d6  url('../graphics/title_grad.jpg') repeat-x bottom left;
+	padding: 6pt;
+	padding-left: 10pt;
+	line-height: 16pt;
+	margin-bottom:  12pt;
+    color: white; 
+    font-style: normal; }
+    
+.title_topic1_inside,
+.title_topic2_inside, 
+.title_topic3_inside, 
+.title_topic4_inside, 
+.title_topic5_inside,
+.title_topic6_inside,
+.title_topic_procedure_inside, 
+.title_topic_activity_inside {
+	padding-top: 10pt;
+	padding-bottom: 10pt;
+	line-height: 22pt;
+	color: #0a3c98;
+	font-weight: bold;
+}
+	
+.title_topic2_inside  { font-size: 15pt; }
+.title_topic3_inside  { font-size: 14pt; }	
+.title_topic4_inside  { font-size: 13pt; }	
+.title_topic5_inside  { font-size: 12pt; }
+.title_topic6_inside  { font-size: 12pt; }
+
+
+/* controls the titles for the <division> element */
+
+  .title_division { 
+    font-weight: bold; 
+    font-size: 11pt; 
+    margin-bottom: 6pt;
+    margin-top: 14pt;
+    color: #0a3c98; }
+
+/* controls the title for the <figure> element */
+
+  .title_figure { 
+    font-weight: bold; 
+    font-size: 9pt; 
+    margin-bottom: 5pt;
+    margin-top: 5pt;
+    color: #0a3c98; 
+    text-align: center; }
+    
+ /* controls titles for the <list> and <item> elements      */
+   .title_list { 
+     font-weight: bold; 
+     font-size: 9pt; 
+     margin-bottom: 0pt;
+     margin-top: 2pt;
+     color: #0a3c98; }
+     
+ /* controls titles for the <list> and <item> elements after indent     */
+   .indent .title_list { 
+     margin-bottom: 0pt;
+	 margin-left: 0pt; }	 	
+   
+   .title_list_procedure { 
+     font-weight: bold; 
+     font-size: 9pt; 
+     margin-bottom: 0pt;
+     margin-top: 2pt;
+     color: #0a3c98; }
+     
+   .title_item { 
+     font-weight: bold; 
+     font-size: 9pt; 
+     margin-bottom: 2pt;
+     margin-top: 2pt;
+     color: #0a3c98; 
+	 margin-left: 10pt; }
+
+/* controls the list and item titles */
+.unmarkedList .title_item {
+    font-weight: bold; 
+    font-size: 9pt; 
+    margin-bottom: 2pt;
+    margin-top: 2pt;
+    color: #0a3c98; 
+    margin-left: 0pt; }
+
+  .refTopicContent { margin-left: 20pt; }    
+    
+  .refTopic .title_division { 
+      font-weight: bold; 
+      font-size: 10pt; 
+      line-height: 12pt; 
+      color: #0a3c98; 
+      text-transform: uppercase; 
+	  margin-left: 0pt; }
+ 
+ .subtitle { margin-left: 0pt; }
+    
+/* controls the list and item titles */
+
+  .title_tableWrapper { 
+    font-weight: bold; 
+    font-size: 9pt; 
+    margin-bottom: 5pt;
+    margin-top: 5pt;
+	margin-left: 10pt;
+    color: #0a3c98; }
+
+/*  controls the defObject
+  Add: "text-transform: uppercase;" to make this uppercase  */
+  
+  .defObject {
+    margin-bottom: 6pt;
+    margin-left: 2px;
+    color: #0a3c98; }
+    
+  
+/*
+  ******************************************************
+    Styles used for inline elements
+  ******************************************************    
+*/
+    
+  .variableText, .argumentName, .fileName, .pathName, .titleReference  { 
+    font-style: italic; }
+    
+  .literalText, .commandName, .userinput {
+    font-weight: bold; }
+    
+  .subscript, .superscript, .uiTerm, .applicationName, .qaAnswer, .qaQuestion { }
+    
+  .glossaryTerm { 
+	margin-left: 10pt;
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+  }
+  
+  .glossDivExit {
+     float:right;
+     margin:5px;
+   }
+   
+   .glossDivExit img {
+     border:0;
+   }
+  
+  .glossaryHeader {
+    font-weight: bold;
+	margin-left: 10pt;
+	color: #0a3c98;	}
+      
+  .inputfield  {
+    text-decoration: underline; }
+    
+    
+/*
+  ******************************************************
+    Styles used for the various para elements
+  ******************************************************   
+*/ 
+
+/* Used to define the para elements in an action */
+   
+  .action {
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    margin-left: 20px; }
+       
+  .para_action {
+    margin-top: 0pt;
+    margin-bottom: 10pt; }	
+	
+  .para_action1 {
+    text-indent: -19px;
+    margin-top: 0pt;
+    margin-bottom: 10pt; }
+    
+/* Used to define para elements in a item. */
+   
+  .unmarkedList .para_item, .unmarkedList p {
+    margin-bottom: 0pt;
+	margin-left: 0;
+	padding: 0}
+	
+  .para_item_procedure {
+    margin-top: 0pt;
+    margin-bottom: 6pt; }
+   
+  /* user defaults */ 
+  .para_, .para_part, .para_topic, .para_history, .para_defMeaning, .para_division, .para_attention, .para_figure, .para_topicAbstract, .para_glossaryDescription, .para_topicComponent  {}
+
+  .para_item {
+    margin-top: 6pt;
+    margin-bottom: 6pt; }
+	 
+ table  {
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    font-size: 10pt;
+  }
+
+  table table {
+    width: 80%;
+  }
+    	
+.para_td, .para_th  {
+    margin-left: 0pt;
+    margin-right: 0pt; }
+    
+/* the last para in a table cell should have no bottom margin */
+  .para_td_last, .para_th_last {
+    margin-bottom: 0pt;
+    margin-left: 0pt;
+    margin-top: 1pt;}    
+    
+/* class used when a link, linkInter, or linkURL is found alone in a para element*/
+
+  .para_link {
+    text-align: center;
+    margin-top: 0pt; 
+    margin-bottom: 8pt;
+    font-weight: bold;  }
+    
+/* classes used for attention tags */
+  
+  .attnImage {
+    position: absolute;
+    margin-left: -5pt;
+    margin-top: 5pt;}
+  
+  .attention_note_title, .attention_caution_title, .attention_tip_title, .attention_warning_title, .attention_example_title, .attention_designIntent_title {
+    border-width: 1px; 
+    margin-top: 3pt; 
+    margin-bottom: 3pt;
+    font-weight: bold; 
+    color: #0a3c98;    }
+    
+  .attention_caution_title, .attention_warning_title {
+    color: #DA3800; }
+ 
+  .para_note_body, .para_caution_body, .para_tip_body, .para_warning_body,.para_example_body, .para_designIntent_body, .para_attention_last {
+	margin-left: 0pt; }
+	
+  .attention {
+  	border-width: 2pt;
+  	padding-left: 0pt;
+  	padding-right: 10pt;
+    padding-bottom: 0pt; 
+  	border-style: solid;
+  	border-color: #efefef;
+  	background-color: #efefef;
+  	margin-top: 10pt;
+	margin-bottom: 10pt; }
+  
+  .attention_note, .attention_caution, .attention_tip, .attention_warning, .attention_example, .attention_designIntent { }
+    
+  .para_qaAnswer {
+    margin-top: 5pt;
+    margin-bottom: 5pt; }
+
+  .para_qaQuestion {
+    font-style: italic;
+    margin-top: 5pt;
+    margin-bottom: 5pt; }
+    
+  .assessment_para {
+    color: darkblue;
+    margin-top: 0pt;
+    margin-bottom: 3pt; }
+
+/*
+  ******************************************************
+    Styles used for the other elements
+  ******************************************************   
+*/ 
+
+/* Used to define all text inside a topicAbstract element - para, list etc. */
+
+  .topicAbstract {
+    font-size: 10pt;
+    margin-bottom: 6pt;
+    margin-top: 0pt; }
+ 
+/* Controls the "endof" graphics at the end of the course, lesson, and topic */
+
+   .endof {
+     font-size: 8pt;
+     color: darkblue;
+     text-align: center;
+     text-decoration: none;
+     font-weight: bold;
+     margin-top: 6pt;
+     margin-bottom: 0pt; }
+
+/* Controls the horizontal rule */
+  hr { display: none; }
+    
+/* Controls the Estimated Time text */
+
+  .estimatedTime {
+    color: #0a3c98;
+    margin-bottom: 3pt;
+    margin-top: 3pt; } 
+
+/* unmarked list, and stepList activity type="visualLanguage"    */
+  .unmarkedList { 
+	list-style-type: none;
+	margin-left: 15px;
+	padding-left: 0px;
+	margin-top: 5px; }
+    
+/*  unmarked list as part of attentions */
+.indent .unmarkedList {
+	list-style-type: none;
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-top: 20px; }
+	
+  .hangingList { 
+    list-style: none;
+    margin-left: 13px;
+    padding-left: 0; }
+
+  .hangingList .para_item { 
+    margin-left: 0;
+    padding: 0;
+    margin-top: 0pt;
+    margin-bottom: 0pt;}
+    
+  .indent {
+    font-size: 10pt;
+    margin-left: 20pt; }
+ 
+  .codeExample_box { 
+  	border: 1pt solid black;
+   	margin-left: .5in;
+   	margin-right: .5in;
+   	padding: .1in .1in .1in .1in;
+   	overflow:auto;
+   	margin-bottom:8px;
+  }
+  
+  .codeExample_small { font-size: 7pt; }
+
+  .stepLabel { 
+    font-size: 10pt;
+    color: #000000; 
+    white-space: nowrap; }
+  
+/*
+  if there is a numbered list inside of a procedure list then color 
+  needs to be set to be consisten with a procedure list.
+*/
+  .numberedListInProcedure { 
+    color: #0a3c98; }
+  
+
+/*
+  ******************************************************
+    Other styles used...
+  ******************************************************   
+*/
+      
+  .exponent {
+    font-size: 8pt; }
+  
+  .flash {
+  	margin:10px;
+  }
+  
+  .align-left {text-align: left;}
+  .align-right {text-align: right;}
+  .align-center {text-align: center;}
+    
+  .no_left_margin {
+    margin-left: 0;
+  }
+
+/*
+  ******************************************************
+    Styles used for tables
+  ******************************************************   
+*/
+  
+  thead { font-weight: bold; }
+
+/*
+  ******************************************************
+    Styles for stepAction
+  ******************************************************   
+*/
+
+  .para_stepAction, .para_stepInformation, .para_stepResult, .para_stepRemediation {
+    margin-left: 0;
+    padding-left:0;    
+    margin-top:5pt;
+    margin-bottom:5pt; }
+  
+  ul.standardStepList {
+    padding-left:0;
+    margin-left:15pt; 
+    list-style-image: url(../graphics/stepActionBullet.gif); }
+    
+  .stepInformation ul {
+    list-style-image: none; }
+
+  .stepInformation ul .unmarked {
+    list-style-type: none; } 
+    
+  ul.standardStepList table, li table, .attention table {
+    margin-left:0pt;
+    align: left;
+  }
+  
+  ol.standardStepListL1 {
+    padding-left:0;
+    margin-left:26pt; }
+
+  ol.procedureStepListL1 {
+    margin-left: 25px;
+    padding-left:0; }
+  
+  ol.procedureStepList {
+    margin-left: 25;
+    padding-left:0;    
+  }
+  
+  ul.visualLangStepList {
+    list-style-type: none;
+	padding-left: 0px; }
+  
+  .visualLangDiv {
+    margin-left: 13;
+  }
+  
+  ul.visualLangStepListL1 {
+	margin-left: 35px; }
+
+  ul.visualLangStepList {
+	margin-left: 25px; }
+	
+  pre {
+    margin-left: 10pt;
+    margin-bottom: 8pt;
+    margin-top: 1pt;
+    font-size: 10pt; 
+    white-space:pre-wrap;
+  }
+
+  table.markedList td {
+    padding:5px;
+    vertical-align:top;
+  }  
+    
+  table.condense td {
+    padding-top: 0px; 
+    padding-bottom: 0px;
+  }  
+  
+  .markedList p {
+    margin-top: 0pt; 
+    margin-bottom: 2pt;
+    margin-left: 0; }
+
+/*
+  ******************************************************
+    Styles for stepAction
+  ******************************************************   
+*/    
+  a.glossary {
+    color: #006600;
+    text-decoration: none;
+  }
+
+  a.glossary:hover {
+  	text-decoration: underline;
+  	color: #006600;
+  }
+  
+  a.glossary:visited { 
+    color: #0560a6;
+  }
+
+  .glossDiv, .footnoteDiv {
+    position:absolute;
+    visibility:hidden;
+    z-index:1001;
+    font-size: .6em;
+    margin: 1em;
+    border: 1px solid black;
+    top: 250;
+    left: 50;
+    background: #FFFFFF;
+    width: 300px;
+    overflow: hidden;
+  }
+  
+  .glossDiv p {
+    color: #006600;
+  }
+  
+  .noteLabel {
+    font-weight: bold;
+    color: #0a3c98;
+    margin-top: 1em;
+  }
+
+/*
+  ******************************************************
+    Styles for feedback
+  ******************************************************   
+*/
+  .feedbackDiv {
+    margin-top: 1em;
+    margin-left: 14px;
+    padding-top: .3em;
+    width: 225pt;
+    border-top: 1px solid gray;
+    visibility: hidden;
+  }
+  
+  .feedbackDiv p {
+    margin-left: 0;
+    margin-bottom: .3em;
+    margin-top: 0;
+    font-family:'Arial';
+    color:#666666;
+  }
+  
+  .feedbackDiv textarea {
+    width: 100%;
+    height: 5em;
+  }
+  
+  #yesButton, #noButton {
+    width: 50px;
+  }
+  
+  .theForm {
+    padding: 0px;
+    margin: 0px;
+    background: none;
+  }
+  
+  .buttonDiv {
+    margin-top: .3em;
+    text-align: right;
+  }
+  
+  #feedbackResults {
+    position:absolute;
+    left:   -100em;
+    width:  300px;
+    height: 50px;
+  }
+  
+  .boldText, .paraTitle { font-weight: bold; }
+  
+  table.userPrefs {
+    margin-left:5px;
+  }
+
+  table.userPrefs td {
+    padding:5px;
+  }
+  
+  .contentType_, .contentType_activity, .contentType_bestPractice, .contentType_cheatsheat, .contentType_concept, .contentType_context, .contentType_procedure, .contentType_process, .contentType_reference, .contentType_whatsNew {
+  	margin-left:10px;
+  	margin-right:10px;
+  }
+  
+  .insideNavLinks {
+  	width:100%;
+  	text-align:right;
+  	font-size:10pt;
+  }
+  
+  table.visualExample {
+    border-collapse: collapse;
+    border-bottom:1px solid #c0c0c0;
+  }
+      
+  table.visualExample tr.step td {
+     border-top:1px solid #c0c0c0;
+  }
+  
+  table.visualExample td.stepInfo {
+       width:325px;
+       max-width:325px;
+       padding-top:5px;
+       padding-bottom:5px;
+       padding-right:10px;
+       text-align:center;
+  }
+  
+table.visualExample td {
+  vertical-align:top;
+}
+
+.simpleHTMLtitle_topic2{ 
+	background: #96989a  repeat-x bottom left; }

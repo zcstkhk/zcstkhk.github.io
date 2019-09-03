@@ -1,0 +1,72 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>后处理壳单元结果</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>后处理壳单元结果</h2><a name="ndxgenid_spta_2dmesh_84"></a>
+         <a name="ndxgenid_spta_2dmesh_85"></a>
+         
+         
+         <p>壳单元的应力和应变结果通过单元在壳应力恢复点之间的顶面和底面进行插补。壳应力恢复点（如节点位置或单元质心）因求解器、单元公式和输出请求而异。</p>
+         
+         <p>对壳单元后处理结果时，必须指定结果类型，并可选择是否使用<strong>设置结果</strong>命令来指定以下结果显示的其中一种：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>结果的位置，可以选择<strong>顶部</strong>、<strong>底部</strong>或者<strong>平均值/中间值</strong></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>使用<strong>顶部</strong>和<strong>底部</strong>选项同时显示壳曲面的顶部和底部结果。这个选项使用<strong>忽略背面</strong>可视化首选项可正确显示结果。请求<strong>顶部与底部</strong>应力或应变结果时，系统将提示打开<strong>忽略背面</strong></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>选择<strong>最大值</strong>或<strong>最小值</strong>选项将分别显示结果的最大或最小绝对值</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>应力或应变可归属于折弯时只能使用<strong>折弯</strong>选项</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>如果上述选项都没有指定，将默认使用<strong>顶部</strong>选项。</p>
+         
+         <a name="genid_spta_2dmesh_86"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/post_proc/shell_top_bottom_display.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>使用顶部和底部选项绘制的应力云图：(左)在模型外表面的应力；(右)在模型内表面的应力</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

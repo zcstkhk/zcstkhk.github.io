@@ -1,0 +1,10 @@
+{identifier:"id",label:"title",items:[
+{id:"d14e2",title:"打开仿真",file:"three_d_contact_friction_open_the_part.html",type:"topic",parent:""},
+{id:"d14e3",title:"重置对话框内存",file:"id353012_dup7.html",type:"topic",parent:""},
+{id:"d14e4",title:"在球杆与球之间创建3D 接触",file:"create_contact_cue_and_ball.html",type:"topic",parent:""},
+{id:"d14e5",title:"在球与台面之间创建3D 接触",file:"create_contact_ball_and_table.html",type:"topic",parent:""},
+{id:"d14e6",title:"在球与台面边缘之间创建3D 接触",file:"create_contact_ball_and_edges.html",type:"topic",parent:""},
+{id:"d14e7",title:"创建解算方案并求解",file:"create_solve_solution_pool.html",type:"topic",parent:""},
+{id:"d14e8",title:"查看机构运动",file:"animate_mechanism_pool.html",type:"topic",parent:""},
+{id:"d14e9",title:"修改接触参数",file:"add_friction_3d_contact.html",type:"topic",parent:""},
+{id:"d14e10",title:"再次求解并查看机构运动",file:"animate_the_mechanism_pool.html",type:"topic",parent:""}]}

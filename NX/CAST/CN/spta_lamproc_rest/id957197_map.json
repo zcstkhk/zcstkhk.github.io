@@ -1,0 +1,11 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"重置对话框设置",file:"id813466.html",type:"topic",parent:""},
+{id:"d7e3",title:"打开 FEM 文件",file:"id852726.html",type:"topic",parent:""},
+{id:"d7e4",title:"创建2D 网格",file:"id852686.html",type:"topic",parent:""},
+{id:"d7e5",title:"重命名网格收集器",file:"id1050332.html",type:"topic",parent:""},
+{id:"d7e6",title:"定义材料坐标系",file:"id852711.html",type:"topic",parent:""},
+{id:"d7e7",title:"创建层合板属性",file:"id852696.html",type:"topic",parent:""},
+{id:"d7e8",title:"创建层片铺层",file:"id852701.html",type:"topic",parent:""},
+{id:"d7e9",title:"验证创建的层合板",file:"id852731.html",type:"topic",parent:""},
+{id:"d7e10",title:"检查材料方向",file:"id852456.html",type:"topic",parent:""},
+{id:"d7e11",title:"保存并关闭",file:"id813461.html",type:"topic",parent:""}]}

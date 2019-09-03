@@ -1,0 +1,16 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"Modeling symmetrical parts",file:"id1298260.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"Symmetry",file:"cyclic_sym_ov.html",type:"topic",parent:""},
+{id:"d5e7",title:"Symmetry types",file:"symmetry_types.html",type:"topic",parent:""},
+{id:"d5e9",title:"Symmetric constraints",file:"cyclic_symmetry.html",type:"topic",parent:""},
+{id:"d5e11",title:"Video: working with symmetric parts",file:"id1400217.html",type:"topic",parent:""},
+{id:"d5e14",title:"Defining coupled degrees of freedom",file:"genid_about_coupled_dofs_19_1894.html",type:"topic",parent:""},
+{id:"d5e16",title:"Excluding objects from boundary conditions",file:"genid_excluded_objects_38_707.html",type:"topic",parent:""},
+{id:"d5e18",title:"Model a cyclic symmetric structure",file:"id741058.html",type:"activity",parent:""},
+{id:"d5e20",title:"Axisymmetry",file:"genid_about_axisymmetric_analysis_42_2079.html",type:"topic",parent:""},
+{id:"d5e22",title:"Aligning the axisymmetric model",file:"axisymmetry_align_model.html",type:"topic",parent:""},
+{id:"d5e24",title:"Video: performing an axisymmetric analysis",file:"xid487136.html",type:"topic",parent:""},
+{id:"d5e27",title:"Model an axisymmetric structure",file:"id741022.html",type:"activity",parent:""},
+{id:"d5e29",title:"Review",file:"id1322823.html",type:"topic",parent:""}
+]}

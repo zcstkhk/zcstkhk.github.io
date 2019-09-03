@@ -1,0 +1,313 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>拉伸直线</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>拉伸直线</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在<strong>知识融合导航器</strong>中，右击 <strong>root</strong> 并选择<strong>添加子规则</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>名称</strong>输入框中键入<strong>拉伸1</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>名称过滤器</strong>输入框中键入 <strong>ug_extru</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>类</strong>列表框中选择 <strong>ug_extruded</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>输入参数</strong>列表框中选择 <strong>End Limit (Number)</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在<strong>参数规则</strong>输入框中键入下列参数：</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     <pre class="codeExample indent ">-50;</pre>
+                     </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>应用输入</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/common/apply_typing.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>您需要指定拉伸体的截面对象。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>在<strong>输入参数</strong>列表框中选择 <strong>profile (List)</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>在<strong>知识融合导航器</strong>中，右击<strong>直线1 (nx_line)</strong>并选择<strong>引用</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>返回<strong>添加子规则</strong>对话框，引用的直线被插入到了规则中。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>在<strong>规则参数</strong>输入框中，在<strong>直线1</strong>的后面键入一个逗号，如下所示：</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     <pre class="codeExample indent ">{直线1:,}</pre>
+                     </div>
+               </div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>在<strong>知识融合导航器</strong>中，右击<strong>直线2 (nx_line)</strong>并选择<strong>引用</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_12">
+               <div class="stepAction">
+                  
+                  <p>在<strong>规则参数</strong>输入框中，在<strong>直线2</strong>的后面键入一个逗号，如下所示：</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     <pre class="codeExample indent ">{直线1:,直线2:,}</pre>
+                 </div>
+               </div>
+            </li>
+            <li class="step" id="step_13">
+               <div class="stepAction">
+                  
+                  <p>在<strong>知识融合导航器</strong>中，右击<strong>直线3 (nx_line)</strong>并选择<strong>引用</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_14">
+               <div class="stepAction">
+                  
+                  <p>在<strong>规则参数</strong>输入框中，在<strong>直线3</strong>的后面键入一个逗号，如下所示：</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     <pre class="codeExample indent ">{直线1:,直线2:,直线3:,}</pre>
+                 </div>
+               </div>
+            </li>
+            <li class="step" id="step_15">
+               <div class="stepAction">
+                  
+                  <p>在<strong>知识融合导航器</strong>中，右击<strong>直线4 (nx_line)</strong>并选择<strong>引用</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     <pre class="codeExample indent ">{直线1:,直线2:,直线3:,直线4:}</pre>
+                 </div>
+               </div>
+            </li>
+            <li class="step" id="step_16">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>应用输入</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/common/apply_typing.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_17">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                    <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/knowledge_fusion/activities/create_simple_kf_6.png"></p>
+                     
+                     <p><strong>拉伸1 (ug_extruded)</strong>规则将被添加到<strong>知识融合导航器</strong>中，先前创建的直线被嵌入到<strong>拉伸1 (ug_extruded)</strong>中的<strong>助手对象</strong>下方。</p>
+                     
+                     <table bgcolor="white" border="0" cellpadding="0" cellspacing="0" class="navigator" width="275" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" width="100*">
+                           
+                       </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/knowledge_fusion/activities/knowledge_kfnav_root.gif" border="0">root
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr valign="middle">
+                              
+                              <td colspan="1" height="24" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/knowledge_fusion/activities/knowledge_kfnav_attributes.gif" border="0">属性</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr valign="middle">
+                              
+                              <td class="text_blue" colspan="1" height="112" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/knowledge_fusion/activities/knowledge_kfnav_extr.gif" border="0">拉伸1(ug_extruded)
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr valign="middle">
+                              
+                              <td colspan="1" height="24" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/knowledge_fusion/activities/knowledge_kfnav_attributes2.gif" border="0">属性
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr valign="middle">
+                              
+                              <td colspan="1" height="24" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/knowledge_fusion/activities/knowledge_kfnav_helper.gif" border="0">助手对象</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr valign="middle">
+                              
+                              <td class="text_blue" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/knowledge_fusion/activities/knowledge_kfnav_line2.gif" border="0">直线1 (nx_line)
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr valign="middle">
+                              
+                              <td class="text_blue" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/knowledge_fusion/activities/knowledge_kfnav_line2.gif" border="0">直线2 (nx_line)
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr valign="middle">
+                              
+                              <td class="text_blue" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/knowledge_fusion/activities/knowledge_kfnav_line2.gif" border="0">直线3 (nx_line)
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr valign="middle">
+                              
+                              <td class="text_blue" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/knowledge_fusion/activities/knowledge_kfnav_line2.gif" border="0">直线4 (nx_line)
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                    </table>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

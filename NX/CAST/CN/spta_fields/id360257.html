@@ -1,0 +1,62 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>分解建模</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>分解建模</h2>
+         
+         <p><a name="ndxgenid_spta_fields_95"></a>使用分解建模可以评估整个模型中某一部分的应力。在分解建模中，将：</p>
+         <ul>
+           <li>
+             <p>使用粗糙网格分析整个结构。对位移求解</p>
+           </li>
+           <li>
+             <p>使用精细网格创建分解模型和临界应力位置</p>
+           </li>
+           <li>
+             <p>将整个模型中的位移结果映射到分解模型的切割面</p>
+           </li>
+           <li>
+             <p>对分解模型求解并评估应力</p>
+           </li>
+         </ul>
+         <a name="id1068292"></a>
+         
+         
+         
+        <h3>分解建模使用</h3>
+         
+         
+         
+         <p><a name="ndxgenid_spta_fields_97"></a>可能出于以下原因而要使用分解建模：</p>
+         <ul>
+           <li>
+             <p>从性能和硬件要求的角度看，为整个结构创建精细网格的代价很高，对于非线性分析尤其如此</p>
+           </li>
+           <li>
+             <p>较大的精细网格可能会大大增加变体和模型更改的周转时间</p>
+           </li>
+           <li>
+             <p>应力评估必须针对现有的（较粗糙）模型进行</p>
+           </li>
+           <li>
+             <p>由于并非所有临界位置都很明显，因此很难预先优化临界区域</p>
+           </li>
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

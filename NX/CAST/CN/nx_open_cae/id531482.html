@@ -1,0 +1,126 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Create a new Main() routine</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Create a new Main() routine</h2>
+         <p>Each of the journal files you combined is its own <span class="codeText">Main</span> routine. To convert the combined journals into an application, you must create a new <span class="codeText">Main()</span> routine to control the execution of the journal routines. You then need to rename the journal routines to avoid any conflicts.
+         </p>
+         <div class="action">
+            
+            <p>Add the following code after the <span class="codeText">Module NXJournal</span> statement to define a <span class="codeText">Main()</span> function that:
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Defines a variable <span class="codeText">workDir</span> to specify filename paths.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Calls the functions <span class="codeText">CreateFem</span> and <span class="codeText">AppendFem</span>, created from the two journal routines you recorded.
+                  </p>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">Note</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p>Your workDir variable must be set to the same directory where NX starts. This is the location where the DLX files and TestPlates directory exist.</p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </li>
+               
+            </ul>
+            
+         </div><pre class="codeExample ">Module NXJournal
+    <span class="userInput">Sub Main()
+  
+        ' Base for any filename path - location of DLX files and TestPlates directory
+        Dim workDir As String = &quot;D:\NX\Bottle\&quot;
+        ' ---------------------------------------
+        ' Add other function calls below
+        CreateFem(workDir)
+        AppendFem(workDir)
+    End Sub</span></pre><table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>In the code examples used in this activity, boldface type indicates text to be inserted or modified/added. An ellipsis (<span class="codeText">...</span>) indicates that lines have been removed for clarity.
+                  </p>
+                  
+               </td>
+            </tr>
+         </table>
+         <table class="attentionTable attn_tip">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Tip</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>You can cut and paste the changes from this page into your file. </p>
+                  
+               </td>
+            </tr>
+         </table>
+         <p>The journal code used to create the FEM file immediately follows the lines entered above. </p>
+         <div class="action">
+            
+            <p>Add a function <span class="codeText">CreateFem</span>, and pass the <span class="codeText">workDir</span> variable by reference, after the <span class="codeText">End Sub</span> line, by changing the existing <span class="codeText">Sub Main</span> function.
+            </p>
+            
+         </div><pre class="codeExample ">End Sub
+Sub <span class="userInput">CreateFem(ByRef workDir As String)</span>
+
+    Dim theSession As Session = Session.GetSession()
+    Dim workPart As Part = theSession.Parts.Work </pre><div class="action">
+            
+            <p>Locate the beginning of the journal created when you appended the test plate FEMs (approximately line 129), following the <span class="codeText">End Sub</span> line.
+            </p>
+            
+            <p>Rename the <span class="codeText">Main</span> function to <span class="codeText">AppendFem</span>, and pass the <span class="codeText">workDir</span> variable by reference.
+            </p>
+            
+         </div><pre class="codeExample ">End Sub
+Sub <span class="userInput">AppendFem(ByRef workDir As String)</span>
+
+    Dim theSession As Session = Session.GetSession()
+    Dim workFemPart As CAE.FemPart = CType(theSession.Parts.BaseWork, CAE.FemPart)</pre><div class="action">
+            
+            <p>Locate the beginning of the <span class="uiTerm">Face Select</span> dialog box (approximately line 279) code. Or search for the string <span class="codeText">Public Shared Sub Main()</span>.
+            </p>
+            
+            <p>Although the application does not call this function directly, it must be renamed so that there is only one <span class="codeText">Main()</span> routine. Simply prepend the function name with the string <span class="codeText">xxxx</span>.
+            </p>
+            
+         </div><pre class="codeExample ">...
+Public Shared Sub <span class="userInput">xxxx</span>Main()
+    Try</pre><div id="footer"></div>
+      </div>
+   </body>
+</html>

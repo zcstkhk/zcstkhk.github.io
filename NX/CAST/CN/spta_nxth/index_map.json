@@ -1,0 +1,38 @@
+{identifier:"id",label:"title",items:[
+
+
+{id:"d5e3",title:"构建热系统",file:"id1378237.html",type:"topic",parent:""},
+
+
+{id:"d5e5",title:"NX 热和 NX 高级热",file:"id1375637.html",type:"topic",parent:""},
+
+{id:"d5e7",title:"工作流和文件结构",file:"id351615.html",type:"topic",parent:""},
+
+{id:"d5e9",title:"构建传导",file:"id357139.html",type:"topic",parent:""},
+
+{id:"d5e11",title:"构建对流",file:"id737596.html",type:"topic",parent:""},
+
+{id:"d5e14",title:"构建辐射",file:"id357146.html",type:"topic",parent:""},
+
+{id:"d5e16",title:"创建模型",file:"id347987.html",type:"topic",parent:""},
+
+{id:"d5e18",title:"定义物理属性",file:"id357154.html",type:"topic",parent:""},
+
+{id:"d5e20",title:"Defining modeling objects",file:"id1376247.html",type:"topic",parent:""},
+
+{id:"d5e22",title:"Defining boundary conditions",file:"id351639.html",type:"topic",parent:""},
+
+{id:"d5e24",title:"Defining thermal couplings",file:"id351641.html",type:"topic",parent:""},
+
+{id:"d5e27",title:"About radiation enclosures and view factors",file:"id357685.html",type:"topic",parent:""},
+
+{id:"d5e29",title:"Solar and radiative heating",file:"id357716.html",type:"topic",parent:""},
+
+{id:"d5e31",title:"Other simulation objects",file:"id357704.html",type:"topic",parent:""},
+
+{id:"d5e33",title:"Solving the model",file:"id347995.html",type:"topic",parent:""},
+
+{id:"d5e35",title:"Heat transfer analysis of an oven",file:"id810051.html",type:"activity",parent:""},
+
+{id:"d5e37",title:"Thermal review questions",file:"id1325933.html",type:"topic",parent:""}
+]}

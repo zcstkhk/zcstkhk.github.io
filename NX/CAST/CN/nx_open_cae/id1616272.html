@@ -1,0 +1,74 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Creating undo marks and forcing model updates</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Creating undo marks and forcing model updates</h2>
+         
+         <p>This section explains how to manage the NX model data from the application program. Undo processing and model updates are used to either <span class="emphasis">roll back</span> or <span class="emphasis">lock in</span> changes to the NX model made by your application. Although there is nothing unique about undo processing or model updates in NX Open for CAE applications, you need to understand these concepts to successfully create CAE applications.
+         </p>
+         
+         <div class="division">
+            
+            <h3>Creating an undo mark</h3>
+            
+            <p>The Undo function creates an <span class="emphasis">undo mark</span>. In the event of an error, NX can revert to this undo mark.
+            </p>
+            
+            <p>The Undo methods ensure that the NX session and parts are returned to a valid state. To use the Undo methods, you first create an Undo mark. This saves the current state of NX.</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>If the program executes without error, then you can call the method to delete the undo mark (unless the Undo mark is visible and is being provided to let the user Undo the operations of the custom application).</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>If the program encounters an error and needs to recover, you can revert to the Undo mark. </p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>Any Undo mark that is created during the course of running a Block Styler application will be removed by the OK and Apply call backs, which impose their own Undo mark encompassing the entire application.</p>
+            
+            <p>For more information on undo marks, see the <span class="titleReference">NX Open Programmers Guide &rarr; Handling Errors &rarr; Undo</span>.
+            </p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Forcing a model update</h3>
+            
+            <p>The Model Update function forces a model to update. Most NX Open methods that modify the internal NX data model perform a Model Update before they return to the calling application. A few methods are designed to be executed multiple times without Model Update. These methods require you to explicitly invoke a Model Update when the set of operations are complete. The NX Open API documentation lists which classes and methods require you to explicitly invoke the Model Update function.</p>
+            
+            <p>Use the following command to invoke the Model Update function:</p>
+            <pre class="codeExample indent ">theSession.UpdateManager.DoUpdate(undoMark As _ 	NXOpen.Session.UndoMarkID)</pre>
+            <p>If NX encounters an error during the <span class="codeText">DoUpdate()</span> method, the system will roll back to the undo mark specified in the call to the update manager.
+            </p>
+            
+            <p>For more information on the Model Update function, see the <span class="titleReference">NX Open Programmers Guide &rarr; Other NX Operations &rarr; Model Update</span>.
+            </p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

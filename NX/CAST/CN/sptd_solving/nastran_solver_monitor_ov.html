@@ -1,0 +1,80 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Nastran solution monitor</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Nastran solution monitor</h2>
+         
+         <p>The NX Nastran <span class="uiTerm">Solution Monitor</span> displays real-time information about the progress of the current solve. Some Solution Monitor plots include:
+         </p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><span class="uiTerm">Solution Information</span> &mdash; displays the .f04 file.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">Sparse Matrix Solver</span> &mdash; plots the number of equations completed.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">Iterative Solver Convergence</span> &mdash; plots convergence against iterations.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">Eigenvalues Extraction</span> &mdash; plots the number of eigenvalues extracted.
+               </p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>It requires Nastran version 6.0 or later.</p>
+         
+         <a name="genid_sptd_solving_29" id="genid_sptd_solving_29"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/solving/sparse_matrix_monitor.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>The Sparse Matrix Solver monitor</h4>
+         </div>
+         
+         
+         <p>As your solve progresses, one or more graphs showing progress or convergence is generated. You can access each graph by clicking the tabs that appear across the top of the monitor window. You can view graphs as they are generated in real time, or you can review all graphs at the completion of the solve.</p>
+         
+         <p>The information displayed depends on the version of NX Nastran you are running, your model setup, and the solution type.</p>
+         
+         <p>Use the Solution Monitor to monitor the convergence of the solution and estimate the remaining time required for the solution. Based on the monitor's output, you may want to cancel the solve, refine your model setup, or adjust solution parameters.</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

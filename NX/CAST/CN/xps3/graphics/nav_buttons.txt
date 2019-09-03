@@ -1,0 +1,12 @@
+LOCALIZATION: Translate the words between
+the = and & symbols ONLY, NOT the words 
+between & and = (example: in the last line 
+below, DO translate "Volume On/Off"; do not 
+translate "Audio"). When finished, save this
+file in txt format. Use UTF-8 encoding to ensure
+that any special characters display correctly.
+
+&Play=Play/Pause&
+&Rewind=Rewind&
+&Forward=Forward&
+&Audio=Volume On/Off&

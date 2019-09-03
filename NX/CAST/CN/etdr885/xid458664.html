@@ -1,0 +1,204 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Create one hole table for all holes in multiple bodies</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Create one hole table for all holes in multiple bodies</h2>
+         
+         <p>You will create one hole table in the drawing for all the holes in a base plate and four locator blocks. These solid bodies all reside in the same master model.</p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>The <span class="uiTerm">Hole Table</span> command is available only when the <span class="uiTerm">UGII_DRAFTING_HOLE_TABLE</span> environment variable is set in your system. Before you begin this activity, check for this environment variable. If you do not find it, set the <span class="uiTerm">UGII_DRAFTING_HOLE_TABLE</span> environment variable to a value of 1 and restart NX. 
+                  </p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>Open <span class="fileName">drf7_85_hole_tables_dwg</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/activities/hole_table/hole_tables_13.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>Confirm you are in the Drafting application.</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>On the <span class="uiTerm">Table</span> toolbar, click <span class="uiTerm">Hole Table</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/drafting/tables_and_parts_lists/hole_table.gif" border="0" alt="Insert &gt; Table &gt; Hole Table" title="Insert &gt; Table &gt; Hole Table">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Hole Table</span> dialog box, make sure that <span class="uiTerm">Type</span> is set to <span class="uiTerm">Create Table</span> and that <span class="uiTerm">Select Ordinate Origin</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/common/select.gif" border="0"> is highlighted.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>On the <span class="uiTerm">Selection</span> bar, verify that <span class="uiTerm">Arc Center</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/selection_bar/arc_center.gif" border="0"> is cleared.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>Select the start point on the left edge of the base plate, as shown.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/activities/hole_table/hole_tables_1.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Holes</span> group, make sure:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">View Selection</span> = <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/button_blue_on.gif" border="0"></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Select View</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/drafting/common/select_parent_view.gif" border="0"> is highlighted.
+                        </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>In the graphics window, select the drafting view.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>To select the view, move your cursor over the base plate and click when you see the tool tip for the imported view.</p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/activities/hole_table/hole_tables_2.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Settings</span> group, from the <span class="uiTerm">Quadrant</span> list, select <span class="uiTerm">Positive Quadrant I</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>Make sure <span class="uiTerm">Specify Table Origin</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/drafting/common/point_options_list.gif" border="0"> is selected.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>In the graphics window, click in zone <span class="literalText">A2</span> to place the hole table.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/activities/hole_table/hole_tables_3.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_12">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span> to create the table.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/activities/hole_table/hole_tables_4.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         <div class="stepListResult">
+            
+            <p>Examine the hole table. The hole closest to the origin point receives the first label. All holes in the same solid are indexed first, before holes in another solid are indexed.</p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

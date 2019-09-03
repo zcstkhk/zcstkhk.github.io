@@ -1,0 +1,18 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"NX 8 - NX 8.5 Sketching transition",file:"xid307181.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"Sketch CSYS display enhancement",file:"xid377009.html",type:"topic",parent:""},
+{id:"d5e7",title:"Sketch CSYS naming enhancement",file:"xid377165.html",type:"topic",parent:""},
+{id:"d5e9",title:"Vertex display",file:"xid377809.html",type:"topic",parent:""},
+{id:"d5e11",title:"Sketch shortcut toolbar",file:"xid379418.html",type:"topic",parent:""},
+{id:"d5e14",title:"Geometric Constraints shortcut toolbar",file:"xid380180.html",type:"topic",parent:""},
+{id:"d5e16",title:"Using the shortcut toolbar",file:"xid452408.html",type:"activity",parent:""},
+{id:"d5e18",title:"Geometric Constraints dialog box",file:"xid377100.html",type:"topic",parent:""},
+{id:"d5e20",title:"Create geometric constraints",file:"xid452668.html",type:"activity",parent:""},
+{id:"d5e22",title:"Geometric Constraints quick reference",file:"sketcher_sk_geom_types.html",type:"topic",parent:""},
+{id:"d5e24",title:"Overconstrained sketch enhancement",file:"xid379337.html",type:"topic",parent:""},
+{id:"d5e27",title:"Dimension creation enhancement",file:"xid377023.html",type:"topic",parent:""},
+{id:"d5e29",title:"Rectangle constraints enhancement",file:"xid377062.html",type:"topic",parent:""},
+{id:"d5e31",title:"Display Sketch Constraints",file:"xid379262.html",type:"topic",parent:""},
+{id:"d5e33",title:"Sketch Preferences enhancement",file:"xid377958.html",type:"topic",parent:""}
+]}

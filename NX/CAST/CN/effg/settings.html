@@ -1,0 +1,66 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>设置</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>设置</h2>
+         
+         <p>对话框中的<strong>模式</strong>组允许您进行两项设置：</p>
+         
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><strong>线性</strong> — 在一个方向上线性延伸片体的边。</p>
+               
+            </li>
+            <li>
+               
+               <p><strong>自然</strong> — (默认选项)顺着曲面的自然曲率延伸片体的边。使用此选项可增大或减小片体的尺寸。</p>
+               
+            </li>
+         </ul>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/enlarge/enlarge_enlarge_modes.png"></p>
+         
+         <p><strong>编辑副本</strong>复选框：</p>
+         
+         <p>在曲面的副本中进行扩大操作。</p>
+         
+         <p>如果清除<strong>编辑副本</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_off.gif" border="0"> 复选框，则将编辑原始片体。</p>
+         
+         <p>命令将会自动选中这一选项，并在您试图扩大任意解析曲面(平面、圆柱、圆锥、球或圆环)或任意接合、缝合或连接到另一曲面的曲面时使该选项不可用。</p>
+         
+         <p>如果清除此复选框，则<strong>关联自由曲面编辑</strong>建模首选项将影响<strong>扩大</strong>的行为，如下：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>如果选中<strong>关联自由曲面编辑</strong>复选框，但未选中<strong>编辑副本</strong>复选框，则对片体执行&ldquo;扩大&rdquo;操作，且新的&ldquo;扩大&rdquo;特征显示在<strong>部件导航器</strong>中。但是，原始特征还将继续显示在<strong>部件导航器</strong>中。如果您编辑原始特征，则更改传播到&ldquo;扩大&rdquo;特征。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>如果<strong>关联自由曲面编辑</strong>复选框和<strong>编辑副本</strong>复选框均未选中，则修改的片体成为非参数化特征。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>材料编辑器对话框</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>材料编辑器对话框</h2>
+         <p><strong>材料编辑器</strong>对话框具有两个主要部分：</p>
+         <table border="1" cellpadding="2" cellspacing="0" frame="void" rules="rows" width="90%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td align="right" colspan="1" height="224" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><a href="#" onclick="showDialog('material_editor_designation')">材料名称区域</a></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" height="224" rowspan="2">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/visualization/commands/material_editor/matl_texture_material_editor_dialog.png"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td align="right" colspan="1" height="240" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><a href="#" onclick="showDialog('material_editor_parms')">材料/纹理参数区域</a></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <div dojoType="dijit.Dialog" id="material_editor_designation" title="材料名称区域">
+            <div dojoType="dijit.layout.ContentPane" href="material_editor_designation.html" extractContent="true" tabIndex="0"></div>
+         </div>
+         <div dojoType="dijit.Dialog" id="material_editor_parms" title="材料/纹理参数区域">
+            <div dojoType="dijit.layout.ContentPane" href="material_editor_parms.html" extractContent="true" tabIndex="0"></div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>基于几何体的载荷</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>基于几何体的载荷</h2>
+         
+         <p><a name="ndxgenid_spta_loadcnst_15"></a>
+            在<strong>高级仿真</strong>中，您可以在节点以及单元，或者直接在几何体上施加载荷。</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>施加在几何体上的载荷将在您修改几何体或更新网格时自动更新</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>施加在有限元实体上的载荷可能会在您修改网格之后丢失</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>当您开始求解或者导出仿真时，根据载荷的类型，NX 将施加在节点或者单元上的基于几何体载荷写到求解器输入文件中，在求解期间，所有载荷最终都将转换为施加在节点上的力。</p>
+         
+         <a name="genid_spta_loadcnst_16"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/boundary_conditions/loads/geo_based_loads.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>基于几何体的轴承载荷在部件重新划分网格后自动更新</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

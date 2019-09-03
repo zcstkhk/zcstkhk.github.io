@@ -1,0 +1,118 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>曲线轨迹方法</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>曲线轨迹方法</h2>
+         
+         <p>&ldquo;曲线轨迹&rdquo;方法可创建关键帧在模型中沿现有曲线排列的轨迹。可以将工作部件中的任何曲线用作曲线轨迹轮廓(包括实体边界)，只要这些曲线轮廓是连续的。</p>
+         
+         <p>NX 对曲线轨迹上指定的关键帧点之间的位置进行插补，并为动画生成中间帧。</p>
+         <p>选择轨迹轮廓的曲线或边后，指定了轨迹初始基本摄像机设置的 Frame0 被自动添加到轨迹轮廓的开始处。 </p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>除非重新定义曲线轨迹，否则不能删除或移动 Frame0。</p>
+                  <p>您可以使用<strong>编辑关键帧</strong>对话框中的<strong>设置摄像机</strong>选项来更改 Frame0 的设置。 </p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         
+         <table border="0" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/visualization/commands/hqi_animation/trajectory_curve.png"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <ol type="1" start="1">
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">Frame0</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">方位矢量</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">轨迹曲线</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">视图向上矢量</p>
+                           
+                        </li>
+                        
+                     </ol>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         
+         <p>曲线轨迹帧插值已通过以下参数定义：</p>
+         <ul>
+           <li>
+             <p><strong>眼点</strong>通过在曲线轮廓上关键帧点的坐标来定义</p>
+             <p>曲线轨迹中的关键帧点可沿轨迹路径控制摄像机方位以及控制动画在回放的不同阶段的速度。</p>
+           </li>
+           <li>
+             <p><strong>方位</strong>选项指定的<strong>查看点</strong>可以与关键帧点或图形窗口中的对象相切</p>
+           </li>
+           <li>
+             <p><strong>视图向上矢量</strong></p>
+             <p>对于 1D 和 3D 轨迹，在创建曲线轨迹轮廓时，<strong>视图向上矢量</strong>由 Y 轴定义。</p>
+             <p>对于 2D 轨迹，<strong>视图向上矢量</strong>由与轨迹曲线平面垂直的矢量定义。          </p>
+           </li>
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

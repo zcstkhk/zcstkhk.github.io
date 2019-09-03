@@ -1,0 +1,8 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开向导",file:"id788674.html",type:"topic",parent:""},
+{id:"d7e3",title:"指定几何体组",file:"id967858.html",type:"topic",parent:""},
+{id:"d7e4",title:"指定几何体父项",file:"id967860.html",type:"topic",parent:""},
+{id:"d7e5",title:"指定切削区域",file:"id967862.html",type:"topic",parent:""},
+{id:"d7e6",title:"生成刀轨",file:"id967864.html",type:"topic",parent:""},
+{id:"d7e7",title:"完成向导过程",file:"id967866.html",type:"topic",parent:""},
+{id:"d7e8",title:"确认程序",file:"id967868.html",type:"topic",parent:""}]}

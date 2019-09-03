@@ -1,0 +1,7 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开部件并选择几何体父组",file:"id1004156.html",type:"topic",parent:""},
+{id:"d7e3",title:"创建螺纹铣削工序",file:"id1004158.html",type:"topic",parent:""},
+{id:"d7e4",title:"选择螺纹孔几何体",file:"id1004160.html",type:"topic",parent:""},
+{id:"d7e5",title:"生成刀轨",file:"id1004162.html",type:"topic",parent:""},
+{id:"d7e6",title:"更新刀轨以进行连续切削",file:"id1004164.html",type:"topic",parent:""},
+{id:"d7e7",title:"添加径向步距",file:"id1004166.html",type:"topic",parent:""}]}

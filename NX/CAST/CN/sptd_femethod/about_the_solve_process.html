@@ -1,0 +1,72 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>解算过程</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>解算过程</h2>
+         
+         <p><a name="ndxgenid_sptd_femethod_13"></a>
+            <a name="ndxgenid_sptd_femethod_14"></a>
+            设计仿真将使用 NX 来对有限元模型进行前后处理，并使用有限元求解器来求解有限元模型，NX 将与有限元求解器进行如下交互：</p>
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>NX 将写出一个特定于求解器的二进制输入文件，这个文件：</p>
+               <a name="ndxgenid_sptd_femethod_15"></a>
+               
+               
+               <ul>
+                  
+                  <li>
+                     
+                     <p>包括网格数据、边界条件以及包含在有限元模型中的求解器参数</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>储存在与仿真文件(*.sim)相同的目录中。</p>
+                     
+                  </li>
+                  
+               </ul>
+               
+            </li>
+            
+            <li>
+               
+               <p>有限元求解器将运行解算批处理命令，并在与仿真文件(*.sim)相同的目录中写出结果文件。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><a name="ndxgenid_sptd_femethod_16"></a>
+                  <a name="ndxgenid_sptd_femethod_17"></a>
+                  NX 将读取结果文件，并在后处理中显示结果。</p>
+               
+            </li>
+            
+         </ol>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/solving/solve_process.png"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

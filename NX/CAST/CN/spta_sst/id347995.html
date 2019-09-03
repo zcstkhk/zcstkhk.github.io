@@ -1,0 +1,171 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Solving the model</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Solving the model</h2>
+         <div class="division">
+            
+            <h3>Solution options</h3>
+            
+            <p>You can set simulation options in the <span class="uiTerm">Solution</span> dialog box. The most commonly used settings are located on the <span class="uiTerm">Solution Details</span> and the <span class="uiTerm">Ambient Conditions</span> tabs. You should always review the settings on the other tabs when they apply to the model you are solving.
+            </p>
+            
+            <p>For steady state solutions setting expected values for the solution on the <span class="uiTerm">Initial Conditions</span> tab may save analysis time.
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>For a transient analysis, you must specify a <span class="uiTerm">Start Time</span> and an <span class="uiTerm">End Time</span> in the <span class="uiTerm">Transient Setup</span> tab, and review the other settings. You can set global initial boundary conditions in the <span class="uiTerm">Initial Conditions</span> tab.
+                  </p>
+                  <p>For orbital analysis, you can define a periodic convergence by specifying the <span class="uiTerm">End Time</span> as <span class="uiTerm">Based on Cyclic Criterion</span> or <span class="uiTerm">Based on Orbit Period</span>.
+                  </p>
+                  
+               </li>
+               
+               
+               <li>
+                  
+                  <p>For a large model, deselecting the options for unneeded results types on the <span class="uiTerm">Results Options</span> tab can improve processing time and reduce the size of the results file. 
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Solver Parameters</h3>
+            
+            <p>Use <span class="uiTerm">Solver Parameters</span> to control time step, convergence, speed calculation time, or to adjust the solver for unusual modeling situations. For example you must set an appropriate time step for natural convection problems.
+            </p>
+            
+            <p>After every solution, you should verify the convergence of the model. Review the message files for global heat balance and mass balance for flow problems. Investigate warnings and check the view factor sums for radiation problems.</p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Solving</h3>
+            
+            <p>When you select <span class="uiTerm">Solve</span> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/solve.gif" border="0">, the solver generates an input file, then automatically begins processing.
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>An <span class="uiTerm">Information</span> window displays model check results.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>The <span class="uiTerm">Analysis Job Monitor</span> dialog box lists the solve status for single or multiple runs.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>The <span class="uiTerm">Solution Monitor</span> displays all errors, warnings, and information messages from the module currently executing.
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>Click <span class="uiTerm">Inspect</span> <img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/nx_thermal_flow/solution_options/inspect_solution_monitor.gif" border="0"> to scroll and check current solution status. These messages are also available after the solution is completed. 
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Click <span class="uiTerm">Stop</span> <img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/nx_thermal_flow/solution_options/stop_solution_monitor.gif" border="0"> to halt the current solution and discard the results. Restarting is not possible.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Click <span class="uiTerm">Pause</span> <img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/nx_thermal_flow/solution_options/pause_solution_monitor.gif" border="0"> to stop solution and recover results for post processing. In complex models pause the solution to inspect the results after a few iterations, verify its integrity, and continue the run. Continue the solve using the <span class="uiTerm">Restart</span> tab at the <span class="uiTerm">Solution</span> dialog box. 
+                        </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Refreshing results</h3>
+            
+            <p>After you run a solution you can request additional results sets not included in the <span class="uiTerm">Results Option</span> tab of the <span class="uiTerm">Solution</span> dialog box.
+            </p>
+            
+            <p>In the <span class="uiTerm">Results Options</span> tab expand the <span class="uiTerm">Control</span> group, click on <span class="uiTerm">Refresh Results</span>, and follow the instructions given by the interface.
+            </p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Performing a restart</h3>
+            
+            <p>You usually restart an analysis in the following situations:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>A steady state analysis has reached its iteration limit but has not converged yet.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>A transient analysis has been run and you wish to continue the analysis over a new end time. </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>You have stopped a steady state or transient analysis and wish to continue the run.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>You want re run your model with different properties but want to reuse information already calculated. For example you want to change an object's emissivity but reuse previously calculated view factors.</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>To perform a simulation restart use the options available in the <span class="uiTerm">Restart</span> tab of the <span class="uiTerm">Solution</span> dialog box.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

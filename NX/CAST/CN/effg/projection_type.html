@@ -1,0 +1,49 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>投影类型</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>投影类型</h2>
+         
+         <p>这个选项可以指明是否要让驱动曲面到目标曲面的投影方向为单个矢量或者为驱动曲面法向方向的矢量。</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>沿固定矢量</strong>可以让您使用<strong>矢量</strong>对话框来定义一个投影矢量。矢量的意义并不重要，除非您选中了<strong>检查重叠</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_on.gif" border="0"> 复选框并且目标重叠。如果这样，在投影方向上找到的第一个目标就是使用的点。</p>
+               
+               <p>清除<strong>检查重叠</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_off.gif" border="0"> 复选框将会改善性能，因为系统将点从驱动面投影到它所找到的第一个面。在面没有重叠，或者它们重叠的区域非常接近时，这是非常有用的。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>沿驱动法向</strong>可以让您使用与驱动曲面垂直的投影矢量。</p>
+               
+               <div class="verbose">
+                  <p>如果目标曲面是弯曲的(比如圆柱形)，沿着驱动法向投影是非常有用的的。</p>
+               </div>
+               
+               <p>当<strong>投影类型</strong>设置为<strong>沿驱动法向</strong>时<strong>投影限制</strong>选项可用，当投影矢量可能通过目标平面很多次(例如，如果目标是圆柱形)时，可以使用该选项来限制点投影到目标曲面的距离。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

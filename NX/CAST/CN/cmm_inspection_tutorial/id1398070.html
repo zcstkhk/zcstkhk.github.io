@@ -1,0 +1,625 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Complete and save the final alignment</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Complete and save the final alignment</h2>
+         
+         <p>In this activity, you will define an alignment command to complete the PCS alignment.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>On the <strong>Insert</strong> toolbar, click <strong>Alignment</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/nx_cmm/insert/create_alignment.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Alignment</strong> dialog box, from the <strong>Type</strong> list, choose <strong>Translate PCS Origin</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>XP</strong> group, from the <strong>Method</strong> list, select <strong>Measured Feature</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>From the <strong>Select Feature</strong> list, choose <strong>TEACH_POINT</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>PCS Name</strong> box, type <span class="userInput">PCS_4HOLE_FINAL</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Operation Name</strong> box, type <strong>TRANS_XORG</strong>, and click <strong>OK</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>The last degree of freedom is now constrained and the alignment is complete.</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/alignment/align_tut_21.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>On the <strong>Insert</strong> toolbar, click <strong>Alignment</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/nx_cmm/insert/create_alignment.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Alignment</strong> dialog box, from the <strong>Type</strong> list, choose <strong>Save PCS</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Save Parameters</strong> group, from the <strong>PCS Name</strong> list, select <strong>PCS_4HOLE_FINAL</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Device Identifier</strong> list, type <span class="userInput">PCS_4HOLE_FINAL</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Operation Name</strong> box, type <strong>SAVE_FINAL_PCS</strong> and click <strong>OK</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>The aligned PCS is now saved and can be recalled if you need to modify it later in your program.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_12">
+               <div class="stepAction">
+                  
+                  <p>Right-click <strong>CMM_PROGRAM</strong>, choose <strong>Generate</strong>, and in the <strong>Generate Tool Path</strong> dialog box, click <strong>Accept Paths</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p><strong>POS_XLINE</strong> and <strong>CONST_XLINE</strong> do not generate correctly.
+                     </p>
+                     
+                     <table border="0" cellpadding="0" cellspacing="0" class="navigator" width="100%" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" valign="middle" width="52">
+                           
+                           <col span="1" valign="middle">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group2.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">PART_ALIGNMENT</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group3.gif"></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/insp_align_mcs.gif" border="0">&nbsp;DEFINE_MCS
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group3.gif"></p>
+                                 
+                              </td>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/inspection_point.gif" border="0">&nbsp;TEACH_POINT
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group3.gif"></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/incpection_command.gif" border="0">&nbsp;OPER_MSG_TP
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group3.gif"></p>
+                                 
+                              </td>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/incpection_command.gif" border="0">&nbsp;MODE_MANUAL
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group3.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/inspection_path.gif" border="0">&nbsp;TEACH_POINT_PATH
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group3.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/incpection_command.gif" border="0">&nbsp;MODE_PROGMAN
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group3.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/incpection_command.gif" border="0">&nbsp;OPER_MSG_BEGIN_INSP
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group3.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/graphicLibrary/nx/nx_cmm/common/inspection_plane.gif" border="0">&nbsp;TOP_PLANE_A
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group3.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/insp_align_trans.gif" border="0">&nbsp;TRANS_XYZ_TEACH_PT
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group3.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/inspection_path.gif" border="0">&nbsp;PATH_TOP_PLANE_A
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group3.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/insp_align_rotate.gif" border="0">&nbsp;ROT_ALIGN_AX
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group3.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/insp_align_rotate.gif" border="0">&nbsp;ROT_ALIGN_AY
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group3.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/insp_align_trans.gif" border="0">&nbsp;INSP_ALIGN_TZ
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group3.gif"></p>
+                                 
+                              </td>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/graphicLibrary/nx/nx_cmm/common/inspection_plane.gif" border="0">&nbsp;FRONT_FACE
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group3.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/inspection_path.gif" border="0">&nbsp;PATH_FRONT_FACE
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group4.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/insp_line.gif" border="0">&nbsp;POS_XLINE
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group4.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/insp_constructed.gif" border="0">&nbsp;CONST_XLINE
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group3.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/insp_align_trans.gif" border="0">&nbsp;TRANS_Y_ORIG
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group3.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/insp_align_rotate.gif" border="0">&nbsp;ROT_ALIGN_XDIR
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group3.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/graphicLibrary/nx/nx_cmm/common/inspection_plane.gif" border="0">&nbsp;LF_SIDE_PLANE
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group3.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/inspection_path.gif" border="0">&nbsp;PATH_LF_SIDE_PLANE
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                     <p><strong>POS_XLINE</strong> is the nominal design feature you constructed using <strong>CONST_XLINE</strong>. Because you moved these elements from the <strong>FEATURES</strong> and <strong>CONSTRUCTED_FEATURES</strong> groups to the <strong>PART_ALIGNMENT</strong> group, the construction became broken.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_13">
+               <div class="stepAction">
+                  
+                  <p>Double-click <strong>CONST_XLINE</strong>, click <strong>OK</strong>, and generate again.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>The program now generates correctly.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_14">
+               <div class="stepAction">
+                  
+                  <p>Right-click <strong>CMM_PROGRAM</strong>, choose <strong>Post Process</strong>, and with the <strong>DMIS 5.2</strong> postprocessor selected, click <strong>OK</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>If a message reports that a file of the same name exists, click <strong>OK</strong>.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_15">
+               <div class="stepAction">
+                  
+                  <p>Save your inspection setup file.</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         <div class="stepListResult">
+            
+            <p>In the <strong>Information</strong> window, review the DMIS output. For information on the commands you created for part alignment, see the <span class="emphasis">Dimensional Measuring Interface Standard</span>, Part 1, Revision 5.2, ANSI/DMIS 105.2-2009.
+            </p>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">Note</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>If you run simulations on this program you will notice machine limit violations, collisions, and incorrect angles. You can further experiment with correcting these by referring to the <span class="titleReference">CMM Inspection Programming Online Help</span>.
+                     </p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+            <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;"><script type="dojo/method">
+      flashData= {
+          swfSrc : '../xps3/graphics/xpsPlayer.swf',
+          graphSrc : '../graphics/nonLocalized/nx/icons/animations/flash/nx_cmm/pl-l-pt alignment complete.gif',
+          align : 'center',
+          base : './',
+          height : '256',
+          width : '296',
+          bgcolor : '#FFFFFF',
+          flashVersion : '8',         
+          looping : 'false',
+          play : 'false',
+          menu : 'true',
+          parameters : 'mySound=false,dependentFile1=..%2Fgraphics%2FnonLocalized%2Fnx%2Ficons%2Fanimations%2Fflash%2Fnx_cmm%2Fpl-l-pt%20alignment%20complete.swf,dependentFile2=..%2Fxps3%2Fgraphics%2Fnav_buttons.txt'
+      }
+      top.loadFlash(this,flashData);
+    </script></div>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

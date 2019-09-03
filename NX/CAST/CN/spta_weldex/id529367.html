@@ -1,0 +1,127 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>在焊接结构上生成壳网格</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>在焊接结构上生成壳网格</h2>
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>使用由实体构成的 CAD 装配，该装配可以是在 NX 中创建的，也可以是导入到 NX 中的。</p>
+               <p>下图显示的是由实体构成的简单装配。</p>
+               
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/workflows/welded_workflow1.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>为分析编辑或生成 CAD 数据：</p>
+               
+               <ul>
+                  
+                  <li>
+                     
+                     <p>生成组件中面</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>简化几何体(例如，移除小孔)</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>保持需要连接的中心点位置</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>如果需要，定义焊接几何体</p>
+                     
+                  </li>
+                  
+               </ul>
+               
+               <p>下图显示第一步的装配生成中面后。</p>
+               
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/workflows/welded_workflow2.gif" border="0"></p>
+               
+               <p>下图中，仅显示中面几何体，组件中面之间含有间隙。</p>
+               
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/workflows/welded_workflow3.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>编辑多边形几何体：</p>
+               
+               <ul>
+                  
+                  <li>
+                     
+                     <p>通过缝合中面来消除间隙</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>使用抽取工具移除由缝合遗留下来的较小面</p>
+                     
+                  </li>
+                  
+               </ul>
+               
+               <p>下图显示缝合后的中面，间隙已经消除，但存在较小的面。</p>
+               
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/workflows/welded_workflow4.gif" border="0"></p>
+               
+               <p>下图显示较小的面已被移除。</p>
+               
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/workflows/welded_workflow5.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>定义 CAE 实体(比如材料和物理属性表)，壳厚度可以被链接到 CAD 实体厚度。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在模型上生成壳网格。</p>
+               <p>下图显示使用四边形网格划分模型，网格中缝合的面沿共享的边保持连续性。</p>
+               
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/workflows/welded_workflow6.gif" border="0"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>修改壳单元沿使用装配方法(比如圆角焊和角板)来加强结构刚度的边的厚度。</p>
+               
+            </li>
+            
+         </ol>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

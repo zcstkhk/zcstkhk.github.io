@@ -1,0 +1,135 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Selection Intent with measurement commands</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Selection Intent with measurement commands</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>The following commands are enhanced to store the selection intent rule with the measurement:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Measure Length</span></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Measure Face</span></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Measure Bodies</span></p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         
+         <p>With this enhancement, the stored measurements are updated according to any changes in the input values.</p>
+         
+         <table class="attentionTable attn_example">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Example</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>The area and perimeter of the selected face are measured using the <span class="uiTerm">Measure Face</span> command with the <span class="uiTerm">Face Rule</span> set to <span class="uiTerm">Single Face</span>. If you edit the Face Measurement feature and change the selection intent rule to <span class="uiTerm">Feature Faces</span>, NX automatically updates the values of the area and perimeter according to the modified selection intent rule.
+                  </p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_face/measure_face_example_before.png"></p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>The stored measurement feature is at a particular timestamp order in the part history, and any changes made after the measurement feature are not included in the measurement.</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Toolbar</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Utility</span>&rarr;<span class="uiTerm">Measure Length</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/expressions/measure_length.gif" border="0"> or <span class="uiTerm">Measure Face</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/miscellaneous/active_mockup/measure_face.gif" border="0"> or <span class="uiTerm">Measure Bodies</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/expressions/measure_bodies.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Analysis</span>&rarr;<span class="uiTerm">Measure Length</span> or <span class="uiTerm">Measure Face</span> or <span class="uiTerm">Measure Bodies</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>手动计算应变和位移</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>手动计算应变和位移</h2>
+         <p>可以在简单杆上施加轴向压力，然后移除，以预测由于塑性引起的永久应变，施加的压力载荷将诱发超出弹性极限的应力/应变条件</p>
+         <p>下图显示应用在杆上的材料的应力/应变曲线，应力(纵轴)与应变(横轴)的关系，红线表示塑性应变，绿线表示弹性应变，当移除载荷后，应力/应变曲线将沿平行于弹性直线的路径返回零应力状态。</p>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/fea_basic/theory/stress-strain_curve.png"></p>
+         <div class="division">
+            
+            <h3>计算塑性应变</h3>
+            
+            <p>这个简单一维问题的塑性应变可以按如下方法计算：</p>
+            
+            <p><span class="variableText">总应变</span> = <span class="variableText">塑性应变</span> + <span class="variableText">弹性应变</span></p>
+            
+            <p>总应变由应力级别以及材料的应力/应变数据决定，在这里，施加的压力和应力是相同的。</p>
+            
+            <p>如应力/应变曲线中所示，当<span class="variableText">应力</span> = 46250 psi 时，<span class="variableText">总应变</span> = 0.015。</p>
+            
+            <p><span class="variableText">弹性应变</span>的计算如下：</p>
+            
+            <p><span class="variableText">弹性应变</span> = <span class="variableText">应力</span> / <span class="variableText">弹性模量</span></p>
+            
+            <p>施加载荷后，代入已知的应力和弹性模量，可得：</p>
+            
+            <p><span class="variableText">弹性应变</span> = 46250/26.9E6 = 0.00172</p>
+            
+            <p>要求出塑性应变：</p>
+            
+            <p><span class="variableText">塑性应变</span> = <span class="variableText">总应变</span> &ndash; <span class="variableText">弹性应变</span></p>
+            
+            <p>代入已知量，可得：</p>
+            
+            <p><span class="variableText">塑性应变</span> = 0.01500 &ndash; 0.00172 = 0.01328</p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>计算残余位移</h3>
+            
+            <p><span class="variableText">工程应变</span> = <span class="variableText">长度上的变化</span> / <span class="variableText">原始长度</span></p>
+            
+            <p>因此</p>
+            
+            <p><span class="variableText">残余位移</span> = <span class="variableText">塑性应变</span> x <span class="variableText">原始长度</span></p>
+            
+            <p><span class="variableText">残余位移</span> = 0.01328 x 5 in = 0.06640 in</p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

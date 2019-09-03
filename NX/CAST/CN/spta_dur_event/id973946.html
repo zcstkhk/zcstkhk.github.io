@@ -1,0 +1,165 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>瞬态事件</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>瞬态事件</h2>
+         
+         <p>可以通过创建瞬态耐久性事件来对具有瞬态应力或应变结果的模型执行耐久性分析。</p>
+         <p>瞬态耐久性事件会参考瞬态解中的应力或应变历程结果。加载历史记录定义为解算方案的输入。</p>
+         <p>对于每个瞬态耐久性事件，都必须指定以下耐久性设置：</p>
+         <ul>
+           <li>
+             <p>强度准则</p>
+           </li>
+           <li>
+             <p>疲劳寿命准则</p>
+           </li>
+           <li>
+             <p>周期的数目</p>
+           </li>
+           <li>
+             <p>主加载方向</p>
+           </li>
+           <li>
+             <p>耐久性分析时间范围</p>
+           </li>
+         </ul>
+         <p>可在被瞬态事件引用的耐久性对象中指定这些设置。</p>
+         <a name="transient_support_dup1" id="transient_support_dup1"></a><div class="division">
+            
+            <h3>瞬态事件解算方案支持</h3>
+            
+            <p>瞬态事件引用响应仿真解算过程和以下 NX Nastran 解算方案中的线性应力或应变结果：</p>
+            <ul>
+              <li>
+                <p>SOL 109 直接瞬态响应和 SOL 112 模态瞬态响应</p>
+              </li>
+              <li>
+                <p>SOL 103 柔性体</p>
+              </li>
+              <li>
+                <p>SOL 601,129 高级非线性瞬态和 SOL 701 显式高级非线性分析</p>
+              </li>
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>有关响应仿真求解过程和耐久性的注释</h3>
+            
+            <p>根据多次迭代的响应仿真求解过程来创建、编辑和解析瞬态事件会导致性能降低。在 RAM 小于 8 GB 的 32 位机器上，会显示内存不足错误。</p>
+            <p>对于响应仿真求解过程，可将几何体信息与结果一起保存在 RS2 文件中。为此，请在<strong>新建事件</strong>对话框或<strong>编辑事件</strong>对话框的<strong>设置</strong>组中选中<strong>保存几何体及事件结果</strong>复选框。</p>
+            <p>瞬态事件引用不含几何体信息的 RS2 文件时，耐久性分析在应力或应变历程的所有迭代上执行。<strong>瞬态耐久性事件</strong>对话框中<strong>数据控制</strong>选项卡上的<strong>输出开始时间</strong>和<strong>输出结束时间</strong>框不可用。</p>
+            <p>基于 RS2 文件也含几何体的响应仿真事件编辑 NX 7.5.2 之前的耐久性瞬态事件时，NX 不自动检索响应仿真事件的时间域。您需要在<strong>瞬态耐久性事件</strong>对话框的<strong>数据控制</strong>选项卡中指定有效的<strong>开始时间</strong>和<strong>结束时间</strong>值。</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>柔性多体耐久性分析</h3>
+            
+            <p>在<strong>解算方案</strong>对话框的<strong>工况控制</strong>选项卡上，可从<strong>柔性体解算方案类型</strong>列表中选择：</p>
+            <ul>
+              <li>
+                <p><strong>恢复</strong>，以创建具有恢复选项的 NX Nastran SOL 103 柔性体解算方案。</p>
+              </li>
+              <li>
+                <p><strong>导出</strong>，以创建具有导出选项的 NX Nastran SOL 103 柔性体解算方案。</p>
+              </li>
+            </ul>
+            <p>具有恢复选项的解算方案的 OP2 文件大小大于具有导出选项的解算方案的文件大小。</p>
+           <p>为瞬态耐久性事件选择 NX Nastran SOL 103 柔性体解算方案时： </p>
+            <ul>
+              <li>
+                <p>如果该解算方案具有恢复选项，则 OP2 文件会包含直接执行耐久性分析所需的所有应力或应变历程。</p>
+              </li>
+              <li>
+                <p>如果解算方案具有导出选项，则 OP2 文件仅包含模态形状。多体动态求解器的模态位移历程结果存储在 MDF 文件中。必须在<strong>瞬态耐久性事件</strong>对话框中指定 MDF 文件。</p>
+                <p>对于每个单元节点，耐久性求解器都可通过缩放具有模态形状的模态位移历程，来恢复应力和应变历程。计算出的应力和应变历程稍后用于执行耐久性分析。</p>
+              </li>
+            </ul>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                 <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p>高级仿真</p></td>
+               </tr>
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">先决条件</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p>瞬态结构解算方案</p></td>
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>耐久性→瞬态耐久性事件</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/durability/transient_durability_event.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p><strong>插入</strong>→<strong>耐久性</strong>→<strong>事件</strong>→<strong>瞬态</strong></p></td>
+               </tr>
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">仿真导航器</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p>右键单击耐久性求解过程节点→<strong>新建事件</strong>→<strong>瞬态</strong></p></td>
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>在连接器的线缆端创建“多个端口”</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>在连接器的线缆端创建“多个端口”</h2>
+         
+         <p>这个“多个端口”中的各个管端都包含唯一的 ID，如果您不这些连接点，它们将成为虚拟端口。如果这是您正常连接到的端口，那么您就不需要创建管端端口。但是，一旦您为特定的连接点指派了唯一的 ID，它们就将成为管端端口。</p>
+         
+         <p>从接线的一侧开始创建“多个端口”。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在<strong>电气管线布置</strong>工具条上的<strong>工具</strong>下拉菜单中，选择<strong>审核部件</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/routing/common/qualify_part.gif" border="0" alt="工具 &gt; 审核部件" title="工具 &gt; 审核部件">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>管线部件类型</strong>组中，确保选择的是<strong>连接件</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>您正在审核一个连接件，亦即安装到一个设备上的连接器。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>连接件</strong>列表中，确保选择的是<strong>连接器</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>管线布置对象</strong>框的<strong>端口</strong>下方，右击<strong>多个</strong>节点并选择<strong>新建</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>这个多个端口位于面的中心，并且背离这个面。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_electrical/activities/qualify_part/2_Qualify_part_vector_19.gif"></p>
+                     
+                     <p>在<strong>选择步骤</strong>框中，<strong>原点</strong>应该是激活的。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_electrical/activities/qualify_part/2_Qualify_part_qualify1_230.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>过滤器</strong>列表中，选择<strong>面</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>选择部件上的管端面。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_electrical/activities/qualify_part/2_Qualify_part_vector_17.gif"></p>
+                     
+                     <p>您想让管线段从“多个端口”的原点向外延伸13 mm (沉头深度)。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>在<strong>延伸</strong>框中，键入<span class="userInput">13</span>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>每条线缆至少从“多个端口”的原点前方向外伸出26 mm。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>在<strong>接线长度</strong>输入框中键入<span class="userInput">26</span>。
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>单击鼠标中键以前进至步骤<strong>对齐矢量</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_electrical/activities/qualify_part/2_Qualify_part_qualify1_250.gif"></p>
+                     
+                     <p>矢量箭头应该指向背离部件的方向。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_electrical/activities/qualify_part/2_Qualify_part_vector_19.gif"></p>
+                     
+                     <p>如果不是，请点击<strong>循环方向</strong>。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>将会在面的中心处出现一个临时的“多个端口”，并且打开<strong>指派管端</strong>对话框。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_electrical/activities/qualify_part/2_Qualify_part_vector_20.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

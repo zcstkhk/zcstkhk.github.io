@@ -1,0 +1,10 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开部件并设置工序导航器",file:"id788333.html",type:"topic",parent:""},
+{id:"d7e3",title:"创建铣刀",file:"id926407.html",type:"topic",parent:""},
+{id:"d7e4",title:"指定刀具尺寸和材料",file:"id926409.html",type:"topic",parent:""},
+{id:"d7e5",title:"在工序中使用新刀具",file:"id926411.html",type:"topic",parent:""},
+{id:"d7e6",title:"从库中调用刀具",file:"id926413.html",type:"topic",parent:""},
+{id:"d7e7",title:"管理刀具库搜索",file:"id926415.html",type:"topic",parent:""},
+{id:"d7e8",title:"从搜索结果中选择刀具",file:"id926417.html",type:"topic",parent:""},
+{id:"d7e9",title:"获取关于刀具的信息",file:"id926419.html",type:"topic",parent:""},
+{id:"d7e10",title:"生成刀轨",file:"id926421.html",type:"topic",parent:""}]}

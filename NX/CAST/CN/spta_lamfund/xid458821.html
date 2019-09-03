@@ -1,0 +1,311 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>纤维强化的层片材料</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>纤维强化的层片材料</h2>
+         
+         <p>在创建纤维强化的<strong>层片材料</strong>时，必须指定以下内容：</p>
+         <ul>
+           <li>
+             <p>纤维增强类型</p>
+           </li>
+           <li>
+             <p>纤维和基质材料</p>
+           </li>
+           <li>
+             <p>纤维和基质体积分数</p>
+           </li>
+           <li>
+             <p>(可选)Tsai-Wu 交互系数和允许的强度/应变替代</p>
+           </li>
+         </ul>
+         
+         
+         <div class="division">
+            
+           <h3>纤维强化类型</h3>
+            
+            <a name="genid_spta_lamfund_23" id="genid_spta_lamfund_23"></a><table border="0" cellpadding="4" cellspacing="2" frame="box" rules="all" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/ply_materials/fiber_uni.gif"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/ply_materials/fiber_particulate.gif"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr align="center">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">单向纤维</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">颗粒纤维</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/ply_materials/fiber_random.gif"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/ply_materials/fiber_woven.gif"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr align="center">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">随机定向的短纤维</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">织物纤维</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         <a name="id852051" id="id852051"></a>
+         
+         
+         
+         <h2>纤维强化的层片材料类型</h2>
+         
+         
+         
+         <div class="division">
+            
+           <h3>基质</h3>
+            
+            <p>基质的 NX 材料必须各向同性。</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>纤维</h3>
+            
+            <table border="1" cellpadding="10" cellspacing="0" width="95%" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="2">
+                  
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr>
+                    <td colspan="1" rowspan="1" align="center" bgcolor="#E0E0E0" valign="middle"><p>纤维增强类型</p></td>
+                    <td colspan="1" rowspan="1" align="center" bgcolor="#E0E0E0"><p>相应的层片材料类型</p></td>
+                    <td colspan="1" rowspan="1" align="center" bgcolor="#E0E0E0" valign="middle"><p>受支持的 NX 材料纤维类型</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7" valign="middle"><p><strong>单向</strong></p></td>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7"><p>正交各向异性</p></td>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7" valign="middle"><p>各向同性或正交各向异性</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7"><p><strong>颗粒</strong></p></td>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7"><p>各向同性</p></td>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7"><p>各向同性</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7"><p><strong>随机短纤维</strong></p></td>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7"><p>各向同性</p></td>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7"><p>各向同性或正交各向异性</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7"><p><strong>织物</strong></p></td>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7"><p>正交各向异性</p></td>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7"><p>各向同性或正交各向异性</p></td>
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         
+         <a name="id852046" id="id852046"></a>
+         
+         
+         
+         <h2>Fiber-reinforced ply material reference temperature</h2>
+         
+         
+         
+         <p>The ply material reference temperature is set to (in this order):</p>
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>The <strong>Reference Temperature</strong> value of the fiber material, if defined.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The <strong>Reference Temperature</strong> value of the matrix material, if defined.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>20&deg;C</p>
+               
+            </li>
+            
+         </ol>
+         
+         <p>When the ply material is used in the laminate, the laminate reference temperature overrides the ply material reference temperature.</p>
+         
+         
+         <a name="id1581878" id="id1581878"></a>
+         
+         
+         
+         <h2>Fiber-reinforced ply material Tsai-Wu interaction coefficient</h2>
+         
+         
+         
+         <p>The ply material Tsai-Wu interaction coefficient is set to (in this order):</p>
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>The <strong>Tsai Wu Interaction</strong> value specified in the <strong>Laminate Ply Material</strong> dialog box, if defined.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The <strong>Tsai-Wu Interaction Coefficient (F12)</strong> value of the fiber material, if defined.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The <strong>Tsai-Wu Interaction Coefficient (F12)</strong> value of the matrix material, if defined.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>0.0</p>
+               
+            </li>
+            
+         </ol>
+         
+         
+         <a name="id1581879" id="id1581879"></a>
+         
+         
+         
+         <h2>Fiber-reinforced ply material finished thickness</h2>
+         
+         
+         
+         <p>Optionally, you can specify the <strong>Finished Thickness</strong> for:
+         </p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>Unidirectional</strong></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>Random Short Fiber</strong></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>Woven</strong></p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>The ply material <strong>Finished Thickness</strong> overrides the ply <strong>Thickness</strong> defined in the <strong>Laminate Modeler</strong> and <strong>Layup Modeler</strong> dialog boxes.
+         </p>
+         
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

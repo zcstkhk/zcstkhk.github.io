@@ -1,0 +1,179 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Create fit splines with tangency constraints</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>使用相切约束创建拟合样条</h2>
+         
+         <p>将使用样条来拟合钟形区域中的点，并且拟合样条将与两侧的直线相切。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/fit_curve/fit_curve_1_splines.png"></p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在<strong>拟合曲线</strong>对话框中，设置如下参数：</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p><strong>类型</strong> = <strong>拟合样条</strong></p>
+                        
+                     在<strong>目标</strong>组中：</li>
+                  </ul>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p><strong>源</strong> = <strong>成链的点</strong></p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>选择链的起点和终点，如图所示：</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/fit_curve/fit_curve_1_splines_1a.png"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/fit_curve/fit_curve_1_splines_1b.png"></p>
+                     
+                     <p>默认<strong>方法</strong>为<strong>阶次和段数</strong>，但您更感兴趣的是将这些点使用较宽松的公差生成一条更光顺的样条，而不是控制样条的段数。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>参数化</strong>组中，设置如下参数：</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p><strong>方法</strong> = <strong>阶次和公差</strong></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><strong>公差</strong> = <strong>0.1</strong></p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/fit_curve/fit_curve_1_splines_1c.png"></p>
+                     
+                     <p>注意到位于起点处的矢量与拟合直线并不相切，因此您需要添加一些端点约束。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>点约束</strong>组的<strong>端点约束</strong>子组中，确定选择的是<strong>起点</strong>，然后点击<strong>指定相切</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>选择如图所示直线。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/fit_curve/fit_curve_1_splines_1d.png"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/fit_curve/fit_curve_1_splines_1e.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在<strong>端点约束</strong>子组中，点击<strong>终点</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>选择如图所示直线。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/fit_curve/fit_curve_1_splines_1f.png"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/fit_curve/fit_curve_1_splines_1g.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>应用</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>对右侧扫描点重复上述步骤，以创建拟合样条并将它们约束到相应的拟合直线。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

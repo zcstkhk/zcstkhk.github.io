@@ -1,0 +1,64 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>设置单元大小</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>设置单元大小</h2><a name="ndxgenid_spta_meshintro_18"></a>
+         
+         
+         <p>网格划分对话框中的<strong>单元大小</strong>(全局单元大小)选项允许您控制自由或映射网格中的单元长度。该长度是单元边的近似长度。</p>
+         
+         
+         <p>由于软件将周边几何体和单元质量问题考虑在内，因此，模型中单元边的实际长度可能会有所不同。</p>
+         <p>要使软件根据选定的几何体来计算预计的单元长度，使用网格划分对话框中的<strong>自动单元大小</strong>选项。</p>
+         <a name="genid_spta_meshintro_20"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/meshing/und_element_length1.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>于(A) 1D 或梁单元；(B) 2D 或壳单元；(C) 3D 或实体单元上测量的单元长度</h4>
+         </div>
+         
+         
+         <p>如果基于全局<strong>单元大小</strong>的网格未充分修整到足以捕捉模型中的细节的程度，那您可以：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>使用 <strong>2D 网格</strong>对话框中的<strong>基于曲率的大小变化</strong>选项或 <strong>3D 四面体网格</strong>对话框中的<strong>基于表面曲率的大小变化</strong>选项来让软件在曲面曲率更高的区域中改变单元的大小。</p>
+               <a name="ndxgenid_spta_meshintro_20"></a>
+               <a name="ndxgenid_spta_meshintro_21"></a>
+               
+               
+            </li>
+            
+            <li>使用<strong>网格控制</strong>命令，可局部控制选定边或面上的单元大小。例如，您可以使用<strong>网格控制</strong>对话框上的<strong>边上的大小</strong>选项，指定要在特定边上使用的确切单元长度。<a name="ndxgenid_spta_meshintro_22"></a>
+               
+               
+            </li>
+            
+         </ul>
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

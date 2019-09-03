@@ -1,0 +1,152 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>耐久性分析支持的求解器和解算方案</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>耐久性分析支持的求解器和解算方案</h2>
+         
+         <p>耐久性求解器会基于结构解算方案的应力或应变结果计算强度和疲劳结果。您创建的耐久性事件类型取决于结构解算方案。</p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>您应该请求最大剪切寿命准则的应变结果以及所有其他疲劳寿命准则的应力结果。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <p>耐久性求解器会根据以下位置存储的结果来恢复应力或应变值：</p>
+         <ul>
+           <li>
+             <p>单元中的节点 — 对于每个单元而言，结果都位于该单元的节点中。因此，一个节点可以有多个结果，它所属的每个单元对应一个节点</p>
+           </li>
+           <li>
+             <p>单元中心</p>
+           </li>
+           <li>
+             <p>节点 — 在网格的每个节点中只存储一个结果。存储的节点结果是单元中节点值的平均值           </p>
+           </li>
+         </ul>
+         <a name="static_support"></a><div class="division">
+            
+            <h3>静态事件解算方案支持</h3>
+            
+            <p>静态事件引用以下解算方案的应力或应变结果：</p>
+            <ul>
+              <li>
+                <p>NX Nastran 或 MSC Nastran：SOL 101 线性静力学 - 常规约束和 SOL 101 线性静力学 - 子工况约束</p>
+              </li>
+              <li>
+                <p>ANSYS：线性静态</p>
+              </li>
+              <li>
+                <p>Abaqus：静态扰动</p>
+              </li>
+            </ul>
+            
+         </div>
+         <a name="transient_support"></a><div class="division">
+            
+            <h3>瞬态事件解算方案支持</h3>
+            
+            <p>瞬态事件引用以下解算方案的应力或应变结果：</p>
+            <ul>
+              <li>
+                <p>NX Nastran：SOL 109 直接瞬态响应和 SOL 112 模态瞬态响应</p>
+              </li>
+              <li>
+                <p>响应仿真求解过程</p>
+              </li>
+              <li>
+                <p>NX Nastran SOL 103 柔性体</p>
+              </li>
+              <li>
+                <p>NX Nastran 高级非线性：SOL 601,129 高级非线性瞬态和 SOL 701 显式高级非线性分析(线性应力和应变)</p>
+              </li>
+            </ul>
+            <h3>随机事件解算方案支持</h3>
+            <p>随机耐久性事件引用响应仿真求解过程及其随机事件。</p>
+         </div>
+         
+         <div class="division">
+            
+            <h3>请求应力或应变结果</h3>
+            
+            <p>根据求解器类型，需按如下所述请求应力或应变结果：</p>
+            <ul>
+              <li>
+                <p>对于 Nastran 解算方案，可以在<strong>解算方案</strong>对话框的<strong>工况控制</strong>选项卡中指定<strong>输出请求</strong>建模对象。</p>
+              </li>
+              <li>
+                <p>对于 ANSYS 解算方案，需在<strong>解算方案</strong>对话框的<strong>输出控制</strong>选项卡上指定应力或应变。</p>
+              </li>
+              <li>
+                <p>对于 Abaqus 解算方案，可以在<strong>解算步骤</strong>对话框的<strong>输出</strong>选项卡中指定<strong>输出请求</strong>建模对象。</p>
+              </li>
+            </ul>
+            
+            
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>导入的结果</h3>
+            
+            <p>您可以在引用已导入的解算结果的耐久性求解过程中创建静态或瞬态事件。</p>
+           <p>已导入的解算方案必须满足以下条件：</p>
+            <ul>
+              <li>
+                <p>已导入的解算方案必须包含与已加载的仿真文件中模型相匹配的模型的结果。</p>
+              </li>
+              <li>
+                <p>已导入的结果必须包含静态或瞬态应力或应变。</p>
+              </li>
+              <li>
+                <p>您必须能够对已导入的结果进行后处理。</p>
+              </li>
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>层合板支持</h3>
+            
+            <p>耐久性使用已定义的层合板物理属性表为模型中的应力和应变结果提供支持。NX 将计算顶部和底部层片应力或层片应变中的耐久性结果。</p>
+           <p>耐久性不支持以下层合板：</p>
+            <ul>
+              <li>
+                <p>带有层片，且层片材料类型设为<strong>层片材料</strong>的层合板。</p>
+              </li>
+              <li>
+                <p>使用全局铺层定义的层合板。</p>
+              </li>
+              <li>
+                <p>使用实体层合板物理属性表定义的层合板。</p>
+              </li>
+            </ul>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

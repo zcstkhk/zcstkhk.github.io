@@ -1,0 +1,117 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>部件模块</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>部件模块</h2>
+         <div class="estimatedTime">
+            <p>预计完成这堂课需要：1  小时</p>
+         </div>
+         <div></div>
+         
+         <p>部件模块支持设计者将单个复杂部件中的特征划分为逻辑组。此划分允许设计者一次关注复杂部件的一个区域，因为这样更易显示和更新该区域。 </p>
+         <p>每个部件模块包含一个主部件文件内部的特定特征组。在以下示例中,高亮分区的所有草图、拉伸和折弯均在一个&ldquo;部件模块&rdquo;中。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/pmod_overview2.png"></p>
+         
+         <p>可以在主部件文件中创建多个&ldquo;部件模块&rdquo;，并将这些部件模块的特征移动到相应的外部&ldquo;链接部件模块&rdquo;文件中。每个外部&ldquo;链接部件模块&rdquo;文件已使用部件间 WAVE 引用链接到其主部件文件中相应的&ldquo;部件模块&rdquo;。 </p>
+         <p>链接部件模块允许多个设计者同时处理一个复杂部件。团队中的设计者可以更改其&ldquo;链接部件模块&rdquo;中的设计元素，这对其他文件影响甚微，或者没有影响。设计团队的典型工作流将受到主要设计者控制。主要设计者：</p>
+         <ol start="1" type="1">
+           <li>
+             <p>在主部件文件中创建处于未完成状态的&ldquo;部件模块&rdquo;，然后将这些模块分解为单独的&ldquo;链接部件模块&rdquo;文件，而这些链接部件模块文件将被分配给设计团队的成员。</p>
+           </li>
+           <li>
+             <p>更新主部件文件中的每个&ldquo;链接部件模块&rdquo;特征，以查看设计者进程，并确保继续下游工作是基于主部件文件中的最新几何体。</p>
+           </li>
+           <li>
+             <p>将已完成的&ldquo;链接部件模块&rdquo;文件合并到主部件文件中。 </p>
+           </li>
+         </ol>
+         <p>在下面的示例中，在外部“链接部件模块”中设计摩托车变速箱的框架和主驱动器托架。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/pmod_overview3.png"></p>
+         
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">建模和外观造型设计</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>特征重放</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p><strong>格式</strong>→<strong>部件模块</strong></p>
+                     
+                     <p class="no-bottom-margin">菜单中包含工具条上找不到的其他命令。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         <a name="xid457009" id="xid457009"></a><a name="xid457147" id="xid457147"></a><a name="xid457553" id="xid457553"></a><a name="xid475658" id="xid475658"></a><a name="xid475873" id="xid475873"></a><a name="xid481304" id="xid481304"></a><div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,10 @@
+{identifier:"id",label:"title",items:[
+{id:"d12e2",title:"打开仿真",file:"two_d_contact_open_the_part.html",type:"topic",parent:""},
+{id:"d12e3",title:"重置对话框内存",file:"id353012_dup5.html",type:"topic",parent:""},
+{id:"d12e4",title:"查看机构",file:"examine_the_mechanism_2d.html",type:"topic",parent:""},
+{id:"d12e5",title:"在凸轮与摇杆上创建2D 接触",file:"create_2d_contact_rocker_cam.html",type:"topic",parent:""},
+{id:"d12e6",title:"在摇杆与气门之间创建2D 接触",file:"create_2d_contact_rocker.html",type:"topic",parent:""},
+{id:"d12e7",title:"创建解算方案并求解",file:"create_a_solution_curve_2d_contact.html",type:"topic",parent:""},
+{id:"d12e8",title:"查看机构动画",file:"animate_the_mechanism.html",type:"topic",parent:""},
+{id:"d12e9",title:"可选：将实体添加到连杆中",file:"add_solids_to_links_contact.html",type:"topic",parent:""},
+{id:"d12e10",title:"可选：再次查看机构运动",file:"animate_mech_again.html",type:"topic",parent:""}]}

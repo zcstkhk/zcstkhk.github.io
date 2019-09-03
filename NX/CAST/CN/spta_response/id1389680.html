@@ -1,0 +1,126 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>从响应仿真查看模态</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>从响应仿真查看模态</h2>
+         
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/simulation_navigator_tab.gif" border="0">&nbsp;<strong>仿真导航器</strong></p>
+         
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0">&nbsp;<strong>正则模态[38]</strong>(位于 <strong>Response Simulation 1</strong>节点下方) </p>
+               
+               <table class="attentionTable attn_note">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">注释</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>注意到 MEFFMASS 阈值已经将您请求的60个模态中的22个滤出。</p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="45">
+                     
+                     <col span="1" width="*">
+                     
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="banner_left" colspan="1" rowspan="1" width="10"></td>
+                        
+                        <td class="banner_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>响应仿真细节视图</strong></p>
+                           
+                        </td>
+                        
+                        <td class="banner_right" colspan="1" rowspan="1" width="45"></td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+               <p>个面板中显示了在动态响应解算方案中求解出的各个正则模态的动态特性(频率、质量、阻尼以及刚度)。</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/fan/fan_06.gif"></p>
+               
+               <p>通常来说，您想让施加力方向上的合计有效质量为80%或更高，在这个模型中，您只在 Z 向上施加了载荷，而 Z 向上的合计有效质量大约为87%。</p>
+               
+               <table class="attentionTable attn_tip">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">提示</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>如果您想包含更多质量，请使用下列选项之一或者全部来重新进行正则模态解算：</p>
+                        
+                        <ul>
+                           
+                           <li>
+                              
+                              <p>请求软件计算更多模态</p>
+                              
+                           </li>
+                           
+                           <li>
+                              
+                              <p>减小 MEFFMASS 阈值，以使软件保留更多的模态以用于响应仿真</p>
+                              
+                           </li>
+                           
+                        </ul>
+                        
+                        <p>对于这个练习，您不需要重新进行解算。</p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

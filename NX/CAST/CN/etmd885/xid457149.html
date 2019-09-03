@@ -1,0 +1,203 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Create a Linked Part Module</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Create a Linked Part Module</h2>
+         
+         
+         <p>In your role as the principal designer, you need to convert an internal Part Module to an external Linked Part Module. This will allow a secondary designer to work independently on the Linked Part Module file.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>Open <span class="fileName">des18_85_linked_part_module_main</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/linked_pmod/01_linked_pmod.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>Make sure that the <span class="uiTerm">Tools</span>&rarr;<span class="uiTerm">Update</span>&rarr;<span class="uiTerm">Interpart Update</span>&rarr;<span class="uiTerm">Delay Geometry, Expressions, and PMI Update</span> option is not selected.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Part Navigator</span>, right-click <span class="uiTerm">Part Module</span> <span class="literalText">&ldquo;Heat Sink&rdquo;</span> and choose <span class="uiTerm">Expand All</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>The part module contains three collectors: <span class="uiTerm">Inputs</span>, <span class="uiTerm">Work</span>, and <span class="uiTerm">Outputs</span>. A sketch and two extrude features are in the <span class="uiTerm">Work</span> collector. All three features make up this one part module.
+                     </p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/linked_pmod/02_linked_pmod.png"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>You need to convert this part module to an external WAVE Linked Part Module.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>Right-click <span class="uiTerm">Part Module</span> <span class="literalText">&ldquo;Heat Sink&rdquo;</span> and choose <span class="uiTerm">Create Linked Part Module Part</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Name</span> box, type <span class="userInput">heat_sink_linked_file</span>.
+                  </p>
+                  
+                  <p>In the <span class="uiTerm">Folder</span> box, choose the desired folder, and click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>Examine the <span class="uiTerm">Part Navigator</span>. Notice that:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>The new feature name is <span class="uiTerm">Linked Part Module</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>The <span class="uiTerm">Work</span> collector is gone. It moved to the Linked Part Module file. 
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>The <span class="uiTerm">Outputs</span> collector has a WAVE link: 
+                        </p>
+                        
+                        <p><img align="bottom" src="../graphics/nonLocalized/nx/modeling/part_navigator/linkedface.gif" border="0"> <span class="uiTerm">Linked Face</span> <span class="uiTerm">(13)</span>.
+                        </p>
+                        
+                        <p>This child feature is WAVE linked to the parent features in <span class="uiTerm">Outputs</span> collector of the Linked Part Module file.
+                        </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>Right-click <span class="uiTerm">Linked Part Module</span> <span class="literalText">&ldquo;Heat Sink&rdquo;</span> and choose <span class="uiTerm">Make Linked Work</span>, to check the part file you are sending to the secondary designer.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>You can also use the <span class="uiTerm">Make Linked Work</span> command to display a secondary designer&rsquo;s work.
+                     </p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/linked_pmod/03_linked_pmod.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>On the <span class="uiTerm">Standard</span> toolbar click, <span class="uiTerm">Save</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/standard/save.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>To display the main part again, right-click <span class="uiTerm">Linked Part Module</span> <span class="literalText">&ldquo;Heat Sink&rdquo;</span> and choose <span class="uiTerm">Make Main Work</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/part_module/tutorial/linked_pmod/01_linked_pmod.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>Choose <span class="uiTerm">File</span>&rarr;<span class="uiTerm">Close</span>&rarr;<span class="uiTerm">Selected Parts</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Part</span> group, select <span class="fileName">heat_sink_linked_file</span><span class="fileName">.prt</span> and click, <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepRemediation">
+                     
+                     <p>Closing the Linked Part Module file unlocks the file so the secondary designer can start working on the file.</p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

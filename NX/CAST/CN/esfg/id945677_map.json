@@ -1,0 +1,10 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"创建工序",file:"id945681.html",type:"topic",parent:""},
+{id:"d7e3",title:"自动识别壁",file:"id996700.html",type:"topic",parent:""},
+{id:"d7e4",title:"生成刀轨",file:"id996732.html",type:"topic",parent:""},
+{id:"d7e5",title:"可视化材料移除",file:"id996734.html",type:"topic",parent:""},
+{id:"d7e6",title:"定义多个刀路",file:"id996736.html",type:"topic",parent:""},
+{id:"d7e7",title:"生成刀轨",file:"id996738.html",type:"topic",parent:""},
+{id:"d7e8",title:"选择性地识别壁",file:"id996740.html",type:"topic",parent:""},
+{id:"d7e9",title:"移除面",file:"id996742.html",type:"topic",parent:""},
+{id:"d7e10",title:"生成并确认刀轨",file:"id996744.html",type:"topic",parent:""}]}

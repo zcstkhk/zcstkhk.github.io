@@ -1,0 +1,6 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"CMM 检测编程",file:"id1338015.html",type:"topic",parent:"",children:[
+{id:"d5e4",title:"应用平面/直线/点对齐策略",file:"id1371950.html",type:"activity",parent:"d5e3"},
+{id:"d5e5",title:"Constructing a CMM probe",file:"id1338048.html",type:"activity",parent:"d5e3"},
+{id:"d5e6",title:"Defining a virtual tool rack",file:"id1458094.html",type:"activity",parent:"d5e3"}]}
+]}

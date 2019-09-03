@@ -1,0 +1,50 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>主模型</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>主模型</h2>
+         <a name="ndxgenid_eama_16"></a>
+         
+         
+         <p><em>主模型</em>是一个部件文件，它是装配的唯一组件，其包含的数据通常来自一个下游应用模块，例如：</p>
+         <ul>
+           <li>
+             <p>制图</p>
+           </li>
+           <li>
+             <p>加工</p>
+           </li>
+           <li>
+             <p>分析</p>
+           </li>
+         </ul>
+         <p>主模型可以是：</p>
+         <ul>
+           <li>
+             <p>包含几何体的零件文件。</p>
+           </li>
+           <li>
+             <p>装配文件，其中包含带几何体的零件文件。</p>
+           </li>
+         </ul>
+         <p>主模型概念支持<em>并行工程</em>。多个主模型装配可以同时引用相同的几何体，而每个装配文件均由其各自的几何体所有。在主模型完成前，可以使用下游应用模块开始工作。由于应用模块数据同主模型中的几何体关联，因此部件会在主模型发生更改时更新。</p>
+         <p>在 Teamcenter Integration for NX 和原生 NX 中，可以通过将主模型添加为模板的组件来创建主模型结构，该模板专用于要创建的下游数据类型。</p>
+         <p>在 Teamcenter Integration for NX 中，可以自动创建主模型结构。零组件版本的每个 UG 部件的<em>规格</em>或<em>表现</em>均为将零组件版本 UG 主模型数据用作主模型的装配。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

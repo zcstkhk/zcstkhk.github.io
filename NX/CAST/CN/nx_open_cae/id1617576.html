@@ -1,0 +1,62 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>CAE 应用程序中工作部件的重要性</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>CAE 应用程序中工作部件的重要性</h2>
+         
+         <p>当您为 CAE 创建 NX Open 应用程序时，您必须理解哪些操作发生在哪些部件类型中，以便您可以确保将合适的部件设置为工作部件。</p>
+         
+         <p> 例如：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>当 FEM 文件为工作部件时定义网格。</p>
+               
+               <table class="attentionTable attn_note">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">注释</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>尽管您可以在仿真文件为工作部件时查看网格，但只有在 FEM 文件为工作部件时才能创建或修改网格、节点以及单元。如果您查看数据模型，您可以看到网格只是仿真文件中的事例对象，即 FEM 文件中的原型对象。</p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+            
+            <li>
+               
+               <p>当仿真文件为工作部件时创建边界条件并指定解算方案选项。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>当理想化部件为工作部件时对几何体进行某些修改，比如移除倒斜角。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

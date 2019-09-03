@@ -1,0 +1,8 @@
+{identifier:"id",label:"title",items:[
+{id:"d8e2",title:"打开部件",file:"table_func_open_the_part.html",type:"topic",parent:""},
+{id:"d8e3",title:"重置对话框内存",file:"id353012_dup1.html",type:"topic",parent:""},
+{id:"d8e4",title:"创建函数驱动",file:"create_a_function_driver.html",type:"topic",parent:""},
+{id:"d8e5",title:"添加函数 ID 信息",file:"add_function_id_information.html",type:"topic",parent:""},
+{id:"d8e6",title:"定义 XY 轴并添加表格数据",file:"add_xy_axis_information.html",type:"topic",parent:""},
+{id:"d8e7",title:"创建解算方案",file:"create_a_solution_harmonic_dup1.html",type:"topic",parent:""},
+{id:"d8e8",title:"查看机构动画",file:"animate_the_mechanism.html",type:"topic",parent:""}]}

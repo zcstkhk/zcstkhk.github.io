@@ -1,0 +1,121 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>修剪和延伸方法</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>修剪和延伸方法</h2>
+         
+         <p>延伸曲面时，可以指定连续性类型。</p>
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>自然相切</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p> 在选定的边上，延伸在与面相切的方向是线性的。</p>
+                  
+                  <p>这种类型的延伸为相切(C1)连续。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>自然曲率</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>面延伸时曲率连续(C2)。</p>
+                  
+                  <p>可以使用确保在延伸开始时为 C2 连续性，在一小段距离后趋于线性算法，进行此项操作。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>镜像的</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>面的延伸尽可能反映或&ldquo;镜像&rdquo;要延伸的面的形状。 </p>
+                  
+               </div>
+            </div>
+         </div>
+         
+         
+         <table border="0" cellpadding="2" cellspacing="1" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/trim_and_extend/trim_extend_extension_options.png"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <ol type="1" start="1">
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">所选的边</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin"><strong>自然相切</strong></p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin"><strong>自然曲率</strong></p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin"><strong>镜像的</strong></p>
+                           
+                        </li>
+                        
+                     </ol>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

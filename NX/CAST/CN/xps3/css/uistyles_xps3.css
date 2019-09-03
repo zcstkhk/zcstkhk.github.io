@@ -1,0 +1,616 @@
+
+/*
+		-------------- Layout Sytles ---------------
+*/
+
+
+body, html, #view {
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}
+
+.borderContainer {
+  height:100%;
+  width:100%;
+}
+
+.floatingSelection {
+  position:absolute;
+  top: 6px;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  overflow: hidden;
+  background: #FFFFFF; 
+  z-index: -1;
+}
+
+a {
+  text-decoration: none;
+  color: #D47660;
+}
+
+a:visited { 
+  color: #D47660;
+}
+
+a:active { 
+  color: #D47660;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.topPane {
+  border-bottom: 1px solid #b8b8b8;
+  overflow:hidden;
+}
+
+.auxPane {
+  border-right: 1px solid #b8b8b8;
+  background: #F1F7F8;
+}
+
+#footer {
+  clear:both;
+}
+
+#footer .buttonBox {
+  border-top: 1px solid #CCCCCC;
+  margin-top:5px;
+  padding-top:5px;
+  text-align:right;
+}
+
+#footer .closeInfo {
+  background: #f1f7f8;
+  border: 1px solid #b8b8b8;
+  margin-bottom:0px;
+}
+
+#footer .closeInfo p {
+  margin:5px;
+}
+
+.rightSpacer {
+  width:5;
+  height:16pt;
+  float:right;
+}
+
+.topDiv {
+  margin: 5px;
+}
+
+.topDiv .title {
+  font-family:'Trebuchet MS';
+  color:#666666;
+  font-size:18px;
+}
+
+.navMenu {
+  float:right;
+  clear:both;
+  margin-top:4px;
+  white-space: nowrap;
+}
+
+.mainPane {
+}
+
+
+/*
+		-------------- XPS Common Sytles ---------------
+*/
+
+.frontCover h1 {
+  font-size:24px;
+  font-family:'Trebuchet MS';
+  text-align: center;
+  margin-bottom:10px;
+}
+
+.topicSetType, .statusTitle {
+  text-align: center;
+  font-family:'Trebuchet MS';
+  margin-bottom:10px;
+}
+
+h1 {
+}
+
+h2 {
+  font-family:'Trebuchet MS';
+  color:#666666;
+  font-size:24px;
+  margin-top: 0;
+  margin-bottom: .45em;
+  font-weight: normal;
+}
+
+h3 {
+  margin-top:0;
+  margin-bottom: 8px;
+  font-family:'Trebuchet MS'; 
+  color:#666666;
+  font-size:21px;
+  font-weight: normal;
+}
+
+.figureContainer h4 {
+	margin-top:0;
+	margin-bottom:1.5em;
+	text-align:center;
+}
+
+.figureContainer table {
+	margin-bottom:0;
+}
+
+p, .stepLabel {
+  font-family:'Trebuchet MS';
+  color:#333333; 
+  font-size:15px;
+  margin:0;
+  margin-bottom: 1.0em;
+  line-height:1.3em;
+}
+
+li p {
+  margin-bottom: .5em;
+}
+
+thead th, thead td, .paraTitle, .boldText {
+  font-weight: bold;
+}
+
+ol li, ul li {
+  font-family:'Trebuchet MS';
+  font-size:15px;
+  margin-left: 0pt;
+}
+
+ul {
+	margin-top: 0pt; 
+	margin-bottom: 8pt;
+	margin-left: 20pt;
+	padding: 0;
+}
+
+dl {
+	margin-top: 0pt; 
+	margin-bottom: 8pt;
+	margin-left: 10pt;
+	padding: 0;
+}
+
+dd {
+  margin-left:20px;
+}
+	
+ul h4, ol h4 {
+ margin:0;
+}
+
+.stepDetails ol li {
+  margin-left:15px;
+}
+
+.attn_title { 
+  font-family:'Trebuchet MS';
+  font-size:15px;
+  color:#333333;
+  white-space:nowrap;
+  border: 1px solid gray;
+  padding-left:2pt;
+  padding-right:3pt;
+  margin-top:-1pt;
+}
+
+.attn_warning .attn_title, .attn_caution .attn_title {
+  color: #FF0000;
+}
+
+/* codeExample styles */
+pre {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  margin-bottom: .6em;
+  white-space:pre-wrap;
+}
+
+.codeExample {}
+    
+.codeExampleBox {
+  border: 1pt solid black;
+  margin-left: 0;
+  padding: .5em;
+  overflow:auto;
+}
+
+.codeExampleSmall {
+  font-size: 9pt;
+}
+
+/* defObject sytles */
+
+.defList > div, .defListItem {
+  clear:both;
+}
+
+.defList + * {
+  clear:both;
+}
+
+.defObject {
+  padding:0;
+  border:0;
+  margin:0;
+}
+
+.defObject p {
+  color: #0a3c98;
+  padding:0;
+  border:0;
+  margin:0;
+}
+
+.defObjectHorz {
+  float: left;
+  width: 100px;
+  margin-bottom:1em;
+}
+
+.defMeaningHorz {
+  margin-left:105px;
+  padding:0;
+  border:0;
+}
+
+.defMeaningVert {
+  margin-left: 3em;
+}
+
+/* figure styles */
+ .figure { }
+
+ .figureBox { 
+   border: 1pt solid black;
+   padding: 10px;
+   overflow:auto;
+ }
+ 
+/* qaSet styles */
+ 
+ .qaQuestion {
+ 	font-style: italic;
+ }
+ 
+ .qaQuestion img, .qaAnswer img {
+   float: left;
+ }
+ 
+ .qaQuestion div, .qaAnswer div {
+   margin-left: 30px;
+ }
+ 
+ .qaQuestion, .qaAnswer {
+    clear:both;
+ }
+ 
+ /* TODO: Add a seperator between the question/answer pairs */
+ .qaAnswerSeperator { }
+ 
+ /* Misc classes need to be applied last */
+ .indent {
+   margin-left: 2em;
+ }
+
+.stepNumber {
+  float: left; 
+  width:25px;
+  background: url(../graphics/space.gif);
+}
+
+.stepNumber p {
+  padding:0px;
+  margin:0px;
+  padding-left: 2px;
+}
+
+.stepAction, .stepResult, .stepRemediation, .stepInformation, .stepDetails {
+
+}
+
+.stepAction ul, .stepResult ul, .stepRemediation ul, .stepInformation ul, .stepDetails ul {
+  margin-left:45px;
+}
+
+.step {
+  margin-top: 5px;
+  border: 1px solid #FFFFFF;
+  clear: both;
+}
+
+/*
+.stepListResult {
+  clear:both;
+}
+*/
+
+ol.stepList {
+  margin-left:25px;
+  padding:0;
+}
+
+li.step {
+  padding:5px;
+  margin:5px;
+  /*
+  border: dashed 1px #C3C3C3;
+  background:#F1F7F8;
+  */
+}
+
+.grayText {
+  color: #C0C0C0;
+  
+}
+
+.action {
+  margin-left: 2px;
+  padding-left:20px;
+  background: url(../graphics/actarrow.gif) no-repeat 1px 6px;
+}
+
+/* syntax styles */
+.syntaxName, .syntaxRequired {
+  font-weight: bold;
+}
+
+.syntaxParams {
+  padding-left:20px;
+}
+
+.syntaxOptional {
+  font-style: italic;
+}
+
+/* Inline elements */
+.argumentName, .emphasis, .fileName, .pathName, .uiTermVariable, .variableText, .titleReference {
+  font-style: italic;
+}
+
+.commandName, .literalText, .uiTerm, .userInput, .assessmentEmphasis {
+  font-weight: bold;
+}
+
+.deletedText {
+  text-decoration: line-through;
+}
+
+.inputField {
+  text-decoration: underline;
+}
+
+.codeText, .messageText {
+  font-family:'Courier';
+}
+
+table {
+  margin-bottom:10px;
+}
+
+.frontCover,
+.contentType_,
+.contentType_activity,
+.contentType_simulation,
+.contentType_bestPractice,
+.contentType_cheatsheet,
+.contentType_concept,
+.contentType_context,
+.contentType_procedure,
+.contentType_process,
+.contentType_reference,
+.contentType_whatsNew {
+  margin:10px;
+  overflow:hidden;
+}
+
+
+.unmarkedList, .hangingList {
+	list-style-type: none;
+}
+
+.estimatedTime {
+  border: 1px solid #b8b8b8;
+  margin-bottom: .8em;
+  background: #f1f7f8 url(../graphics/estimated_time.png) no-repeat 5px 8px;
+  min-height:35px;
+}
+
+.estimatedTime p {
+  margin: 5px;
+  margin-left:40px;
+}
+
+/*  Glossary link elements */
+.glossaryTerm {
+  font-weight:bold;
+}
+
+.glossaryLink {
+  display:inline;
+  color: #009800;
+  text-decoration: none;
+}
+
+.glossaryHover {
+  text-decoration: underline;
+  cursor:pointer;
+}
+
+.glossaryPopup, .glossaryPopup div {
+  overflow:hidden;
+}
+
+.glossaryPopup p {
+  color: #009800;
+  font-size:14px;
+}
+
+.glossaryPopup .dijitTooltipFocusNode {
+  padding:0;
+}
+
+.exitGlossaryPopup {
+  text-align:right;
+}
+
+.exitGlossaryPopup a {
+  float:right;
+}
+
+.flash {
+  margin-bottom:10px;
+  margin-right:10px;
+}
+
+.xps .menuItemSelected .menuItemVisited {
+  color: #666666;
+}
+
+.xps .dijitMenuItemHover .dijitMenuItemLabel, .xps .dijitTreeNodeHover .dijitTreeLabel {
+  color: #E7AA1A;
+}
+
+.xps .menuItemVisited {
+  color: #C0C0C0;
+}
+
+.xps .menuItemSelected {
+  background:#FFFFFF;
+  color: #666666;
+}
+
+.xps .tocItemSelected {
+  color: #666666;
+}
+
+.activityDiv {
+  border: 1px solid #b8b8b8;
+  background: #f1f7f8 url(../graphics/activity_large.png) no-repeat 5px 5px;
+  min-height:35px;
+  margin-bottom: .8em;
+  margin-top: .8em;
+}
+
+.activityDiv p {
+  margin:5px;
+  margin-left:40px;
+}
+
+.loading {
+  margin:50px;
+}
+
+.condense, .condense p {
+  margin-top: 0pt; 
+  margin-bottom: 0pt;
+  margin-left: 0;
+  padding: 0;
+}
+
+
+.exitIconLink:hover {
+  background: transparent url(../graphics/exit_lg_ovr.gif) no-repeat;
+  cursor:pointer;
+}
+
+.exitIconLink {
+  background: transparent url(../graphics/exit_lg.gif) no-repeat;
+}
+
+.exitIcon {
+  width:21px;
+  height:21px;
+}
+
+.exitActIcon {
+  width:23px;
+  height:21px;
+}
+
+.exitActIconLink:hover {
+  background: transparent url(../graphics/exitActivity_lg_ovr.png) no-repeat;
+  cursor:pointer;
+}
+
+.exitActIconLink {
+  background: transparent url(../graphics/exitActivity_lg.png) no-repeat;
+}
+
+.standAloneLink {
+	text-align:center;
+}
+
+.refTopic h3 {
+  text-transform:uppercase;
+  font-size:12pt;
+  font-weight:bold;
+}
+
+.no-bottom-margin {
+  margin-bottom:0;
+}
+
+table.markedList {
+  margin-left: 0px; 
+}
+
+table.markedList td {
+  padding:5px;
+  vertical-align:top;
+}  
+    
+table.condense td {
+  padding-top: 0px; 
+  padding-bottom: 0px;
+}  
+  
+.markedList p {
+  margin-top: 0pt; 
+  margin-bottom: 3pt;
+  margin-left: 0; 
+}
+
+table.visualExample {
+  border-collapse: collapse;
+  border-bottom:1px solid #c0c0c0;
+}
+  
+table.visualExample tr.visExampleStep td {
+   border-top:1px solid #c0c0c0;
+}  
+  
+table.visualExample td.stepInfo {
+   width:325px;
+   max-width:325px;
+   padding-top:5px;
+   padding-bottom:5px;
+   padding-right:10px;
+   text-align:center;
+}
+
+table.visualExample td {
+  vertical-align:top;
+}
+
+table.visualExample p.para_stepInformation {
+  font-weight: bold;
+}

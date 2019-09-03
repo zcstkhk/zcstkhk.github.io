@@ -1,0 +1,311 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Tool path Verify and Simulate enhancements</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Tool path Verify and Simulate enhancements</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>Enhancements to the tool path <span class="uiTerm">Verify</span> and <span class="uiTerm">Simulate</span> commands include the following:
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>The <span class="uiTerm">Verify</span> command:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>Depends on the part size instead of the display zoom factor for the animation speed.</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Has a reduced number of IPW display updates for the maximum <span class="uiTerm">Animation Speed</span> setting.
+                        </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>The <span class="uiTerm">Simulate</span> command:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>Creates an IPW for collision pairs which reference the <span class="uiTerm">_WORKPIECE</span> class only when you request the IPW. If you do not request the IPW, NX displays an alert message to warn you that collision pairs referencing the <span class="uiTerm">_WORKPIECE</span> class will be ignored because the IPW is off. You must explicitly request the IPW. In NX 8, the IPW was automatically created for any collision pair that referenced the <span class="uiTerm">_WORKPIECE</span> class. 
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Supports fully <span class="emphasis">travel to fixed stop</span> motions for touch conditions in CSE machine simulation.
+                        </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Material removal is faster. There is up to a 50% improvement for 5-axis machining.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>IPW quality is improved.</p>
+                  
+                  <table border="0" align="center">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1">
+                        
+                        <col span="1">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/ipw_qualtiy_after.png"></p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/ipw_quality_before.png"></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">NX 8.5 IPW</p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">NX 8 IPW</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Shading is improved to provide a smoother surface appearance.</p>
+                  
+                  <table border="0" align="center">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1">
+                        
+                        <col span="1">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/shading_quality_after.png"></p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/shading_quality_before.png"></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">NX 8.5 shading</p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">NX 8 shading</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         
+         <p></p>
+         
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <p>Verify and Simulate commands</p>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator" width="90%">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Manufacturing</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Toolbar</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p></p>
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Operations</span> toolbar&rarr;<span class="uiTerm">Verify Tool Path</span><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/manufacturing/manufacturing_operations/verify_tool_path.gif" border="0"> or <span class="uiTerm">Simulate Machine</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/manufacturing/manufacturing_operations/simulate_machine.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Operation Navigator</span></p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Right-click the selected node&rarr;<span class="uiTerm">Tool Path</span>&rarr;<span class="uiTerm">Verify</span> or <span class="uiTerm">Simulate</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+            <p>&nbsp;</p>
+            
+            <p>Requesting the IPW</p>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator" width="90%">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p><span class="uiTerm">Simulation Control Panel</span> dialog box&rarr;<span class="uiTerm">Simulation Settings</span> group&rarr;<span class="uiTerm">Show 3D Material Removal</span> check box
+                     </p>
+                     
+                     <p>or</p>
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Simulation Options</span> dialog box&rarr;<span class="uiTerm">In Process Workpiece</span> group&rarr;<span class="uiTerm">In Process Workpiece</span> list&rarr;<span class="uiTerm">Motion Based</span> or <span class="uiTerm">Length Increment</span> option
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

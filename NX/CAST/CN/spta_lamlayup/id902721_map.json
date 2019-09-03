@@ -1,0 +1,18 @@
+{identifier:"id",label:"title",items:[
+{id:"d8e3",title:"打开 FEM 文件",file:"id1542451.html",type:"topic",parent:""},
+{id:"d8e2",title:"重置对话框内存",file:"id813466_1.html",type:"topic",parent:""},
+{id:"d8e4",title:"定义材料坐标系",file:"id852501.html",type:"topic",parent:""},
+{id:"d8e5",title:"创建层合板物理属性",file:"id852481_1.html",type:"topic",parent:""},
+{id:"d8e6",title:"创建全局铺层",file:"id1542452.html",type:"topic",parent:""},
+{id:"d8e7",title:"定义皱褶输入",file:"id1542453.html",type:"topic",parent:""},
+{id:"d8e8",title:"在挡泥板上皱褶铺层",file:"id852521.html",type:"topic",parent:""},
+{id:"d8e9",title:"创建剖切曲线",file:"id852466.html",type:"topic",parent:""},
+{id:"d8e10",title:"查看纤维方向",file:"id852571.html",type:"topic",parent:""},
+{id:"d8e11",title:"更改锁定角度和纤维显示选项",file:"id852451.html",type:"topic",parent:""},
+{id:"d8e12",title:"创建接头",file:"id852461.html",type:"topic",parent:""},
+{id:"d8e14",title:"更新网格",file:"id852561.html",type:"topic",parent:""},
+{id:"d8e15",title:"更新现有铺层",file:"id852556.html",type:"topic",parent:""},
+{id:"d8e16",title:"修改皱褶数据",file:"id852536.html",type:"topic",parent:""},
+{id:"d8e17",title:"查看纤维方向",file:"id852551.html",type:"topic",parent:""},
+{id:"d8e18",title:"创建区域",file:"id852491.html",type:"topic",parent:""},
+{id:"d8e19",title:"保存并关闭",file:"id813461_1.html",type:"topic",parent:""}]}

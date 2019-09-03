@@ -1,0 +1,48 @@
+{identifier:"id",label:"title",items:[
+
+
+{id:"d5e3",title:"分析耦合热和流系统",file:"id1378461.html",type:"topic",parent:""},
+
+
+{id:"d5e5",title:"NX Electronic Systems Cooling",file:"id1246052.html",type:"topic",parent:""},
+
+{id:"d5e7",title:"Workflow and file structure",file:"id351615.html",type:"topic",parent:""},
+
+{id:"d5e9",title:"Modeling conduction",file:"id357139.html",type:"topic",parent:""},
+
+{id:"d5e11",title:"Modeling convection",file:"id737596.html",type:"topic",parent:""},
+
+{id:"d5e14",title:"Modeling fluid flow",file:"id357148.html",type:"topic",parent:""},
+
+{id:"d5e16",title:"Modeling radiation",file:"id357146.html",type:"topic",parent:""},
+
+{id:"d5e18",title:"Creating a fluid volume",file:"id351637.html",type:"topic",parent:""},
+
+{id:"d5e20",title:"Creating a model",file:"id347987.html",type:"topic",parent:""},
+
+{id:"d5e22",title:"Defining physical properties",file:"id357154.html",type:"topic",parent:""},
+
+{id:"d5e24",title:"Defining modeling objects",file:"id1376247.html",type:"topic",parent:""},
+
+{id:"d5e27",title:"Defining boundary conditions",file:"id351639.html",type:"topic",parent:""},
+
+{id:"d5e29",title:"Defining thermal couplings",file:"id351641.html",type:"topic",parent:""},
+
+{id:"d5e31",title:"Fluid domain and fluid surface meshing",file:"id351643.html",type:"topic",parent:""},
+
+{id:"d5e33",title:"Flow boundary conditions",file:"id351645.html",type:"topic",parent:""},
+
+{id:"d5e35",title:"Flow surfaces",file:"id351662.html",type:"topic",parent:""},
+
+{id:"d5e37",title:"Other simulation objects",file:"id1376111.html",type:"topic",parent:""},
+
+{id:"d5e40",title:"Other flow boundary conditions",file:"id1376569.html",type:"topic",parent:""},
+
+{id:"d5e42",title:"Modeling flow turbulence",file:"id799071.html",type:"topic",parent:""},
+
+{id:"d5e44",title:"Solving the model",file:"id347995.html",type:"topic",parent:""},
+
+{id:"d5e46",title:"电子系统冷却分析",file:"id741082.html",type:"activity",parent:""},
+
+{id:"d5e48",title:"Coupled thermal and flow system questions",file:"id1326818.html",type:"topic",parent:""}
+]}

@@ -1,0 +1,138 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>修剪顶杆</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>修剪顶杆</h2>
+         
+         
+         <p>在这一步，将把顶杆与模具部件接触的区域进行修剪。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>右击图形窗口背景并选择<strong>渲染样式&rarr;局部着色</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>注意到顶杆未被修剪到部件表面。</p>
+                     
+                     <p align="left"><img align="bottom" src="../graphics/nonLocalized/nx/mold_wizard/ejection_untrimmed.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>注塑模向导</strong>工具条上的<strong>顶杆后处理</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/wizards/mold_wizard/ejector_pin.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>选择任意一个顶杆。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>顶杆后处理</strong>对话框的<strong>设置</strong>组中，清除<strong>另存为不重复组件</strong>复选框。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>当您清除<strong>另存为不重复组件</strong>复选框时，您就指定了四个顶杆是相同部件的实例，一个实例化的部件只需要一个修剪特征。</p>
+                     
+                     <p>如果您选中了<strong>另存为不重复组件</strong>复选框，则顶杆将被另存为四个唯一的部件，每个部件需要进行单独修剪。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/mold_wizard/introductory_topics/ejector_pins_trimmed.png"></p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>将把顶杆修剪至匹配型芯镶块面。</p>
+                     
+                     <p>未修剪错误体(false body)。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>将视图恢复至<strong>前视图</strong>方向，并调整窗口显示。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>在<strong>装配导航器</strong>中：</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>将 <span class="literalText">cardholder_top</span> 设为工作部件</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>找到节点 <strong>cardholder_dm_037</strong>，并选中它的复选框以显示模架(数字后缀可能会不同)
+                        </p>
+                        
+                        <p></p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>选择<strong>文件&rarr;全部保存</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

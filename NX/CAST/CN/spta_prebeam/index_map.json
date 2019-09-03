@@ -1,0 +1,15 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"梁的构建",file:"id1298239.html",type:"topic",parent:""},
+{id:"d5e5",title:"准备几何体以用于梁的构建",file:"id1012041.html",type:"topic",parent:""},
+{id:"d5e7",title:"创建1D 网格",file:"id150941.html",type:"topic",parent:""},
+{id:"d5e9",title:"确保1D 单元方向一致",file:"id1012042.html",type:"topic",parent:""},
+{id:"d5e11",title:"创建梁横截面",file:"id150936.html",type:"topic",parent:""},
+{id:"d5e14",title:"定义梁横截面的工作流",file:"id1012043.html",type:"topic",parent:""},
+{id:"d5e16",title:"视频：为梁网格指派横截面",file:"id1322727.html",type:"topic",parent:""},
+{id:"d5e18",title:"定义横截面方向和偏置",file:"id1012045.html",type:"topic",parent:""},
+{id:"d5e20",title:"视频：定义横截面方向和偏置",file:"id1322728.html",type:"topic",parent:""},
+{id:"d5e22",title:"显示梁横截面",file:"id918772.html",type:"topic",parent:""},
+{id:"d5e23",title:"显示梁网格",file:"id1012046.html",type:"topic",parent:""},
+{id:"d5e24",title:"使用梁单元创建网格",file:"id1005025.html",type:"activity",parent:""},
+{id:"d5e27",title:"复习",file:"id1529012.html",type:"topic",parent:""}
+]}

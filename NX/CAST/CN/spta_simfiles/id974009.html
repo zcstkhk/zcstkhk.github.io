@@ -1,0 +1,57 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Managing CAE files</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>管理 CAE 文件</h2>
+         
+         <p>在本地 NX 中，使用绝对路径和文件名来维护装配关系和 CAD 关联。要保留装配关系和 CAD 关联：</p>
+         <ul>
+           <li>
+             <p>请勿在操作系统级别移动或重命名 CAE 文件</p>
+           </li>
+           <li>
+             <p>使用<strong>另存为</strong>命令可使用新名称或在不同位置创建 CAE 模型文件的副本</p>
+             <p>在您要保留的最低层次结构级别使用<strong>另存为</strong>。例如，如果您显示主模型部件并选择<strong>另存为</strong>，软件将生成&ldquo;何处使用&rdquo;报告并提示您重命名理想化部件、FEM 和仿真部件</p>
+           </li>
+         </ul>
+         
+         <a name="genid_spta_simfiles_42"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div class="figureBox"><pre class="codeExample indent ">                Session Where Used Report
+Component  master_part.prt  in  Session  :  All levels report 
+Part                     Status           Count  
+idealized_part                            1      
+  finite_element_model   Part is modified 1      
+    simulation           Part is modified 1      
+</pre></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>要复制 CAE 模型结构，请在加载所有文件后对主模型部件使用&ldquo;另存为&rdquo;</h4>
+         </div>
+         
+         <p></p>
+         
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

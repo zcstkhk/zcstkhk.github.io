@@ -1,0 +1,69 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>拓扑优化参数</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>拓扑优化参数</h2>
+         
+         <p>可以调整许多影响优化器性能、收敛以及解算程序的参数。</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>最大迭代次数 </strong>— 达到优化迭代最大次数时优化提前停止</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>密度更新</strong></p>
+               
+               <ul>
+                  
+                  <li>
+                     
+                     <p><strong>法向 </strong>&mdash;使用<em>移动渐近线法</em> (MMA) 来更新结构单元的相对材料体积，如 Svanberg (1987) 中所述。通常而言，<strong>法向</strong>更新方法较为稳定，推荐用于大部分情况</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p><strong>保守</strong> &mdash; 保守更新设计变量，需要更多优化迭代。如果设计响应非常敏感，或者如果优化算法在满足设计约束方面存在问题，可以采用此方法</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p><strong>主动</strong> &mdash; 减少优化迭代数量，进行更主动的设计变量更新。此设置可能导致优化失稳或是阻止收敛。</p>
+                     
+                  </li>
+                  
+               </ul>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>密度移动</strong>— 移动/更改设计变量上的限制。通常可接受默认值 0.25。更小的值(如 0.1)推荐用于复杂设计响应和优化公式。但更小的<strong>密度移动</strong>值通常会导致优化迭代次数更多</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

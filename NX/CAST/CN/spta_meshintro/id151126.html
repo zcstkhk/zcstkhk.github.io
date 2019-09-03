@@ -1,0 +1,102 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>网格收集器</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>网格收集器</h2><a name="ndxgenid_spta_meshintro_29"></a>
+         <a name="ndxgenid_spta_meshintro_30"></a>
+         
+         
+         <p>网格收集器：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>包含共享相同的属性(如材料、物理属性和显示属性)的网格</p>
+               
+            </li>
+            
+            <li>仅包含相同单元族的网格。例如，3D 网格收集器仅包含 3D 类型单元
+               
+            </li>
+            
+            <li>
+               
+               <p>允许将相同属性指派给该收集器中的所有网格</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>可以在<strong>仿真导航器</strong>中查看所有网格收集器。</p>
+         
+         <p>每个网格都被指派到一个集合。在创建网格时，首先将网格指派到集合。向其指派新网格的集合称为目标集合。创建一个网格并将它指派给目标后，可将网格重新指派给另外的收集器。 </p>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/meshing/mesh_collectors/mesh_collector_concept_1.png"></p>
+         
+         
+         <p>在处理复杂、非均质模型或基于装配的模型时，网格收集器非常有价值。使用网格收集器创建网格的逻辑分组以利于模型管理。您可通过网格集合来控制可视性，以重点关注模型的特定区域。由于共享的属性是与集合一起存储而不是指派到多个网格，因此集合可提高处理大模型的性能。</p>
+         
+         <p>您可以在收集器中编辑网格属性。对网格集合属性进行的更改由集合中包含的所有网格继承。集合可促进替代管理以及有限元模型的重用，以便用于多个分析。</p>
+         
+         <p>您可以为集合定义网格显示属性，如单元颜色、收缩百分比等。集合中包含的所有网格将继承集合的显示属性。当把一个网格从一个收集器指派给另外一个时，网格的显示自动更新到新的显示属性。</p>
+         <a name="genid_mesh_collector_uses_19_335"></a>
+         
+         
+         
+        <h3>网格收集器的使用</h3>
+         
+         <a name="ndxgenid_spta_meshintro_32"></a>
+         
+         
+         <p>可以将网格收集器用于：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>复杂、非齐次模型，或者基于装配的模型。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>创建局部网格组以帮助您管理模型。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>显示模型的特定区域，您可以通过网格收集器控制可见性。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>改善大模型的表现，因为共享的属性都储存在收集器中，而不是指派到各个网格。</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/meshing/mesh_collectors/collectors_nav3.png"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

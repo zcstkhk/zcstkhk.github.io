@@ -1,0 +1,110 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Motion Plant 块</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2><strong>Motion Plant</strong> 块</h2>
+         
+         <p>Motion Plant 块包含来自 NX 运动仿真的机构输出数据(工厂输入和工厂输出对象)，并且封装来自 Simulink 的控制输出。Motion Plant 块是在协同仿真过程中不同的时间点自动创建的，具体于哪个点创建取决于使用的是 NX-主持工作流还是 Simulink-主持工作流：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>Simulink-主持工作流 &mdash; 当您从 Simulink 运行协同仿真时，通过在 Simulink 中运行 M 文件来生成<strong> Motion Plant </strong>块，运动仿真求解生成 M 文件。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>NX-主持工作流 &mdash; 当您从 NX 运动仿真运行协同仿真时，软件将自动创建 Motion Plant 块。可以在双击控制系统框图中的 Motion Plant 块以运行控制系统集成时看见工厂块结构。</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <div class="division">
+            
+           <h3>Motion Plant 块结构</h3>
+            <a name="genid_emot_advanced_topics_145"></a><div class="figureContainer">
+               <table align="center">
+                  <tr>
+                     <td>
+                        <div class="figure">
+                           <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/mechatronics/simulation_sim_models_recurdyn_plant.gif" border="0"></div>
+                        </div>
+                     </td>
+                  </tr>
+               </table>
+               <h4>Motion Plant 块结构</h4>
+            </div>
+            
+            <ul class="unmarkedList">
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball1.gif" border="0"> 工厂输入 &mdash; 机构状态数据，比如位移、速度、加速度的容器，在 NX 中定义它。</p>
+                  
+               </li>
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball2.gif" border="0"> <strong>多路复用器(Mux)</strong> &mdash; 将多个输入信号组合为向量信号。</p>
+                  
+               </li>
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball3.gif" border="0"> <strong>NXMotion_inputs</strong> &mdash; 将数据从 NX(RecurDyn)写入 Simulink 的信息。</p>
+                  
+               </li>
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball4.gif" border="0"> <strong>动力学模型</strong> &mdash; 采样时间/等待时间信息。</p>
+                  
+               </li>
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball5.gif" border="0"> <strong>NXMotion_outputs</strong> &mdash; 将数据从 Simulink 写入 NX(RecurDyn)的信息。</p>
+                  
+               </li>
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball6.gif" border="0"> <strong>多路分配器(Demux)</strong> &mdash; 提取并将矢量信号输出为标量。</p>
+                  
+               </li>
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball7.gif" border="0"> 工厂输出 &mdash; 从控制系统输入到机构中的输入的容器，在 NX 中定义。</p>
+                  
+               </li>
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>定义 Motion Plant 块的内容</h3>
+            
+            <p>通常来说，没有必要更改 <strong>Motion Plant </strong>块的任何内容。但是，如果您有多个工厂输入和/或工厂输出，您可能需要打开 <strong>Motion Plant </strong>块以确定哪个输入和输出箭头要连接到控制系统信号，因为输入和输出箭头没有标注。</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/mechatronics/simulation_sim_models_recurdyn_plant_collapsed.gif"></p>
+            
+            <p>在 NX 中，通过在<strong>控制/动力学</strong>解算方案中创建<strong>工厂输入</strong>和<strong>工厂输出</strong>运动对象来定义 <strong>Motion Plant</strong> 的内容。</p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

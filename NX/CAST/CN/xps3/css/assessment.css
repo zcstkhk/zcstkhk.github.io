@@ -1,0 +1,117 @@
+
+
+.questionsHeader {
+  background: #F1F7F8;
+  border: 1px solid #B8B8B8;
+  padding:5px;
+  height:25px;
+}
+
+
+.headerTitle {
+  float:left;
+  
+}
+
+.headerTitle p {
+  margin:0;
+  margin-top:5px;
+}
+
+.quesionButtons {
+  padding-left:80px;
+  overflow:visible;
+}
+
+.qButton {
+  float:left;
+  background:transparent url(../graphics/questionButton.png) no-repeat;
+  height:23px;
+  width:30px;
+  cursor:pointer;
+  padding:4px;
+  text-align:center;
+}
+
+.qButton p {
+  margin:0;
+  padding:0;
+  margin-right:10px; 
+}
+
+.activeQuestionButton {
+  background:transparent url(../graphics/questionButton_act.png) no-repeat;
+}
+
+#questionsContainer, .helpTextContainer {
+  clear:both;
+  border-left:1px solid #B8B8B8;
+  border-right:1px solid #B8B8B8;
+  border-bottom:1px solid #B8B8B8;
+}
+
+.question {
+  padding:8px;
+  padding-top:15px;
+  display:none;
+}
+
+.helpTextContainer {
+  background:#F1F7F8;
+  padding:5px;
+  display:none;
+}
+
+#topQuestionsContainer {
+  padding-bottom:10px;
+}
+
+.question tr {
+  vertical-align:baseline;
+}
+
+.question p {
+  padding:0;
+  margin:0;
+}
+
+.question table {
+  margin-bottom:0;
+}
+
+.question td {
+  padding:5px;
+  margin:0;
+}
+
+p.questionInstruction {
+  font-style: italic;
+  font-size:11px;
+  margin-top:8px;
+  margin-bottom:5px;
+}
+
+.questionHelp {
+  display:none;
+}
+
+#showFeedback {
+  margin-right:5px;
+}
+
+#showFeedbackContainer {
+  padding-left:10px;
+  margin-bottom:5px;
+}
+
+.showBlock {
+  display:block;
+}
+
+.hideBlock {
+  display:none;
+}
+
+.resultIcon {
+  width:20px;
+}

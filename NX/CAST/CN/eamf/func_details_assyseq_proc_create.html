@@ -1,0 +1,213 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>创建拆卸序列</title>
+   </head>
+   <body>
+      <div class="contentType_procedure">
+         <h2>创建拆卸序列</h2>
+         <ol type="1">
+            <li>
+               
+               
+               <p>在<strong>装配</strong>工具条上，单击<strong>装配序列</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assemblies/assembly_sequences.gif" border="0">。</p>
+               
+               
+               <div class="stepResult">
+                  
+                  <p>NX 将进入序列环境。</p>
+                  
+               </div>
+               
+            </li>
+            <li>
+              <p>在<strong>装配序列</strong>工具条上，单击<strong>新建序列</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assembly_sequencing_and_motion/create_new_sequence.gif" border="0">。</p>
+            </li>
+            <li>
+              <p>(可选)在<strong>序列导航器</strong>中，选择序列名称节点，然后在&ldquo;细节&rdquo;面板中，重命名序列并提供描述。</p>
+            </li>
+            <li>
+              <p>(可选)将不打算在此序列中使用的组件从<strong>已预装</strong>文件夹拖至<strong>忽略</strong>文件夹。</p>
+              <div class="stepInformation">
+                
+                <p>被忽略的组件在序列视图中隐藏。</p>
+                
+              </div>
+            </li>
+            <li>
+               
+               
+               <p>(可选)将视图放置在合适位置，以显示第一个组件的拆卸，然后在<strong>序列工具</strong>工具条上，单击<strong>记录摄像位置</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assembly_sequencing_and_motion/record_camera_position.gif" border="0">。</p>
+               
+               
+               <div class="stepResult">
+                  
+                  <p><strong>摄像机</strong> <img align="bottom" src="../graphics/nonLocalized/nx/assemblies/assembly_sequencing/sequence_navigator/seqnav_camera_icon.gif" border="0"> 步骤节点显示在<strong>序列导航器</strong>中。</p>
+                  <p>默认情况下，在<strong>步骤</strong>列中，第一个节点的编号为<strong>10</strong>。</p>
+               </div>
+               
+            </li>
+            <li>
+               
+               
+               <p>拆卸单个组件。</p>
+               <ol type="a">
+                 <li>
+                   <p>选择要拆卸的组件。</p>
+                 </li>
+                 <li>
+                   <p>右键单击所选组件，然后选择<strong>拆卸</strong>。</p>
+                   <div class="stepInformation">
+                     
+                     <p>也可以在<strong>序列工具</strong>工具条上单击<strong>拆卸</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assembly_sequencing_and_motion/disassemble.gif" border="0">。</p>
+                     
+                   </div>
+                 </li>
+               </ol>
+               <div class="stepListResult">
+                  
+                  <p>从显示中移除该组件。 </p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_sequencing/assyseq_disassem_1_anim.gif"></p>
+                  
+                  <p><strong>拆卸</strong> <img align="bottom" src="../graphics/nonLocalized/nx/assemblies/assembly_sequencing/sequence_navigator/seqnav_assemble_icon.gif" border="0"> 步骤节点显示在<strong>序列导航器</strong>中。</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_sequencing/assyseq_disassem_2.png"></p>
+                  
+               </div>
+               
+            </li>
+            <li>
+               
+               
+               <p>一起拆卸两个或更多组件。</p>
+               <ol type="a">
+                 <li>
+                   <p>选择要拆卸的组件</p>
+                 </li>
+                 <li>
+                   <p>在<strong>序列工具</strong>工具条上，单击<strong>拆卸</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assembly_sequencing_and_motion/disassemble.gif" border="0">。</p>
+                 </li>
+               </ol>
+               
+               <div class="stepInformation">
+                  
+                  <table class="attentionTable attn_tip">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">提示</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p>也可以将组件或子组拖至顶部序列节点，或拖至现有序列步骤之间的任何位置，以创建一个序列步骤。</p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </div>
+               
+               <div class="stepResult">
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_sequencing/assyseq_disassem_3_anim.gif"></p>
+                  
+               </div>
+               
+            </li>
+            <li>
+               
+               
+               <p>拆卸具有运动特征的组件。</p>
+               
+               
+               <ol type="a">
+                  <li>
+                     
+                     
+                     <p>在<strong>序列工具</strong>工具条上，单击<strong>插入运动</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assembly_sequencing_and_motion/insert_motion.gif" border="0">。</p>
+                     
+                     
+                     <div class="stepResult">
+                        
+                        <p>此时显示<strong>记录组件运动</strong>对话框条。</p>
+                        
+                     </div>
+                  </li>
+                  <li>
+                    <p>选择一个或多个要移动的组件。</p>
+                  </li>
+                  <li>
+                    <p>单击鼠标中键。</p>
+                  </li>
+                  <li>
+                    <p>(可选)在<strong>记录组件运动</strong>对话框条上，单击<strong>运动记录首选项</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/assemblies/record_component_motion/motion_record_preferences.gif" border="0">，并调整记录选项以满足需求。</p>
+                  </li>
+                  <li>
+                    <p>(可选)单击<strong>只移动手柄</strong>   <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/assemblies/record_component_motion/move_handles_only.gif" border="0">，并将动态 CSYS 移至便于启动运动的位置。</p>
+                    <div class="stepInformation">
+                      
+                      <p>例如，将原始手柄移至旋转中心。</p>
+                      
+                    </div>
+                  </li>
+                  <li>
+                     
+                     
+                     <p>单击<strong>移动对象</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/assemblies/record_component_motion/move_objects.gif" border="0">。</p>
+                     
+                     
+                     <div class="stepInformation">
+                        
+                        <p>也可以通过单击鼠标中键，来激活<strong>移动对象</strong>按钮。</p>
+                     </div>
+                  </li>
+                  <li>
+                    <p>选择一个手柄并移动所选组件。</p>
+                  </li>
+                  <li>
+                    <p>（可选）选择其他手柄，并将此选项以其他方式进行移动。</p>
+                  </li>
+                  <li>
+                    <p>完成运动后，单击<strong>拆卸</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/assemblies/record_component_motion/disassemble.gif" border="0"> 或<strong>确定</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/assemblies/record_component_motion/ok.gif" border="0"> 以记录运动步骤。 </p>
+                  </li>
+                  <li>
+                    <p>完成一步或多步运动后，单击<strong>取消</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/assemblies/record_component_motion/cancel.gif" border="0">。</p>
+                    <div class="stepInformation">
+                      
+                      <div>
+                        <p><strong>记录组件运动</strong>对话框条将一直保持打开状态，直到您单击<strong>取消</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/assemblies/record_component_motion/cancel.gif" border="0">。 </p>
+                        <p>这也让您无须重新打开对话框条，即可完成一个运动序列。</p>
+                      </div>
+                    </div>
+                     
+                    <div class="stepResult">
+                      
+                      <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_sequencing/assyseq_disassem_4_anim.gif"></p>
+                      
+                    </div>
+                  </li>
+               </ol>
+               
+            </li>
+            <li>
+               
+               
+               <p>完成序列后，在<strong>装配序列</strong>工具条上，单击<strong>完成序列</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assembly_sequencing_and_motion/finish_sequence.gif" border="0">。(译者注：在 NX 8.5英文版中，此处的原文为 <strong>FInish Sequence</strong>，但在中文版中译为<strong>精加工序列</strong>，很明显是在翻译时把加工应用模块中的精加工(<strong>Finish</strong>)操作直接搬过来了，这是肯定不对的。此外，在某些版本的<strong>完成草图</strong>命令中，也有类似的错误，以后出现时将不再赘述。)</p>
+               
+               
+            </li>
+         </ol>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

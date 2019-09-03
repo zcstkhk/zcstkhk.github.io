@@ -1,0 +1,19 @@
+{identifier:"id",label:"title",items:[
+
+
+{id:"d5e3",title:"分析数据的导入与导出",file:"id1298577.html",type:"topic",parent:""},
+
+
+{id:"d5e5",title:"导入模型数据",file:"id144186.html",type:"topic",parent:""},
+
+{id:"d5e7",title:"求解器版本支持",file:"id144206.html",type:"topic",parent:""},
+
+{id:"d5e9",title:"导入 NX Nastran 物体数据文件",file:"id741148.html",type:"activity",parent:""},
+
+{id:"d5e11",title:"导出模型数据",file:"id144176.html",type:"topic",parent:""},
+
+{id:"d5e14",title:"I-deas 通用文件",file:"id144181.html",type:"topic",parent:""},
+
+{id:"d5e16",title:"导入 I-deas 通用文件",file:"id741154.html",type:"activity",parent:""}
+
+]}

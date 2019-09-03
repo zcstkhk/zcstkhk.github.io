@@ -1,0 +1,78 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>全局铺层和手铺层加工</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>全局铺层和手铺层加工</h2>
+         
+         <p>全局铺层方法模仿手铺层加工工作流，其中树脂浸渍单向或织物(1)的片单独地一个个叠放式地定位于模具上。可能从模具(2)的给定部件中添加或忽略某些片，这取决于设计需求。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_global_layup/hand_layup_manufacturing.jpg"></p>
+         
+         <p>在模具上皱褶的单个片可在 FEM 中建模为单个层片，即使这些片横跨两个网格或仅覆盖网格的一部分。</p>
+         <p>您可以将每个层片的皱褶过程定义为在模具上的同一位置或不同位置上开始。您可以定义每个层片在起点处的纤维方向。您还可以将每个层片的纤维方向定义为从初始方向（为全局铺层中的一组层片定义）的唯一旋转。</p>
+        <p>层片可能包含不连续性，如三角形加强筋或接头：</p>
+         
+         <ul>
+            
+            <li>               您可以通过定义<strong>剖切曲线</strong>来在层片复合中建模三角形加强筋。创建曲线以表示三角形加强筋，在该处难以执行或不可能执行皱褶。这允许皱褶算法在<strong>剖切曲线</strong>的两侧独立地调整纤维方向。层片的结构属性不受影响。            </li>
+            <li>
+              <p>您可以通过以下方法在纤维中建模接头：在接头的两侧之间创建宽度有限的微小面，然后从层片定义中忽略此曲面。这将导致该层片的纤维方向和结构属性的不连续性。</p></li>
+         </ul>
+        <h3>皱褶求解器</h3>
+         
+         
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectHorz" style="width:120px;">
+                  <p>织物求解器</p>
+               </div>
+               <div class="defMeaning defMeaningHorz" style="margin-left:125px;">
+                  
+                  <p><em>织物</em>求解器为具有两组互成角度的纤维的布料织物计算纤维方向。经线（主方向）和纬线纤维之间的夹角通常为 90°。选择计算的皱褶起点，并定义经线和纬线纤维对齐。织物求解器通过更改经线与纬线纤维之间的角度来调整变形。因为纤维并不拉伸，所以角度更改将导致剪切变形。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz" style="width:120px;">
+                  <p>单向求解器</p>
+               </div>
+               <div class="defMeaning defMeaningHorz" style="margin-left:125px;">
+                  
+                  <p><em>单向</em>求解器为所有纤维在一个方向对齐的层片进行皱褶建模。材料产生皱褶后，相邻的材料纤维可能彼此相对地滑动一定距离，同时彼此相对地维持相同的间距。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz" style="width:120px;">
+                  <p>投影求解器</p>
+               </div>
+               <div class="defMeaning defMeaningHorz" style="margin-left:125px;">
+                  
+                  <p><em>投影</em>求解器可将材料方向投影至各单元。材料方向变为 0° 方向。此选项忽略纤维变形的影响。使用<strong>查看纤维方向</strong>命令时，显示的纤维方向将通过材料方向和层片角度计算得出。</p>
+                  
+               </div>
+            </div>
+         </div>
+         
+         <p>对于织物求解器和单向求解器，选定的多边形面或2D 单元必须含有至少一条公共边。</p>
+         
+         <p>对于投影求解器，可以选择不是邻近的面或2D 单元。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

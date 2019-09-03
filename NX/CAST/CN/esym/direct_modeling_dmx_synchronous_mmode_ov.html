@@ -1,0 +1,151 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>建模模式</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>建模模式</h2>
+         
+         <p>使用&ldquo;建模&rdquo;应用模块时，您可以使用两种模式之一：</p>
+         <ul>
+           <li>
+             <p>历史记录模式</p>
+           </li>
+           <li>
+             <p>无历史记录模式</p>
+           </li>
+         </ul>
+         
+         
+         <div class="division">
+            
+           <h3>历史记录模式</h3>
+            
+            <p><img align="bottom" src="../graphics/nonLocalized/nx/modeling/synchronous_modeling/dmx_history_mode_ico.gif" border="0"> 在历史记录模式下，您使用<strong>部件导航器</strong>中显示的有序特征序列来创建和编辑模型。这是传统的基于历史记录的特征建模器和用于在 NX 中进行设计的主模式。</p>
+            <p>此模式对设计精密的部件很有用。这同样适用于设计成使用预定义参数来修改的部件，这些参数基于草图、特征中包括的设计意图以及用于对部件建模的特征顺序。</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>无历史记录模式</h3>
+            
+            <p><img align="bottom" src="../graphics/nonLocalized/nx/modeling/synchronous_modeling/dmx_synchronous_mode_ico.gif" border="0"> 当您需要探索设计概念并且不必提前计划建模步骤时，无历史记录模式很有用。它对于下游修改也非常有用。您可以根据模型的当前状态创建和编辑模型，而无需有序的特征序列。您可以使用在历史记录模式下可用的相同命令。只能创建不依赖于有序结构的局部特征。</p>
+            
+            <table class="attentionTable attn_tip">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">提示</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>局部特征是在无历史记录模式下创建和存储的<strong>孔</strong>、<strong>螺纹</strong>、<strong>边倒圆</strong>或<strong>倒斜角</strong>。局部特征仅修改局部几何体，而不需要更新和重播全局特征树。局部特征作为特征集合列在<strong>部件导航器</strong>中，与任何重播顺序无关。尽管局部特征看上去与<strong>部件导航器</strong>中基于历史记录的特征相似，但编辑这些特征所需的时间并不随特征列表的增加而增加。它们也被当作<em>刚性特征</em>，因为该特征的所有面都作为一个整体进行移动。局部特征相互独立，对它们进行编辑时，没有可回滚或重播的历史记录。</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         
+         
+         <p>&ldquo;同步建模&rdquo;命令有助于您更有效地使用无历史记录模式。通过这些命令，您的建模意图将依赖于面和特征识别，它们有助于您标识某些几何条件。&ldquo;同步建模&rdquo;命令中的<strong>面查找器</strong>选项有助于根据控制的设置来选择相关的面。</p>
+         
+         <div class="division">
+            
+           <h3>位于何处？</h3>
+            
+            <table border="1" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">建模、外观造型设计、高级仿真和加工</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>同步建模</strong>→<strong>历史记录模式</strong> <img align="bottom" src="../graphics/nonLocalized/nx/modeling/synchronous_modeling/dmx_history_mode_ico.gif" border="0">，或者<strong>无历史记录模式</strong> <img align="bottom" src="../graphics/nonLocalized/nx/modeling/synchronous_modeling/dmx_synchronous_mode_ico.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>插入→同步建模→历史记录模式</strong>，
+或<strong>无历史记录模式</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">快捷菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>部件导航器</strong>→右键单击<strong>历史记录模式</strong>，<br>
+                     或<strong>无历史记录模式</strong>并选择新模式</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

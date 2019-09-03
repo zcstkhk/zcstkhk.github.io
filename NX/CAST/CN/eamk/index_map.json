@@ -1,0 +1,10 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"部件族",file:"id1073870.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"部件族概述",file:"id973173.html",type:"topic",parent:""},
+{id:"d5e6",title:"部件族术语",file:"id973175.html",type:"topic",parent:""},
+{id:"d5e7",title:"部件族报告",file:"assy_reports_family_report_ov.html",type:"topic",parent:""},
+{id:"d5e8",title:"部件族注释",file:"id684536.html",type:"topic",parent:""},
+{id:"d5e9",title:"定义部件族成员",file:"id1106304.html",type:"activity",parent:""},
+{id:"d5e10",title:"添加部件族成员到一个装配中",file:"id1106281.html",type:"activity",parent:""}
+]}

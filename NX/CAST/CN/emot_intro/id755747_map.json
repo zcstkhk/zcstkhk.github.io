@@ -1,0 +1,8 @@
+{identifier:"id",label:"title",items:[
+{id:"d9e2",title:"打开仿真文件",file:"open_the_simulation_file_directly.html",type:"topic",parent:""},
+{id:"d9e3",title:"重置对话框内存",file:"id353012_dup2.html",type:"topic",parent:""},
+{id:"d9e4",title:"孤立机构",file:"isolate_the_mechanism.html",type:"topic",parent:""},
+{id:"d9e5",title:"设置运动首选项",file:"set_preferences.html",type:"topic",parent:""},
+{id:"d9e6",title:"恢复隐藏的图层",file:"restore_hidden_layers.html",type:"topic",parent:""},
+{id:"d9e7",title:"创建铰接运动解算方案",file:"create_an_articulation_solution.html",type:"topic",parent:""},
+{id:"d9e8",title:"查看机构铰接运动",file:"solve_and_articulate_the_mechanism.html",type:"topic",parent:""}]}

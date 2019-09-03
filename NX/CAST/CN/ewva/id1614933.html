@@ -1,0 +1,314 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>创建箱体顶盖</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>创建箱体顶盖</h2>
+         
+         
+         <p>您已经使用 <strong>WAVE 几何体链接器</strong>来先创建链接的特征，现在您将看到链接的特征可以自动创建。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>将 <strong>wav3_box_top</strong> 设为<strong>工作部件</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/build_mating_parts/06_build_mating_parts.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>特征</strong>工具条上的<strong>拉伸</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/modeling/form_feature/extrude.gif" border="0" alt="Insert &gt; Design Feature &gt; Extrude" title="Insert &gt; Design Feature &gt; Extrude">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在选择条上，设置如下几何体选择过滤器：</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <ol type="a">
+                     <li>
+                        
+                        
+                        <p>在<strong>选择范围</strong>列表中选择<strong>整个装配</strong></p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>打开<strong>创建部件间链接</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/selection_bar/create_interpart_link.gif" border="0"></p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>在<strong>曲线规则</strong>列表中选择<strong>相连曲线</strong></p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>打开<strong>路径选择</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/selection_bar/path_selection_large.gif" border="0">.
+                        </p>
+                        
+                        
+                     </li>
+                  </ol>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>选择箱体密封垫的外侧边，如图所示。</p>
+                  
+                  <p>阅读<strong>部件间复制</strong>信息框并点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/build_mating_parts/09_build_mating_parts.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>拉伸</strong>对话框中，设置如下参数：</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <ol type="a">
+                     <li>
+                        
+                        
+                        <p><strong>限制</strong>组：</p>
+                        
+                        <ul class="unmarkedList">
+                           <li>
+                              
+                              <p><strong>开始</strong> = <strong>值</strong></p>
+                              
+                           </li>
+                           <li>
+                              
+                              <p><strong>距离</strong> = <strong>0</strong></p>
+                              
+                           </li>
+                           <li>
+                              
+                              <p><strong>结束</strong> = <strong>值</strong></p>
+                              
+                           </li>
+                           <li>
+                              
+                              <p><strong>距离</strong> = <strong>5</strong></p>
+                              
+                           </li>
+                        </ul>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p><strong>拔模</strong>组：</p>
+                        
+                        <ul class="unmarkedList">
+                           <li>
+                              
+                              <p><strong>拔模</strong> = <strong>从起始限制</strong></p>
+                              
+                           </li>
+                           <li>
+                              
+                              <p><strong>角度</strong> = <strong>2</strong></p>
+                              
+                           </li>
+                        </ul>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p><strong>偏置</strong>组：</p>
+                        
+                        <ul class="unmarkedList">
+                           <li>
+                              
+                              <p><strong>偏置</strong> = <strong>单侧</strong></p>
+                              
+                           </li>
+                           <li>
+                              
+                              <p><strong>结束</strong> = <strong>2</strong></p>
+                              
+                           </li>
+                        </ul>
+                        
+                        
+                     </li>
+                  </ol>
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/build_mating_parts/24_build_mating_parts.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>应用</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/build_mating_parts/11_build_mating_parts.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>使用<strong>1 </strong>mm 的偏置来拉伸两个孔，以用作螺栓间隙孔。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/build_mating_parts/12_build_mating_parts.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>在顶盖的底侧拉伸内部边用作密封。</p>
+                  
+                  <p>为这个配合特制设置下列参数：</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <ol type="a">
+                     <li>
+                        
+                        
+                        <p><strong>限制</strong>组：</p>
+                        <ul class="unmarkedList">
+                           <li>
+                             <p><strong>开始</strong> = <strong>值</strong></p>
+                           </li>
+                           <li>
+                             <p><strong>距离</strong> = <strong>0</strong></p>
+                           </li>
+                           <li>
+                             <p><strong>结束</strong> = <strong>值</strong></p>
+                           </li>
+                           <li>
+                             <p><strong>距离</strong> = <strong>2</strong></p>
+                           </li>
+                        </ul>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p><strong>拔模</strong>组：</p>
+                        <ul class="unmarkedList">
+                          <li>
+                            <p><strong>拔模</strong> = <strong>从起始限制</strong></p>
+                          </li>
+                          <li>
+                            <p><strong>角度</strong> = <strong>2</strong></p>
+                          </li>
+                        </ul>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p><strong>偏置</strong>组：</p>
+                        <ul class="unmarkedList">
+                          <li>
+                            <p><strong>偏置</strong> = <strong>单侧</strong></p>
+                          </li>
+                          <li>
+                            <p><strong>结束</strong> = <strong>-1</strong></p>
+                          </li>
+                        </ul>
+                        
+                        
+                     </li>
+                  </ol>
+                  <div class="stepResult">
+                     
+                    <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/build_mating_parts/13_build_mating_parts.png"></p>
+                     
+                     <p>在<strong>部件导航器</strong>中，您可以看到部件中包含三个链接的复合曲线，当您打开<strong>创建部件间链接</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/selection_bar/create_interpart_link.gif" border="0"> 选项时，将在箱体密封垫与箱体顶盖之间创建 WAVE 链接，部件间链接将储存在箱体顶盖部件中。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>按下 Ctrl+W，以打开<strong>显示和隐藏</strong>命令。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>在<strong>显示和隐藏</strong>对话框的<strong>全部</strong>行中，点击 <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/show_and_hide/show.gif" border="0"> 以显示箱体。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/build_mating_parts/15_build_mating_parts.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

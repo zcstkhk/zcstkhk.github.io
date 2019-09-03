@@ -1,0 +1,171 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Teamcenter for Simulation data model</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Teamcenter for Simulation data model</h2>
+         
+         <p><a name="ndxgenid_spta_tcsim_24"></a>
+            <a name="ndxgenid_spta_tcsim_25"></a>
+            <a name="ndxgenid_spta_tcsim_26"></a>
+            In the Teamcenter for Simulation data model, the idealized part file, the FEM file, and the Simulation file are stored as separate item revisions with a defined relationship to the master part and each other.
+         </p>
+         <a name="ndxgenid_spta_tcsim_27"></a>
+         <a name="ndxgenid_spta_tcsim_28"></a>
+         <a name="ndxgenid_spta_tcsim_29"></a>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/tc_for_simulation/sim_datamodel_tcs.gif"></p>
+         
+         
+         <p>The following table shows the dataset for each item revision, and lists the NX files associated with each dataset.</p>
+         
+         <table border="1" cellpadding="3" cellspacing="2" frame="void" rules="all" width="100%" align="center">
+            
+            <colgroup span="1">
+               
+               <col align="center" span="1" width="87*">
+               
+               <col align="center" span="1" width="89*">
+               
+               <col align="center" span="1" width="122*">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <th align="left" bgcolor="silver" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Item Revision</p>
+                     
+                  </th>
+                  
+                  <th align="left" bgcolor="silver" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Dataset</p>
+                     
+                  </th>
+                  
+                  <th align="left" bgcolor="silver" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Files</p>
+                     
+                  </th>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td align="left" bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Master Part</p>
+                     
+                  </td>
+                  
+                  <td align="left" bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">UGMASTER</p>
+                     
+                  </td>
+                  
+                  <td align="left" bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">*.prt &mdash; the master part file</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td align="left" bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">CAE Geometry</p>
+                     
+                  </td>
+                  
+                  <td align="left" bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">CAEGeom</p>
+                     
+                  </td>
+                  
+                  <td align="left" bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">*_i.prt &mdash; the idealized part file</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td align="left" bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">CAE Model</p>
+                     
+                  </td>
+                  
+                  <td align="left" bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">CAEMesh</p>
+                     
+                  </td>
+                  
+                  <td align="left" bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">*.fem &mdash; the FEM file</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td align="left" bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">CAE Analysis</p>
+                     
+                  </td>
+                  
+                  <td align="left" bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">CAESolution</p>
+                     
+                  </td>
+                  
+                  <td align="left" bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p>*.sim &mdash; the Simulation file</p>
+                     
+                     <p>solver-related files</p>
+                     
+                     <p>results files</p>
+                     
+                     <p class="no-bottom-margin">.afu files</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

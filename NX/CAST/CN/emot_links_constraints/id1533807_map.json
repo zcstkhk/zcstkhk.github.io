@@ -1,0 +1,14 @@
+{identifier:"id",label:"title",items:[
+{id:"d10e2",title:"打开仿真",file:"four_bar_open_the_part_dup1.html",type:"topic",parent:""},
+{id:"d10e3",title:"重置对话框内存",file:"id353012_dup3.html",type:"topic",parent:""},
+{id:"d10e4",title:"查看初始 Gruebler 数",file:"create_a_simulation_dup2.html",type:"topic",parent:""},
+{id:"d10e5",title:"创建第一个旋转副",file:"create_first_revolute_joint_dup1.html",type:"topic",parent:""},
+{id:"d10e6",title:"创建第二个旋转副",file:"create_second_revolute_joint_dup1.html",type:"topic",parent:""},
+{id:"d10e7",title:"创建第三个旋转副",file:"create_the_third_revolute_joint_dup1.html",type:"topic",parent:""},
+{id:"d10e8",title:"创建滑动副",file:"add_solid_bodies_to_links_dup2.html",type:"topic",parent:""},
+{id:"d10e9",title:"添加运动驱动",file:"add_solid_bodies_to_links_dup3.html",type:"topic",parent:""},
+{id:"d10e10",title:"创建解算方案",file:"create_a_solution_dup1.html",type:"topic",parent:""},
+{id:"d10e11",title:"查看机构运动",file:"id1542059.html",type:"topic",parent:""},
+{id:"d10e12",title:"修改运动副 J002",file:"create_second_revolute_joint_dup2.html",type:"topic",parent:""},
+{id:"d10e14",title:"修改运动副 J001",file:"create_second_revolute_joint_dup3.html",type:"topic",parent:""},
+{id:"d10e15",title:"查看机构运动",file:"id1533831.html",type:"topic",parent:""}]}

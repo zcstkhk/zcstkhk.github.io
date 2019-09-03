@@ -1,0 +1,102 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>添加垫圈到装配中</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>添加垫圈到装配中</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>将 <strong>des02_valve_assm_2</strong> 设为工作部件。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>装配导航器</strong>中，右击<strong>约束</strong>节点并清除<strong>在图形窗口中显示约束</strong>复选框。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>添加 <strong>des02_washer</strong>，并使用 <strong>Model</strong> 引用集，和<strong>通过约束</strong>定位选项。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在 <strong>des02_washer</strong> 的平面与 <strong>des02_valve_yoke</strong> 中包含孔的顶面间，应用一个<strong>接触对齐</strong>&rarr;<strong>接触</strong>约束。</p>
+                  <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/component_array/act_comp_array_instance3a.png"></p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>应用</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在 <strong>des02_washer</strong> 圆柱面的轴与 <strong>des02_valve_yoke</strong> 上孔的中心线之间，应用一个<strong>接触对齐</strong>&rarr;<strong>自动判断中心/轴</strong>约束。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <table class="attentionTable attn_tip">
+                       <tr>
+                         <td valign="top"><p class="attn_title">提示</p></td>
+                         <td class="attention_main"><p>要选择 <strong>des02_valve_yoke</strong> 上孔的中心线，将您的光标悬浮在小的实例孔的中心线上并等待<strong>快速拾取</strong>对话框可用。确保您选择的是 <strong>des02_valve_yoke</strong> 上孔的中心线，而不是小的实例孔的中心线。</p></td>
+                       </tr>
+                     </table>
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/component_array/arrays_instance_a3.png"></p>
+                     <p>您必须选择 <strong>des02_valve_yoke</strong> 上孔的中心线，以保持特征实例关系。如果您直接选择了 <strong>des02_valve_yoke</strong> 的中心线，垫圈将不会被放置到正确的位置上。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/activities/component_array/act_comp_array_instance5.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

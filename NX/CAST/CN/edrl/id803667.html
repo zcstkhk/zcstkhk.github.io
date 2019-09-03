@@ -1,0 +1,251 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>循环参数对话框</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>循环参数对话框</h2>
+         
+         <p>循环参数定义精确的刀具运动和条件，如进给率、驻留时间和切削增量。</p>
+        <p>如果要改变任何循环参数值，可为每个孔或一组孔创建&ldquo;循环参数集&rdquo;。每个循环最多可拥有五个参数集。</p>
+         
+         
+         <table cellspacing="2" width="100%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="77*">
+               
+               <col span="1" width="121*">
+            </colgroup>
+            
+            <tr bgcolor="silver" valign="top">
+              <th colspan="1" rowspan="1"><p>选项</p></th>
+              <th colspan="1" rowspan="1"> <p>描述</p></th>
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><strong>深度</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>打开<strong>循环深度</strong>对话框，可使用多个选项中的某一选项在该对话框中指定切削深度。该值表示从部件表面到刀尖的总的孔深。此选项对于<strong>标准钻，埋头孔</strong>不可用。</p>
+                  
+                  <p class="no-bottom-margin">要获取更多信息，参见 <a href="#" onclick="loadFile('id803732.html')">循环深度对话框</a>。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>进给率</strong></p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>打开<strong>循环进给率</strong>对话框，在其中指定切削时的刀具过渡速度。显示当前的&ldquo;进给率单位和值&rdquo;。</p>
+                <p>可将&ldquo;进给率&rdquo;设置为 IPM 或 IPR（对于非公制部件），或者设置为 MMPM 或 MMPR（对于公制部件）。</p></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>驻留</strong></p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>打开<strong>循环驻留</strong>对话框，在其中以秒数或转数形式设置刀具在指定切削深度的延迟时间。</p>
+                <p>对于&ldquo;啄钻&rdquo;和&ldquo;断屑&rdquo;仿真循环，如果以秒数或转数形式指定了驻留值，软件将生成 DELAY/t 或 DELAY/REV,r 命令语句，以便在刀具进给到指定深度时激活所需的驻留。大写的词为标准 APT 词汇；<em>t</em> 表示以秒表示的驻留值，<em>r</em> 表示以转数表示的驻留值。 </p>
+                <ul>
+                  <li>
+                    <p><strong>关</strong>表示刀具送到指定深度后不发生驻留。</p>
+                  </li>
+                  <li>
+                    <p><strong>秒</strong>允许您输入以秒表示的驻留值。</p>
+                  </li>
+                  <li>
+                    <p><strong>转数</strong>允许您输入所需的驻留值，以主轴转数为单位。</p>
+                  </li>
+                  <li>
+                    <p>对于&ldquo;标准&rdquo;循环，如果指定了以秒或转数表示的驻留值，软件将在 CYCLE/ 语句中包含DWELL,t 或 DWELL,REV,r 参数，用指定的驻留值激活指定的循环。对于标准循环，还有附加选项<strong>开</strong>可用。如果使用此选项，<em>DWELL</em> 字将包含到 CYCLE 语句中。这样一来，刀具将在指定的切削深度原位驻留指定的时间段。</p>
+                  </li>
+                </ul></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>选项</strong></p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>打开或关闭特定机床独有的加工特性。此选项与后处理器相关。如果打开此选项，软件将在 CYCLE/ 语句中加入 <em>OPTION</em>。</p></td>
+            </tr>
+            
+            <tr bgcolor="#F0F0F0" valign="top">
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">CAM</span></p>
+                  
+               </td>
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p>为没有可编程 Z 轴的机床指定刀具深度的预设 CAM 停止位置。</p>
+                  <ul>
+                    <li>
+                      <p>该值必须是正整数或零。如果输入正的整型值 <em>v</em>，软件将在 CYCLE/ 语句中加入 "CAM,v" 参数字符串。后处理器相应生成代码，将刀具进给到 CAM 停止位置 <em>v</em>。</p>
+                    </li>
+                    <li>
+                      <p>如果输入零，CYCLE/ 语句中将不会包含 CAM 参数，并且&ldquo;循环参数&rdquo;菜单中 CAM 的状态将显示为 NONE（无）。</p>
+                    </li>
+                    <li>
+                      <p>如果输入负值，软件显示消息 CAM 值无效。</p>
+                    </li>
+                    <li>
+                      <p>只有当 CAM 参数对目标后处理器有效时才应指定 CAM 值。</p>
+                    </li>
+                  </ul>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">注释</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p class="no-bottom-margin">尽管 CAM 参数能够控制 Z 轴不可编程的机床的刀具深度，但 Siemens PLM Software 建议您同时也定义&ldquo;深度&rdquo;参数，以显示进给至指定深度的运动。</p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr bgcolor="#F0F0F0" valign="top">
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><strong>埋头孔直径</strong></p>
+                  
+               </td>
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p>设定埋头孔的直径。软件将您指定的埋头孔直径作为 <em>CSKDIA,d</em> 参数加入 <em>CYCLE/DRILL,CSINK</em> 语句中。</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/milling/point-to-point/ptpt_figptp2.gif"></p>
+                  
+              </td>
+               
+            </tr>
+            
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>入口直径</strong></p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>指定现有孔的外径，该孔将通过埋头孔工序扩大。</p>
+                <p>&ldquo;入口直径&rdquo;表示进行埋头孔加工之前现有孔的直径。此选项仅可用于<strong>标准钻，埋头孔</strong>循环。</p>
+                <p>入口直径 <em>d</em> 指定将要进行埋头孔加工的现有孔的直径。如果 d 为非零值，软件将在 CYCLE 语句中加入 HOLDIA,d 参数。后处理器通常使用此参数来计算一个孔内的快速定位点。刀具在钻入孔前首先移动到孔中心线之上的一个安全点处。</p></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>增量</strong></p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>在&ldquo;啄钻&rdquo;和&ldquo;断屑&rdquo;钻孔工序中使用一系列规则连续切削，以到达级进深度，&ldquo;增量&rdquo;用于指定其中一次切削的尺寸值。</p>
+                <ul>
+                  <li>
+                    <p><strong>无</strong>在一次运动中将刀具进给到指定的深度。</p>
+                  </li>
+                  <li>
+                    <p><strong>恒定</strong>允许您输入正的恒定增量值。软件生成进刀运动，以一系列的恒定增量进给刀具，直至刀具到达最终深度。如果指定的深度无法以增量为单位等分，软件将在钻孔深度不超过指定深度的前提下尽可能多次使用增量。然后，软件计算出剩余的距离，使刀具钻至指定的深度。</p>
+                  </li>
+                  <li>
+                    <p><strong>可变</strong>允许您最多定义七个不同的增量值。除第七个增量外，为重复因子指定非零值。软件生成指定数量的重复次数，然后到下一个增量。</p>
+                    <p>如果为增量输入零值，软件将忽略该增量以及所有后续增量。</p>
+                    <p>对于最后一个非零增量，软件生成所需的重复次数，以使刀具进给至指定的深度。任何情况下软件都不会将刀具进给至指定深度以下。</p>
+                  </li>
+                </ul></td>
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p><strong>退刀</strong></p>
+                  <pre class="codeExample indent "></pre>
+              </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>指定退刀距离。距离是沿&ldquo;刀轴&rdquo;从&ldquo;部件表面&rdquo;测量到刀具进给至指定深度后退刀的点。除<strong>标准镗，手工退刀</strong>外，此选项可用于所有&ldquo;标准&rdquo;循环。</p>
+                 <p> </p>
+                  <ul>
+                    <li>
+                      <p><strong>距离</strong>指定退刀距离。可输入正值、零，或接受默认值。</p>
+                      <ul>
+                        <li>
+                          <p>如果输入正值 <em>d</em>，软件将在 CYCLE/ 语句中加入 RTRCTO,d 参数字符串。</p>
+                        </li>
+                        <li>
+                          <p>如果输入零，CYCLE/ 语句中将不会包含 RTRCTO 参数，并且<strong>循环参数</strong>对话框中的 RTRCTO 状态将显示为<em>无</em>。</p>
+                        </li>
+                        <li>
+                          <p>如果输入负值，软件显示消息 RTRCTO 值无效。在消息框中单击<strong>确定</strong>。只有在希望退刀至由<strong>最小安全距离</strong>指定的工序安全点上方的点时，才可输入非零的 RTRCTO 值。</p>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p>对于使用<strong>自动</strong>选项的当前&ldquo;参数集&rdquo;和后续&ldquo;参数集&rdquo;，<strong>自动</strong>将刀具退回到循环前的位置。刀具沿刀轴退回到当前循环开始之前所在的最后位置。 </p>
+                      <p>此选项自动为所有&ldquo;参数集&rdquo;点设置 RTRCTO 值。 </p>
+                      <table class="attentionTable attn_caution">
+                        <tr>
+                          <td valign="top">
+                            <p class="attn_title">注意</p>
+                          </td>
+                          <td class="attention_main">
+                            
+                            <p class="no-bottom-margin">使用<strong>距离</strong>选项后如果立即使用<strong>自动</strong>选项，请确保刀具能够清除部件特征。可能还需要将刀具移动到安全层中。RTRCTO,d 或设置为 <strong>无</strong>的 <strong>RTRCTO</strong> 参数重新建立退刀位置。</p>
+                            
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+                  </ul>
+                  <ul>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin"><strong>设置为无</strong>忽略退刀距离的使用。</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><strong>步进值</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>在<strong>标准钻，深孔</strong>和<strong>标准钻，断屑</strong>循环中使用一系列规则连续切削，以到达级进深度，&ldquo;步进值&rdquo;用于指定其中一次切削的尺寸值。</p>
+                  <p>软件在 CYCLE 语句中加入 <em>STEP, S1, S2, ...., Sn</em> 参数字符串。 </p>
+<p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/milling/point-to-point/ptpt_cycleat02.gif"></p>
+                  
+               </td>
+               
+            </tr>
+            
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

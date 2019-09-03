@@ -1,0 +1,422 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Smart Lightweight views</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Smart Lightweight views</h2>
+         <div class="estimatedTime">
+            <p>Estimated time to complete this lesson: 12&ndash;18  minutes</p>
+         </div>
+         <div></div>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>The NX 8.5 Smart Lightweight view offers a greater degree of flexibility than its predecessor faceted representation view (now simply referred to as a &lsquo;Lightweight&rsquo; view), while utilizing many of the same capabilities found in the more resource intensive Exact (precise) views. A new set of view configuration options on the View Preferences/View Style dialog box allows you to choose between a new smart lightweight view or a lightweight view, (as well as a new exact or pre-NX 8.5 exact view).</p>
+            
+            <p>With the smart lightweight view, you are now able to:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Set its resolution quality to coarse, medium, or fine. The resolution quality plays a role in how quickly the view retrieves and updates.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Apply true dimensioning to it without fully loading the referenced geometry.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Apply shading, hidden line renderings, and centerline symbols to it.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Section it.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Apply view breaks to it.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Employ regional updates to the view so that only those areas affected by a model edit are updated in the view.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Make the extracted edges in the view non-associative by applying the <span class="uiTerm">Snapshot</span> option.
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>You are not able to:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Build smart lightweight break-out section or legacy broken views.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Shade a smart lightweight section view.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Apply view perspective, UV grids, or thread renderings to the smart lightweight view.</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>You can continue creating lightweight and Pre-NX8.5 exact as you always have, but you cannot convert any Pre-NX8.5 view to an exact or smart lightweight view.</p>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>Why should I use it?</h3>
+            
+            <p>Smart lightweight views offer a wide array of view options similar to exact views, including support of hidden line displays, sectioning, dimensioning with minimal part loading, and regional updating, while achieving faster retrieval and update times.&nbsp;These capabilities inherent in smart lightweight views improve system performance and memory usage when constructing large assembly drawings.</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <p>Set view type:</p>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Drafting</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Toolbar</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Drawing</span>&rarr;<span class="uiTerm">View Preferences</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/drafting/drafting_preferences/view_preferences.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Preferences</span>&rarr;<span class="uiTerm">View</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">General</span> tab&rarr;<span class="uiTerm">View Configuration</span> group&rarr;<span class="uiTerm">Representation</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+            <p>Generate views with non-associative extracted edges:</p>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Drafting</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Toolbar</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Drawing</span>&rarr;<span class="uiTerm">View Preferences</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/drafting/drafting_preferences/view_preferences.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Preferences</span>&rarr;<span class="uiTerm">View</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">General</span> tab&rarr;<span class="uiTerm">View Configuration</span> group&rarr;<span class="uiTerm">Snapshot</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+            <p>To set the view preference for lightweight or pre-NX8.5 exact views:</p>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" height="56" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" height="56" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Drafting</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Prerequisite</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">The <span class="uiTerm">Enable Exact (Pre-Nx8.5) Views</span> option must be selected in the <span class="uiTerm">File&rarr;Utilities&rarr;Customer Defaults</span> dialog box, under the <span class="uiTerm">Drafting&rarr;View&rarr;General</span> tab
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Toolbar</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Drawing</span>&rarr;<span class="uiTerm">View Preferences</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/drafting/drafting_preferences/view_preferences.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Preferences</span>&rarr;<span class="uiTerm">View</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">General</span> tab&rarr;<span class="uiTerm">View Configuration</span> group&rarr;<span class="uiTerm">Representation</span> = <span class="uiTerm">Lightweight</span> or <span class="uiTerm">Exact (Pre-NX8.5)</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+            <p>Set the default quality of smart lightweight views:</p>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">File&rarr;Utilities&rarr;Customer Defaults</span> 
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Drafting&rarr;View&rarr;General </span> tab&rarr;<span class="uiTerm">Resolution</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         <a name="xid458637" id="xid458637"></a><div id="footer"></div>
+      </div>
+   </body>
+</html>

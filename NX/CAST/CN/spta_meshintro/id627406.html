@@ -1,0 +1,58 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>了解3D 四面体网格质量评估</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>了解3D 四面体网格质量评估</h2>
+         
+         <p>如果使用 <strong>3D 四面体网格</strong>在模型中生成实体网格，软件将自动对生成的单元的质量进行评估。</p>
+         <p>这些质量检查将测量以下内容，例如：</p>
+        <ul>
+           <li>
+             <p>单元与理想大小和形状的偏差的各个方面，例如宽高比。</p>
+           </li>
+           <li>
+             <p>雅可比行列式。</p>
+           </li>
+           <li>
+             <p>是否有任何四面体单元塌陷。</p>
+           </li>
+         </ul>
+         <p>如果软件检测到导致质量检查失败的任何单元，则在图形窗口中高亮显示其位置。</p>
+         <table class="attentionTable attn_tip">
+           <tr>
+             <td valign="top"><p class="attn_title">注释</p></td>
+             <td class="attention_main"><p>对于除雅可比检查以外的所有质量检查，软件将使用在<strong>阈值</strong>对话框中指定的相应的质量阈值。对于<strong>雅可比</strong>检查，在 <strong>3D 四面体网格</strong>对话框中指定的<strong>最大雅可比</strong>值将替代在<strong>阈值</strong>对话框中指定的雅可比值。</p></td>
+           </tr>
+         </table>
+         <p>如果在生成网格时对网格质量进行评估，您就有可能在尝试对模型求解之前自动或手工更正质量问题。</p>
+         <h3>使用自动修复有故障的单元自动更正质量问题</h3>
+         <div>
+           <p>可使用<strong>3D 四面体网格</strong>对话框中的<strong>自动修复有故障的单元</strong>选项控制软件是否尝试自动修复任何检测到的单元质量问题。根据单元导致其失败的质量检查及其自身的拓扑结构，软件可以移除有问题的单元，也可以对相关曲面重新划分网格。</p>
+         </div>
+         <div>
+           <div>
+             <h3>手工更正质量问题的策略</h3>
+           </div>
+           <p>根据模型以及网格的质量问题数量，手工解决单元质量故障可能更有效。您应始终评估故障单元相对于网格中单元总数的数量。例如，如果模型中的 10 个单元超过了质量阈值，您可根据每种情况解决这些问题，这比软件反复对整个模型划分网格更有效。</p>
+           <p>单元质量问题通常发生在基本几何体有问题的区域，例如其大小相对于指定的单元大小来说非常小的曲面。作为解决单元质量选项的第一步，应始终检查在 <strong>3D 四面体网格</strong>对话框中指定的<strong>小特征公差</strong>。允许软件自动清理小于目标单元大小的 10％ 的任何特征，这通常可提高单元质量。</p>
+           <p>还可使用<strong>高级仿真</strong>工具条上的命令，如<strong>合并面</strong>，以修复可能导致单元形状很差的基本几何体的问题。此外，还可使用<strong>网格控制</strong>命令定义特定区域中的边或面密度。这有利于更好地控制问题区域中的局部单元大小</p>
+         </div>
+         <p>&nbsp;</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

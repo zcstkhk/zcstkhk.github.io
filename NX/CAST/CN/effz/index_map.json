@@ -1,0 +1,16 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"自由曲面建模介绍",file:"id1050199.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"自由曲面建模概述",file:"intro.html",type:"topic",parent:""},
+{id:"d5e7",title:"片体的应用",file:"genid_applications_for_sheet_bodies_46_1134.html",type:"topic",parent:""},
+{id:"d5e9",title:"用于自由曲面特征的几何体",file:"geometry_for_freeform_features.html",type:"topic",parent:""},
+{id:"d5e11",title:"自由曲面首选项",file:"freeform_preferences.html",type:"topic",parent:"",children:[
+{id:"d5e12",title:"体类型",file:"genid_body_type_21_508.html",type:"topic",parent:"d5e11"},
+{id:"d5e13",title:"公差",file:"modpref3.html",type:"topic",parent:"d5e11"},
+{id:"d5e14",title:"曲线拟合方法",file:"id675746.html",type:"topic",parent:"d5e11"},
+{id:"d5e15",title:"网格线",file:"modpref4.html",type:"topic",parent:"d5e11"},
+{id:"d5e16",title:"重新构建选项",file:"genid_rebuild_options_31_1092.html",type:"topic",parent:"d5e11"},
+{id:"d5e17",title:"自由曲面构造结果",file:"modpref6.html",type:"topic",parent:"d5e11"},
+{id:"d5e18",title:"极点、折线以及结点显示",file:"id1509447.html",type:"topic",parent:"d5e11"}]},
+{id:"d5e21",title:"自由曲面特征概述",file:"id725269.html",type:"activity",parent:""}
+]}

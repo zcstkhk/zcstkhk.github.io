@@ -1,0 +1,123 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>导出的耐久性基于函数的结果</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>导出的耐久性基于函数的结果</h2>
+         <p>下例用于解释在所导出的电子表格或 CSV 文件中显示的耐久性基于函数的结果。</p>
+         <table class="attentionTable attn_example">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">示例</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/durability/stress_history_cycles.gif"></p>
+                  
+                  <p>变量振幅应力历程包含两个完整周期：</p>
+                  <ul>
+                    <li>
+                      <p>周期 1 的应力振幅为 +/- 35 MPa，应力范围为 70 MPa</p>
+                    </li>
+                    <li>
+                      <p>周期 2 的应力振幅为 +/- 70 MPa，应力范围为 140 MPa</p>
+                    </li>
+                  </ul>
+                  <p>两个周期都具有零平均应力。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <p><span class="codeText">疲劳评估结果：计数</span>为计数范围平均值矩阵。对于每个应力或应变范围和每个平均应力或应变，<em>计数范围平均值矩阵</em>将以所有应力或应变函数显示加载循环数，这些函数列于<strong>耐久性损伤评估</strong>对话框的函数表中。</p>
+         <table class="attentionTable attn_example">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">示例</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>对于具有两个完整周期的示例应力历程，将根据 70000 kPa 的应力范围和 0 kPa 的平均应力为一个周期计数。这是周期 1。并且，将根据 140000 kPa 的应力范围和 0 kPa 的平均应力为一个周期计数。这是周期 2。</p>
+                  
+               </td>
+            </tr>
+         </table><a name="genid_spta_dur_function_17"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/durability/count_range_mean_matrix.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>计数范围平均值矩阵</h4>
+         </div>
+         <p><span class="codeText">疲劳评估结果：损伤</span>为损伤范围平均值矩阵。对于每个应力或应变范围和每个平均应力或应变，<em>损伤范围平均值矩阵</em>将以所有应力或应变函数的范围-平均值对来显示所有加载循环所引起的损伤，这些函数列于<strong>耐久性损伤评估</strong>对话框的函数表中。</p>
+         <table class="attentionTable attn_example">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">示例</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>对于具有两个完整周期的示例应力历程，将在周期 1 中完成 4.36 x 10-13 损伤，在周期 2 中完成 1.91 x 10-10 损伤。</p>
+                  
+               </td>
+            </tr>
+         </table><a name="genid_spta_dur_function_18"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/durability/damage_ratio_range_mean_matrix.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>损伤范围平均值矩阵</h4>
+         </div>
+         <p><span class="codeText">疲劳评估结果：总损伤百分比</span>为百分比总损伤范围平均值矩阵。对于每个应力或应变范围和每个平均应力或应变，<em>百分比总损伤范围平均值矩阵</em>将以所有应力或应变函数的范围平均值对来显示所有加载循环所引起的总损伤的百分比，这些函数列于<strong>耐久性损伤评估</strong>对话框的函数表中。</p>
+         <table class="attentionTable attn_example">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">示例</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>对于具有两个完整周期的示例应力历程，周期 2 可产生 99.8 % 的总损伤，而周期 1 可产生其余损伤 (0.2 %)。</p>
+                  
+               </td>
+            </tr>
+         </table><a name="genid_spta_dur_function_19"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/durability/percent_total_damage_range_mean_matrix.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>百分比总损伤范围平均值矩阵</h4>
+         </div>
+         <p><span class="codeText">总数</span>显示所有函数的已计数加载循环的总数。</p>
+         <p><span class="codeText">超出范围数</span>显示超出框数范围的已计数加载循环的数量。</p>
+         <p><span class="codeText">总损伤</span>显示所有加载循环和所有函数的总损伤。</p>
+         <p><span class="codeText">超出范围损伤</span>显示超出框数范围的所有加载循环所引起的损伤。</p>
+         <p><span class="codeText">引发裂纹估计</span>是事件数总损伤的倒数 <em>NE</em>。以小时计的引发裂纹估计值由 <em>NE</em> ∙∑(<em>tR</em> ∙<em>Nocc</em>) 给定，此处 <em>tR</em> 和 <em>Nocc</em> 分别为各函数的时间范围和事例数。</p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

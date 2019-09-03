@@ -1,0 +1,62 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>非线性静态分析是一个迭代解算方案</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>非线性静态分析是一个迭代解算方案</h2><a name="ndxgenid_spta_nonlinear_42"></a>
+         <a name="ndxgenid_spta_nonlinear_43"></a>
+         
+         
+         <p>由于载荷-挠度曲线是非线性的，软件必须在迭代的基础上求解方程，收敛准则将决定何时可以接受各个载荷步的答案。</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>在载荷增长前，当前载荷条件必须通过收敛准则。</p>
+               
+               <ul>
+                  
+                  <li>
+                     
+                     <p>可以在<strong>解算方案</strong>对话框的<strong>收敛准则</strong>组(<strong>解算方案</strong>对话框&rarr;<strong>工况控制</strong>&rarr;<strong>非线性参数</strong>&rarr;<strong>收敛准则</strong>)中设置 NLSTATIC 106解算方案的收敛准则</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>可以在<strong>解算方案</strong>对话框的<strong>平衡</strong>选项卡(<strong>解算方案</strong>对话框&rarr;<strong>工况控制</strong>&rarr;<strong>策略参数</strong>&rarr;<strong>平衡</strong>)中设置 SOL 601，106解算方案的收敛准则</p>
+                     
+                  </li>
+                  
+               </ul>
+               
+            </li>
+            
+            <li>
+               
+               <p>如果载荷步收敛失败，将增量拆分为更小的步可以帮助解算继续进行。</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/solutions/nonlinear_static/iterate.png"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

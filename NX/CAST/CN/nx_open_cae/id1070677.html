@@ -1,0 +1,213 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Enable the custom dialog box 2</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Enable the custom dialog box 2</h2>
+         <div class="action">
+            
+            <p>Locate the public class statement at the beginning of the inserted Block Styler code:</p>
+            
+         </div><pre class="codeExample indent ">' ----------------------------------------------
+'   Menu: Tools-&gt;Journal-&gt;Stop Recording
+' ----------------------------------------------
+
+End Sub
+Public Class bottleMeshDb
+    'class members</pre><div class="action">
+            
+            <p>Declare the additional variables highlighted in bold for use with the dialog box.</p>
+            
+         </div><pre class="codeExample indent ">        'class members
+        Private Shared theSession As Session
+<span class="userInput">        ' Added code &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+        Public faces As NXOpen.CAE.CaeFace()
+        Public exp As Expression
+        Public unit As Unit
+        Public formula As String
+
+</span> </pre><div class="action">
+            
+            <p>Locate the Constructor for the NX Styler class. In the Try loop, initialize the variables you declared, and add the exception handling line.</p>
+            
+         </div><pre class="codeExample indent ">#Region &quot;Block Styler Dialog Designer generator code&quot;  
+'---------------------------------  
+'Constructor for NX Styler class  
+'---------------------------------  
+Public Sub New()  
+    Try  
+
+...  
+        theDialog.AddDialogShownHandler(AddressOf dialogShown_cb)  
+<span class="userInput">            ' Added Code &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+            ReDim faces(0)
+            exp = Nothing
+            unit = Nothing
+            formula = &quot;&quot;
+            ' End of added code &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+</span>      Catch ex As Exception  
+          '---- Enter your exception handling code here -----  
+<span class="userInput">            theUI.NXMessageBox.Show(&quot;Block Styler&quot;, NXMessageBox.DialogType.Error, ex.ToString)
+</span>        Throw ex  
+    End Try </pre><div class="action">
+            
+            <p>Locate the dialog box's <span class="codeText">xxxxMain()</span> function.
+            </p>
+            
+         </div>
+         <div class="action">
+            
+            <p>Within the main <span class="codeText">Try</span> loop, add a <span class="codeText">For</span> loop to help with the faces that will be meshed, a commented out debugging statement.
+            </p>
+            
+         </div><pre class="codeExample indent ">Public Shared Sub xxxxMain()
+    Try
+
+<span class="userInput">
+                ' theLW.WriteLine(&quot;Into xxxxMain Try Loop-L349&quot;)
+</span>        thebottleMeshDb = New bottleMeshDb()  
+        ' The following method shows the dialog immediately  
+        thebottleMeshDb.Show()  
+<span class="userInput">            For Each Item As NXOpen.TaggedObject In thebottleMeshDb.faces
+                Dim face As NXOpen.CAE.CaeFace = CType(Item, NXOpen.CAE.CaeFace)
+            Next
+
+</span>    Catch ex As Exception</pre><div class="action">
+            
+            <p>Locate the callback function for initializing the dialog box and modify and add the lines highlighted in bold.</p>
+            
+         </div><pre class="codeExample indent ">Public Sub initialize_cb()
+    Try  
+    
+            group0 = CType(theDialog.TopBlock.FindBlock(&quot;group0&quot;), NXOpen.BlockStyler.<span class="userInput">UIBlock)</span>
+            selection0 = CType(theDialog.TopBlock.FindBlock(&quot;selection0&quot;), NXOpen.BlockStyler.<span class="userInput">UIBlock)</span>
+            expression0 = CType(theDialog.TopBlock.FindBlock(&quot;expression0&quot;), NXOpen.BlockStyler.<span class="userInput">UIBlock)</span>
+    
+<span class="userInput">                ' Added Code &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+                Dim propertyList As BlockStyler.PropertyList
+                propertyList = selection0.GetProperties()
+
+                Dim masktriples1(0) As Selection.MaskTriple
+                masktriples1(0).Type = NXOpen.UF.UFConstants.UF_caegeom_type
+                masktriples1(0).Subtype = NXOpen.UF.UFConstants.UF_caegeom_face_subtype
+                masktriples1(0).SolidBodySubtype = -1
+                propertyList.SetSelectionFilter(&quot;SelectionFilter&quot;, Selection.SelectionAction.ClearAndEnableSpecific, masktriples1)
+                propertyList.SetString(&quot;LabelString&quot;, &quot;Select Faces to Mesh&quot;)
+                propertyList = group0.GetProperties()
+                propertyList.SetString(&quot;Label&quot;, &quot;Bottle Mesh Settings&quot;)
+                propertyList = expression0.GetProperties()
+                propertyList.SetString(&quot;Label&quot;, &quot;Element Size&quot;)
+
+                propertyList.SetDouble(&quot;MaximumValue&quot;, 999999999.9)
+                propertyList.SetDouble(&quot;MinimumValue&quot;, 0.0001)
+
+</span>    Catch ex As Exception
+</pre><div class="action">
+            
+            <p>Locate the callback function for the <span class="uiTerm">Apply</span> button and add the code highlighted in boldface.
+            </p>
+            
+         </div><pre class="codeExample indent ">Public Function apply_cb() As Integer  
+
+    Dim errorCode As Integer = 0
+    Try  
+<span class="userInput">            ' Added code &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;  
+            selection0 = theDialog.TopBlock.FindBlock(&quot;selection0&quot;)
+            expression0 = theDialog.TopBlock.FindBlock(&quot;expression0&quot;)
+
+            'Retrieve the selection0 property list  
+            Dim propertyList As BlockStyler.PropertyList
+            propertyList = selection0.GetProperties()
+
+            Dim objects As NXOpen.TaggedObject()
+
+            objects = propertyList.GetTaggedObjectVector(&quot;SelectedObjects&quot;)
+
+            Dim Lng As Integer = 0
+
+            ReDim faces(objects.Length - 1)
+
+            For Each Item As NXOpen.TaggedObject In objects
+
+               Try
+
+                    Dim body As NXOpen.CAE.CaeFace = CType(Item, NXOpen.CAE.CaeFace)
+                    If body Is Nothing Then
+                        ' Error of some sort 
+                    Else
+                        faces(Lng) = body
+                        Lng = Lng + 1
+
+                    End If
+
+                Catch ex As ApplicationException
+
+                End Try
+</span>
+               '---- Enter your callback code here -----
+
+<span class="userInput">            Next
+            ' Uncomment the next line to open the List Window for debugging
+            ' Dim theLW As ListingWindow = theSession.ListingWindow()
+            ' theLW.Open()
+
+            propertyList = expression0.GetProperties()
+            Dim expTag As TaggedObject
+
+            Dim unitTag As TaggedObject
+
+            expTag = propertyList.GetTaggedObject(&quot;ExpressionObject&quot;)
+
+            If expTag IsNot Nothing Then
+                exp = CType(expTag, Expression)
+                Dim rhs As String = exp.RightHandSide()
+
+                Dim expName As String = exp.Name
+
+                ' theLW.WriteLine(&quot; We have a exp named = &quot; + expName + &quot; RHS = &quot; + rhs)
+
+            End If
+            unitTag = propertyList.GetTaggedObject(&quot;Units&quot;)
+            If unitTag IsNot Nothing Then
+                unit = CType(unitTag, Unit)
+                Dim unitName As String = unit.Name
+                Dim unitabbr As String = unit.Abbreviation
+                ' Added the following debugging statements
+                ' theLW.WriteLine(&quot; &lt; - - - First line output to the List Window L553 - - - &gt;&quot;)
+                ' theLW.WriteLine(&quot; Marking the start helps during multiple debugging runs.&quot;)
+                ' Added blank separator line after output start marker lines.
+                ' theLW.WriteLine(&quot; &quot;)
+                ' theLW.WriteLine(&quot; We have a unit named = &quot; + unitName + &quot; Abbreviation = &quot; + unitabbr)
+
+            End If
+
+            formula = propertyList.GetString(&quot;Formula&quot;)
+            If formula IsNot Nothing Then
+
+                ' theLW.WriteLine(&quot; Formula = &quot; + formula)
+
+                ' theLW.WriteLine(&quot; &quot;)
+                ' theLW.WriteLine(&quot; The List Window can be used to dump variables for debugging, or to show progress during journal execution L585&quot;)
+                ' theLW.WriteLine(&quot; &quot;)
+
+            End If
+            ' End added code &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; 
+
+</span>    Catch ex As Exception
+</pre><div id="footer"></div>
+      </div>
+   </body>
+</html>

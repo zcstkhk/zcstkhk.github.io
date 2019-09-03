@@ -1,0 +1,16 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"复制特征",file:"id1073265.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"创建特征阵列",type:"topicMap",parent:"",children:[
+{id:"d5e6",title:"阵列特征",file:"id1321246.html",type:"topic",parent:"d5e5",children:[
+{id:"d5e7",title:"线性阵列特征布局选项",file:"id1348181.html",type:"topic",parent:"d5e6"},
+{id:"d5e8",title:"创建线性特征阵列",file:"id1377774.html",type:"activity",parent:"d5e6"},
+{id:"d5e9",title:"圆形阵列特征布局选项",file:"id1348183.html",type:"topic",parent:"d5e6"},
+{id:"d5e10",title:"创建圆形特征阵列",file:"id1384864.html",type:"activity",parent:"d5e6"}]}]},
+{id:"d5e12",title:"复制、复制特征和粘贴",file:"xid452602.html",type:"topic",parent:"",children:[
+{id:"d5e13",title:"粘贴特征设置",file:"id1010903.html",type:"topic",parent:"d5e12"},
+{id:"d5e14",title:"将特征从一个部件复制到另一个部件中",file:"id1492604.html",type:"activity",parent:"d5e12"},
+{id:"d5e15",title:"复习",file:"xid465655.html",type:"topic",parent:"d5e12"}]}
+
+
+]}

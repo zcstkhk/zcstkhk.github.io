@@ -1,0 +1,112 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Solving a model</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Solving a model</h2>
+         <a name="ndxgenid_sptd_solving_8"></a>
+         
+         <a name="ndxgenid_sptd_solving_9"></a>
+         
+         <a name="ndxgenid_sptd_solving_10"></a>
+         
+         
+         <p>After you prepare your FE model by defining a mesh and applying boundary conditions, you can solve the model.</p>
+         
+         <p>A solve writes the solver input file, and then automatically begins processing. You can also choose to write out the solver input file without solving it. Doing so allows you to manually edit a solver input file during a solve.</p>
+         <a name="genid_solutions_and_subcases_17_565" id="genid_solutions_and_subcases_17_565"></a>
+         
+         
+         
+         <h2>Solutions and subcases</h2>
+         
+         
+         <a name="ndxgenid_sptd_solving_12"></a>
+         
+         <a name="ndxgenid_sptd_solving_13"></a>
+         
+         
+         
+         <p>A <span class="emphasis">solution</span>, which is stored in the Simulation file, contains a set of loads and constraints. 
+         </p>
+         
+         
+         <p>Each solution contains additional storage elements called subcases. Each subcase holds solution entities such as loads and constraints. </p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>NX Nastran structural solves: constraints can be stored in the main solution or in the subcases; loads are stored in subcases. </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>NX Nastran thermal solves: loads and constraints are both stored in subcases.</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <a name="genid_solution_attributes_35_478" id="genid_solution_attributes_35_478"></a>
+         
+         
+         
+         <h2>Solution attributes</h2>
+         
+         
+         <a name="ndxgenid_sptd_solving_15"></a>
+         
+         <a name="ndxgenid_sptd_solving_16"></a>
+         
+         <a name="ndxgenid_sptd_solving_17"></a>
+         
+         
+         <p><span class="emphasis">Solution attributes</span> define options for the  solver. You can define solution attributes for a new solution, or for an existing solution before you solve.
+         </p>
+         
+         
+         <p>The options available depend on the analysis type (for example, Structural), and the solution type (for example, Linear Statics &mdash; Single Constraint).</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/solutions/solution_des.gif"></p>
+         
+         
+         
+         <a name="genid_solution_parameters_28_179" id="genid_solution_parameters_28_179"></a>
+         
+         
+         
+         <h2>Solver parameters</h2>
+         
+         
+         <a name="ndxgenid_sptd_solving_19"></a>
+         
+         <a name="ndxgenid_sptd_solving_20"></a>
+         
+         
+         <p><span class="emphasis">Solver parameters</span> include settings for the  solver.
+         </p>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/des_sim/solving/solver_parameters_ds.png"></p>
+         
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

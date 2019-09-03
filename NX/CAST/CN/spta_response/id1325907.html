@@ -1,0 +1,116 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>复习</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>复习</h2>
+         <div id="topQuestionsContainer">
+            <div class="questionsHeader">
+               <div class="headerTitle">
+                  <p>问题</p>
+               </div>
+               <div class="quesionButtons">
+                  <div class="qButton" id="qButton_1">
+                     <p>1</p>
+                  </div>
+                  <div class="qButton" id="qButton_2">
+                     <p>2</p>
+                  </div>
+               </div>
+            </div>
+            <div id="questionsContainer">
+               <div class="question" id="question1" answered="false" numanswers="4" questiontype="fillInBlank">
+                  <p>要使 NX Nastran 生成约束模态，您必须创建什么？</p>
+                  <p class="questionInstruction">请选择一个答案</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a1" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q1a1" type="radio" correct="no" name="question1Grp"></td>
+                           <td>
+                              <p>节点力位置</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a2" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q1a2" type="radio" correct="yes" name="question1Grp"></td>
+                           <td>
+                              <p>强迫运动位置</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a3" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q1a3" type="radio" correct="no" name="question1Grp"></td>
+                           <td>
+                              <p>强迫运动激励</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a4" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q1a4" type="radio" correct="no" name="question1Grp"></td>
+                           <td>
+                              <p>静态偏置载荷</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div class="question" id="question2" answered="false" numanswers="4" questiontype="fillInBlank">
+                  <p>模型的特定阻尼属性未知时，应该应用什么类型的阻尼到结构的常规阻尼比中？</p>
+                  <p class="questionInstruction">请选择一个答案</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a1" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q2a1" type="radio" correct="no" name="question2Grp"></td>
+                           <td>
+                              <p>物理阻尼</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a2" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q2a2" type="radio" correct="yes" name="question2Grp"></td>
+                           <td>
+                              <p>模态阻尼</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a3" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q2a3" type="radio" correct="no" name="question2Grp"></td>
+                           <td>
+                              <p>粘滞阻尼</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a4" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q2a4" type="radio" correct="no" name="question2Grp"></td>
+                           <td>
+                              <p>迟滞阻尼</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div id="showFeedbackContainer"><span showLabel="true" id="feedbackButton" title="Show feedback" dojoType="xps.form.Button" onClick="showQuestionFeedback()">显示答案</span></div>
+            </div>
+            <div class="helpTextContainer">
+               <p class="questionFeedback" id="incorrect">错误！</p>
+               <p class="questionFeedback" id="correct">正确！</p>
+               <div class="questionHelp" id="questionHelp1">
+                  <p>如果想应用强迫运动激励(位移、速度或加速度)、速度冲击激励、或者 DDAM 激励时，需要强迫运动位置，也需要评估可传递性，强迫运动通常用来计算接地运动的响应，比如地震分析。<br><br>
+                  求解解算方案时，对于强迫运动位置中的各个节点，将为各个设为强迫的自由度生成约束模态，例如，如果强迫运动位置有5个节点，并且 DOF2 和 DOF3 设为强迫，那么将会生成10个约束模态。<br><br>
+                  约束模态将捕捉您定义强迫运动激励所使用方向上的基本运动。</p>
+               </div>
+               <div class="questionHelp" id="questionHelp2">
+                  <p>模态阻尼让您应用粘滞或迟滞阻尼率到单个模态或所有模态中，这在您不知道阻尼是如何与模型的物理属性关联，或者需要在模型中应用常规能量耗损时十分有用。</p>
+               </div>
+            </div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

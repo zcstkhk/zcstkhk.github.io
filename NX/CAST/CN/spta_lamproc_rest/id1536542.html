@@ -1,0 +1,151 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Defining a layup using the lamination shorthand format</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>使用层合速记格式定义铺层</h2>
+         
+         <p>使用<strong>速记格式导入铺层</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/laminates/import_layup_using_shorthand_format.gif" border="0"> 选项可通过层合速记格式快速定义铺层。可以指定所有层片的厚度和材料。</p>
+         
+         <p>在<strong>速记格式</strong>对话框的<strong>速记字符串</strong>框中输入速记符号。速记符号具有以下约定：               </p>
+         <ul>
+            <li>
+              <p>层片铺层包含在 []（方括号）内</p>
+            </li>
+            <li>
+              <p>层片角度由 /（正斜杠）分隔</p>
+            </li>
+            <li>
+              <p>层片组包含在 ()（括号）内</p>
+            </li>
+            <li>
+              <p>对称用后缀 _s（下划线和 <em>s</em>）表示。对于对称铺层，后缀放在方括号后面。对于对称组，后缀放在括号后面。</p>
+            </li>
+            <li>
+              <p>核心层片用 &lsquo;（单引号）表示</p>
+            </li>
+            <li>
+              <p>重复铺层、层片或组用 _#（下划线和井号）表示，其中 # 表示重复数</p>
+            </li>
+            <li>
+              <p>数字前面的 +（加号）和 –（减号）表示正负角度            </p>
+            </li>
+            
+         </ul>
+         
+         <table class="attentionTable attn_example">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">示例</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>输入 [(+-45)_s(0/90)_3] 时，层片铺层由 10 个层片和 5 个组构成，如下图所示。组 2 是组 1 的对称重复。组 4 和组 5 是组 3 的非对称重复。</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_shorthand_format/ply_layup_4545090groups.gif"></p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <p>下表显示以这些格式创建的其他速记格式和铺层示例。</p>
+         <a name="genid_spta_lamproc_46"></a><table frame="box" rules="all" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+               <col span="3">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr align="center">
+                  
+                  <td align="left" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">速记格式</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">[-45/0/45/90]_2</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">[0/+-45/90&rsquo;]_s</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">[45_3/+-30_2]</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">[+-60/- -45/+-++- -5]</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">带角度和层片数的层片铺层</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_shorthand_format/ply_layup_4504590r.gif"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_shorthand_format/ply_layup_0454590cs.gif"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_shorthand_format/ply_layup_45454530-3030-30.gif"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_shorthand_format/ply_layup_6045555555.gif"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>注释和限制</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>注释和限制</h2>
+         <div class="division">
+            
+           <h3>将可变形部件添加到装配</h3>
+            
+            <p>按照添加任何其他组件的方式将可变形部件添加到装配中，并用以下任一方式定位该部件：</p>
+            <ul>
+              <li>
+                <p>如果变形不需要外部参考，则可在装配中对它进行定位或约束，就像操作任何其他组件一样。</p>
+              </li>
+              <li>
+                <p>如果变形需要外部参考，则基于其参考几何体在装配中的位置来定位该变形。</p>
+              </li>
+            </ul>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">注释</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>包含外部引用的可变形部件不能被约束或移动。</p>
+                     
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="division">
+            
+            <h3>创建</h3>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>允许导致多个体的变形部件。</p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+            <h3>参考</h3>
+            
+            <ul>
+               
+               <li>
+                 <p>要允许在绝对坐标系以外的坐标系中重定位变形，必须确保提供了足够的参考和方向表达式。Siemens PLM Software 公司建议采用以下最佳实践：</p>
+                 <ul>
+                   <li>
+                     <p>通过拉伸草图而不是简单曲线来创建拉伸。仅在草图中定义参考平面。</p>
+                   </li>
+                   <li>
+                     <p>包含控制方向的表达式，如参考几何体中的拉伸偏置；否则，将无法根据需要在目标坐标系中进行重新调整。</p>
+                   </li>
+                 </ul>
+               </li>
+               <li>
+                 <p>使用引导线或截面曲线的变形的装配位置是基于装配中其参考曲线的位置。不需要外部参考的变形可以像其他组件一样进行定位和约束。</p>
+               </li>
+               <li>
+                 <p>不能在变形部件后替换丢失的参考曲线。</p>
+               </li>
+               <li>
+                 <p>对于某些特征，可能需要输入负值来控制参考的副方向矢量。关于更多信息，请参见<em>建模</em>帮助。</p>
+               </li>
+               
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+            <h3>可见性</h3>
+            
+            <ul>
+               
+               <li>
+                 <p>有些选项(如<strong>按邻近度打开</strong>)是基于原始组件的。在使用这些选项时，将看到原始组件而不是变形。</p>
+               </li>
+               <li>
+                 <p>已提升或已变形的组件的轻量级引用集会显示已提升或已变形几何体的小平面。如果配合互操作性功能或转换器使用此类组件，则此类组件将显示其原始形状。</p>
+               </li>
+               <li>
+                 <p>如果在较高级别的装配中存在变形，并在同一装配的较低级别中创建另一个变形，则只能看到较高级别的变形。要查看较低级别的变形，将较低级别的装配设置为显示部件。</p>
+               </li>
+               
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+            <h3>编辑</h3>
+            
+            <ul>
+               
+               <li>
+                 <p>您无法编辑可变形特征；例如，您无法将任何新特征添加到变形。要修改可变形特征，必须删除该特征并创建新的定义。</p>
+               </li>
+               <li>
+                 <p>如果从变形创建组件阵列，则阵列事例不显示变形。</p>
+               </li>
+               <li>
+                 <p>如果在可变形组件中删除变形用户定义的特征，则将删除装配中使用的变形特征，并且该特征的内容在装配中将转换为局部特征。</p>
+               </li>
+               <li>
+                 <p><strong>更新时显示变形参数</strong>用户默认设置可供指定在使用<strong>更新</strong>命令来更新可变形组件时，输入参数对话框是否出现。</p>
+               </li>
+               
+            </ul>
+            
+            <table class="attentionTable attn_tip">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">提示</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>要查找用户默认设置，请选择<strong>文件</strong>→<strong>实用工具</strong>→<strong>用户默认设置</strong>，然后单击<strong>查找默认设置</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/customer_defaults/find_default.gif" border="0">。</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         <div class="division">
+            
+            <h3>信息</h3>
+            
+            <p>可以在<strong>装配导航器</strong>的<strong>形状</strong>列中检查组件的变形状态，并查看其是否：</p>
+            <ul>
+              <li>
+                <p>当前已变形</p>
+              </li>
+              <li>
+                <p>可以变形但仍保留其默认形状</p>
+              </li>
+              <li>
+                <p>当前不可变形</p>
+              </li>
+            </ul>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

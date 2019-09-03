@@ -1,0 +1,241 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>创建装配序列抽取路径</title>
+   </head>
+   <body>
+      <div class="contentType_procedure">
+         <h2>创建装配序列抽取路径</h2>
+         
+         <p>本例演示如何从汽车发动机舱装配中抽取黄色散热器，如下图所示。 </p>
+         <p>有一个要求：必须从汽车上面抽取散热器而不是从汽车下面抽取。</p>
+<p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_sequencing/extraction_path/assyseq_path_before.png"></p>
+         
+         <ol type="1">
+            <li>
+               
+               
+               <p>在<strong>装配</strong>工具条上，单击<strong>装配序列</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assemblies/assembly_sequences.gif" border="0">。</p>
+               
+               
+               <div class="stepResult">
+                  
+                  <p>NX 将进入序列任务环境。</p>
+                  
+               </div>
+            </li>
+            <li>
+              <p>在<strong>装配序列</strong>工具条上，单击<strong>新建序列</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assembly_sequencing_and_motion/create_new_sequence.gif" border="0">。</p>
+            </li>
+            <li>
+              <p>在<strong>序列工具</strong>工具条上，单击<strong>抽取路径</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assembly_sequencing_and_motion/extraction_path.gif" border="0">。</p>
+            </li>
+            <li>
+              <p>在<strong>抽取路径</strong>对话框中，<strong>选择组件</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/assemblies/extraction_path/select_component.gif" border="0"> 处于活动状态时，选择要计算其抽取路径的组件。</p>
+              <div class="stepInformation">
+                
+                <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_sequencing/extraction_path/assyseq_path_select_radiator.png"></p>
+                
+                <p>如果序列中启用了约束，则会收到一条消息，确认如果继续，则将在序列中禁用约束。</p>
+                
+              </div>
+            </li>
+            <li>
+               
+               
+               <p>在<strong>路径参数</strong>组中指定<strong>步长</strong>。</p>
+               
+               
+               <div class="stepInformation">
+                  
+                  <p>较小的<strong>步长</strong>值更容易创建成功的抽取路径，但处理时间较长。</p>
+                  
+               </div>
+               
+            </li>
+            <li>
+               
+               
+               <p>指定<strong>间隙</strong>。</p>
+               
+               
+               <div class="stepInformation">
+                  
+                  <p>小的正间隙可确保部件在抽取期间不会接触或干涉抽取。在本例中，0.5 mm 的间隙就足够了。</p>
+                  
+               </div>
+               
+            </li>
+            <li>
+               
+               
+               <p>指定部件移动的限制。</p>
+               
+               
+               <div class="stepInformation">
+                  
+                  <table class="attentionTable attn_caution">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">注意</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p>如果要限制旋转，则建议您在指定起始位置之前先指定移动的限制。否则，起始位置计算可能包含意外的旋转和干涉。</p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </div>
+               
+            </li>
+            <li>
+              <p>在<strong>移动的限制</strong>组中，单击<strong>向 WCS 对齐</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/common/manipulator.gif" border="0">，将移动的限制框与装配的 WCS 对齐。</p>
+            </li>
+            <li>
+              <p>在<strong>平动</strong>下的&ldquo;类型&rdquo;列表中，选择<strong>限制质心</strong>。</p>
+            </li>
+            <li>
+              <p>为确保不从车下抽取散热器，可拖动相应手柄以限制该方向上的运动(如下图所示)，然后拖动一个合理区域，该区域中的部件可在其他轴上移动。</p>
+              <div class="stepResult">
+                
+                <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_sequencing/extraction_path/set_limits_anim.gif"></p>
+                
+              </div>
+            </li>
+            <li>
+               
+               
+               <p>(可选)通过单击<strong>动画</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/assemblies/extraction_path/animate.gif" border="0"> 来确认运动的限制。</p>
+               
+               
+               <div class="stepResult">
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_sequencing/extraction_path/animate_limits_anim.gif"></p>
+                  
+               </div>
+            </li>
+            <li>
+              <p>在<strong>旋转</strong>下的<strong>类型</strong>列表中，选择<strong>无限制</strong>。</p>
+            </li>
+            <li>
+              <p>在<strong>起始位置</strong>组中，单击<strong>显示位置</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/assemblies/extraction_path/show_position.gif" border="0">。</p>
+              <div class="stepInformation">
+                
+                <div>
+                  <p>如果起始位置与其他组件太近，则会出现包含以下信息的警告。您可以：</p>
+                  <ul>
+                    <li>
+                      <p>单击<strong>自动解析</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/assemblies/extraction_path/automatic_resolve.gif" border="0">。</p>
+                    </li>
+                    <li>
+                      <p>单击<strong>指定位置</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/assemblies/extraction_path/specify_position.gif" border="0"> 并手工调整组件。</p>
+                    </li>
+                    <li>
+                      <p>更改路径参数，然后重试。</p></li></ul></div>
+</div>
+               
+              <div class="stepResult">
+                
+                <p>在本例中，散热器在两个弯边处接触保险杠。您将得到<strong>过于接近</strong>状态。</p>
+                
+                <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_sequencing/extraction_path/assyseq_path_beforeselect.png"></p>
+                
+              </div>
+            </li>
+            <li>
+               
+               
+               <p>请在<strong>自动干涉解析</strong>下，指定<strong>最大距离</strong>，然后单击<strong>自动解析</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/assemblies/extraction_path/automatic_resolve.gif" border="0">。</p>
+               
+               
+               <div class="stepResult">
+                  
+                  <p>您会得到通知您结果的消息。在本例中，单击<strong>自动解析</strong>一次，便可移动散热器来提供两个弯边位置处间隙的大概间隙值。</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_sequencing/extraction_path/auto_clear_anim.gif"></p>
+                  
+                  <p>接受抽取路径后，此初步运动是<strong>抽取路径</strong>序列步骤中的第一帧。</p>
+                  
+               </div>
+               
+            </li>
+            <li>
+              <p>在<strong>目标位置</strong>下，单击<strong>指定位置</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/assemblies/extraction_path/specify_position.gif" border="0">。</p>
+            </li>
+            <li>
+              <p>使用拖动手柄将组件移到目标位置。</p>
+              <div class="stepInformation">
+                
+                <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_sequencing/extraction_path/specify_goal_anim.gif"></p>
+                
+              </div>
+            </li>
+            <li>
+               
+               
+               <p>在<strong>设置</strong>组中，选中<strong>显示计算结果</strong>复选框。</p>
+               
+               
+               <div class="stepInformation">
+                  
+                  <p>在单击<strong>生成结果</strong>时，会在稍后实现组件移动的动画。此动画不是必需的，而且会稍微降低性能；不过，您可以看到稍后会舍弃的试算位置。</p>
+                  
+               </div>
+               
+            </li>
+            <li>
+               
+               
+               <p>在抽取路径中指定<strong>帧数</strong>。</p>
+               
+               
+               <div class="stepInformation">
+                  
+                  <p>较多帧数会创建平滑的动画，但会花费较长的播放时间。</p>
+                  
+               </div>
+               
+            </li>
+            <li>
+               
+               
+               <p>单击<strong>生成结果</strong><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/assemblies/extraction_path/generate_result.gif" border="0">。</p>
+               
+               
+               <div class="stepInformation">
+                  
+                  <p>组件的初始移动可能很不规则，因为软件会尝试并舍弃各种可能的路径。实现的最终路径因设置的运动限制而异。</p>
+                  
+               </div>
+               
+            </li>
+            <li>
+               
+               
+               <p>单击<strong>播放轨迹</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/assemblies/extraction_path/play_path.gif" border="0"> 以预览解算方案路径。</p>
+               
+               
+               <div class="stepResult">
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_sequencing/extraction_path/extraction_path_anim.gif"></p>
+                  
+               </div>
+               
+            </li>
+         </ol>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

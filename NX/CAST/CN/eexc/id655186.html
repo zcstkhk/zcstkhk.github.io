@@ -1,0 +1,98 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>使用表达式电子表格来修改模型</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>使用表达式电子表格来修改模型</h2>
+         <div class="division">
+            
+           <h3>电子表格首选项</h3>
+            
+            <p>可以在 NX 中使用两种电子表格—Xess 和 Excel，在<strong>电子表格首选项</strong>对话框中设置这个首选项，本课程将使用 Excel。</p>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">注释</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>Excel 与 Xess 电子表格的操作类似，在有不同时将会提醒您注意。</p>
+                     
+                     <p>这堂课中使用的电子表格为 Microsoft Excel 2007或更高版本。</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+            <p>一旦电子表格首选项设为 Excel，在您每次选择<strong>工具→表达式</strong>命令时，将会打开 Excel 电子表格。</p>
+            
+            <p>您可以将 Xess 电子表格转换为 Excel 电子表格，但是，可能需要整理一下生成的表格。</p>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">注释</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>如果在您的电脑上已经安装了 Exceed，那么可以使用 Xess，没有安装 Exceed 则无法运行 Xess，只能使用 Excel。</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+            <table class="attentionTable attn_warning">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">警告</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>在不同的 NX (不同的安装位置或者不同版本)之间移动包含 Excel 格式电子表格数据的部件时，指向 Excel 电子表格函数(比如 MASS3D)的链接可能会失效，到时必须在 Excel 中手动重新输入公式。</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         <div class="division">
+            
+            <h3>使用电子表格</h3>
+            
+            <p>在<strong>建模</strong>应用模块中选择<strong>工具→电子表格</strong>时，将会显示空白的电子表格，这是建模电子表格，标题栏显示的是&ldquo;建模中的工作表&rdquo;。</p>
+            <p>一旦电子表格被调用，NX 会话将会被锁定。直到离开电子表格前您都无法直接修改部件，NX 与电子表格已建立连接，所以可以来回传递信息，因此电子表格必须控制 NX 会话。</p>
+            <p>无论何时需要使用部件，都可以取消这个连接，直到重新返回电子表格。</p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>退出电子表格</h3>
+            
+            <p>需要离开建模电子表格并返回部件中时，可以使用下列方法：</p>
+            <ul>
+              <li>
+                <p><strong>Excel</strong>：您必须保存电子表格然后退出，要重新连接，选择<strong>工具→电子表格</strong>，然后在询问您是否使用当前数据时，点击<strong>接受</strong></p>
+              </li>
+              <li>
+                <p><strong>Xess</strong>：在电子表格下拉菜单中，选择<strong>连接→取消连接</strong>，要重新连接，选择<strong>工具→电子表格</strong></p>
+              </li>
+            </ul>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

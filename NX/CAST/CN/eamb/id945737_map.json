@@ -1,0 +1,15 @@
+{identifier:"id",label:"title",items:[
+{id:"d15e2",title:"定位器的设计意图",file:"id1119012.html",type:"topic",parent:""},
+{id:"d15e3",title:"设置装配加载选项并打开装配文件",file:"id945741.html",type:"topic",parent:""},
+{id:"d15e4",title:"查看装配并准备部件文件",file:"id945743.html",type:"topic",parent:""},
+{id:"d15e6",title:"拉伸链接的草图并用它从定位器中移除材料",file:"id945747.html",type:"topic",parent:""},
+{id:"d15e7",title:"添加现有的组件到装配中",file:"id945749.html",type:"topic",parent:""},
+{id:"d15e9",title:"用链接的特征求差",file:"id946628.html",type:"topic",parent:""},
+{id:"d15e10",title:"为安装孔创建链接几何体",file:"id946630.html",type:"topic",parent:""},
+{id:"d15e11",title:"拉伸链接曲线",file:"id947077.html",type:"topic",parent:""},
+{id:"d15e12",title:"创建一个中心与链接的点重合的沉头孔",file:"id947357.html",type:"topic",parent:""},
+{id:"d15e14",title:"添加另一个定位器组件",file:"id947359.html",type:"topic",parent:""},
+{id:"d15e15",title:"编辑底座开口草图",file:"id947361.html",type:"topic",parent:""},
+{id:"d15e16",title:"编辑底座孔的位置尺寸",file:"id947363.html",type:"topic",parent:""},
+{id:"d15e17",title:"编辑定位销孔的直径",file:"id947365.html",type:"topic",parent:""},
+{id:"d15e18",title:"编辑工件宽度",file:"id947392.html",type:"topic",parent:""}]}

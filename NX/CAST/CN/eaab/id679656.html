@@ -1,0 +1,86 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>重量计算中的例外</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>重量计算中的例外</h2>
+         
+         <p>当计算重量时有例外被查出，将用一个问号标志 <img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/analysis/advanced_weight_management/weight_mgmt_question_mark.gif" border="0"> 指示一个不可靠的值，会在<strong>装配导航器</strong>的<strong>重量状态</strong>列中显示，并在<strong>信息</strong>窗口中指出。</p>
+         
+         <p>有四种标准的例外：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>组件未加载，并且没有缓存数据，计算在这种情形下继续；如果它有已被加载的子部件，或者有缓存数据，它们将被包含到计算中</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>组件是部分加载并且没有缓存数据，计算在这种情形下继续；如果它有已被载加的子部件，或者有缓存数据，它们将被包含到计算中</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>组件使用一个引用集定义它的重量属性，但是这个引用集不是当前定义的，计算继续的情形将如同没有定义引用集一样</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>组件通过一个没有显示在部件中的组件集定义它的重量属性，计算继续的情形将如同没有定义组件集一样</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>有很多种方法来修正这种情形：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>完全加载出现问题的组件，然后计算</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>如果组件大到加载它们可能会引发内存问题，可将各个部件作为工作部件，然后分别计算重量属性并关闭部件，缓存数据将在更高级别的装配中可用</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>关闭装配，然后分别加载出现问题的组件，计算它的重量属性然后保存，重新加载装配并使用<strong>重量管理</strong>对话框中的<strong>更新结构</strong></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在未加载的部件中使用赋值</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

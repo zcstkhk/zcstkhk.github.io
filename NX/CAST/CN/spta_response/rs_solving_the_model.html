@@ -1,0 +1,57 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>响应仿真求解</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>响应仿真求解</h2>
+         <a name="ndxgenid_spta_response_28"></a>
+         
+         
+        <p>完全定义了有限元模型之后，包括激励位置、载荷、约束以及其它边界条件，您就可以求解响应动态解算方案以生成模态模型。</p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+              <td valign="top"><p class="attn_title">注释</p></td>
+              <td class="attention_main"><p>确保在求解前已定义解算方案选项，如果没有在<strong>动态</strong>子工况中创建<strong>结构输出请求</strong>，NX Nastran 求解将不会生成响应仿真所需的模态。</p></td>
+            </tr>
+         </table>
+         
+         <p>求解结束后，可以在<strong>后处理导航器</strong>中查看生成的正则模态形状。</p>
+         
+         <a name="genid_spta_response_29" id="genid_spta_response_29"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div class="figureBox"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/solutions/response_simulation/rs_sample_modes.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>正则模态形状</h4>
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>响应仿真解算方案处理</h3>
+            <p>求解结束后，必须创建响应仿真解算方案处理作为动态分析事件、模态和物理响应结果以及评估性结果的容器。</p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

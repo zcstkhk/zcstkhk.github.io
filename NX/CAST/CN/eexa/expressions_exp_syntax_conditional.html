@@ -1,0 +1,107 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>条件表达式</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>条件表达式</h2>
+         <div class="estimatedTime">
+           <p>预计完成这堂课需要：9&ndash;13  分钟</p>
+         </div>
+         <div></div><a name="ndxgenid_eexa_38"></a>
+         
+         
+        <p>表达式可用来根据特定条件定义变量。这类表达式可通过使用 if-else 语句加以创建。</p>
+         <a name="genid_eexa_43" id="genid_eexa_43"></a><table border="1" cellpadding="6" cellspacing="0" frame="box" rules="all" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="2">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                 <td colspan="1" rowspan="1" bgcolor="#D0D0D0"><p> <strong>名称</strong></p></td>
+                 <td colspan="1" rowspan="1" bgcolor="#D0D0D0"><p> <strong>公式</strong></p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1"><p>Lgth</p></td>
+                 <td colspan="1" rowspan="1"><p>12.5</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1"><p>Wdth</p></td>
+                 <td colspan="1" rowspan="1"><p>if ( Lgth &gt; 10) ( 5)else ( 3 )</p></td>
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <p>Wdth 表达式根据以下语句定义：</p>
+         <ul>
+           <li>
+             <p>如果 Lgth 大于 10，则 Wdth 等于 5。</p>
+           </li>
+           <li>
+             <p>如果 Lgth 小于等于 10，则 Wdth 等于 3。</p>
+           </li>
+         </ul>
+        <p>表达式还可使用 AND 或 OR 等布尔运算符。</p>
+         <a name="genid_eexa_44" id="genid_eexa_44"></a><table border="1" cellpadding="6" cellspacing="0" frame="box" rules="all" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="2">
+               
+            </colgroup>
+            
+            <thead>
+               
+               <tr bgcolor="#D0D0D0">
+                 <td colspan="1" rowspan="1"><p> <strong>名称</strong></p></td>
+                 <td colspan="1" rowspan="1"><p> <strong>公式</strong></p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1"><p>Lgth</p></td>
+                 <td colspan="1" rowspan="1"><p>12.5</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1"><p>Wdth</p></td>
+                 <td colspan="1" rowspan="1"><p>if ( Lgth &gt; 0 &amp;&amp; Lgth &lt; 10) ( 3)else ( 5 )</p></td>
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+            </tbody>
+            
+         </table>
+         
+         <p>此时，Wdth 表达式根据以下语句定义：</p>
+         <ul>
+           <li>
+             <p>如果 Lgth 大于 0 并且小于 10，则 Wdth 的值为 3。</p>
+           </li>
+           <li>
+             <p>否则，Wdth 的值为 5。</p>
+           </li>
+         </ul>
+         <p>语句的语法和命令部分必须为小写字母。</p>
+         <a name="id745620" id="id745620"></a><div id="footer"></div>
+      </div>
+   </body>
+</html>

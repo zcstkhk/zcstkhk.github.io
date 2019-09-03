@@ -1,0 +1,501 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Define a teach point and operator instructions</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Define a teach point and operator instructions</h2>
+         
+         <p>Direct Computer Control (DCC) systems usually require that the probe must first move to a part teach point location when the machine starts up. In this activity, you will define a teach point and add DMIS commands to instruct the machine operator to manually inspect the teach point.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>On the <strong>Feature</strong> toolbar, click <strong>Point</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/nx_cmm/feature/point.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Point Inspection Feature</strong> dialog box, click <strong>Point Dialog</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/common/point_dialog.gif" border="0"></p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Point</strong> dialog box, from the <strong>Type</strong> list, select <strong>End Point</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>On the work part, click the point as shown and click <strong>OK</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/alignment/align_tut_06.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Point Inspection Feature</strong> dialog box, in the <strong>Normal Direction</strong> group, click <strong>Select Projection Faces</strong>, and then click the largest top plane.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/alignment/align_tut_07.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Feature Name</strong> box, type <span class="userInput">TEACH_POINT</span> and click <strong>OK</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>In the <strong>Inspection Navigator</strong>, the point appears as the last item in the <strong>FEATURES</strong> program group. In the graphics window, the teach point appears with the location and vector direction that you specified.
+                     </p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/alignment/align_tut_08.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Inspection Navigator</strong>, drag the <strong>TEACH_POINT</strong> feature below the <strong>DEFINE_MCS</strong> alignment command.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <table border="0" cellpadding="0" cellspacing="0" class="navigator" width="100%" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" valign="middle" width="50">
+                           
+                           <col span="1" valign="middle">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group2.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">PART_ALIGNMENT</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group4.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/insp_align_mcs.gif" border="0">&nbsp;DEFINE_MCS
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group4.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/inspection_point.gif" border="0">&nbsp;TEACH_POINT
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>On the <strong>Insert</strong> toolbar, click <strong>CMM Command</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/nx_cmm/insert/create_cmm_command.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Insert Command</strong> dialog box, in the <strong>Program Statements</strong> box, type:
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p><span class="codeText">TEXT/OPER,'Take a teach point.'</span></p>
+                     
+                     <p>This command prompts the machine operator to take a teach point when the DMIS output runs on the CMM.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Operation Name</strong> group, type <span class="userInput">OPER_MSG_TP</span> and click <strong>OK</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>The command appears in the <strong>PROGRAM_HEADER</strong> program group.
+                     </p>
+                     
+                     <table border="0" cellpadding="0" cellspacing="0" class="navigator" width="100%" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" valign="middle" width="50">
+                           
+                           <col span="1" valign="middle">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group2.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">PROGRAM_HEADER</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group5.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/incpection_command.gif" border="0">&nbsp;PART_HDR_INFO
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group5.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/incpection_command.gif" border="0">&nbsp;STARTUP_CMDS
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group4.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/incpection_command.gif" border="0">&nbsp;OPER_MSG_TP
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>On the <strong>Insert</strong> toolbar, click <strong>CMM Command</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/nx_cmm/insert/create_cmm_command.gif" border="0"> again.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_12">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Insert Command</strong> dialog box, from the <strong>Command Type</strong> list, select <strong>Measurement Mode</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_13">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Command Parameters</strong> group, select the <strong>Manual</strong> check box.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_14">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Operation Name</strong> group, type <span class="userInput">MODE_MANUAL</span> and click <strong>OK</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>This command pauses the machine so that the operator can manually touch the probe to the teach point. Measurement modes affect the execution of measurement, motion, and sensor calibration statements.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_15">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Inspection Navigator</strong>, do the following.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <ol type="a">
+                     <li>
+                        
+                        
+                        <p>In the <strong>PROGRAM_HEADER</strong> program group, select <strong>OPER_MSG_TP</strong>, hold your Ctrl key, and then select <strong>MODE_MANUAL</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>Right-click either selected command and choose <strong>Cut</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>Right-click the <strong>PART_ALIGNMENT</strong> program group and choose <strong>Paste Inside</strong>.
+                        </p>
+                        
+                        
+                        <div class="stepResult">
+                           
+                           <p>The commands now appear beneath the teach point feature definition.</p>
+                           
+                           <table border="0" cellpadding="0" cellspacing="0" class="navigator" width="100%" align="center">
+                              
+                              <colgroup span="1">
+                                 
+                                 <col span="1" valign="middle" width="50">
+                                 
+                                 <col span="1" valign="middle">
+                                 
+                              </colgroup>
+                              
+                              <tbody>
+                                 
+                                 <tr>
+                                    
+                                    <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                       
+                                       <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group2.gif" border="0"></p>
+                                       
+                                    </td>
+                                    
+                                    <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                       
+                                       <p class="no-bottom-margin">PART_ALIGNMENT</p>
+                                       
+                                    </td>
+                                    
+                                 </tr>
+                                 
+                                 <tr>
+                                    
+                                    <td colspan="1" rowspan="1">
+                                       
+                                       <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group4.gif" border="0"></p>
+                                       
+                                    </td>
+                                    
+                                    <td colspan="1" rowspan="1">
+                                       
+                                       <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/insp_align_mcs.gif" border="0">&nbsp;DEFINE_MCS
+                                       </p>
+                                       
+                                    </td>
+                                    
+                                 </tr>
+                                 
+                                 <tr>
+                                    
+                                    <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                       
+                                       <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group4.gif" border="0"></p>
+                                       
+                                    </td>
+                                    
+                                    <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                       
+                                       <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/inspection_point.gif" border="0">&nbsp;TEACH_POINT
+                                       </p>
+                                       
+                                    </td>
+                                    
+                                 </tr>
+                                 
+                                 <tr>
+                                    
+                                    <td colspan="1" rowspan="1">
+                                       
+                                       <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group4.gif" border="0"></p>
+                                       
+                                    </td>
+                                    
+                                    <td colspan="1" rowspan="1">
+                                       
+                                       <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/incpection_command.gif" border="0">&nbsp;OPER_MSG_TP
+                                       </p>
+                                       
+                                    </td>
+                                    
+                                 </tr>
+                                 
+                                 <tr>
+                                    
+                                    <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                       
+                                       <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group4.gif" border="0"></p>
+                                       
+                                    </td>
+                                    
+                                    <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                       
+                                       <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/incpection_command.gif" border="0">&nbsp;MODE_MANUAL
+                                       </p>
+                                       
+                                    </td>
+                                    
+                                 </tr>
+                                 
+                              </tbody>
+                              
+                           </table>
+                           
+                        </div>
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>Save your inspection setup file.</p>
+                        
+                        
+                     </li>
+                  </ol>
+               </div>
+            </li>
+         </ol>
+         <div class="stepListResult">
+            
+            <p>The teach point is now defined and the operator is ready to measure the reference point that will be used to define a PCS alignment strategy.</p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

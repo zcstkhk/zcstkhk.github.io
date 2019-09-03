@@ -1,0 +1,181 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Add material behind each hole</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Add material behind each hole</h2>
+         
+         <p>You will add material behind each hole in order to recess the alignment tabs.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>On the <span class="uiTerm">Feature</span> toolbar, click <span class="uiTerm">Extrude</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/modeling/form_feature/extrude.gif" border="0" alt="Insert&rarr;Design Feature&rarr;Extrude" title="Insert&rarr;Design Feature&rarr;Extrude">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>For the next steps, it will be helpful to turn off the translucency.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>Choose <span class="uiTerm">Edit</span>&rarr;<span class="uiTerm">Object Display</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>Select the solid body and click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Edit Object Display</span> dialog box, in the <span class="uiTerm">Shaded Display</span> group, move the <span class="uiTerm">Translucency</span> slider to <span class="literalText">0</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>Select the two edges of the counterbore holes on the inside of the part.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/linked_mirror_part/linked_mirror_part_15.png"></p>
+                     
+                     <p>Zoom and rotate the part as needed to select the edges.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Extrude</span> dialog box, in the <span class="uiTerm">Limits</span> group, enter the following values:
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <ul class="unmarkedList">
+                        <li class="condense">
+                           
+                           <p><span class="uiTerm">(Start) Distance</span> = <span class="literalText">0</span></p>
+                           
+                        </li>
+                        <li class="condense">
+                           
+                           <p><span class="uiTerm">(End) Distance</span> = <span class="literalText">1</span></p>
+                           
+                        </li>
+                     </ul>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>From the <span class="uiTerm">Boolean</span> list, select <span class="uiTerm">Unite</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>Expand the <span class="uiTerm">Offset</span> group and, from the <span class="uiTerm">Offset</span> list, select <span class="uiTerm">Two-Sided</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>Set the offset <span class="uiTerm">Start</span> to <span class="userInput">0</span> and the <span class="uiTerm">End</span> to <span class="userInput">1.5</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>If the extrude vector is pointing <span class="emphasis">into</span> the part, in the <span class="uiTerm">Direction</span> group, click <span class="uiTerm">Reverse Direction</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/common/reverse_direction.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_12">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>The extrusions should look like this illustration.</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/linked_mirror_part/linked_mirror_part_16.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_13">
+               <div class="stepAction">
+                  
+                  <p>Save the part to a directory where you have write access.</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

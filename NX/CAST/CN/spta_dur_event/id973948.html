@@ -1,0 +1,303 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>基于事件分析的耐久性结果</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>基于事件分析的耐久性结果</h2>
+         
+         <p>使用<strong>求解</strong>命令可为耐久性求解过程中的所有活动事件或分别为每个静态或瞬态事件求解。</p>
+         <p>可从以下耐久性度量标准中显示结果：</p>
+         <ul>
+           <li>
+             <p>结构强度 — <strong>强度安全系数</strong>和<strong>安全裕度</strong>结果集。</p>
+           </li>
+           <li>
+             <p>疲劳强度 — <strong>疲劳安全系数</strong>和<strong>疲劳失效指数</strong>结果集。</p>
+           </li>
+           <li>
+             <p>疲劳寿命 — <strong>疲劳寿命</strong>和<strong>疲劳破坏</strong>结果集。</p>
+           </li>
+         </ul>
+         <p>使用<strong>报告耐久性损伤</strong>命令，还可以将单元的疲劳损伤结果导出至 Excel 电子表格或 CSV 文件。在<strong>仿真导航器</strong>中必须至少存在一个包含疲劳损伤结果集的耐久性结果节点。</p>
+         <p>可从<strong>耐久性静态事件</strong>和<strong>耐久性瞬态事件</strong>对话框的<strong>强度</strong>和<strong>疲劳</strong>选项卡中请求这些耐久性结果。</p>
+         
+         <div class="division">
+            
+           <h3>存储耐久性结果集</h3>
+            
+            <p>结构强度结果集是标量单元节点实型值。疲劳强度和疲劳寿命结果集是标量实型值，根据所执行评估的类型而存储在不同位置。</p>
+            <ul>
+              <li>
+                <p>如果使用节点应力评估疲劳结果，则将在节点处保存结果集</p>
+              </li>
+              <li>
+                <p>如果使用单元自由面上的应力来评估疲劳结果，或评估梁单元的疲劳结果，则将在单元上的节点处保存结果集              </p>
+              </li>
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>分析耐久性结果</h3>
+            
+            <table border="1" cellpadding="2" cellspacing="1" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="2">
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr>
+                    <td colspan="1" rowspan="1"><p>耐久性结果集</p></td>
+                    <td colspan="1" rowspan="1"><p>在以下情况下将失败</p></td>
+                    <td colspan="1" rowspan="1"><p>附注</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1"><p>强度安全因子</p></td>
+                    <td colspan="1" rowspan="1"><p><em>SSF</em> &lt; 1.0</p></td>
+                    <td colspan="1" rowspan="1"><p>如果 <em>SSF</em> 值较低，则表示在事件过程中应力水平较高。</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1"><p>强度安全裕度</p></td>
+                    <td colspan="1" rowspan="1"><p><em>MS</em> &lt; 0.0</p></td>
+                    <td colspan="1" rowspan="1"><p> </p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1"><p>疲劳安全系数</p></td>
+                    <td colspan="1" rowspan="1"><p><em>FSF</em> &lt; 1.0</p></td>
+                    <td colspan="1" rowspan="1"><p>如果 <em>FSF</em> 值较低，则表示在事件过程中循环应力范围较大。</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1"><p>疲劳失效指数</p></td>
+                    <td colspan="1" rowspan="1"><p><em>FFI</em> &gt; 1.0</p></td>
+                    <td colspan="1" rowspan="1"><p>如果 <em>FFI</em> 值较高，则表示在事件过程中循环应力范围较大。</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1"><p>疲劳破坏</p></td>
+                    <td colspan="1" rowspan="1"><p><em>DT</em> &gt; 1.0</p></td>
+                    <td colspan="1" rowspan="1"><p> </p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1"><p>疲劳寿命</p></td>
+                    <td colspan="1" rowspan="1"><p><em>NE</em> &lt; 1.0</p></td>
+                    <td colspan="1" rowspan="1"><p>疲劳寿命结果表示事件失败的事例数，<em>NE</em>。如要及时了解疲劳寿命，则将寿命结果与事件周期相乘。</p></td>
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+               </tbody>
+               
+            </table>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">注释</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>要查看小于 10-10 的结果，则在<strong>后处理视图</strong>对话框的<strong>注释</strong>选项卡中，将<strong>格式</strong>设为<strong>科学</strong>。</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>多个事件的耐久性结果的累积</h3>
+            
+            <p>当耐久性求解过程包含多个活动事件时，将按下表所述计算耐久性结果。</p>
+            
+            <table border="1" cellpadding="2" cellspacing="1" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr>
+                    <td colspan="1" rowspan="1"><p>累积的耐久性结果集</p></td>
+                    <td colspan="1" rowspan="1"><p>计算的值</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1"><p>强度安全因子</p></td>
+                    <td colspan="1" rowspan="1"><p>所有事件的最小 <em>SSF</em> 值</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1"><p>强度安全裕度</p></td>
+                    <td colspan="1" rowspan="1"><p>所有事件的最小 <em>MS</em> 值</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1"><p>疲劳安全系数</p></td>
+                    <td colspan="1" rowspan="1"><p>所有事件的最小 <em>FSF</em> 值</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1"><p>疲劳失效指数</p></td>
+                    <td colspan="1" rowspan="1"><p>所有事件的最大 <em>FFI</em> 值</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1"><p>疲劳破坏</p></td>
+                    <td colspan="1" rowspan="1"><p>因每个事件引起的破坏的代数和</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1"><p>疲劳寿命</p></td>
+                    <td colspan="1" rowspan="1"><p>疲劳破坏值的倒数</p></td>
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <p>为所有活动事件求解累积耐久性结果。</p>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+               </colgroup>
+               
+               <tr valign="top">
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p>高级仿真</p></td>
+               </tr>
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">先决条件</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p>包含一个或多个事件的耐久性求解过程</p></td>
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>耐久性</strong>→<strong>求解耐久性仿真</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/durability/solve_durability_simulation.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p><strong>插入</strong>→<strong>耐久性</strong>→<strong>求解</strong></p></td>
+               </tr>
+               <tr>
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">仿真导航器</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p>右键单击耐久性求解过程节点→<strong>求解</strong></p>
+                   <p>（要求解时间的耐久性结果）右键单击静态或瞬态事件节点→<strong>求解</strong></p></td>
+               </tr>
+               
+            </table>
+            
+            <p>创建耐久性损伤报告</p>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+               </colgroup>
+               
+               <tr valign="top">
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p>高级仿真</p></td>
+               </tr>
+               <tr>
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">先决条件</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p>包含一个或多个事件的耐久性求解过程</p></td>
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>耐久性</strong>→<strong>报告耐久性损伤</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/durability/report_durability_damage.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p><strong>插入</strong>→<strong>耐久性</strong>→<strong>解算方案</strong>→<strong>报告损伤</strong></p></td>
+               </tr>
+               <tr>
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">仿真导航器</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p>右键单击耐久性求解过程节点→<strong>报告损伤</strong></p></td>
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>使用公式字段定义力</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>使用公式字段定义力</h2>
+         
+         <p><a name="ndxgenid_spta_fields_65"></a>
+            <a name="ndxgenid_spta_fields_66"></a>下面的示例显示如何使用随时间变化的公式字段来定义法向力的大小。 </p>
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>创建直接瞬态响应解算方案(NX Nastran SEDTRAN 109)。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>点击<strong>高级仿真</strong>工具条上的<strong>力</strong>。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在<strong>力</strong>对话框中，从<strong>类型</strong>列表中选择<strong>法向</strong>。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在<strong>模型对象</strong>组中，单击<strong>选择对象</strong>，然后选择要施加力的几何体或 FE 实体。 </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在<strong>幅值</strong>组中，从<strong>力</strong>列表中选择<strong>字段</strong>。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>从<strong>指定字段</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/specify_field_list.gif" border="0"> 列表中选择<strong>公式构造器</strong>。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在<strong>自</strong>选项卡的<strong>域</strong>组中，从<strong>域</strong>列表中选择<strong>时间</strong>。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在&ldquo;表达式&rdquo;框中输入 <span class="codeText">1000*ug_var(&ldquo;time&rdquo;)/1sec</span></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>单击<strong>接受编辑</strong>。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>点击所有对话框中的<strong>确定</strong>。</p>
+               
+            </li>
+            
+         </ol>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/boundary_conditions/techniques/bc_magnitude_field.gif"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

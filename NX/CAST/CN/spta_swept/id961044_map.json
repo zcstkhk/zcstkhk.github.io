@@ -1,0 +1,13 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开部件文件",file:"id961048.html",type:"topic",parent:""},
+{id:"d7e3",title:"重置对话框内存",file:"id353012.html",type:"topic",parent:""},
+{id:"d7e4",title:"创建 FEM 和仿真文件",file:"id961058.html",type:"topic",parent:""},
+{id:"d7e5",title:"显示理想化部件",file:"id961064.html",type:"topic",parent:""},
+{id:"d7e6",title:"提升部件",file:"id964662.html",type:"topic",parent:""},
+{id:"d7e7",title:"拆分体",file:"id961060.html",type:"topic",parent:""},
+{id:"d7e8",title:"显示 FEM 文件和网格配对条件",file:"id964942.html",type:"topic",parent:""},
+{id:"d7e9",title:"合并面",file:"id964944.html",type:"topic",parent:""},
+{id:"d7e10",title:"创建网格收集器",file:"id967967.html",type:"topic",parent:""},
+{id:"d7e11",title:"在支架主体上生成扫掠网格",file:"id964946.html",type:"topic",parent:""},
+{id:"d7e12",title:"划分铰链网格",file:"id964948.html",type:"topic",parent:""},
+{id:"d7e14",title:"在圆角边上设置网格控制",file:"id964950.html",type:"topic",parent:""}]}

@@ -1,0 +1,142 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>静态事件</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>静态事件</h2>
+         
+         <p>可以通过创建静态耐久性事件来对具有静应力或应变结果的模型执行耐久性分析。</p>
+        <p>对于每个静态耐久性事件，都必须定义激励载荷并指定以下耐久性设置：</p>
+         <ul>
+           <li>
+             <p>所选强度耐久性对象中的强度准则</p>
+           </li>
+           <li>
+             <p>所选疲劳耐久性对象中的周期数和疲劳寿命准则</p>
+           </li>
+           <li>
+             <p>所选轴搜索耐久性对象中的主加载方向</p>
+           </li>
+         </ul>
+         
+         <div class="division">
+            
+           <h3>激励载荷类型</h3>
+            
+            <p>静态事件可具有同一类型的多个激励载荷。在创建静态事件时设置激励的类型。 </p>
+            
+            <div class="defList">
+               <div class="defListItem">
+                  <div class="defObject defObjectHorz">
+                     <p>载荷图样</p>
+                  </div>
+                  <div class="defMeaning defMeaningHorz">
+                     
+                     <p>使用简单周期函数对循环加载条件进行仿真。</p>
+                     
+                  </div>
+               </div>
+               <div class="defListItem">
+                  <div class="defObject defObjectHorz">
+                     <p>结果路径</p>
+                  </div>
+                  <div class="defMeaning defMeaningHorz">
+                     
+                     <p>通过从现有解算步骤创建激励可对加载条件进行仿真。</p>
+                     
+                  </div>
+               </div>
+               <div class="defListItem">
+                  <div class="defObject defObjectHorz">
+                     <p>激励函数</p>
+                  </div>
+                  <div class="defMeaning defMeaningHorz">
+                     
+                     <p>使用常规 AFU 表函数对循环加载条件进行仿真。</p>
+                     
+                  </div>
+               </div>
+            </div>
+            
+            <p>当静态事件定义了多个激励载荷时，每个激励载荷中的结果会叠加，以为事件提供结果。</p>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                 <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p>高级仿真</p></td>
+               </tr>
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">先决条件</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p>静态结构解算方案</p></td>
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>耐久性→静态耐久性事件</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/durability/static_durability_event.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                 <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p><strong>插入→耐久性→事件→静态</strong><strong></strong></p></td>
+               </tr>
+               <tr>
+                 <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">仿真导航器</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p>右键单击耐久性求解过程节点→<strong>新建事件</strong>→<strong>静态</strong></p></td>
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

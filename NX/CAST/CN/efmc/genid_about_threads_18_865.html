@@ -1,0 +1,156 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>螺纹</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/modeling/feature_operation/thread.gif" border="0">&nbsp;螺纹</h2>
+         <div class="estimatedTime">
+            <p>预计完成这堂课需要：5&ndash;8  分钟</p>
+         </div>
+         <div></div><a name="ndxgenid_efmc_18"></a>
+         
+         
+         <p>使用<strong>螺纹</strong>命令在圆柱面上创建符号螺纹或详细螺纹。</p>
+         <ul>
+           <li>
+             <p><strong>符号</strong>螺纹可捕捉外部螺纹表中的信息，并且可被下游应用模块（例如制图）识别。符号螺纹在螺纹长度的起点和终点处采用虚线圆圈表示。</p>
+             <p>您可以生成部分关联的符号螺纹，或指定固定的长度。部分关联是指如果螺纹被修改，则特征将更新，但反过来则不行。</p>
+             <p>符号螺纹特征的行为与其他特征稍有不同，这是由于它的显示方法所致。与螺纹相关联的虚线圆的行为则与 NX 几何体相似。例如，可以用&ldquo;信息&rdquo;选项将它们作为圆弧来选择，而且可以将它们作为几何对象添加到图层上。</p>
+             <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/thread/symbolic_thread.png"></p>
+           </li>
+         </ul>
+         <ul>
+            
+            <li>
+               
+               <p><strong>详细</strong>螺纹的渲染非常真实。它们不会捕捉标注信息，并且不能被下游应用模块识别。虽然它们看起来更加真实，但是生成的几何体非常复杂，因为更新的时间更长。</p>
+               <p>详细螺纹是完全关联的，如果特征被修改，螺纹也相应更新。 </p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/thread/detailed_thread.png"></p>
+               
+            </li>
+            
+         </ul>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>详细螺纹必须每次创建一个，而符号螺纹创建的时间较短，还可以创建多组。由于这个原因，也由于使用定制螺纹表的优点，除非您需要更多的细节，否则我们建议您创建符号螺纹。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         
+         <p>您可以：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>创建(1)内部螺纹或(2)外部螺纹。</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/thread/internal_external_thread.png"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>创建(1)左旋螺纹或(2)右旋螺纹。</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/thread/thread_left_right_hand.png"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>指定起始面或基准平面。如果不选择起始面，则由实体的拓扑结构决定。</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <div class="division">
+            
+           <h3>位于何处？</h3>
+            
+            <table border="2" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">建模</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>特征</strong>→<strong>螺纹</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/modeling/feature_operation/thread.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                  <p><strong>插入</strong>→<strong>设计特征</strong>→<strong>螺纹</strong>                  </p></td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         <a name="id698375" id="id698375"></a><a name="id698369" id="id698369"></a><div id="footer"></div>
+      </div>
+   </body>
+</html>

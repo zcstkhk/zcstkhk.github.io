@@ -1,0 +1,16 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; UTF-8">
+<script TYPE="text/javascript" LANGUAGE="JavaScript">
+  top.setAuxPrefs();
+  frameDef="cols='" + top.auxWindow.size + ",*'";
+
+  dHTML="<frameset onload='top.openCourse()' " + frameDef + " frameborder='yes' border='" + top.auxWindow.border + "' framespacing='" + top.auxWindow.border + "'>";
+  dHTML+="<frame frameborder='no' border='0' marginheight='0' name='aux' src='frames1.html' scrolling='no'>";
+  dHTML+="<frame name='main' src='" + top.auxWindow.mainURL + "'>";
+  dHTML+="</frameset>";
+  document.write(dHTML);
+</script>
+
+</HEAD>
+</HTML>

@@ -1,0 +1,12 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开部件",file:"id946721.html",type:"topic",parent:""},
+{id:"d7e3",title:"创建点钻工序",file:"id1065146.html",type:"topic",parent:""},
+{id:"d7e4",title:"定义起点",file:"id1065148.html",type:"topic",parent:""},
+{id:"d7e5",title:"定义总深度",file:"id1065150.html",type:"topic",parent:""},
+{id:"d7e6",title:"检查安全距离",file:"id1065152.html",type:"topic",parent:""},
+{id:"d7e7",title:"生成刀轨",file:"id1065154.html",type:"topic",parent:""},
+{id:"d7e8",title:"创建啄钻工序",file:"id1065156.html",type:"topic",parent:""},
+{id:"d7e9",title:"定义总深度",file:"id1065158.html",type:"topic",parent:""},
+{id:"d7e10",title:"定义深度增量值",file:"id1065160.html",type:"topic",parent:""},
+{id:"d7e11",title:"生成刀轨",file:"id1065162.html",type:"topic",parent:""},
+{id:"d7e12",title:"可视化材料移除",file:"id1065164.html",type:"topic",parent:""}]}

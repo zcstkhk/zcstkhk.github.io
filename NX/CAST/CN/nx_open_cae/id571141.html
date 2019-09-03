@@ -1,0 +1,34 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Create the mesh collector</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Create the mesh collector</h2>
+         <p>Create a mesh collector for each body (each pass through the loop) using &ldquo;<span class="codeText">Body</span>&rdquo; ,the <span class="codeText">myCounter</span> variable and &ldquo;<span class="codeText">_Collector</span>&rdquo;. So, collectors with names of <span class="codeText">Body1_Collector, Body2_Collector, Body3_Collector</span>, etc. will be created. MeshCollector objects are created by referencing a MeshManager Object. Often, when objects are created, a &ldquo;builder&rdquo; object is used. This can be thought of as a place holder for the settings until they are &ldquo;committed&rdquo;. The commit statement actually creates the mesh collector. When builder objects are created, they must be destroyed after their contents have been committed:
+         </p>
+         <p>Add the following lines to your routine, below those added in the previous section.</p><pre class="codeExample "><span class="userInput">            ' Create mesh collector
+            Dim myMeshManager As CAE.MeshManager = baseFEModel.MeshManager
+            Dim MyMeshCollector As CAE.MeshCollector = Nothing
+            Dim myCollectorBuilder = myMeshManager.CreateCollectorBuilder(MyMeshCollector, &quot;ThinShell&quot;)
+            myCollectorBuilder.CollectorName = &quot;Body&quot; &amp; myCounter.ToString &amp; &quot;_Collector&quot;
+            If myPhysicalPropertyTable IsNot Nothing Then
+                myCollectorBuilder.PropertyTable.SetNamedPropertyTablePropertyValue(&quot;Shell Property&quot;, myPhysicalPropertyTable)
+            End If
+            MyMeshCollector = myCollectorBuilder.Commit()
+            myCollectorBuilder.Destroy()
+</span></pre><div id="footer"></div>
+      </div>
+   </body>
+</html>

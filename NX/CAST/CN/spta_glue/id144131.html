@@ -1,0 +1,58 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>收敛和波动</title>
+   </head>
+   <body>
+      <div class="contentType_bestPractice">
+         <h2>收敛和波动</h2><a name="ndxgenid_spta_glue_58"></a>
+         <a name="ndxgenid_spta_glue_59"></a>
+         <a name="ndxgenid_spta_glue_60"></a>
+         <a name="ndxgenid_spta_glue_61"></a>
+         <a name="ndxgenid_spta_glue_62"></a>
+         
+         
+         <p>收敛和波动是接触在解算方案分配的迭代次数内仍然没有稳定，在施加一个较小的法向力到相对刚度接触位置上时可能出现这个问题。</p>
+         
+         <p>要解决这个问题，可以修改这些接触解算方案属性：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>最大迭代力循环 </strong>&mdash; 将迭代次数增加到20</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>接触力公差 </strong>&mdash; 将公差增加到最大值0.1</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>收敛的接触变化 </strong>&mdash; 将<strong>活动接触单元的百分比</strong>更改为0.01或更小</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/contact/contact_solution_params_chattering.png"></p>
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

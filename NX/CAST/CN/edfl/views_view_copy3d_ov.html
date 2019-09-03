@@ -1,0 +1,258 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>复制到3D</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/drafting/copy_to_3d.gif" border="0">&nbsp;复制到3D</h2>
+         <div class="estimatedTime">
+           <p>预计完成这堂课需要：11–17  分钟</p>
+         </div>
+         <div></div>
+         <p>使用<strong>复制到3D</strong> 命令将<span id="popup8" dojoType="dijit.layout.ContentPane" class="popup glossaryLink">图纸视图</span>中的草图曲线和视图曲线复制到 3D 模型空间，可以构建模型几何体。使用<strong>复制到3D</strong> 命令时，所复制的视图曲线和草图曲线将成为当前模型的一部分，而与图纸视图无关。</p>
+         <table class="attentionTable attn_warning">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">警告</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>不能对基本视图使用<strong>复制到 3D</strong> 命令。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <p>可以执行以下操作：</p>
+         <ul>
+           <li>
+             <p>选择一个或多个图纸视图中的所有曲线或选择特定曲线</p>
+           </li>
+           <li>
+             <p>选择目标部件作为工作部件。您还可以指定另一部件文件</p>
+           </li>
+           <li>
+             <p>将复制的曲线放在包围所有选定曲线或视图的包容块上</p>
+           </li>
+           <li>
+             <p>在建模应用模块中创建草图、基本曲线、包含草图的实体或组中的组件部件。</p>
+           </li>
+           <li>
+             <p>切换到&ldquo;建模&rdquo;应用模块</p>
+           </li>
+         </ul>
+         <div class="division">
+            
+           <h3>3D 曲线的位置</h3>
+            
+            <p>您可以自动将复制的曲线放在最小包容块上。根据您定义的视图方位，每个图纸视图的曲线将复制到包容块的相应面上。还可以为每个图纸视图指定到 <span role="group" title="" widgetid="popup9" id="popup9" dojotype="dijit.layout.ContentPane">CSYS</span> 原点的距离。</p>
+            <p>可以指定间隙值以使复制的曲线从包容块偏置，以便于作出选择。</p>
+            <p>自动复制选定曲线时，可以指定是从选定曲线还是从整个图纸视图自动判断包容块。</p>
+            <p>指定一个自动放置位置时，可以使用<strong>自动重定位几何体</strong>选项，让 NX 自动重定位几何体以便更准确地对齐。</p>
+            
+            <table border="0" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        <a name="genid_edfl_67" id="genid_edfl_67"></a><div class="figureContainer">
+                           <table align="center">
+                              <tr>
+                                 <td>
+                                    <div class="figure">
+                                       <div><img align="bottom" src="../graphics/nonLocalized/nx/drafting/sketch/copy_to_3d/box_no_repositioning.gif" border="0"></div>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </table>
+                           <h4>自动重定位几何体未选择</h4>
+                        </div>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        <a name="genid_edfl_68" id="genid_edfl_68"></a><div class="figureContainer">
+                           <table align="center">
+                              <tr>
+                                 <td>
+                                    <div class="figure">
+                                       <div><img align="bottom" src="../graphics/nonLocalized/nx/drafting/sketch/copy_to_3d/box_with_repositioning.gif" border="0"></div>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </table>
+                           <h4>自动重定位几何体已选择</h4>
+                        </div>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div><a name="modeling_sketches" id="modeling_sketches"></a><div class="division">
+            
+            <h3>建模草图</h3>
+            
+            <p>创建草图或包含草图的实体时，将为每个 2D 图纸视图创建一个建模草图，其中包含该视图中的所有视图曲线以及草图曲线。 </p>
+            <p>每个建模草图都将附着到 XY 平面由源视图方位定义的基准坐标系中。此 CSYS 的原点由 <span id="popup10" dojoType="dijit.layout.ContentPane" class="popup glossaryLink">WCS</span> 的原点、视图方位和视图偏置决定。</p>
+            <p>建模草图尺寸根据相应的制图草图尺寸生成。</p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>实体</h3>
+            
+            <p>NX 通过从每个正交平面拉伸曲线或草图曲线以及将拉伸体相交的方式创建实体。 </p>
+            <a name="genid_edfl_69" id="genid_edfl_69"></a><div class="figureContainer">
+               <table align="center">
+                  <tr>
+                     <td>
+                        <div class="figure">
+                           <div><img align="bottom" src="../graphics/nonLocalized/nx/drafting/sketch/copy_to_3d/solid_body_drawing.gif" border="0"></div>
+                        </div>
+                     </td>
+                  </tr>
+               </table>
+               <h4>复制到3D 前</h4>
+            </div>
+            <a name="genid_edfl_70" id="genid_edfl_70"></a><div class="figureContainer">
+               <table align="center">
+                  <tr>
+                     <td>
+                        <div class="figure">
+                           <div><img align="bottom" src="../graphics/nonLocalized/nx/drafting/sketch/copy_to_3d/solid_body.gif" border="0"></div>
+                        </div>
+                     </td>
+                  </tr>
+               </table>
+               <h4>建模草图和拉伸实体</h4>
+            </div>
+            
+         </div>
+         <div class="division">
+            
+            <h3>组中的组件部件</h3>
+            
+            <p>可以创建一个装配，其中每个组件部件均通过正则组或草图组中的选定曲线创建。装配的根即是在<strong>复制到 3D</strong> 对话框的<strong>目标部件</strong>组中定义的部件。NX 根据输入组的名称命名组件，或者根据未命名的输入组枚举这些组件。</p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">制图</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>工具→复制到 3D</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">快捷菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>右键单击所选图纸视图→复制到 3D</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">部件导航器</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>右键单击一个或多个图纸视图节点→复制到 3D</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div><a name="id1493953" id="id1493953"></a><div dojoType="dijit.TooltipDialog" id="popup8_dialog" class="glossaryPopup" style="display:none;" closable="true">
+            <div class="exitGlossaryPopup"><a href="#" onclick="closeToolTipDialog('popup8_dialog')"><img src="../xps3/graphics/exit2.png"></a></div>
+            <p><span class="glossaryTerm">图纸视图:</span>用于手工创建草图、而非显示模型关联基本视图的空视图。</p>
+         </div>
+         <div dojoType="dijit.TooltipDialog" id="popup9_dialog" class="glossaryPopup" style="display:none;" closable="true">
+            <div class="exitGlossaryPopup"><a href="#" onclick="closeToolTipDialog('popup9_dialog')"><img src="../xps3/graphics/exit2.png"></a></div>
+            <p><span class="glossaryTerm">CSYS:</span>坐标系的缩写。</p>
+         </div>
+         <div dojoType="dijit.TooltipDialog" id="popup10_dialog" class="glossaryPopup" style="display:none;" closable="true">
+            <div class="exitGlossaryPopup"><a href="#" onclick="closeToolTipDialog('popup10_dialog')"><img src="../xps3/graphics/exit2.png"></a></div>
+            <p><span class="glossaryTerm">工作坐标系(WCS):</span>可以移动的坐标系。WCS 的坐标称为工作坐标，以 XC、YC、ZC 轴表示。XC-YC 平面称为工作平面。</p>
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/glossary/work_coordiante_system_def.png"></p>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

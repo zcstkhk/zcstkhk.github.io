@@ -1,0 +1,85 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>更改工序的刀具</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>更改工序的刀具</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>机床视图</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/operation_navigator/machine_tool_view.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>工序 CONTOUR_AREA 使用 EM&ndash;.75&ndash;.125 作为定义切削刀具的父项组。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>右击<strong> <span class="uiTerm">CONTOUR_AREA</span></strong> 并选择<strong>剪切</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>粘贴的工序会粘贴在您下一步中选择的父项组内部。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>右击 <span class="uiTerm"><strong>EM&ndash;.5&ndash;.125</strong></span>并选择<strong>内部粘贴</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>CONTOUR_AREA 现在使用 EM&ndash;.5&ndash;.125作为切削刀具。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/operation_navigator/manufacturing_activities_operation_nav_op_nav_08.gif"></p>
+                     <a name="operation_status_symbols"></a>
+                     <p>重新生成标志 <img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/operation_navigator/manufacturing_activities_operation_nav_graphic22.gif" border="0"> 显示在粘贴的工序前，这表示工序参数已变更，必须重新生成刀轨以反映此更改。</p>
+                     
+                     <p><a href="#" onclick="showDialog('id788322')">工序状态符号</a></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>关闭所有部件。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div dojoType="dijit.Dialog" id="id788322" title="工序状态符号">
+            <div dojoType="dijit.layout.ContentPane" href="id788322.html" extractContent="true"></div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

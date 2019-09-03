@@ -1,0 +1,116 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Working with the CAE solver languages: property tables</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Working with the CAE solver languages: property tables</h2>
+         
+         <p>Property tables are the other key component of the solver language system. In NX CAE, most entities have an associated property table. For example, all loads, constraints, mesh collectors, regions, physical properties, solver-specific solution objects, solver-specific modeling objects, and solutions have associated property tables.</p>
+         
+         <div class="division">
+            
+            <h3>Understanding property tables</h3>
+            
+            <p>Each property table contains a list of all available properties for that entity. For each property, the <span class="titleReference">NX Open for CAE</span> documentation lists:
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>the user interface name for the property</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>the <span class="emphasis">emphasis</span> or <span class="emphasis">automation</span> name for the property
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>the valid input types, such as integer or double value</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>When you create NX Open for CAE applications, you must correctly specify the name for the property and use the appropriate input type.</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Determining the allowable property table settings and inputs</h3>
+            
+            <p>When you create an NX Open for CAE application, there are two different ways to determine an entity&rsquo;s allowed property table settings and input. You can:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Create a journal for the entity. Then, look through the journal to find the available properties and their input types.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Find the entity in the NX Open for CAE documentation. </p>
+                  
+                  <p>For more information, see <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" href="#" onclick="loadFile('id1616537.html')">NX Open for CAE documentation resources</a>.
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Example: using a journal to determine valid properties and settings</h3>
+            
+            <p>For example, when you are working in Advanced Simulation and NX Nastran is your specified solver, when you use the <span class="uiTerm">Hydrostatic Load</span> dialog box, you can specify a value for the <span class="uiTerm">Surface Pressure</span> property.
+            </p>
+            
+            <p>However, if you wanted to create an NX Open for CAE application to automatically specify a <span class="uiTerm">Surface Pressure</span> value, you would use the neutral name for <span class="uiTerm">Surface Pressure</span>, <span class="codeText">initialPressure</span>, in your code and make sure that the specified value for the pressure is scalar.
+            </p>
+            
+            <p>For example, the journal code below sets the <span class="codeText">initialPressure</span> to a value of 55 lbf/in<span class="codeText">3</span>.
+            </p>
+            <pre class="codeExample indent ">Dim scalarFieldWrapper1 As Fields.ScalarFieldWrapper
+scalarFieldWrapper1 = _ 
+	propertyTable1.GetScalarFieldWrapperPropertyValue(&quot;initialPressure&quot;)
+
+Dim expression1 As Expression
+expression1 = scalarFieldWrapper1.GetExpression()
+
+Dim unit1 As Unit = CType(workSimPart.UnitCollection.FindObject _ 
+	(&quot;PoundForcePerSquareInch&quot;), Unit)
+
+workSimPart.Expressions.EditWithUnits(expression1, unit1, &quot;55&quot;)
+scalarFieldWrapper1.SetExpression(expression1)
+</pre>
+            <p>Notice how only the <span class="codeText">initialPressure</span> neutral name is used to identify this property. The user interface name, <span class="uiTerm">Surface Pressure</span>, does not appear in the journal.
+            </p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

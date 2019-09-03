@@ -1,0 +1,147 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>响应评估</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>响应评估</h2><a name="ndxgenid_spta_response_86"></a>
+         <a name="ndxgenid_spta_response_87"></a>
+         
+         
+         <p>在响应仿真中，可评估当前事件的响应。软件分两步计算响应：</p>
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>第一步：计算模态响应</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>如果当前还不存在任何模态响应，在执行响应评估时(例如使用<strong>评估节点函数响应</strong>对话框)，将会自动执行此步骤。不过，您未执行响应评估也可以计算模态响应。</p>
+                  
+                  <ul>
+                     
+                     <li>
+                       <p>对于瞬态响应分析，软件会使用时程积分计算每个时间点的模态响应</p>
+                     </li>
+                     <li>
+                       <p>对于频率和随机响应分析，软件会计算每个频率的模态响应                     </p>
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>第二步：计算物理响应</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>在给定时间或频率点处，计算给定节点或单元集。</p>
+                  <ul>
+                    <li>
+                      <p>对于瞬态、频率和随机事件，软件使用&ldquo;模态位移&rdquo;或&ldquo;模态加速度&rdquo;数据恢复方法&ldquo;恢复&rdquo;物理响应</p>
+                    </li>
+                    <li>
+                      <p>对于响应谱事件，软件使用模态近似方法计算峰值响应</p>
+                    </li>
+                  </ul>
+                  
+               </div>
+            </div>
+         </div>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>对于准静态事件，软件将计算静态响应；没有模态响应步骤。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <a name="id910991"></a>
+         
+         
+         
+         <h3>响应函数</h3>
+         
+         <a name="ndxgenid_spta_response_89"></a>
+         <a name="ndxgenid_spta_response_90"></a>
+         
+         
+        <p>根据执行的评估类型，响应结果以以下两种格式之一保存：响应函数或轮廓结果。</p>
+         
+         <p>响应函数是保存在 AFU 文件中的时间(时间历史记录)函数或频率(结果涵盖了某个频率范围)函数。</p>
+         
+         <p>这些函数出现在<strong>XY 函数导航器</strong>和<strong>仿真导航器</strong>的<strong>事件</strong>节点中，可以在其中图形显示它们并分析结果数据。您可以评估给定节点上的位移、速度、加速度和反作用力。您可以评估给定单元上的应力、应变、单元力、梁单元力和壳单元合应力。 </p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>您也可以为每个正则模态对事件激励的响应生成响应函数。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <a name="genid_spta_response_91"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/solutions/response_simulation/rs_sample_stress_func.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>应力函数示例(跌落冲击)</h4>
+         </div>
+         <a name="id910993"></a>
+         
+         
+         
+         <h3>轮廓结果</h3>
+         
+         <a name="ndxgenid_spta_response_93"></a>
+         <a name="ndxgenid_spta_response_94"></a>
+         
+         
+        <p>轮廓结果是针对特定时间点或特定频率的涵盖整个模型或选中事件的轮廓图形显示。可在<strong>仿真导航器</strong>或<strong>后处理导航器</strong>中查看&ldquo;事件&rdquo;节点中的轮廓结果。</p>
+         
+         <a name="genid_spta_response_95"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/solutions/response_simulation/rs_sample_stress_contour.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>应力轮廓结果示例</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

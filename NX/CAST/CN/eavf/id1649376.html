@@ -1,0 +1,81 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>关键帧轨迹方法</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>关键帧轨迹方法</h2>
+         
+         <p>关键帧轨迹方法基于围绕模型的一系列摄像机位置来创建轨迹。</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>称为关键帧的高质量图像从这些摄像机位置进行渲染</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>NX 对关键帧之间的位置进行插补，并为动画生成中间帧</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>创建关键帧轨迹时，会创建初始关键帧 Frame0。</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>不能删除或移动 Frame0，但是可以对其重命名</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Frame0 的过渡因子被忽略，并且它的帧数将始终计为零。两个关键帧之间的步数必须始终为零，因为没有前帧</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p>下图显示的三个标准视图用于定义在各帧之间具有 20 个中间步骤的三个关键帧，注意第一个和最后一个视图是一样的。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/visualization/commands/high_quality_image_animation/animation_graphic5.gif"></p>
+         
+         
+         <p>可以控制以下参数：</p>
+         <ul>
+           <li>
+             <p>查看位置</p>
+           </li>
+           <li>
+             <p>关键帧数</p>
+           </li>
+           <li>
+             <p>两个关键帧之间的步数(或帧数)</p>
+           </li>
+           <li>
+             <p>帧之间插值轨迹的光顺性</p>
+           </li>
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

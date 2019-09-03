@@ -1,0 +1,37 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"基本装配概念",file:"id1073329.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"装配建模概述",file:"id678361.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"NX 装配简介",type:"topicMap",parent:"d5e5",children:[
+{id:"d5e7",title:"NX 装配简介",file:"assem_intro.html",type:"topic",parent:"d5e6"},
+{id:"d5e8",title:"组件对象",file:"concept_comp_object.html",type:"topic",parent:"d5e6"},
+{id:"d5e9",title:"组件部件文件",file:"concept_component_part.html",type:"topic",parent:"d5e6"},
+{id:"d5e10",title:"组件事例",file:"concept_comp_occurence.html",type:"topic",parent:"d5e6"},
+{id:"d5e11",title:"主模型",file:"concept_master_model.html",type:"topic",parent:"d5e6"},
+{id:"d5e12",title:"装配的关联设计",file:"design_in_context_descontxt_ov.html",type:"topic",parent:"d5e6"}]},
+{id:"d5e13",title:"显示部件和工作部件",file:"concept_displayed_and_work_part.html",type:"topic",parent:"d5e5",children:[
+{id:"d5e14",title:"设为工作部件和设置工作部件",file:"func_details_context_set_workpart.html",type:"topic",parent:"d5e13"},
+{id:"d5e15",title:"设为显示部件和设置显示部件概述",file:"id1049872.html",type:"topic",parent:"d5e13"}]},
+{id:"d5e16",title:"装配加载选项",type:"topicMap",parent:"d5e5",children:[
+{id:"d5e17",title:"加载状态",file:"concept_load_states.html",type:"topic",parent:"d5e16"},
+{id:"d5e18",title:"装配加载选项",file:"file_fil_options_load_d.html",type:"topic",parent:"d5e16"},
+{id:"d5e19",title:"Teamcenter Integration for NX 中的装配加载选项",file:"tci_load_options.html",type:"topic",parent:"d5e16"},
+{id:"d5e20",title:"已保存的加载选项组",file:"fil_options_load_savedloadopt_ov.html",type:"topic",parent:"d5e16"},
+{id:"d5e21",title:"完全加载已部分加载或轻量级加载的组件",file:"fil_options_load_scope_fullyload_ht.html",type:"topic",parent:"d5e16"}]},
+{id:"d5e22",title:"指定工作部件和显示部件",file:"xid384961.html",type:"activity",parent:"d5e5"},
+{id:"d5e23",title:"装配报告",type:"topicMap",parent:"d5e5",children:[
+{id:"d5e24",title:"装配报告",file:"assy_reports_topics.html",type:"topic",parent:"d5e23"},
+{id:"d5e25",title:"列出组件报告",file:"func_details_analy_list_comp.html",type:"topic",parent:"d5e23"}]},
+{id:"d5e26",title:"装配加载选项",file:"id685708.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e28",title:"装配导航器",file:"id678091.html",type:"topic",parent:"",children:[
+{id:"d5e29",title:"装配导航器概述",file:"assy_navigator_an_overview.html",type:"topic",parent:"d5e28"},
+{id:"d5e30",title:"装配导航器层次结构树",file:"an_tree_ov.html",type:"topic",parent:"d5e28"},
+{id:"d5e31",title:"装配导航器列",file:"an_columns_ov.html",type:"topic",parent:"d5e28"},
+{id:"d5e32",title:"装配导航器预览面板",file:"an_preview_ov.html",type:"topic",parent:"d5e28"},
+{id:"d5e33",title:"装配导航器属性",file:"an_properties_ov.html",type:"topic",parent:"d5e28"},
+{id:"d5e34",title:"标识组件",file:"an_identitfy_comp_ht.html",type:"topic",parent:"d5e28"},
+{id:"d5e35",title:"装配导航器",file:"id685714.html",type:"activity",parent:"d5e28"},
+{id:"d5e36",title:"使用操作导航器进行其它工作",file:"id685720.html",type:"activity",parent:"d5e28"},
+{id:"d5e37",title:"编辑装配结构",file:"an_drag_drop_rt.html",type:"topic",parent:"d5e28"},
+{id:"d5e38",title:"编辑装配结构",file:"id934125.html",type:"activity",parent:"d5e28"}]}
+]}

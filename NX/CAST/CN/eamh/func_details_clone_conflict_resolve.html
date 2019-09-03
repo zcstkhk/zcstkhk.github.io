@@ -1,0 +1,176 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>冲突解决</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>冲突解决</h2>
+         <p>如果为组件设置<strong>默认克隆操作</strong>(应用到组件的父项或子项时会发生问题)，则会发生冲突。</p>
+         <div class="division">
+            
+           <h3>冲突解决示例</h3>
+            <a name="genid_eamh_14"></a><div class="figureContainer">
+               <table align="center">
+                  <tr>
+                     <td>
+                        <div class="figure">
+                           <div>
+                              <table border="0" cellpadding="2" cellspacing="1" align="center">
+                                 
+                                 <colgroup span="1">
+                                    
+                                    <col span="1">
+                                 </colgroup>
+                                 
+                                 <tbody>
+                                    
+                                    <tr>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">自动克隆一个子装配，以解决其<strong>保持</strong>的操作定义同<strong>替换</strong>其中一个组件的需求之间的冲突。</p>
+                                          
+                                       </td>
+                                       
+                                    </tr>
+                                    
+                                    <tr>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          <img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/clone_assembly/5b_crtclfl03.gif" border="0">
+                                          
+                                       </td>
+                                       
+                                    </tr>
+                                    
+                                 </tbody>
+                                 
+                              </table>
+                           </div>
+                        </div>
+                     </td>
+                  </tr>
+               </table>
+               <h4>向上层叠的冲突解决</h4>
+            </div>
+            <a name="genid_eamh_15"></a><div class="figureContainer">
+               <table align="center">
+                  <tr>
+                     <td>
+                        <div class="figure">
+                           <div>
+                              <table border="0" cellpadding="2" cellspacing="1" align="center">
+                                 
+                                 <colgroup span="1">
+                                    
+                                    <col span="1">
+                                 </colgroup>
+                                 
+                                 <tbody>
+                                    
+                                    <tr>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">在<strong>克隆</strong>为默认操作的情况下，将<strong>保持</strong>的异常定义提供给子装配(而不是其组件)。组件将自动保留，以遵从子装配及其组件的显式定义。</p>
+                                          
+                                       </td>
+                                       
+                                    </tr>
+                                    
+                                    <tr>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          <img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/clone_assembly/5b_crtclfl02.gif" border="0">
+                                          
+                                       </td>
+                                       
+                                    </tr>
+                                    
+                                 </tbody>
+                                 
+                              </table>
+                           </div>
+                        </div>
+                     </td>
+                  </tr>
+               </table>
+               <h4>向下层叠的冲突解决</h4>
+            </div>
+            <a name="genid_eamh_16"></a><div class="figureContainer">
+               <table align="center">
+                  <tr>
+                     <td>
+                        <div class="figure">
+                           <div>
+                              <table border="0" cellpadding="2" cellspacing="1" align="center">
+                                 
+                                 <colgroup span="1">
+                                    
+                                    <col span="1">
+                                 </colgroup>
+                                 
+                                 <tbody>
+                                    
+                                    <tr>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">装配的默认操作为<strong>克隆</strong>。子装配的一个异常定义为<strong>保持</strong>，然后对该子装配中的组件之一定义了另一个异常。后一个异常的优先级高。已解决所定义的异常之间的冲突。</p>
+                                          
+                                       </td>
+                                       
+                                    </tr>
+                                    
+                                    <tr>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          <img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/clone_assembly/5b_crtclfl01.gif" border="0">
+                                          
+                                       </td>
+                                       
+                                    </tr>
+                                    
+                                 </tbody>
+                                 
+                              </table>
+                           </div>
+                        </div>
+                     </td>
+                  </tr>
+               </table>
+               <h4>发生异常冲突时的解决方案</h4>
+            </div>
+            
+            <p>如果保留的组件所包含的部件间表达式引用正在克隆或替换的其他组件，则可能发生冲突。要解决此冲突，可自动克隆而不是保留组件。</p>
+            <p>可以定义用于命名装配中的克隆组件的默认设置，以及该默认设置的任何异常。应用默认设置或执行克隆时，会提供新名称。</p>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">注释</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>如果正在运行 Teamcenter Integration，则使用<strong>命名</strong>选项来定义新的部件号。</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

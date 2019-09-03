@@ -1,0 +1,12 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"加工对象",file:"id1056432.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"刀具对象",file:"tool_objects.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"刀具对象的创建和使用",file:"id788331.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e8",title:"加工方法对象",file:"method_objects.html",type:"topic",parent:"",children:[
+{id:"d5e9",title:"加工方法对象",file:"id788454.html",type:"activity",parent:"d5e8"}]},
+{id:"d5e11",title:"几何体组",file:"geometry_group.html",type:"topic",parent:"",children:[
+{id:"d5e12",title:"几何体组",file:"id788460.html",type:"activity",parent:"d5e11"}]},
+{id:"d5e14",title:"程序对象",file:"program_objects.html",type:"topic",parent:"",children:[
+{id:"d5e15",title:"程序对象",file:"id788481.html",type:"activity",parent:"d5e14"}]}
+]}

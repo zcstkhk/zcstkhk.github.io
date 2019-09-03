@@ -1,0 +1,42 @@
+/* View Specific Sytles go here */
+
+.topPane {
+  height: 36px;
+  background: url(../graphics/bg_top.gif) left top repeat-x;
+}
+
+.ieFix {
+  margin-left:10px;
+}
+
+/* --------------------- Dojo TabSplitter Classes -------------- */
+.xps .dijitSplitterV, .xps .dijitGutterV {
+  width: 12px;
+}
+
+.xps .dijitSplitterV .dijitSplitterThumb {
+   cursor:pointer;
+   height:190px;
+   left:-1px;
+   width:12px;
+}
+
+.xps .dojoxToggleSplitterLeft .dojoxToggleSplitterIconOpen, .xps .dojoxToggleSplitterRight .dojoxToggleSplitterIconClosed {
+  background:transparent url(../../graphics/close_acc.png) no-repeat;
+}
+
+.dijitSplitContainerSizerH .thumb, .dijitSplitterV .dijitSplitterThumb {
+  top:35%;
+}
+
+.xps .dojoxToggleSplitterRight .dojoxToggleSplitterIconOpen, .xps .dojoxToggleSplitterLeft .dojoxToggleSplitterIconClosed {
+  background:transparent url(../../graphics/open_acc.png) no-repeat;
+}
+
+.xps .dijitSplitterActive {
+  background: #AAAAAA;
+}
+
+table.userPrefs td {
+  padding:5px;
+}

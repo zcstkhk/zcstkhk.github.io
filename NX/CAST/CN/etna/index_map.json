@@ -1,0 +1,8 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"车削工作流",file:"id1082429.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"定义几何体",file:"id946555.html",type:"activity",parent:""},
+{id:"d5e7",title:"创建一个工序",file:"id946561.html",type:"activity",parent:""},
+{id:"d5e9",title:"定义刀具",file:"id946567.html",type:"activity",parent:""},
+{id:"d5e11",title:"可视化材料移除",file:"id946573.html",type:"activity",parent:""}
+]}

@@ -1,0 +1,113 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>创建运动副</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>创建运动副</h2>
+         <a name="ndxgenid_emot_links_constraints_54"></a>
+         
+         
+         <p>运动副运动定义为操作连杆(运动副定义中的第一个连杆)相对于基本连杆(第二个连杆)或地面的运动。</p>
+         <p>译者注：在 NX 中文版中，将 <strong>Action Link</strong> 翻译为<strong>操作连杆</strong>，其实译为<strong>动作连杆</strong>可能更适合，此处为与软件对应，不作修改，下文中若出现与<strong>操作连杆</strong>类似的文字，不再作相同的说明。</p>
+         
+         <ol type="1">
+            <li>
+               
+               
+               <p>选择操作连杆并自动判断运动副的原点和方位。<a name="ndxgenid_emot_links_constraints_55"></a>
+                  <a name="ndxgenid_emot_links_constraints_56"></a>
+                  
+               </p>
+               
+               
+               <div class="stepInformation">
+                  
+                  <p>通过选择任何属于该连杆的对象来选择第一个要约束的连杆。第一个选择也将自动判断运动副的初始原点和方位矢量，运动副中的第一个连杆通常标记为 <em>i</em>。</p>
+                  
+                  <p>方位将决定运动副在哪个方向上可自由移动，您可以通过定义或自动判断矢量以及坐标系来定义方位。</p>
+                  
+                  <p>运动副的原点应该位于旋转轴上，或者沿运动连杆的平移轴。</p>
+                  
+               </div>
+               
+            </li>
+            <li>
+               
+               
+               <p>如果自动判断的原点和/或方位错误，修改运动副的原点和/或方位。<a name="ndxgenid_emot_links_constraints_57"></a>
+                  
+               </p>
+               
+               
+               <div class="stepInformation"></div>
+               
+            </li>
+            <li>
+               
+               
+               <p>(可选)选择基本连杆。</p>
+               
+               <p>如果您不选择基本连杆，则运动副被认为是固定的，或者相对于地面运动。<a name="ndxgenid_emot_links_constraints_58"></a>
+                  <a name="ndxgenid_emot_links_constraints_59"></a>
+                  
+               </p>
+               
+               
+               <div class="stepInformation">
+                  
+                  <p>通过选择任何属于基本连杆的对象来定义基本连杆。您选择基本连杆的位置并不重要，运动副中的第二个连杆也被标记为 <em>j</em>。</p>
+                  
+                  <p>要创建不相对其它连杆运动的固定运动副，直接跳过<strong>基本连杆</strong>定义即可，此时即相对地面运动。</p>
+                  
+               </div>
+               
+            </li>
+         </ol>
+         
+         <a name="genid_emot_links_constraints_60" id="genid_emot_links_constraints_60"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div>
+                           <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;"><script type="dojo/method">
+      flashData= {
+          swfSrc : '../graphics/graphicLibrary/nx_dss/motion/links_constraints/joint_creation_anim.swf',
+          graphSrc : '../graphics/graphicLibrary/nx_dss/motion/links_constraints/joint_creation_anim.gif',
+          align : 'center',
+          base : '.',
+          height : '396',
+          width : '393',
+          bgcolor : '#FFFFFF',
+          flashVersion : '7',         
+          looping : 'false',
+          play : 'false',
+          menu : 'true',
+          parameters : ''
+      }
+      top.loadFlash(this,flashData);
+    </script></div>
+                        </div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>(1)操作连杆；(2)基本连杆；(3)旋转副；(4) 固定旋转副；(5)非连杆对象</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

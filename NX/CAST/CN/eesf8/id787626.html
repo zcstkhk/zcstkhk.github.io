@@ -1,0 +1,273 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Rendering methods</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>可用的渲染方法</h2>
+         
+         <table border="0" cellpadding="2" cellspacing="3" width="90%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <th align="center" bgcolor="silver" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">选项</p>
+                     
+                  </th>
+                  
+                  <th align="center" bgcolor="silver" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">描述</p>
+                     
+                  </th>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" height="23" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm"><strong>平面</strong></span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" height="23" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">最快的着色方法，将均匀颜色指派到每个小平面，没有阴影或反射</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm"><strong>哥拉得</strong></span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">提供光顺的插补颜色，该方法类似于<strong>平面</strong>，但速度较慢。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"> <strong>范奇</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">提供的高亮显示比<strong>哥拉得</strong>方法更为光顺，但在其它方面支持的功能级别相同。提供光源效果。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm"><strong>改进</strong></span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p>使用纹理材料参数来渲染高光与阴影，成像质量类似于方法<strong>照片般逼真的</strong>，但成像速度更快(只有高质量图像可用)。</p>
+                     
+                     <p class="no-bottom-margin">该方法尤其适用于具有光亮表面的图像。</p></td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm"><strong>预览</strong></span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p>添加对透明度的支持而无需对图像进行反锯齿处理。</p>
+                     
+                     <p class="no-bottom-margin">该方法尤其适用于具有光亮表面的图像。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>照片般逼真的</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">支持反锯齿和透明度，使用该模式着色的图像比使用<strong>改进</strong>方法要费时二到三倍(只有高质量图像可用)。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>光线追踪</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p>产生与<strong>照片般逼真的</strong>相同的结果，尽管速度较慢，但可以正确使用反锯齿并渲染纹理<span class="no-bottom-margin">(只有高质量图像可用)。</span></p>
+                     
+                     <p class="no-bottom-margin">可以忍受像素点的丢失。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm"><strong>光线追踪/FFA</strong>(跟随特征的反锯齿，Feature Following Anti-aliasing)</span></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p>与<strong>光线追踪</strong>方法相同，但能以较低的分辨率产生高度反锯齿的图像。</p>
+                     
+                     <p>可以查找出图像中颜色显著更改的位置，然后围绕特征使用反锯齿以确保图像采用尽可能多的细节进行渲染。</p>
+                     
+                     <table border="0" cellpadding="2" cellspacing="1" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1">
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/gateway/activities/high_quality_images/visualization_activities_ffa_1.gif"></p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td align="center" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">光线追踪</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td align="center" colspan="1" rowspan="1">
+                                 
+                                 <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/gateway/activities/high_quality_images/visualization_activities_ffa_2.gif"></p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td align="center" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">光线追踪/FFA</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>辐射</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">该方法最适合用于建模的场景需要物理上精确打光的情况，它会在着色图像前从面上反射直接光源而衍生出若干副光源(只有高质量图像可用)。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>混合辐射</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">计算直接打光以及对图像渲染的非直接打光的辐射处理。在同时需要精确的直接打光效果时，该方法优于<strong>辐射</strong>方法(只有高质量图像可用)。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

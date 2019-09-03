@@ -1,0 +1,126 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>打开部件并选择几何体</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>打开部件并选择几何体</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>打开 <span class="fileName">ffm2_match_edge</span>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <div class="verbose">
+                        <p> 这个部件中包含两个片体。</p>
+                     </div>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/change_edge/edit_free_form_match_edge_open.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>选择<strong>格式&rarr;图层设置</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/utility/layer_settings.gif" border="0" alt="Format&rarr;Layer Settings" title="Format&rarr;Layer Settings">，然后在<strong>工作图层</strong>输入框中键入<strong>2</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>您将编辑下方片体(1)的直线边，以匹配上方片体(2)的弯曲边，并使下方片体与上方片体相切。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/change_edge/edit_free_form_graphic71.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>编辑曲面</strong>工具条上的<strong>更改边</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/modeling/edit_surface/change_edge.gif" border="0" alt="Edit &gt; Surface &gt; Change Edge" title="Edit &gt; Surface &gt; Change Edge">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>更改边</strong>对话框中，选择<strong>编辑副本</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>由于您将使下方的面与上方的面匹配，您需要先选择下方的面。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>选择下方的片体作为要编辑的面。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/change_edge/edit_free_form_match_edge_face_sel.png"></p>
+                     
+                     <p>您必须选择要编辑的 B 曲面的边。</p>
+                     
+                     <div class="verbose">
+                       <p>您所选择的第一个片体的边将会发生变化以与所选的第二个片体的边匹配。第一个片体的边不能比第二个片体的边长。</p>
+                     </div>
+                     
+                     <div class="verbose">
+                        <p>您不能选择已修剪的片体或没有边的片体来进行修改 。要匹配的边必须是一个原始的等参边。而不是通过修剪创建的边。</p>
+                     </div>
+                     
+                     <div class="verbose">
+                        <p>在这个部件中，边的端点在同一个位置。</p>
+                     </div>
+                     
+                     <p>您选择的边将被更改以与所指定的第二个片体的边相匹配。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>选择底部片体的顶边。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/change_edge/edit_free_form_match_edge_edge_sel.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

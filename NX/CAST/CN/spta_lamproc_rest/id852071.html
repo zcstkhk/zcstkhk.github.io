@@ -1,0 +1,277 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Ply materials</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>层片材料</h2>
+         
+         <p><strong>层片材料</strong>是特定于层合板的对象，综合了纤维和矩阵材料属性，并计算等效刚度和强度属性。</p>
+         
+         <p>通过指定以下选项，可在 NX 层状复合材料中创建<strong>层片材料</strong>：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>增强纤维类型</p>
+               
+               <ul>
+                  
+                  <li class="condense">
+                     
+                     <p>单向纤维</p>
+                     
+                  </li>
+                  
+                  <li class="condense">
+                     
+                     <p>颗粒纤维</p>
+                     
+                  </li>
+                  
+                  <li class="condense">
+                     
+                     <p>随机定向短纤维</p>
+                     
+                  </li>
+                  
+                  <li class="condense">
+                     
+                     <p>编织纤维</p>
+                     
+                  </li>
+                  
+               </ul>
+               
+            </li>
+            
+            <li>
+               
+               <p>纤维与矩阵材料</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>纤维与矩阵体积分数</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>(可选)Tsai-Wu 交互系数与许用强度/应变覆盖</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p>层片材料在<strong>层片材料管理器</strong>对话框中进行管理，可以使用以下方法访问：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/laminates/ply_materials.gif" border="0"> <strong>层合板</strong>工具条中的<strong>层片材料</strong></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>层合板建模器</strong>对话框</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>铺层建模器</strong>对话框</p>
+               
+            </li>
+            
+         </ul>
+         <a name="id852051"></a>
+         
+         
+         
+         <h2>层片材料类型</h2>
+         
+         
+         
+         <div class="division">
+            
+            <h3>矩阵</h3>
+            
+            <p>在所有情况下，矩阵材料必须为各向同性。 </p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>纤维</h3>
+            
+            <table border="1" cellpadding="10" cellspacing="0" width="95%" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="2">
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr>
+                    <td colspan="1" rowspan="1" align="center" bgcolor="#E0E0E0" valign="middle"><p>纤维增强</p></td>
+                    <td colspan="1" rowspan="1" align="center" bgcolor="#E0E0E0"><p>相应的层片材料类型</p></td>
+                    <td colspan="1" rowspan="1" align="center" bgcolor="#E0E0E0" valign="middle"><p>受支持的 NX 材料纤维类型</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7" valign="middle"><p><strong>单向纤维</strong></p></td>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7"><p>各向异性</p></td>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7" valign="middle"><p>各向同性</p>
+                      <p>各向异性</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7"><p><strong>散粒纤维</strong></p></td>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7"><p>各向同性</p></td>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7"><p>各向同性</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7"><p><strong>随机定向短纤维</strong></p></td>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7"><p>各向异性</p></td>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7"><p>各向同性</p>
+                      <p>各向异性</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7"><p><strong>编织纤维</strong></p></td>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7"><p>各向同性</p></td>
+                    <td colspan="1" rowspan="1" align="left" bgcolor="#F7F7F7"><p>各向同性</p>
+                      <p>各向异性</p></td>
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         <a name="id852046"></a>
+         
+         
+         
+         <h2>层片材料参考温度</h2>
+         
+         
+         
+         <p>层片材料参考温度(按此顺序)：</p>
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>将设为纤维材料的<strong>参考温度</strong>值，如果已定义。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>将设为矩阵材料的<strong>参考温度</strong>值，如果已定义。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>20&deg;C</p>
+               
+            </li>
+            
+         </ol>
+         <a name="id1581878"></a>
+         
+         
+        <h2>层片材料的 Tsai-Wu 交互系数</h2>
+         
+         
+         
+         <p>层片材料的 Tsai-Wu 交互系数(按此顺序)：</p>
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>将设为<strong>层合板层片材料</strong>对话框中的<strong>Tsai Wu 交互系数</strong>值，如果已定义。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>纤维材料的 <strong>Tsai-Wu 交互系数</strong>值(<strong>F12</strong>)，如果已定义。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>矩阵材料的 <strong>Tsai-Wu 交互系数</strong>值(<strong>F12</strong>)，如果已定义。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>0.0</p>
+               
+            </li>
+            
+         </ol>
+         <a name="id1581879"></a>
+         
+         
+         
+        <h2>层片材料成品厚度</h2>
+         
+         
+         
+         <p>(可选)您可以指定下列对象的<strong>成品厚度</strong>：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>单向纤维</strong></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>随机定向短纤维</strong></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>编织纤维</strong></p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>层片材料<strong>成品厚度</strong>将覆盖在<strong>铺层建模器</strong>对话框中定义的层片<strong>厚度</strong>。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

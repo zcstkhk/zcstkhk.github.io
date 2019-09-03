@@ -1,0 +1,300 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>IPW tolerance settings consolidated</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>IPW tolerance settings consolidated</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>NX uses approximated facet geometry for the In-process workpiece (IPW), gouge detection, and collision detection. The tolerance settings that control the accuracy of facet geometry are now consolidated.</p>
+            
+            <p>To control IPW accuracy, use the following customer defaults:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Specify a <span class="uiTerm">Chordal Tolerance</span> value to control the accuracy required for approximating a curve or circle.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Choose either <span class="uiTerm">Needle Distance</span> or <span class="uiTerm">Needle Count</span> to control the grid used to calculate the IPW.
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Needle Distance</span> specifies how far apart to space the grid needles in the X, Y, and Z directions.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Needle Count</span> specifies the total number of needles in a volume.
+                        </p>
+                        
+                        <table class="attentionTable attn_caution">
+                           <tr>
+                              <td valign="top">
+                                 <p class="attn_title">Caution</p>
+                              </td>
+                              <td class="attention_main">
+                                 
+                                 <p>Do not modify the default <span class="uiTerm">Needle Count</span> values for <span class="uiTerm">Coarse</span>, <span class="uiTerm">Medium</span>, and <span class="uiTerm">Fine</span> unless you are directed to do so by technical support.
+                                 </p>
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Chordal tolerance effect on the facets</h3>
+            
+            <p>As the chordal distance decreases, the facet geometry approximation becomes more accurate. The computation time required to create the facet geometry increases with accuracy. You control whether your results are faster or more accurate.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/general/customize_manufacturing/ipw_chordal_tolerance.png"></p>
+            
+            <p>1: Original geometry shape</p>
+            
+            <p>2: Chordal tolerance</p>
+            
+            <p>3: Approximated shape for facets</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Needle Distance effect on the facets</h3>
+            
+            <p>As the needle distance decreases, the facet geometry approximation becomes more accurate.</p>
+            
+            <p>The computation time required to create the facet geometry increases with:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Part size</p>
+                  
+                  <p>A larger part requires more needles, and more calculations.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Accuracy</p>
+                  
+                  <p>A shorter needle distance requires more needles and more calculations.</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/general/customize_manufacturing/ipw_needle_distance_1.png"></p>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/general/customize_manufacturing/ipw_needle_distance_2.png"></p>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/general/customize_manufacturing/ipw_needle_distance_3.png"></p>
+            
+            <p>1: Needle distance</p>
+            
+            <p>2: Original geometry shape</p>
+            
+            <p>3: Approximated shape for facets</p>
+            
+            <p>The new <span class="uiTerm">Maximum Needle Count</span> option restricts the grid size and memory requirements for IPW calculations. Restricting the grid size prevents memory problems that can result from a small needle distance applied to large part geometry.
+            </p>
+            
+         </div>
+         
+         
+         <p></p>
+         
+         
+         <div class="division">
+            
+            <h3>Why should I use it?</h3>
+            
+            <p>The consolidated options make it easier to adjust the tolerance settings so that they are:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Large enough to maximize the calculation performance.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Small enough to create approximated geometry with reasonably sized facets.</p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <p><span class="uiTerm">Customer Defaults</span></p>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Manufacturing</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">File</span>&rarr;<span class="uiTerm">Utilities</span>&rarr;<span class="uiTerm">Customer Defaults</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p><span class="uiTerm">Customer Defaults</span> dialog box&rarr;<span class="uiTerm">Manufacturing</span>&rarr;<span class="uiTerm">Simulation &amp; Visualization</span>:
+                     </p>
+                     
+                     <p></p>
+                     
+                     <p>(<span class="uiTerm">Chordal Tolerance</span> and needle control for IPW facets) <span class="uiTerm">IPW</span> tab
+                     </p>
+                     
+                     <p>(<span class="uiTerm">Chordal</span> tolerance for gouge checking) <span class="uiTerm">Gouge</span> tab
+                     </p>
+                     
+                     <p class="no-bottom-margin">(<span class="uiTerm">Faceting Tolerance for Collision Detection</span>) <span class="uiTerm">ISV</span> tab
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+            <p>(<span class="uiTerm">Chordal Tolerance</span> for machine simulation)
+            </p>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" height="29" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Toolbar</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" height="29" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Operations</span> toolbar&rarr;<span class="uiTerm">Simulate Machine</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/manufacturing/manufacturing_operations/simulate_machine.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Simulation Control Panel</span> dialog box&rarr;<span class="uiTerm">Simulation Settings</span> group&rarr;<span class="uiTerm">Options</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/simulation_options.gif" border="0">&rarr;<span class="uiTerm">Simulation Options</span> dialog box&rarr;<span class="uiTerm">Other Options</span> group
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

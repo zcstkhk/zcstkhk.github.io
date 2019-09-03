@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <title>Info View</title>
+  </head>
+  <body class="soria xps">
+
+    <div id="topBorderContainer" dojoType="dijit.layout.BorderContainer" gutters="false" class="borderContainer">
+
+      <!-- Top Pane -->
+      <div id="topPane" dojoType="dijit.layout.ContentPane" region="top" class="topPane" splitter="false">
+        <div class="topDiv">
+          <div class="title" id="topicSetTitle">...</div>
+        </div>
+      </div>
+
+      <!-- Left Pane -->
+      <div id="tocContainer" dojoType="dijit.layout.ContentPane" region="left" splitter="true" class="auxPane" style="width:500px;">
+        loading list content...
+      </div>
+
+      <!-- Center Pane -->
+      <div id="mainDiv" dojoType="dijit.layout.ContentPane" class="mainPane" region="center" extractContent="true">
+        loading main content...
+      </div>
+
+    </div>
+
+  </body>
+</html>

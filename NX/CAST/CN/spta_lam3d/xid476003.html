@@ -1,0 +1,119 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Defining laminate properties</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Defining laminate properties</h2>
+         
+         
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectHorz" style="width:120px;">
+                  <p>Stacking recipe</p>
+               </div>
+               <div class="defMeaning defMeaningHorz" style="margin-left:125px;">
+                  
+                  <p>Specifies a predefined stacking sequence.</p>
+                  
+                  
+                  <p>For an inflated laminate, the stacking recipe is automatically set to <span class="uiTerm">Extruded</span>.
+                  </p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz" style="width:120px;">
+                  <p>Ply and stack directions</p>
+               </div>
+               <div class="defMeaning defMeaningHorz" style="margin-left:125px;">
+                  
+                  <p>Specify the direction of the 0&deg; angle for the fibers (1) and the direction in which the plies are stacked from bottom to top (2) for the <span class="uiTerm">Solid Laminate</span> physical property, with respect to material orientation.
+                  </p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_physical_property/ply_stack_directions.gif"></p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz" style="width:120px;">
+                  <p>Reference temperature</p>
+               </div>
+               <div class="defMeaning defMeaningHorz" style="margin-left:125px;">
+                  
+                  <p>Is used to compute temperature-dependent material properties for laminate validation. It is also exported to the <span class="uiTerm">NASTRAN</span> <span class="uiTerm">PCOMP</span>, <span class="uiTerm">PCOMPG</span>, <span class="uiTerm">PCOMPS</span>, and <span class="uiTerm">PSHELL</span> cards.
+                  </p>
+                  
+               </div>
+            </div>
+         </div>
+         
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>Ply failure theories</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>Are used to compute ply failure indices, strength ratios, and margins of safety when:</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>You validate laminate strength.</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>You post process laminate results using the <span class="uiTerm">Advanced Post Report</span> command.
+                        </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>Interlaminar failure</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>Controls how the stress allowables of the interlaminar bond are defined to compute the interlaminar failure results.</p>
+                  
+                  <p>When you select <span class="uiTerm">Use Material Allowables</span>, NX Laminate Composites uses the material allowables of the ply that is below the bond.
+                  </p>
+                  
+                  <p>When you select <span class="uiTerm">Use Laminate Allowables</span>, NX Laminate Composites uses the allowable strength in shear and the allowable normal strength that you define for the whole laminate.
+                  </p>
+                  
+               </div>
+            </div>
+         </div>
+         
+         
+         <p>For the <span class="uiTerm">Solid Laminate</span> physical property that is created by inflating a laminate, you can define one ply failure theory and one interlaminar failure theory for all plies. For  the <span class="uiTerm">Solid Laminate</span> physical property that you create, you can define different ply and interlaminar failure theories for each ply in the <span class="uiTerm">Ply Layup</span> group of the <span class="uiTerm">Solid Laminate Modeler</span> dialog box.
+         </p>
+         
+         <p>Nastran uses the ply and interlaminar failure theories for failure index and strength ratio computation. If Nastran does not support the selected theory, the exporter leaves the failure theory field blank and Nastran does not compute the failure metrics.</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Fluid domain and fluid surface meshing</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Fluid domain and fluid surface meshing</h2>
+         <p>When you create a flow model, you must specify a fluid volume for the mesh. You must create the 3D mesh using:</p>
+         <ul>
+            
+            <li>
+               
+               <p>NX meshing tools in the FEM file.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>A <span class="uiTerm">Fluid Domain</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/simulation/advanced_simulation/fluid_domain.gif" border="0"> simulation object. 
+               </p>
+               
+            </li>
+            
+         </ul>
+         <p>Within the same model, you can combine both approaches to mesh adjacent fluid volumes. The flow solver automatically connects adjacent fluid volumes when their polygon bodies share faces.</p>
+         <p>When you use the <span class="uiTerm">Fluid Domain</span> simulation object: 
+         </p>
+         <ul>
+            
+            <li>
+               
+               <p>The solver automatically detects solid bodies that are not part of the fluid domain but obstruct the flow and meshes around them.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The solver automatically detects any changes to the arrangement of obstructions in the overall volume when you re-solve and accounts for them</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>You can create boundary layer meshes. Boundary layer meshes are inherently more accurate when modeling boundary layer effects.</p>
+               <a name="genid_spta_nxfl_17"></a><div class="figureContainer">
+                  <table align="center">
+                     <tr>
+                        <td>
+                           <div class="figure">
+                              <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/maya/train/fluid_domain_1.png" border="0"></div>
+                           </div>
+                        </td>
+                     </tr>
+                  </table>
+                  <h4>Fluid flow around a train using boundary layer fluid domain</h4>
+               </div>
+               
+            </li>
+            
+         </ul>
+         <p>You can create two types of <span class="uiTerm">Fluid Domain</span> simulation objects: 
+         </p>
+         <ul>
+            
+            <li>
+               
+               <p>The <span class="uiTerm">Fluid Mesh</span> type defines a mesh for general fluid volumes.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The <span class="uiTerm">Fluid Surface Mesh</span> type lets you modify a Fluid Domain mesh by defining the surface mesh size and boundary layer mesh parameters.
+               </p>
+               
+            </li>
+            
+         </ul>
+         <p>You cannot view a <span class="uiTerm">Fluid Domain</span> mesh in the simulation or FEM file automatically or change its display properties during flow model creation. However, you can inspect the <span class="uiTerm">Fluid Domain</span> mesh in the <span class="uiTerm">Post-Processing Navigator</span> by reviewing:
+         </p>
+         <ul>
+            
+            <li>
+               
+               <p>Element size</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Element skewness</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Element aspect ratio</p>
+               
+            </li>
+            
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

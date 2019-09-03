@@ -1,0 +1,259 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Law Extension enhancements</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Law Extension enhancements</h2>
+         <div class="estimatedTime">
+            <p>Estimated time to complete this lesson: 8&ndash;11  minutes</p>
+         </div>
+         <div></div>
+         <p></p>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>The <span class="uiTerm">Law Extension</span> command is enhanced in the following ways:
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>The <span class="uiTerm">Method</span> list has been added to the <span class="uiTerm">Spine</span> group. You can now define a spine by specifying a curve or a vector.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>The <span class="uiTerm">Miter</span> group has been added so that you can specify no miter, a sharp miter, or a blend when creating law extensions with adjacent base profile curves.
+                  </p>
+                  <a name="genid_etss885_40" id="genid_etss885_40"></a><table border="0" align="center">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1">
+                        
+                        <col span="1">
+                        
+                        <col span="1">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              <a name="genid_etss885_41" id="genid_etss885_41"></a><div class="figureContainer">
+                                 <table align="center">
+                                    <tr>
+                                       <td>
+                                          <div class="figure">
+                                             <div><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/law_extension/law_ext_miter_none.png" border="0"></div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </table>
+                                 <h4>None</h4>
+                              </div>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              <a name="genid_etss885_42" id="genid_etss885_42"></a><div class="figureContainer">
+                                 <table align="center">
+                                    <tr>
+                                       <td>
+                                          <div class="figure">
+                                             <div><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/law_extension/law_ext_miter_sharp.png" border="0"></div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </table>
+                                 <h4>Sharp</h4>
+                              </div>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              <a name="genid_etss885_43" id="genid_etss885_43"></a><div class="figureContainer">
+                                 <table align="center">
+                                    <tr>
+                                       <td>
+                                          <div class="figure">
+                                             <div><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/law_extension/law_ext_miter_blend.png" border="0"></div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </table>
+                                 <h4>Blend</h4>
+                              </div>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>The <span class="uiTerm">Laydown Base Profile</span> option has been added to the <span class="uiTerm">Settings</span> group. This option ensures that the base profile for the law extension is projected onto the supporting face to avoid any out-of-tolerance issues between the base profile and the constraint face.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>The <span class="uiTerm">Advanced Curve Fit</span> option has been added to the <span class="uiTerm">Settings</span> group. 
+                  </p>
+                  
+                  <p>The following <span class="uiTerm">Method</span> options are available when <span class="uiTerm">Advanced Curve Fit</span> is selected:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Degree and Segments</span> &ndash; Specifies the degree and segment of output surfaces. 
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Degree and Tolerance</span> &ndash; Specifies the maximum degree and the tolerance of output surfaces.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Keep Parameterization</span> &ndash; Inherits the degree, segments, pole structure, and the knot structure from the input surface and applies it to the output surface.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Auto Fit</span> &ndash; Specifies the minimum degree, the maximum degree, the maximum number of segments, and tolerance to control the parameterization of the output surface. 
+                        </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+                  <p>The <span class="uiTerm">Advanced Curve Fit</span> option replaces the <span class="uiTerm">Rebuild</span> options of previous releases.
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Modeling and Shape Studio</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Toolbar</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Surface</span>&rarr;<span class="uiTerm">Flange Surface Drop-down</span>&rarr;<span class="uiTerm">Law Extension</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/modeling/surface/law_extension.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Insert</span>&rarr;<span class="uiTerm">Flange Surface</span>&rarr;<span class="uiTerm">Law Extension</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Spine</span> group, <span class="uiTerm">Miter</span> group, <span class="uiTerm">Settings</span> group
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         <a name="xid476064" id="xid476064"></a><div id="footer"></div>
+      </div>
+   </body>
+</html>

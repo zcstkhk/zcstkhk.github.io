@@ -1,0 +1,122 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument">
+   <head>
+      <title>复习</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>复习</h2>
+         <div id="topQuestionsContainer">
+            <div class="questionsHeader">
+               <div class="headerTitle">
+                  <p>问题</p>
+               </div>
+               <div class="quesionButtons">
+                  <div class="qButton" id="qButton_1">
+                     <p>1</p>
+                  </div>
+                  <div class="qButton" id="qButton_2">
+                     <p>2</p>
+                  </div>
+               </div>
+            </div>
+            <div id="questionsContainer">
+               <div class="question" id="question1" answered="false" numanswers="4" questiontype="fillInBlank">
+                  <p>将您的全部连杆都基于装配组件的一个原因是什么？</p>
+                  <p class="questionInstruction">请选择一个答案。</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a1" class="hideBlock" src="../xps3/graphics/greenCheck.png"></img></td>
+                           <td><input id="q1a1" type="radio" correct="yes" name="question1Grp"></input></td>
+                           <td>
+                              <p>能够从运动动画中创建装配布置</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a2" class="hideBlock" src="../xps3/graphics/redX.png"></img></td>
+                           <td><input id="q1a2" type="radio" correct="no" name="question1Grp"></input></td>
+                           <td>
+                              <p>确保与 Teamcenter 兼容</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a3" class="hideBlock" src="../xps3/graphics/redX.png"></img></td>
+                           <td><input id="q1a3" type="radio" correct="no" name="question1Grp"></input></td>
+                           <td>
+                              <p>确保可以在这些连杆上创建运动副</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a4" class="hideBlock" src="../xps3/graphics/redX.png"></img></td>
+                           <td><input id="q1a4" type="radio" correct="no" name="question1Grp"></input></td>
+                           <td>
+                              <p>确保连杆将从这些组件继承质量属性</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div class="question" id="question2" answered="false" numanswers="4" questiontype="fillInBlank">
+                  <p>有多少连杆被用来创建这个机构？<p xmlns="" align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/activities/links/curve_on_curve_anim.gif"></p>
+                     
+                     
+                     
+                  </p>
+                  <p class="questionInstruction">请选择一个答案。</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a1" class="hideBlock" src="../xps3/graphics/redX.png"></img></td>
+                           <td><input id="q2a1" type="radio" correct="no" name="question2Grp"></input></td>
+                           <td>
+                              <p>4</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a2" class="hideBlock" src="../xps3/graphics/greenCheck.png"></img></td>
+                           <td><input id="q2a2" type="radio" correct="yes" name="question2Grp"></input></td>
+                           <td>
+                              <p>3</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a3" class="hideBlock" src="../xps3/graphics/redX.png"></img></td>
+                           <td><input id="q2a3" type="radio" correct="no" name="question2Grp"></input></td>
+                           <td>
+                              <p>9</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a4" class="hideBlock" src="../xps3/graphics/redX.png"></img></td>
+                           <td><input id="q2a4" type="radio" correct="no" name="question2Grp"></input></td>
+                           <td>
+                              <p>10</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div id="showFeedbackContainer"><span showLabel="true" id="feedbackButton" title="Show feedback" dojoType="xps.form.Button" onClick="showQuestionFeedback()">显式答案</span></div>
+            </div>
+            <div class="helpTextContainer">
+               <p class="questionFeedback" id="incorrect">错误！</p>
+               <p class="questionFeedback" id="correct">正确！</p>
+               <div class="questionHelp" id="questionHelp1">
+                  <p>当您在装配组件上定义连杆时，您确保了与装配应用模块中使用的特征保持完全兼容性，有些运动仿真特征需要这种兼容性，包括<strong>创建序列</strong>和<strong>捕捉布置</strong>命令。</p>
+               </div>
+               <div class="questionHelp" id="questionHelp2">
+                  <p>在这个示例中，有三组前线是一起移动的，每一组一起移动的曲线必须定义为一个连杆
+                 。<p xmlns="" align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/activities/links/links_review_question_help.gif"></p>
+                     
+                     
+                     
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

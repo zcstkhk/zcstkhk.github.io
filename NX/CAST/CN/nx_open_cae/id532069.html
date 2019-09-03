@@ -1,0 +1,143 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Enable the custom dialog box</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Enable the custom dialog box</h2>
+         <div class="action">
+            
+            <p>To include the Block Styler code and enable the selection of polygon geometry in the FEM file, add <span class="codeText">Imports</span> statements after the <span class="codeText">Option</span> statement at the top of the file to make the NXOpen.Blockstyler namespace and the NXOpen.UF namespace available.
+            </p>
+            
+         </div>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>These lines are near the top of the file.</p>
+                  
+               </td>
+            </tr>
+         </table><pre class="codeExample indent ">Option Strict Off  
+Imports System  
+Imports NXOpen  
+<span class="userInput">' Added BlockStyler and UF import  
+Imports NXOpen.UF  
+Imports NXOpen.BlockStyler</span> 
+
+Module NXJournal
+<span class="userInput">    Dim theSession As Session = Session.GetSession()
+    Dim theLW As ListingWindow = theSession.ListingWindow()
+</span>
+    Sub Main()
+
+        &lsquo; Added workDir variable</pre><div class="action">
+            
+            <p>Remove the following highlighted line.</p>
+            
+         </div><pre class="codeExample indent ">Sub MeshBottle(ByRef mesh As CAE.Mesh)
+
+<span class="userInput">        Dim theSession As Session = Session.GetSession()
+</span>        Dim workFemPart As CAE.FemPart = CType(theSession.Parts.BaseWork, CAE.FemPart)
+</pre><div class="action">
+            
+            <p>Locate the <span class="codeText">MeshBottle</span> routine.
+            </p>
+            
+         </div>
+         <div class="action">
+            
+            <p>Insert the following code (highlighted in bold) to launch the <span class="uiTerm">Bottle Mesh</span> dialog box. The <span class="codeText">Try</span> loop is used with the dialog box for selecting faces to mesh. 
+            </p>
+            
+         </div><pre class="codeExample indent ">Sub MeshBottle(ByRef mesh As CAE.Mesh)
+
+    
+    Dim workFemPart As CAE.FemPart = CType(theSession.Parts.BaseWork, CAE.FemPart)
+    Dim displayFemPart As CAE.FemPart = CType(theSession.Parts.BaseDisplay, CAE.FemPart)
+<span class="userInput">        ' Added code for mesh dialog &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+        Dim objectsToMesh(0) As DisplayableObject
+
+        Dim elmSize As String = &quot;3&quot;
+        Dim elmSizeUnit As Unit = Nothing
+        ' Added (Nothing) below to allow changing the search location for dlx files
+        Dim thebottleMeshDb As bottleMeshDb = Nothing
+        ' theLW.Open()
+        Try
+            thebottleMeshDb = New bottleMeshDb()
+
+            ' The following method shows the dialog immediately
+            thebottleMeshDb.Show()
+
+            If thebottleMeshDb.faces.Length &lt; 1 Then Return
+            ReDim objectsToMesh(thebottleMeshDb.faces.Length - 1)
+            Dim Idx As Integer
+            Idx = 0
+
+            For Each Item As NXOpen.CAE.CaeFace In thebottleMeshDb.faces
+                objectsToMesh(Idx) = CType(Item, DisplayableObject)
+                Idx = Idx + 1
+            Next
+
+            elmSizeUnit = thebottleMeshDb.unit
+
+            ' theLW.WriteLine(&quot;Output from Mesh Bottle UI L54&quot;)
+            ' theLW.WriteLine(&quot;The number of faces selected is  &quot; + objectsToMesh.Length.ToString)
+            If elmSizeUnit Is Nothing Then
+                ' theLW.WriteLine(&quot;The Element Size is   &quot; + elmSize + &quot;[ unitless]&quot;)
+            Else
+                ' theLW.WriteLine(&quot;The Element Size is   &quot; + elmSize + &quot;[&quot; + elmSizeUnit.Abbreviation + &quot;]&quot;)
+
+            End If
+
+            ' A (Return) in the program will halt execution at that point
+            'Return
+        Catch ex As Exception
+
+            '---- Enter your exception handling code here ----
+
+        Finally
+            ' Added the following lines for error checking
+            If thebottleMeshDb IsNot Nothing Then
+                thebottleMeshDb.Dispose()
+            End If
+
+        End Try
+        ' End of added code &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+</span>
+
+    Dim markId1 As Session.UndoMarkId
+    markId1 = theSession.SetUndoMark(Session.MarkVisibility.Visible, &quot;Start&quot;)
+</pre><div class="action">
+            
+            <p>Continue to add code to support face selection, as shown below.</p>
+            
+         </div><pre class="codeExample indent ">Dim markId1 As Session.UndoMarkId
+markId1 = theSession.SetUndoMark(Session.MarkVisibility.Visible, &quot;Start&quot;)
+<span class="userInput">        'Added Code &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+        Dim caePart1 As CAE.CaePart = CType(workFemPart, CAE.CaePart)
+
+        Dim markId3 As Session.UndoMarkId
+        markId3 = theSession.SetUndoMark(Session.MarkVisibility.Visible, &quot;Start&quot;)
+        ' End of added code &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+</span>
+Dim fEModel1 As CAE.FEModel = CType(workFemPart.FindObject(&quot;FEModel&quot;), CAE.FEModel)
+</pre><div id="footer"></div>
+      </div>
+   </body>
+</html>

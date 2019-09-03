@@ -1,0 +1,71 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>表达式语法优先级和关联性</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>表达式语法优先级和关联性</h2>
+         <p>在下表中简略描述了这些运算符的优先权和关联性。在同一行的运算符有相同的优先级，而下一行的运算符优先级较低。</p>
+         <table cellspacing="3" align="center">
+            
+            <tr valign="middle">
+              <th colspan="3" rowspan="1" bgcolor="#c0c0c0" valign="middle"><p>优先权和关联性</p></th>
+            </tr>
+            <tr valign="middle">
+              <th colspan="1" rowspan="1" bgcolor="#c0c0c0" valign="middle"> <p>运算符</p></th>
+              <th colspan="2" rowspan="1" bgcolor="#c0c0c0" valign="middle"> <p>关联性</p></th>
+            </tr>
+            <tr valign="middle">
+              <td colspan="1" rowspan="1" bgcolor="#f4f4f4" valign="middle"><p>^</p></td>
+              <td colspan="2" rowspan="1" bgcolor="#f4f4f4" valign="middle"><p>从右至左</p></td>
+            </tr>
+            <tr valign="middle">
+              <td colspan="1" rowspan="1" bgcolor="#f4f4f4" valign="middle"><p>-（负号）！</p></td>
+              <td colspan="2" rowspan="1" bgcolor="#f4f4f4" valign="middle"><p>从右至左</p></td>
+            </tr>
+            <tr valign="middle">
+              <td colspan="1" rowspan="1" bgcolor="#f4f4f4" valign="middle"><p>* / %</p></td>
+              <td colspan="2" rowspan="1" bgcolor="#f4f4f4" valign="middle"><p>从左至右</p></td>
+            </tr>
+            <tr valign="middle">
+              <td colspan="1" rowspan="1" bgcolor="#f4f4f4" valign="middle"><p>+ -</p></td>
+              <td colspan="2" rowspan="1" bgcolor="#f4f4f4" valign="middle"><p>从左至右</p></td>
+            </tr>
+            <tr valign="middle">
+              <td colspan="1" rowspan="1" bgcolor="#f4f4f4" valign="middle"><p>&gt; &lt; &gt;= &lt;=</p></td>
+              <td colspan="2" rowspan="1" bgcolor="#f4f4f4" valign="middle"><p>从左至右</p></td>
+            </tr>
+            <tr valign="middle">
+              <td colspan="1" rowspan="1" bgcolor="#f4f4f4" valign="middle"><p>== !=</p></td>
+              <td colspan="2" rowspan="1" bgcolor="#f4f4f4" valign="middle"><p>从左至右</p></td>
+            </tr>
+            <tr valign="middle">
+              <td colspan="1" rowspan="1" bgcolor="#f4f4f4" valign="middle"><p>&amp;&amp;</p></td>
+              <td colspan="2" rowspan="1" bgcolor="#f4f4f4" valign="middle"><p>从左至右</p></td>
+            </tr>
+            <tr valign="middle">
+              <td colspan="1" rowspan="1" bgcolor="#f4f4f4" valign="middle"><p>||</p></td>
+              <td colspan="2" rowspan="1" bgcolor="#f4f4f4" valign="middle"><p>从左至右</p></td>
+            </tr>
+            <tr valign="middle">
+              <td colspan="1" rowspan="1" bgcolor="#f4f4f4" valign="middle"><p>=</p></td>
+              <td colspan="2" rowspan="1" bgcolor="#f4f4f4" valign="middle"><p>从右至左</p></td>
+            </tr>
+            
+         </table>
+         <p>在没有括号的方程中使用具有相同优先权的运算符时，使用表中的从左到右或从右到左规则。例如，在表达式 X=90 - 10 + 30 中，X 的值是 110，不是 50。</p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

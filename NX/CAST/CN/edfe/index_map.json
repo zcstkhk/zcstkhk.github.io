@@ -1,0 +1,11 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"带附加文本的尺寸标注",file:"id1056427.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"带附加文本的尺寸",file:"genid_dimensions_with_appended_text_408_10576.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"附加文本到尺寸中",file:"id754996.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e8",title:"继承特征数据",file:"genid_inheriting_feature_data_237_3147.html",type:"topic",parent:"",children:[
+{id:"d5e9",title:"继承特征数据",file:"genid_inherit_feature_data_26_373.html",type:"topic",parent:"d5e8"},{id:"d5e10",title:"特征参数对话框",file:"genid_feature_parameters_dialog_box_28_375.html",type:"topic",parent:"d5e8"},
+{id:"d5e11",title:"添加继承的注释数据",file:"genid_adding_inherited_data_30_317.html",type:"topic",parent:"d5e8"},
+{id:"d5e12",title:"更改默认模板",file:"genid_changing_the_default_template_12_132.html",type:"topic",parent:"d5e8"},
+{id:"d5e13",title:"继承孔数据到注释中",file:"id755007.html",type:"activity",parent:"d5e8"}]}
+]}

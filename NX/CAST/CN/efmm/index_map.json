@@ -1,0 +1,17 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"抽取几何体",file:"id1073300.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"抽取几何体",file:"extract_curve_feat_xtrct_ov.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"抽取面",file:"id712013.html",type:"activity",parent:"d5e5"},
+{id:"d5e7",title:"抽取面区域",file:"id712019.html",type:"activity",parent:"d5e5"},
+{id:"d5e8",title:"抽取实体",file:"id712025.html",type:"activity",parent:"d5e5"},
+{id:"d5e9",title:"复习：抽取几何体",file:"xid461117.html",type:"topic",parent:"d5e5"},
+{id:"d5e10",title:"镜像体",file:"create_features_mirror_body_ov.html",type:"topic",parent:"d5e5",children:[
+{id:"d5e11",title:"原始体与镜像体之间的关联",file:"more_about_mirror_body.html",type:"topic",parent:"d5e10"},
+{id:"d5e12",title:"镜像实体",file:"id698359.html",type:"activity",parent:"d5e10"},
+{id:"d5e13",title:"复习：镜像体",file:"xid464985.html",type:"topic",parent:"d5e10"}]},
+{id:"d5e14",title:"复合曲线",file:"extract_curve_ext_cur_ov.html",type:"topic",parent:"d5e5",children:[
+{id:"d5e15",title:"复合曲线",file:"id711996.html",type:"activity",parent:"d5e14"}]}]}
+
+
+]}

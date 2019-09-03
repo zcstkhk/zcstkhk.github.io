@@ -1,0 +1,114 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>定义层合板属性</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>定义层合板属性</h2>
+         <p>在基于层片的过程中，当您把物理属性指派给<strong>网格收集器</strong>时，您只能设置<strong>求解器属性</strong>以及<strong>层合板属性</strong>组中的选项。</p>
+         <p>您可以在<strong>层合板属性</strong>组中定义下列属性。</p>
+         
+         
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectHorz" style="width:120px;">
+                  <p>堆叠方法</p>
+               </div>
+               <div class="defMeaning defMeaningHorz" style="margin-left:125px;">
+                  
+                  <p>必须将堆叠方法设置为<strong>继承自铺层</strong>。</p>
+                  
+                  
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz" style="width:120px;">
+                  <p>区域角度公差</p>
+               </div>
+               <div class="defMeaning defMeaningHorz" style="margin-left:125px;">
+                  
+                  <p>确定相邻单元是属于同一区域还是属于基于层片的过程中的两个不同区域。只能在<strong>堆叠方法</strong>设为<strong>继承自铺层</strong>时定义区域角度公差。</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_physical_property/regular.gif"></p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz" style="width:120px;">
+                  <p>参考温度</p>
+               </div>
+               <div class="defMeaning defMeaningHorz" style="margin-left:125px;">
+                  
+                  <p>用于为层合板验证计算与温度有关的材料属性。它也导出至 <strong>NASTRAN</strong> <strong>PCOMP</strong>、<strong>PCOMPG</strong> 及 <strong>PSHELL</strong> 卡。</p>
+                  
+               </div>
+            </div>
+         </div>
+         
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>层片失效理论</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>用于在以下情况时计算层片失效指数、强度比和安全裕度：</p>
+                  <ul>
+                    <li>
+                      <p>验证层合板强度</p>
+                    </li>
+                    <li>
+                      <p>使用<strong>高级后处理报告</strong>命令对层合板结果进行后处理</p>
+                    </li>
+                  </ul>
+                  
+               </div>
+            </div>
+            <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>许用胶合应力</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>指定许用的剪切强度和各层片之前胶合的许用正常强度。可以只为<strong>实体层合板</strong>物理属性定义胶合的许用正常强度</p>
+                  
+              </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>层间失效</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>控制如何定义层间胶合的应力许用值以计算层间失效结果。</p>
+                  <p>选择<strong>使用许用材料</strong>时，NX 层合板复合材料会使用胶合以下的层片的许用材料。</p>
+                  <p>选择<strong>使用许用层合板</strong>时，NX 层合板复合材料会使用您为整个层合板定义的许用剪切强度和许用法向强度。可以只为<strong>实体层合板</strong>物理属性定义胶合的许用法向强度。</p>
+                  
+               </div>
+            </div>
+         </div>
+         
+         <p>对于<strong>层合板</strong>物理属性，可以为所有层片只定义一个层片失效理论。对于通过膨胀层合板创建的<strong>实体层合板</strong>物理属性，可以为所有层片定义一个层片失效理论和一个层间失效理论。对于所创建的<strong>实体层合板</strong>物理属性，可以为<strong>实体层合板建模器</strong>对话框的<strong>层片铺层</strong>组中的每个层片定义不同的层片失效理论和层间失效理论。</p>
+         
+         
+         <p>Nastran 将使用层片以及层间失效理论来计算失效指数以及强度比。如果 Nastran 不支持所选的理论，导出器将把失效理论字段保留为空白，并且 Natran 将不会计算失效指标。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Modeling radiation</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Modeling radiation</h2>
+         <p>The software simulates radiation based on view factors between radiating elements.  The solver calculates black body view factors between all radiation elements. To calculate radiative conductances, it combines these factors with thermo-optical properties, which you define for every radiating element. </p>
+         <p>For surfaces that do not obey the gray body approximation, ray-traced view factors can be calculated instead of black body view factors.   </p>
+         <p>You can calculate radiation between surfaces defined by:</p>
+         <ul>
+            
+            <li>
+               
+               <p>Faces of 3D solid elements.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The top and/or bottom of 2D shell elements based on the orientation of the element normals that you specify.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The implied surface of 1D beam elements based on the section properties you define. </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The implied surface of 0D concentrated mass elements based on the diameters you specify.</p>
+               
+            </li>
+            
+         </ul>
+         <p>If you want an element or group of elements to participate in radiation exchange, you must apply <span class="uiTerm">Thermo-Optical Properties</span> and define a <span class="uiTerm">Radiation</span> simulation object to calculate view factors between these elements.   
+         </p>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/maya/sst_satellite/sst_post_anim.gif"></p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Ply thickness tolerance</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>Ply thickness tolerance</h2>
+         
+         <p>Control the ply thickness to:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>Limit the thickness for plies in your laminate due to structural or manufacturing considerations.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Let some plies grow in thickness relative to others, for example, to model a core ply.</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>You can set the ply thickness tolerance in one of these ways:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>Use the <span class="uiTerm">Limit Thickness Variation</span> option in the <span class="uiTerm">Laminate 2D-to-3D Fill</span> dialog box to set the ply thickness tolerance for all plies in the laminate at the same time.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Use the <span class="uiTerm">Override Layup Tolerance</span> option in the <span class="uiTerm">Ply Thickness Tolerance</span> dialog box to set a different ply thickness tolerance for a selected ply in the laminate.
+               </p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <table class="attentionTable attn_example">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Example</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>You want to create a 3D laminate by filling the space between two 2D dependent meshes and by controlling the ply thicknesses. The distance between the two meshes is 100 mm on the left side of the model and 75 mm on the right side of the model. The global layup has 5 plies. The ply thickness is 10 mm for plies 1, 2, 4, and 5, and 20 mm for ply 3.</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/laminates/lam_extrusion/layup_plies.gif"></p>
+                  
+                  <p>The following table shows two inflated laminates:</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>The first one is created without limiting the ply thickness.</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>The second one is created by limiting the ply thickness variation to &plusmn; 50 % of its original value using the <span class="uiTerm">Limit Thickness Variation</span> option. This thickness variation limits the ply thickness values for plies 1, 2, 4, and 5 between 5 mm and 15 mm and for ply 3 between 10 mm and 30 mm.
+                        </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <table frame="box" rules="all" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+               <col span="2">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1"></td>
+                  
+                  <td colspan="2" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Left side of the model</p>
+                     
+                  </td>
+                  
+                  <td colspan="2" rowspan="1"></td>
+                  
+                  <td colspan="2" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Right side of the model</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="6">
+                     
+                     <p class="no-bottom-margin">Regular filled laminate</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Ply 5</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">16.667 mm</p>
+                     
+                  </td>
+                  
+                  <td colspan="2" rowspan="6">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/extrusion/fill_laminate_reg.gif"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Ply 5</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">12.5 mm</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Ply 4</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">16.667 mm</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Ply 4</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">12.5 mm</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Ply 3</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">33.333 mm</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Ply 3</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">25 mm</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Ply 2</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">16.667 mm</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Ply 2</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">12.5 mm</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Ply 1</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">16.667 mm</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Ply 1</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">12.5 mm</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Laminate</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">100 mm</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Laminate</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">75 mm</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="6">
+                     
+                     <p class="no-bottom-margin">Filled laminate with &plusmn; 50 % thickness variation</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Ply 5</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">15 mm</p>
+                     
+                  </td>
+                  
+                  <td colspan="2" rowspan="6">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/extrusion/fill_laminate_thick_tol_red.gif"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Ply 5</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">12.5 mm</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Ply 4</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">15 mm</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Ply 4</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">12.5 mm</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Ply 3</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">30 mm</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Ply 3</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">25 mm</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Ply 2</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">15 mm</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Ply 2</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">12.5 mm</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Ply 1</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">15 mm</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Ply 1</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">12.5 mm</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Laminate</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">90 mm</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Laminate</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">75 mm</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <p>For some of the ply thickness tolerance values, the laminate does not completely fill the space between the dependent meshes, as shown by the red selection in the previous graphic. In this case, NX creates a group called <span class="uiTerm">Unmatched Target Nodes</span> that contains all the nodes of the target 2D dependent mesh that do not have solid elements attached to them. To completely fill the available space on the left side of the model with the specified ply thickness tolerance, you need to add additional plies to the layup.
+         </p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

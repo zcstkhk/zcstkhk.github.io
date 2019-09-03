@@ -1,0 +1,342 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Define header and DMIS startup information</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Define header and DMIS startup information</h2>
+         <p>In combination with CAD-related programs such as PMI, CMM Inspection Programming generates code output for use on a wide variety of Dimensional Measurement Equipment (DME). The equipment then uses that information to output not only dimensional measurement data but also report information.</p>
+         
+         <p>CMM Command lets you add your own code to a program when needed. In this activity, you will set up basic header information and add start up commands using the Dimensional Measuring Interface Standard (DMIS).</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>On the <strong>Insert</strong> toolbar, click <strong>CMM Command</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/nx_cmm/insert/create_cmm_command.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Insert Command</strong> dialog box, from the <strong>Command Type</strong> list, select <strong>Program Header</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>From the <strong>Name Method</strong> list, select <strong>User Specified</strong>, and in the <strong>Part Name</strong> box, type <span class="userInput">4HOLE_PMI</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>From the <strong>Revision Method</strong> list, select <strong>User Specified</strong>, and in the <strong>Part Revision</strong> box, type <span class="userInput">A</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>From the <strong>Temperature Units</strong> list, select <strong>Centigrade</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Operation Name</strong> box, type <span class="userInput">PART_HDR_INFO</span>, and then click <strong>OK</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>In the <strong>Inspection Navigator</strong>, the new header information appears.
+                     </p>
+                     
+                     <table border="0" cellpadding="0" cellspacing="0" class="navigator" width="100%" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" valign="middle" width="50">
+                           
+                           <col span="1" valign="middle">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group2.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">PROGRAM_HEADER</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group4.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/incpection_command.gif" border="0">&nbsp;PART_HDR_INFO
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>On the <strong>Insert</strong> toolbar, click <strong>CMM Command</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/nx_cmm/insert/create_cmm_command.gif" border="0"> again.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li><a name="commando" id="commando"></a><li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>From <span class="emphasis">this document</span>, copy the following DMIS startup commands.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <ol type="a">
+                     <li>
+                        
+                        
+                        <p>Click this step.</p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>Drag across the commands below to highlight them.</p>
+                        
+                        
+                        <div class="stepInformation">
+                           <pre class="codeExample indent ">R(dt)=REPORT/DATE,TIME
+R(ag)=REPORT/ALGOR
+R(tc)=REPORT/TEMPC
+OUTPUT/R(dt)
+OUTPUT/R(ag)
+OUTPUT/R(tc)
+PRCOMP/ON
+SNSET/APPRCH,6.000000
+SNSET/RETRCT,8.000000
+SNSET/SEARCH,25.000000
+SNSET/DEPTH, 10.00000</pre>
+                           </div>
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>Right-click the selection and choose <strong>Copy</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                  </ol>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Insert Command</strong> dialog box, right-click the <strong>Program Statements</strong> list and choose <strong>Paste</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Operation Name</strong> box, type <strong>STARTUP_CMDS</strong>, and click <strong>OK</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>In the <strong>Inspection Navigator</strong>, in the <strong>PROGRAM_HEADER</strong> program group, the new startup statement appears below the first command.
+                     </p>
+                     
+                     <table border="0" cellpadding="0" cellspacing="0" class="navigator" width="100%" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" valign="middle" width="50">
+                           
+                           <col span="1" valign="middle">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group2.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">PROGRAM_HEADER</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group4.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/incpection_command.gif" border="0">&nbsp;PART_HDR_INFO
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group4.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/incpection_command.gif" border="0">&nbsp;STARTUP_CMDS
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Inspection Navigator</strong>, right-click <strong>CMM_PROGRAM</strong> and choose <strong>Generate</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_12">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Generate Tool Path</strong> dialog box, click <strong>Accept Paths</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_13">
+               <div class="stepAction">
+                  
+                  <p>Right-click <strong>CMM_PROGRAM</strong> again and choose <strong>Post Process</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_14">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Postprocess</strong> dialog box, in the <strong>Postprocessor</strong> group, select <strong>DMIS 5.2</strong>, and then click <strong>OK</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>An <strong>Information</strong> window displays DMIS output for the entire program. The <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" href="#" onclick="loadFile('id1448352.html')">header output</a> will affect the DME&rsquo;s output when the program is run on an actual CMM as described.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_15">
+               <div class="stepAction">
+                  
+                  <p>Close the <strong>Information</strong> window and save your inspection setup file.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         <div class="stepListResult">
+            
+            <p>Startup information is now complete.</p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Fully constrain the gasket section</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>完全约束草图</h2>
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>直接草图</strong>工具条上的<strong>几何约束</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sketcher/sketch_constraints/constraints.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>约束</strong>组中的<strong>共线</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/sketcher/infer_constraint_settings/collinear.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>选择底部直线并单击鼠标中键以前进至<strong>选择要约束到的对象</strong>，然后选择如图所示的<strong>草图水平轴</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/gateway/activities/create_gasket/collinear_picks.png"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>NX 将使直线与基准轴共线。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/gateway/activities/create_gasket/collinear_result.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>直接草图</strong>工具条上的<strong>自动判断尺寸</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sketcher/sketch_constraints/inferred_dimensions.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>S选择<strong>草图竖直轴</strong>以及垫圈轮廓的内侧曲线，以创建如图所示的尺寸。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/gateway/activities/create_gasket/dimension_inner_radius.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>使用相同的步骤创建再两个尺寸，如图所示。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/gateway/activities/create_gasket/dimension_lower_radii.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>双击如图所示尺寸，并将它的值更改为<strong>2.5</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/gateway/activities/create_gasket/dimension_p3.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>双击如图所示尺寸，并将它的值更改为<strong>2.0</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/gateway/activities/create_gasket/dimension_p4.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>双击半径尺寸，将它的值更改为<strong>5.5</strong>并单击鼠标中键。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>注意到状态栏会告诉您草图已完全约束，您的草图看起来应该与下图所示类似。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/gateway/activities/create_gasket/final_sketch.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

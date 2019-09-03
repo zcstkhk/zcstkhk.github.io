@@ -1,0 +1,247 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>摩擦参数</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>摩擦参数</h2>
+         
+         <p>求解器将使用多个摩擦参数来计算摩擦力与/或扭矩。摩擦计算的输入力为运动副的反作用力、弯矩/力矩，以及摩擦力/扭矩预载。</p>
+         
+         <p>默认情况下，在计算大部分模型的摩擦时，这些输入力会全部用于摩擦计算。对于某些特殊情况，您可以在<strong>运动副</strong>对话框的<strong>摩擦</strong>选项卡中单独禁用这些输入。</p>
+         
+         
+         <table border="1" cellpadding="12" cellspacing="2" width="95%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="2">
+               
+               <col span="2">
+               
+            </colgroup>
+            
+            <thead>
+               
+               <tr bgcolor="silver">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">运动副类型</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">摩擦力/扭矩计算</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">用到的输入力</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">用到的其它参数</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+               <tr bgcolor="#F0F0F0" valign="top">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">滑动副</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">求解器将使用运动副的反作用力、弯矩、扭矩以及预载的摩擦力来计算摩擦力</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p><strong>反作用力</strong></p>
+                     <p><strong>弯矩</strong></p>
+                     <p class="no-bottom-margin"><strong>扭矩</strong></p>
+                     <p><strong>预载摩擦力</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p><strong>反作用臂</strong></p>
+                     
+                     <p><strong>初始重叠</strong></p>
+                     
+                     <p class="no-bottom-margin"><strong>重叠增量</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#F0F0F0" valign="top">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">旋转副</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">求解器将使用运动副的反作用力、弯矩、以及预载的摩擦扭矩来计算摩擦力</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p><strong>反作用力</strong></p>
+                     <p><strong>弯矩</strong>                     </p>
+                     <p><strong>预载摩擦扭矩</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p><strong>销半径</strong></p>
+                     
+                     <p><strong>折弯反作用臂</strong></p>
+                     
+                     <p class="no-bottom-margin"><strong>摩擦臂</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#F0F0F0" valign="top">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">柱面副</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">求解器将使用运动副的反作用力/扭矩、预载的摩擦力以及预载的摩擦扭矩来计算摩擦力与摩擦扭矩</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p><strong>反作用力</strong></p>
+                     <p><strong>弯矩</strong></p>
+                    <p class="no-bottom-margin"><strong>预载摩擦力</strong></p>
+                     <p><strong>预载摩擦扭矩</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p><strong>销半径</strong></p>
+                     
+                     <p><strong>初始重叠</strong></p>
+                     
+                     <p class="no-bottom-margin"><strong>重叠增量</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#F0F0F0" valign="top">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">万向节</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">求解器将使用运动副的反作用力、弯矩以及预载的扭矩来计算摩擦扭矩，它将沿万向节双轭的旋转轴来施加摩擦扭矩。</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p><strong>反作用力</strong></p>
+                     
+                     <p><strong>弯矩</strong></p>
+                     
+                     <p class="no-bottom-margin"><strong>预载摩擦扭矩</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p><strong>折弯反作用臂</strong></p>
+                     
+                     <p><strong>摩擦臂</strong></p>
+                     
+                     <p><strong>轭</strong></p>
+                     
+                     <p class="no-bottom-margin"><strong>销半径</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#F0F0F0" valign="top">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">球面副</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">求解器将使用运动副的反作用力以及预载的摩擦扭矩来计算摩擦扭矩。使用球的半径来计算等效摩擦扭矩。</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p><strong>反作用力</strong>                     </p>
+                     <p class="no-bottom-margin"><strong>预载摩擦扭矩</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>球半径</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

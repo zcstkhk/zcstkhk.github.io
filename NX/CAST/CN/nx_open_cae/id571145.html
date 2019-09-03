@@ -1,0 +1,37 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Mesh the body</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Mesh the body</h2>
+         <p>If objects have been added to the selection list successfully (<span class="codeText">myBool = True</span>), then the mesh can be created.
+         </p>
+         <p>Add the following lines to your routine, below those added in the previous section.</p><pre class="codeExample "><span class="userInput">            If myBool = True Then
+                ' Mesh faces
+                Dim myMeshes() As CAE.Mesh
+                myMeshes = myMesh2DBuilder.CommitMesh
+                myMesh2DBuilder.Destroy()
+            End If
+        End If
+</span></pre><p>The last thing to do is to end the original Do loop. Add the lines between the &ldquo;End If&rdquo; and &ldquo;End Sub&rdquo; statements shown below.</p><pre class="codeExample ">            End If
+<span class="userInput">            theUfSession.Obj.CycleObjsInPart(basePart.Tag, NXOpen.UF.UFConstants.UF_sfem_mesh_type, objectTag)
+        Loop While objectTag &lt;&gt; NULLTAG
+</span>    End Sub
+</pre><p>Save the file prior to running it in NX.</p>
+         <p><span class="uiTerm">File</span>&rarr;<span class="uiTerm">Save Auto_mesh2D.vb</span></p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

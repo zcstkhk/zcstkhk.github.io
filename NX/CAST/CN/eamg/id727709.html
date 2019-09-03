@@ -1,0 +1,97 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>执行简单干涉检查</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>执行简单干涉检查</h2>
+         
+         
+         <p>您将对电路板执行简单干涉检查。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在<strong>装配</strong>工具条上的<strong>装配间隙</strong>下拉菜单中，选择<strong>简单间隙检查</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assemblies/check_clearances.gif" border="0" alt="Analysis &rarr; Assembly Clearance &rarr; Simple Clearance Check" title="Analysis &rarr; Assembly Clearance &rarr; Simple Clearance Check">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>将打开<strong>类选择</strong>对话框。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>选择 <strong>des06_laser_ic_board_13</strong>并点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/assembly_clearance/interference_solid_board_select.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>将打开<strong>干涉检查</strong>对话框，其中列出了16个干涉：4个硬干涉和12个接触干涉。您的设计需求允许接触干涉，但您想要修复硬干涉。</p>
+                     
+                     <p>每个干涉都存在于组件 <strong>des06_laser_ic_board_13</strong>与其中一个 <strong>des06_laser_c1_13</strong>实例之间，有四个硬干涉是因为组件 <strong>des06_laser_c1_13</strong>有四个实例，当您修改组件来修复其中一个干涉时，所有的干涉都将被修复。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>干涉检查</strong>对话框中，双击其中一个硬干涉。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>属于选定干涉的组件与实例将被隔离。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/assembly_clearance/interference_solid_isolate_components.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

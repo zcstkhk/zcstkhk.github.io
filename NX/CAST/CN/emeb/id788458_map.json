@@ -1,0 +1,9 @@
+{identifier:"id",label:"title",items:[
+{id:"d9e2",title:"打开部件并显示操作导航器",file:"id788477.html",type:"topic",parent:""},
+{id:"d9e3",title:"显示几何视图",file:"id1011801.html",type:"topic",parent:""},
+{id:"d9e4",title:"创建毛坯几何体对象",file:"id1011803.html",type:"topic",parent:""},
+{id:"d9e5",title:"创建生成刀轨所需的部件",file:"id1011805.html",type:"topic",parent:""},
+{id:"d9e6",title:"选择确定毛坯的体",file:"id1011807.html",type:"topic",parent:""},
+{id:"d9e7",title:"剪切并将操作粘贴到几何体对象中",file:"id1011809.html",type:"topic",parent:""},
+{id:"d9e8",title:"生成刀轨",file:"id1011811.html",type:"topic",parent:""},
+{id:"d9e9",title:"显示材料移除",file:"id1011813.html",type:"topic",parent:""}]}

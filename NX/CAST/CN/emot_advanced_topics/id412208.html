@@ -1,0 +1,69 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>将载荷连接到网格</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>将载荷连接到网格</h2>
+         
+         <p>所有发生在给定运动对象上的载荷将通过一个载荷传递节点表示，载荷节点创建在运动副原点处。</p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>不要移动载荷传递节点的位置，否则可能使载荷传递无效。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <a name="genid_emot_advanced_topics_21"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/adv_topics/mtn_load_tfr_spider.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>(1) 1D 连接; (2) 导入的力; (3) 力矩</h4>
+         </div>
+         
+         
+         <ul>
+            
+            <li>
+               
+               <p>在旋转副中，载荷传递节点常常在孔中心处创建。</p>
+               <p>在对部件划分网格后，可以使用刚体单元或者1D 连接(蜘蛛网格)来将载荷传递节点连接到邻近几何体上的网格。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>对于滑动副，载荷传递节点代表机构设计位置上滑动副的初始位置。</p>
+               <p>要分析相关时间步的载荷，您必须使用刚体单元或者1D 连接来将载荷节点连接到有限元模型上的位置，这个位置是滑动副在相关时间步时所处的位置。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

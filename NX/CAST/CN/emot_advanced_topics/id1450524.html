@@ -1,0 +1,68 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>可选：定义另一个柔性体</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>可选：定义另一个柔性体</h2>
+         <p>为了简化，您只定义了一个悬臂组件作为柔性体，如果时间允许，可以重复这个练习中的步骤定义剩余的悬臂组件作为柔性体。</p>
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>在高级仿真中，为各个悬臂创建一个 FEM 文件、仿真文件，以及 SOL 103 柔性体解算方案。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在高级仿真中，求解各个解算方案以为柔性体生成.rfi 文件。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在运动仿真中，为各个柔性体创建柔性连杆。</p>
+               
+            </li>
+            
+            <li>
+            <p>将所有的柔性连杆添加到现有的运动仿真中。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>求解运动解算方案，注意到 NX 将自动调用 NX Nastran 以为各个柔性体求解模态解算方案，整个求解过程可能要花费几分钟时间才能完成。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>查看结果动画。</p>
+               <p>各个柔性体都有它自己的后处理视图，您也可以单独编辑。在<strong>运动导航器</strong>中各个解算方案的<strong>动画</strong>节点下方，右击要编辑的柔性连杆并选择<strong>编辑后处理视图</strong>。</p>
+               
+               <p>同时，当您有多个柔性连杆时，云图仅显示一种类型的连杆结果，要知道显示的柔性连杆，在<strong>运动导航器</strong>中解算方案的<strong>动画</strong>节点下方，右击柔性连杆并选择<strong>将图例设为可见</strong>，云图图例将指示这种结果类型的时间增量和最小/最大结果值，连杆其它结果类型的云图显示为灰色。</p>
+               
+               <p>在下面的例子中，蓝色悬臂的后处理视图被设置为<strong>应力–节点的</strong>，其它柔性连杆的后处理视图被设置为<strong>位移–节点的</strong>。蓝色悬臂设置为<strong>将图例设为可见</strong>，所有只有它的云图显示在动画中。</p>
+               
+            </li>
+            
+         </ol>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/activities/advanced/f1_car_flex_anim_all.gif"></p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/menu.gif" border="0"> <strong>文件&rarr;关闭&rarr;所有部件</strong></p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

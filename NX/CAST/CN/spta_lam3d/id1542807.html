@@ -1,0 +1,76 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Inflating laminates</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Inflating laminates</h2>
+         
+         <p> You can inflate a 2D laminate that you created using both the ply-based process and the zone-based process in one of these ways:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>Use the <span class="uiTerm">Extrude Laminate</span> command to extrude a 2D laminate over a 2D mesh to create a 3D mesh.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Use the <span class="uiTerm">Fill Laminate</span> command to create 3D meshes between one or more sets of 2D dependent meshes.
+               </p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>You can use the solid mesh to get better results in the ply out-of-plane direction.</p>
+         
+         <p>The laminate information is taken from the <span class="uiTerm">Laminate</span> physical property either alone in the zone-based process or with global layup information in the ply-based process.
+         </p>
+         
+         <p>You cannot view the fiber orientations of the 3D extruded elements.</p>
+         
+         
+         <p>NX creates the following meshes and mesh collectors:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>A 3D mesh collector for each laminate physical property that is referenced by the inflated elements. The 3D mesh collectors contain meshes for the 3D plies.</p>
+               
+               <p>One 3D mesh per ply or ply group for each 2D mesh collector. The number of solid layers created depends on the <span class="uiTerm">Single Ply per 3D Layer</span> check box and on number of ply groups. Each solid layer is a separate 3D mesh.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>A mesh collector that contains ply drop-off meshes. This mesh collector is called <span class="uiTerm">Extrusion Resin</span>. The <span class="uiTerm">Extrusion Resin</span> mesh collector points to a solid property and to the isotropic Epoxy material from the NX library. You can change this material.
+               </p>
+               
+               <p>Drop-off meshes. These meshes are called <span class="uiTerm">Resin Elements</span>.
+               </p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

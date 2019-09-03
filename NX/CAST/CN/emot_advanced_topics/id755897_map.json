@@ -1,0 +1,16 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开仿真",file:"id434011.html",type:"topic",parent:""},
+{id:"d7e3",title:"设置角色",file:"id435106.html",type:"topic",parent:""},
+{id:"d7e4",title:"重置对话框内存",file:"id412719.html",type:"topic",parent:""},
+{id:"d7e5",title:"创建并求解一个解算方案",file:"id434015.html",type:"topic",parent:""},
+{id:"d7e6",title:"使机构运动",file:"id434017.html",type:"topic",parent:""},
+{id:"d7e7",title:"捕捉载荷",file:"id434019.html",type:"topic",parent:""},
+{id:"d7e8",title:"标记最大力发生的时间步",file:"id434021.html",type:"topic",parent:""},
+{id:"d7e9",title:"开始高级仿真",file:"id434023.html",type:"topic",parent:""},
+{id:"d7e10",title:"创建仿真和 FEM 文件",file:"id434025.html",type:"topic",parent:""},
+{id:"d7e11",title:"对部件划分网格",file:"id434027.html",type:"topic",parent:""},
+{id:"d7e12",title:"定义材料属性",file:"id434029.html",type:"topic",parent:""},
+{id:"d7e14",title:"导入运动载荷",file:"id434031.html",type:"topic",parent:""},
+{id:"d7e15",title:"将载荷分布到几何体上",file:"id434033.html",type:"topic",parent:""},
+{id:"d7e16",title:"求解模型",file:"id434035.html",type:"topic",parent:""},
+{id:"d7e17",title:"显示结果",file:"id434037.html",type:"topic",parent:""}]}

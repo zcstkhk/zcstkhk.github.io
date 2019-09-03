@@ -1,0 +1,63 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>通过曲线组的连续性组</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>通过曲线组的连续性组</h2>
+         
+         <p>这将允许您选择第一个和/或结束曲线截面处的约束面，并指定连续性。在下面的两个示例中，上面一个示例表示通过曲线组曲面(绿色)为非约束曲面。位于下面一个的示例表示同一个曲面以   G2 方式约束到两个面集。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/through_curves/through_curves_constrained_ex.png"></p>
+         
+         <p><strong>全部应用</strong>将相同的连续性应用于第一个和最后一个截面线串。当您选择此选项并选择连续性设置时，NX 将把更改应用于这两个设置。</p>
+         
+         <p>从<strong>第一截面</strong>和<strong>最后截面</strong>中为模型选择相应的 G0(位置)、G1(相切)或 G2(曲率)连续性。如果选中了<strong>全部应用</strong>复选框，则选择一个便可更新这两个设置。</p>
+         
+         <p><strong>选择面</strong>允许您选择一个或多个面，或者片体作为第一个和最后一个截面。</p>
+         
+         <p><strong>流向</strong>将指定与约束曲面相关的参数直线的流体方向。所有<strong>连续性</strong>选项均设置为 <strong>G0（位置）</strong>时不可用。此选项仅适用于使用约束曲面的模型。</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>未指定</strong>：流向直接通到另一侧。</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/through_curves/flow_dir_unspecd.png"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>垂直</strong>：流向垂直于约束曲面的基本边。</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/through_curves/flow_dir_perp.png"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>等参数</strong>：流向沿约束曲面的等参数方向(U 或 V)。</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/through_curves/flow_dir_isoparametric.png"></p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

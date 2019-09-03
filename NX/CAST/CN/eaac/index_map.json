@@ -1,0 +1,12 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"产品轮廓与表示",file:"id1073900.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"产品轮廓",file:"outlines.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"产品轮廓概述",file:"func_details_context_prodoutline_ov.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"创建产品轮廓",file:"id725301.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e9",title:"表示",file:"representations.html",type:"topic",parent:"",children:[
+{id:"d5e10",title:"表示的概念",file:"id681096.html",type:"topic",parent:"d5e9"},
+{id:"d5e11",title:"建议的表示用法",file:"id681101.html",type:"topic",parent:"d5e9"},
+{id:"d5e12",title:"表示参数概述",file:"large_assem_assy_reps_create.html",type:"topic",parent:"d5e9"},
+{id:"d5e13",title:"在装配级别创建表示",file:"id725384.html",type:"activity",parent:"d5e9"}]}
+]}

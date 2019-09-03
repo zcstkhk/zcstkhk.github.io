@@ -1,0 +1,11 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开部件文件",file:"id1008813.html",type:"topic",parent:""},
+{id:"d7e3",title:"重置对话框内存",file:"id353012.html",type:"topic",parent:""},
+{id:"d7e4",title:"请求单元力",file:"id1008817.html",type:"topic",parent:""},
+{id:"d7e5",title:"求解模型",file:"id1008855.html",type:"topic",parent:""},
+{id:"d7e6",title:"新建一个后处理视图",file:"id1008857.html",type:"topic",parent:""},
+{id:"d7e7",title:"查看应力分量",file:"id1008859.html",type:"topic",parent:""},
+{id:"d7e8",title:"根据力和几何体计算应力",file:"id1008861.html",type:"topic",parent:""},
+{id:"d7e9",title:"显示分割为四个视图",file:"id1008863.html",type:"topic",parent:""},
+{id:"d7e10",title:"创建横截面视图",file:"id1008865.html",type:"topic",parent:""},
+{id:"d7e11",title:"创建第二个横截面视图",file:"id1008867.html",type:"topic",parent:""}]}

@@ -1,0 +1,160 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Export your probe tool to a library</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Export your probe tool to a library</h2>
+         
+         <p>In this activity, provided you have rights to do so, you will add your probe to the default CMM Inspection Programming library.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Probe</strong> dialog box, click on the <strong>Tool</strong> tab. 
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>On the <strong>Tool</strong> tab, do the following.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <ol type="a">
+                     <li>
+                        
+                        
+                        <p>In the <strong>Description</strong> group, using 132 characters or less, type a description.
+                        </p>
+                        
+                        
+                        <div class="stepInformation">
+                           
+                           <p>This is the name that will appear in the second column of the library&rsquo;s search results, and will be appended to the <strong>Library Reference</strong> (see below) to identify the tool in the <strong>Inspection Path</strong> dialog box.
+                           </p>
+                           
+                        </div>
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Numbers</strong> group, in the <strong>Tool Number</strong> box, accept the default value of <strong>1</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Information</strong> group, in the <strong>Catalog Number</strong> box, using 132 characters or less, type Original Equipment Manufacturer (OEM) part number reference information.
+                        </p>
+                        
+                        <p><span class="codeText">SP25_SH2_A5000_7610_7630_STAR</span></p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Library</strong> group, in the <strong>Library Reference</strong> box, leave the box blank to let the application automatically assign a unique name for your probe.
+                        </p>
+                        
+                        
+                        <div class="stepInformation">
+                           
+                           <p>This is the name that will appear in the first column of your probe library search results, and in the <strong>Tool</strong> column of the <strong>Inspection Navigator</strong>. The name also appears in the <strong>Inspection Path</strong> dialog box, followed by the <strong>Description</strong>.
+                           </p>
+                           
+                        </div>
+                        
+                     </li>
+                  </ol>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Library</strong> group, click <strong>Export Tool to Library</strong> <img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/tool_library/libraries_export_tool_to_library.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>If an <strong>EXPORT TO LIBRARY</strong> dialog box appears warning you that a similar tool exists in the library, click <strong>Create</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>In the<strong> Template Attributes</strong> dialog box, from the <strong>Holding System</strong> list, select a holder value of <strong>310(Steep Taper 40)</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>Click <strong>OK</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>NX copies the assembly to the tool library graphics area, creating a new folder under </p>
+                     
+                     <p><span class="codeText">[NX install location]\MACH\resource\library\tool\graphics\</span></p>
+                     
+                     <p>where <span class="codeText">[NX install location]</span> is the location where you installed NX. NX also creates a tool data record in the tool database that references the probe graphics files. The record contains information similar to the following:
+                     </p>
+                     
+                     <p><span class="codeText">TP6_35EXT_A-5003-0060-01-A_4MM | 04 | 02 | TP6 x 35EXT x 36EWL x 4mm DIA | TMC0_00041 | Ruby | 1 | 310 |</span></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>If an <strong>Export Tool to Library</strong> dialog box appears, click <strong>OK</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         <div class="stepListResult">
+            
+            <p>Your probe is now exported to the default CMM Inspection Programming library and ready for use. Leave the <strong>Probe</strong> dialog box open for the next activity.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>疲劳寿命准则</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>疲劳寿命准则</h2>
+         
+         <h3>寿命准则、平均应力效应、板厚度修正和缺口系数</h3>
+         <p>下表总结了可用疲劳寿命准则的特征。</p>
+         
+         <table border="1" cellpadding="2" cellspacing="1" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+               <col span="2">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                 <th colspan="1" rowspan="1" align="center" bgcolor="silver" valign="top"><p>疲劳寿命准则</p></th>
+                 <th colspan="1" rowspan="1" bgcolor="silver" valign="top"> <p>疲劳计算</p></th>
+                 <th colspan="1" rowspan="1" align="center" bgcolor="silver" valign="top"> <p>疲劳应用</p></th>
+                 <th colspan="1" rowspan="1" align="center" bgcolor="silver" valign="top"> <p>平均应力效应</p></th>
+                 <th colspan="1" rowspan="1" align="center" bgcolor="silver" valign="top"> <p>板厚度修正</p></th>
+                 <th colspan="1" rowspan="1" align="center" bgcolor="silver" valign="top"> <p>缺口系数</p></th>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1"><p><strong>Smith-Watson-Topper</strong></p></td>
+                 <td colspan="1" rowspan="1"><p>基于应变</p></td>
+                 <td colspan="1" rowspan="1"><p>低循环</p></td>
+                 <td colspan="1" rowspan="1"><p>包含</p></td>
+                 <td colspan="1" rowspan="1"><p>不适用</p></td>
+                 <td colspan="1" rowspan="1"><p>可选</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1"><p><strong>应变寿命最大主应变</strong></p></td>
+                 <td colspan="1" rowspan="1"><p>基于应变</p></td>
+                 <td colspan="1" rowspan="1"><p>低循环</p></td>
+                 <td colspan="1" rowspan="1"><p>可选</p></td>
+                 <td colspan="1" rowspan="1"><p>不适用</p></td>
+                 <td colspan="1" rowspan="1"><p>可选</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1"><p><strong>应变寿命最大剪切</strong></p></td>
+                 <td colspan="1" rowspan="1"><p>基于应变</p></td>
+                 <td colspan="1" rowspan="1"><p>低循环</p></td>
+                 <td colspan="1" rowspan="1"><p>不适用</p></td>
+                 <td colspan="1" rowspan="1"><p>不适用</p></td>
+                 <td colspan="1" rowspan="1"><p>可选</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1"><p><strong>应力寿命</strong></p></td>
+                 <td colspan="1" rowspan="1"><p>基于应力</p></td>
+                 <td colspan="1" rowspan="1"><p>高循环</p></td>
+                 <td colspan="1" rowspan="1"><p>可选</p></td>
+                 <td colspan="1" rowspan="1"><p>可选</p></td>
+                 <td colspan="1" rowspan="1"><p>可选</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1"><p><strong>BWI</strong></p></td>
+                 <td colspan="1" rowspan="1"><p>基于应力</p></td>
+                 <td colspan="1" rowspan="1"><p>低循环</p>
+                   <p>高循环</p></td>
+                 <td colspan="1" rowspan="1"><p>可选</p></td>
+                 <td colspan="1" rowspan="1"><p>可选</p></td>
+                 <td colspan="1" rowspan="1"><p>不适用</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1"><p><strong>TWI</strong></p></td>
+                 <td colspan="1" rowspan="1"><p>基于应力</p></td>
+                 <td colspan="1" rowspan="1"><p>低循环</p>
+                   <p>高循环</p></td>
+                 <td colspan="1" rowspan="1"><p>可选</p></td>
+                 <td colspan="1" rowspan="1"><p>可选</p></td>
+                 <td colspan="1" rowspan="1"><p>不适用</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1"><p>用户定义的 S-N 曲线</p></td>
+                 <td colspan="1" rowspan="1"><p>基于应力</p></td>
+                 <td colspan="1" rowspan="1"><p>低循环</p>
+                   <p>高循环</p></td>
+                 <td colspan="1" rowspan="1"><p>可选</p></td>
+                 <td colspan="1" rowspan="1"><p>可选</p></td>
+                 <td colspan="1" rowspan="1"><p>可选</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1"><p>用户定义的 E-N 曲线</p></td>
+                 <td colspan="1" rowspan="1"><p>基于应变</p></td>
+                 <td colspan="1" rowspan="1"><p>低循环</p>
+                   <p>高循环</p></td>
+                 <td colspan="1" rowspan="1"><p>不适用</p></td>
+                 <td colspan="1" rowspan="1"><p>不适用</p></td>
+                 <td colspan="1" rowspan="1"><p>可选</p></td>
+               </tr>
+            </tbody>
+            
+         </table>
+         <a name="fatigue_app"></a><table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <ul>
+                     
+                     <li>
+                       <p>高循环疲劳一般用于低载荷、寿命相对较长且失效循环数超过 105 的应用模块。如果强度评估结果显示安全裕度或安全系数较大，则高循环疲劳是可能采用的失效机制</p>
+                     </li>
+                     <li>
+                       <p>低循环疲劳一般用于高载荷且寿命相对较短的应用模块。失效循环数的范围为 10 – 105 次循环。如果强度评估结果显示安全裕度或安全系数较小，则结构可能不会容忍在失效之前进行许多次循环，低循环疲劳是可能采用的失效机制                     </p>
+                     </li>
+                     
+                  </ul>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <p>一般来说，对于基于应变的疲劳评估，应使用应变历程，对于基于应力的疲劳评估，应使用应力历程。</p>
+         <h3>使用用户定义的 S-N 和 E-N 曲线</h3>
+         <p>要将用户定义的 S-N 曲线或 E-N 曲线用作计算耐久性结果的疲劳寿命准则，需要遵循工作流。</p>
+         <table cellspacing="6">
+           <tbody>
+             <tr>
+               <td valign="top"><strong>步骤 1. </strong></td>
+               <td valign="top"><p>定义材料的 S-N 曲线或 E-N 曲线。S-N 曲线的循环次数 <em>N</em>（也称为<em>工作周期</em>）为自变量，应力幅值 <em>S</em> 为因变量。E-N 曲线的循环次数 <em>N</em> 为自变量，应变幅值 <em>E</em> 为因变量。</p></td>
+             </tr>
+             <tr>
+               <td valign="top"><strong>步骤 2. </strong></td>
+               <td valign="top"><p>创建疲劳耐久性对象，可从<strong>疲劳寿命准则</strong>列表中选择以下内容：</p>
+                 <ul>
+                   <li>
+                     <p>对于用户定义的 S-N 曲线，选择<strong>应力寿命</strong>。</p>
+                   </li>
+                   <li>
+                     <p>对于用户定义的 E-N 曲线，选择<strong>应变寿命最大主应变</strong>或<strong>应变寿命最大剪切</strong>。</p>
+                   </li>
+                 </ul></td>
+             </tr>
+             <tr>
+               <td valign="top"><strong>步骤 3. </strong></td>
+               <td valign="top"><p>使用静态事件或瞬态事件中的疲劳耐久性对象并求解耐久性事件。</p></td>
+             </tr>
+           </tbody>
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

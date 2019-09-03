@@ -1,0 +1,121 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Testing and implementation</title>
+   </head>
+   <body>
+      <div class="contentType_procedure">
+         <h2>Testing and implementation</h2>
+         
+         <div class="division">
+            
+            <h3>Debugging in Visual Studio</h3>
+            
+            <p>Microsoft Visual Studio includes debugging tools you can use to debug your NX Open application. </p>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">Note</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>Visual Studio Express does not support debugging for DLLs that run through an external application. If you are using Visual Studio Express to debug NX Open applications, you need to implement and test the application manually.</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+            <p>To debug journal applications using Visual Studio:</p>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>Create a Visual Studio project and build the .vb file into a managed DLL using the <span class="codeText">GetUnloadOption</span> method.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Ensure that the <span class="uiTerm">Configuration</span> property (on the <span class="uiTerm">Property Pages</span> window) is set to <span class="uiTerm">Debug</span>.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Choose <span class="uiTerm">Project</span>&rarr;<span class="uiTerm">Properties</span>&rarr;<span class="uiTerm">Debug</span>&rarr;<span class="uiTerm">Start External Program</span>, and specify the location of the NX executable.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Set breakpoints in your application.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Choose <span class="uiTerm">Debug</span>&rarr;<span class="uiTerm">Start</span>.
+                  </p>
+                  
+                  <p>Visual Studio launches NX.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>To run the DLL, choose <span class="uiTerm">File</span>&rarr;<span class="uiTerm">Execute</span>&rarr;<span class="uiTerm">NX Open</span>.
+                  </p>
+                  
+               </li>
+               
+            </ol>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Manual implementation and testing</h3>
+            
+            <p>To implement your application and test it interactively, you can create a custom button in NX and define your application as the button action. You can then add the command to a menu or toolbar.</p>
+            
+            <table class="attentionTable attn_tip">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">Tip</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>When testing an application interactively, you may find it useful to add message boxes to act as breakpoints at various stages of the application. For example, if you add the following to your script:</p>
+                     <pre class="codeExample indent ">' -----------------------------------------------------
+' Added MessageBox just to stop execution - breakpoint
+'  Have to be in Simulation by here...
+' -----------------------------------------------------
+messagebox.show(&quot;Just before creating FEM file&quot;, &quot;Warning&quot;, MessageBoxButtons.OK)</pre>
+                     <p>The software displays the warning message &ldquo;Just before creating FEM file.&rdquo; Click <span class="uiTerm">OK</span> to continue to executing the application. If the application fails, the last message shown can help you isolate problems in the code.
+                     </p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

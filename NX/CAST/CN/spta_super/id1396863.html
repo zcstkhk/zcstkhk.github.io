@@ -1,0 +1,45 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Static reduction &mdash; understanding boundary DOFs</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Static reduction &mdash; understanding boundary DOFs</h2>
+         
+         <p>If only stiffness is reduced (static condensation), boundary DOF selection is not critical to accuracy.</p>
+         
+         <p>Select only the boundary DOFs necessary for connection and orientation.  Additional boundary DOFs do not improve accuracy and may degrade performance.</p>
+         
+         <p>If you include mass or damping in the superelement, preserving the overall mass distribution is an important consideration when selecting the boundary DOF. This depends on how you plan to use of the superelement:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>Mass is required for acceleration loading in subsequent static system solutions.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Mass is typically included for subsequent dynamic system solutions.</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

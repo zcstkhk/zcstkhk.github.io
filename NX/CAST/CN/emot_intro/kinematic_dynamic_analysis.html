@@ -1,0 +1,183 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>仿真动力学和运动学</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>仿真运动学和动力学</h2>
+         
+         <p>当您创建新的运动仿真时，您可以指定仿真是运动学或是动力学分析。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/intro/environment_dialog.gif"></p>
+         <a name="kinematic_analysis" id="kinematic_analysis"></a>
+         
+         
+         
+         <h2>运动学</h2>
+         
+         
+         
+         <p>运动学运动仿真显示机构在一个运动循环中，所有部件相对于时间的物理位置。这种分析用于确定位移、速度、加速度以及约束上的反作用力值的范围。<a name="ndxgenid_emot_intro_14"></a>
+            
+         </p>
+         
+         <p>在运动学仿真中：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>不考虑重力与质量属性</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>外部载荷与内部力会影响约束上的反作用力，但不会影响运动</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>假设体和运动副都为刚体</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>不能使用衬套和接触</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>这种分析通常用于评估组件间运动的干涉，比如复杂机械系统的装配顺序。</p>
+         
+         
+         <a name="genid_emot_intro_15" id="genid_emot_intro_15"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div>
+                           <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;"><script type="dojo/method">
+      flashData= {
+          swfSrc : '../graphics/graphicLibrary/nx_dss/motion/links_constraints/constrained_joint_2_anim.swf',
+          graphSrc : '../graphics/graphicLibrary/nx_dss/motion/links_constraints/constrained_joint_2_anim.gif',
+          align : 'center',
+          base : '.',
+          height : '457',
+          width : '410',
+          bgcolor : '#FFFFFF',
+          flashVersion : '7',         
+          looping : 'false',
+          play : 'false',
+          menu : 'true',
+          parameters : ''
+      }
+      top.loadFlash(this,flashData);
+    </script></div>
+                        </div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>运动学示例</h4>
+         </div>
+         
+         
+         <a name="dynamic_analysis" id="dynamic_analysis"></a>
+         
+         
+         
+         <h2>动力学</h2>
+         
+         
+         
+         <p>在动力学仿真中：<a name="ndxgenid_emot_intro_17"></a>
+            
+         </p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>将考虑重力和质量属性</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>外部载荷、力以及扭矩(线性与非线性)都可以生成运动</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>可以使用衬套来仿真柔性连接</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>可以使用接触和摩擦系数</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>可以使用柔性体动力学、电机控制以及 MATLAB Simulink 联合仿真</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <a name="genid_emot_intro_18" id="genid_emot_intro_18"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div>
+                           <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;"><script type="dojo/method">
+      flashData= {
+          swfSrc : '../graphics/graphicLibrary/nx_dss/motion/refining/bushing_anim.swf',
+          graphSrc : '',
+          align : 'center',
+          base : '.',
+          height : '338',
+          width : '394',
+          bgcolor : '#FFFFFF',
+          flashVersion : '7',         
+          looping : 'false',
+          play : 'false',
+          menu : 'true',
+          parameters : ''
+      }
+      top.loadFlash(this,flashData);
+    </script></div>
+                        </div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>在震动筛的腿和脚之间安装的衬套</h4>
+         </div>
+         
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

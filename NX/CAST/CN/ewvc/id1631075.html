@@ -1,0 +1,146 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>创建最终的产品包络体</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>创建最终的产品包络体</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>显示所有链接的体。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/package_file/04_pkg_file.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>右击<strong>装配导航器</strong>背景并确保已选中 <strong>WAVE 模式</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>右击装配 <strong>i_pkg</strong> 并选择 <strong>WAVE&rarr;新建级别</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>新建级别</strong>对话框中，点击<strong>指定部件名</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>选择部件名</strong>对话框的<strong>文件名</strong>输入框中，键入 <strong>customer_pkg</strong> 并回车。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在<strong>新建级别</strong>对话框的<strong>过滤器</strong>列表中，确保选择的是<strong>任意</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>使用 Ctrl + A 快捷键以选择 <strong>i_pkg</strong> 部件文件中的所有体。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/package_file/14_pkg_file.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>在<strong>装配导航器</strong>中，您可以看到已创建新的组件 <strong>customer_pkg</strong>，并且 <strong>i_pkg</strong> 仍然是装配。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>右击 <strong>customer_pkg</strong> 并选择<strong>替换引用集&rarr;空</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/package_file/04_pkg_file.png"></p>
+                     
+                  </div>
+                  <div class="stepRemediation">
+                     
+                     <p>对于这个练习，您创建这个装配结构的目的是是产品追踪更简单，您需要显示<strong>空</strong>引用集是因为装配以及新组件共享相同的实体，这种创建最终消费者产品包络体的过程可能与您的公司并不相同。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>将 <strong>customer_pkg</strong> 设为显示部件。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/package_file/04_pkg_file.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         <div class="stepListResult">
+            
+            <p>在<strong>部件导航器</strong>中，您可以看到删除面特征已被移除，可以将这个部件文件发送给消费者或供应商，他们将无法看到内部特征的任何信息，这个简化的产品包络体部件文件也链接到您原始的设计数据中，任何对外部特征的修改都会使简化的产品包络体部件文件更新。</p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Create a new Main() routine</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Create a new Main() routine</h2>
+         <div class="action">
+            
+            <p>Add the following code to define a <span class="codeText">Main()</span> function that:
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Initializes a variable <span class="codeText">workDir</span> to specify filename paths.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Initializes a variable <span class="codeText">mesh</span> that is passed to the MeshBottle function.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Calls the function <span class="codeText">MeshBottle</span>. This corresponds to journal routine you recorded.
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">Note</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>Add this new function above the existing main() function. The workDir variable must be set to the directory where NX starts. This is also the location of your Templates directory and the location of the dialog box files (.dlx).</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div><pre class="codeExample indent ">Module NXJournal
+<span class="userInput">    Sub Main()
+        ' Added workDir variable
+        Dim workDir As String = &quot;D:\NX\Bottle\&quot;
+        ' Added this dimension statement
+        Dim mesh As CAE.Mesh = Nothing
+
+        ' New function for calling meshing routine
+        MeshBottle(mesh)
+    End Sub
+</span>
+    Sub Main(ByVal args() As String)
+</pre><table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>The original <span class="codeText">Sub Main</span> function will be changed to <span class="codeText">MeshBottle</span> in the next section.
+                  </p>
+                  
+               </td>
+            </tr>
+         </table>
+         <p>The journal code used to create the FEM file follows the new Main routine. </p>
+         <div class="action">
+            
+            <p>Change the existing <span class="codeText">Sub Main</span> function as shown below.
+            </p>
+            
+         </div><pre class="codeExample indent ">End Sub
+Sub <span class="userInput">MeshBottle(ByRef mesh As CAE.Mesh)</span>
+
+    Dim theSession As Session = Session.GetSession()
+    Dim workFemPart As CAE.FemPart = CType(theSession.Parts.BaseWork, CAE.FemPart)
+</pre><div class="action">
+            
+            <p>Locate the beginning of the <span class="uiTerm">Bottle Mesh</span> dialog box code by searching for the string <span class="codeText">Public Shared Sub Main()</span>.
+            </p>
+            
+            <p>Although the application does not call this function directly, rename it to avoid any conflict. In this case, simply prepend the name with the string <span class="codeText">xxxx</span> to make it unique.  
+            </p>
+            
+         </div><pre class="codeExample indent ">...  
+Public Shared Sub <span class="userInput">xxxx</span>Main()  
+    Try </pre><div id="footer"></div>
+      </div>
+   </body>
+</html>

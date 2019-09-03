@@ -1,0 +1,81 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Nastran 求解器属性</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Nastran 求解器属性</h2><a name="genid_spta_lampost_12"></a><table border="1" cellpadding="5" cellspacing="0" width="100%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+            </colgroup>
+            
+            <thead>
+               
+               <tr bgcolor="#C0C0C0">
+                 <td colspan="1" rowspan="1"><p>属性</p></td>
+                 <td colspan="1" rowspan="1"><p>详细信息</p></td>
+               </tr>
+               <tr bgcolor="#f7f7f7">
+                 <td colspan="1" rowspan="1"><p>单位面积的<strong>非结构质量</strong></p></td>
+                 <td colspan="1" rowspan="1"><p>导出为 <strong>PCOMP</strong>、<strong>PCOMPG</strong> 或 <strong>PSHELL</strong> 卡上的 <strong>NSM</strong>。</p></td>
+               </tr>
+               <tr bgcolor="#f7f7f7">
+                 <td colspan="1" rowspan="1"><p><strong>阻尼系数</strong></p></td>
+                 <td colspan="1" rowspan="1"><p>导出为 <strong>PCOMP</strong>、<strong>PCOMPG</strong> 或 <strong>PCOMPS</strong> 卡上的 <strong>GE</strong>。</p></td>
+               </tr>
+               <tr bgcolor="#f7f7f7">
+                 <td colspan="1" rowspan="1"><p><strong>应力或应变输出请求</strong></p></td>
+                 <td colspan="1" rowspan="1"><p>如果选定，则对于层合板中的所有层片，<strong>SOUT</strong> 将在 <strong>PCOMP</strong>、<strong>PCOMPG</strong> 或 <strong>PCOMPS</strong> 卡上导出为 <strong>YES</strong>。对于 <strong>PCOMPS</strong> 卡，<strong>SOUT</strong> 适用于 <em>*.f06</em>和 <em>*.op2</em> 输出文件。对于 <strong>PCOMP</strong> 和 <strong>PCOMPG</strong> 卡，<strong>SOUT</strong> 仅适用于 <em>*.f06</em> 输出文件。选中该复选框可在<strong>后处理导航器</strong>中显示层片结果。</p></td>
+               </tr>
+               <tr bgcolor="#f7f7f7">
+                 <td colspan="1" rowspan="1"><p><strong>层合板选项</strong></p></td>
+                 <td colspan="1" rowspan="1"><p>为 <strong>PCOMP</strong> 和 <strong>PCOMPG</strong> 卡提供专用的刚度计算。</p></td>
+               </tr>
+               <tr bgcolor="#f7f7f7">
+                 <td colspan="1" rowspan="1"><p><strong>输出格式</strong></p></td>
+                 <td colspan="1" rowspan="1"><p>可以将 2D 层合板导出为 <strong>PCOMP</strong>、<strong>PCOMPG</strong> 或 <strong>PSHELL</strong> 卡。可以将 3D 层合板导出为 <strong>PCOMPS</strong>。</p></td>
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+            </tbody>
+            
+         </table>
+         
+         <p>Nastran 在内部将 <strong>PCOMP</strong> 和<strong>PCOMPG</strong> 卡以及关联的材料卡转换为等同的 <strong>PSHELL</strong> 卡，它包含最多 4 个各向异性 <strong>MAT2</strong> 材料卡。每个 <strong>MAT2</strong> 卡表示一个不同的行为，具体取决于参考它的 <strong>PSHELL</strong> <strong> MID</strong>：</p>
+         <ul>
+           <li>
+             <p>MID1：膜</p>
+           </li>
+           <li>
+             <p>MID2：弯曲</p>
+           </li>
+           <li>
+             <p>MID3：横向剪切</p>
+           </li>
+           <li>
+             <p>MID4：膜弯曲耦合</p>
+           </li>
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

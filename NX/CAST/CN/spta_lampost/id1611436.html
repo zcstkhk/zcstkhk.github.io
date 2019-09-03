@@ -1,0 +1,980 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>将层合板结果导出至电子表格</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>将层合板结果导出至电子表格</h2>
+         <p>在电子表格中显示层合板应力结果，并辨别最大应力出现在何处，您也将显示应力 11 大于2.7 x 10<sup>3</sup> MPa 的所有单元。</p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/simulation_navigator_tab.gif" border="0"> <strong>仿真导航器</strong></p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0">&nbsp;<strong>层合板后处理报告 1</strong></p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb3.gif" border="0"> &nbsp;<strong>创建电子表格报告</strong></p>
+               <p>将打开<strong>电子表格报告</strong>对话框。</p>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="4" cellspacing="0" frame="box" width="330">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="20">
+                     
+                     <col span="1" width="0*">
+                     
+                     <col span="1" width="0*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/check_box_on.gif" border="0"></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>求解器壳单元合应力</strong></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               
+               <table cellspacing="0" class="option_list" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="86">
+                     
+                     <col span="1" width="185*">
+                     
+                     <col span="1" width="20">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>层片应力计算位置</strong></p>
+                           
+                        </td>
+                        
+                        <td class="border1a" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">全部选中</p>
+                           
+                        </td>
+                        
+                        <td class="nopadding" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="top" src="../graphics/nonLocalized/nx_dss/icons/images/option_arrow_no_border.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="tab_left" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td class="tab_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>输出</strong></p>
+                           
+                        </td>
+                        
+                        <td class="tab_right" colspan="1" rowspan="1" width="16">
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="45">
+                     
+                     <col span="1" width="*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="banner_left" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td class="banner_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>层片应力和应变</strong></p>
+                           
+                        </td>
+                        
+                        <td class="banner_right" colspan="1" rowspan="1" width="45">
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="4" cellspacing="0" frame="box" width="330">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="20">
+                     
+                     <col span="1" width="0*">
+                     
+                     <col span="1" width="0*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/check_box_on.gif" border="0"></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>层片应力</strong></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="4" cellspacing="0" frame="box" width="330">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="20">
+                     
+                     <col span="1" width="0*">
+                     
+                     <col span="1" width="0*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/check_box_on.gif" border="0"></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>XX</strong></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="4" cellspacing="0" frame="box" width="330">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="20">
+                     
+                     <col span="1" width="0*">
+                     
+                     <col span="1" width="0*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/check_box_on.gif" border="0"></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>YY</strong></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="4" cellspacing="0" frame="box" width="330">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="20">
+                     
+                     <col span="1" width="0*">
+                     
+                     <col span="1" width="0*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/check_box_on.gif" border="0"></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>最大主应力</strong></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="4" cellspacing="0" frame="box" width="330">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="20">
+                     
+                     <col span="1" width="0*">
+                     
+                     <col span="1" width="0*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/check_box_on.gif" border="0"></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>最小主应力</strong></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="4" cellspacing="0" frame="box" width="330">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="20">
+                     
+                     <col span="1" width="0*">
+                     
+                     <col span="1" width="0*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/check_box_on.gif" border="0"></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>最大剪切</strong></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="tab_left" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td class="tab_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>过滤</strong></p>
+                           
+                        </td>
+                        
+                        <td class="tab_right" colspan="1" rowspan="1" width="16">
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="4" cellspacing="0" frame="box" width="330">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="20">
+                     
+                     <col span="1" width="0*">
+                     
+                     <col span="1" width="0*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/check_box_on.gif" border="0"></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>启用详细输出</strong></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               
+               <table cellspacing="0" class="option_list" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="86">
+                     
+                     <col span="1" width="185*">
+                     
+                     <col span="1" width="20">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>过滤器类型</strong></p>
+                           
+                        </td>
+                        
+                        <td class="border1a" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">应力 XX</p>
+                           
+                        </td>
+                        
+                        <td class="nopadding" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="top" src="../graphics/nonLocalized/nx_dss/icons/images/option_arrow_no_border.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               
+               <table cellspacing="0" class="input_field" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="90">
+                     
+                     <col span="1" width="190*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>阈值</strong></p>
+                           
+                        </td>
+                        
+                        <td class="border1b" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">2.7e6</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="4" cellspacing="0" frame="box" width="330">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="20">
+                     
+                     <col span="1" width="0*">
+                     
+                     <col span="1" width="0*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/check_box_on.gif" border="0"></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>使用绝对值</strong></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" height="19" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td class="button_middle" colspan="1" height="19" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>确定</strong></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" height="19" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td colspan="1" height="19" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <table border="0" cellpadding="0" cellspacing="0" class="navigator" align="center">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr valign="middle">
+                        
+                        <td colspan="1" height="19" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/simpart_sc.bmp.gif" border="0">&nbsp; Mud_Guard_lamdraping_sim.sim
+                           </p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr valign="middle">
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_bentdown_plus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/fem_meshed_part_sc.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/checkbox_redcheck.gif" border="0">&nbsp; Mud_Guard_lam_sdraping.fem
+                           </p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr bgcolor="" valign="middle">
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape_plus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/checkbox_redcheck.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/folder.gif" border="0">&nbsp; CSYS
+                           </p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr valign="middle">
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape_plus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/folder.gif" border="0">&nbsp; 组
+                           </p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr valign="middle">
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/folder.gif" border="0">&nbsp; 自由度集</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr bgcolor="" valign="middle">
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/folder.gif" border="0">&nbsp; 区域
+                           </p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr bgcolor="" valign="middle">
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/checkbox_dashed_sc.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/field.gif" border="0">&nbsp; 字段
+                           </p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr valign="middle">
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/simulation_object.gif" border="0">&nbsp; 仿真对象容器</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr valign="middle">
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape_plus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/checkbox_redcheck.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/loads.gif" border="0">&nbsp; 载荷容器</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr valign="middle">
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape_plus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/checkbox_redcheck.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/boundary_conditions.gif" border="0">&nbsp; 约束容器</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr valign="middle">
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape_minus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/linear_static_sc.gif" border="0">&nbsp;Solution 1
+                           </p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr valign="middle">
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/checkbox_dimcheck.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/simulation_object.gif" border="0">&nbsp; 仿真对象</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr valign="middle">
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape_plus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/checkbox_redcheck.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/boundary_conditions.gif" border="0">&nbsp; 约束
+                           </p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr valign="middle">
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape_minus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/assyseq_new.gif" border="0">&nbsp;子工况 &ndash; 静态载荷 1 </p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr valign="middle">
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_bent_plus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/checkbox_redcheck.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/loads.gif" border="0">&nbsp; 载荷
+                           </p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr valign="middle">
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_bent.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/ruler_and_legend.gif" border="0">&nbsp;结果
+                           </p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr valign="middle">
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_bent_minus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/ruler_and_legend.gif" border="0">&nbsp;层合板后处理报告 1
+                           </p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr valign="middle">
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/blank.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_bent.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/spreadsheet.gif" border="0">&nbsp;电子表格报告 1&nbsp;<img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/red_arrow.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0">&nbsp;<span class="no-bottom-margin"><strong>电子表格报告 1</strong></span></p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb3.gif" border="0"> &nbsp;<strong>导出至电子表格</strong></p>
+               
+               <table class="attentionTable attn_tip">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">提示</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>如果您尚未安装 Excel，使用<strong>导出至 CSV 文件</strong>。</p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+            <li>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/laminates/lam_solving_nastran/laminate_spreadsheet_ansys.gif"></p>
+               
+               <table class="attentionTable attn_note">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">注释</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>最大应力 11 出现在层片1的底部(element 668)，大小为3.47 x 10<sup>3</sup> MPa，大于在上一页中看见的值(2.74 x 10<sup>3</sup> MPa)，那个值是仅在层片中间评估的 Nastran 结果，它是层片1中部(单元 668)处的值。</p>
+                        
+                        <p>层片结果表将显示所有应力 11 大于 2.7 x 10<sup>3</sup> MPa 的单元。</p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+               <table class="attentionTable attn_note">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">注释</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>查看最大应力的值以及出现的位置。</p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/menu.gif" border="0"> <strong>文件</strong><strong>→<strong>关闭 &amp; 返回到后处理</strong></strong>(Microsoft Excel 窗口) </p>
+               
+            </li>
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

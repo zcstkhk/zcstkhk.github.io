@@ -1,0 +1,62 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Check-Mate 日志文件</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>Check-Mate 日志文件</h2>
+         
+         <p>日志文件包含 Check-Mate 检查的结果数据。在<strong>设置测试</strong>对话框的<strong>运行选项</strong>选项卡中，您可以选择将 Check-Mate 测试结果保存到下列位置的其中一个：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>当前部件文件</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>外部日志文件</p>
+               
+               <p>如果您使用的是本地原生 NX，那么外部日志文件将被保存在本地文件系统中；如果您使用的是 Teamcenter Integration for NX，那么外部日志文件将被保存到 Teamcenter 数据库中。</p>
+               
+               <p>外部日志文件的文件扩展名为 XML，NX 将同时生成包含结果数据的 XML 文件，以及包含用于显示结果数据的样式表单的 <span class="fileName">checkmate_log.xsl</span> 文件。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>此外，如果编创的检查器中包含保存参数，则用于生成日志文件的选项可以在检查器的<strong>定制</strong>对话框中找到。</p>
+         
+         <p>您可以使用<strong>质量仪表板</strong>实用工具 <strong>Check-Mate</strong> <strong>查看器</strong>以及<strong>质量仪表板报告生成器</strong>来查看日志文件内容，两者均是基于 Java 的应用程序，在 NX 外部运行，并且不需要任何特殊许可证。 </p>
+         
+         <table class="attentionTable attn_tip">
+            <tr>
+               <td valign="top">
+                 <p class="attn_title">提示</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>要定义外部日志文件的默认文件夹，请设置环境变量 <strong>UGII_CHECKMATE_LOG_DIR</strong>。</p>
+                  
+               </td>
+           </tr>
+        </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

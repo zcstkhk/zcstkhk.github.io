@@ -1,0 +1,55 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>冗余的约束将被忽略</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>冗余的约束将被忽略</h2>
+         
+         <p>运动仿真将忽略冗余的约束，因此，不会从它们之中捕捉力或扭矩。如果在求解机构时有冗余的自由度，NX 将会给出警告。</p>
+         
+         <p>检查机构的 Gruebler 数，它显示在<strong>运动导航器</strong>中的 <strong>Gruebler 数</strong>列中，如果 Gruebler 数大于0，表明机构中包含冗余的约束，求解器将忽略这些约束， 并且将不会从这些忽略的约束中捕捉载荷。</p>
+         <p>例如，假设门有三个使用旋转副来表示的铰链，其中两个铰链(如图中的运动副2和3)为冗余约束，软件将只捕捉其中一个铰链的反作用扭矩(图中为运动副1)。</p><div><img align="middle" src="../graphics/nonLocalized/nx_dss/motion/loads/mtn_redundant_joints.gif" border="0"></div>
+         <p>如果必须在多个运动副上捕捉力，可以将运动副替换为衬套，它将固定在适合的方向上，在例子中，衬套需要被：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>径向固定</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>锥向顺从</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>长度方向(轴向)固定</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>根据您的工程来判断并决定衬套要使用的刚度，过低的值将引起虚假位移，而过高的值将引起求解时的数学问题。同时，因为衬套产生的弹簧可能引起高频的加速度，所以考虑在衬套上使用阻尼。</p>
+         
+         <p>使用衬套，软件将可以捕捉所以三个接合位置处的扭矩。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

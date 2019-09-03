@@ -1,0 +1,67 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>超级采样</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2><strong>超级采样</strong></h2>
+         
+         <p><span class="uiTerm">超级采样通过减少在较高分辨率(超级采样时间乘以输出分辨率)下生成图像的反锯齿效果，并对图像中的像素取平均值来改进图像的可视细节。</span></p>
+         
+         <table border="0" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="50*">
+               
+               <col span="1" width="30">
+               
+               <col span="1" width="50*">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/visualization/preferences/shading_graphic23a.gif"></p>
+                     
+                     <p class="no-bottom-margin"><strong>超级采样</strong> = 1(关闭)</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top"></td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/visualization/preferences/shading_graphic23b.gif"></p>
+                     
+                     <p><strong>超级采样</strong> = 4，对于每个像素的宽度和高度生成 16 个样本 (4x4)</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <p>超级采样可改进图像的可视细节，但是渲染时间以指数程度增加。但您可以使用较低的渲染方法；例如，<strong>照片般逼真的</strong>对应于<strong>光线追踪</strong>。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

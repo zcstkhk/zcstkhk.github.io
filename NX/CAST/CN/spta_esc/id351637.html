@@ -1,0 +1,73 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Creating a fluid volume</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Creating a fluid volume</h2>
+         <p>While the solid mesh for a design part occupies the part itself, the fluid mesh occupies the void between the bodies.</p>
+         <p>Because the void itself is not a body, you must create a solid body to occupy the void, You create the solid body in the Modeling application  then mesh this body with 3D fluid elements with the NX meshing tools or using <span class="uiTerm">Fluid Domain</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/simulation/advanced_simulation/fluid_domain.gif" border="0"> simulation object in the FEM or Simulation files respectively.
+         </p><a name="genid_spta_esc_15"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/maya/heatpipe/heatpipeA209.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>Electronics fan and heatsink</h4>
+         </div><a name="genid_spta_esc_16"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/maya/heatpipe/heatpipeA208.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>Extracted fluid volume of the electronics fan and heatsink</h4>
+         </div>
+         <p>You can model the geometry of the fluid inside an assembly or a part with a complex internal cavity. You can also model multiple fluids in a single model, provided no mixing takes place.</p>
+         <p>You can create a fluid volume using one of these methods:</p>
+         <ul>
+            
+            <li>
+               
+               <p>Define a sketch representing the 2D shape of a regular fluid volume and then <span class="uiTerm">Extrude</span> and/or <span class="uiTerm">Revolve</span> the sketch. Use this technique if you know the shape and dimensions of the fluid volume.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Use Boolean operations to create the fluid volumes. You create a solid representing the enclosed space and select the <span class="uiTerm">Unite</span>, <span class="uiTerm">Subtract</span>, or <span class="uiTerm">Intersect</span> to modify the shape of the volume based on the intersecting solid component geometry. Use this technique if you want to create this fluid volume for single use in an analysis and if you are not interested in maintaining links for geometry updates. 
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Create the enclosed fluid volume as a separate part file and component in your assembly file structure using the <span class="uiTerm">WAVE Geometry Linker</span> command. This command copies an instance of the geometry of the inner volume and the components from the assembly part file. You then modify the contour to represent the fluid volume by using the <span class="uiTerm">Delete Face</span> command (on the <span class="uiTerm">Synchronous Modeling</span> toolbar). Use this technique if you want to maintain a link to the geometry of assembly components to allow for geometry updates. 
+               </p>
+               
+            </li>
+            
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

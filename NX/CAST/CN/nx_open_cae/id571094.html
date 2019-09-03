@@ -1,0 +1,78 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Create the physical property table</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Create the physical property table</h2>
+         <p>There are several methods to set the thickness for a shell mesh, including automatic determination from a midsurface, element associated data and physical property tables. For this example, the mesh thickness is explicitly set in a physical property table. To create a physical property table, it must have a descriptor type (&ldquo;PSHELL&rdquo;) , a language name (&ldquo;NX NASTRAN &ndash; Structural&rdquo;), a solver name (&ldquo;NX Nastran&rdquo;), a name and a label. The name and the label are the values you would see if you created the table within NX.  Both the name and the label must be unique.</p>
+         <p>To avoid creating duplicate physical property tables (i.e., those with the same thickness), a check is made. The physical property tables are named using the element thickness and &ldquo;<span class="codeText">THK</span>&rdquo;. If the same element thickness is calculated, this program will attempt to create a physical property table named as above. If it fails, possibly due to a physical property table with that name already in existence, then the old one will be used (Try-Catch structure).
+         </p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>This is a simple method with a nonzero label. The label could already exist, and in that case, this program will crash. More elaborate methods of searching existing physical property tables are possible, but add length and complexity not necessary for this activity. </p>
+                  
+               </td>
+            </tr>
+         </table>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>Property values that are entries within dialog boxes inside of NX are set using expressions.</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <p>Add the following lines to your routine, below those added in the previous section.</p><pre class="codeExample "><span class="userInput">            ' Create Physical Property Table - set thickness to 10% of auto element size
+            Try
+                myPhysicalPropertyTable = baseFEMPart.PhysicalPropertyTables.CreatePhysicalPropertyTable(&quot;PSHELL&quot;, &quot;NX NASTRAN - Structural&quot;, &quot;NX NASTRAN&quot;, myThickness.ToString &amp; &quot; THK&quot;, 5050 + myCounter)
+                myPropertyTable = myPhysicalPropertyTable.PropertyTable
+                Dim myThicknessExpression As Expression = myPropertyTable.GetScalarPropertyValue(&quot;element  thickness&quot;)
+                baseFEMPart.Expressions.Edit(myThicknessExpression, myThickness.ToString)
+                myPropertyTable.SetScalarPropertyValue(&quot;element thickness&quot;, myThicknessExpression)
+            Catch
+                myPhysicalPropertyTable = baseFEMPart.PhysicalPropertyTables.FindObject(&quot;PhysPropTable[&quot; &amp; myThickness.ToString &amp; &quot; THK]&quot;)
+            End Try
+</span></pre><table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>In the <span class="codeText">Catch</span> statement, the <span class="codeText">myPhysicalPropertyTable</span> is located using the <span class="emphasis">Journal Identifier</span>. The journal identifier is the way that NX refers to the object internally. Often, the only way to determine the journal identifier is to create your own journal, or put some lines of code in your program as a debugging measure which write the journal identifier to the list window:
+                  </p>
+                  
+                  <p><span class="codeText">theLW.Open()</span></p>
+                  
+                  <p><span class="codeText">theLW.WriteLine(myPhysicalPropertyTable.JournalIdentifier.ToString)</span></p>
+                  
+                  <p>This will open the listing window and print the journal identifier. You can then use the pattern to determine the name of any journal identifier of the same type.</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

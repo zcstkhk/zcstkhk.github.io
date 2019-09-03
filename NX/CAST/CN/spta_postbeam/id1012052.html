@@ -1,0 +1,95 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>计算梁应力</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>计算梁应力</h2><a name="ndxgenid_spta_postbeam_14"></a>
+         <a name="ndxgenid_spta_postbeam_15"></a>
+         
+         
+         <p>结构 FE 求解器不输出梁单元的完整应力张量。这意味着：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>用求解器应力输出的应力显示不完整</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>派生结果（如 Von Mises 应力）可能不准确</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>许多列在<strong>后处理导航器</strong>中的应力分量数据集是空的</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>为了获得完整、精确的应力张量分量，软件可以根据单元力、材料属性和梁几何体计算应力张量。</p>
+         
+         <p>要计算应力张量分量，请在<strong>设置结果</strong>对话框中选择<strong>根据力和梁几何体计算梁单元结果</strong>。</p>
+         <a name="id1012053"></a>
+         
+         
+         
+        <h3>应力计算过程</h3>
+         
+         
+         
+         <p><a name="ndxgenid_spta_postbeam_17"></a>
+            <a name="ndxgenid_spta_postbeam_18"></a>请求计算的梁应力时，软件会：</p>
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>在结果文件中查询材料属性（杨氏模量和泊松比）和截面定义。</p>
+               <p>如果结果文件中未提供此信息，将加载关联仿真，软件会在模型中查询该信息。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>从当前载荷工况或迭代中调用单元力结果。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在每个截面上生成一个自适应网格，然后计算网格中的每个节点上的应力张量。还会计算每个节点的派生分量，如 Von Mises。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>保留离原始应力恢复点最近的节点处的张量。</p>
+               
+            </li>
+            
+         </ol>
+         
+         
+         <p>进行计算时会在状态行显示进度条。对于包含大量截面定义的大型模型，计算可能需要较长时间。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

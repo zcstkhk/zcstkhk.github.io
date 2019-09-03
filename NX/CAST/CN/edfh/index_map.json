@@ -1,0 +1,13 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"旋转和半剖视图",file:"id1056467.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"旋转剖视图",file:"views_view_revolved_ov.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"旋转剖视图概念",file:"view_revolved_concepts_rt.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"创建旋转剖视图",file:"id756464.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e9",title:"半剖视图",file:"views_view_half_section_ov.html",type:"topic",parent:"",children:[
+{id:"d5e10",title:"创建半剖视图",file:"id756504.html",type:"activity",parent:"d5e9"}]},
+{id:"d5e12",title:"编辑剖视图",file:"genid_editing_section_views_257_5798.html",type:"topic",parent:"",children:[
+{id:"d5e13",title:"编辑剖视图",file:"id756526.html",type:"activity",parent:"d5e12"}]},
+{id:"d5e15",title:"编辑剖切线符号",file:"genid_editing_section_line_symbols_234_6338.html",type:"topic",parent:"",children:[
+{id:"d5e16",title:"编辑剖视图上的分段",file:"id756542.html",type:"activity",parent:"d5e15"}]}
+]}

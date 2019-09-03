@@ -1,0 +1,54 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Import namespaces and create session references</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Import namespaces and create session references</h2>
+         <p>The <span class="fileName">Auto_Mesh2D_ans.vb</span> answer file is provided for comparison with your application file. If you get stuck while editing, open the answer file in Visual Studio so you can tab between the two files to locate errors. You can also use WinMerge to highlight the differences between your application file and the answer file.
+         </p>
+         <p></p>
+         <p>If you are using Visual Studio, you will be presented with auto completion options as you type. Make sure that you are selecting the appropriate item that matches the one shown in the training material, because there are many similar items presented. This will save debugging time once you are finished.</p>
+         <p>Namespaces must be imported to be used. The System, NXOpen and NXOpen.UF import statements are created by the wizard. For this project, you need the NXOpen.CAE, NXOpen.Utilities, NXOpen.UF.Obj, and NXOpenUI namespaces. Add the highlighted lines following the <span class="codeText">Imports NXOpen.UF</span> statement.
+         </p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>The code additions can be cut and pasted into your application file to help reduce typographical errors.</p>
+                  
+               </td>
+            </tr>
+         </table><pre class="codeExample ">Option Strict Off
+Imports System
+Imports NXOpen
+Imports NXOpen.UF
+    <span class="userInput">Imports NXOpen.CAE
+Imports NXOpen.Utilities
+Imports NXOpen.UF.UFObj
+Imports NXOpenUI ' Added for mesh size prompt &lt;&lt;&lt;&lt;&lt;&lt; </span></pre><p>Move the following<span class="codeText"> Dim</span> statements from inside the <span class="codeText">Main()</span> routine to just after the <span class="codeText">Module</span> statement, and add the highlighted lines. These references are now created at the module level (before <span class="codeText">Main()</span> ).
+         </p>
+         <p>Remove the <span class="codeText">Dim theUI As UI = UI.GetUI()</span> statement from your journal file.
+         </p><pre class="codeExample ">Module Auto_Mesh2D
+    Dim theSession As Session = Session.GetSession()
+    Dim theUfSession As UFSession = UFSession.GetUFSession()
+<span class="userInput">    Dim theLW As NXOpen.ListingWindow = theSession.ListingWindow()
+    Dim theUI As NXOpen.UI = NXOpen.UI.GetUI
+</span></pre><div id="footer"></div>
+      </div>
+   </body>
+</html>

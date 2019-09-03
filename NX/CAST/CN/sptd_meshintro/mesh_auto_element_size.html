@@ -1,0 +1,59 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>自动设置单元大小</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>自动设置单元大小</h2><a name="ndxgenid_spta_meshintro_14"></a>
+         
+         
+         <p>在网格划分对话框中，可以使用<strong>自动单元大小</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/suggested_element_size.gif" border="0"> 选项让软件根据所选的几何体计算单元的估计长度。软件根据一系列不同的标准和因子进行<strong>自动单元大小</strong>计算。 </p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>对于 2D 网格，软件进行一系列的计算以确定估计尺寸。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>对于 3D 网格，软件先进行 2D 计算，然后进行下一步估算，以确定体单元的估计尺寸。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <a name="genid_spta_meshintro_15"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/meshing/2d_3d_dialogs.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>(左侧) 3D 单元大小选项；(右侧) 2D 单元大小选项</h4>
+         </div>
+         
+         
+         
+         <p><strong>自动单元大小</strong>所计算的单元大小是估计值，基于当前选定的几何体的某些特征。您始终都应认真地评估模型，并在确定单元大小时进行正确的工程判断(无论是接受软件的估计值还是指定其他大小)。此估算应该考虑模型几何体的各自特征，比如最小壁厚，以及您的分析需求。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

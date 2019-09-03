@@ -1,0 +1,136 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Inspect the tool path visually</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Inspect the tool path visually</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Operation Navigator</span>, right-click <span class="uiTerm">FIXED_CONTOUR</span> and choose <span class="uiTerm">Tool Path</span>&rarr;<span class="uiTerm">Verify</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>On the <span class="uiTerm">2D Dynamic</span> tab, move the <span class="uiTerm">Animation Speed</span> slider to <span class="userInput">1</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="userInput">Play</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/play.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">No Blank</span> message box, click <span class="userInput">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Blank Geometry</span> dialog box, in the <span class="uiTerm">Type</span> group, from the list, select <span class="uiTerm">Offset from Part</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Offset</span> group, in the <span class="uiTerm">Offset</span> input box, type <span class="userInput">.000</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="userInput">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/tilt_tool_axis/tilt_avoidance.png"></p>
+                     
+                     <p>Notice how the tool axis tilts away from the part to avoid collisions. </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="userInput">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>NX replaces the colliding 3-axis motions with 5-axis motions to avoid the collision.</p>
+                     
+                     <p>Because there are no collisions, the <span class="uiTerm">List</span> button is unavailable.
+                     </p>
+                     
+                     <table class="attentionTable attn_note">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">Note</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>If you regenerate the operation in which NX tilted the tool path, the tilted tool path is not maintained, and the tool path reverts to being a 3-axis tool path. </p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>Close the part.</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

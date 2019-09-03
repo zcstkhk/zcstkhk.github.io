@@ -1,0 +1,78 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Defining design variables</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Defining design variables </h2>
+         <a name="ndxgenid_sptd_geoopt_24"></a>
+         
+         <a name="ndxgenid_sptd_geoopt_25"></a>
+         
+         <a name="ndxgenid_sptd_geoopt_26"></a>
+         
+         
+         <p><span class="emphasis">Design variables</span> define those aspects of your design that you allow the optimization to modify for the redesign. 
+         </p>
+         
+         <p>Depending on your model and solution type, you can define the following values as design variables: </p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>Beam section properties</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Shell element properties</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Feature dimensions</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Sketch dimensions</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>NX expressions </p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         
+         <div class="division">
+            
+            <h3>Using NX expressions as design variables</h3>
+            
+            <p>When you create a design variable using an NX expression that was created outside of the Simulation file, the software creates an interpart expression that the design variable references. The interpart expression automatically locks the original expression. After you solve the optimization, if you decide to reset the model by solving again, you must first delete the design variable to unlock the expression, and then recreate the design variable. </p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

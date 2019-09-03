@@ -1,0 +1,108 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>使用线缆副来连接两个滑动副</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>使用线缆副来连接两个滑动副</h2>
+         
+         <p>线缆副将定义两个滑动副之间的运动，当一个滑动副移动时，它的配对滑动副也将移动。</p>
+         <a name="ndxgenid_emot_links_constraints_210"></a>
+         
+         <a name="ndxgenid_emot_links_constraints_211"></a>
+         
+         
+         <a name="genid_emot_links_constraints_213" id="genid_emot_links_constraints_213"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div>
+                           <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;"><script type="dojo/method">
+      flashData= {
+          swfSrc : '../graphics/graphicLibrary/nx_dss/motion/links_constraints/cable_anim.swf',
+          graphSrc : '../graphics/graphicLibrary/nx_dss/motion/links_constraints/cable_anim.gif',
+          align : 'center',
+          base : '.',
+          height : '226',
+          width : '404',
+          bgcolor : '#FFFFFF',
+          flashVersion : '7',         
+          looping : 'false',
+          play : 'false',
+          menu : 'true',
+          parameters : ''
+      }
+      top.loadFlash(this,flashData);
+    </script></div>
+                        </div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>线缆副将滑动副(1)和滑动副(2)连结在一起</h4>
+         </div>
+         
+         
+         <p>线缆副：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>不会发生滑动</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>不会伸展</p>
+               
+               <p>例如，考虑块 A 从左向右移动，由于线缆副的关系，它将推动第二个块 B，如果块 A 突然停止，则块 B 也将随之停止，两个块之间的距离保持不变。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>可以有1对1的运动关系，速度和方向都相同(默认比率)。或者，可以使用定义的比率，使其中一个滑动副的移动速度快/慢一些，或者移动方向与它的配对滑动副相反。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p><strong>比率</strong>是第一个滑动副相对于第二个滑动副运动的比率。</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>比率</strong>的符号(+ 或 &ndash;)将决定第二个滑动副的运动方向</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>比率</strong>的大小将决定第二个滑动副的运动速度</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>例如，<strong>比率</strong>为2表示第一个滑动副移动了一单位位移时，第二个滑动副将移动1/2单位位移。</p>
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

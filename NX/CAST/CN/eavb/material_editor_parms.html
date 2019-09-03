@@ -1,0 +1,76 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Material/Texture parameters area</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>材料/纹理参数区域</h2>
+         <p>The Material/Texture parameter area has five property pages:</p>
+         <ul>
+            
+            <li>
+               
+               <p><a href="#" onclick="showDialog('view_material_editor_general_op')"><span class="uiTerm">General</span></a> &mdash; Specifies the general properties of all materials such as color and light. 
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><a href="#" onclick="showDialog('view_material_editor_bumps_op')"><span class="uiTerm">Bumps</span></a> &mdash; Specifies bump map textures and displacement parameters. 
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><a href="#" onclick="showDialog('view_material_editor_pattern_op')"><span class="uiTerm">Pattern</span></a> &mdash; Specifies image texture maps and other parameters that modify color. 
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><a href="#" onclick="showDialog('view_material_editor_transparency_op')"><span class="uiTerm">Transparency</span></a> &mdash; Specifies parameters that make the surface translucent in some way. 
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><a href="#" onclick="showDialog('view_material_editor_texture_space_op')"><span class="uiTerm">Texture Space</span></a> &mdash; Specifies parameters that determine how a texture wraps around an object. 
+               </p>
+               
+            </li>
+            
+         </ul>
+         <div dojoType="dijit.Dialog" id="view_material_editor_general_op" title="General">
+            <div dojoType="dijit.layout.ContentPane" href="material_editor_general_op.html" extractContent="true" tabIndex="0"></div>
+         </div>
+         <div dojoType="dijit.Dialog" id="view_material_editor_bumps_op" title="Bumps">
+            <div dojoType="dijit.layout.ContentPane" href="material_editor_bumps_op.html" extractContent="true" tabIndex="0"></div>
+         </div>
+         <div dojoType="dijit.Dialog" id="view_material_editor_pattern_op" title="Pattern">
+            <div dojoType="dijit.layout.ContentPane" href="material_editor_pattern_op.html" extractContent="true" tabIndex="0"></div>
+         </div>
+         <div dojoType="dijit.Dialog" id="view_material_editor_transparency_op" title="Transparency">
+            <div dojoType="dijit.layout.ContentPane" href="material_editor_transparency_op.html" extractContent="true" tabIndex="0"></div>
+         </div>
+         <div dojoType="dijit.Dialog" id="view_material_editor_texture_space_op" title="Texture Space">
+            <div dojoType="dijit.layout.ContentPane" href="material_editor_texture_space_op.html" extractContent="true" tabIndex="0"></div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

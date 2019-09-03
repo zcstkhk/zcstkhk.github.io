@@ -1,0 +1,110 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>底面和壁铣每刀切削深度</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>底面和壁铣每刀切削深度</h2>
+         <p>通过<strong>每刀切削深度</strong>可指定切削层的最大深度。实际深度将尽可能接近<strong>每刀切削深度</strong>值，并且不会超过它。</p>
+        <p>在底面和壁铣削工序中，每个选定面的切削层的计算方法如下：</p>
+         <ul>
+           <li>
+             <p>切削层数 = (<strong>毛坯距离</strong> - <strong>最终底面余量</strong>) / <strong>每刀切削深度</strong></p>
+             <table class="attentionTable attn_note">
+               <tr>
+                 <td valign="top">
+                   <p class="attn_title">注释</p>
+                 </td>
+                 <td class="attention_main">
+                   
+                   <p><strong>毛坯距离</strong>和<strong>最终底面余量</strong>是从面所在平面起、沿垂直于面所在平面的刀轴进行测量的。</p>
+                   
+                 </td>
+               </tr>
+             </table>
+           </li>
+         </ul>
+         <p>如果指定的<strong>每刀切削深度</strong>未均匀分割要移除的材料，切削数则被舍入。随后重新计算切削深度以均匀地递增移除余量。</p>
+         <a name="genid_epme_49" id="genid_epme_49"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div>
+                           <table border="1" cellpadding="2" cellspacing="1" align="center">
+                              
+                              <colgroup span="1">
+                                 
+                                 <col span="1">
+                                 
+                                 <col span="1">
+                                 
+                              </colgroup>
+                              
+                              <tbody>
+                                 
+                                 <tr>
+                                    
+                                    <td align="center" colspan="2" rowspan="1">
+                                       
+                                       <p class="no-bottom-margin"><strong>每刀切削深度</strong> = .25</p>
+                                       
+                                    </td>
+                                    
+                                 </tr>
+                                 
+                                 <tr>
+                                    
+                                    <td colspan="1" rowspan="1">
+                                       
+                                       <p class="no-bottom-margin">切削深度 = <strong>每刀切削深度</strong>值</p>
+                                       
+                                    </td>
+                                    
+                                    <td colspan="1" rowspan="1">
+                                       
+                                       <p class="no-bottom-margin">重新计算切削深度</p>
+                                       
+                                    </td>
+                                    
+                                 </tr>
+                                 
+                                 <tr>
+                                    
+                                    <td colspan="1" rowspan="1">
+                                       <img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/face_milling/depth_per_cut.gif" border="0">
+                                       
+                                    </td>
+                                    
+                                    <td colspan="1" rowspan="1">
+                                       <img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/face_milling/depth_per_cut2.gif" border="0">
+                                       
+                                    </td>
+                                    
+                                 </tr>
+                                 
+                              </tbody>
+                              
+                           </table>
+                        </div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>不同材料厚度的相同每刀切削深度值</h4>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>层合板图形报告</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>层合板图形报告</h2>
+         
+         <p>该层合板图形报告生成的层合板结果可以显示在<strong>后处理导航器</strong>中。这些结果存储在当前目录下的二进制文件中。在层片坐标系中，图形报告在层片的中部输出层片结果。在<strong>后处理视图</strong>中，NX 通过<strong>原生</strong>来指定层片坐标系。 </p>
+         <p>NX 可以通过图形方式显示以下层合板结果的包络：</p>
+         <ul>
+           <li>
+             <p>层片应力和应变</p>
+           </li>
+           <li>
+             <p>层片和粘合失效指数</p>
+           </li>
+           <li>
+             <p>层片与胶合强度比</p>
+           </li>
+           <li>
+             <p>层片和胶合安全裕度</p>
+           </li>
+         </ul>
+         <p>NX 在您为层合板后处理报告元解算方案指定的结果集中产生层合板图形报告。</p>
+         <p>使用可从层合板后处理报告节点中访问的<strong>创建图形报告</strong>命令，可以指定结构数据、层合板报告、包络类型，以及所需的过滤设置。可以使用可在图形报告节点中访问的<strong>编辑</strong>命令来更改指定的设置。</p>
+        <p>对于每个层合板结果，必须指定一种包络类型。NX 在节点处显示：</p>
+         <ul>
+           <li>
+             <p>如果选择<strong>最大 &amp; 最小</strong>，指定层合板结果的最大值和最小值。</p>
+           </li>
+           <li>
+             <p>如果选择<strong>最小</strong>，指定层合板结果的最小值。</p>
+           </li>
+           <li>
+             <p>如果选择<strong>最大</strong>，指定层合板结果的最大值。</p>
+           </li>
+           <li>
+             <p>如果选择<strong>绝对</strong>，指定层合板结果的绝对最大值</p>
+           </li>
+         </ul>
+         
+         <a name="genid_spta_lampost_42"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/laminates/lam_solution_post_process/max_stress_ansys.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>最大应力</h4>
+         </div>
+         
+         <p>包络可单独为最差层片和每个层片显示每个单元上所有选定解算方案、子工况和迭代的结果。</p>
+         <a name="genid_spta_lampost_43"></a><table border="0" cellpadding="0" cellspacing="0" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr valign="middle">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_bent_minus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/laminate_physical_property.gif" border="0">&nbsp;层合板后处理报告 1
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="middle">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_bent_minus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/ruler_and_legend.gif" border="0">&nbsp;图形报告 1 </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/blank.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape_minus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/fringe_dataset.gif" border="0"> 最大绝对层片 FI - 单元的</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/blank.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape_minus.gif" border="0"> 层片 1
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/blank.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_bent.gif" border="0"> 标量
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/blank.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape_plus.gif" border="0"> 层片 2
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/blank.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape_plus.gif" border="0"> 层片 3
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/blank.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape_plus.gif" border="0"> 层片 4
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="" valign="middle">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/blank.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape_plus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/fringe_dataset.gif" border="0"> 最大绝对层片 FI - 单元的</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="middle">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/blank.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape_plus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/fringe_dataset.gif" border="0"> 最大绝对 FI - 单元的</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="middle">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/blank.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_bent_minus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/fringe_dataset.gif" border="0"> 最大绝对胶合 FI - 单元的 </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="middle">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/blank.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_space.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_bent.gif" border="0"> Scalar
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <table class="attentionTable attn_caution">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注意</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>如果重命名或编辑层合板图形报告，则会删除<strong>仿真导航器</strong>中的<strong>结果</strong>节点。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+              <colgroup span="1">
+                <col span="1" width="149">
+                <col span="1" width="*">
+              </colgroup>
+              <tr valign="top">
+                <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">应用模块</p></td>
+                <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">高级仿真</p></td>
+              </tr>
+              <tr>
+                <td class="locator_shade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">先决条件</p></td>
+                <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">必须在仿真文件中操作，并且激活层合板后处理报告。</p></td>
+              </tr>
+              <tr>
+                <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">工具条</p></td>
+                <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin"><strong>层合板→图形后处理报告</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/laminates/graphical_post_report.gif" border="0"></p></td>
+              </tr>
+              <tr>
+                <td class="locator_shade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">菜单</p></td>
+                <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin"><strong>插入→层合板→高级后处理报告→图形后处理报告</strong></p></td>
+              </tr>
+              <tr>
+                <td class="locator_shade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">仿真导航器</p></td>
+                <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">右键单击层合板后处理报告节点→<strong>创建图形后处理报告</strong></p></td>
+              </tr>
+            </table>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

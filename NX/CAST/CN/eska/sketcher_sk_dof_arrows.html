@@ -1,0 +1,69 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>自由度箭头</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>自由度箭头         </h2>
+         <p>自由度(DOF)箭头 <img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/dof_inline.png" border="0"> 将标记草图上可自由移动的点。自由度有三种类型：定位自由度、转动自由度以及径向自由度。这个示例显示定位约束：</p>
+         <table border="0" cellpadding="6" cellspacing="2" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="310">
+               
+               <col span="1" width="5">
+               
+               <col span="1" width="*">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="left"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_dof_arrows.png"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1"></td>
+                  
+                  <td colspan="1" rowspan="1"><ol type="1" start="1">
+                     <li>
+                       <p>此点仅在 X 方向上可以自由移动。</p>
+                     </li>
+                     <li>
+                       <p>这一点在 X 和 Y 方向上都可以自由移动。</p>
+                     </li>
+                     <li>
+                       <p>此点仅在 Y 方向上可以自由移动。</p>
+                     </li>
+                        
+                    </ol>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <p>当将一个点约束为在给定方向上移动时，NX 会移除 DOF 箭头。应用一个约束可以移除多个 DOF 箭头。当所有这些箭头都消失时，草图即已完全约束。</p>
+         <p>当您需要完全控制设计时，可完全约束草图。请注意，约束草图是可选的。您可以使用欠约束的草图来定义特征。 </p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,18 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"WAVE 自顶向下设计",file:"id1067444.html",type:"topic",parent:""},{id:"d5e4",title:"NX 角色",file:"role_for_course.html",type:"topic",parent:""},
+
+{id:"d5e6",title:"自顶向下设计",file:"id684721.html",type:"topic",parent:"",children:[
+{id:"d5e7",title:"在设计装配中创建部件间关系",file:"id1536549.html",type:"activity",parent:"d5e6"},
+{id:"d5e8",title:"创建设计装配",file:"id1542689.html",type:"activity",parent:"d5e6"},
+{id:"d5e9",title:"创建简化的产品包络体",file:"id1631069.html",type:"activity",parent:"d5e6"},
+{id:"d5e10",title:"复习：使用部件间建模的益处",file:"genid_review_of_wave_controls_22_794.html",type:"topic",parent:"d5e6"}]},
+{id:"d5e12",title:"WAVE 数据加载",file:"id684731.html",type:"topic",parent:"",children:[
+{id:"d5e13",title:"加载 WAVE 数据",file:"id754589.html",type:"activity",parent:"d5e12"},
+{id:"d5e14",title:"加载部件间数据",file:"id684751.html",type:"topic",parent:"d5e12"}]},
+{id:"d5e16",title:"重新指定对象父级",file:"genid_reparenting_objects_266_4797.html",type:"topic",parent:"",children:[
+{id:"d5e17",title:"解决断开的部件间关系",file:"id1619179.html",type:"activity",parent:"d5e16"},
+{id:"d5e18",title:"重新定义部件间关系的父项",file:"id754666.html",type:"activity",parent:"d5e16"}]},
+{id:"d5e20",title:"系统工程",file:"genid_systems_engineering_22_494.html",type:"topic",parent:"",children:[
+{id:"d5e21",title:"实现系统工程",file:"id754850.html",type:"activity",parent:"d5e20"},
+{id:"d5e22",title:"总结",file:"genid_summary_57_447.html",type:"topic",parent:"d5e20"}]}
+]}

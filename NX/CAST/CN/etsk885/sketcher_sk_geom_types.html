@@ -1,0 +1,962 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Geometric Constraints quick reference</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>Geometric Constraints quick reference</h2><a name="genid_etsk885_23" id="genid_etsk885_23"></a><table border="1" cellpadding="8" cellspacing="2" width="95%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="120">
+               
+               <col align="center" span="1" width="89">
+               
+               <col align="center" span="1" width="90">
+               
+               <col span="1" width="6393*">
+               
+            </colgroup>
+            
+            <tr valign="top">
+               
+               <th align="left" bgcolor="#c0c0c0" colspan="1" height="50" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Constraint Type</p>
+                  
+               </th>
+               
+               <th bgcolor="silver" colspan="1" height="50" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Command icon</p>
+                  
+               </th>
+               
+               <th bgcolor="silver" colspan="1" height="50" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Icon in graphics window </p>
+                  
+               </th>
+               
+               <th align="left" bgcolor="#c0c0c0" colspan="1" height="50" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Description</p>
+                  
+               </th>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Fixed</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/sketcher/fixed.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_fixed_sym.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p>Defines fixed characteristics for geometry, depending on the type of geometry as follows:</p>
+                  
+                  <div class="defList">
+                     <div class="defListItem">
+                        <div class="defObject defObjectVert">
+                           <p>Point</p>
+                        </div>
+                        <div class="defMeaning defMeaningVert">
+                           
+                           <p class="no-bottom-margin">Fixes the location.</p>
+                           
+                        </div>
+                     </div>
+                     <div class="defListItem">
+                        <div class="defObject defObjectVert">
+                           <p>Line</p>
+                        </div>
+                        <div class="defMeaning defMeaningVert">
+                           
+                           <p class="no-bottom-margin">Fixes the angle.</p>
+                           
+                        </div>
+                     </div>
+                     <div class="defListItem">
+                        <div class="defObject defObjectVert">
+                           <p>Line, Arc or elliptical arc endpoint</p>
+                        </div>
+                        <div class="defMeaning defMeaningVert">
+                           
+                           <p class="no-bottom-margin">Fixes the location of the endpoint.</p>
+                           
+                        </div>
+                     </div>
+                     <div class="defListItem">
+                        <div class="defObject defObjectVert">
+                           <p>Arc center, elliptical arc center, circle center, or ellipse center</p>
+                        </div>
+                        <div class="defMeaning defMeaningVert">
+                           
+                           <p class="no-bottom-margin">Fixes the location of the center.</p>
+                           
+                        </div>
+                     </div>
+                     <div class="defListItem">
+                        <div class="defObject defObjectVert">
+                           <p>Arc or circle</p>
+                        </div>
+                        <div class="defMeaning defMeaningVert">
+                           
+                           <p class="no-bottom-margin">Fixes the radius and the location of the center.</p>
+                           
+                        </div>
+                     </div>
+                     <div class="defListItem">
+                        <div class="defObject defObjectVert">
+                           <p>Elliptical arc or Ellipse</p>
+                        </div>
+                        <div class="defMeaning defMeaningVert">
+                           
+                           <p class="no-bottom-margin">Fixes the radii and the location of the center.</p>
+                           
+                        </div>
+                     </div>
+                     <div class="defListItem">
+                        <div class="defObject defObjectVert">
+                           <p>Spline control point</p>
+                        </div>
+                        <div class="defMeaning defMeaningVert">
+                           
+                           <p class="no-bottom-margin">Fixes the location of the control point.</p>
+                           
+                        </div>
+                     </div>
+                  </div>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Fully Fixed</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/sketcher/fully_fixed.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_fixed_sym.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">Creates sufficient fixed constraints to completely define the position and orientation of sketch geometry in one step.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Coincident</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/sketcher/coincident.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_coincid_sym.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Defines two or more points as having the same location.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Concentric</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/sketcher/concentric.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_concentric_symbol.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Defines two or more circular and elliptical arcs as having the same center</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Collinear</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/sketcher/collinear.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_collinear_sym.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Defines two or more lines as lying on or passing through the same straight line.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Point On Curve</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/sketcher/point_on_curve.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_pointoncurve_symbol.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Defines the location of a point as lying on a curve.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Point on String</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/sketcher/point_on_string.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_pointon_string.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p>Defines the location of a point as lying on a projected curve. You must select the point first, then select the curve.</p>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">Note</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p class="no-bottom-margin">This is the only valid constraint that should be applied to a projected curve. </p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Midpoint</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/sketcher/midpoint.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_midpoint_symbol.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p>Defines the location of a point as equidistant from the two end points of a line or a circular arc.</p>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">Note</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p class="no-bottom-margin"> For the Midpoint constraint, select the curve anywhere other than at its endpoints.</p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Horizontal</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/sketcher/horizontal.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_horz_sym.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Defines a line as horizontal.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Vertical</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/sketcher/vertical.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_vert_sym.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Defines a line as vertical.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Parallel</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/sketcher/parallel.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_parallel_sym.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Defines two or more lines or ellipses as being parallel to each other.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Perpendicular</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/sketcher/perpendicular.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_perpend_sym.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Defines two lines or ellipses as being perpendicular to each other.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Tangent</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/sketcher/tangent.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_tangent_symbol.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Defines two objects as being tangent to each other.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Equal Length</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/sketcher/equal_length.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_eqlength_sym.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Defines two or more lines as having the same length.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Equal Radius</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/sketcher/equal_radius.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_eqradius_sym.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Defines two or more arcs as having the same radius.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Constant Length</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/sketcher/constant_length.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_constlength_sym.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Defines a line as having a fixed, unchanging length.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Constant Angle</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/sketcher/constant_angle.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_constangle_sym.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Defines a line as having a fixed, unchanging angle with respect to the sketch CSYS.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Mirror Curve</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sketcher/sketch_tools/mirror_curve.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_mirror_sym.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Defines two objects as being mirror images of each other.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Make Symmetric</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sketcher/sketch_tools/make_symmetric.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_symmetric_sym.png" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">Defines two objects as being symmetric with each other.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Pattern Curve</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sketcher/sketch_tools/pattern_curve.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_pattern_circular_sym.png" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">Defines a circular pattern of curves.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Pattern Curve</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sketcher/sketch_tools/pattern_curve.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_pattern_dir1_sym.png" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">Defines a linear pattern in one direction.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Pattern Curve</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sketcher/sketch_tools/pattern_curve.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_pattern_dir1_2_sym.png" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">Defines a linear pattern in two directions.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Pattern Curve</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sketcher/sketch_tools/pattern_curve.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_pattern_general.png" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">Defines a general pattern of curves.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Offset Curve</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sketcher/sketch_tools/offset_curves.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_offsetcurve_sym.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">The <span class="uiTerm">Offset Curve</span> command offsets a chain of curves, projected curves, or curves/edges in the current assembly, and constrains the geometry using an Offset constraint.
+                  </p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Slope of Curve</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/sketcher/slope_of_curve.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_slopeofcurve_sym.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Defines a spline, selected at a defining point, and another object as being tangent to each other at the selected point.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Scale, Uniform</p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/sketcher/uniform_scale.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_scaleunif_sym.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">A spline will scale proportionally to keep its original shape when both of its endpoints are moved (that is, when you change the value of a horizontal constraint created between the endpoints).</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Scale, Non-Uniform</p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/sketcher/non_uniform_scale.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_scalenonuni_sym.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#f4f4f4" colspan="1" rowspan="1">
+                  
+                  <p>When both of its endpoints are moved (that is, when you change the value of a horizontal constraint created between the endpoints), a spline will scale in the horizontal direction, but keeps its original dimensions in the vertical direction. The spline appears to stretch.</p>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">Note</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p class="no-bottom-margin"> You cannot apply a Scale constraint to a spline if any of its interior defining points are constrained.</p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">Trim</p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sketcher/sketch_tools/trim_ recipe_curve.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/sketcher/constraints/sk_trim_recipe_sym.gif" border="0"></p>
+                  
+               </td>
+               
+               <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">The <span class="uiTerm">Trim Recipe Curve</span> command associatively trims curves that you associatively project or intersect into a sketch, and creates a Trim constraint.
+                  </p>
+                  
+               </td>
+               
+            </tr>
+            
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

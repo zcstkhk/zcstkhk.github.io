@@ -1,0 +1,53 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>解析标签冲突</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>解析标签冲突</h2>
+         
+         <p><a name="ndxgenid_spta_afem_29"></a>
+            <a name="ndxgenid_spta_afem_30"></a>
+            跟随装配有限元模型结构或它的组件有限元模型中的任何变化，检查节点、单元或者坐标系标签冲突，应用偏置以解析冲突。</p>
+         
+         <p>在<strong>仿真导航器</strong>中，右键单击装配有限元模型节点，选择<strong>装配标签管理器</strong>。</p>
+         
+         <p>确保在解析各个父装配有限元模型之前先解析各个子装配有限元模型。</p>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/assembly_fem/resolve_labels.gif"></p>
+         
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>运行验证</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/run_verification.gif" border="0"> 将在<strong>信息</strong>窗口中生成文本报告，显示装配有限元模型中每个组件有限元模型和子装配有限元模型的标签状态。它将列出节点、单元以及坐标系标签应用的偏置范围，以及各个组件、子装配有限元模型以及装配有限元模型的当前状态。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>自动解析</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/automatically_resolve.gif" border="0"> 将自动解析节点、单元以及坐标系标签，应用指定的偏置类型和值。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>在使用<strong>装配标签管理器</strong>解析包含子装配 FEM 的装配 FEM 中的标签冲突时，请注意，偏置已应用于整个子装配 FEM，而不是子装配 FEM 中的组件 FEM。在解析顶级装配 FEM 的标签冲突之前，必须分别解析每个子装配 FEM 的标签冲突。每次编辑子装配 FEM 时，应使用<strong>装配标签管理器</strong>解析子装配 FEM 标签冲突。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

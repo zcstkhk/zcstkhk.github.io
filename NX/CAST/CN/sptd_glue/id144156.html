@@ -1,0 +1,63 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Understanding the contact solution</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Understanding the contact solution</h2>
+         <a name="ndxgenid_sptd_glue_16"></a>
+         
+         <a name="ndxgenid_sptd_glue_17"></a>
+         
+         <a name="ndxgenid_sptd_glue_18"></a>
+         
+         
+         <p>For an NX Nastran solve, the augmented Lagrangian method is used. This method:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>Includes a penalty stiffness to enforce contact constraints.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Enforces a zero penetration condition.</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>The solution is considered converged when there is zero penetration (the <span class="uiTerm">Contact Force Tolerance</span> is satisfied) and the contact elements status change is below the specified criteria (the <span class="uiTerm">Percentage of Active Contact Elements</span> is satisfied).
+         </p>
+         
+         <a name="genid_sptd_glue_20" id="genid_sptd_glue_20"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/contact/contact_example.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>(Top) Contact applied to a part; (Bottom) Resulting stress after the solve</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

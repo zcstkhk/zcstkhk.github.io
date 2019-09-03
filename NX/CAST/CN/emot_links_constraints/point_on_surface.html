@@ -1,0 +1,56 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>点与曲面保持接触</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>点与曲面保持接触</h2>
+         
+         <p>点在曲面上约束将使点保持与曲面接触，它们可以是两个连杆，也可以是一个连杆和一个固定的非连杆曲面。该点必须与某个连杆关联，而曲面可以与连杆关联，但关联的连杆必须与点所在的连杆不同，也可以是固定的非连杆曲面。</p>
+         <a name="ndxgenid_emot_links_constraints_207"></a>
+         
+         <a name="ndxgenid_emot_links_constraints_208"></a>
+         
+         
+        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/links_constraints/joints_pt_on_surfacePic.gif"></p>
+         
+         
+         <p>点在曲面上约束：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>从模型中移除了一个平移自由度</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>不允许脱离 &mdash; 点可以在曲面上自由滚动和滑动，但必须始终位于曲面上。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>如果点不与曲面接触，仿真将把点和曲面“组装”到分析起始处。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

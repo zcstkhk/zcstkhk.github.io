@@ -1,0 +1,66 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Setting up a user directory</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Setting up a user directory</h2>
+         <p>You will use the <span class="variableText">%UGII_USER_DIRECTORY%</span> variable to point to this directory location.
+         </p>
+         <p>In a Windows command prompt window, use the set command to verify the location of your <span class="variableText">%UGII_USER_DIR%</span> directory.
+         </p>
+         <p>If the <span class="variableText">%UGII_USER_DIR%</span> variable is not set:
+         </p>
+         <ul>
+            
+            <li>
+               
+               <p>Check your <span class="variableText">nx-install-directory</span><span class="pathName">\ugii\ugii_env_ug.dat</span> file. 
+               </p>
+               
+               <p>If the <span class="variableText">%UGII_USER_DIR%</span> variable is commented out, remove the <span class="codeText"><span class="userInput">#</span></span> to uncomment this line and enable this variable.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>(Optional) Change the location of your <span class="variableText">%UGII_USER_DIR%</span> as desired. You can:
+               </p>
+               
+               <ul>
+                  
+                  <li>
+                     
+                     <p>Modify your ugii_env_ug.dat file.</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>Define the location of the directory using a Windows system variable.</p>
+                     
+                  </li>
+                  
+               </ul>
+               
+            </li>
+            
+         </ul>
+         <p>For more information, see &ldquo;How NX Finds Applications Files&rdquo; in the <span class="titleReference">NX Open Programmer's Guide</span>, in the <span class="titleReference">NX Help Library</span>.
+         </p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

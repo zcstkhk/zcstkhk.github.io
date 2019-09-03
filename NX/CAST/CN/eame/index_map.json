@@ -1,0 +1,17 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"装配版本和组件替换",file:"id1073773.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"装配版本",file:"id680306.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"Teamcenter Integration 中的文件管理",type:"topicMap",parent:"d5e5",children:[
+{id:"d5e7",title:"另存为概述",file:"save_as_overview.html",type:"topic",parent:"d5e6"},
+{id:"d5e8",title:"另存为现有的项",file:"save_as_procedure.html",type:"topic",parent:"d5e6"}]},
+{id:"d5e9",title:"本地 NX 中的文件管理",type:"topicMap",parent:"d5e5",children:[
+{id:"d5e10",title:"另存为",file:"fil_saveas_r.html",type:"topic",parent:"d5e9"}]},
+{id:"d5e11",title:"使用另存为修改组件",file:"id964624.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e13",title:"替换组件",file:"id964842.html",type:"topic",parent:"",children:[
+{id:"d5e14",title:"替换组件概述",file:"func_details_comp_substitute.html",type:"topic",parent:"d5e13"},
+{id:"d5e15",title:"使用相关组件替换组件",file:"func_details_comp_replace_ht.html",type:"topic",parent:"d5e13"},
+{id:"d5e16",title:"替换组件时维持关系",file:"func_details_comp_replace_maintain_rel_rt.html",type:"topic",parent:"d5e13"},
+{id:"d5e17",title:"保存和关闭文件命令",file:"fil_close_ov.html",type:"topic",parent:"d5e13"},
+{id:"d5e18",title:"替换组件",file:"id964687.html",type:"activity",parent:"d5e13"}]}
+]}

@@ -1,0 +1,93 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Combine Visual Basic source code files</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Combine Visual Basic source code files</h2>
+         <p>Open <span class="literalText">createFem.vb</span> in a text editor, or a development environment.
+         </p>
+         <p>This file will become our first application file, but you need to save it under a different name to preserve the original file. Save the file as <span class="literalText">createAppendApp.vb</span>.
+         </p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>Line numbers referenced in the activity refer to the delivered control files. The corresponding lines in the files you record will vary due to differences in the steps performed during the journal creation. </p>
+                  
+               </td>
+            </tr>
+         </table>
+         <p>Open <span class="literalText">appendFem.vb</span> in another window. Select everything starting with line 9 (highlighted)
+         </p><pre class="codeExample indent ">Imports NXOpen
+
+Module NXJournal
+<span class="userInput">Sub Main (ByVal args() As String)</span> 
+
+Dim theSession As Session = Session.GetSession()
+</pre><p>to line 66 (highlighted) </p><pre class="codeExample indent ">' ----------------------------------------------
+'   Menu: Tools-&gt;Journal-&gt;Stop Recording
+' ----------------------------------------------
+
+<span class="userInput">End Sub</span>
+End Module</pre><p>and copy that into the <span class="literalText">createAppendApp.vb</span> file. Paste these lines before <span class="codeText">End Module</span> line.
+         </p>
+         <table class="attentionTable attn_tip">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Tip</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>When pasting code, be careful that you do not end up with two lines stuck together such as: <span class="codeText">End SubSub Main</span>. If this happens, separate them by adding a carriage return to drop <span class="codeText">Sub Main</span> to the next line.
+                  </p>
+                  
+               </td>
+            </tr>
+         </table>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>In the newly combined code, you have created a conflict by having two subroutines named <span class="codeText">Main</span>. You will resolve this conflict later. 
+                  </p>
+                  
+               </td>
+            </tr>
+         </table>
+         <p>The last piece to be combined prior to editing this file is the Visual Basic source code for the dialog box.</p>
+         <p>Open <span class="literalText">faceSelect.vb</span>. Select everything from line 45 (highlighted)
+         </p><pre class="codeExample indent ">'------------------------------------------------------------------------------
+'Represents Block Styler application class
+'------------------------------------------------------------------------------
+<span class="userInput">Public Class faceSelect</span>
+    'class members
+    Private Shared theSession As Session
+</pre><p>to approximately line 329 (the highlighted, End Class line)</p><pre class="codeExample indent ">        End Try
+    End Function
+    
+<span class="userInput">End Class</span></pre><p>Copy these lines into <span class="literalText">createAppendApp.vb</span> and paste them before the <span class="codeText">End Module</span> line.
+         </p>
+         <p>Save the <span class="literalText">createAppendApp.vb</span> file.
+         </p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

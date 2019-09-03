@@ -1,0 +1,65 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>建模模式</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>建模模式</h2>
+         <p>&ldquo;建模&rdquo;应用模块在两种模式下工作：</p>
+         <ul>
+           <li>
+             <p>历史记录模式</p>
+           </li>
+           <li>
+             <p>无历史记录模式</p>
+           </li>
+         </ul>
+         <p>&ldquo;同步建模&rdquo;命令在无历史记录模式下可用。</p>
+         
+         <div class="division"><a name="ndxgenid_spta_modprep_21"></a>
+            
+            
+           <h3>历史记录模式</h3>
+            
+            <p>在<em>历史记录模式</em>下，使用<strong>部件导航器</strong>中显示的有序特征序列可创建和编辑模型。这是传统的、  基于历史记录的特征建模器和用于在 NX   中进行设计的主模式。此模式对设计精密的部件很有用。这同样适用于设计成使用预定义参数来修改的部件，这些参数基于草图、特征中包括的设计意图以及用于对  部件建模的特征顺序。 </p>
+            
+         </div>
+         
+         <div class="division"><a name="ndxgenid_spta_modprep_22"></a>
+            
+            
+            <h3>无历史记录模式</h3>
+            
+            <p>在<em>无历史记录模式</em>下，可以根据模型的当前状态创建和编辑模型，而无需有序的特征序列。只能创建不依赖于有序结构的局部特征。</p>
+            
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>使用无历史记录模式下的同步建模</h3>
+            
+            
+            <p>在无历史记录模式下，可以使用在历史记录模式下可用的许多相同命令。有些命令创建局部特征，这些特征作为特征集合列在<strong>部件导航器</strong>中，与任何重播顺序无关。尽管局部特征看上去与<strong>部件导航器</strong>中基于历史记录的特征相似，但编辑这些特征所需的时间并不随特征列表的增大而延长。局部特征相互独立，对它们进行编辑时没有可回滚或重播的历史记录。 </p>
+            <p>同步建模命令有助于在无历史记录模式下高效工作。通过这些命令，您的建模意图将依赖于面和特征识别，它们有助于标识某些几何条件。同步建模命令中的<strong>面查找器</strong>选项有助于根据所控制的设置来选择相关的面。 </p>
+            <p>可以在&ldquo;建模&rdquo;应用模块中切换历史记录模式和无历史记录模式，但历史记录树中的大多数或所有特征都会丢失。</p>
+            <p>.</p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

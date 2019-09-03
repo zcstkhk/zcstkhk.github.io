@@ -1,0 +1,11 @@
+{identifier:"id",label:"title",items:[
+{id:"d11e2",title:"打开部件",file:"universal_open_the_part.html",type:"topic",parent:""},
+{id:"d11e3",title:"重置对话框内存",file:"id353012_dup4.html",type:"topic",parent:""},
+{id:"d11e4",title:"创建驱动器运动副",file:"create_drive_joint.html",type:"topic",parent:""},
+{id:"d11e5",title:"创建摇摆双臂运动副",file:"create_swing_arm_joint.html",type:"topic",parent:""},
+{id:"d11e6",title:"创建导轮运动副",file:"create_carrier_joint.html",type:"topic",parent:""},
+{id:"d11e7",title:"创建轮轴运动副",file:"create_axle_joint.html",type:"topic",parent:""},
+{id:"d11e8",title:"创建万向节",file:"create_universal_joint.html",type:"topic",parent:""},
+{id:"d11e9",title:"定义万向节中的基本连杆",file:"define_univ_base_link.html",type:"topic",parent:""},
+{id:"d11e10",title:"创建解算方案",file:"create_a_solution_dup2.html",type:"topic",parent:""},
+{id:"d11e11",title:"查看机构运动",file:"animate_the_mechanism_dup1.html",type:"topic",parent:""}]}

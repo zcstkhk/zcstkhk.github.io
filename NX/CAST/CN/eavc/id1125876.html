@@ -1,0 +1,128 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>修改基于图像打光的设置</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>修改基于图像打光的设置</h2>
+         
+         
+         <p><strong>场景编辑器</strong>对话框应该仍然是打开的。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在<strong>场景编辑器</strong>对话框中，点击<strong>光源</strong>选项卡。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>在<strong>场景光源</strong>列表中，将列出模型中的光源，这些光源既不属于基于图像的打光，也不属于全局照明。</p>
+                     
+                     <p>如果您使用全局照明，又想要逼真的阴影，应该关闭全部非 IBL 打光的阴影，在本练习中，需要关闭顶部光源。</p>
+                     
+                  </div>
+                  <div class="stepResult"></div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>场景光源</strong>组中，从列表中选择<strong>场景顶部</strong>，然后清除<strong>使用基于图像打光</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_off.gif" border="0"> 复选框。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>全局照明</strong>选项卡的<strong>高质量图像</strong>设置组中，设置如下选项：</p>
+                  
+                  <ul class="hangingList">
+                     
+                     <li>
+                        
+                        <p><strong>在高质量图像中使用基于图像打光</strong> = <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_on.gif" border="0"></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><strong>强度</strong> = <strong>0.75</strong></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><strong>精度</strong> = <span class="userInput">~500</span></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><strong>阴影类型</strong> = <strong>硬边缘</strong></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><strong>阴影柔和度</strong> = <span class="userInput">~.50</span></p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>应用</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>高质量图像渲染</strong>工具条上的<strong>启动 HQI 渲染</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/shape_studio/visualize_shape/start_shade.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/visualization/activities/modify_ibl_3.png"></p>
+                     
+                     <p>关闭顶部光源后，所有的光源都将来自高动态范围环境图像中，因此光源和阴影都将更逼真。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>去除 HQI 渲染</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/shape_studio/visualize_shape/erase_shade.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

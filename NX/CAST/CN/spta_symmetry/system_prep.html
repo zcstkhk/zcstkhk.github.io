@@ -1,0 +1,411 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>System preparation</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>System preparation</h2>
+         <div class="division">
+            
+            <h3>Set up NX Nastran</h3>
+            
+            <p>The Simulation courses use the NX Nastran 8.5 solver. </p>
+            
+            <p>Verify with your system administrator that NX Nastran is installed and the following are defined either as environment variables, or in your <span class="fileName">ugii_env.dat</span> file:
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p> <span class="codeText">UGII_NX_NASTRAN=</span> NX Nastran executable path
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p> <span class="codeText">UGII_NX_NASTRAN_VERSION=</span>(NX Nastran version, use format  <span class="variableText">x.x</span>)
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+            <table class="attentionTable attn_tip">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">Tip</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>If you include quotation marks around the NX Nastran executable path, you can use folder names that contain spaces. For example: </p>
+                     
+                     <p> <span class="codeText">UGII_NX_NASTRAN=&quot;C:/Program Files/UGS/NXNastran/8.5/bin/nastran.exe&quot;</span></p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+            <p>Alternately, you can specify the Nastran executable and version in your customer defaults.</p>
+            
+            <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/menu.gif" border="0">  <span class="uiTerm">File</span>&rarr; <span class="uiTerm">Utilities</span>&rarr; <span class="uiTerm">Customer Defaults</span></p>
+            
+            <ul class="unmarkedList">
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0">  <span class="literalText">Simulation</span></p>
+                  
+               </li>
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0">  <span class="literalText">NASTRAN</span></p>
+                  
+               </li>
+               <li>
+                  
+                  <table border="0" cellpadding="0" cellspacing="0">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1" width="10">
+                        
+                        <col span="1" width="*">
+                        
+                        <col span="1" width="10">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td class="tab_left" colspan="1" rowspan="1" width="10"></td>
+                           
+                           <td class="tab_middle" colspan="1" rowspan="1" width="*">
+                              
+                              <p class="no-bottom-margin"> <span class="uiTerm">Solver Parameters</span></p>
+                              
+                           </td>
+                           
+                           <td class="tab_right" colspan="1" rowspan="1" width="16"></td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </li>
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/checkbox-off.gif" border="0">  <span class="uiTerm">Use UGII_NX_NASTRAN</span></p>
+                  
+               </li>
+               <li>
+                  
+                  <p>NX NASTRAN Executable</p>
+                  
+                  <table cellspacing="0" class="input_field" width="300">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1" width="90">
+                        
+                        <col span="1" width="190*">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td class="label2" colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"> <span class="uiTerm">Windows</span></p>
+                              
+                           </td>
+                           
+                           <td class="border1b" colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"> <span class="variableText">path to nastran executable</span></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">Note</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p>Be sure to include the executable filename (nastran.exe) in the path.</p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </li>
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/checkbox-off.gif" border="0">  <span class="uiTerm">Use UGII_NX_NASTRAN_VERSION</span></p>
+                  
+               </li>
+               <li>
+                  
+                  <table cellspacing="0" class="input_field" width="300">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1" width="90">
+                        
+                        <col span="1" width="190*">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td class="label2" colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"> <span class="uiTerm">NX Nastran Version</span></p>
+                              
+                           </td>
+                           
+                           <td class="border1b" colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"> <span class="variableText">x.x</span></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </li>
+               <li>
+                  
+                  <table border="0" cellpadding="0" cellspacing="0">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1" width="10">
+                        
+                        <col span="1" width="*">
+                        
+                        <col span="1" width="10">
+                        
+                        <col span="1" width="*">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                           
+                           <td class="button_middle" colspan="1" rowspan="1" width="*">
+                              
+                              <p class="no-bottom-margin"> <span class="uiTerm">OK</span></p>
+                              
+                           </td>
+                           
+                           <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                           
+                           <td colspan="1" rowspan="1" width="*">
+                              
+                              <p class="no-bottom-margin">&nbsp;</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </li>
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Enable interpart modeling</h3>
+            
+            <p>Before you enter the Advanced Simulation  application, you must have certain customer defaults set correctly. Because this application uses interpart expressions, you must enable the interpart modeling function.</p>
+            
+            <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/menu.gif" border="0">  <span class="uiTerm">File</span>&rarr; <span class="uiTerm">Utilities</span>&rarr; <span class="uiTerm">Customer Defaults</span></p>
+            
+            <ul class="unmarkedList">
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0">  <span class="literalText">Assemblies</span></p>
+                  
+               </li>
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0">  <span class="literalText">General</span></p>
+                  
+               </li>
+               <li>
+                  
+                  <table border="0" cellpadding="0" cellspacing="0">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1" width="10">
+                        
+                        <col span="1" width="*">
+                        
+                        <col span="1" width="10">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td class="tab_left" colspan="1" rowspan="1" width="10"></td>
+                           
+                           <td class="tab_middle" colspan="1" rowspan="1" width="*">
+                              
+                              <p class="no-bottom-margin"> <span class="uiTerm">Interpart Modeling</span></p>
+                              
+                           </td>
+                           
+                           <td class="tab_right" colspan="1" rowspan="1" width="16"></td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </li>
+               <li>
+                  
+                  <table border="0" cellpadding="4" cellspacing="0" frame="box" width="330">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1" width="20">
+                        
+                        <col span="1" width="9840*">
+                        
+                        <col span="1" width="159*">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/radio-on.gif" border="0"></p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">  <span class="uiTerm">Allow Associative Interpart Modeling</span></p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </li>
+               <li>
+                  
+                  <table border="0" cellpadding="0" cellspacing="0">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1" width="10">
+                        
+                        <col span="1" width="*">
+                        
+                        <col span="1" width="10">
+                        
+                        <col span="1" width="*">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                           
+                           <td class="button_middle" colspan="1" rowspan="1" width="*">
+                              
+                              <p class="no-bottom-margin"> <span class="uiTerm">OK</span></p>
+                              
+                           </td>
+                           
+                           <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                           
+                           <td colspan="1" rowspan="1" width="*">
+                              
+                              <p class="no-bottom-margin">&nbsp;</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </li>
+            </ul>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">Note</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>If the software returns a warning that you do not have access to the defaults file, see your system administrator. </p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

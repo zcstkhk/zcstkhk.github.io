@@ -1,0 +1,56 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Connecting superelement boundary nodes to the residual</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Connecting superelement boundary nodes to the residual</h2>
+         
+         <p>If there is a one-to-one correspondence between boundary nodes in the superelement and nodes in the base FEM, the superelement inherits the connection used in the assembly FEM. </p>
+         
+         <p>As a best practice, you should always use <span class="uiTerm">Assembly Label Manager</span> to resolve node, element, and coordinate system label conflicts whenever you modify an assembly FEM. 
+         </p>
+         
+         <a name="genid_spta_system_23"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/system_modeling/edge_face_before.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>Two component FEMs connected using a geometry-based edge-face 1D connection.</h4>
+         </div>
+         <a name="genid_spta_system_24"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/system_modeling/edge_face_after.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>The corresponding superelement boundary nodes inherit the edge-face connection in the system model.</h4>
+         </div>
+         
+         
+         <p>In some cases, the boundary nodes in the superelement may not correspond to nodes in the base FEM. You must then manually connect the superelement to the residual using a node-to-node connection. </p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

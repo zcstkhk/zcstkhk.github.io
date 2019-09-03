@@ -1,0 +1,123 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>合并链接的部件模块</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>合并链接的部件模块</h2>
+         
+         
+         <p>当第二个助理设计的工作完成后，如果您是总设计师，您需要将外部链接部件模块文件合并回主部件文件，以完成最终的设计。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在<strong>部件导航器</strong>中，右击<strong>链接部件模块 “Heat Sink”</strong>并选择<strong>全部展开</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>您可以看到<strong>输出</strong>收集器中含有一个 WAVE 链接 <img align="bottom" src="../graphics/nonLocalized/nx/modeling/part_navigator/linkedface.gif" border="0"> <strong>链接的面 (13)</strong>。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>右击<strong>链接部件模块 “Heat Sink”</strong>并选择<strong>合并部件模块</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>所有 WAVE 链接的对象都将传送回主部件文件，将不再使用链接的部件模块文件，在<strong>部件导航器</strong>中，注意到：</p>
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p>新特征的名称为<strong>部件模块</strong></p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p><strong>部件</strong>收集器已从链接部件模块文件中返回</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p><strong>输出</strong>收集器不再含有 WAVE 链接的面，它将被转换回<strong>抽取的面</strong>。</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>部件导航器</strong>中，右击<strong>链接部件模块 “Trigger Ribs”</strong>并选择<strong>合并部件模块</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>所有部件模块信息将只存在于主部件文件中，不再需要链接部件模块文件，您可以删除它们。在您的设计进程中，如果您需要第二个助理设计再次在他们的设计单元中工作，可以使用与下列流程相同的步骤：</p>
+                     
+                     <ol type="1" start="1">
+                        
+                        <li>
+                           
+                           <p>将部件模块转换为链接部件模块</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>在第二个助理设计师完成工作后，将链接部件模块合并回主部件文件</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>删除链接部件模块文件</p>
+                           
+                        </li>
+                        
+                     </ol>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>关闭所有部件。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

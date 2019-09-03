@@ -1,0 +1,33 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>从局部到全局的过渡单元大小</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>从局部到全局的过渡单元大小</h2><a name="ndxgenid_spta_meshintro_26"></a>
+         
+         
+         <p>要把局部单元大小从局部大小逐渐过渡回全局大小，使用<strong>过渡单元大小</strong>选项。</p>
+         
+         <p>为了创建过渡，软件会逐渐增加每个连续单元层中大单元大小，直到单元大小与所定义的全局大小相匹配。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/meshing/transition1.png"></p>
+         
+         
+         <p>对于包含大的面—体曲率以及小曲线曲率的部件，使用<strong>过渡单元大小</strong>并设置一个较大的<strong>基于表面曲率的大小变化</strong>百分比值可能导致所有单元都较小，如果<strong>过渡单元大小</strong>导致单元数目的数量多到难以接受，可以关闭这个选项。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

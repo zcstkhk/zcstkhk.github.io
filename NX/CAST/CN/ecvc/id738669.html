@@ -1,0 +1,130 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>打开部件并设置曲率梳选项</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>打开部件并设置曲率梳选项</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>打开 <span class="fileName">ffm3_splines_3</span>，并开始<strong>建模</strong>应用模块，如果它仍尚未激活。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>这是一个包含一条样条曲线的公制部件。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/splines/splines_spline3_open_nx5.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>形状分析</strong>工具条上，点击<strong>曲线分析</strong> <img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/splines/splines_curvature_analysis_combs.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>曲线分析</strong>对话框的顶部，点击<strong>重置</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/rail/reset.gif" border="0"> 按钮来重置所有默认值和设置。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>选取样条。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>将显示曲率分析。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/splines/splines_spline3_combs_nx5.png"></p>
+                     
+                     <p>通过<strong>针比例</strong>定义的梳齿长度来显示值，如果您限制了它们的长度，任何被缩短的齿将带有一个星号标记。</p>
+                     
+                     <p>显示的默认梳齿表示曲率。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>设置</strong>组的<strong>计算方法</strong>下方，选择<strong>曲率半径</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在<strong>分析显示</strong>组中，将<strong>针比例</strong>设置为<strong>0.125</strong>并回车。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/splines/spline3_radius_display.png"></p>
+                     
+                     <p>梳齿的密度已经足够，很明显在拐点(曲率发生反转)处，半径为无穷大。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>在<strong>分析显示</strong>组中，选中<strong>最大长度</strong>复选框，并输入<strong>15 </strong>的最大长度值，然后回车。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/splines/splines_splines3_radius_outside.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>在<strong>设置</strong>组中，将<strong>针方向</strong>选项设置为<strong>内部</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/splines/splines_spline3_radius_inside.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

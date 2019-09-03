@@ -1,0 +1,14 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e3",title:"打开 FEM 文件",file:"id852786.html",type:"topic",parent:""},
+{id:"d7e2",title:"重置对话框内存",file:"id813466.html",type:"topic",parent:""},
+{id:"d7e4",title:"创建仿真文件",file:"id852776.html",type:"topic",parent:""},
+{id:"d7e5",title:"创建约束",file:"id852761.html",type:"topic",parent:""},
+{id:"d7e6",title:"创建载荷",file:"id852771.html",type:"topic",parent:""},
+{id:"d7e7",title:"求解模型 ",file:"id852801.html",type:"topic",parent:""},
+{id:"d7e8",title:"显示层片应力",file:"id852781.html",type:"topic",parent:""},
+{id:"d7e9",title:"显示单元层合板信息",file:"id1378533.html",type:"topic",parent:""},
+{id:"d7e10",title:"创建高级后处理报告",file:"id1378534.html",type:"topic",parent:""},
+{id:"d7e11",title:"将层合板结果导出至电子表格",file:"id1611436.html",type:"topic",parent:""},
+{id:"d7e12",title:"将结果汇总导出至电子表格",file:"id1061549.html",type:"topic",parent:""},
+{id:"d7e14",title:"显示所有层片的最大 11 应力",file:"id852766.html",type:"topic",parent:""},
+{id:"d7e15",title:"保存并关闭",file:"id813461.html",type:"topic",parent:""}]}

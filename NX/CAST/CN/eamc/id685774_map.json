@@ -1,0 +1,12 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"设置装配加载选项并打开装配文件",file:"id1020157.html",type:"topic",parent:""},
+{id:"d7e3",title:"保存装配文件",file:"id957252.html",type:"topic",parent:""},
+{id:"d7e4",title:"固定转轴位置",file:"id923006.html",type:"topic",parent:""},
+{id:"d7e5",title:"约束转轴垫片",file:"id923008.html",type:"topic",parent:""},
+{id:"d7e6",title:"将拨叉约束到转轴和垫片上",file:"id923010.html",type:"topic",parent:""},
+{id:"d7e7",title:"将轴套约束到滚轮上",file:"id923012.html",type:"topic",parent:""},
+{id:"d7e8",title:"约束滚轮和轴套到拨叉上",file:"id923014.html",type:"topic",parent:""},
+{id:"d7e9",title:"约束轮轴到拨叉上",file:"id923016.html",type:"topic",parent:""},
+{id:"d7e10",title:"移动拨叉",file:"id923018.html",type:"topic",parent:""},
+{id:"d7e11",title:"约束一个卡簧到转轴上",file:"id923020.html",type:"topic",parent:""},
+{id:"d7e12",title:"约束另一个卡簧到轮轴上",file:"id923022.html",type:"topic",parent:""}]}

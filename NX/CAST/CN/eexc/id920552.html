@@ -1,0 +1,85 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>建立目标分析</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>建立目标分析</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>选择<strong>工具→电子表格</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>这个电子表格中包含实现<strong>目标分析</strong>与<strong>目标搜寻</strong>所需的全部表达式。</p>
+                     <p><strong>B</strong> 列以及 <strong>C</strong> 列中包含驱动这个部件的所有关键表达式。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/expressions/act_1.png"></p>
+                     
+                     <p>孔中心列中包含两个孔的中心位置。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/expressions/spreadsheet_graphic29.png"></p>
+                     
+                     <p>这个信息是通过使用 <strong>POINT</strong> 函数，以从部件中获取。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>选择电子表格中的单元格 <strong>F3</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>注意到在电子表格顶部的编辑框中，显示：{ =POINT("hole1")}</p>
+                     
+                     <p>在这个函数中，变量 hole1是草图中一个圆弧的名称属性。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/expressions/spreadsheet_graphic30.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>选择单元格 <strong>K3</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>数据列 J 和 K 将计算两个孔之间的距离，这个计算通过函数 <strong>DISTPT</strong> 来实现。</p>
+                     
+                     <p>这个公式将显示在编辑框中：<strong>=DISTPT(F3:H3,F4:H4)</strong></p>
+                     
+                     <p>用在这个函数中的两个参数，为包含用于计算距离的两个点的 XYZ 坐标的单元格。</p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

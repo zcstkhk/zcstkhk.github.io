@@ -1,0 +1,154 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>轻量级和智能轻量级视图</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>轻量级和智能轻量级视图</h2>
+         
+         <p><strong>轻量级</strong>和<strong>智能轻量级</strong>视图选项最适合系统性能和内存使用率比生  成精确视图更重要的情况，例如使用大型装配图纸时便是如此。创建轻量级或智能轻量级视图时，用于表示模型几何体的对象将与图纸部件存储在一起，并稍后可以  显示，而不必将主模型几何体加载到会话中。因此，您可以快速打开并浏览非常庞大的装配图纸，且不会对系统资源产生明显影响。</p>
+         
+         <div class="division">
+            
+           <h3>智能轻量级视图的特性</h3>
+            
+            <p>智能轻量级视图采用具有更低内存使用率架构的混合隐藏线处理器   (HHLP)。在智能轻量级视图中，可见模型边将使用抽取边加以渲染。抽取边可以关联或非关联状态生成。非关联抽取边只有在恢复为关联状态后才会更新。通  常，精确视图可用的隐藏线型和中心线符号均可应用于智能轻量级视图。视图更新是局部的，即更新基本上仅影响对模型进行编辑的视图区域。</p>
+           <p>使用智能轻量级视图，您可以：</p>
+            <ul>
+              <li>
+                <p>在视图中定义抽取的边的分辨率</p>
+              </li>
+              <li>
+                <p>将真实尺寸应用于视图，而不显式加载主模型几何体</p>
+              </li>
+              <li>
+                <p>创建智能轻量级剖视图</p>
+              </li>
+              <li>
+                <p>应用断开视图</p>
+              </li>
+            </ul>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">注释</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>未加载主模型几何体时，抽取边将保留在视图中。但是，如果使用未加载的装配模型更新抽取边视图，则您必须重新加载该模型，以便重新生成抽取边。</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+            <p>使用智能轻量级视图，您不能：</p>
+            <ul>
+              <li>
+                <p>构建智能轻量级局部剖视图或原有的断开视图。</p>
+              </li>
+              <li>
+                <p>将透视或螺纹渲染应用于智能轻量级视图。</p>
+              </li>
+            </ul>
+            <p>使用包含复杂曲面的大型模型时，可以发挥智能轻量级视图的大部分优势。使用较小的组件/装配，您可能无法始终体验智能轻量级视图全面的性能优势。</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>提示和建议</h3>
+            <ul>
+               <li>
+                 <p>角度公差值大于 25 度的智能轻量级视图可能会生成不足以正确创建隐藏线的小平面。建议小平面的角度公差为 25 度（默认值）。 （请参见装配→高级→表示→编辑小平面参数）。</p>
+               </li>
+               <li>
+                 <p>分辨率粗糙的智能轻量级视图的内存使用率更低。但是，由于分辨率粗糙，边渲染的精确度会降低，也可能会丢失一些细节。在对细节要求比较高的情况下，请使用精细分辨率。</p>
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">制图</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">先决条件</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">主模型图纸技术</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>首选项→视图→常规</strong>选项卡、<strong>视图配置</strong>组<strong>→表示=智能轻量级</strong>或<strong>轻量级</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

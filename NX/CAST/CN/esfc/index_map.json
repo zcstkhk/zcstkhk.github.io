@@ -1,0 +1,7 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"径向切削模式",file:"id1074686.html",type:"topic",parent:""},
+{id:"d5e4",title:"径向切削概述",file:"genid_introduction_to_radial_cutting_14_528.html",type:"topic",parent:""},
+
+{id:"d5e6",title:"径向切削驱动方法",file:"radial_cut_operation.html",type:"topic",parent:"",children:[
+{id:"d5e7",title:"创建径向切削工序",file:"id943601.html",type:"activity",parent:"d5e6"}]}
+]}

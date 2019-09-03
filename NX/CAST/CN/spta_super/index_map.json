@@ -1,0 +1,26 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"超单元分析",file:"id1298509.html",type:"topic",parent:""},
+{id:"d5e5",title:"什么是外部超单元？",file:"id1396858.html",type:"topic",parent:""},
+
+{id:"d5e7",title:"外部超单元解算方案类型",file:"id1396859.html",type:"topic",parent:""},
+
+{id:"d5e9",title:"静态降阶概述",file:"id1396860.html",type:"topic",parent:""},
+
+{id:"d5e11",title:"Static reduction — understanding boundary DOFs",file:"id1396863.html",type:"topic",parent:""},
+
+{id:"d5e14",title:"Dynamic reduction overview",file:"id1396865.html",type:"topic",parent:""},
+
+{id:"d5e16",title:"Dynamic reduction — dynamic and static behavior",file:"id1491932.html",type:"topic",parent:""},
+
+{id:"d5e18",title:"Dynamic reduction — understanding boundary DOFs",file:"id1396868.html",type:"topic",parent:""},
+
+{id:"d5e20",title:"Review",file:"id1323658.html",type:"topic",parent:""},
+{id:"d5e22",title:"Defining boundary DOFs for a static or dynamic reduction",file:"id1396870.html",type:"topic",parent:""},
+
+{id:"d5e24",title:"Defining DOF sets",file:"id1396871.html",type:"topic",parent:""},
+
+{id:"d5e27",title:"Setting external superelement solution attributes",file:"id1396864.html",type:"topic",parent:""},
+
+{id:"d5e29",title:"Dynamic reduction",file:"id1406964.html",type:"activity",parent:""}
+
+]}

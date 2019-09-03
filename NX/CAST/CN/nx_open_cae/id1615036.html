@@ -1,0 +1,122 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>使用 NX CAE 数据模型中的对象</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>使用 NX CAE 数据模型中的对象</h2>
+         
+         <ul>
+            
+            <li>
+               
+               <p>NX CAE 架构中的数据层级比NX CAD 架构中的数据层级更为深入。</p>
+               
+               <ul>
+                  
+                  <li>
+                     
+                     <p>在 NX CAD 架构中，您从NX CAD 部件类的实例中获取大部分对象，比如关于体与曲线的信息。</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>在 NX CAE 架构中，您从各种不同的对象中获取 CAE 对象，例如，考虑 <span class="codeText">MeshManager</span> 类：</p>
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p>您可以You can obtain a <span class="codeText">MeshManager</span> instance from the <span class="codeText">MeshManager</span> method from one of the <span class="codeText">FEModel</span> classes, such as <span class="codeText">BaseFEModel</span> or <span class="codeText">FEModel</span>.
+                           </p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>The <span class="codeText">FEModel</span> class itself is instantiated from one of the <span class="codeText">CAEPart</span> classes, such as <span class="codeText">BaseFemPart</span> or <span class="codeText">FemPart</span>.
+                           </p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                     <p>获取网格管理器的代码示例如下：</p>
+                     <pre class="codeExample indent ">Dim theSession As Session = Session.GetSession()
+	Dim basePart As BasePart = Session.Parts.BaseWork
+	Dim baseFEMPart As CAE.BaseFemPart = CType(BasePart, CAE.BaseFemPart)
+	Dim myFEModel As FEModel = baseFEMPart.BaseFEModel
+	Dim myManager As MeshManager = myFEModel.MeshManager
+</pre>
+                     </li>
+                  
+               </ul>
+               
+            </li>
+            
+            <li>
+               
+               <p>The relationships between prototype and occurrence objects is different in the NX CAD architecture than in the NX CAE architecture.</p>
+               
+               <ul>
+                  
+                  <li>
+                     
+                     <p>In the NX CAD architecture, both occurrence and prototype objects are in the same class.</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>In the NX CAE architecture, occurrence and prototype objects are in different classes but inherit from the same abstract class.</p>
+                     
+                     <table class="attentionTable attn_note">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">Note</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>For queries, both prototype and occurrence objects implement the same interfaces.</p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </li>
+                  
+               </ul>
+               
+            </li>
+            
+            <li>
+               
+               <p>In the NX CAE architecture, you can only edit prototype objects. Builder-type methods, such as <span class="codeText">Mesh2dBuilder</span> and <span class="codeText">ElementCreateBuilder</span>, can only operate on the concrete classes, not on the interface classes.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>In the NX CAE architecture, if you do not cast a pointer to the appropriate type of object (a prototype object), then your code will fail to compile. In the NX CAD architecture, if you do not ask an object for its prototype, then your code will compile but will fail to run.</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

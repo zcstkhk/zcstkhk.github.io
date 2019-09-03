@@ -1,0 +1,75 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>克隆默认设置及异常</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>克隆默认设置及异常</h2>
+         <p>在克隆装配时，相应&ldquo;知识融合&rdquo;实例中 File_Name 属性的值将自动更新。更新后的属性值将引用新建部件文件的文件名。</p>
+         <p>在克隆装配时，定义整个装配的操作及命名默认设置，然后定义这些默认设置的任何异常。</p>
+         <p>定义克隆默认设置的异常时，可能会创建克隆操作冲突。您将收到一个警报，描述该冲突以及解决冲突的方式。NX 通过保留已定义的异常以及根据需要更改相关项的默认操作来解决冲突。如果冲突发生在定义的异常之间，则系统会应用最新的异常。</p>
+        <p>对于每个组件，可以指定：</p>
+         <ul>
+           <li>
+             <p><strong>保持</strong> — 保留对种子组件的组件引用。</p>
+           </li>
+           <li>
+             <p><strong>克隆</strong> — 引用种子组件。 </p>
+           </li>
+           <li>
+             <p><strong>替换</strong> — 引用不同的种子组件。</p>
+           </li>
+         </ul>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>如果选择<strong>替换</strong>，则可能需要选择<strong>装配加载选项</strong>对话框中的<strong>允许替换</strong>，以打开克隆装配。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <p>如果为子装配提供了<strong>替换</strong>的操作定义，则其子组件不再适用于异常规范。</p>
+         <p>如果要替换的组件是一个提升基础部件并想保持提升的关联，必须将其替换为一个相关的替换件。(如果<strong>克隆</strong>或<strong>保留</strong>提升基础部件，则没有特殊限制。)关于提升的更多信息，请参见建模帮助。</p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>操作指派用于组件部件，而不是该部件的单独事例。通过选择<strong>装配</strong>→<strong>组件</strong>→<strong>替换组件</strong>，可以对单独的事例进行引用修改。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>仅当使用<strong>创建克隆装配</strong>时，才会发生自动消除，用来防止对种子装配进行不必要的修改。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

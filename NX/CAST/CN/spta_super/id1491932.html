@@ -1,0 +1,67 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Dynamic reduction &mdash; dynamic and static behavior</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Dynamic reduction &mdash; dynamic and static behavior</h2>
+         
+         <p>You can accurately use a dynamically reduced superelement in either a dynamic or static system run solution. </p>
+         
+         <p>Using a dynamically reduced superelement in a dynamic solution:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>The component modes account for the dynamic behavior.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The constraint modes account for any local flexibility at the boundaries which may not be accounted for in the component modes. </p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>Using a dynamically reduced superelement in a static solution:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>The constraint modes accurately account for the stiffness.  </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The component modes are ignored.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Because the component modes are not used in a static solution, the additional resources required to compute them may offset any efficiency gains.</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Thermal stresses and strains</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Thermal stresses and strains</h2>
+         <a name="ndxgenid_sptd_thermal_28"></a>
+         
+         <a name="ndxgenid_sptd_thermal_29"></a>
+         
+         <a name="ndxgenid_sptd_thermal_30"></a>
+         
+         
+         <p>You can calculate thermal stresses and strains from a linear static analysis.</p>
+         
+         <p>Thermal strains are induced when nodal temperatures differ from the reference temperature. You can assign temperatures directly to nodes or by specifying the temperature of geometry.</p>
+         
+         <p>Mechanical loads can be included in an analysis where thermal strains exist to evaluate the combined effect of both loadings.</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/solutions/thermal/thermal_stress_strain.png"></p>
+         <a name="genid_thermal_stress_analysis_27_546" id="genid_thermal_stress_analysis_27_546"></a>
+         
+         
+         
+         <h2>Thermal stress analysis</h2>
+         
+         
+         <a name="ndxgenid_sptd_thermal_32"></a>
+         
+         <a name="ndxgenid_sptd_thermal_33"></a>
+         
+         <a name="ndxgenid_sptd_thermal_34"></a>
+         
+         
+         <p>A thermal stress analysis can optionally use thermal results as pre-load input for a structural analysis. </p>
+         
+         <p>To use the pre-load attributes for NX Nastran:</p>
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>In the  <span class="uiTerm">Simulation Navigator</span>, right-click the subcase in the structural solution and choose  <span class="uiTerm">Edit</span>. 
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>For <span class="uiTerm">Pre-Load Type</span>, choose  <span class="uiTerm">NASTRAN Temperatures</span>.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Browse and select the NX Nastran *.op2 file, which contains the temperature results.</p>
+               
+            </li>
+            
+         </ol>
+         
+         <p>For results from NX Thermal, set the  <span class="uiTerm">Pre-Load Type</span> to  <span class="uiTerm">NX THERMAL Temperatures</span>. 
+         </p>
+         
+         
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/des_sim/solutions/nastran/sol_step_preload_des.png"></p>
+         
+         
+         <a name="genid_understanding_a_pre-load_21_494" id="genid_understanding_a_pre-load_21_494"></a>
+         
+         
+         
+         <h2>Understanding a pre-load</h2>
+         
+         
+         <a name="ndxgenid_sptd_thermal_36"></a>
+         
+         <a name="ndxgenid_sptd_thermal_37"></a>
+         
+         
+         <p>When you specify a pre-load, the solver:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>Reads the nodal temperature data from the selected output file.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Applies the temperatures to the nodes of the structure. The meshes must be identical for NX Nastran, but are not required for NX Thermal.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Uses the strain free temperature from the material data or the solution attributes for the &Delta;<span class="variableText">t</span> calculation. 
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Uses the structural material properties, together with any existing structural loads. </p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

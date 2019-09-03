@@ -1,0 +1,12 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开部件",file:"id321810.html",type:"topic",parent:""},
+{id:"d7e3",title:"重置对话框内存",file:"id353012.html",type:"topic",parent:""},
+{id:"d7e4",title:"创建 FEM 和仿真文件",file:"id154206.html",type:"topic",parent:""},
+{id:"d7e5",title:"显示理想化部件",file:"id154481.html",type:"topic",parent:""},
+{id:"d7e6",title:"提升理想化部件",file:"id1007262.html",type:"topic",parent:""},
+{id:"d7e7",title:"使用手动方法创建中面",file:"id154696.html",type:"topic",parent:""},
+{id:"d7e8",title:"使用相切面创建中面",file:"id973077.html",type:"topic",parent:""},
+{id:"d7e9",title:"使用自动方法创建中面",file:"id736614.html",type:"topic",parent:""},
+{id:"d7e10",title:"显示 FEM 文件",file:"id154446.html",type:"topic",parent:""},
+{id:"d7e11",title:"显示中面",file:"id353632.html",type:"topic",parent:""},
+{id:"d7e14",title:"划分中面的网格",file:"id154911.html",type:"topic",parent:""}]}

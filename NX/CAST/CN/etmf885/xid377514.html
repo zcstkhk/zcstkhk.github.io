@@ -1,0 +1,182 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Automatic option for tracking point</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Automatic option for tracking point</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>The new <span class="uiTerm">Automatic</span> option determines the best suited tracking point based on the tool holder orientation. The tracking point P-cluster value propagates to the tool path and NC tool path output.
+            </p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/turning/automatic_tool_track_3.png"></p>
+            
+            <table cellpadding="10" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col align="center" span="1">
+                  
+                  <col align="center" span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" height="325" rowspan="1">
+                        
+                        <p><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/turning/automatic_tool_track_4.png" border="0"></p>
+                        
+                        <p class="no-bottom-margin">Operation Holder Angle 80 Degrees</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" height="325" rowspan="1">
+                        
+                        <p><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/turning/automatic_tool_track_5.png" border="0"></p>
+                        
+                        <p class="no-bottom-margin">Operation Holder Angle 50 Degrees</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p>The <span class="uiTerm">Tracking Point</span> option, <span class="uiTerm">Rotate with Holder</span> gives you additional support when re-orienting the tool by flipping the tool around the holder or by changing the tool holder angle.
+            </p>
+            
+            <p>Using the <span class="uiTerm">Automatic</span> option, NX chooses a tracking point depending on holder rotation. Additional tracking points are automatically created when necessary.
+            </p>
+            
+            <table align="center">
+               
+               <colgroup align="center" span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/turning/automatic_tool_track_6.png" border="0"></p>
+                        
+                        <p class="no-bottom-margin">Operation Holder Angle 135 Degrees, Flipped Tool</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Why should I use it?</h3>
+            
+            <p>You no longer have to manually select the tracking points.</p>
+            
+         </div>
+         
+         
+         <p></p>
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Manufacturing</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Prerequisite</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p>Rough or Finish turn operation</p>
+                     
+                     <p class="no-bottom-margin">The <span class="uiTerm">Reorient Tool Holder</span> check box must be selected in the <span class="uiTerm">Tool Orientation</span> group.
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">[Rough or Finish operation] dialog box&rarr;<span class="uiTerm">Tool Orientation</span> group&rarr;<span class="uiTerm">Tracking Point</span> list&rarr;<span class="uiTerm">Automatic</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

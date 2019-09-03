@@ -1,0 +1,44 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>3D 水平和竖直尺寸</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>3D 水平和竖直尺寸</h2>
+         
+         <p>水平尺寸与竖直尺寸在3D 视图中的意义不如在2D 视图中重大。您可要指定用户定义的注释平面，在该平面中定义水平和竖直尺寸，但是它本质上还是标注2D 空间，距离将被投影到该注释平面上，因此可能会得到意外的值。如果您尚未显式定义注释平面，NX 将为各个尺寸自动判断注释平面，这样更可能得到您想要的尺寸值。</p>
+         
+         <p>水平和竖直尺寸为点到点尺寸，选定点将被投影到注释平面上，尺寸值也是在注释平面中进行计算。</p>
+         
+         <p>如果选定点不在注释平面中，则将创建次要延伸线。</p>
+         
+         
+         <div class="division">
+            
+            <h3>次要延伸线</h3>
+            
+            <p>当注释平面与被标注几何体不相交时，将自动创建次要延伸线。</p>
+            
+            <p>这些线可以辅助确定要添加尺寸的特定几何体。次要延伸线垂直于注释平面，并且在三维空间中将主要延伸线与被标注的几何体连接起来。</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/pmi/dimensions/extension_lines/extension_lines.png"></p>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/pmi/dimensions/extension_lines/extension_lines2.png"></p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

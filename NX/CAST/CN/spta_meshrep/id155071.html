@@ -1,0 +1,440 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>修复单元连接</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>修复单元连接</h2>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/icon_list3.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/gateway/view/zoom.gif" border="0"> <strong>缩放</strong>(<strong>视图</strong>工具条—<strong>视图操作</strong>下拉菜单)
+         </p>
+         <p>放大问题区域以便查看。</p>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/meshing/manual_meshing/problem_area_2a.gif"></p>
+         <p>当您放大时，应该能看到有两条边没有缝合。</p>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/meshing/manual_meshing/free_edges.gif"></p>
+         <p>使用<strong>缝合边</strong>命令来修复自由边，<strong>缝合边</strong>将把实体或片体内，或者不同体之间的自由边缝合在一起，并创建一条公共边。</p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/icon_list3.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/match_edge.gif" border="0"> <strong>缝合边</strong>(<strong>高级仿真</strong>工具条—<strong>自动修复几何体</strong><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/list70_auto_heal_geometry_list.gif" border="0">&nbsp;下拉菜单)
+         </p>
+         <ul class="unmarkedList">
+            <li>
+               
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="45">
+                     
+                     <col span="1" width="*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="banner_left" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td class="banner_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>方法</strong></p>
+                           
+                        </td>
+                        
+                        <td class="banner_right" colspan="1" rowspan="1" width="45">
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               
+               <table cellspacing="0" class="option_list" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="86">
+                     
+                     <col span="1" width="185*">
+                     
+                     <col span="1" width="20">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                        <td class="border1a" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">手工</p>
+                           
+                        </td>
+                        
+                        <td class="nopadding" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="top" src="../graphics/nonLocalized/nx_dss/icons/images/option_arrow_no_border.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+               <table class="attentionTable attn_note">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">注释</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>这个示例将展示手工缝合，您也可以使用自动边到边缝合来修复边。 </p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+            <li>
+               
+               
+               <table cellspacing="0" class="option_list" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="86">
+                     
+                     <col span="1" width="185*">
+                     
+                     <col span="1" width="20">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>要缝合的几何体</strong></p>
+                           
+                        </td>
+                        
+                        <td class="border1a" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">边到边</p>
+                           
+                        </td>
+                        
+                        <td class="nopadding" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="top" src="../graphics/nonLocalized/nx_dss/icons/images/option_arrow_no_border.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0">&nbsp;<img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball1.gif" border="0"></p>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/meshing/manual_meshing/problem_area_2.gif"></p>
+               
+            </li>
+            <li>
+               
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="45">
+                     
+                     <col span="1" width="*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="banner_left" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td class="banner_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>目标几何体</strong></p>
+                           
+                        </td>
+                        
+                        <td class="banner_right" colspan="1" rowspan="1" width="45">
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/sel_node.gif" border="0"> 
+               </p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0">&nbsp;<img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball1.gif" border="0"></p>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/meshing/manual_meshing/problem_area_2b.gif"></p>
+               
+            </li>
+            <li>
+               
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>确定</strong></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/update_finite_element_model.gif" border="0"><strong> 更新有限元模型</strong>(<strong>高级仿真</strong>工具条)</p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/gateway/view/fit.gif" border="0"> <strong>适合窗口</strong>(<strong>视图</strong>工具条—<strong>视图操作</strong>下拉菜单)</p>
+               
+            </li>
+         </ul>
+         <p>再次运行<strong>有限元模型检查</strong>以验证自由边已被修复。</p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/icon_list3.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/element_edges.png" border="0">&nbsp;<strong>单元边</strong>(<strong>高级仿真</strong>工具条—<strong>信息</strong>下拉菜单)</p>
+         <ul class="unmarkedList">
+            <li>
+              <table border="0" cellpadding="0" cellspacing="0">
+                <colgroup span="1">
+                  <col span="1" width="10">
+                  <col span="1" width="*">
+                  <col span="1" width="45">
+                  <col span="1" width="*">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td class="banner_left" colspan="1" rowspan="1" width="10"></td>
+                    <td class="banner_middle" colspan="1" rowspan="1" width="*"><p class="no-bottom-margin"><strong>要检查的单元</strong></p></td>
+                    <td class="banner_right" colspan="1" rowspan="1" width="45"></td>
+                    <td colspan="1" rowspan="1" width="*"><p class="no-bottom-margin">&nbsp;</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li>
+              <table cellspacing="0" class="option_list" width="300">
+                <colgroup span="1">
+                  <col span="1" width="86">
+                  <col span="1" width="185*">
+                  <col span="1" width="20">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td class="label2" colspan="1" rowspan="1"><p class="no-bottom-margin"><span class="uiTerm"></span></p></td>
+                    <td class="border1a" colspan="1" rowspan="1"><p class="no-bottom-margin">显示</p></td>
+                    <td class="nopadding" colspan="1" rowspan="1"><p class="no-bottom-margin"><img align="top" src="../graphics/nonLocalized/nx_dss/icons/images/option_arrow_no_border.gif" border="0"></p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li>
+              <table border="0" cellpadding="0" cellspacing="0">
+                <colgroup span="1">
+                  <col span="1" width="10">
+                  <col span="1" width="*">
+                  <col span="1" width="10">
+                  <col span="1" width="*">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                    <td class="button_middle" colspan="1" rowspan="1" width="*"><p class="no-bottom-margin"><strong>生成单元轮廓</strong></p></td>
+                    <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                    <td colspan="1" rowspan="1" width="*"><p class="no-bottom-margin">&nbsp;</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/meshing/manual_meshing/problem_area_2_fixed.gif"></p>
+               <table border="0" cellpadding="0" cellspacing="0">
+                 <colgroup span="1">
+                   <col span="1" width="10">
+                   <col span="1" width="*">
+                   <col span="1" width="10">
+                   <col span="1" width="*">
+                 </colgroup>
+                 <tbody>
+                   <tr>
+                     <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                     <td class="button_middle" colspan="1" rowspan="1" width="*"><p class="no-bottom-margin"><strong>关闭</strong></p></td>
+                     <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                     <td colspan="1" rowspan="1" width="*"><p class="no-bottom-margin">&nbsp;</p></td>
+                   </tr>
+                 </tbody>
+               </table>
+            </li>
+         </ul>
+         <p>自由边现在已被修复，显示缝合的边。</p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/menu.gif" border="0">&nbsp;<strong>首选项&rarr;模型显示</strong></p>
+         <ul class="unmarkedList">
+           <li>
+             <table border="0" cellpadding="0" cellspacing="0">
+               <colgroup span="1">
+                 <col span="1" width="10">
+                 <col span="1" width="*">
+                 <col span="1" width="10">
+               </colgroup>
+               <tbody>
+                 <tr>
+                   <td class="tab_left" colspan="1" rowspan="1" width="10"></td>
+                   <td class="tab_middle" colspan="1" rowspan="1" width="*"><p class="no-bottom-margin"><strong>多边形几何体</strong></p></td>
+                   <td class="tab_right" colspan="1" rowspan="1" width="16"></td>
+                 </tr>
+               </tbody>
+             </table>
+           </li>
+           <li>
+             <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/check_box_on.gif" border="0">&nbsp;<strong>显示缝合边</strong></p>
+           </li>
+           <li>
+             <table cellspacing="0" class="option_list" width="300">
+               <colgroup span="1">
+                 <col span="1" width="86">
+                 <col span="1" width="185*">
+                 <col span="1" width="20">
+               </colgroup>
+               <tbody>
+                 <tr>
+                   <td class="label2" colspan="1" rowspan="1"><p class="no-bottom-margin"><strong>厚度</strong></p></td>
+                   <td class="border1a" colspan="1" rowspan="1"><p class="no-bottom-margin">1.40 mm</p></td>
+                   <td class="nopadding" colspan="1" rowspan="1"><p class="no-bottom-margin"><img align="bottom" src="../graphics/graphicLibrary/option_arrow_no_border.gif" border="0"></p></td>
+                 </tr>
+               </tbody>
+             </table>
+           </li>
+           <li>
+             <table border="0" cellpadding="0" cellspacing="0">
+               <colgroup span="1">
+                 <col span="1" width="10">
+                 <col span="1" width="*">
+                 <col span="1" width="10">
+                 <col span="1" width="*">
+               </colgroup>
+               <tbody>
+                 <tr>
+                   <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                   <td class="button_middle" colspan="1" rowspan="1" width="*"><p class="no-bottom-margin"><strong>确定</strong></p></td>
+                   <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                   <td colspan="1" rowspan="1" width="*"><p class="no-bottom-margin">&nbsp;</p></td>
+                 </tr>
+               </tbody>
+             </table>
+           </li>
+           <li>
+             <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/meshing/geo_repair/geo_repair_18.gif" border="0"></p>
+           </li>
+         </ul>
+         <p>下一步，您将使用手动网格划分工具来修复其它自由边。</p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

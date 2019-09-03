@@ -1,0 +1,110 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>最小化或最大化目标</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>最小化或最大化目标</h2>
+         
+         <p>可以使用<strong>最小</strong>或<strong>最大</strong>设计目标来最小化或最大化以下类型的设计响应。</p>
+         
+         
+         <table border="1" cellpadding="4" cellspacing="2" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="3">
+            </colgroup>
+            
+            <thead>
+               
+               <tr valign="top">
+                 <td colspan="1" rowspan="1" align="center"><p>柔度项</p></td>
+                 <td colspan="1" rowspan="1" align="center"><p>材料体积项</p></td>
+                 <td colspan="1" rowspan="1" align="center"><p>固有频率项</p></td>
+                 <td colspan="1" rowspan="1" align="center"><p>位移项</p></td>
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+               <tr valign="top">
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/topo_opt/stiffness_eq.png" border="0"></p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/topo_opt/volume_eq.png" border="0"></p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/topo_opt/eigenfreq1_eq.png" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/topo_opt/eigenfreq_eq.png" border="0"></p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/topo_opt/displacement_eq.png" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         
+         <p>索引 <em>i</em> 与 <em>j</em> 表示绝对坐标系或局部坐标系的轴(X、Y 或 Z)的方向。</p>
+         
+         <p>柔度是刚度的倒数，反映的是整个模型的应变能总和。柔度和位移可基于不同载荷工况的结果。</p>
+         
+         <p>项 <em>α</em> 是重量因子，在 NX 拓扑优化中始终为 1。</p>
+         
+         <table class="attentionTable attn_tip">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">提示</p>
+               </td>
+               <td class="attention_main"><ul>
+                  <li>
+                    <p>通常而言，应将设计目标设为<strong>最小</strong>。<strong>最大</strong>目标可帮助最大化负位移或最大化特定模态的固有频率</p>
+                  </li>
+                  <li>
+                    <p>希望最大化结构刚度时，需定义<strong>柔度</strong>类型的设计响应，并将设计目标设为<strong>最小</strong></p>
+                  </li>
+                     
+                 </ul>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <p>优化包含多个载荷工况时，软件通过对各个值求和，将所有载荷工况的响应结合起来。各载荷工况上每个节点的结果相加，得到所有载荷工况和节点组合的一个值。 </p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

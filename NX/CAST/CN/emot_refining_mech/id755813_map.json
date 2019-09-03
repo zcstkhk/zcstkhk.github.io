@@ -1,0 +1,11 @@
+{identifier:"id",label:"title",items:[
+{id:"d10e2",title:"打开仿真",file:"torque_open_simulation.html",type:"topic",parent:""},
+{id:"d10e3",title:"重置对话框内存",file:"id353012_dup3.html",type:"topic",parent:""},
+{id:"d10e4",title:"创建齿轮齿条副",file:"create_rack_pinion_weight.html",type:"topic",parent:""},
+{id:"d10e5",title:"在弹簧—阻尼器上创建滑动副",file:"create_slider_joint_weight.html",type:"topic",parent:""},
+{id:"d10e6",title:"创建弹簧",file:"create_spring_weight.html",type:"topic",parent:""},
+{id:"d10e7",title:"创建阻尼器",file:"create_damper_weight.html",type:"topic",parent:""},
+{id:"d10e8",title:"创建标量扭矩",file:"create_vector_torque.html",type:"topic",parent:""},
+{id:"d10e9",title:"创建解算方案并求解",file:"create_solution_torque.html",type:"topic",parent:""},
+{id:"d10e10",title:"查看机构动画",file:"animate_mechanism_torque.html",type:"topic",parent:""},
+{id:"d10e11",title:"可选：图表化结果",file:"graph_acceleration_winch.html",type:"topic",parent:""}]}

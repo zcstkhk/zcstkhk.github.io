@@ -1,0 +1,228 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>练习：自行车挡泥板上的基于层片过程</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>练习：自行车挡泥板上的基于层片过程</h2>
+         <div class="estimatedTime">
+           <p>预计完成此练习需要：10&ndash;15  分钟</p>
+         </div>
+         <div></div>
+         <p>您将划分半个挡泥板的网格，并创建带四个层片的层合板物理属性。</p>
+         <table border="0" cellpadding="8" cellspacing="2" width="100%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="200">
+               
+               <col span="1">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td bgcolor="#C3D7EB" colspan="2" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">您将学习如何：</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#E6F0FA" valign="middle">
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="navigator" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1">
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape_minus.gif" border="0">&nbsp; 铺层
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr bgcolor="" valign="middle">
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape_plus.gif" border="0">&nbsp;铺层偏置</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr bgcolor="" valign="middle">
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape_plus.gif" border="0">&nbsp;材料方向&nbsp;
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr bgcolor="" valign="middle">
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape_minus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/checkbox_redcheck.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/update_arrow_red.gif" border="0">&nbsp;Mud_guard
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr bgcolor="" valign="middle">
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape_plus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/update_arrow_red.gif" border="0">&nbsp;层片 4
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr bgcolor="" valign="middle">
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape_plus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/update_arrow_red.gif" border="0">&nbsp;层片 3
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr bgcolor="" valign="middle">
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_tshape_plus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/update_arrow_red.gif" border="0">&nbsp;层片 2
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr bgcolor="" valign="middle">
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_bent_plus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/update_arrow_red.gif" border="0">&nbsp;层片 1
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_vertical.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/tree_gif_bent_plus.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/maya_navigators/update_arrow_red.gif" border="0">&nbsp;区域
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">创建全局铺层</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#E6F0FA" valign="middle">
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/laminates/lam_global_layup/lam_zone1_pr.gif"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">创建区域并查看它们的层合板物理属性</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#E6F0FA" colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/laminates/lam_physical_property/selected_faces_1_pr.gif"></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#E6F0FA" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">通过添加层片来局部增强层合板</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#E6F0FA" colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/laminates/lam_global_layup/thickness_contours_pr.gif"></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#E6F0FA" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">绘制厚度云图</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <div class="activityDiv">
+            <p>开始 <a href="#" onclick="popUpPageType('id902746.html','visualLanguage')">自行车挡泥板上的基于层片过程</a></p>
+         </div>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/rule.gif"></p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

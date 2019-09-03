@@ -1,0 +1,372 @@
+###############################################################################
+# dbc_udf_ascii.def - DBC Event Handler for database stored as ascii file
+###############################################################################
+##############################################################################
+# REVISIONS
+#   Date         Who                   Reason
+#   21-Apr-1999  Rami Reuveni          Initial
+#   19-Nov-2001  Fei Gao               Change for V19
+#   07-Mar-2002  Monica Lingard        Define user defined feature libraries           
+##############################################################################
+
+################################################################################
+#   This is the definition file for retrieving the UDFS from
+#   a flat file database 
+#
+###############################################################################
+DB_PREFIX  "DB("
+DB_SUFFIX  ")"
+ESS_PREFIX "ESS("
+ESS_SUFFIX ")"
+
+
+###############################################################################
+#    The DB_ALIAS of the library reference. It is mandatory that this DB_ALIAS
+#    appears in the alias list
+#    
+###############################################################################
+
+################################################################################
+#    The list of DB_ALIAS
+#
+#    DB_ALIAS  <alias>
+#    {
+#         DB_ID       < identifier of the cutter parameter in a UG part file >
+#         DB_ID_TYPE  < Type of the identifier >
+#              d _ double
+#              i _ integer
+#              s _ string
+#    }
+#
+###############################################################################
+        DB_ALIAS  udf_name
+        {
+           DB_ID        0
+           DB_ID_TYPE   s
+           DIALOG_NAME "UDF Name"
+           RSET_NAME "UDF Name"
+        }
+
+        DB_ALIAS  udf_file_name
+        {
+           DB_ID        1
+           DB_ID_TYPE   s
+           DIALOG_NAME "UDF File Name"
+           RSET_NAME "UDF File Name"
+        }
+
+        DB_ALIAS  cgm_file_name
+        {
+           DB_ID        2
+           DB_ID_TYPE   s
+           DIALOG_NAME "CGM File Name"
+           RSET_NAME "CGM File Name"
+        }
+
+        DB_ALIAS  udf_lib_name
+        {
+           DB_ID        3
+           DB_ID_TYPE   s
+           DIALOG_NAME "Class Name"
+           RSET_NAME "Class Name"
+        }
+        DB_ALIAS  url_help
+        {
+           DB_ID        4
+           DB_ID_TYPE   s
+           DIALOG_NAME "Url Help"
+           RSET_NAME "Url Help"
+        }
+LIBREF udf_file_name
+
+#########################################################################
+#                      The Library Hierarchy                            #
+#########################################################################
+
+CLASS Metric
+{
+    TYPE Metric
+    QUERY  "[DB(udf_lib_name)] &= [Metric]"
+    FILE "$UDF_LIBRARY_DIR"
+    DIALOG udf_name
+    RSET udf_file_name
+
+    CLASS Fittings
+    {
+        TYPE Fittings
+        QUERY "[DB(udf_lib_name)] &= [Fittings]"
+        FILE "$UDF_LIBRARY_DIR"
+        DIALOG udf_name
+        RSET udf_file_name
+    }
+    CLASS Bosses
+    {
+        TYPE Bosses
+        QUERY "[DB(udf_lib_name)] &= [Bosses]"
+        FILE "$UDF_LIBRARY_DIR"
+        DIALOG udf_name
+        RSET udf_file_name
+    }
+    CLASS Grooves
+    {
+        TYPE Grooves
+        QUERY "[DB(udf_lib_name)] &= [Grooves]"
+        FILE "$UDF_LIBRARY_DIR"
+        DIALOG udf_name
+        RSET udf_file_name
+
+        CLASS Retaining_Rings
+        {
+            TYPE Retaining_Rings
+            QUERY "[DB(udf_lib_name)] &= [Retaining_Rings]"
+            FILE "$UDF_LIBRARY_DIR"
+            DIALOG udf_name
+            RSET udf_file_name
+        }
+
+        CLASS Seals
+        {
+            TYPE Seals
+            QUERY "[DB(udf_lib_name)] &= [Seals]"
+            FILE "$UDF_LIBRARY_DIR"
+            DIALOG udf_name
+            RSET udf_file_name
+        }
+
+        CLASS O_Rings
+        {
+            TYPE O_Rings
+            QUERY "[DB(udf_lib_name)] &= [O_Rings]"
+            FILE "$UDF_LIBRARY_DIR"
+            DIALOG udf_name
+            RSET udf_file_name
+        }
+    }
+
+    CLASS Involute_Splines
+    {
+        TYPE Involute_Splines
+        QUERY "[DB(udf_lib_name)] &= [Involute_Splines]"
+        FILE "$UDF_LIBRARY_DIR"
+        DIALOG udf_name
+        RSET udf_file_name
+
+    }
+
+    CLASS Standard_Holes
+    {
+        TYPE Standard_Holes
+        QUERY "[DB(udf_lib_name)] &= [Standard_Holes]"
+        FILE "$UDF_LIBRARY_DIR"
+        DIALOG udf_name
+        RSET udf_file_name
+
+        CLASS Tapered
+        {
+            TYPE Tapered
+            QUERY "[DB(udf_lib_name)] &= [Tapered]"
+            FILE "$UDF_LIBRARY_DIR"
+            DIALOG udf_name
+            RSET udf_file_name
+        }
+
+        CLASS Slotted
+        {
+            TYPE Slotted
+            QUERY "[DB(udf_lib_name)] &= [Slotted]"
+            FILE "$UDF_LIBRARY_DIR"
+            DIALOG udf_name
+            RSET udf_file_name
+        }
+        CLASS Counter_Sunk
+        {
+            TYPE Counter_Sunk
+            QUERY "[DB(udf_lib_name)] &= [Counter_Sunk]"
+            FILE "$UDF_LIBRARY_DIR"
+            DIALOG udf_name
+            RSET udf_file_name
+        }
+
+        CLASS Counter_Bore
+        {
+            TYPE Counter_Bore
+            QUERY "[DB(udf_lib_name)] &= [Counter_Bore]"
+            FILE "$UDF_LIBRARY_DIR"
+            DIALOG udf_name
+            RSET udf_file_name
+        }
+
+    }
+
+    CLASS Stiffeners
+    {
+        TYPE Stiffeners
+        QUERY "[DB(udf_lib_name)] &= [Stiffeners]"
+        FILE "$UDF_LIBRARY_DIR"
+        DIALOG udf_name
+        RSET udf_file_name
+
+        CLASS Ribs
+        {
+            TYPE Ribs
+            QUERY "[DB(udf_lib_name)] &= [Ribs]"
+            FILE "$UDF_LIBRARY_DIR"
+            DIALOG udf_name
+            RSET udf_file_name
+        }
+
+    }
+}
+
+CLASS English
+{
+    TYPE English
+    QUERY  "[DB(udf_lib_name)] &= [English]"
+    FILE "$UDF_LIBRARY_DIR"
+    DIALOG udf_name
+    RSET udf_file_name
+
+    CLASS Fittings
+    {
+        TYPE Fittings
+        QUERY "[DB(udf_lib_name)] &= [Fittings]"
+        FILE "$UDF_LIBRARY_DIR"
+        DIALOG udf_name
+        RSET udf_file_name
+    }
+    CLASS Pads
+    {
+        TYPE Pads
+        QUERY "[DB(udf_lib_name)] &= [Pads]"
+        FILE "$UDF_LIBRARY_DIR"
+        DIALOG udf_name
+        RSET udf_file_name
+
+        CLASS Rectangular_Pad
+        {
+            TYPE Rectangular_Pad
+            QUERY "[DB(udf_lib_name)] &= [Rectangular_Pad]"
+            FILE "$UDF_LIBRARY_DIR"
+            DIALOG udf_name
+            RSET udf_file_name
+        }
+
+        CLASS Chamfer_Rectangular_Pad
+        {
+            TYPE Chamfer_Rectangular_Pad
+            QUERY "[DB(udf_lib_name)] &= [Chamfer_Rectangular_Pad]"
+            FILE "$UDF_LIBRARY_DIR"
+            DIALOG udf_name
+            RSET udf_file_name
+        }
+    }
+    
+    CLASS Grooves
+    {
+        TYPE Grooves
+        QUERY "[DB(udf_lib_name)] &= [Grooves]"
+        FILE "$UDF_LIBRARY_DIR"
+        DIALOG udf_name
+        RSET udf_file_name
+
+        CLASS Retaining_Rings
+        {
+            TYPE Retaining_Rings
+            QUERY "[DB(udf_lib_name)] &= [Retaining_Rings]"
+            FILE "$UDF_LIBRARY_DIR"
+            DIALOG udf_name
+            RSET udf_file_name
+        }
+
+        CLASS Seals
+        {
+            TYPE Seals
+            QUERY "[DB(udf_lib_name)] &= [Seals]"
+            FILE "$UDF_LIBRARY_DIR"
+            DIALOG udf_name
+            RSET udf_file_name
+        }
+
+        CLASS O_Rings
+        {
+            TYPE O_Rings
+            QUERY "[DB(udf_lib_name)] &= [O_Rings]"
+            FILE "$UDF_LIBRARY_DIR"
+            DIALOG udf_name
+            RSET udf_file_name
+        }
+    }
+
+    CLASS Involute_Splines
+    {
+        TYPE Involute_Splines
+        QUERY "[DB(udf_lib_name)] &= [Involute_Splines]"
+        FILE "$UDF_LIBRARY_DIR"
+        DIALOG udf_name
+        RSET udf_file_name
+    }
+
+    CLASS Standard_Holes
+    {
+        TYPE Standard_Holes
+        QUERY "[DB(udf_lib_name)] &= [Standard_Holes]"
+        FILE "$UDF_LIBRARY_DIR"
+        DIALOG udf_name
+        RSET udf_file_name
+
+        CLASS Tapered
+        {
+            TYPE Tapered
+            QUERY "[DB(udf_lib_name)] &= [Tapered]"
+            FILE "$UDF_LIBRARY_DIR"
+            DIALOG udf_name
+            RSET udf_file_name
+        }
+
+        CLASS Slotted
+        {
+            TYPE Slotted
+            QUERY "[DB(udf_lib_name)] &= [Slotted]"
+            FILE "$UDF_LIBRARY_DIR"
+            DIALOG udf_name
+            RSET udf_file_name
+        }
+        CLASS Counter_Sunk
+        {
+            TYPE Counter_Sunk
+            QUERY "[DB(udf_lib_name)] &= [Counter_Sunk]"
+            FILE "$UDF_LIBRARY_DIR"
+            DIALOG udf_name
+            RSET udf_file_name
+        }
+
+        CLASS Counter_Bore
+        {
+            TYPE Counter_Bore
+            QUERY "[DB(udf_lib_name)] &= [Counter_Bore]"
+            FILE "$UDF_LIBRARY_DIR"
+            DIALOG udf_name
+            RSET udf_file_name
+        }
+    }
+
+    CLASS Stiffeners
+    {
+        TYPE Stiffeners
+        QUERY "[DB(udf_lib_name)] &= [Stiffeners]"
+        FILE "$UDF_LIBRARY_DIR"
+        DIALOG udf_name
+        RSET udf_file_name
+
+        CLASS Ribs
+        {
+            TYPE Ribs
+            QUERY "[DB(udf_lib_name)] &= [Ribs]"
+            FILE "$UDF_LIBRARY_DIR"
+            DIALOG udf_name
+            RSET udf_file_name
+        }
+    }
+}
+
+

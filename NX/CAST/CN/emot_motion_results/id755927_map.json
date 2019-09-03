@@ -1,0 +1,8 @@
+{identifier:"id",label:"title",items:[
+{id:"d12e2",title:"打开仿真",file:"packaging_open_simulation.html",type:"topic",parent:""},
+{id:"d12e3",title:"重置对话框内存",file:"id353012_dup5.html",type:"topic",parent:""},
+{id:"d12e4",title:"创建角度测量对象",file:"create_the_measure_object.html",type:"topic",parent:""},
+{id:"d12e5",title:"创建最小距离测量对象",file:"create_the_min_dist_meas_object.html",type:"topic",parent:""},
+{id:"d12e6",title:"创建铰接运动解算方案并求解",file:"create_articulation_solution_trace.html",type:"topic",parent:""},
+{id:"d12e7",title:"查看机构铰接运动",file:"articulate_mechanism_measure.html",type:"topic",parent:""},
+{id:"d12e8",title:"列出测量结果",file:"list_measurement_results.html",type:"topic",parent:""}]}

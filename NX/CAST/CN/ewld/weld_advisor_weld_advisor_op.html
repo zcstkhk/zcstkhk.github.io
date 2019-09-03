@@ -1,0 +1,778 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>焊接顾问对话框</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/wizards/weld_assistant/weld_advisor.gif" border="0">&nbsp;焊接顾问对话框</h2>
+         <table border="0" cellpadding="4" cellspacing="2" width="100%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+            </colgroup>
+            
+            <tbody valign="top">
+               
+               <tr bgcolor="silver">
+                  
+                  <td colspan="2" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>要检查的对象</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/wizards/weld_advisor/select_object.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>选择对象</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">让您选择一个或多个要验证的焊接。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="silver" colspan="2" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>检查器</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#F0F0F0">
+                  
+                  <td colspan="2" rowspan="1">
+                     
+                     <p class="no-bottom-margin">显示一个可用检查器的列表。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/wizards/weld_advisor/coincident_point.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>重合点</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p class="no-bottom-margin">寻找重合的点。如果两个点的坐标值相同，点将被标记为重合。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#F0F0F0">
+                  
+                  <td colspan="1" height="16" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/wizards/weld_advisor/minimum_point_distance.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>最小点距离</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" height="16" rowspan="1">
+                     
+                     <p>查看所有选定的焊点并评估它们之间的3D 最小距离。您可以指定最小距离，如果发现任何两个点的距离小于指定值，将被标记为违反规则。</p>
+                     
+                     <p class="no-bottom-margin">您可以在所有点焊类型上运行这个检查，包括电阻点焊、弧焊以及机械连接。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/wizards/weld_advisor/minimum_edge_distance.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>最小边距离</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p class="no-bottom-margin">检查焊点到部件层叠边的距离。您可以指定点焊相对部件边的最小距离，由<strong>连接面查找器</strong>收集的面信息将用在这个检查中。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/wizards/weld_advisor/stack_up_gap.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>焊面缝隙</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p>评估焊点处两个连接面板间的3D 距离，您可以指定允许的最大缝隙，如果发现两个面板在给定的焊点处缝隙值大于给定值，它将会被标记为违反规则，实体间的实际距离将被用在评估中，焊接 ID 以及面将会在违反报告中列出。</p>
+                     
+                     <p class="no-bottom-margin">这个检查可以处理最多四个面。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/wizards/weld_advisor/face_planarity.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>面平面度</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p>在给定的公差范围内评估被焊接面的平面度。您可以指定要检查的区域半径。</p>
+                     
+                     <p class="no-bottom-margin">这个检查将评估焊接的两个面在指定半径内的法向矢量，如果法向矢量间的角度大于在用户默认设置中指定的值，将会视为违反规则。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/wizards/weld_advisor/face_parallelism.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>面平行度</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p class="no-bottom-margin">评估焊接面在指定半径内的法向矢量，如果法向矢量间的角度大于在用户默认设置中指定的值，将会视为违反规则。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/wizards/weld_advisor/point_face_distance.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>点面距离</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p>测量从点焊到第一个指定面集中最近面的距离。</p>
+                     
+                     <p class="no-bottom-margin">如果点焊是使用顶面或者重叠面生成的，并且点或组件尚未被移动，值将是零，如果点焊是使用导入的 CSV 文件生成的，或者已经被移动，测量距离将在检查中报告。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/wizards/weld_advisor/csys_face_normal_angle.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>Csys 面法向角</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p class="no-bottom-margin">评估焊接 CSYS 的 Z 轴与通过焊点的法向矢量之间的偏差、。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/wizards/weld_advisor/metal_stackup.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>金属堆叠</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p>检查以下几种情况：</p>
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">测量焊接堆叠的总厚度</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">验证任意平板与总堆叠量间的厚度率</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">评估包含在堆叠中的总平板数</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                     <p class="no-bottom-margin">部件属性 <span class="literalText">P_GAUGE</span> 用来识别金属厚度。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/wizards/weld_advisor/spacing_per_panel_combination.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>每个面板组合的间距</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p class="no-bottom-margin">评估连接相同金属的点焊间的最小距离。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="32" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/wizards/weld_advisor/weld_flange.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>焊接弯边</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="32" rowspan="1">
+                     
+                     <p class="no-bottom-margin">如果在焊点指定半径内存在相邻的弯边，将确定焊接放置的弯边与相邻弯边之间的角度。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/wizards/weld_advisor/datum_to_weld_distance.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>基准点到焊点距离</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p class="no-bottom-margin">评估点焊与任何存在于装配中的 BIW(body-in-white) 基准之间的距离，如果测量的距离小于默认检查值，将报告为一个失败。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/wizards/weld_advisor/measurement_to_weld_distance.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>测量点到焊点距离</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p class="no-bottom-margin">评估点焊与任何存在于装配中的 BIW 测量特征之间的距离，如果测量的距离小于默认检查值，将报告为一个失败。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/wizards/weld_advisor/bead_compare.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>焊缝比较</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p class="no-bottom-margin">评估焊缝的定义在最初创建之后是否已更改。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>执行分析</strong>按钮</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p>只有在您在图形窗口或<strong>部件导航器</strong>中选择了至少一个焊接特征时才可用。</p>
+                     
+                     <p class="no-bottom-margin">开始焊接检查。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="silver" colspan="2" height="16" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>设置</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="2" height="39" rowspan="1">
+                     
+                     <p>让您设置检查参数。</p>
+                     
+                     <p>默认值在<strong>用户默认设置</strong>对话框的<strong>焊接助理</strong>中配置。</p>
+                     
+                     
+                     <p class="no-bottom-margin">参见在线帮助以获取更多焊接特性的信息。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="39" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>类型</strong>列表</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="39" rowspan="1">
+                     
+                     <p class="no-bottom-margin">为您想要运行的检查指定焊接特征的类型，比如<strong>电阻焊点焊</strong>或<strong>电铆焊</strong>。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="33" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>最小边距离</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="33" rowspan="1">
+                     
+                     <p>当<strong>类型</strong>设置为任何除<strong>基准</strong>或者<strong>测量</strong>之外的选项时可用。</p>
+                     
+                     <p class="no-bottom-margin">这个选项将指定指定焊接与连接体上边之间允许的最小距离。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="71" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>带密封圈的最小边距离</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="71" rowspan="1">
+                     
+                     <p>当<strong>类型</strong>设置为任何除<strong>基准</strong>或者<strong>测量</strong>之外的选项时可用。</p>
+                     
+                     <p>设置点焊到最近的层状边之间的最小距离。</p>
+                     
+                     <p class="no-bottom-margin">这个选项类似于<strong>最小边距离</strong>检查，但会在焊接通过密封圈时评估焊接的隔离参数。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>最小间距</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p class="no-bottom-margin">这个选项将指定指定类型的两个相邻焊接之间允许的最小距离。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="36" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>最大焊面缝隙</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="36" rowspan="1">
+                     
+                     <p>当<strong>类型</strong>设置为任何除<strong>基准</strong>或者<strong>测量</strong>之外的选项时可用。</p>
+                     
+                     <p class="no-bottom-margin">这个选项将指定焊接中两个连接面之间允许的最小距离。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="32" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>最大点面距离</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="32" rowspan="1">
+                     
+                     <p>当<strong>类型</strong>设置为任何除<strong>基准</strong>或者<strong>测量</strong>之外的选项时可用。</p>
+                     
+                     <p class="no-bottom-margin">这个选项将指定焊点与最近面之间允许的最大距离。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="59" rowspan="1">
+                     
+                  <p class="no-bottom-margin"><strong>最大 CSYS 面法向角</strong></p></td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="59" rowspan="1">
+                     
+                     <p>当<strong>类型</strong>设置为任何除<strong>基准</strong>或者<strong>测量</strong>之外的选项时可用。</p>
+                     
+                     <p class="no-bottom-margin">这个选项将指定焊点的 Z 方向与离它最近的面法向之间允许的最大角度。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="47" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>检查区半径</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="47" rowspan="1">
+                     
+                     <p>当<strong>类型</strong>设置为任何除<strong>基准</strong>或者<strong>测量</strong>之外的选项时可用。</p>
+                     
+                     <p class="no-bottom-margin">这个选项将指定平面区域的最小半径，或者在焊接连接位置满足的平行度。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="45" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>带密封圈的检查区半径</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="45" rowspan="1">
+                     
+                     <p>当<strong>类型</strong>设置为任何除<strong>基准</strong>或者<strong>测量</strong>之外的选项时可用。</p>
+                     
+                     <p class="no-bottom-margin">这个选项类似于<strong>检查区半径</strong>检查，但会在焊接通过密封圈时评估焊接的隔离参数。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>平面度公差</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>当<strong>类型</strong>设置为任何除<strong>基准</strong>或者<strong>测量</strong>之外的选项时可用。</p>
+                     
+                     <p class="no-bottom-margin">这个选项将指定平面区域检查中允许的公差。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="20" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>平行度公差</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="20" rowspan="1">
+                     
+                     <p>当类型设置为任何除<strong>基准</strong>或者<strong>测量</strong>之外的选项时可用。</p>
+                     
+                     <p class="no-bottom-margin">这个选项将指定平形度检查中允许的公差。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p><strong>弯边检查区半径</strong></p>
+                     
+                     <p class="no-bottom-margin"><strong>弯边检查区高度</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>当类型设置为任何除<strong>基准</strong>或者<strong>测量</strong>之外的选项时可用。</p>
+                     
+                     <p class="no-bottom-margin">这些选项将指定点焊的半径和高度，以创建一个虚拟圆柱来评估另一弯边的侵入(encroachment)。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="55" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>最小封闭角度</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="55" rowspan="1">
+                     
+                     <p>当类型设置为任何除<strong>基准</strong>或者<strong>测量</strong>之外的选项时可用。</p>
+                     
+                     <p class="no-bottom-margin">这个选项将指定测量至相邻弯边的角度，如果评估角度小于指定值，则检查失败。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>最大金属总厚度</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>当类型设置为任何除<strong>团焊</strong>、<strong>焊接螺柱</strong>或者<strong>测量</strong>之外的选项时可用。</p>
+                     
+                     <p class="no-bottom-margin">这个选项将指定最大金属总厚度。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="36" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>厚度比</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="36" rowspan="1">
+                     
+                     <p>当类型设置为任何除团焊、焊接螺柱或者测量之外的选项时可用。</p>
+                     
+                     <p>这个选项将指定任何两个平板都不得超过的厚度率。</p>
+                     
+                     <table class="attentionTable attn_example">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">示例</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p class="no-bottom-margin">如果连接的三个平板厚度分别为1、2、4，最大的厚度率就是4.0(4比1)。</p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="65" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>外部厚度比</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="65" rowspan="1">
+                     
+                     <p>当类型设置为任何除团焊、焊接螺柱或者测量之外的选项时可用。</p>
+                     
+                     <p class="no-bottom-margin">这个选项将评估任何一个外部平板与两个外部平板总厚度之间的比，这个检查只有在堆叠大于两个平板时有效。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="43" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>活动面板的最大数量</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="43" rowspan="1">
+                     
+                     <p>当类型设置为任何除团焊、焊接螺柱或者测量之外的选项时可用。</p>
+                     
+                     <p class="no-bottom-margin">这个选项将指定活动面板的最大数量。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>包含密封物</strong>复选框</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p class="no-bottom-margin">如果有的话，在检查中包括密封圈之类的对象。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="22" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>执行 Checkmate</strong> 复选框</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="22" rowspan="1">
+                     
+                     <p>从 Check-Mate 中执行焊接检查。</p>
+                     
+                  <p class="no-bottom-margin">要获取更多关于从 Check-Mate 执行检查的信息，参见在线帮助。</p></td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>Checkmate 后保存</strong></p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" height="16" rowspan="1">
+                     
+                     <p>当选中<strong>执行 Checkmate</strong> 复选框后可用。</p>
+                     
+                     <p class="no-bottom-margin">指定从 Check-mate 运行检查后，何时保存得到的结果。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

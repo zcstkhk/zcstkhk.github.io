@@ -1,0 +1,48 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Dynamic reduction overview</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Dynamic reduction overview</h2>
+         
+         <p>The SEMODES 103 &ndash; Superelement solution type performs a dynamic reduction.</p>
+         
+         <p>A dynamic reduction combines dynamic and static behavior.</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>The dynamic portion of the solution computes normal modes of the structure. These modes are called <span class="emphasis">component modes,</span> and are assigned to new, modal DOF.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The static portion of the solution is the same as a static condensation or Guyan reduction. Stiffness, mass, and damping of the omitted DOF are reduced to the boundary DOF.</p>
+               <p>The static portion of a dynamic reduction is sometimes referred to as the <span class="emphasis">constraint modes.</span> It is mathematically equivalent to applying a unit enforced motion constraint to all boundary DOFs, and treating omitted DOFs as fixed.
+               </p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>Dynamic reduction in NX is also referred to as component mode synthesis (CMS). The CMS method allows the boundary DOFs to be free or fixed boundary DOFs.</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

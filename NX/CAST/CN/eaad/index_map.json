@@ -1,0 +1,13 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"包裹装配与链接的外部特征",file:"xid481905.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"包裹装配",file:"xid481904.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"包裹装配概述",file:"id1175001.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"包裹装配对话框",file:"id415546.html",type:"topic",parent:"d5e5"},
+{id:"d5e8",title:"包裹装配注释",file:"large_assem_assy_wrap_notes.html",type:"topic",parent:"d5e5"},
+{id:"d5e9",title:"创建包裹装配",file:"id1150518.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e10",title:"链接的外部",file:"xid482355.html",type:"topic",parent:"",children:[
+{id:"d5e11",title:"链接的外部介绍",file:"large_assem_assy_linkext_intro.html",type:"topic",parent:"d5e10"},
+{id:"d5e12",title:"链接的外部对话框",file:"large_assy_assy_linkext_op.html",type:"topic",parent:"d5e10"},
+{id:"d5e13",title:"创建链接的外部特征",file:"id1150524.html",type:"activity",parent:"d5e10"}]}
+]}

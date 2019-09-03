@@ -1,0 +1,66 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>了解四面体网格划分过程</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>了解四面体网格划分过程</h2>
+        <p>软件使用以下过程生成四面体网格：</p>
+            <ol start="1" type="1">
+              <li>
+                <p>软件抽取选定的多边形几何体，以移除可能会在网格划分过程中导致问题的较小的面或边。软件根据在<strong>3D 四面体网格</strong>对话框中指定的<strong>单元大小</strong>和<strong>小特征公差</strong>来进行抽取。</p>
+              </li>
+              <li>
+                <p>软件创建面网格域。这是软件使多边形面参数化并在 2D 空间中为网格化它们做准备所使用的过程。</p>
+              </li>
+              <li>
+                <p>软件在模型中的所有面上生成三角形 2D(壳)单元的网格。当软件完成此面的三角形化过程后，进度尺指示总过程的大约 66% 已完成。</p>
+              </li>
+              <li>
+                <p>软件使用三角形单元在模型中生成3D(实体)单元。</p>
+              </li>
+              <li>
+                <p>如果要创建抛物线四面体单元的网格，软件会插入中节点。</p>
+              </li>
+              <li>
+                <p>软件检查体单元的质量并尝试尽量解决质量问题。</p>
+              </li>
+              <li>
+                <p>软件将网格与底层多边形几何体关联。</p>
+              </li>
+              <li>
+                <p>软件在图形窗口中生成已完成网格的显示。</p>
+              </li>
+            </ol>
+            <h3>面网格划分过程的详细信息</h3>
+            <p>软件执行多次检查，以保证它可以根据生成的面网格生成实体网格。在面网格划分过程中，可能会发生许多不同的问题。典型问题包括：</p>
+            <ul>
+              <li>
+                <p>在一些面上，软件不能生成 2D 网格。</p>
+              </li>
+              <li>
+                <p>自由面单元边。</p>
+              </li>
+              <li>
+                <p>不同面上的三角形单元或者相交，或者相互贯穿。</p>
+              </li>
+              <li>
+                <p>边界恢复失败。当面网格在受限区域的厚度有很大不同时，会发生这些情况。如果面网格有很大不同，会阻止软件生成可正确连接到面网格的体网格。</p>
+              </li>
+        </ul>
+            <p>如果软件识别了面网格划分的问题，它会将进度尺中显示的完成程度减小到   60%。然后，尝试通过使用较小的单元大小重新网格划分有问题的区域（受影响的面和任何相邻的面），来修复任何现有的面网格划分问题。如果这不能解决问  题，软件会删除有问题的网格和任何相邻的网格，然后使用较小的单元大小将它们全部重新网格化。软件继续反复地使用较小的单元大小重新网格化有问题的区域。</p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

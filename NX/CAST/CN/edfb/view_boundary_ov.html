@@ -1,0 +1,158 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>视图边界概述</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>视图边界概述</h2>
+         
+         <p>视图边界命令让您可以控制<span id="popup11" dojoType="dijit.layout.ContentPane" class="popup glossaryLink">制图视图</span>周围的边界。</p>
+         <p><strong>视图边界</strong>对话框可用于：</p>
+        <ul>
+           <li>
+             <p>指定或编辑特定制图视图的视图边界类型</p>
+           </li>
+         </ul>
+         <ul>
+           <li>
+             <p>设置或重置制图视图<span id="popup12" dojoType="dijit.layout.ContentPane" class="popup glossaryLink">锚点</span></p>
+           </li>
+           <li>
+             <p>控制视图边界与模型几何体的关联性</p>
+           </li>
+           <li>
+             <p>控制<span id="popup13" dojoType="dijit.layout.ContentPane" class="popup glossaryLink">局部放大图</span>父视图上的边界曲线显示</p>
+           </li>
+         </ul>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/views/boundary/view_boundary.gif"></p>
+         
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">制图</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>图纸→编辑视图</strong>下拉菜单 <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/drafting/drawing_layout/edit_view_drop_down.gif" border="0"><strong>→视图边界</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/drafting/drawing_layout/view_boundary.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>编辑→视图→边界</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">图形窗口</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">右击视图边框→<strong>边界</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">部件导航器</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">右击视图节点→<strong>边界</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div dojoType="dijit.TooltipDialog" id="popup11_dialog" class="glossaryPopup" style="display:none;" closable="true">
+            <div class="exitGlossaryPopup"><a href="#" onclick="closeToolTipDialog('popup11_dialog')"><img src="../xps3/graphics/exit2.png"></a></div>
+            <p><span class="glossaryTerm">制图视图：</span>也称为图纸成员视图。</p>
+            <p>从模型视图创建的标准正交视图，或者表示模型几何体的 2D 曲线视图。制图视图包括图纸对象。列<strong>在部件导航器</strong>的关联<strong>图纸页</strong>节点下方。</p>
+         </div>
+         <div dojoType="dijit.TooltipDialog" id="popup12_dialog" class="glossaryPopup" style="display:none;" closable="true">
+            <div class="exitGlossaryPopup"><a href="#" onclick="closeToolTipDialog('popup12_dialog')"><img src="../xps3/graphics/exit2.png"></a></div>
+            <p><span class="glossaryTerm">锚点：</span>(“建模”和“草图”)普通圆锥中两个端切矢量的交点。 </p>
+            <p>(制图)用于定位制图符号或制图视图的参考点。符号的锚点，指引线附加到符号的地方。</p>
+         </div>
+         <div dojoType="dijit.TooltipDialog" id="popup13_dialog" class="glossaryPopup" style="display:none;" closable="true">
+            <div class="exitGlossaryPopup"><a href="#" onclick="closeToolTipDialog('popup13_dialog')"><img src="../xps3/graphics/exit2.png"></a></div>
+            <p><span class="glossaryTerm">局部放大图：</span>带有圆形、矩形或用户定义边界的子视图，包含现有图纸视图的放大部分。 </p>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

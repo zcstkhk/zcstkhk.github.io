@@ -1,0 +1,386 @@
+    
+.navigator td p {
+    font-size: 9pt;
+    margin-left: 10pt;
+    margin-right: 0pt; 
+    margin-bottom: 0pt;
+    margin-top: 0pt; }
+    
+ .navigator td {
+   border:0;
+ }
+
+.border1a p, .dialog p {
+    margin-left: 0pt;
+    margin-right: 0pt; 
+    margin-bottom: 0pt;
+    margin-top: 0pt; }
+
+.dialog {
+    background-color: #d3d3d3;
+    text-align: left; 
+    padding: 2px 2px;
+    border-collapse: collapse; }
+
+.menu_gray {
+    background-color: #ebebeb;
+    border: 0;
+    text-align: left; 
+    padding: 2px; }
+
+.menu_gray td {
+    vertical-align: center; }
+
+.menu_gray td p {
+    font-size: 9pt;
+    font-family: 'Arial', 'Helvetica', 'sans-serif'; 
+    margin-bottom: 0pt;
+    margin-top: 0pt; 
+    }
+
+.menu_white {
+    background-color: white;
+    border: 2px solid #a3a3a3;
+    border-collapse: collapse;
+    text-align: left; 
+    padding: 2px;
+}
+
+.menu_white td {
+    vertical-align: center
+ }
+
+.menu_white td p {
+    font-size: 9pt;
+    font-family: 'Arial', 'Helvetica', 'sans-serif'; 
+    margin-bottom: 0pt;
+    margin-top: 0pt; 
+    }
+
+.menu_selected {
+    background-color: #5b96ff;
+    color: white;
+    }
+
+.border1 {
+    background-color: white;
+    text-align: left; 
+    padding: 2px 2px;
+    border-collapse: collapse;
+    border: 1px solid #7f9db9; }
+
+/*  added vertical align to original definition */	
+.border1a {
+    background-color: white;
+    text-align: left; 
+    padding: 2px 2px;
+    border-collapse: collapse;
+    border-top: 1px solid #7f9db9; 
+    border-left: 1px solid #7f9db9; 
+    border-bottom: 1px solid #7f9db9; 
+	vertical-align: top;
+    }
+
+.border2 td p {
+    font-size: 9pt;
+    font-family: 'Arial', 'Helvetica', 'sans-serif'; 
+    margin-left: 0pt;
+    margin-right: 0pt; 
+    margin-bottom: 0px;
+    margin-top: 0px; }
+
+/* changed nopadding to add borders */	
+.nopadding { 
+	padding: 0px 0px;
+	border-collapse: collapse;
+    border-top: 1px solid #7f9db9; 
+    border-right: 1px solid #7f9db9; 
+    border-bottom: 1px solid #7f9db9;
+	vertical-align: top;
+    }
+
+.nopadding p {
+    text-align: left; 
+    margin-left: 0pt;
+    margin-right: 0pt; 
+    margin-bottom: 0pt;
+    margin-top: 0pt; 
+    }
+
+/*  Added font-weight: bold; to definition */
+.option_list td p {
+    font-size: 9pt;
+	font-weight: bold;
+    font-family: 'Arial', 'Helvetica', 'sans-serif'; 
+    margin:0; 
+    }
+	
+/* Styles for input field - similar to option list but with different color border (using border1b class     */
+	
+.input_field td p {
+    font-size: 9pt;
+	font-weight: bold;
+    font-family: 'Arial', 'Helvetica', 'sans-serif'; 
+    margin-bottom: 0pt;
+    margin-top: 0pt; 
+    }	
+
+/* used with input_field */	
+.border1b {
+    background-color: white;
+    text-align: left; 
+    padding: 2px 2px;
+    border-collapse: collapse;
+    border-top: 1px solid #aaaaaa; 
+    border-left: 1px solid #aaaaaa; 
+    border-bottom: 1px solid #aaaaaa; 
+	border-right: 1px solid #aaaaaa;
+	vertical-align: top;
+    }	
+
+.check_box td p {
+    font-size: 9pt;
+    font-family: 'Arial', 'Helvetica', 'sans-serif'; 
+    margin-left: 0pt;
+    margin-right: 0pt; 
+    margin-bottom: 0pt;
+    margin-top: 0pt; 
+    }
+
+.check_box td { 
+    background-color: #d3d3d3; 
+    padding: 3px;
+    }
+
+.label1 { 
+    background-color: #d3d3d3; 
+    padding: 1px 4px;
+    }
+
+.label1 td p {
+    font-size: 10pt;
+    font-family: 'Arial', 'Helvetica', 'sans-serif'; 
+    margin-left: 0pt;
+    margin-right: 0pt; 
+    margin-bottom: 0pt;
+    margin-top: 0pt; 
+  }
+	
+/* *********** Styles for CAE version of option list and input field *********** */
+
+.label2 { background-color: #FFFFFF; 
+    padding: 1px 4px;
+	vertical-align: top;
+ }
+	
+/* Styles for list box  */
+	
+.list_box td p {
+    font-size: 9pt;
+	font-weight: bold;
+    font-family: 'Arial', 'Helvetica', 'sans-serif'; 
+    margin-bottom: 0pt;
+    margin-top: 0pt; 
+	padding-bottom: 0px;
+ }	
+	
+.list_box .uiTerm {
+	font-size: 9pt;
+ }	
+	
+.list_box .border1a  {
+    padding-top: 2px;
+ }			
+	
+.nopadding2 { 
+	padding: 0px 0px;
+	vertical-align: top;
+ }
+		
+	
+/* Style for a sizable group banner with text on it */
+
+.banner_left {
+	background: #fff url('../graphics/widgets/banner_left.gif') no-repeat top left; 
+	height:22px;
+ }	
+
+.banner_right {
+	background: #fff url('../graphics/widgets/banner_right.gif') no-repeat top right; 
+	height:22px;
+ }
+
+.banner_middle {
+	background: #fff url('../graphics/widgets/banner_middle.gif') repeat-x top left; 
+	height:22px;
+ }
+
+.banner_middle td p {
+    margin-top: 0pt;
+	font-weight: bold;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-size: 9pt;
+ }
+ 
+.banner_middle .uiTerm, .button_middle .uiTerm, .tab_middle .uiTerm, .key_middle .uiTerm {
+	font-size: 9pt;
+ }			
+
+/* Style for a sizable button with text on it */
+
+.button_left {
+	background: #fff url('../graphics/widgets/button_left.gif') no-repeat top left; 
+	height:21px;
+ }	
+
+.button_right {
+	background: #fff url('../graphics/widgets/button_right.gif') no-repeat top right; 
+	height:21px;
+}
+
+.button_middle {
+	background: #fff url('../graphics/widgets/button_middle.gif') repeat-x top left; 
+	height:21px;
+ }
+
+.button_middle td p {
+    margin-top: 0pt;
+	font-weight: bold;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-size: 9pt;
+ }	
+
+	
+/* Style for a sizable tab with text on it */
+
+.tab_left {
+	background: #fff url('../graphics/widgets/tab_left.gif') no-repeat top left; 
+	height:100%;
+ }
+
+.tab_right {
+	background: #fff url('../graphics/widgets/tab_right.gif') no-repeat top right; 
+	height:100%;
+ }
+
+.tab_middle {
+	background: #fff url('../graphics/widgets/tab_middle.gif') repeat-x top left; 
+	height:100%;
+ }
+
+.tab_middle p {
+    margin-top: 0pt;
+	font-weight: bold;
+	padding-top: 4px;
+	padding-left: 4px;
+	padding-bottom: 5px;
+	font-size: 9pt;
+ }
+	
+/* Style for a sizable key with text on it */
+
+.key_left {
+	background: #fff url('../graphics/widgets/f_left.gif') no-repeat top right; 
+	height:35px;
+ }
+
+.key_right {
+	background: #fff url('../graphics/widgets/f_right.gif') no-repeat top left; 
+	height:35px;
+ }
+
+.key_middle {
+	background: #fff url('../graphics/widgets/f_middle.gif') repeat-x top left; 
+	height:35px;
+	vertical-align: top;
+ }
+
+
+.key_middle td p {
+	font-weight: bold;
+	padding-top: 1px;
+	padding-bottom: 10px;
+	padding-left: 2px;
+	padding-right: 2px;
+	font-size: 9pt;
+ }			
+
+/* *********** End NX emulation styles *********** */
+
+
+/* *********** Styles for font color *********** */
+
+.text_bold { font-weight: bold }
+
+.text_italic { font-style: italic }
+
+.text_bold_italic { font-weight: bold; font-style: italic }
+
+.text_magenta { color: #ff00cc }
+
+.text_blue { color: #0066ff }
+
+.text_blue2 { color: #0000f7 }
+
+.text_gray { color: #999999 }
+
+.text_white { color: white }
+
+
+/* *********** End font color styles *********** */
+
+/* *********** Styles for TC emulation - tree tables *********** */
+    
+
+.tree td p {
+    font-size: 9pt;
+    font-family: 'Arial', 'Helvetica', 'sans-serif'; 
+    margin-left: 10pt;
+    margin-right: 0pt; 
+    margin-bottom: 0px;
+    margin-top: 0pt;
+    vertical-align: middle; 
+}
+
+
+.tree td img {
+    vertical-align: middle;
+}
+
+/*   
+  ******************************************************
+        Styles for the 'Where do I find it' table
+  ******************************************************
+*/
+     
+/* locator - used for the table */
+.locator {
+	margin-left: 25px;
+	margin-right: 20px;
+	border-collapse: collapse;
+}              
+
+.locator .locator_shade, .locator .locator_noshade {
+  margin-left: 10px;
+  border: 1px solid #000000;
+  padding: 4px 2px;
+}
+
+/* locator .locator_shade - used for the left column */
+.locator .locator_shade {
+	background-color: #f1f7f8;
+}
+    
+/* locator .locator_shade p - used for the left column text */             
+.locator .locator_shade p {
+	color: #6786C1;
+	font-weight: bold;
+}
+    
+/* locator .locator_noshade - used for the right column */
+.locator .locator_noshade {
+	background-color: #ffffff;
+	padding-right: 10px;
+}    

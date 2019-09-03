@@ -1,0 +1,175 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>曲面创建命令</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>曲面创建命令</h2>
+         
+         
+         
+         <p><a name="ndxgenid_spta_georepair_23"></a>
+            要创建新的曲面，您壳使用以下建模命令。</p>
+         
+         <table bgcolor="#F0F0F0" cellpadding="4" cellspacing="2" frame="box" rules="all" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+            </colgroup>
+            
+            <tbody valign="top">
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/modeling/surface/through_curves.gif" border="0"> <strong>通过曲线</strong>(<strong>曲面</strong>工具条)</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">通过多个截面创建体，其中形状在通过各个截面时过渡变化</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/modeling/surface/through_curve_mesh.gif" border="0"> <strong>通过曲线网格</strong>(<strong>曲面</strong>工具条)</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">可通过一个方向的截面网格和另一方向的引导线创建体，其中形状配合穿过曲线网格</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/modeling/surface/n-sided_surface.gif" border="0"> <strong>N 边曲面</strong>(<strong>曲面</strong>工具条)</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">可以创建由一组端点相连的曲线封闭的曲面</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/modeling/surface/trimmed_sheet.gif" border="0"> <strong>修剪片体</strong>(<strong>特征</strong>工具条)</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">将片体修剪为相交面与基准，以及投影曲线和边</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/modeling/surface/trim_and_extend.gif" border="0"> <strong>修剪和延伸</strong>(<strong>特征</strong>工具条)
+                     </p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">用于通过由边或曲面组成的一组工具对象来延伸和修剪一个或多个曲面</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>插入</strong>&rarr;<strong>曲面</strong>&rarr;<strong>有界平面</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">创建由一组端相连的平面曲线封闭的平面片体。曲线必须共面，且形成封闭形状</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         
+         <div class="division">
+            
+            <h3><strong>通过曲线网格</strong></h3>
+            
+            <p><a name="ndxgenid_spta_georepair_24"></a>使用<strong>通过曲线网格</strong>命令可通过一个方向的截面网格和另一方向的引导线创建体，其中形状配合穿过曲线网格</p>
+            
+            <p>此命令使用成组的主曲线和交叉曲线来创建双三次曲面：</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>每组曲线都必须连续</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>各组主曲线必须大致平行，且各组交叉曲线也必须大致平行</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>可以使用点而非曲线作为第一个或最后一个主集</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/modeling/thru_crv_mesh_constrain_before_after.png"></p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

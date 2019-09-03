@@ -1,0 +1,56 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Defining surface-to-surface gluing</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Defining surface-to-surface gluing</h2>
+         <a name="ndxgenid_sptd_glue_8"></a>
+         
+         <a name="ndxgenid_sptd_glue_9"></a>
+         
+         
+         <p>To connect surfaces to prevent relative motion in all directions, use the <span class="uiTerm">Surface-to-Surface Gluing</span> simulation object. An NX Nastran glue connection is a simple and effective method to join dissimilar meshes.
+         </p>
+         
+         <p>To glue two surfaces, you must first define the regions where you want to create glue elements (stiff springs that connect and constrain the surfaces). A region is a collection of element free faces in a section of the model where you expect gluing (or contact) to occur. These regions can be created using shell elements and using free faces of solid elements.</p>
+         
+         <p>You can either specify the glued surfaces manually, or you can have the software automatically determine which pairs of faces to glue together.</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>To manually specify source and target surfaces in the glue definition, you can select an existing <span class="uiTerm">Simulation Region</span> or create a new one.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>To have the software automatically determine the glued surfaces, you can use the <span class="uiTerm">Create Automatic Face Pairs</span> dialog box to specify the criteria the software uses to search for surfaces.
+               </p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/glue/surface_to_surface_gluing_des.png"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

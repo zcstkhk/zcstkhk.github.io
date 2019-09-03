@@ -1,0 +1,68 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>表示参数概述</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>表示参数概述</h2>
+         <p>如果从未更改表示参数，则已创建的任何表示均以它所代表的体或面的大小的适当公差来创建。当体的大小与使用该体的部件的大小相当时，通常应进行此操作。</p>
+         <p>如果不是这种情况(例如，在装配级别创建组件实体或片体的表示时)，则应更改这些参数。</p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>如果更改距离或角度公差，则应确保公差合适，方法是调整装配，或是放大或缩小组件直到组件尺寸合适，并重新生成显示。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <p>您可以用三种方法来更改表示的小平面化参数：</p>
+         <ul>
+           <li>
+             <p>根据<strong>小平面表示</strong>用户默认设置，设置小平面化参数的初始值。</p>
+           </li>
+           <li>
+             <p>用<strong>定义表示</strong>对话框上的<strong>编辑参数</strong>来编辑小平面参数(并替代用户默认设置)。</p>
+           </li>
+           <li>
+             <p>用<strong>定义表示</strong>对话框上的<strong>会话参数</strong>选项来编辑当前 NX 会话的小平面参数(并替代用户默认设置)。</p>
+           </li>
+         </ul>
+         <div class="division">
+            
+           <h3>小平面表示用户默认设置</h3>
+            
+            <p>可使用<strong>小平面表示</strong>用户默认设置控制小平面表示的默认距离和角度公差。(<strong>文件→实用工具→用户默认设置→装配→本地标准→轻量级表示</strong>选项卡)。 除非用<strong>编辑小平面参数</strong>或<strong>会话参数</strong>选项来替代设置的值，否则将使用这些值。</p>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                    <p class="attn_title">注释</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>如果没有在用户默认设置文件中设置值，则 NX 将使用其自身基于尺寸的确定小平面体距离和角度公差的方法。您可以用参数选项替代该公差。</p>
+                     
+                  </td>
+              </tr>
+           </table>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

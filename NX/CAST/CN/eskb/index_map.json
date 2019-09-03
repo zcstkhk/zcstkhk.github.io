@@ -1,0 +1,31 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"中间草图",file:"id1054396.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"创建草图几何体",file:"id1084434.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"创建舌形与槽形部件",file:"id1061972.html",type:"activity",parent:"d5e5"},
+{id:"d5e7",title:"基于路径绘制草图",file:"id263536.html",type:"topic",parent:"d5e5"},
+{id:"d5e8",title:"创建圆形交错阵列",file:"id1004091.html",type:"activity",parent:"d5e5"},
+{id:"d5e9",title:"创建沿路径的阵列",file:"id1031764.html",type:"activity",parent:"d5e5"},
+{id:"d5e10",title:"在草图中创建常规阵列",file:"id1372359.html",type:"activity",parent:"d5e5"},
+{id:"d5e11",title:"偏置边",file:"id1092559.html",type:"activity",parent:"d5e5"},
+{id:"d5e12",title:"投影曲线到草图中",file:"id1068168.html",type:"activity",parent:"d5e5"},
+{id:"d5e13",title:"投影曲线",file:"sketcher_sk_addextrct_curve.html",type:"topic",parent:"d5e5"}]},
+
+{id:"d5e15",title:"约束草图几何体",file:"id1084438.html",type:"topic",parent:"",children:[
+{id:"d5e16",title:"完全约束一个椭圆",file:"id1067049.html",type:"activity",parent:"d5e15"},
+{id:"d5e17",title:"自动标注尺寸规则",file:"id1075983.html",type:"activity",parent:"d5e15"},
+{id:"d5e18",title:"求解过约束草图",file:"id1070239.html",type:"activity",parent:"d5e15"},
+{id:"d5e19",title:"约束 U 形轮廓",file:"id1085056.html",type:"activity",parent:"d5e15"},
+{id:"d5e20",title:"草图中的零长度直线",file:"id1387654.html",type:"activity",parent:"d5e15"},
+{id:"d5e21",title:"使用备选解",file:"id1085044.html",type:"activity",parent:"d5e15"},
+{id:"d5e22",title:"使用点约束多个草图",file:"id1085073.html",type:"activity",parent:"d5e15"},
+{id:"d5e23",title:"使用草图尺寸",file:"id1085941.html",type:"activity",parent:"d5e15"}]},
+
+{id:"d5e25",title:"管理草图",file:"id1084442.html",type:"topic",parent:"",children:[
+{id:"d5e26",title:"延迟草图更新",file:"id1492770.html",type:"topic",parent:"d5e25"},
+{id:"d5e27",title:"视频：延迟草图更新",file:"id1509917.html",type:"topic",parent:"d5e25"},
+{id:"d5e28",title:"重新附着草图概述",file:"id1085722.html",type:"topic",parent:"d5e25"},
+{id:"d5e29",title:"将草图重新附着到新的面上",file:"id1065314.html",type:"activity",parent:"d5e25"},
+{id:"d5e30",title:"将草图复制到新位置",file:"id1040609.html",type:"activity",parent:"d5e25"},
+{id:"d5e31",title:"使用独立草图替换一个 WAVE 链接的草图",file:"id1004054.html",type:"activity",parent:"d5e25"}]}
+]}

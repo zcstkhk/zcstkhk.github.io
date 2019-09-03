@@ -1,0 +1,171 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Postprocessor access to junctions</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Postprocessor access to junctions</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>You can now access junctions, such as the machine zero junction, the tool pocket junctuion, and the tool tip junction, in a postprocessor by using Tcl procedures. An example is included in the file <span class="fileName">simulation_ini.tcl</span> file in the Sinumerik postprocessor folder of the new <span class="fileName">sim16_mill_headchange</span> machine in the <span class="codeText">${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}</span> folder.
+            </p>
+            
+            <table border="0">
+               
+               <colgroup align="center" span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/isv/setup/junctions.png"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">(1) Device Mount Junction<br/>(2) Tool Pocket Junction<br/>(3) Tool Tip Junction</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         <pre class="codeExample indent ">/********************************************************************/
+/*
+* Syntax:  MOM_ask_machine_zero_junction_name
+*
+*    This command returns the name of the Machine Zero Junction.
+*    Global variable mom_sim_result will also contain the result.
+*/
+/********************************************************************/
+
+/********************************************************************/
+/*
+* Syntax:  MOM_ask_init_junction_xform jct_name
+*
+*    This command fetches the transformation matrix of the <br/>*    given Junction (name)
+*    w.r.t the absolute coordinate system (ACS), where
+*
+*       mom_sim_result  : matrix (list of 9)
+*       mom_sim_result1 : origin (list of 3)
+*
+*
+*    Important note: Transformation returned is of the initial
+*                    state of the Junction before the
+*                    machine makes any movement at all.
+*/
+/*------------------------------------------------------------------*/
+</pre>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>You should verify the existence of new commands if you using your postprocessor with an earlier version of NX. There is a built-in procedure to test the existence of a command.</p>
+                  <pre class="codeExample indent ">#  Verify that a new command exists  
+
+if { ! [CMD_EXIST a_command ] } 
+
+{ 
+     a_command
+}
+</pre>
+                  </td>
+            </tr>
+         </table>
+         
+         
+         <div class="division">
+            
+            <h3>Why should I use it?</h3>
+            
+            <p>You can use these procedures to make your posts more versatile for machine tool simulation.</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Post Builder</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Program &amp; Tool Path</span>&rarr;<span class="uiTerm">Custom Command</span>&rarr;<span class="uiTerm">Import</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>通过几何优化修改的部件文件</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>通过几何优化修改的部件文件</h2>
+         
+         <p>根据定义的设计变量，软件会将优化更改应用到以下 NX 部件文件中。</p>
+         
+         <table border="0" cellpadding="4" cellspacing="2" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+            </colgroup>
+            
+            <thead>
+               
+               <tr>
+                 <td colspan="1" rowspan="1" bgcolor="silver"><p>如果设计变量是：</p></td>
+                 <td colspan="1" rowspan="1" bgcolor="silver"><p>优化操作可修改此部件文件：</p></td>
+               </tr>
+               <tr bgcolor="#F0F0F0">
+                 <td colspan="1" rowspan="1"><p>截面或壳属性</p></td>
+                 <td colspan="1" rowspan="1"><p>FEM 文件与仿真文件</p></td>
+               </tr>
+               <tr bgcolor="#F0F0F0">
+                 <td colspan="1" rowspan="1"><p>表达式(部件间表达式)</p></td>
+                 <td colspan="1" rowspan="1"><p>理想化部件文件和主模型部件文件</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>草图尺寸(部件间表达式)</p></td>
+                 <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>理想化部件文件和主模型部件文件</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>特征尺寸(部件间表达式)</p></td>
+                 <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>理想化部件文件和主模型部件文件</p></td>
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+            </tbody>
+            
+         </table>
+         
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main"><ul>
+                  <li>
+                    <p><strong>设计变量</strong>对话框可列出主模型部件文件中部件间表达式以外的表达式。不过，如果您选择源自主模型部件的表达式，则软件会自动生成部件间表达式，并将其引用为设计变量</p>
+                  </li>
+                  <li>
+                    <p>如果在理想化部件文件中使用部件间表达式，主模型部件文件则具有写锁定。优化更改主模型尺寸时会发生此情况。大多数情况下，主模型部件文件将不更改，也根本不会具有写锁定。可以移除写锁定以允许将新设计保存到主模型部件文件中。要移除写锁定，则在<strong>仿真导航器</strong>中右键单击主模型部件并选择<strong>移除写锁定</strong>。移除部件特征后，软件始终将这些更改应用于理想化部件文件                     </p>
+                  </li>
+                     
+                 </ul>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

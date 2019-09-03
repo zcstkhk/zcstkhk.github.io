@@ -1,0 +1,12 @@
+{identifier:"id",label:"title",items:[
+{id:"d11e2",title:"打开仿真",file:"forces_open_simulation_dup1.html",type:"topic",parent:""},
+{id:"d11e3",title:"重置对话框内存",file:"id353012_dup4.html",type:"topic",parent:""},
+{id:"d11e4",title:"在活塞上创建速度传感器",file:"create_velocity_sensor.html",type:"topic",parent:""},
+{id:"d11e5",title:"在活塞上创建矢量力",file:"create_vector_force_piston.html",type:"topic",parent:""},
+{id:"d11e6",title:"创建解算方案并求解",file:"solve_mechanism_steam_engine.html",type:"topic",parent:""},
+{id:"d11e7",title:"查看机构运动",file:"animate_mechanism_steam_engine_1.html",type:"topic",parent:""},
+{id:"d11e8",title:"在调速器滑动副上创建标记",file:"create_marker_slider_joint.html",type:"topic",parent:""},
+{id:"d11e9",title:"创建位移传感器",file:"create_displacement_sensor.html",type:"topic",parent:""},
+{id:"d11e10",title:"编辑活塞上的矢量力",file:"edit_vector_force_piston.html",type:"topic",parent:""},
+{id:"d11e11",title:"再次求解机构",file:"solve_mechanism_steam_engine_2.html",type:"topic",parent:""},
+{id:"d11e12",title:"再次查看机构运动",file:"animate_mechanism_steam_engine.html",type:"topic",parent:""}]}

@@ -1,0 +1,138 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>钻孔循环</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/general/operations/drilling.gif" border="0">&nbsp;钻孔循环</h2>
+         
+         <p><em>钻孔循环</em>描述执行点到点加工功能（如钻孔、攻丝或镗孔）所必需的机床运动。</p>
+         
+        <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;"><script type="dojo/method">
+      flashData= {
+          swfSrc : '../xps3/graphics/xpsPlayer.swf',
+          graphSrc : '../graphics/graphicLibrary/nx/manufacturing/general/drilling/nx_7.5_drilling_anim.gif',
+          align : 'center',
+          base : './',
+          height : '236',
+          width : '355',
+          bgcolor : '#FFFFFF',
+          flashVersion : '7',         
+          looping : 'false',
+          play : 'false',
+          menu : 'true',
+          parameters : 'mySound=false,dependentFile1=..%2Fgraphics%2FgraphicLibrary%2Fnx%2Fmanufacturing%2Fgeneral%2Fdrilling%2Fnx_7.5_drilling_anim.swf,dependentFile2=..%2Fxps3%2Fgraphics%2Fnav_buttons.txt'
+      }
+      top.loadFlash(this,flashData);
+    </script></div>
+         
+         <p>经过后处理之后，循环语句通常输出为即将由机床执行的 CYCLE/ 工序中所有刀具运动的现成循环代码。</p>
+         <p>如果没有现成循环代码，机床将使用 GOTO/ 命令语句来定义对指定循环进行仿真的各个刀具运动和机床功能。</p>
+        <p>循环类型的部分特性如下：</p>
+         <ul>
+           <li>
+             <p><strong>无循环</strong>、<strong>啄钻</strong>、<strong>断屑</strong>不在刀轨中输出 <em>CYCLE/</em> 命令；使用 <em>GOTO</em> 点进行运动仿真</p>
+           </li>
+           <li>
+             <p><strong>&ldquo;标准循环&rdquo;选项在每个指定的 CL（刀具位置）点输出 <em>CYCLE/</em> 命令</strong></p>
+           </li>
+           <li>
+             <p><strong>标准钻、标准钻，埋头孔、标准钻，深孔和标准钻，断屑输出现成循环，相当于输出仿真运动的无循环、啄钻和断屑</strong>           </p>
+           </li>
+         </ul>
+         
+         <div class="division">
+            
+           <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">加工</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong><strong>插入</strong>→<strong>创建工序</strong>→</strong><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/fixed_contour/create_operation.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                  <p><strong>插入</strong>→<strong>工序</strong></p></td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" height="43" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">对话框中的位置</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" height="43" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">[钻孔工序]对话框→<strong>循环类型</strong>组→<strong>循环</strong>列表</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

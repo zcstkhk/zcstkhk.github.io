@@ -1,0 +1,171 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>NX Datum features</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>NX 基准特征</h2>
+         <table border="0" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><span class="emphasis">基准坐标系</span></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/fast_start/ui/datum_csys.png"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>基准坐标系中包含三个平面、三个轴以及一个点。</p>
+                     
+                     <p class="no-bottom-margin">使用平面来定义草图，使用轴以及点来创建约束。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><span class="emphasis">基准平面</span></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/fast_start/ui/datum_plane.png"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">创建基准平面来定义不见接口或者创建草图。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><span class="emphasis">基准轴</span></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/fast_start/ui/datum_axis.png"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">使用基准轴来定义方向，比如扫掠方向或者回转轴。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><span class="emphasis">点</span></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/fast_start/ui/datum_point.png"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>使用基准点来定位基准轴，或者定位特征，比如孔特征。</p>
+                     
+                     <p class="no-bottom-margin">您也可以创建点作为草图的一部分，并使用草图尺寸以及几何约束来驱动点位置。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><span class="emphasis">工作坐标系(Work Coordinate System，WCS)</span></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/fast_start/ui/wcs.jpg"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p>工作坐标系(WCS)是一个可移动的坐标系，它不是一个基准。</p>
+                     
+                     <p>避免使用工作坐标系来定位特征，因为这是非关联的，使用基准坐标系来定位会更好。</p>
+                     
+                     <p class="no-bottom-margin">您可以使用<strong>显示 WCS</strong> 命令或者快捷键 <strong>W</strong> 来显示/隐藏工作坐标系。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <table class="attentionTable attn_tip">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">提示</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>以基准坐标系作为部件模型的第一个特征是很好的建模习惯，然后使用这个基准坐标系来定位其它基准或特征。</p>
+                  
+                  <p>如果您选择<strong>建模</strong>模板来新建部件，其中就已经将基准坐标系作为第一个特征。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

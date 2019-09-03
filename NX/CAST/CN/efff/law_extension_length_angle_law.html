@@ -1,0 +1,111 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>长度/角度规律</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>长度/角度规律</h2>
+         
+         <p> 一旦<strong>类型</strong>、<strong>基本轮廓</strong>以及<strong>参考</strong>几何体都被指定，那么<strong>长度规律</strong>和<strong>角度规律</strong>都可以被您指定。</p>
+         
+         <p> <strong>长度规律</strong>和<strong>角度规律</strong>中的特定参数都依赖于<strong>规律类型</strong>设置，规律类型设置可以确定如何生成延伸的长度/角度。</p>
+         
+         <p>下面是可用的规律类型：</p>
+         <ul>
+            <li>
+              <p><strong>恒定</strong></p>
+            </li>
+         </ul>
+         <ul>
+           <li>
+             <p><strong>线性</strong></p>
+           </li>
+        </ul>
+         <ul>
+           <li>
+             <p><strong>三次</strong></p>
+           </li>
+         </ul>
+         <ul>
+           <li>
+             <p><strong>沿脊线的线性</strong></p>
+           </li>
+         </ul>
+         <ul>
+           <li>
+             <p><strong>沿脊线的三次</strong></p>
+           </li>
+         </ul>
+         <ul>
+           <li>
+             <p><strong>根据方程</strong></p>
+           </li>
+         </ul>
+        <ul>
+           <li>
+             <p><strong>根据规律曲线</strong></p>
+           </li>
+         </ul>
+        <ul>
+           <li>
+             <p><strong>多重过渡</strong>(默认)</p>
+           </li>
+        </ul>
+         
+         
+         <p>规律类型<strong>沿脊线的线性</strong>、<strong>沿脊线的三次</strong>、<strong>多重过渡</strong>允许您沿延伸脊线添加不限数量的新位置，以获取控制延伸方式的其他长度/角度值。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/law_extension/law_extension_points_on_spine.png"></p>
+         
+         <p>然后，您可以指定长度和角度在脊线点位置之间使用的插值类型，以创建延伸段。</p>
+         
+         <p><strong>过渡</strong>选项包括：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>恒定</strong></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>线性</strong></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>圆角</strong></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>最小/最大</strong></p>
+               
+            </li>
+            
+         </ul>
+         
+         <p><a href="#" onclick="showDialog('transition_types')">更多有关过渡选项的信息</a></p>
+         
+         <div dojoType="dijit.Dialog" id="transition_types" title="更多有关过渡选项的信息">
+            <div dojoType="dijit.layout.ContentPane" href="transition_types.html" extractContent="true" tabIndex="0"></div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

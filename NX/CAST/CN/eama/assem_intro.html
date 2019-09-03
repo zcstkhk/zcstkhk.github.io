@@ -1,0 +1,180 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>NX 装配简介</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>NX 装配简介</h2>
+         
+         <p>使用 NX 装配应用模块可以为零件文件和子装配文件的装配建模。</p>
+         <p>装配是一个部件文件，其中包含组件对象，而子装配是在更高级别装配中用作组件的装配。</p>
+        <p>装配命令也可在其他应用模块中使用，例如：</p>
+         <ul>
+           <li>
+             <p>基本环境</p>
+           </li>
+           <li>
+             <p>建模</p>
+           </li>
+           <li>
+             <p>制图</p>
+           </li>
+           <li>
+             <p>加工</p>
+           </li>
+           <li>
+             <p>NX 钣金</p>
+           </li>
+           <li>
+             <p>外观造型设计</p>
+           </li>
+         </ul>
+         
+         <p>通过定义<em>组件</em>，可以从任何 NX 部件文件中启动装配。用于定义组件的部件文件包含新的<em>组件对象</em>，该对象是包含组件几何体的文件的非几何指针。通过此指针，可在装配中显示组件而<em>无需复制</em>任何几何体。</p>
+        <p>使用装配应用模块时，可以执行以下操作：</p>
+         <ul>
+           <li>
+             <p>在真正开始构造或制作模型前，创建零件的数字表示</p>
+           </li>
+           <li>
+             <p>测量装配中部件间的静态间隙、距离和角度</p>
+           </li>
+           <li>
+             <p>设计部件以适合可用空间</p>
+           </li>
+           <li>
+             <p>定义部件文件之间的各种链接</p>
+           </li>
+         </ul>
+         <ul>
+            
+            <li>
+               
+               <p>创建装配图纸，其中可显示所有组件或只显示选定的组件</p>
+            </li>
+            <li>
+              <p>创建<em>布置</em>以显示组件处于备选位置时装配的显示样式。</p>
+            </li>
+            <li>
+              <p>定义<em>序列</em>以显示装配或拆除部件所需的运动。</p>
+            </li>
+            <li>
+              <p>从下游应用模块中分离主模型几何体，例如：</p>
+              <ul>
+                <li>
+                  <p>制图</p>
+                </li>
+                <li>
+                  <p>加工</p>
+                </li>
+                <li>
+                  <p>分析</p>
+                </li>
+              </ul>
+            </li>
+            
+         </ul>
+         
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>如果找不到要查看的装配命令和选项，请检查以下项的设置：</p>
+                  <ul>
+                    <li>
+                      <p>许可证。 某些命令要求，例如，WAVE 许可证。</p>
+                    </li>
+                    <li>
+                      <p>角色。可能需要更改为具有完整菜单的角色。</p>
+                    </li>
+                    <li>
+                      <p>应用模块。确保自己位于 装配 应用模块中。例如，如果已将装配保存在其他应用模块中，则可能需要启动 装配。</p>
+                    </li>
+                  </ul>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="4" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td bgcolor="#E0E0E0" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>应用模块</strong>→<strong>装配</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/application/assemblies.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="#E0E0E0" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p><strong>标准</strong>→<strong>开始</strong>→<strong>装配</strong></p>
+                     
+                     <table class="attentionTable attn_note">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">注释</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p class="no-bottom-margin">当应用模块处于活动状态时，菜单中的<strong>装配</strong>被选中</p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

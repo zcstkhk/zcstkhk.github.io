@@ -1,0 +1,267 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Import component and connection data into your part</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Import component and connection data into your part</h2>
+         <p>First verify the format you will be using.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>On the Resource bar, click the <strong>Component Navigator</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/resource_bar/component_navigator.gif" border="0"> tab.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_electrical/activities/import_data/01_02_2012.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>Pin the navigator open.</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>Inside the <strong>Electrical Component Navigator</strong>, right-click and choose <strong>Properties</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Component List Properties</strong> dialog box, make sure:
+                  </p>
+                  
+                  <table border="0" width="251" align="center">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1" width="100*">
+                        
+                        <col span="1" width="113">
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td colspan="1" nowrap rowspan="1">
+                              
+                              <p class="no-bottom-margin"><strong>Display Format</strong></p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">= <strong>Simple</strong></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td colspan="1" nowrap rowspan="1">
+                              
+                              <p class="no-bottom-margin"><strong>Import Format</strong></p>
+                              
+                           </td>
+                           
+                           <td colspan="1" nowrap rowspan="1">
+                              
+                              <p class="no-bottom-margin">= <strong>Example</strong></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td colspan="1" nowrap rowspan="1">
+                              
+                              <p class="no-bottom-margin"><strong>Export Format</strong></p>
+                              
+                           </td>
+                           
+                           <td colspan="1" nowrap rowspan="1">
+                              
+                              <p class="no-bottom-margin">= <strong>Example</strong></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <table class="attentionTable attn_note">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">Note</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>If you need to change the display format, click <strong>Edit Display Format</strong>, and from the <strong>Define Format</strong> list, select a format name and then 点击<strong>确定</strong>。
+                              </p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                     <p>The <span class="emphasis">Example</span> import format includes the fields:
+                     </p>
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p>part_name</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>unique_id</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>connector_id</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>signal</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>description</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                     <p>The corresponding entries in the <span class="fileName">ugroute_elec.cfg</span> file look like:
+                     </p>
+                     <pre class="codeExample indent ">Component List File Format = Example
+Type = comma_delimited
+part_name, string
+unique_id, string
+connector_id, string
+signal, string
+description, string</pre>
+                     </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Component List Properties</strong> dialog box, 点击<strong>确定</strong>。
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Electrical Component Navigator</strong>, right-click and choose <strong>Import&rarr;Merge</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>If necessary, set <strong>Files of type:</strong> to:
+                  </p>
+                  
+                  <table rules="all" align="center">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1">
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"><strong>Bookmark Files and PLM XML (*.plmxml)</strong></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>Double-click <span class="fileName">rte1_logical.plmxml</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>The component data is imported into your part and appears in the navigator.</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_electrical/activities/import_data/1_List_e_component_navi.png"></p>
+                     
+                     <p>To see the objects in the harness, expand the <strong>HARNESS1</strong> node.
+                     </p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_electrical/activities/import_data/1_List_e_connection_navi_7.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

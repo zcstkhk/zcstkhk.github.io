@@ -1,0 +1,182 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Automatic reordering of feature groups</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Automatic reordering of feature groups</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>You can now quickly create both timestamped and floating feature groups in the same part. </p>
+            <a name="genid_etmd885_89" id="genid_etmd885_89"></a><table border="1" cellpadding="5" cellspacing="5" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        <a name="genid_etmd885_90" id="genid_etmd885_90"></a><div class="figureContainer">
+                           <table align="center">
+                              <tr>
+                                 <td>
+                                    <div class="figure">
+                                       <div><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/feature_group/feature_group_timestamped.png" border="0"></div>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </table>
+                           <h4>Two timestamped feature groups</h4>
+                        </div>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        <a name="genid_etmd885_91" id="genid_etmd885_91"></a><div class="figureContainer">
+                           <table align="center">
+                              <tr>
+                                 <td>
+                                    <div class="figure">
+                                       <div><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/feature_group/feature_group_mixed.png" border="0"></div>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </table>
+                           <h4>A timestamped and a floating feature group</h4>
+                        </div>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p>You can also control whether features are reordered when a new feature is created. When the <span class="uiTerm">Allow Automatic Reordering of Feature Groups</span> check box is selected, newly created features will go into the active feature group, which may cause reordering so that the members of the feature group have a higher timestamp than their parents.
+            </p>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>Why should I use it?</h3>
+            
+            <p>Use a mix of timestamped and floating feature groups in the same part when you want to accomplish both of the following:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Always position a certain kind of feature, such as a tool body feature, in a feature group at the bottom of the Part Navigator.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Position other feature groups at the timestamp at which they were created.</p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Modeling and NX Sheet Metal</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Prerequisite</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p><span class="uiTerm">Customer Defaults&rarr;Modeling&rarr;Feature Group&rarr;Prefer Sequential Timestamp Order</span></p>
+                     
+                     <p class="no-bottom-margin">This option must be selected in order to see the <span class="uiTerm">Allow Automatic Reordering of Feature Groups</span> check box in <span class="uiTerm">Modeling Preferences</span>.
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p><span class="uiTerm">Preferences&rarr;Modeling&rarr;General</span> tab<span class="uiTerm">&rarr;Allow Automatic Reordering of Feature Groups</span> check box
+                     </p>
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Format&rarr;Group&rarr;Feature Group&rarr;Output</span> list
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         <a name="xid475511" id="xid475511"></a><div id="footer"></div>
+      </div>
+   </body>
+</html>

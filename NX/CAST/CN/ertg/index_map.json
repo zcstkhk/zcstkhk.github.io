@@ -1,0 +1,9 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"审核部件",file:"id1144897.html",type:"topic",parent:""},
+{id:"d5e5",title:"审核管线部件",file:"genid_qualifying_parts_for_routings_506_11823.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"端口",file:"genid_ports_21_569.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"锚点",file:"genid_anchors_10_337.html",type:"topic",parent:"d5e5"},
+{id:"d5e8",title:"特性",file:"genid_characteristics_11_287.html",type:"topic",parent:"d5e5"},
+{id:"d5e9",title:"审核部件的方法",file:"genid_methods_of_qualifying_a_part_15_755.html",type:"topic",parent:"d5e5"},
+{id:"d5e10",title:"审核部件",file:"id1129179.html",type:"activity",parent:"d5e5"}]}
+]}

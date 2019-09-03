@@ -1,0 +1,579 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Zig pattern enhancements</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Zig pattern enhancements</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>The Zig and Zig Zag patterns in a Floor Wall milling operation are enhanced to give you improved cutting efficiency and greater control over the tool path.</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Automatic cut angle option</h3>
+            
+            <p>The <span class="uiTerm">Automatic</span> cut angle option is enhanced in the following ways:
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>If the milled faces are bound by one or more walls, NX orients the milling direction to follow the direction of the wall.</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <table border="0" cellpadding="1" cellspacing="1" align="center">
+               
+               <colgroup align="left" span="1">
+                  
+                  <col align="center" span="1">
+                  
+                  <col align="center" span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/version_specific/nx85/manufacturing/zig_zag_enhancements/auto_angle_old1.png"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" height="26" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/version_specific/nx85/manufacturing/zig_zag_enhancements/auto_angle_new1.png"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td align="center" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">NX 8.5</p>
+                        
+                     </td>
+                     
+                     <td align="center" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Previous releases</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>If the faces are not bound by walls, NX minimizes the number of passes and makes each pass as long as possible.</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <table border="0" cellpadding="1" align="center">
+               
+               <colgroup align="center" span="1">
+                  
+                  <col align="center" span="1">
+                  
+                  <col align="center" span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/no_wall_85.png"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/no_wall_80.png"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td align="center" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">NX 8.5</p>
+                        
+                     </td>
+                     
+                     <td align="center" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Previous releases</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Stepover distance and pass control</h3>
+            
+            <p>You can control:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>The stepover distance precisely, by using the <span class="uiTerm">Exact</span> option.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>The number of passes precisely, by using the <span class="uiTerm">Passes</span> option.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>The maximum spacing, but allow an equal stepover distance to be calculated based on the cut area size.</p>
+                  
+                  <p>Use the <span class="uiTerm">Variable Average</span> option to specify the minimum and maximum distance values. NX analyzes the first pass and the next wall, and then creates equal spaces in between them.
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Cut Regions</h3>
+            
+            <p>The former Blank Overhang is replaced by the following new input values in the <span class="uiTerm">Cutting Parameters</span> dialog box. 
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">First Pass Overhang</span> specifies the percentage of the cutter diameter or the distance by which the tool hangs over geometry on the first pass of your cutter path.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Tool Run On</span> specifies the percentage of the tool diameter or the distance by which to extend the cutting motion before the tool reaches the cut region.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Tool Run Off</span> specifies the end of the cut region. You have the following options:
+                  </p>
+                  
+                  <div class="defList">
+                     <div class="defListItem">
+                        <div class="defObject defObjectVert">
+                           <p><span class="uiTerm">Extend to Region</span></p>
+                        </div>
+                        <div class="defMeaning defMeaningVert">
+                           
+                           <p>Automatically extends the <span class="uiTerm">Tool Run Off</span> beyond the cut region.
+                           </p>
+                           
+                           <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/extend_to_region.gif"></p>
+                           
+                        </div>
+                     </div>
+                     <div class="defListItem">
+                        <div class="defObject defObjectVert">
+                           <p><span class="uiTerm">Specify</span></p>
+                        </div>
+                        <div class="defMeaning defMeaningVert">
+                           
+                           <p>Lets you select the tool diameter or distance by which to extend or trim the cutting motion relative to the optimized end of cut point. This point is determined by NX as the last point where material is removed.</p>
+                           
+                           <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/run_off_specify.png"></p>
+                           
+                        </div>
+                     </div>
+                  </div>
+                  
+               </li>
+               
+            </ul>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/ZigZag_diagram1.gif"></p>
+            
+            <table cellpadding="1" frame="void" rules="none" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="100">
+                  
+                  <col span="1" width="217">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td align="center" colspan="1" height="26" rowspan="1">
+                        
+                        <p class="no-bottom-margin">(1)</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" height="26" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Part (Floor)</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td align="center" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">(2)</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Blank/IPW</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td align="center" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">(3)</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Wall</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td align="center" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">(4)</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">First Pass Overhang</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td align="center" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">(5)</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Tool Run On (100% shown)</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td align="center" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">(6)</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Tool Run Off (0% shown)</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Single Pass Offset</span> lets you  select an offset distance for the path when only a single path is selected.
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">Note</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>The last pass overhang is controlled exclusively by the path processor. NX calculates 10% of the tool flat to determine where the last pass will travel. </p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+            <table cellpadding="20" cellspacing="5" frame="void" rules="none" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col align="center" span="1" width="300">
+                  
+                  <col align="center" span="1" width="300">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" height="427" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/spo_negative-50_percent.gif"></p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Single Pass Offset</span> &gt; 0. The cutting pass moves to the right if you look along the cut direction.
+                        </p>
+                        
+                     </td>
+                     
+                     <td colspan="1" height="427" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/spo_50__percent.png"></p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Single Pass Offset</span> &lt; 0. The cutting pass moves to the left if you look along the cut direction..
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Across voids enhancement</h3>
+            
+            <p>The <span class="uiTerm">Across Voids</span> cutting parameters options let you handle open voids much like closed voids in previous versions.
+            </p>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">Note</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>NX moves the tool across voids without lifting the tool only if both sides of the gap belong to the same cut region.</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+            <table cellpadding="5" cellspacing="5" frame="void" rules="none" align="center">
+               
+               <colgroup align="center" span="1">
+                  
+                  <col span="1" width="300">
+                  
+                  <col span="1" width="300">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td align="center" colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/version_specific/nx85/manufacturing/zig_zag_enhancements/open_voids_follow.png"></p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Follow</span> allows the cutter to follow the exact geometry with lifts.
+                        </p>
+                        
+                     </td>
+                     
+                     <td align="center" colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/version_specific/nx85/manufacturing/zig_zag_enhancements/open_voids_cut.png"></p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Cut</span> follows the geometry but creates a continuous path over the void.
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td align="center" colspan="2" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/version_specific/nx85/manufacturing/zig_zag_enhancements/open_voids_traverse.png"></p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Traverse</span> follows the geometry but traverses between engagements of the part geometry that is to be machined.
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Manufacturing</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Prerequisite</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Floor Wall operation</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td align="left" class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p><span class="uiTerm">Floor Wall</span> dialog box or <span class="uiTerm">Floor Wall with IPW</span> dialog box&rarr;<span class="uiTerm">Path Settings</span> group&rarr;(Pass Control) <span class="uiTerm">Stepover</span> list
+                     </p>
+                     
+                     <p>(Automatic cut angle) <span class="uiTerm">Cutting Parameters</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/cutting_parameters.gif" border="0">&rarr; <span class="uiTerm">Strategy</span> tab&rarr;<span class="uiTerm">Cutting</span> group
+                     </p>
+                     
+                     <p>(First Pass Overhang and Tool Run Off) <span class="uiTerm">Cutting Parameters</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/cutting_parameters.gif" border="0">&rarr;<span class="uiTerm">Containment</span> tab&rarr;<span class="uiTerm">Cut Regions</span> group
+                     </p>
+                     
+                     <p class="no-bottom-margin">(Across Voids) <span class="uiTerm">Cutting Parameters</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/cutting_parameters.gif" border="0">&rarr;<span class="uiTerm">Connections</span> tab&rarr;<span class="uiTerm">Across Voids</span> group&rarr;<span class="uiTerm">Motion Type</span> list
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

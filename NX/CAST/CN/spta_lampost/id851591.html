@@ -1,0 +1,63 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>层合板电子表格汇总表</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>层合板电子表格汇总表</h2>
+         
+         <p>电子表格报告或快速报告所生成的电子表格中包含：</p>
+         <ul>
+           <li>
+             <p>顶级汇总表，该表列出所有结果集和结构数据输入选择之中最差的层片值。仅当选择了多个结果集，或者对于电子表格报告选择了一个结果集和两个输入选择时，才存在顶级汇总表。快速报告可从结构求解器中获得所有结构数据</p>
+           </li>
+           <li>
+             <p>用于每个结果集的汇总表，以及在使用电子表格报告情况下，用于每个结构数据输入选择的汇总表           </p>
+           </li>
+         </ul>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>因为层合板求解器和结构求解器并不采用相同的算法，所以层片应力和应变的计算值在两个结构数据输入选择中可以有所不同。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <p>对于每个请求的结果，汇总表将显示以下内容：</p>
+         <ul>
+           <li>
+             <p>最差的值出现的位置</p>
+           </li>
+           <li>
+             <p>最差的值以蓝色显示</p>
+           </li>
+           <li>
+             <p>相同位置处其他数量的值           </p>
+           </li>
+         </ul>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/laminates/advanced_post/summary_table.gif"></p>
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

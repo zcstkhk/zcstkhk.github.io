@@ -1,0 +1,90 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>特殊边界条件</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>特殊边界条件</h2>
+         <a name="ndxgenid_spta_response_17"></a>
+         
+         <a name="ndxgenid_spta_response_18"></a>
+         
+         
+         <p>在响应仿真中，有限元 (FE) 模型表示结构的物理模型。通常，可以像对其他结构解算方案类型一样定义几何体、材料属性、网格和边界条件。下表列出了可以在响应仿真中使用的特殊边界条件。</p>
+         
+         <table cellpadding="8" cellspacing="2" frame="box" rules="all" width="95%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <thead>
+               
+               <tr bgcolor="silver">
+                 <td colspan="1" rowspan="1" align="center"><p>类型</p></td>
+                 <td colspan="1" rowspan="1" align="center"><p>描述</p></td>
+               </tr>
+               <tr bgcolor="#F0F0F0">
+                 <td colspan="1" rowspan="1"><p>强迫运动位置</p></td>
+                 <td colspan="1" rowspan="1"><p>强迫运动激励在模型上的位置。这只是一个位置，您可以在对解算方案进行解算之后定义实际的激励。 </p>
+                   <p>求解器会根据您定义的强迫运动位置来生成约束模态、等效的附着模态和有效的质量。</p>
+                   <p>可以在<strong>仿真导航器</strong>的<strong>约束</strong>容器中创建强制运动位置。</p></td>
+               </tr>
+               <tr bgcolor="#F0F0F0">
+                 <td colspan="1" rowspan="1"><p>节点力作用位置</p></td>
+                 <td colspan="1" rowspan="1"><p>节点力激励在模型上的位置。这只是一个位置，您可以在对解算方案进行解算之后定义实际的激励。 </p>
+                   <p>求解器将根据所定义的节点力作用位置生成附着模态。</p>
+                   <p>可以在<strong>仿真导航器</strong>的<strong>载荷</strong>容器中创建节点力作用位置。</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>静态偏置载荷</p></td>
+                 <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>对于瞬态事件，这是一个用来缩放结果的恒定载荷(例如，适用于集中质量单元的重力载荷，或者结构上的分布式风载荷)。 </p>
+                   <p>可以在<strong>仿真导航器</strong>中的<strong>子工况</strong> — <strong>静态偏置</strong>容器中创建静态偏置载荷。 </p>
+                   <p>在对解算方案进行解算并创建一个事件之后，会在<strong>仿真导航器</strong>中该事件的节点下面出现一个<strong>静态偏置</strong>节点。可以通过右键单击<strong>静态偏置</strong>节点并选择<strong>不激活</strong>来将静态偏置结果从响应计算中排除。</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>应力增强载荷</p></td>
+                 <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>加载中结构的硬化或软化取决于微分刚度。可以为任何结构的不同刚度应用预加载。相对于已卸载的刚度，对于一维或二维，且具有轴向或膜载荷的细结构，微分刚度具有重要意义。</p>
+                   <p>求解器使用预加载增加已卸载刚度，以便进行正则模态计算。可以计算微分刚度，并将其与卸载线性刚度相组合，然后将此组合用于正则模态特征值问题。 </p>
+                   <p><img src="special_boundary_conditions_stress_stiffening_equation.gif" align="bottom" border="0"></p>
+                   <p>[ Kl ] = 线性刚度矩阵 </p>
+                   <p>[ Kσ ] = 应力刚度矩阵 </p>
+                   <p>λi = ωi2 = 固有频率的平方(特征值) </p>
+                   <p>[ M ] = 质量矩阵 </p>
+                   <p>{ψi} = 模态形状(特征矢量)</p>
+                   <p>可以在<strong>仿真导航器</strong>中的<strong>子工况 — 应力增强</strong>容器中创建微分增强载荷。</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>动态载荷</p></td>
+                 <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>在对解算方案解算之后进行缩放的载荷。求解器会为每个动态载荷生成一个载荷集和多个分布式附着模态。之后，您可以在创建激励时指定缩放函数。</p>
+                   <p>动态载荷在应用分布式载荷激励时是必需的，并且还可将其用作准静态分析事件中的静态激励。</p>
+                 <p>可以在<strong>仿真导航器</strong>中的<strong>子工况</strong> — <strong>动态</strong>容器中创建动态载荷。</p></td>
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+            </tbody>
+            
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

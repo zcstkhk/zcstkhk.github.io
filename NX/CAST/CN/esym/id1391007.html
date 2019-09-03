@@ -1,0 +1,132 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>移动面</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/move_face/dmx_move_face.gif" border="0">&nbsp;移动面</h2>
+         
+         <p>使用<strong>移动面</strong>命令移动一组面，并自动调整相邻面。</p>
+         <p>您可以使用线性、角度或圆形变换方法来移动选定的面。</p>
+         <p><strong>移动面</strong>是有用的设计工具，在设计过程中使得设计更改更加简单。这在下游应用模块（如模具、加工及仿真）中非常有用，您可以在其中直接对模型作出更改，而无须考虑特征历史记录。</p>
+        <p>可以使用<strong>移动面</strong>命令的一些情况如下：</p>
+         <ul>
+           <li>
+             <p>将一组面重新定位到不同位置以满足设计意图。</p>
+           </li>
+           <li>
+             <p>重新定位装配的多个组件中的一系列面。（所有组件与装配都必须在无历史记录模式下。）</p>
+           </li>
+           <li>
+             <p>更改无历史记录的钣金件的折弯角。</p>
+           </li>
+           <li>
+             <p>绕给定的轴和绕点旋转一个面或一组面。例如，更改键槽的角度位置。</p>
+           </li>
+           <li>
+             <p>将整个实体的方位更改为不同的方位，而不考虑其历史记录。</p>
+           </li>
+         </ul>
+         
+         
+        <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;"><script type="dojo/method">
+      flashData= {
+          swfSrc : '../graphics/graphicLibrary/nx/videos/cad/synch_move_face.swf',
+          graphSrc : '',
+          align : 'center',
+          base : './',
+          height : '320',
+          width : '430',
+          bgcolor : '#FFFFFF',
+          flashVersion : '10',         
+          looping : 'false',
+          play : 'true',
+          menu : 'true',
+          parameters : ''
+      }
+      top.loadFlash(this,flashData);
+    </script></div>
+         
+         
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">建模、外观造型设计、高级仿真和加工</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>同步建模</strong>→<strong>修改面</strong>下拉菜单→<strong>移动面</strong> <img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/move_face/dmx_move_face.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>插入</strong>→<strong>同步建模</strong>→<strong>移动面</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

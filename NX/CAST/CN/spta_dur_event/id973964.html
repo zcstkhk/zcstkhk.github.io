@@ -1,0 +1,193 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>用于耐久性分析的材料属性</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>用于耐久性分析的材料属性</h2>
+         
+         <p>耐久性属性是一种特殊的材料属性类，对于耐久性分析是必需的。下表列出需要耐久性材料属性的情况。空白单元格表示未使用耐久性属性。</p>
+         <table frame="box" rules="all" align="center" cellpadding="6" cellspacing="2">
+           <tbody>
+             <tr>
+               <td colspan="1" rowspan="2"><p>耐久性材料属性</p></td>
+               <td colspan="1" rowspan="2"><p>各向同性材料中的位置对话框</p></td>
+               <td colspan="1" rowspan="2"><p>结构强度分析需求</p></td>
+               <td colspan="1" rowspan="2"><p>疲劳强度分析需求</p></td>
+               <td colspan="3" rowspan="1"><p>疲劳寿命分析需求</p></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1"><p>疲劳寿命准则</p></td>
+               <td colspan="1" rowspan="1"><p>平均应力效应</p></td>
+               <td colspan="1" rowspan="1"><p>循环应力-应变转换</p></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1"><p><strong>屈服强度</strong></p></td>
+               <td colspan="1" rowspan="2"><p><strong>强度</strong>选项卡→<strong>强度属性</strong>组</p></td>
+               <td colspan="1" rowspan="1"><p>必需。</p></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"><p>为 Soderberg 方法所必需。</p></td>
+               <td colspan="1" rowspan="1"></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1"><p><strong>极限抗拉强度</strong></p></td>
+               <td colspan="1" rowspan="1"><p>必需。</p></td>
+               <td colspan="1" rowspan="1"><p>为 Goodman 和 Gerber 方法所必需。</p></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"><p>为 Goodman 和 Gerber 方法所必需。</p></td>
+               <td colspan="1" rowspan="1"></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1"><p><strong>疲劳强度系数</strong></p></td>
+               <td colspan="1" rowspan="2"><p><strong>耐久性</strong>选项卡→<strong>疲劳强度</strong>组→<strong>应力-寿命数据</strong>列表→<strong>表达式</strong></p></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="2"><p>为以下疲劳寿命准则所必需：</p>
+                 <ul>
+                   <li>
+                     <p>Smith-Watson-Topper</p>
+                   </li>
+                   <li>
+                     <p>最大主应变寿命</p>
+                   </li>
+                   <li>
+                     <p>最大剪切应变寿命</p>
+                   </li>
+                   <li>
+                     <p>应力寿命</p>
+                   </li>
+                 </ul>
+                 <p>对于应力寿命，可以使用用户定义的 S-N 曲线，而不使用疲劳强度系数和指数。</p>
+                 <p>对于最大主应变寿命和最大剪切应变寿命，可以使用用户定义的 E-N 曲线，而不使用疲劳强度系数和指数以及疲劳韧性系数和指数。</p>
+                 <p>如果不使用用户定义的 S-N 曲线，则疲劳强度系数和指数是随机疲劳事件分析所必需的。</p></td>
+               <td colspan="1" rowspan="1"><p>为 Morrow 方法所必需。</p></td>
+               <td colspan="1" rowspan="1"></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1"><p><strong>疲劳强度指数</strong></p></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1"><p>用户定义的 S-N 曲线</p></td>
+               <td colspan="1" rowspan="1"><p><strong>耐久性</strong>选项卡→<strong>疲劳强度</strong>组→<strong>应力-寿命数据</strong>列表→<strong>场</strong></p></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"><p>如果不使用疲劳强度系数和指数，则为应力寿命和随机疲劳事件分析所必需。</p></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1"><p><strong>疲劳韧性系数</strong></p>
+                 <p><strong>疲劳韧性指数</strong></p></td>
+               <td colspan="1" rowspan="1"><p><strong>耐久性</strong>选项卡→<strong>疲劳韧性</strong>组→<strong>应变-寿命数据</strong>列表→<strong>表达式</strong></p></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"><p>为以下疲劳寿命准则所必需：</p>
+                 <ul>
+                   <li>
+                     <p>Smith-Watson-Topper</p>
+                   </li>
+                   <li>
+                     <p>最大主应变寿命</p>
+                   </li>
+                   <li>
+                     <p>最大剪切应变寿命</p>
+                   </li>
+                 </ul>
+                 <p>对于最大主应变寿命和最大剪切应变寿命，可以使用用户定义的 E-N 曲线，而不使用疲劳强度系数和指数以及疲劳韧性系数和指数。</p></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1"><p>用户定义的 E-N 曲线</p></td>
+               <td colspan="1" rowspan="1"><p><strong>耐久性</strong>选项卡→<strong>疲劳韧性</strong>组→<strong>应变-寿命数据</strong>列表→<strong>场</strong></p></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"><p>如果不使用疲劳韧性系数和指数，则为最大主应变寿命和最大剪切应变寿命所必需。</p></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1"><p><strong>循环屈服强度</strong></p></td>
+               <td colspan="1" rowspan="3"><p><strong>耐久性</strong>选项卡→<strong>循环参数</strong>组</p></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"><p>为 Ramberg-Osgood 和幂强化模型所必需。</p></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1"><p><strong>循环强度系数</strong></p></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"><p>用于 Ramberg-Osgood 和幂强化模型。</p>
+                 <p>如果没有为指定的材料定义循环强度系数，则会显示一条消息，并将循环强度系数设为 1012。</p></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1"><p><strong>循环应变硬化指数</strong></p></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"><p>用于幂强化模型。</p>
+                 <p>如果没有为指定的材料定义循环应变硬化系数，则会显示一条消息，并将循环应变硬化系数设为 10-5。</p></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1"><p><strong>弯曲时的疲劳极限强度</strong></p>
+                 <p><strong>扭转时的疲劳极限强度</strong></p></td>
+               <td colspan="1" rowspan="1"><p><strong>耐久性</strong>选项卡→<strong>Dang Van 参数</strong>组</p></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"><p>为 Dang Van 方法所必需。</p></td>
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1"></td>
+             </tr>
+           </tbody>
+         </table>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>只有各向同性材料可用于耐久性分析。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <div class="division">
+            
+            <h3>层合板支持</h3>
+            
+            <p>所有层片必须具有各向同性材料。如果层合板具有任意一种非各向同性材料，则在<strong>静态/瞬态耐久性事件</strong>对话框中使用各向同性材料替代该材料。在这种情况下，所有层片都具有相同的各向同性材料。</p>
+            <p>NX 会忽略其所含层片的材料类型设置为<strong>层片材料</strong>的单元。</p>
+            <div>
+              <div>
+                <h3>I-deas 耐久性材料库</h3>
+              </div>
+              <p>I-deas 耐久性材料库包含已为其预定义耐久性属性的材料。可以使用该站点或用户 MatML 库访问这些材料。库存储在 <em>[NX_installation]/NXCAE_EXTRAS/advancedduarbility</em> 文件夹的 <em>AdvancedDurabilityMaterialsLibraryMetric.xml</em> 文件中。</p>
+            </div>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

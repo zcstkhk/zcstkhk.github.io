@@ -1,0 +1,96 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Post-processing system models</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Post-processing system models</h2>
+         
+         <p>When you load the results of a system run, the Solution node in the <span class="uiTerm">Post-Processing Navigator</span> expands to display:
+         </p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>The residual results.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>One superelement data block for each superelement.</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>Superelement data blocks are listed by their Nastran superelement ID (SEID). You can preview the superelement ID in the <span class="uiTerm">FE Model Occurrences Attributes</span> dialog box for selected superelement components.
+         </p>
+         
+         <a name="genid_spta_system_41"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/system_modeling/se_postnav.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>The Post-Processing Navigator. (1) The system model. (2) The system run solution. (3) The residual results subcase. (4) Superelement data blocks.</h4>
+         </div>
+         
+         
+         <p>When you first load the system run results, the superelement data blocks are not loaded. To view superelement results along with the residual, load the data blocks, and then use <span class="uiTerm">Plot and Overlay Loaded SE</span> to create multiple superelement post views in the same viewport as your residual. When you use this command, the software:
+         </p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>Creates a master post view of selected results for the residual.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Identifies the equivalent result in each loaded superelement data block, and overlays the results in the same viewport.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Sets all postviews to <span class="uiTerm">Absolute</span> deformation with a scale factor of <span class="literalText">1.0</span>.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Scales the color bar using <span class="uiTerm">Combined Viewport Displayed</span>, which specifies minimum and maximum values based on all results displayed in the current viewport.
+               </p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>You can use Shift-click or Ctrl-click to select multiple post views in the <span class="uiTerm">Post-Processing Navigator</span>. You can then use the commands in the <span class="uiTerm">Post-Processing</span> toolbar to apply the same settings to all post views simultaneously. For example, you can quickly apply consistent deformation scaling to all selected post views.
+         </p>
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

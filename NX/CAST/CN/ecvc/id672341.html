@@ -1,0 +1,115 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>更改刚度</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>更改刚度</h2>
+         
+         <p><strong>更改刚度</strong>选项允许您更改曲线阶次并保留控制极点数目来修改曲线的外形。更改刚度将增加或减少样条中的段数。使用这个选项，您可以将多段样条更改为单段样条，反之亦然。</p>
+         
+         <p>输入想要的阶次值，允许的最小阶次是 1，最高阶次等于定义曲线的控制顶点（极点）的数目减去1。(译者注：NX 帮助文档中这一句翻译错误，说是等于，应该减去1，具体可参见前面的<strong>阶次和段</strong>一课中的计算公式)如果输入的阶次小于 1，则会显示以下出错消息：</p>
+         
+         <p><strong>阶次小于最小阶次</strong>：</p>
+         
+         <p>如果输入的阶次大于可能的最大值，将显示下面的出错消息：</p>
+         
+         <p><strong>阶次大于最大阶次</strong>：</p>
+         
+         <p>使用<strong>更改刚度</strong>增加阶次将保持控制多边形(极点数目)不变，而改变段数，如果输入的阶次大于最大值，将出现一条错误信息。</p>
+         <table border="0" cellpadding="2" cellspacing="0" width="648" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="89*">
+               
+               <col span="1" width="105*">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="2" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/edit_curve_parameters/freeform_change_stiffness_dvcrv_frm_1w5.gif"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">阶次 = 3, 段数 = 3</p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">阶次 = 4, 段数 = 2</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <p>减少阶次将降低曲线刚度，允许它更准确的模仿控制多边形的波动。</p>
+         <table border="0" cellpadding="2" cellspacing="0" width="648" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="84*">
+               
+               <col span="1" width="108*">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="2" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/edit_curve_parameters/freeform_change_stiffness_dvcrv_frm_1w4.gif"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">阶次 = 3, 段数 = 3</p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">阶次 = 2, 段数 = 4</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

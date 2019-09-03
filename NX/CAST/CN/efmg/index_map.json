@@ -1,0 +1,14 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"建模概述",file:"id1073239.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"建模概述",file:"modeling_overview.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"实体和片体",file:"solid_sheet_bodies.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"拉伸、回转以及扫掠的部件",file:"genid_extruded_or_revolved_parts_9_389.html",type:"topic",parent:"d5e5"},
+{id:"d5e8",title:"含有不规则形状的部件",file:"genid_parts_with_some_irregular_shapes_8_240.html",type:"topic",parent:"d5e5"},
+{id:"d5e9",title:"钣金形状",file:"genid_sheet_metal_shapes_8_183.html",type:"topic",parent:"d5e5"}]},
+
+{id:"d5e11",title:"部件导航器",file:"part_navigator_partnav_overview.html",type:"topic",parent:"",children:[
+{id:"d5e12",title:"时间戳记顺序",file:"part_navigator_partnav_timestamp.html",type:"topic",parent:"d5e11"},
+{id:"d5e13",title:"特征重放",file:"update_feature_replay_ov.html",type:"topic",parent:"d5e11"},
+{id:"d5e14",title:"认识并重放特征",file:"id976709.html",type:"activity",parent:"d5e11"}]}
+]}

@@ -1,0 +1,115 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>替换组件时维持关系</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>替换组件时维持关系</h2>
+         <a name="ndxgenid_eame_28"></a>
+         
+         
+         <p>在<strong>替换组件</strong>对话框中，可以使用<strong>维持关系</strong>选项从原始组件将关系保留到替换组件中，以保留尽可能多的原始行为。维持的关系取决于原始组件和替换组件是相同部件的不同版本还是不同的部件。</p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>如果不选中<strong>维持关系</strong>复选框，则<strong>保留组件属性</strong>用户默认设置将确定替换组件时是否保留组件属性。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <p>在以下情况，替换组件是某版本的原始部件文件：</p>
+         <ul>
+           <li>
+             <p>创建新的毛坯部件时，NX 为其指派内部唯一标识符 (UID)。在设计过程中，如果以不同的名称保存部件，则所有部件的 UID 都与原始毛坯部件的 UID 相同。</p>
+           </li>
+           <li>
+             <p>如果从模板创建部件文件，则从该模板创建的所有部件文件都具有相同的 UID。</p>
+           </li>
+         </ul>
+         
+         <div class="division">
+            
+           <h3></h3>
+            
+            <p>在以下情况，替换组件是某版本的原始部件文件：</p>
+            <ul>
+              <li>
+                <p>创建新的毛坯部件时，NX 为其指派内部唯一标识符 (UID)。在设计过程中，如果以不同的名称保存部件，则所有部件的 UID 都与原始毛坯部件的 UID 相同。</p>
+              </li>
+              <li>
+                <p>如果从模板创建部件文件，则从该模板创建的所有部件文件都具有相同的 UID。</p>
+              </li>
+            </ul>
+            <div>
+              <p>当原始组件和替换组件不同时，NX 会尝试维持以下关系：</p>
+              <ul>
+                <li>
+                  <p>变换</p>
+                </li>
+                <li>
+                  <p>颜色和其他组件属性</p>
+                </li>
+                <li>
+                  <p>变量条件信息</p>
+                </li>
+                <li>
+                  <p>事例注释</p>
+                </li>
+                <li>
+                  <p>变量组件位置</p>
+                </li>
+              </ul>
+              <p>如果使用对象名称标识出每个约束应引用的几何体，则 NX 还可在不相关的组件之间维持装配约束。例如，当某个约束引用边时，您可以使用<strong>属性</strong>对话框为原始组件中引用的边命名。然后可以向替换组件中的边提供相同的名称。</p></div>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3></h3>
+            
+            <div>
+              <p>当替换组件是某版本的原始部件文件时，除了先前提及的关系外，NX 还会尝试维持以下关系：</p>
+              <ul>
+                <li>
+                  <p>CAM 数据、运动数据等事例信息。</p>
+                </li>
+                <li>
+                  <p>装配约束</p>
+                </li>
+                <li>
+                  <p>配对条件</p>
+                </li>
+                <li>
+                  <p>WAVE 链接</p>
+                </li>
+                <li>
+                  <p>部件间表达式</p>
+                </li>
+                <li>
+                  <p>图纸视图</p>
+                </li>
+                <li>
+                  <p>制图和 PMI 注释</p></li></ul></div>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>使用建模电子表格创建部件族</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>使用建模电子表格创建部件族</h2>
+         <p>在前面的练习中，您使用电子表格来修改表达式值并在一个部件中更新这些值。</p>
+         <p>在下面的练习中，您可以创建含三个齿轮部件的部件族，然后将每个成员保存到单独的部件中。</p>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/expressions/spreadsheet_graphic11a.gif"></p>
+         <div class="division">
+            
+            <h3>表达式范围</h3>
+            
+            <p>电子表格表达式范围是一组定义电子表格区域的组，其中包含活动的数据块，以用于控制部件参数。</p>
+            <p>为了对部件产生影响，表达式范围至少需要包括表达式名称。</p>
+            <p>提取表达式时，会自动设置一个范围，对于部件族而言，必须由您来定义范围。</p>
+            <p>无论何时选择更新部件，表达式范围定义以及活动的单元格位置都可以决定哪些数据被传送回部件中。</p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>构建部件族</h3>
+            
+            <p>要让系统在单独的部件中创建部件族成员，您需要定义部件位置(保存路径)以及部件名称。</p>
+            <p>这个信息需要添加在部件族表的底行。</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/expressions/spreadsheet_graphic21.gif"></p>
+            
+            <div class="verbose">
+               <table class="attentionTable attn_note">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">注释</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>当您为族成员输入文件名时，不需要添加扩展名&ldquo;.prt&rdquo;，当部件保存到硬盘中时系统会自动添加。</p>
+                        
+                     </td>
+                  </tr>
+               </table>
+            </div>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

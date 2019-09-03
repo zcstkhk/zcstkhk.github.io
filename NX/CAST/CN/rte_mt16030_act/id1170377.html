@@ -1,0 +1,287 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Add a color column to the Electrical Connection Navigator</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Add a color column to the Electrical Connection Navigator</h2>
+         
+         <p>You need to see the colors that were assigned to these wires. You can do this in one of two ways. You can either switch the display format in the connection navigator to one that already has the <strong>Color</strong> column in it, such as <span class="fileName">UG/Harness</span> or <span class="fileName">Full</span>, or you can edit the currently displayed format by adding in the color column.
+         </p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>In the navigator background, right-click and choose <strong>Properties</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>Click <strong>Edit Display Format</strong>.
+                  </p>
+                  
+                  <p>You want to change the <span class="variableText">Simple</span> display format as it is used in this part file.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Define Format</strong> dialog box, select <strong>Simple</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>Click <strong>Edit</strong> to open the <strong>Format Settings</strong> dialog box.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>You can see that in the <strong>Sort Order</strong> column, sort orders number 1 and 2 have already been applied. NX sorts by <span class="variableText">unique_id</span> first, then by <span class="variableText">from_comp</span>. You can have color sorted third.
+                     </p>
+                     
+                     <p>You want the <strong>Color</strong> column to be placed between <strong>Sort Order</strong> and the <strong>Length</strong> column, and to be at least eight spaces wide.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>Enter the following data:</p>
+                  
+                  <table border="0" width="251" align="center">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1" width="100*">
+                        
+                        <col span="1" width="25">
+                        
+                        <col span="1" width="113">
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td colspan="1" nowrap rowspan="1">
+                              
+                              <p class="no-bottom-margin"><strong>Field Name</strong></p>
+                              
+                           </td>
+                           
+                           <td align="center" colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">=</p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"><strong>color</strong></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td colspan="1" nowrap rowspan="1">
+                              
+                              <p class="no-bottom-margin"><strong>Column Name</strong></p>
+                              
+                           </td>
+                           
+                           <td align="center" colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">=</p>
+                              
+                           </td>
+                           
+                           <td colspan="1" nowrap rowspan="1">
+                              
+                              <p class="no-bottom-margin"><strong>Color</strong></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td colspan="1" nowrap rowspan="1">
+                              
+                              <p class="no-bottom-margin"><strong>Column Order</strong></p>
+                              
+                           </td>
+                           
+                           <td align="center" colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">=</p>
+                              
+                           </td>
+                           
+                           <td colspan="1" nowrap rowspan="1">
+                              
+                              <p class="no-bottom-margin"><strong>8</strong></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td colspan="1" nowrap rowspan="1">
+                              
+                              <p class="no-bottom-margin"><strong>Column Width</strong></p>
+                              
+                           </td>
+                           
+                           <td align="center" colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">=</p>
+                              
+                           </td>
+                           
+                           <td colspan="1" nowrap rowspan="1">
+                              
+                              <p class="no-bottom-margin"><strong>8</strong></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td colspan="1" nowrap rowspan="1">
+                              
+                              <p class="no-bottom-margin"><strong>Sort Order</strong></p>
+                              
+                           </td>
+                           
+                           <td align="center" colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">=</p>
+                              
+                           </td>
+                           
+                           <td colspan="1" nowrap rowspan="1">
+                              
+                              <p class="no-bottom-margin"><strong>3</strong></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>Click <strong>Insert/Replace</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>NX slips this new column in between <span class="variableText">to_port</span> and <span class="variableText">length</span>.
+                     </p>
+                     
+                     <ul class="unmarkedList">
+                        <li>
+                           <pre class="codeExample indent ">to_conn    To Conn
+to_port    To Pin
+color      Color
+length     Length</pre>
+                           </li>
+                     </ul>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>Click <strong>OK</strong> twice.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Connection List Properties</strong> dialog box, 点击<strong>确定</strong>。
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>Scroll the <strong>Electrical Connection Navigator</strong> to the right end.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>The <span class="emphasis">Color</span> column is placed between the <span class="emphasis">To Pin</span> and <span class="emphasis">Length</span> columns, and all the color names assigned to the four wires are now displayed.
+                     </p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_electrical/activities/import_data/1_List_e_connection_navi_5.png"></p>
+                     
+                     <table class="attentionTable attn_note">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">Note</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>No length values are assigned yet as no wires have been routed.</p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

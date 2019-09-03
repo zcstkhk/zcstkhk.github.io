@@ -1,0 +1,389 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>将柔性体有限元模型与机构连接</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>将柔性体有限元模型与机构连接</h2>
+         <p>您必须定义柔性体连接到运动机构中其它自由度的点。虽然可以使用任意单元类型来连接柔性体，但通常将使用<strong>1D 连接</strong>(蜘蛛单元)。</p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/simulation_navigator_tab.gif" border="0"><strong>仿真导航器</strong></p>
+         <ul class="unmarkedList">
+            <li><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/mb1.gif" border="0"> <strong>_demo_assy_fem1.fem</strong></li>
+            <li>
+              
+              <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/mb1.gif" border="0"> <strong>设为显示部件</strong></p>
+            </li>
+         </ul>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/icon_list3.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/view/static_wireframe.gif" border="0"><strong> 静态线框</strong>(<strong>视图</strong>工具条—<strong>渲染样式</strong>下拉菜单)
+         </p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/icon_list3.gif" border="0"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/spider_element_create.gif" border="0"> <strong>1D 连接</strong>(<strong>高级仿真</strong>工具条—<strong>连接</strong>下拉菜单)
+         </p>
+         <ul class="unmarkedList">
+            <li>
+               
+               
+               <table cellspacing="0" class="option_list" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="86">
+                     
+                     <col span="1" width="185*">
+                     
+                     <col span="1" width="20">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>类型</strong></p>
+                           
+                        </td>
+                        
+                        <td class="border1a" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">点到面</p>
+                           
+                        </td>
+                        
+                        <td class="nopadding" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="top" src="../graphics/nonLocalized/nx_dss/icons/images/option_arrow_no_border.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/gateway/common/point_constructor.gif" border="0"> (<strong>选择点</strong>)
+               </p>
+               
+            </li>
+            <li>
+               
+               
+               <table cellspacing="0" class="option_list" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="86">
+                     
+                     <col span="1" width="185*">
+                     
+                     <col span="1" width="20">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>类型</strong></p>
+                           
+                        </td>
+                        
+                        <td class="border1a" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">两点之间</p>
+                           
+                        </td>
+                        
+                        <td class="nopadding" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="top" src="../graphics/nonLocalized/nx_dss/icons/images/option_arrow_no_border.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/gateway/point_constructor/arc_ellipse_sphere_center.gif" border="0"> <strong>圆弧中心/椭圆中心/球心</strong>(<strong>指定点1</strong>和<strong>指定点2</strong>)</p>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/mb1.gif" border="0"> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_blue/blue_ball1.gif" border="0">, <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_blue/blue_ball2.gif" border="0"></p>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/activities/advanced/flex_5.gif"></p>
+               
+               <table class="attentionTable attn_note">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">注释</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>选择顶部和底部边的圆弧中心</p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+            <li>
+               
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>确定</strong></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;<strong>点</strong>对话框</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/mb1.gif" border="0"> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_blue/blue_ball1.gif" border="0"> (面)
+               </p>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/activities/advanced/flex_6.gif"></p>
+               
+            </li>
+            <li>
+               
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="45">
+                     
+                     <col span="1" width="*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="banner_left" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td class="banner_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>连接单元</strong></p>
+                           
+                        </td>
+                        
+                        <td class="banner_right" colspan="1" rowspan="1" width="45">
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               
+               <table cellspacing="0" class="option_list" width="300">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="86">
+                     
+                     <col span="1" width="185*">
+                     
+                     <col span="1" width="20">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="label2" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>类型</strong></p>
+                           
+                        </td>
+                        
+                        <td class="border1a" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">RBE2</p>
+                           
+                        </td>
+                        
+                        <td class="nopadding" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><img align="top" src="../graphics/nonLocalized/nx_dss/icons/images/option_arrow_no_border.gif" border="0"></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+            </li>
+            <li>
+               
+               
+               <table border="0" cellpadding="0" cellspacing="0">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                     
+                     <col span="1" width="10">
+                     
+                     <col span="1" width="*">
+                  </colgroup>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td class="button_left" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td class="button_middle" colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin"><strong>应用</strong></p>
+                           
+                        </td>
+                        
+                        <td class="button_right" colspan="1" rowspan="1" width="10">
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1" width="*">
+                           
+                           <p class="no-bottom-margin">&nbsp;</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/activities/advanced/flex_7.gif"></p>
+               
+               <p>这将创建一个连接方法，在这个练习中稍后的一个步骤中，当您在部件上创建实体网格时，连接方法将会使用在几何体网格中定义的节点生成蜘蛛单元。</p>
+               <table border="0" cellpadding="4" cellspacing="0" frame="box" width="330">
+                 <colgroup span="1">
+                   <col span="1" width="20">
+                   <col span="1" width="0*">
+                   <col span="1" width="0*">
+                 </colgroup>
+                 <tbody>
+                   <tr>
+                     <td colspan="1" rowspan="1"><p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/check_box_off.gif" border="0"></p></td>
+                     <td colspan="1" rowspan="1"><p class="no-bottom-margin"><strong>自动创建</strong></p></td>
+                     <td colspan="1" rowspan="1"><p class="no-bottom-margin">&nbsp;</p></td>
+                   </tr>
+                 </tbody>
+               </table>
+            </li>
+            <li>
+               
+               <p>重复上述步骤以在臂的其它两个端点上创建<strong>点到面</strong> RBE2 连接方法，如下图所示。</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/activities/advanced/flex_8.gif"></p>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/activities/advanced/flex_9.gif"></p>
+               
+               <p>当您完成后，关闭<strong>1D 连接</strong>对话框。</p>
+               <table border="0" cellpadding="0" cellspacing="0">
+                 <colgroup span="1">
+                   <col span="1" width="10">
+                   <col span="1" width="*">
+                   <col span="1" width="10">
+                   <col span="1" width="*">
+                 </colgroup>
+                 <tbody>
+                   <tr>
+                     <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                     <td class="button_middle" colspan="1" rowspan="1" width="*"><p class="no-bottom-margin"><strong>确定</strong></p></td>
+                     <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                     <td colspan="1" rowspan="1" width="*"><p class="no-bottom-margin">&nbsp;</p></td>
+                   </tr>
+                 </tbody>
+               </table>
+            </li>
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

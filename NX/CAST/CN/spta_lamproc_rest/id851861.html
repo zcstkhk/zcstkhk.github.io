@@ -1,0 +1,80 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Ply groups</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>层片组</h2>
+         
+         <p>您可以创建逻辑链接的层片组，以有效地创建复杂铺层并在以后进行修改。</p>
+         
+         <p>组可以是子组和/或父组。新创建的组自动成为父组，直到取消链接子组或被删除为止。</p>
+         
+         <p>子组按以下方式链接到父组：</p>
+         <ul>
+           <li>
+             <p>不能直接删除或修改子组层片</p>
+           </li>
+           <li>
+             <p>删除或修改父组层片时，将对子组层片应用相同的更改</p>
+           </li>
+           <li>
+             <p>不能将层片添加到子组</p>
+           </li>
+           <li>
+             <p>将层片添加到父组时，根据链接规则，它将自动添加子组</p>
+           </li>
+           <li>
+             <p>如果某个子组既是父组又是子组，则不能直接对其进行修改，任何修改必须在其父组上进行           </p>
+           </li>
+         </ul>
+<p>不能嵌套组。</p>
+         
+         <p>要修改子组的内容而不修改其父组，则使用<strong>断开链接</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/laminates/lam_unlink_ply_group.gif" border="0"> 命令将其从父组中断开。</p>
+         <a name="genid_spta_lamproc_40"></a><table border="0" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_physical_property/ply_groups_sketcher.gif"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/laminates/lam_physical_property/ply_groups.gif"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

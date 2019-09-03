@@ -1,0 +1,368 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>平行偏置路径</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>平行偏置路径</h2>
+         <a name="ndxgenid_erta_128"></a>
+         
+         
+         <p><strong>平行偏置路径</strong>命令让您选择父路径，并基于父路径创建任意数量的圆形或者矩形阵列的关联路径。这在您设计多条彼此并排的管线时非常有用。父路径只能是线性或者圆弧管线段，不能使用样条线段。</p>
+         <p>当您选择父线段或路径时，图样坐标符号将会出现在路径上，其 ZP 轴与父路径对齐。</p>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/commands/transform_path/paths_paths2_340.png"></p>
+         
+         <p>要把坐标符号移动到路径相反侧终点处，点击<strong>移动图样显示</strong>。</p>
+         <a name="ndxgenid_erta_129"></a>
+         
+         <a name="ndxgenid_erta_130"></a>
+         
+         
+         <p>您设定的偏置图样是用坐标符号的 ZP 轴计算得到的。当您输入阵列值时，将会出现预览，以为您显示当前输入值创建后的效果。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/commands/transform_path/paths_paths2_350.png"></p>
+         
+         <div class="division">
+            
+            <h3>圆形</h3>
+            <a name="ndxgenid_erta_131"></a>
+            
+            <a name="ndxgenid_erta_132"></a>
+            
+            
+            <p>要创建圆形阵列，您必须输入一个偏置半径值(在 <strong>XP</strong> 方向上计算)，在  <strong>XP-YP</strong> 平面上的路径数量以及阵列的总角度。角度是从 <strong>+ZP</strong> 轴的逆时针方向计算的。</p>
+            
+            <table align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <table border="0" width="276" align="center">
+                           
+                           <colgroup span="1">
+                              
+                              <col span="1" width="140">
+                              
+                              <col span="1" width="99*">
+                              
+                           </colgroup>
+                           
+                           <tbody>
+                              
+                              <tr>
+                                 
+                                 <td colspan="1" nowrap rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"><strong>径向偏置</strong></p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"> = <span class="userInput">25</span></p>
+                                    
+                                 </td>
+                                 
+                              </tr>
+                              
+                              <tr>
+                                 
+                                 <td colspan="1" nowrap rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"><strong>路径数</strong></p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" nowrap rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"> = <span class="userInput">3</span></p>
+                                    
+                                 </td>
+                                 
+                              </tr>
+                              
+                              <tr>
+                                 
+                                 <td colspan="1" nowrap rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"><strong>总角</strong></p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"> = <span class="userInput">90</span></p>
+                                    
+                                 </td>
+                                 
+                              </tr>
+                              
+                           </tbody>
+                           
+                        </table>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/commands/transform_path/paths_paths2_360.png"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>矩形</h3>
+            <a name="ndxgenid_erta_133"></a>
+            
+            <a name="ndxgenid_erta_134"></a>
+            
+            
+            <p>使用矩形偏置时，列是沿着 XP 轴，行沿着 YP 轴。</p>
+            
+            <table align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <table border="0" width="276" align="center">
+                           
+                           <colgroup span="1">
+                              
+                              <col span="1" width="160">
+                              
+                              <col span="1" width="169">
+                              
+                           </colgroup>
+                           
+                           <tbody>
+                              
+                              <tr>
+                                 
+                                 <td colspan="1" nowrap rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"><strong>行偏置</strong></p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"> = <span class="userInput">25</span></p>
+                                    
+                                 </td>
+                                 
+                              </tr>
+                              
+                              <tr>
+                                 
+                                 <td colspan="1" nowrap rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"><strong>列偏置</strong></p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" nowrap rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"> = <span class="userInput">50</span></p>
+                                    
+                                 </td>
+                                 
+                              </tr>
+                              
+                              <tr>
+                                 
+                                 <td colspan="1" nowrap rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"><strong>行数</strong></p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"> = <span class="userInput">3</span></p>
+                                    
+                                 </td>
+                                 
+                              </tr>
+                              
+                              <tr>
+                                 
+                                 <td colspan="1" nowrap rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"><strong>列数</strong></p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"> = <span class="userInput">2</span></p>
+                                    
+                                 </td>
+                                 
+                              </tr>
+                              
+                              <tr>
+                                 
+                                 <td colspan="1" nowrap rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"><strong>父级行</strong></p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"> = <span class="userInput">1</span></p>
+                                    
+                                 </td>
+                                 
+                              </tr>
+                              
+                              <tr>
+                                 
+                                 <td colspan="1" nowrap rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"><strong>父级列</strong></p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"> = <span class="userInput">1</span></p>
+                                    
+                                 </td>
+                                 
+                              </tr>
+                              
+                           </tbody>
+                           
+                        </table>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/commands/transform_path/paths_paths2_370.png"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p><strong>父级行</strong>和<strong>父级列</strong>决定了矩形阵列开始的位置。</p>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>机械管线布置</strong>→<strong>路径</strong>下拉菜单→<strong>平行偏置路径</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/routing/common/parallel_offset_path.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>插入&rarr;管线布置路径&rarr;平行偏置路径</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">快捷菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">右击管线段&rarr;<strong>平行偏置路径</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

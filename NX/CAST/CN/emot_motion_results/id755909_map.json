@@ -1,0 +1,7 @@
+{identifier:"id",label:"title",items:[
+{id:"d13e2",title:"打开仿真",file:"xid481103.html",type:"topic",parent:""},
+{id:"d13e3",title:"重置对话框内存",file:"id353012_dup6.html",type:"topic",parent:""},
+{id:"d13e4",title:"创建干涉对象",file:"create_the_interference_object.html",type:"topic",parent:""},
+{id:"d13e5",title:"创建铰接运动解算方案并求解",file:"create_articulation_solution_trace_dup1.html",type:"topic",parent:""},{id:"d13e6",title:"查看机构铰接运动",file:"articulate_mechanism_int.html",type:"topic",parent:""},
+{id:"d13e7",title:"继续干涉分析",file:"continue_interference_analysis.html",type:"topic",parent:""},
+{id:"d13e8",title:"测量旋转角度",file:"measure_angle.html",type:"topic",parent:""}]}

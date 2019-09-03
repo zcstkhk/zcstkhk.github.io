@@ -1,0 +1,70 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>将 Motion Plant 块添加到控制系统框图中</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>将 Motion Plant 块添加到控制系统框图中</h2>
+         <p>在 MATLAB Simulink 中执行这些步骤，要获取更多关于这些步骤的细节，参见 Simulink 帮助文档。</p>
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>开始 MATLAB Simulink。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>将 <strong>Current Folder</strong> 设置为您保存运动仿真的文件夹(比如，文件夹 <strong>steam_engine</strong>)。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>右击文件 <strong>controller_brute_force_controlled_Plant.m</strong>  并选择 <strong>Run</strong>。</p>
+               <p><strong>Motion Plant</strong> 块出现。</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/adv_topics/run_plant_m_file.png"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>选择 <strong>File&rarr;Open</strong> 并找到 <strong>steam_engine</strong> 运动仿真保存的文件夹。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>打开文件 <strong>steam_force.mdl</strong>。</p>
+               <p>这个文件与练习文件放在一起，是一个预先定义的继电器式控制系统。花一些时间查看控制系统。</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/activities/advanced_topics/cosimulation_4.png"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>将 Motion Plant 块拖到框图中，如图 <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball1.gif" border="0"> 所示的位置。</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/activities/advanced_topics/cosimulation_5.png"></p>
+               
+            </li>
+            
+         </ol>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

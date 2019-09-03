@@ -1,0 +1,6 @@
+{identifier:"id",label:"title",items:[
+{id:"d13e2",title:"打开部件并使用极点创建一条样条",file:"id738662.html",type:"topic",parent:""},
+{id:"d13e3",title:"查看样条",file:"id1009608.html",type:"topic",parent:""},
+{id:"d13e4",title:"创建一条通过点的样条",file:"id1009610.html",type:"topic",parent:""},
+{id:"d13e5",title:"通过点集创建一条拟合样条",file:"id1009622.html",type:"topic",parent:""},
+{id:"d13e6",title:"对样条指派斜率和拟合公差",file:"id1009624.html",type:"topic",parent:""}]}

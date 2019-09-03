@@ -1,0 +1,79 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>复习</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>复习</h2>
+         <div id="topQuestionsContainer">
+            <div class="questionsHeader">
+               <div class="headerTitle">
+                  <p>问题</p>
+               </div>
+               <div class="quesionButtons">
+                  <div class="qButton" id="qButton_1">
+                     <p>1</p>
+                  </div>
+               </div>
+            </div>
+            <div id="questionsContainer">
+               <div class="question" id="question1" answered="false" numanswers="5" questiontype="allThatApply">
+                  <p>可以使用哪些对象来设置工厂输出以捕捉运动副中的速度，并将这个信息关联到控制系统？</p>
+                  <p class="questionInstruction">选择您认为正确的所有选项</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q6a1" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q6a1" type="checkbox" correct="yes" name="question6Grp"></td>
+                           <td>
+                              <p>数学函数</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q6a2" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q6a2" type="checkbox" correct="no" name="question6Grp"></td>
+                           <td>
+                              <p>标记</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q6a3" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q6a3" type="checkbox" correct="yes" name="question6Grp"></td>
+                           <td>
+                              <p>传感器</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q6a4" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q6a4" type="checkbox" correct="no" name="question6Grp"></td>
+                           <td>
+                              <p>工厂输入</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q6a5" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q6a5" type="checkbox" correct="yes" name="question6Grp"></td>
+                           <td>
+                              <p>表格函数</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div id="showFeedbackContainer"><span showLabel="true" id="feedbackButton" title="Show feedback" dojoType="xps.form.Button" onClick="showQuestionFeedback()">显示答案</span></div>
+            </div>
+            <div class="helpTextContainer">
+               <p class="questionFeedback" id="incorrect">错误！</p>
+               <p class="questionFeedback" id="correct">正确！</p>
+               <div class="questionHelp" id="questionHelp1">
+                  <p>可以使用数学函数、表格函数或者传感器来设置工厂输出以捕捉机构的状态数据，比如位移、速度以及加速度。</p>
+               </div>
+            </div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

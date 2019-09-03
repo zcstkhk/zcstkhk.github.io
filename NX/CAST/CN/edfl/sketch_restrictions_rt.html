@@ -1,0 +1,97 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>制图中的草图限制</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>制图中的草图限制</h2>
+         
+         <p>在制图中绘制草图时，要遵循以下限制：</p>
+         <ul>
+           <li>
+             <p>NX 仅支持包含草图的制图视图内的关联<span id="popup3" dojoType="dijit.layout.ContentPane" class="popup glossaryLink">约束</span>。要在制图视图之间创建非关联的草图，请关闭<strong>首选项→草图→草图样式→设置→创建自动判断的约束</strong>选项，并在图纸页上创建草图。</p>
+           </li>
+         </ul>
+         <ul>
+            
+            <li>
+               
+               <p>在草图任务环境中，不能直接引用其他部件(无论是建模草图还是制图草图)中的对象。如果在<span id="popup4" dojoType="dijit.layout.ContentPane" class="popup glossaryLink">主模型</span>配置下工作，则图纸和底层模型分别处于两个部件中。因此草图不能引用这些曲线。不过，如果您开启<strong>首选项→视图→常规→抽取的边→关联</strong>选项，则会在图纸部件中创建几何体的副本，且草图可以引用这些复制的曲线。 </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>当边界被设置为<strong>编辑→视图→视图边界→手工生成矩形</strong>时，您需要手工调整<span id="popup5" dojoType="dijit.layout.ContentPane" class="popup glossaryLink">视图边界</span>大小，以避免几何体被剪切掉。当边界设置为<strong>自动生成矩形</strong>时，NX 将自动调整视图边界大小。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>NX 会移除作为<span id="popup6" dojoType="dijit.layout.ContentPane" class="popup glossaryLink">局部放大图</span>或<span id="popup7" dojoType="dijit.layout.ContentPane" class="popup glossaryLink">剖视图</span>。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>制图视图处于展开模式时，草图选项将不可用。要在展开模式中添加曲线，则使<strong>曲线</strong>工具条可用并使用基本曲线。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>每个视图只能有一个草图。不过，图纸页上可以有多个草图。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>参考视图不能作为活动的草图视图。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>右键单击视图并选择具有草图的视图上的<strong>样式→透视</strong>选项，可能会产生不理想的结果。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div dojoType="dijit.TooltipDialog" id="popup3_dialog" class="glossaryPopup" style="display:none;" closable="true">
+           <div class="exitGlossaryPopup"><a href="#" onclick="closeToolTipDialog('popup3_dialog')"><img src="../xps3/graphics/exit2.png"></a></div>
+            <p><span class="glossaryTerm">约束:</span>(建模)定义对象之间相对位置的关系。装配约束用于定位装配中的组件。</p>
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/glossary/assembly_constraint_def.png"></p>
+            <p>(草图)应用到草图几何图形的几何与尺寸设计规则。</p>
+         </div>
+         <div dojoType="dijit.TooltipDialog" id="popup4_dialog" class="glossaryPopup" style="display:none;" closable="true">
+            <div class="exitGlossaryPopup"><a href="#" onclick="closeToolTipDialog('popup4_dialog')"><img src="../xps3/graphics/exit2.png"></a></div>
+            <p><span class="glossaryTerm">主模型:</span>组件文件，包含装配、图纸或加工部件所引用的定义几何体。例如，在 NX 中，主模型通常被保存在一个文件中，而图纸保存在另一个文件中。主模型修改时，可以更新图纸视图以反映更改。</p>
+         </div>
+         <div dojoType="dijit.TooltipDialog" id="popup5_dialog" class="glossaryPopup" style="display:none;" closable="true">
+            <div class="exitGlossaryPopup"><a href="#" onclick="closeToolTipDialog('popup5_dialog')"><img src="../xps3/graphics/exit2.png"></a></div>
+            <p><span class="glossaryTerm">视图边界:</span>用于限制视图中显示的几何体的边界。</p>
+         </div>
+         <div dojoType="dijit.TooltipDialog" id="popup6_dialog" class="glossaryPopup" style="display:none;" closable="true">
+            <div class="exitGlossaryPopup"><a href="#" onclick="closeToolTipDialog('popup6_dialog')"><img src="../xps3/graphics/exit2.png"></a></div>
+            <p><span class="glossaryTerm">局部放大图:</span>带有圆形、矩形或用户定义边界的子视图，包含现有图纸视图的放大部分。</p>
+         </div>
+         <div dojoType="dijit.TooltipDialog" id="popup7_dialog" class="glossaryPopup" style="display:none;" closable="true">
+            <div class="exitGlossaryPopup"><a href="#" onclick="closeToolTipDialog('popup7_dialog')"><img src="../xps3/graphics/exit2.png"></a></div>
+            <p><span class="glossaryTerm">剖视图:</span>通过使用一个或多个剖切平面剖切模型几何体定义的视图，可查看剖切平面上的平面几何体。</p>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

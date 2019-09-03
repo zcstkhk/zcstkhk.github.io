@@ -1,0 +1,137 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>管道通路中的管段</title>
+   </head>
+   <body>
+      <div class="contentType_procedure">
+         <h2>管道通路中的管段</h2>
+         
+         <p>管段是管道通路的再分，可以作为一个制造单元。一旦管段制造完成，就可以在制造现场装配成为一个管道通路。下图所示为您将在管道通路中定义的三个不同的管段。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/runs_and_spools/run_spool_graphic_27.gif"></p>
+         
+         <div class="division">
+            
+            <h3>指定分隔符</h3>
+            
+            <p>分隔符将定义一个管段的结束以及另一个管段的开始。当您把管道通路中的组件指定为分隔对象，您就必须选择它的哪一个端口将作为实际分隔符。</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/runs_and_spools/run_spool_graphic_28.gif"></p>
+            
+            <div class="defList">
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p>指派分隔符</p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <p>要在选定组件上指定分隔符端口，在<strong>指定分隔符</strong>对话框中，右击端口行并选择<strong>指派分隔符</strong>，该端口的分隔符状态将由<strong>否</strong>变为<strong>是</strong>。</p>
+                     
+                  </div>
+               </div>
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p>取消指派分隔符</p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <p>右击某个端口并选择<strong>取消指派分隔符</strong>，将把该端口的分隔符状态将由<strong>是</strong>变为<strong>否</strong>。</p>
+                     
+                  </div>
+               </div>
+            </div>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>检测管段</h3>
+            
+            <p>一旦在管道通路中定义了所需数量的分隔符，<strong>检测管段</strong>命令就将使用分隔符来把管道通路细分为管段，创建管段的同时根据<strong>生成管段 ID</strong>对话框中的设置来对管段进行命名。导航器随后将把所有的管道通路组件组织到所属的管段节点下方。</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/runs_and_spools/run_spool_graphic_29.gif"></p>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">机械管线布置</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">管道通路导航器</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">右击管道通路节点&rarr;<strong>指定分隔符</strong> &amp; <strong>检测管段</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>工具&rarr;管道通路导航器&rarr;指定分隔符</strong> &amp; <strong>检测管段</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

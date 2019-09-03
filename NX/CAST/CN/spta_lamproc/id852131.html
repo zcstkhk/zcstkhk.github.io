@@ -1,0 +1,185 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>NX 复合层合板中的失效分析</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>NX 复合层合板中的失效分析</h2>
+         
+         <p>在下列情况中，NX 复合层合板将使用层合板和胶合失效理论：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>验证层合板强度</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>使用高级后处理工具来查看失效分析结果</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>优化层合板</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>可以计算：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>层片与胶合失效指数</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>层片与胶合安全系数</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>层片与胶合强度比</p>
+               
+            </li>
+            
+         </ul>
+         <a name="id852136"></a>
+         
+         
+         
+         <h3>失效分析属性</h3>
+         
+         
+         
+         <p>对于失效分析，您需要：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>从层合板物理属性或拉伸实体层合板物理属性中选择一种失效理论</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>为实体层合板物理属性的各个层片选择一种层片失效理论以及胶合失效理论</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>输入胶合的许用应力值</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>指定所有材料的许用拉应力或应变</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>指定所有材料的许用压应力或应变</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>指定所有材料的许用剪切应力或应变</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>许用应力和应变是材料可以承受的最大应力和应变，在<strong>各向同性材料</strong>和<strong>各向异性材料</strong>对话框的<strong>强度</strong>选项卡中的<strong>应力极限</strong>和<strong>应变极限</strong>组中指定它们。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <p>如果您选择了 Tsai-Wu 理论，可以定义 <strong>Tsai-Wu 交互系数(F12)</strong>，如果未定义 <strong>Tsai-Wu 交互系数(F12)</strong>，或者指定的值未通过稳定性检查，软件将把它设为0.0。</p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>对于层片材料，许用应力和应变将通过指定的矩阵以及纤维材料值计算。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <a name="id852181"></a>
+         
+         
+         
+         <h3>层片失效包络</h3>
+         
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/laminates/theory/validation_group_envelope.gif"></p>
+         
+         <p>失效包络绘图将辅助您查看层片在组合载荷下可以承受多少应力。</p>
+         
+         <p>包络线的形状取决于：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>失效理论</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>层片材料的许用强度</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>包络线的大小随剪切应力的数量变化。</p>
+         
+         <p>剪切应力极限与选定层片材料的平面内剪切强度相对应。</p>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/laminates/theory/failure_enevlope_display.gif"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

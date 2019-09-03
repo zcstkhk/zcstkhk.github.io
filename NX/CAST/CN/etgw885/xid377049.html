@@ -1,0 +1,102 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>JT attributes in NX</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>JT attributes in NX</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>The way properties are read from JT files into NX has changed.</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>NX now creates attributes on the NX part or on the solid bodies within the part depending on the corresponding JT object on which the properties were defined.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>NX also names the NX objects and any corresponding features based on the names of the objects in the JT file.</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>Attributes that are defined in the JT files and that are not meant to be modified in NX, are called <span class="emphasis">master data</span>. NX identifies these attributes by the prefix specified by the <span class="uiTerm">Master Data Prefix</span> customer default. All the attributes defined with this prefix in the JT file are locked in NX for modification. You can change this prefix to match the prefix used to define the master data in the JT file.
+            </p>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">File</span>&rarr;<span class="uiTerm">Utilities</span>&rarr;<span class="uiTerm">Customer Defaults</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Gateway</span>&rarr;<span class="uiTerm">JT Files</span>&rarr;<span class="uiTerm">Import</span> tab
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

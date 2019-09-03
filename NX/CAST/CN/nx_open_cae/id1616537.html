@@ -1,0 +1,205 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>NX Open for CAE documentation resources</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>NX Open for CAE documentation resources</h2>
+         
+         <p>There are two key documentation resources that you will need to use when you create applications with NX Open for CAE:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>The NX Open API documentation.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The NX Open for CAE documentation.</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p> Both of these resources can be found in the <span class="titleReference">Programming Tools</span> documentation within the <span class="titleReference">NX Help Library</span>.
+         </p>
+         
+         <div class="division">
+            
+            <h3>NX Open API documentation</h3>
+            
+            <p>The general NX Open API documentation provides information on all classes for each of the major programming languages (for example, .NET, Java, C++). </p>
+            
+            <p>For example, <span class="uiTerm">NX Help Library</span>&rarr;<span class="uiTerm">Programming Tools</span>&rarr;<span class="uiTerm">NX Open</span>&rarr;<span class="uiTerm">Open for .NET</span>&rarr;<span class="uiTerm">NX Open for .NET Reference Guide</span> provides a complete API reference for NX Open for .NET in Microsoft Compiled Help (.chm) format. You may find this documentation especially helpful for this course.
+            </p>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">Note</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>The CAE classes are found in the <span class="codeText">NXOpen.CAE</span> namespace.
+                     </p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+            <p>The documentation for each class includes:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>A short description of the class.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>A list of the members of that class, including the available properties and methods.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Remarks, which can contain information on how to create an instance of the class.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>An instance hierarchy, which displays the predecessors that the class inherits from. This is useful for finding the <span class="emphasis">interface</span> classes, which are common in the NX CAE data model.
+                  </p>
+                  
+                  <p>For example, notice how the <span class="codeText">MeshManager</span> and <span class="codeText">MeshManagerOccurrence</span> classes share the same <span class="emphasis">interface</span> class:
+                  </p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/nx_open/mesh_manager_class_ex.png"></p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>NX Open for CAE documentation</h3>
+            
+            <p>The <span class="titleReference">NX Open for CAE</span> documentation supplements the general NX Open API documentation. It includes documentation for the CAE <span class="emphasis">Solver Environment</span> (solver languages) and on the meshing technologies supported by the NX CAE applications.
+            </p>
+            
+            <p>You can find it at: <span class="uiTerm">NX Help Library</span>&rarr;<span class="uiTerm">Programming Tools</span>&rarr;<span class="uiTerm">NX Open</span>&rarr;<span class="uiTerm">Open for CAE</span>.
+            </p>
+            
+            <p>In the <span class="emphasis">Solver Environment</span> section, for each supported solver, the documentation lists all supported entities and includes:
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>The language-specific name and the name that appears in the user interface. Sometimes these names are the same, and sometimes they are different. Additionally, the name you need to provide in NX Open for CAE applications is not consistent. Therefore, the name required by NX Open for CAE is shown in red.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>a link to sample JA code, which demonstrates correct coding for each entity.</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>The following graphic shows an example of the documentation for the NX Nastran CBEAM element. In this case, CBEAM is both the name that appears in the NX user interface and the name you need to provide to NX Open.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/nx_open/cbeam_doc_ex.png"></p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Using the NX Open API and NX Open documentation together</h3>
+            
+            <p>When you create NX Open for CAE applications, you will need to use both of these documentation resources. For example, suppose you wanted to create an application that would generate a mesh of 2D elements. You would:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Consult the NX Open API documentation for information on how to use the <span class="codeText">NXOpen::CAE::ElementCreateBuilder </span> class.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Consult the <span class="titleReference">NX Open for CAE</span> for information on the supported element types for a given solver.
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Additional programming documentation resources</h3>
+            
+            <p>The NX Help Library provides complete documentation for tools you can use to customize NX and to automate NX workflows. You may find these additional help topics useful:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">NX Help Library</span>&rarr;<span class="uiTerm">Programming Tools</span>&rarr;<span class="uiTerm">NX Open</span>&rarr;<span class="uiTerm">NX Open Programmer's Guide</span> introduces the topics that are typically encountered when developing automation solutions for NX using the NX Open toolkits.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">NX Help Library</span>&rarr;<span class="uiTerm">Programming Tools</span>&rarr;<span class="uiTerm">Block UI Styler</span> provides complete online Help for the Block UI Styler application, which you can use to interactively build dialog boxes that are consistent with the NX block-based user interface.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">NX Help Library</span>&rarr;<span class="uiTerm">Fundamentals</span>&rarr;<span class="uiTerm">Customizing NX</span>&rarr;<span class="uiTerm">Customizing your environment</span>&rarr;<span class="uiTerm">Customizing toolbars and menus</span> provides information about adding applications to toolbars and menus.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>There are a number of examples of Visual Basic programs which use NX Open to perform NX Advanced Simulation operations. These examples are located on the NX product installation disc in this folder: %UGII_BASE_DIR%\ugopen\SampleNxOpenApplications\.NET\CAE.</p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>按层次结构顺序加载引用集</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>按层次结构顺序加载引用集</h2>
+         
+         
+         <p>本示例将展示如何以设计者的身份与其他设计者合作，以及如何加载同一大型装配的部件，从而使得各自完成作业所需的组件能够得以加载，而不加载其他组件。</p>
+         
+         <table border="0" cellpadding="2" cellspacing="1" align="center">
+            
+            <colgroup align="center" span="1">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/assemblies_load_options/car_assembly.png"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">完整的装配</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <p>为帮助您控制加载的数据量和显示中的组件数量，示例装配中提供以下用户定义的引用集：</p>
+         <ul>
+           <li>
+             <p>WHEELS</p>
+           </li>
+           <li>
+             <p>SUSPENSION</p>
+           </li>
+           <li>
+             <p>ENGINE</p>
+           </li>
+           <li>
+             <p>BODY_PANELS</p>
+           </li>
+         </ul>
+         
+         <ol type="1">
+            <li>
+               
+               
+               <p>在<strong>装配加载选项</strong>对话框的<strong>引用集</strong>组中，在<strong>添加引用集</strong>框中，向列表添加用户定义的引用集的名称。</p>
+               
+               
+               <div class="stepResult">
+                  
+                  <ul class="hangingList">
+                     
+                     <li class="condense">
+                       <p>WHEELS</p>
+                     </li>
+                     <li>
+                       <p>SUSPENSION</p>
+                     </li>
+                     <li>
+                       <p>ENGINE</p>
+                     </li>
+                     <li>
+                       <p>BODY_PANELS</p>
+                     </li>
+                     <li>
+                       <p><strong>按照保存的</strong></p>
+                     </li>
+                     <li>
+                       <p><strong>整个部件</strong></p>
+                     </li>
+                     <li>
+                       <p><strong>空</strong></p>
+                     </li>
+                     <li>
+                       <p><strong>使用模型</strong>                     </p>
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               
+           </li>
+            <li>
+               
+               
+               <p>在该列表中，使用箭头键可根据所需的引用集加载优先级顺序来排列这些引用集。</p>
+               
+               
+               <div class="stepInformation">
+                  
+                  <div>
+                    <p>您对 WHEELS 和悬架 SUSPENSION 感兴趣；而其他设计者将使用 ENGINE。</p>
+                    <p>无须删除不希望加载的引用集的名称。在列表中比您当前不感兴趣的引用集层次更高的有效名称或条件占优先地位。例如，评估始终在<strong>空</strong>处停止，因此<strong>空</strong>条目后面的层次结构列表顺序没有意义。</p>
+                  </div>
+               </div>
+               
+               <div class="stepResult">
+                  
+                  <p>列表的排列顺序如下：</p>
+                  <ul>
+                    <li>
+                      <p>WHEELS</p>
+                    </li>
+                    <li>
+                      <p>SUSPENSION</p>
+                    </li>
+                    <li>
+                      <p><strong>空</strong></p>
+                    </li>
+                    <li>
+                      <p>… 等等</p>
+                    </li>
+                  </ul>
+                  
+               </div>
+               
+            </li>
+            <li>
+               
+               
+               <p>单击<strong>确定</strong>。</p>
+               
+               
+            </li>
+            <li>
+               
+               
+              <p>打开装配。</p>
+               
+               
+               <div class="stepResult">
+                  
+                  <p>加载并查看下图中显示的组件。</p>
+                  
+                  <table border="0" cellpadding="2" cellspacing="1" align="center">
+                     
+                     <colgroup align="center" span="1">
+                        
+                        <col span="1">
+                        
+                    </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/assemblies_load_options/car_wheels_suspension_refset.png"></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">使用 WHEELS 和 SUSPENSION 引用集加载的装配</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                 </table>
+                  
+                  <p>如果其他设计者将层次结构布置为以 ENGINE 和<strong>空</strong>开始，则该设计者将加载并看到下图中显示的组件。</p>
+                  
+                  <table border="0" cellpadding="2" cellspacing="1" align="center">
+                     
+                     <colgroup align="center" span="1">
+                        
+                        <col span="1">
+                        
+                    </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/assemblies_load_options/car_engine_refset.png"></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">使用 WHEELS 和 SUSPENSION 引用集加载的装配</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                 </table>
+                  
+              </div>
+               
+            </li>
+        </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>指定搜索准则以缩小库搜索范围</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>指定搜索准则以缩小库搜索范围</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在<strong>搜索准则</strong>对话框中，点击<strong>操作</strong>组中的<strong>匹配数</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/search_criteria/count_matches.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <div class="verbose">
+                        <p>显示在<strong>匹配数</strong>旁的数字表示库中匹配当前参数的刀具，可以通过指定具体的数值或数值范围(使用 &lt;、&gt;、&lt;=或者&gt;= )来缩小搜索范围。</p>
+                     </div>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>搜索参数</strong>组的<strong>刀尖半径</strong>输入框中，键入<strong>0.01575</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>操作</strong>组中的<strong>匹配数</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/search_criteria/count_matches.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <div class="verbose">
+                        <p>您已经将搜索范围缩小到只包含刀尖半径为0.01575的车刀。</p>
+                     </div>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>列出结果</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/common/information.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <div class="verbose">
+                        <p><strong>信息</strong>窗口将列出所有符合搜索准则的刀具，使用列表来确定哪些值(比如刀尖半径以及切削边长)可以帮助缩小列表。</p>
+                     </div>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>点击 <img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/turning/common_graphic556.gif" border="0"> 以关闭<strong>信息</strong>窗口。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在<strong>刀尖半径</strong>输入框中键入 <span class="literalText">&lt;.03</span>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>在<strong>切削边长</strong>输入框中键入<span class="literalText">&gt;=.6</span>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>操作</strong>组中的<strong>匹配数</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/search_criteria/count_matches.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <div class="verbose">
+                        <p>您已经将搜索范围缩小到只包含刀尖半径小于0.03，并且切削边长大于0.6的车刀。</p>
+                     </div>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>以接受搜索准则。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

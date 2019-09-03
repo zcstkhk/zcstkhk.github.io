@@ -1,0 +1,67 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>已保存的加载选项组</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>已保存的加载选项组</h2>
+         
+         <p>可以保存和恢复<strong>装配加载选项</strong>对话框的默认设置。</p>
+        <p>保存当前装配加载选项时，将默认创建名为 <em>load_options.def</em> 的文件，并将其置于以下位置：</p>
+        <ul>
+           <li>
+             <p>在 Linux 系统中，位于操作系统主目录下。</p>
+           </li>
+           <li>
+             <p>在 Windows 系统中：</p>
+             <ul>
+               <li>
+                 <p>由用于启动 NX 的快捷方式所在的<em>起始位置</em>文件夹定义的目录。</p>
+               </li>
+               <li>
+                 <p>由名为 HOME 的操作系统环境变量定义的目录。(默认情况下，不存在 HOME 变量；必须对它进行定义。)</p>
+               </li>
+             </ul>
+           </li>
+        </ul>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>可以通过设置 UGII_LOAD_OPTIONS 环境变量来定义 <em>load_options.def</em> 文件的默认路径和名称。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <p>如果不保存默认设置，则在 NX 会话中对装配加载选项进行的更改会在会话结束时失效，除非您保存默认设置。</p>
+         <p>如果不保存更改，则在下一个会话中，默认设置将由以下因素确定：</p>
+         <ul>
+           <li>
+             <p><em>load_options.def</em> 文件中上次保存的设置。</p>
+           </li>
+           <li>
+             <p>软件中的默认设置(如果 <em>load_options.def</em> 文件不存在)。</p>
+           </li>
+         </ul>
+         <p>可定义用于保存装配加载选项的任何文件路径和名称。例如，如果有多个项目，则可以将适用于各个项目的设置保存在不同的文件中。可以从已保存的任何装配加载选项文件恢复装配加载选项。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>仿真期间重新放置连杆</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>仿真期间重新放置连杆</h2>
+         
+         <p><strong>啮合连杆</strong>运动副选项将把连杆从它的原始位置重新放置到与<em>装配位置</em>完全不同的仿真起始位置(<em>设计位置</em>)，移动发生在动画或铰接过程中。</p>
+         
+         <p>这个选项在连杆未在正确位置上构建时很有用。</p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>满足啮合连杆的旋转值大小必须限制在绕各轴最大60度范围内，如果机构需要更大的旋转度数来满足啮合连杆，则铰接/动画将会失败，并出现错误信息。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <a name="genid_emot_links_constraints_170" id="genid_emot_links_constraints_170"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div>
+                           <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;"><script type="dojo/method">
+      flashData= {
+          swfSrc : '../graphics/graphicLibrary/nx_dss/motion/links_constraints/snap_links_anim.swf',
+          graphSrc : '../graphics/graphicLibrary/nx_dss/motion/links_constraints/snap_links_anim.gif',
+          align : 'center',
+          base : '.',
+          height : '335',
+          width : '394',
+          bgcolor : '#FFFFFF',
+          flashVersion : '7',         
+          looping : 'false',
+          play : 'false',
+          menu : 'true',
+          parameters : ''
+      }
+      top.loadFlash(this,flashData);
+    </script></div>
+                        </div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>(1)和(2)为启用啮合连杆选项的运动副</h4>
+         </div>
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

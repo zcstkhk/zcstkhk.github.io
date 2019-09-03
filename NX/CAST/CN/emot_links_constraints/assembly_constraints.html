@@ -1,0 +1,344 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>将装配约束转化为连杆和运动副</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>将装配约束转化为连杆和运动副</h2>
+         
+         <p>如果主模型装配中包含装配约束(或者在早期版本的 NX 中的配对条件)，软件可以在您创建运动仿真时自动将这些约束转化为连杆和运动副。<a name="ndxgenid_emot_links_constraints_159"></a>
+            
+         </p>
+         
+         <p>当您新建一个仿真时，将打开<strong>机构运动副向导</strong>，它将列出可以被自动转化为运动对象的所有装配约束。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/links_constraints/convert_assem_constraints.gif"></p>
+         
+         
+         <p>向导将根据被装配约束所引用的组件中的自由度来创建合适的运动副类型，例如，如果装配约束移除了五个自由度(剩余一个旋转自由度)，向导将会创建一个旋转副。</p>
+         
+         <table border="1" cellpadding="8" cellspacing="2" frame="box" rules="all" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <thead>
+               
+               <tr>
+                  
+                  <td bgcolor="silver" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">平移自由度</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="silver" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">旋转自由度</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="silver" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">要创建的运动副</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">0</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">0</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">固定</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">0</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">1</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">旋转副</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">1</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">0</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">滑动副</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">1</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">1</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">柱面副</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">2</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">1</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">平面副</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">0</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">3</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">球面副或共点</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">0</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">2</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">万向节</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">1</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">3</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">共线</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">2</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">3</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">共面</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">3</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">0</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">方向</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">3</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">1</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">平行</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">3</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">2</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">垂直</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <p>The wizard infers the origin and orientation of the joint based on the geometry referenced by the assembly constraint. When you convert a joint from an assembly constraint, the wizard creates a smart point for the joint marker origin. This ensures that the joint position updates automatically when the CAD model is modified. </p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

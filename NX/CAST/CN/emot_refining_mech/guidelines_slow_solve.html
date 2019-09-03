@@ -1,0 +1,55 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>解决求解过慢</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>解决求解过慢</h2>
+         
+         <p>3D 接触是很复杂的机构问题，并且可能会增加您求解运动仿真的时间。</p>
+         
+         <p>但是，求解花费的时间大得不像话时，您可以使用这些方法来提升求解性能，以列出的顺序每次尝试一种。</p>
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>将<strong>局部最大穿透值</strong>设为<strong>0</strong>，如果接触求解失败，或者显示行为不一致，则将参数恢复至先前的值。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>增大<strong>平面公差因子</strong>。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>为基本体以及操作体启用<strong>最大小平面大小因子</strong>，并增大这个因子的值。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>减小<strong>材料阻尼</strong>，使这个值刚好大于接触时脱离或者振动过多时的值。</p>
+               
+            </li>
+            
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>添加一些新的边距到部件的不同边上</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>添加一些新的边距到部件的不同边上</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>打开 <span class="fileName">drf5_drf_orddim_dwg</span>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/ordinate/DRF_ord_dimen_orddim_view_4.png"></p>
+                     
+                     <p>图纸页 &ldquo;Sheet 1&rdquo; 工作</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>打开图纸页“Sheet 2”。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/ordinate/DRF_ord_dimen_orddim_view_13.png"></p>
+                     
+                     <p> 如果您想为板左上角的孔创建一些尺寸，可以定义新的边距，以使新的尺寸与这些新边距对齐，并且不会跨越整个视图。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>双击坐标集名称 ORDINATE2 以激活这个集。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>坐标尺寸</strong>对话框条上，点击<strong>定义边距</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/drafting/define_margins.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>第一偏置</strong>输入框中，键入<strong>10</strong>然后回车。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/ordinate/DRF_ord_dimen_orddim_first_offset_field.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>确保<strong>控制点</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/selection_bar/control_point.gif" border="0"> 是选择条上唯一开启的捕捉点选项。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>选择部件的左上角。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/ordinate/DRF_ord_dimen_orddim_new_margins_1.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>单击鼠标中键以创建水平和竖直边距。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>两个激活的边距显示为实线，两个未激活的边距显示为虚线。</p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

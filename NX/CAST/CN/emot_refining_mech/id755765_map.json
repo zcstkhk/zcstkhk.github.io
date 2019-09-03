@@ -1,0 +1,10 @@
+{identifier:"id",label:"title",items:[
+{id:"d13e2",title:"打开部件",file:"three_d_contact_open_the_part.html",type:"topic",parent:""},
+{id:"d13e3",title:"重置对话框内存",file:"id353012_dup6.html",type:"topic",parent:""},
+{id:"d13e4",title:"隐藏底座",file:"hide_housing_body.html",type:"topic",parent:""},
+{id:"d13e5",title:"创建连杆",file:"create_links_breaker.html",type:"topic",parent:""},
+{id:"d13e6",title:"创建运动副",file:"create_joints_breaker.html",type:"topic",parent:""},
+{id:"d13e7",title:"创建弹簧",file:"create_spring_breaker.html",type:"topic",parent:""},
+{id:"d13e8",title:"创建3D 接触",file:"create_3d_contact_breaker.html",type:"topic",parent:""},
+{id:"d13e9",title:"创建解算方案并求解",file:"create_a_solution_curve_3d_contact.html",type:"topic",parent:""},
+{id:"d13e10",title:"查看机构运动",file:"animate_the_mechanism_3d.html",type:"topic",parent:""}]}

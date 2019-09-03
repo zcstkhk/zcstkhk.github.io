@@ -1,0 +1,14 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"确认装配加载选项",file:"id1022940.html",type:"topic",parent:""},
+{id:"d7e3",title:"打开仿真文件",file:"id1022936.html",type:"topic",parent:""},
+{id:"d7e4",title:"查看仿真装配",file:"id1022991.html",type:"topic",parent:""},
+{id:"d7e5",title:"加载理想化部件",file:"id1022993.html",type:"topic",parent:""},
+{id:"d7e6",title:"手动加载主模型部件",file:"id1022995.html",type:"topic",parent:""},
+{id:"d7e7",title:"查看理想化部件装配",file:"id1022997.html",type:"topic",parent:""},
+{id:"d7e8",title:"显示 FEM 文件",file:"id1039562.html",type:"topic",parent:""},
+{id:"d7e9",title:"更新 FEM 文件",file:"id1023006.html",type:"topic",parent:""},
+{id:"d7e10",title:"关闭所有部件",file:"id1023008.html",type:"topic",parent:""},
+{id:"d7e11",title:"修改装配加载选项",file:"id1023010.html",type:"topic",parent:""},
+{id:"d7e12",title:"打开仿真文件",file:"id1023022.html",type:"topic",parent:""},
+{id:"d7e14",title:"加载理想化部件和主模型部件",file:"id1023024.html",type:"topic",parent:""},
+{id:"d7e15",title:"恢复装配加载选项",file:"id1023026.html",type:"topic",parent:""}]}

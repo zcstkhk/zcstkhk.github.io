@@ -1,0 +1,17 @@
+{identifier:"id",label:"title",items:[
+{id:"d16e2",title:"打开部件",file:"curve_curve_open_the_part.html",type:"topic",parent:""},
+{id:"d16e3",title:"重置对话框内存",file:"id353012_dup9.html",type:"topic",parent:""},
+{id:"d16e4",title:"创建运动仿真",file:"diaphragm_create_simulation_dup1.html",type:"topic",parent:""},
+{id:"d16e5",title:"查看机构",file:"examine_the_mechanism.html",type:"topic",parent:""},
+{id:"d16e6",title:"创建凸轮连杆",file:"create_cam_link.html",type:"topic",parent:""},
+{id:"d16e7",title:"创建摇杆连杆",file:"create_rocker_link.html",type:"topic",parent:""},
+{id:"d16e8",title:"创建气门连杆",file:"create_valve_link.html",type:"topic",parent:""},
+{id:"d16e9",title:"在气门连杆上创建滑动副",file:"create_slider_joint_valve.html",type:"topic",parent:""},
+{id:"d16e10",title:"在摇杆连杆上创建滑动副",file:"create_revolute_rocker.html",type:"topic",parent:""},
+{id:"d16e11",title:"在凸轮连杆上创建滑动副",file:"create_inline_point_dup1.html",type:"topic",parent:""},
+{id:"d16e12",title:"在摇杆与气门之间创建线在线上副",file:"create_curve_on_curve_rocker_valve.html",type:"topic",parent:""},
+{id:"d16e14",title:"在摇杆与凸轮之间创建线在线上副",file:"create_curve_on_curve_rocker_cam.html",type:"topic",parent:""},
+{id:"d16e15",title:"创建解算方案并求解",file:"create_a_solution_curve_curve.html",type:"topic",parent:""},
+{id:"d16e16",title:"查看机构运动",file:"animate_the_mechanism_dup4.html",type:"topic",parent:""},
+{id:"d16e17",title:"添加实体到连杆中",file:"add_solids_to_links.html",type:"topic",parent:""},
+{id:"d16e18",title:"再次查看机构运动",file:"animate_the_mechanism_again.html",type:"topic",parent:""}]}

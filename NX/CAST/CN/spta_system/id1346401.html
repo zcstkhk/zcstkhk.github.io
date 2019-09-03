@@ -1,0 +1,59 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Superelement mapping considerations</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Superelement mapping considerations</h2>
+         
+         <p>When you map superelements to your system model, consider the following:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>The assembly FEM may be associative or non-associative.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>All assembly FEM components to be represented by superelements must also have a FEM representation (nodes and elements).</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The base FEM does not need to be the same FEM as that used to generate the superelement, but it should share the same orientation, boundary nodes, and design envelope.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The superelement representation inherits the position and orientation of the base FEM representation. The superelement representation must include at least three non-collinear boundary nodes in order to correctly determine the position and orientation. </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The superelement representation consists only of the reduced boundary nodes and contains no elements. </p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

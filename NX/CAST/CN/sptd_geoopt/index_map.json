@@ -1,0 +1,15 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"Geometry optimization",file:"id1298082.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"Geometry optimization",file:"genid_optimization_overview_22_543.html",type:"topic",parent:""},
+{id:"d5e7",title:"Geometry optimization workflow",file:"genid_the_optimization_process_24_661.html",type:"topic",parent:""},
+{id:"d5e9",title:"Creating a geometry optimization",file:"genid_creating_an_optimization_setup_31_275.html",type:"topic",parent:""},
+{id:"d5e11",title:"Defining the objective",file:"genid_objective_32_415.html",type:"topic",parent:""},
+{id:"d5e14",title:"Defining design constraints",file:"genid_constraints_14_448.html",type:"topic",parent:""},
+{id:"d5e16",title:"Defining design variables",file:"genid_design_variables_25_575.html",type:"topic",parent:""},
+{id:"d5e18",title:"Part files modified by Geometry Optimization",file:"id1524763.html",type:"topic",parent:""},
+{id:"d5e20",title:"Review",file:"id1320187.html",type:"topic",parent:""},
+{id:"d5e22",title:"Solver iterations",file:"genid_solver_iterations_20_495.html",type:"topic",parent:""},
+{id:"d5e24",title:"Displaying results",file:"genid_displaying_results_12_248.html",type:"topic",parent:""},
+{id:"d5e27",title:"Geometry Optimization",file:"xid481466.html",type:"activity",parent:""}
+]}

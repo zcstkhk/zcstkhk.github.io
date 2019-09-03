@@ -1,0 +1,70 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>定义这个固定件端口的延伸长度</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>定义这个固定件端口的延伸长度</h2>
+         <p>延伸长度定义的是样条段在到达固定件端口时必须保持直线的长度。在这些区域中的值让您布置的(样条)管线在穿过夹子时保持直线。</p>
+         <p>在左侧的夹子俯视图中，未定义延伸长度；在右侧的视图中，延伸直线段的值等于部件宽度。</p>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_electrical/activities/qualify_part/2_Qualify_part_vector_7.gif"></p>
+         <p>您正在使用的夹子是一个参数化模型，并且可能在大小上会有变化。因此有一个名称为 <span class="emphasis">Width=Diameter</span> 的表达式用来定义夹子的宽度。</p>
+         <p>对于这个夹子，样条仅在穿过部件时保持直线，因此您将把各个端口的延伸长度定义为部件宽度的一半。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在<strong>延伸</strong>输入框中，键入 <strong>Width/2</strong> (使用大写字母 <strong>W</strong>)。
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>向后延伸</strong>输入框中，键入相同的值。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>点击两次<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_electrical/activities/qualify_part/2_Qualify_part_vector_8.gif"></p>
+                     
+                     <p>注意到端口符号的末端有一个锥形，在另一端有一个羽毛符号。这将把这个端口区别为固定件端口。端口符号轴上的圆表示它的原点位于关联直线的中点处。</p>
+                     
+                     <p>同时也注意到，这个固定件端口(及其关联编号)现在显示在<strong>审核部件</strong>对话框中<strong>固定件</strong>节点的下方。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_electrical/activities/qualify_part/2_Qualify_part_qualify_part_dialog_2.png"></p>
+                     
+                     <p>您也可以在型材偏置点(Stock offset Point，SOP)处放置端口来审核部件。</p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

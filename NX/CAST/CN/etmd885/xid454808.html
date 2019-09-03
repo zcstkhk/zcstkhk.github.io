@@ -1,0 +1,65 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Part Modules in the Part Navigator</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Part Modules in the Part Navigator</h2>
+         
+         <p>Part Modules appear in the <span class="uiTerm">Part Navigator</span> as features divided into three collectors. When you first create a Part Module, only the <span class="uiTerm">Inputs</span> collector contains objects; the <span class="uiTerm">Work</span> and <span class="uiTerm">Outputs</span> collectors are empty.
+         </p>
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><span class="uiTerm">Inputs</span></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>This collector contains extractions of the geometry objects and expressions that you select from the part when you create the Part Module. It is what isolates the Part Module from the upstream part. These objects are the parent references for the features that you create later and that appear in the <span class="uiTerm">Work</span> collector. 
+                  </p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><span class="uiTerm">Work</span></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>This collector contains all the new features and expressions you create in a Part Module. Features you create can be based only on the extracted geometry and expressions in the <span class="uiTerm">Inputs</span> collector.
+                  </p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><span class="uiTerm">Outputs</span></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>This collector contains extractions of those features and expressions you specify from the <span class="uiTerm">Work</span> collector. Downstream features of the main part file are based only on the features in this collector and not the <span class="uiTerm">Work</span> collector. It is what isolates the Part Module from the downstream part. When a Part Module is deactivated, the objects in its <span class="uiTerm">Outputs</span> collector are the only objects displayed for the Part Module feature; essentially, once the work is done, a Part Module is its <span class="uiTerm">Outputs</span>. All the objects in the <span class="uiTerm">Inputs</span> and <span class="uiTerm">Work</span> collector are hidden.
+                  </p>
+                  
+               </div>
+            </div>
+         </div>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/part_module/pmod_internal_part_nav.png"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

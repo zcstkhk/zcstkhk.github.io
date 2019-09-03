@@ -1,0 +1,530 @@
+1
+ 
+ 
+ 
+ 
+                                                             
+                 Copyright 2013 Siemens Product Lifecycle    
+                        Management Software Inc.             
+                         All Rights Reserved.                
+                                                             
+               This software and related documentation are   
+                 proprietary to Siemens Product Lifecycle    
+                        Management Software Inc.             
+                                                             
+              Siemens and the Siemens logo are registered    
+             trademarks of Siemens AG. NX is a trademark or  
+                registered trademark of Siemens Product      
+               Lifecycle Management Software Inc. or its     
+             subsidiaries in the United States and in other  
+             countries.  NASTRAN is a registered trademark   
+                 of the National Aeronautics and Space       
+                 Administration.  All other trademarks,      
+              registered trademarks or service marks belong  
+                      to their respective holders.           
+                                                             
+           LIMITATIONS TO U.S. GOVERNMENT RIGHTS. UNPUBLISHED
+           - RIGHTS RESERVED UNDER THE COPYRIGHT LAWS OF THE 
+            UNITED STATES. This computer software and related
+               computer software documentation have been     
+            developed exclusively at private expense and are 
+           provided subject to the following rights:  If this
+               computer software and computer  software      
+            documentation qualify as "commercial items" (as  
+             that term is defined in FAR 2.101), their use,  
+            duplication or disclosure by the U.S. Government 
+           is subject to the protections and restrictions as 
+            set forth in the Siemens commercial license for  
+            software and/or documentation, as prescribed in  
+           FAR 12.212 and FAR 27.405(b)(2)(i) (for civilian  
+             agencies) and in DFARS 227.7202-1(a) and DFARS  
+           227.7202-3(a) (for the Department of Defense), or 
+           any successor or similar regulation, as applicable
+           or as amended from time to time.  If this computer
+           software and computer documentation do not qualify
+            as "commercial items", then they are "restricted 
+           computer software" and are provided with "restric-
+            tive rights", and their use, duplication or dis- 
+            closure by the U.S. Government is subject to the 
+            protections and restrictions as set forth in FAR 
+           27.404(b) and FAR 52-227-14 (for civilian agencies
+           ), and DFARS 227.7203-5(c) and DFARS 252.227-7014 
+           (for the Department of Defense), or any successor 
+           or similar regulation, as applicable or as amended
+              from time to time.  Siemens PLM Software Inc.  
+            5800 Granite Parkway, Suite 600, Plano, TX 75024 
+
+                * * * * * * * * * * * * * * * * * * * *
+                * * * * * * * * * * * * * * * * * * * *
+                * *                                 * *
+                * *                                 * *
+                * *                                 * *
+                * *                                 * *
+                * *       N X   N a s t r a n       * *
+                * *                                 * *
+                * *         VERSION -   9.0         * *
+                * *                                 * *
+                * *          AUG 25, 2013           * *
+                * *                                 * *
+                * *                                 * *
+                * *Intel64 Family 6 Model 37 Steppi * *
+                * *                                 * *
+                * *Intel(R) Core(TM) i3 CPU M 330 @ * *
+                * *                                 * *
+                * *    Windows 7 Service Pack 1     * *
+                * *                                 * *
+                * *       Compiled for X86-64       * *
+                * *                                 * *
+                * * * * * * * * * * * * * * * * * * * *
+                * * * * * * * * * * * * * * * * * * * *
+1 
+  
+                        Welcome to NX Nastran
+                        -------------------------
+  
+  
+ This "news" information can be turned off by setting "news=no" in the runtime
+ configuration (RC) file.  The "news" keyword can be set in the system RC file
+ for global, or multi-user control, and in a local file for local control.
+ Individual jobs can be controlled by setting news to yes or no on the command
+ line.
+1                                                                             MARCH   1, 2014  NX NASTRAN  8/25/13   PAGE     1
+                                                                                                                                    
+0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     NASTRAN BUFFSIZE=8193 $(D:/PROGRAM FILES/SIEMENS/NX 9.0/NXNASTRAN/CONF/NAST9.RCF
+     NASTRAN DIAGA=128 DIAGB=0 $(D:/PROGRAM FILES/SIEMENS/NX 9.0/NXNASTRAN/CONF/NAST9
+     NASTRAN SYSTEM(442)=1 $(COMMAND LINE[5])                                        
+     NASTRAN REAL=1033895936 $(PROGRAM DEFAULT)                                      
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$             
+     $*                                                                              
+     $*                    NX V9.0.0.19 TRANSLATOR                                   
+     $*                    FOR NX NASTRAN VERSION 9.0                                
+     $*                                                                              
+     $*             FEM FILE: D:\DOCUMENTS\SIEMENS NX\NX CAST 8.5\PARTS\PARTS_SIMULAT
+     $*             SIM FILE: D:\DOCUMENTS\SIEMENS NX\NX CAST 8.5\PARTS\PARTS_SIMULAT
+     $*        ANALYSIS TYPE: STRUCTURAL                                             
+     $*        SOLUTION NAME: SOLUTION 1                                             
+     $*        SOLUTION TYPE: LINEAR STATICS - SINGLE CONSTRAINT                     
+     $*                                                                              
+     $*    SOLVER INPUT FILE: CONNECTING_ROD_SIM1-SOLUTION_1.DAT                     
+     $*        CREATION DATE:  1-MAR-2014                                            
+     $*        CREATION TIME: 14:18:02                                               
+     $*             HOSTNAME: ZCS-PC                                                 
+     $*      NASTRAN LICENSE: DESKTOP BUNDLE                                         
+     $*                                                                              
+     $*                UNITS: MM (MILLI-NEWTON)                                      
+     $*                      ... LENGTH : MM                                         
+     $*                      ... TIME   : SEC                                        
+     $*                      ... MASS   : KILOGRAM (KG)                              
+     $*                      ... TEMPERATURE : DEG CELSIUS                           
+     $*                      ... FORCE  : MILLI-NEWTON                               
+     $*                      ... THERMAL ENERGY : MN-MM (MICRO-JOULE)                
+     $*                                                                              
+     $* ||||||||||                                                                   
+     $*     |||||||| NX ||||||||||||||||                                             
+     $*     |||||||||| NX ||||||||||||||||                                           
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$             
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
+     $*                                                                              
+     $* NASTRAN                                                                      
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
+     $*                                                                              
+     NASTRAN ELEMITER=YES                                                            
+     NASTRAN ITER=YES                                                                
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
+     $*                                                                              
+     $* FILE MANAGEMENT                                                              
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
+     $*                                                                              
+1                                                                             MARCH   1, 2014  NX NASTRAN  8/25/13   PAGE     2
+                                                                                                                                    
+0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     ASSIGN OUTPUT2='connecting_rod_sim1-solution_1.op2' UNIT=12                     
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
+     $*                                                                              
+     $* EXECUTIVE CONTROL                                                            
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
+     $*                                                                              
+1                                                                             MARCH   1, 2014  NX NASTRAN  8/25/13   PAGE     3
+                                                                                                                                    
+0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     ID,NASTRAN,CONNECTING_ROD_SIM1-SOLUTION_1                                               
+     SOL 101                                                                                 
+     CEND                                                                                    
+1    SOLUTION 1                                                               MARCH   1, 2014  NX NASTRAN  8/25/13   PAGE     4
+                                                                                                                                    
+0                                                                                                                                   
+0                                        C A S E    C O N T R O L    E C H O                                                        
+                 COMMAND                                                                                                            
+                 COUNT                                                                                                              
+                  1      $*                                                                                      
+                  2      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
+                  3      $*                                                                                      
+                  4      $* CASE CONTROL                                                                         
+                  5      $*                                                                                      
+                  6      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
+                  7      $*                                                                                      
+                  8      TITLE = SOLUTION 1                                                                      
+                  9      ECHO = NONE                                                                             
+                 10      SPC = 1                                                                                 
+                 11      OUTPUT                                                                                  
+                 12      BCRESULTS(TRACTION,FORCE,PLOT) = ALL                                                    
+                 13      DISPLACEMENT(PLOT) = ALL                                                                
+                 14      ESE(PLOT) = ALL                                                                         
+                 15      FORCE(PLOT,CORNER) = ALL                                                                
+                 16      OLOAD(PLOT) = ALL                                                                       
+                 17      SPCFORCES(PLOT) = ALL                                                                   
+                 18      STRAIN(PLOT,FIBER,CORNER) = ALL                                                         
+                 19      STRESS(PLOT,CORNER) = ALL                                                               
+                 20      $*  NX STEP: SUBCASE - STATIC LOADS 1                                                   
+                 21      SUBCASE 1                                                                               
+                 22      LABEL = SUBCASE - STATIC LOADS 1                                                        
+                 23      LOAD = 2                                                                                
+                 24      $*                                                                                      
+                 25      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
+                 26      $*                                                                                      
+                 27      $* BULK DATA                                                                            
+                 28      $*                                                                                      
+                 29      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
+                 30      $*                                                                                      
+                 31      BEGIN BULK                                                                              
+0                             INPUT BULK DATA ENTRY COUNT =       37619
+0                       TOTAL COUNT=     37591
+1    SOLUTION 1                                                               MARCH   1, 2014  NX NASTRAN  8/25/13   PAGE     5
+                                                                                                                                    
+0                                                                                                                                   
+0
+0
+0
+ 
+
+
+                                        M O D E L   S U M M A R Y
+
+                                   NUMBER OF GRID     POINTS   =    11964
+ 
+ 
+                                   NUMBER OF CTETRA   ELEMENTS =     6475
+ 
+ ^^^IN ELEMENT VERSION OF STATICS1   
+ *** USER INFORMATION MESSAGE 4109 (OUTPX2)
+     THE LABEL IS NX9.0    FOR FORTRAN UNIT 12
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =        7 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =        8 RECORDS.)
+     (TOTAL DATA WRITTEN FOR TAPE LABEL =       17 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK IBULK    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                 1                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       20 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =   188104 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =   902853 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK CASECC   WRITTEN ON FORTRAN UNIT  12, TRL =
+                    102                 1                 0               600                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      600 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       19 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =      624 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK PVT      WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                33                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       33 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       19 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =       57 WORDS.)
+1    SOLUTION 1                                                               MARCH   1, 2014  NX NASTRAN  8/25/13   PAGE     6
+                                                                                                                                    
+0                                                                                                                                   
+0
+0
+0
+ 
+ *** USER INFORMATION MESSAGE 7555 (ETETGD)
+     FINITE ELEMENT GEOMETRY CHECK RESULTS EXCEED TOLERANCE LEVELS FOR THE FOLLOWING ELEMENTS.
+     USER ACTION: USE THE GEOMCHECK (EXECUTIVE CONTROL STATEMENT) KEYWORD=VALUE TO CHANGE TOLERANCE VALUES IF DESIRED.
+     ALL EDGE LENGTH TO HEIGHT  RATIO (AR)TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY FAIL.
+     A MINIMUM OF        100 EDGE NODE POINT LENGTH RATIO (ER)TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+                             EDGE ANGLE VALUES ARE INDICATED BY AN * AFTER THE VALUE.  THE TOLERANCE LIMIT IS 30 DEGREES.
+     ALL NEG/ZERO DET(JACOBIAN) VALUE (DJ)TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY FAIL.
+     A MINIMUM OF        100 NEG DET(JAC) AT VERTEX NODE  (DG)TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+1    SOLUTION 1                                                               MARCH   1, 2014  NX NASTRAN  8/25/13   PAGE     7
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:  TET_AR =   100.00, TET_EPLR =     0.50, TET_DETJ =   0.00, TET_DETG =   0.00 (xxxx = LIMIT VIOLATED)
+                         LONGEST       SHORTEST         ASPECT           EDGE POINT      MIN. JACOBIAN     MIN. DET(JAC) 
+ ELEMENT TYPE    ID        EDGE         HEIGHT           RATIO         LENGTH RATIO       DETERMINANT       AT VERTEX    
+    TETRA         921       4.73          1.96            2.41              0.86*xxxx        27.40             23.54     
+    TETRA         922       5.10          3.48            1.46              0.86*xxxx        49.63             43.17     
+    TETRA         953       5.31          3.29            1.61              0.84*xxxx        47.62             37.35     
+    TETRA        1732       5.31          1.76            3.02              0.84*xxxx        28.32             22.22     
+    TETRA        2093       5.27          2.89            1.82              0.84*xxxx        38.48             30.92     
+    TETRA        2316       4.56          1.89            2.42              0.84*xxxx        25.64             21.72     
+    TETRA        2340       5.27          3.05            1.73              0.84*xxxx        41.80             35.39     
+    TETRA        2758       5.10          2.93            1.74              0.86*xxxx        44.44             41.27     
+    TETRA        4016       5.16          2.93            1.76              0.86*xxxx        43.44             38.88     
+    TETRA        5903       5.27          3.05            1.73              0.84*xxxx        41.87             35.52     
+    TETRA        6115       5.53          2.66            2.08              0.86*xxxx        33.96             29.18     
+1    SOLUTION 1                                                               MARCH   1, 2014  NX NASTRAN  8/25/13   PAGE     8
+                                                                                                                                    
+0                                                                                                                                   
+
+
+                            E L E M E N T   G E O M E T R Y   T E S T   R E S U L T S   S U M M A R Y
+                                        TOTAL NUMBER OF TIMES TOLERANCES WERE EXCEEDED
+                                  ASPECT/       MINIMUM       MAXIMUM     SURFACE/FACE  THICKNESS/     EDGE POINT     JACOBIAN   
+     ELEMENT TYPE  SKEW ANGLE    TAPER RATIO  INTER. ANGLE  INTER. ANGLE   WARP FACTOR  OFFSET RATIO  LENGTH RATIO  DETERMINANT  
+         TETRA         N/A             0           N/A           N/A           N/A           N/A            11             0        
+
+         N/A IN THE ABOVE TABLE INDICATES TESTS THAT ARE NOT APPLICABLE TO THE ELEMENT TYPE AND WERE NOT PERFORMED.
+         FOR ALL ELEMENTS WHERE GEOMETRY TEST RESULTS HAVE EXCEEDED TOLERANCES,
+
+         TETRA    ELEMENT ID     2093 PRODUCED SMALLEST EDGE COS(ANGLE)  OF       0.84 (TOLERANCE =        0.87).
+1    SOLUTION 1                                                               MARCH   1, 2014  NX NASTRAN  8/25/13   PAGE     9
+                                                                                                                                    
+0                                                                                                                                   
+ *** USER INFORMATION MESSAGE 7310 (VECPRN)
+     ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM WILL BE USED AS REFERENCE LOCATION.
+     RESULTANTS ABOUT ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM IN SUPERELEMENT BASIC SYSTEM COORDINATES.
+0                                                  OLOAD    RESULTANT       
+  SUBCASE/    LOAD
+  DAREA ID    TYPE       T1            T2            T3            R1            R2            R3
+0        1     FX   -7.891598E-02     ----          ----          ----       2.841219E+04  9.275352E+00                             
+               FY       ----      -9.977312E+05     ----       2.558702E-02     ----       3.729203E-01                             
+               FZ       ----          ----       0.000000E+00  0.000000E+00  0.000000E+00     ----                                  
+               MX       ----          ----          ----       0.000000E+00     ----          ----                                  
+               MY       ----          ----          ----          ----       0.000000E+00     ----                                  
+               MZ       ----          ----          ----          ----          ----       0.000000E+00                             
+             TOTALS -7.891598E-02 -9.977312E+05  0.000000E+00  2.558702E-02  2.841219E+04  9.648272E+00
+
+                                   I T E R A T I V E  S O L U T I O N  S U M M A R Y
+
+                                  NUMBER OF EQUATIONS                    =      34922
+                                  NUMBER OF NONZEROS IN PRECONDITIONER   =     765405
+                                  PRECONDITIONER SELECTED                =   STANDARD
+                                  NUMBER OF ITERATIONS                   =        129
+                                  CONVERGENCE CRITERIA USED              =       AREX
+                                  CONVERGENCE TOLERANCE USED             =   1.00E-08
+                                  MEMORY AVAILABLE                       =         92 MB
+                                  MEMORY USED IN CG ITERS                =          7 MB
+                                  CG WORKING SET SIZE                    =          6 MB IF MATRIX OUTOFCORE
+                                  SCRATCH FILE DISK SPACE                =          8 MB
+                                  MULTIPLY MEGAFLOP RATE                 =        948
+                                  SOLVE MEGAFLOP RATE                    =          0
+
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK GPL      WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101             11964             11964                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    16386 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       26 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =    35922 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK CSTM     WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101             11964                 1                 2                 2                12                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       24 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =       56 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK GPDT     WRITTEN ON FORTRAN UNIT  12, TRL =
+                    102             11964                10                 0                 2                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    16386 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       33 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =   119671 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK EPT      WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                 0               256                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       10 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =       41 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK MPT      WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101             33280                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       15 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       29 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =       65 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK GEOM2    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                 0                 0                 0               512                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    16386 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       32 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =    77738 WORDS.)
+1    SOLUTION 1                                                               MARCH   1, 2014  NX NASTRAN  8/25/13   PAGE    10
+                                                                                                                                    
+0                                                                                                                                   
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK GEOM3    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    102                 0                 0                64                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     1270 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =     1301 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK GEOM4    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    103                 0                 0                 0               512                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     1943 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =     1974 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK GEOM1    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    104                 0              4096                 8                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    16386 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       45 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =   131675 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK BGPDT    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    105             11964                 0             71784                 2                 0             11964
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    16386 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       42 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =   167533 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK DIT      WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101             32768                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      249 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =      280 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK EQEXIN   WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101             11964                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    16386 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       28 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =    47886 WORDS.)
+1    SOLUTION 1                                                               MARCH   1, 2014  NX NASTRAN  8/25/13   PAGE    11
+                                                                                                                                    
+0                                                                                                                                   
+ *** USER INFORMATION MESSAGE 7310 (VECPRN)
+     ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM WILL BE USED AS REFERENCE LOCATION.
+     RESULTANTS ABOUT ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM IN SUPERELEMENT BASIC SYSTEM COORDINATES.
+0                                                  SPCFORCE RESULTANT       
+  SUBCASE/    LOAD
+  DAREA ID    TYPE       T1            T2            T3            R1            R2            R3
+0        1     FX   -7.275992E+05     ----          ----          ----      -7.483591E+05 -1.177615E+06                             
+               FY       ----       1.170056E+06     ----       1.255416E+06     ----       1.177615E+06                             
+               FZ       ----          ----      -7.852477E+04 -7.761792E+05 -4.148914E+05     ----                                  
+               MX       ----          ----          ----       0.000000E+00     ----          ----                                  
+               MY       ----          ----          ----          ----       0.000000E+00     ----                                  
+               MZ       ----          ----          ----          ----          ----       0.000000E+00                             
+             TOTALS -7.275992E+05  1.170056E+06 -7.852477E+04  4.792369E+05 -1.163250E+06 -1.250000E-01
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK OPG1     WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                 1             30176                 1                14                 0                 1
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    16386 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       34 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =    95896 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK OQG1     WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                 1             30176                 1                14                 0                 1
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    16386 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       34 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =    95896 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK BOUGV1   WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                 1             30176                 1                14                 0                 1
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    16386 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       34 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =    95896 WORDS.)
+1    SOLUTION 1                                                               MARCH   1, 2014  NX NASTRAN  8/25/13   PAGE    12
+                                                                                                                                    
+0                                                                                                                                   
+1    SOLUTION 1                                                               MARCH   1, 2014  NX NASTRAN  8/25/13   PAGE    13
+                                                                                                                                    
+0                                                                                                                                   
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK OSTR1X   WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                63                 3                 1                14                 0                 1
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    16386 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =      110 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =   705997 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK OES1X    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                63                 3                 1                14                 0                 1
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    16386 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =      110 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =   705997 WORDS.)
+ *** USER INFORMATION MESSAGE 4507 (SDREE)
+     IN SUBCASE         1                     
+     THERE ARE   1094 TETRA    ELEMENTS HAVING STRAIN ENERGY WHICH IS LESS THAN   0.0010 PERCENT
+     OF THE TOTAL STRAIN ENERGY OF ALL ELEMENTS.
+ *** USER INFORMATION MESSAGE 4114 (OUTPX2)
+     DATA BLOCK ONRGY    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                 1                 0                 0                 0                 2                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    16386 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    16386 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       26 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =    21703 WORDS.)
+1    SOLUTION 1                                                               MARCH   1, 2014  NX NASTRAN  8/25/13   PAGE    14
+                                                                                                                                    
+0                                                                                                                                   
+1    SOLUTION 1                                                               MARCH   1, 2014  NX NASTRAN  8/25/13   PAGE    15
+                                                                                                                                    
+0                                                                                                                                   
+ *** USER INFORMATION MESSAGE 4110 (OUTPX2)
+                                 END-OF-DATA SIMULATION ON FORTRAN UNIT 12
+                                 (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      1 WORDS.)
+                                       (NUMBER OF FORTRAN RECORDS WRITTEN =      1 RECORDS.)
+                                       (TOTAL DATA WRITTEN FOR EOF MARKER =      1 WORDS.)
+1    SOLUTION 1                                                               MARCH   1, 2014  NX NASTRAN  8/25/13   PAGE    16
+                                                                                                                                    
+0                                                                                                                                   
+ * * * *  D B D I C T   P R I N T  * * * *      SUBDMAP = PRTSUM  ,  DMAP STATEMENT NO.     31
+
+
+
+0                                   * * * *  A N A L Y S I S  S U M M A R Y  T A B L E  * * * *
+0 SEID  PEID PROJ VERS APRCH      SEMG SEMR SEKR SELG SELR MODES DYNRED SOLLIN PVALID SOLNL LOOPID DESIGN CYCLE SENSITIVITY
+ --------------------------------------------------------------------------------------------------------------------------
+0SEID = SUPERELEMENT ID.
+ PEID = PRIMARY SUPERELEMENT ID OF IMAGE SUPERELEMENT.
+ PROJ = PROJECT ID NUMBER.
+ VERS = VERSION ID.
+ APRCH = BLANK FOR STRUCTURAL ANALYSIS.  HEAT FOR HEAT TRANSFER ANALYSIS.
+ SEMG = STIFFNESS AND MASS MATRIX GENERATION STEP.
+ SEMR = MASS MATRIX REDUCTION STEP (INCLUDES EIGENVALUE SOLUTION FOR MODES).
+ SEKR = STIFFNESS MATRIX REDUCTION STEP.
+ SELG = LOAD MATRIX GENERATION STEP.
+ SELR = LOAD MATRIX REDUCTION STEP. 
+ MODES = T (TRUE) IF NORMAL MODES OR BUCKLING MODES CALCULATED.
+ DYNRED = T (TRUE) MEANS GENERALIZED DYNAMIC AND/OR COMPONENT MODE REDUCTION PERFORMED.
+ SOLLIN = T (TRUE) IF LINEAR SOLUTION EXISTS IN DATABASE.
+ PVALID = P-DISTRIBUTION ID OF P-VALUE FOR P-ELEMENTS
+ LOOPID = THE LAST LOOPID VALUE USED IN THE NONLINEAR ANALYSIS.  USEFUL FOR RESTARTS.
+ SOLNL = T (TRUE) IF NONLINEAR SOLUTION EXISTS IN DATABASE.
+ DESIGN CYCLE = THE LAST DESIGN CYCLE (ONLY VALID IN OPTIMIZATION).
+ SENSITIVITY = SENSITIVITY MATRIX GENERATION FLAG.
+1                                        * * * END OF JOB * * *
+ 
+ 

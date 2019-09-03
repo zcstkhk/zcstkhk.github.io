@@ -1,0 +1,94 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>解决失败的接触</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>解决失败的接触</h2>
+         
+         <p>当两个体之间的接触丢失，或者接触结果不合理时，尝试下列解决方法。</p>
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>确保仿真中不包含强迫体在接触后继续彼此嵌入的运动驱动，不考虑接触力。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>确保您选择的基本体是接触的两个体中较大，并且较稳定的那个，正如在前面的<em>选择接触体指南</em>描述的那样。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>将<strong>最大步长因子</strong>增大到<strong>20</strong>，以增加接触精度。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>将<strong>库伦摩擦</strong>设为<strong>开</strong>，摩擦可以增加接触的稳定性。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>如果接触时的脱离过大，将<strong>材料阻尼</strong>增大到<strong>10</strong>，以吸收能量。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>如果接触求解仍然失败，检查接触连杆的质量。</p>
+               
+               <ul>
+                  
+                  <li>
+                     
+                     <p>如果质量很大，比如100 kg，则增大<strong>刚度</strong>与<strong>材料阻尼</strong>，例如，尝试将<strong>刚度</strong>增大<strong>100</strong>，<strong>材料阻尼</strong>增大<strong>10</strong>。</p>
+                     
+                  </li>
+                  
+                  <li>
+                     
+                     <p>如果质量很小，比如0.01 kg 甚至更小，则减小<strong>刚度</strong>与<strong>材料阻尼</strong>，例如，尝试将<strong>刚度</strong>减小<strong>100</strong>，<strong>材料阻尼</strong>减小<strong>10</strong>。</p>
+                     
+                  </li>
+                  
+               </ul>
+               
+            </li>
+            
+         </ol>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>要获取更多解决失败的提示，参见 NX 运动仿真在线帮助中的<em>解决 RecurDyn 实体3D 接触</em>主题。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

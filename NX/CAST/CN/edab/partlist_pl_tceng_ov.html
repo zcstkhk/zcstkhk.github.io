@@ -1,0 +1,105 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Teamcenter Integration 零件明细表概述</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>Teamcenter Integration 零件明细表概述</h2>
+         <div class="division">
+            
+           <h3>同步和装配导航器</h3>
+            
+            <p><strong>装配导航器</strong>中的装配结构是零件明细表的驱动程序。当<strong>装配导航器</strong>中的装配结构更新时，NX 中的零件明细表也会随之更新。您直接在零件明细表中所做的更改被视为&ldquo;制图&rdquo;应用模块中的局部更改。当更改了零件明细表中的某单元格或某项目后，如数量，该数量在<strong>装配导航器</strong>中并不更改。对引用零件明细表中项目的属性值的单元格进行的更改也被视为&ldquo;制图&rdquo;中的局部更改，并不反映在 Teamcenter 中。 </p>
+            <p>当零件明细表所表示的结构(包括属性)与<strong>装配导航器</strong>中当前显示的结构不同时，就认为该零件明细表过时了。这不包括对零件明细表进行的手工输入，这些输入不影响<strong>装配导航器</strong>中的值，并且不被视为过时数据。 </p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Teamcenter Integration 的默认零件明细表</h3>
+            
+            <p>要同步零件明细表和 Teamcenter Integration 数据库之间的标注值，您在    NX 中创建的初始零件明细表必须包含引用   CALLOUT 属性的一列。这样可以防止初始创建零件明细表期间 Teamcenter   Integration 序列号被覆盖。 </p>
+           <p>在使用 Teamcenter Integration 时，随软件一起提供的默认零件明细表包含以下列，它们包括这种必要的引用：</p>
+            
+            <table border="1" cellpadding="6" cellspacing="1" frame="void" rules="groups" width="401" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="255*">
+                  
+                  <col span="1" width="314*">
+                  
+                  <col span="1" width="222*">
+                  
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">列名称</p>
+                        
+                     </td>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">驱动属性</p>
+                        
+                     </td>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">关键列</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr>
+                    <td colspan="1" rowspan="1" align="left" valign="top"><p>PC 编号</p></td>
+                    <td colspan="1" rowspan="1" align="left" valign="top"><p>标注属性</p></td>
+                    <td colspan="1" rowspan="1" align="left" valign="top"><p>是</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1" align="left" valign="top"><p>部件名称</p></td>
+                    <td colspan="1" rowspan="1" align="left" valign="top"><p>$PART_NAME</p></td>
+                    <td colspan="1" rowspan="1" align="left" valign="top"><p>是</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1" align="left" valign="top"><p>数量</p></td>
+                    <td colspan="1" rowspan="1" align="left" valign="top"><p>数量属性</p></td>
+                    <td colspan="1" rowspan="1" align="left" valign="top"><p>否</p></td>
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Teamcenter Integration 中的标注和序列号</h3>
+            
+            <p>如果正在运行 Teamcenter Integration，并在 NX 中编辑装配结构，则零件明细表中的标注将更新为 PSE 中的序列号。</p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

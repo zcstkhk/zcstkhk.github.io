@@ -1,0 +1,58 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>复习</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>复习</h2>
+         <div id="topQuestionsContainer">
+            <div class="questionsHeader">
+               <div class="headerTitle">
+                  <p>问题</p>
+               </div>
+               <div class="quesionButtons">
+                  <div class="qButton" id="qButton_1">
+                     <p>1</p>
+                  </div>
+               </div>
+            </div>
+            <div id="questionsContainer">
+               <div class="question" id="question1" answered="false" numanswers="2" questiontype="fillInBlank">
+                  <p>真或假：开环信号图使用传感器来控制送给电动机的电压信号。</p>
+                  <p class="questionInstruction">选择一个</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q5a1" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q5a1" type="radio" correct="yes" name="question5Grp"></td>
+                           <td>
+                              <p>假</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q5a2" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q5a2" type="radio" correct="no" name="question5Grp"></td>
+                           <td>
+                              <p>真</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div id="showFeedbackContainer"><span showLabel="true" id="feedbackButton" title="Show feedback" dojoType="xps.form.Button" onClick="showQuestionFeedback()">显示答案</span></div>
+            </div>
+            <div class="helpTextContainer">
+               <p class="questionFeedback" id="incorrect">错误
+               </p><p class="questionFeedback" id="correct">正确</p>
+               <div class="questionHelp" id="questionHelp1">
+                  <p>开环信号图不使用传感器，它们使用表格函数来控制电动机，并且不会对系统变化作出反应。闭环信号图让您使用传感器监视系统中的变化，然后根据预先定义的对事件条件的反应应用输入信号到电动机。</p>
+               </div>
+            </div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>About radiation enclosures and view factors</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>About radiation enclosures and view factors</h2>
+         <div class="division">
+            
+            <h3>View Factors</h3>
+            
+            <p>A <span class="emphasis">view factor</span> represents the fraction of radiative energy that is emitted from one entity and arrives to a second entity. The thermal solver uses view factors to compute radiative heat transfer. 
+            </p>
+            
+            <p>Two parallel surfaces in close proximity have a view factor that tends to unity. Two surfaces that are nearly co-planar have a view factor that tends to zero.</p>
+            <a name="genid_spta_sst_20"></a><div class="figureContainer">
+               <table align="center">
+                  <tr>
+                     <td>
+                        <div class="figure">
+                           <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/maya/radiation_enclosure_1.gif" border="0"></div>
+                        </div>
+                     </td>
+                  </tr>
+               </table>
+               <h4>View factor calculation</h4>
+            </div>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Enclosures</h3>
+            
+            <p>An enclosure divides the space into compartments on which view factors for a radiation requests are calculated. View factor calculation is expensive in terms of machine resources, therefore defining radiation enclosures saves solution time.</p>
+            
+            <p>For radiation requests with transmissivity thermo-optical properties defined, the solver will automatically track rays that go through elements.</p>
+            
+            <p>You can indicate that an enclosure radiates to ambient. In this case the solver will create radiative conductances from a point at a very large distance outside the model to elements of the enclosure visible to the point.</p>
+            
+            <table border="1" cellpadding="2" cellspacing="1" width="97%" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="30%">
+                  
+                  <col span="1" width="33%">
+                  
+                  <col span="1" width="37%">
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="3">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/maya/rad_encl1.gif"></p>
+                        
+                        <p class="no-bottom-margin"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/maya/heatsource.gif" border="0"> Heatsource
+                        </p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_lettered_red/ball_red_a.gif" border="0"> 2D mesh A
+                        </p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Thermo-Optical Properties</span>: <br>Top (blue arrows)
+                        </p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_lettered_red/ball_red_b.gif" border="0"> 2D mesh B
+                        </p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Thermo-Optical Properties</span>: <br>Top (blue arrows) and <br>Bottom (green arrows)
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_1.gif" border="0"> Enclosure 1
+                        </p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_2.gif" border="0"> Enclosure 2
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="2" rowspan="1">
+                        
+                        <p>Radiation heat is exchanged from: </p>
+                        
+                        <ul>
+                           
+                           <li>
+                              
+                              <p class="no-bottom-margin"> Heatsource to mesh B.</p>
+                              
+                           </li>
+                           
+                           <li>
+                              
+                              <p class="no-bottom-margin">Mesh A to mesh B.</p>
+                              
+                           </li>
+                           
+                        </ul>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <table border="1" cellpadding="2" cellspacing="1" width="97%" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="30%">
+                  
+                  <col span="1" width="33%">
+                  
+                  <col span="1" width="37%">
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="3">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/maya/rad_encl2.gif"></p>
+                        
+                        <p class="no-bottom-margin"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/maya/heatsource.gif" border="0"> Heatsource
+                        </p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_lettered_red/ball_red_a.gif" border="0">2D mesh A
+                        </p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Thermo-Optical Properties</span>: <br>Top (blue arrows)
+                        </p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_lettered_red/ball_red_b.gif" border="0"> 2D mesh B
+                        </p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Thermo-Optical Properties</span>: <br>Top (blue arrows)
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_1.gif" border="0"> Enclosure 1
+                        </p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_2.gif" border="0"> Enclosure 2
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="2" rowspan="1">
+                        
+                        <p>Radiation heat is exchanged only from the heatsource to mesh B because thermo-optical properties are not defined on the bottom side of the 2D elements. </p>
+                        
+                        <p class="no-bottom-margin">To model radiation to environment the elements of mesh A must have bottom thermo-optical properties.</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Radiation simulation object</h3>
+            
+            <p>Use a <span class="uiTerm">Radiation</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/simulation/advanced_simulation/radiation_maya.gif" border="0"> simulation object to create view factor calculation requests for enclosures comprised of selected geometry or elements. 
+            </p>
+            
+            <p>To simulate radiation exchange you must define:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Entities with <span class="uiTerm">Thermo-Optical Properties</span> with a specified value for emissivity and/or absorptivity. 
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>A <span class="uiTerm">Radiation</span> simulation object. You can create one of these types of radiation requests:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">All Radiation</span> to let the thermal solver detect enclosures.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Enclosure Radiation</span> where you define the relevant enclosures by selecting entities with the top and/or bottom thermo-optical properties defined.
+                        </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>The solver can use one of these techniques as the black body view factor calculation method:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Hemicube Rendering</span> &mdash; This technique uses your computer's graphics card to calculate view factors quickly and accurately. You can only use this option if your computer's graphics card supports the Open Graphics Library (OGL) standard.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Deterministic</span> &mdash; This is an analytical approach that uses a ray casting algorithm, which calculates the black body view factors based on the mathematical definition of view factor or form factor. 
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Monte Carlo</span> &mdash; This technique determines view factors as part of the radiative exchange calculation. It uses a ray casting algorithm with statistical sampling to evaluate the radiative exchange in an enclosure. This technique is useful when: 
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>You want to model the effect of partial illumination of elements.</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>You define bi-directional reflectance distribution functions (BRDFs) and scattering coefficients in the <span class="uiTerm">Thermo-Optical Properties &ndash; Advanced</span> modeling object that you have assigned to a mesh collector to model diffuse reflection and transmission. 
+                        </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>Specular reflection is the perfect reflection of radiation from a surface, in which a ray from a single incoming direction is reflected into a single outgoing direction. The law of reflection describes such behavior. Specular reflections are not included in radiation interchange unless you specifically request them. To include specular reflections you must:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Define values for <span class="uiTerm">Specular Reflectivity</span> and <span class="uiTerm">Transmissivity</span> in the <span class="uiTerm">Thermo-Optical Properties &ndash; Advanced</span> modeling object that you define and assign to your specular surface.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Clear the <span class="uiTerm">Ignore specular and transparent effects for radiation request calculations</span> check box in the Radiation Parameters page of the <span class="uiTerm">Solver Parameters</span> dialog box. 
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+            
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

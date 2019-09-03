@@ -1,0 +1,27 @@
+{identifier:"id",label:"title",items:[
+
+
+{id:"d5e3",title:"仿真的 Teamcenter 集成",file:"id1298556.html",type:"topic",parent:""},
+
+
+{id:"d5e5",title:"Teamcenter 与 Teamcenter Integration for NX 是什么？",file:"id1220181.html",type:"topic",parent:""},
+
+{id:"d5e7",title:"NX in Teamcenter Integration for NX versus native mode",file:"id1220182.html",type:"topic",parent:""},
+
+{id:"d5e9",title:"Where is NX data in Teamcenter?",file:"id1220183.html",type:"topic",parent:""},
+
+{id:"d5e11",title:"Teamcenter for Simulation 支持",file:"id330267.html",type:"topic",parent:""},
+
+{id:"d5e14",title:"Creating and saving data in Teamcenter Integration using Teamcenter for Simulation",file:"id360777.html",type:"topic",parent:""},
+
+{id:"d5e16",title:"Teamcenter for Simulation data model",file:"id196122.html",type:"topic",parent:""},
+
+{id:"d5e18",title:"Using Simulation Search View",file:"id920547.html",type:"topic",parent:""},
+
+{id:"d5e20",title:"Finding related CAE items",file:"id920633.html",type:"topic",parent:""},
+
+{id:"d5e22",title:"Creating managed copies of simulation data",file:"id196566.html",type:"topic",parent:""},
+
+{id:"d5e24",title:"Importing and exporting data",file:"id196567.html",type:"topic",parent:""}
+
+]}

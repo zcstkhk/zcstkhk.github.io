@@ -1,0 +1,13 @@
+{identifier:"id",label:"title",items:[
+
+{id:"d5e3",title:"加工工序和后处理",file:"id1056509.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"创建工序并生成刀轨",file:"create_operations.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"创建工序并生成刀轨",file:"id788489.html",type:"activity",parent:"d5e5"}]},
+
+{id:"d5e8",title:"更新与定制对话框",file:"customizing_dialogs.html",type:"topic",parent:"",children:[
+{id:"d5e9",title:"更新与定制对话框",file:"id788495.html",type:"activity",parent:"d5e8"}]},
+
+{id:"d5e11",title:"后处理刀轨",file:"id771546.html",type:"topic",parent:"",children:[
+{id:"d5e12",title:"后处理刀轨",file:"id788506.html",type:"activity",parent:"d5e11"}]}
+]}

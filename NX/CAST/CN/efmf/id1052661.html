@@ -1,0 +1,89 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>编辑表达式</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>编辑表达式</h2>
+         
+         
+         <p>在表达式中添加一个条件公式，以使之取决于拉伸特征的长度。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>选择<strong>工具→表达式</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>表达式</strong>对话框的<strong>列出的表达式</strong>列表中，选择<strong>全部</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>表达式</strong>列表框中，选择表达式 <strong>p21 (肋板 (5) 抑制状态)</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>名称</strong>输入框中键入<strong>抑制肋板</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>表达式</strong>输入框中键入如下内容：</p>
+                  <pre class="codeExample indent ">if(length&gt;200)(1)else(0)</pre>
+                  </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>已经将拉伸特征的结束限制表达式重命名为 <strong>length</strong>。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>单击鼠标中键。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>模型并未发生变化，肋板的状态保持不变，这是因为部件的长度大于200 mm。</p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

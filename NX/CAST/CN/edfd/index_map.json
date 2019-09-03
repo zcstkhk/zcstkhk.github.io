@@ -1,0 +1,13 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"径向尺寸",file:"id1056420.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"直径尺寸",file:"genid_diameter_dimensions_282_5991.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"符号样式",file:"genid_symbol_style_23_382.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"直径尺寸",file:"id754909.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e9",title:"半径尺寸",file:"genid_radial_dimensions_157_3292.html",type:"topic",parent:"",children:[
+{id:"d5e10",title:"半径尺寸",file:"id754915.html",type:"activity",parent:"d5e9"}]},
+{id:"d5e12",title:"尺寸公差",file:"genid_dimension_tolerances_315_7231.html",type:"topic",parent:"",children:[
+{id:"d5e13",title:"公差值",file:"genid_tolerance_values_9_497.html",type:"topic",parent:"d5e12"},
+{id:"d5e14",title:"公差的全局首选项设置",file:"genid_global_preference_settings_for_tolerances_21_549.html",type:"topic",parent:"d5e12"},
+{id:"d5e15",title:"尺寸公差",file:"id754984.html",type:"activity",parent:"d5e12"}]}
+]}

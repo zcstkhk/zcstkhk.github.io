@@ -1,0 +1,66 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>装配有限元模型与多体有限元模型</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>装配有限元模型与多体有限元模型</h2>
+         <a name="ndxgenid_spta_afem_10"></a>
+         
+         
+        <p>当您从 NX 装配创建单个有限元模型文件时，使用装配有限元模型具有以下优势：</p>
+        <ul>
+          <li>
+            <p>使用装配有限元模型来改进组件网格的记录和管理。</p>
+          </li>
+          <li>
+            <p>使用和重用现有的组件有限元模型</p>
+          </li>
+          <li>
+            <p>您可以控制组件有限元模型的加载，以更有效地使用资源。</p>
+          </li>
+          <li>
+            <p>您可以使用备选网格或几何体表示来替换单个组件有限元模型。</p>
+          </li>
+          <li>
+            <p>您可以在小组成员之间分配工作。</p>
+          </li>
+        </ul>
+         
+         <a name="genid_spta_afem_11"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/assembly_fem/fem_v_afem_cw.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>(左)标准的多体有限元模型；(右)同一个模型使用装配有限元模型</h4>
+         </div>
+         
+         
+         <p>当您从 NX 装配创建单个有限元模型文件，以生成包含多个多边形体的有限元模型。在使用较小较简单的装配时，此方法可能更合适。当对于较大或者复杂的装配时则显得不明智。装配有限元模型允许您跟踪按组件进行命名的网格，改进记录和管理。</p>
+         
+         <p>通过将单个组件有限元模型映射到装配有限元模型，您可以在多个装配有限元模型中使用和重用现有的组件有限元模型，包括旧的和导入的有限元模型数据，您可以在多个装配有限元模型中使用相同的有限元模型(比如标准件)。</p>
+         
+         <p>可以使用备选网格或几何体表示来替换单个组件 FEM，以便在保留原来的组件有限元模型数据并保存操作和资源的同时支持假设分析。</p>
+         
+         <p>最后，装配有限元模型支持小组协作。小组成员或第三方可提供单个部件或子装配的网格，分析员或项目管理者可将其装配到完整的系统模型中。对组件有限元模型或其关联的 CAD 数据所做的更新可由软件自动处理，或由用户根据部件进行处理。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

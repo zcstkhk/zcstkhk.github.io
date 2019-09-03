@@ -1,0 +1,47 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>关于有限元网格</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>关于有限元网格</h2>
+         
+         <p>一个给定体的有限元模型由有限元单元网格、材料属性以及约束组成。</p>
+         
+        <p>当您在体上创建网格时，软件将把体分成若干个称为为单元的区域，这些单元之间由称为节点的点连接起来，一组单元称为一个网格。</p>
+         
+         <p>网格会跟随体的形状，当求解模型时，模型中的节点将根据分析条件(比如载荷)发生转移，各个单元的行为将用数学等式描述，软件通过将各个单元的结果求和，来得到分析结果。</p>
+         
+         <a name="genid_emot_advanced_topics_19"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/flex_bodies/meshed_body.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>四面体单元网格示例</h4>
+         </div>
+         
+         
+         <p>在高级仿真中，将在 .FEM 文件中创建网格。</p>
+         
+         <p>当使用较小的单元大小时(在一个网格中产生更多的单元)，求解的精确度将提升，但是，当您细化网格时，求解时间以及求解所需的计算机资源也将提升。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

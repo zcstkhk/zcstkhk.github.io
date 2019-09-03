@@ -1,0 +1,92 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument">
+   <head>
+      <title>Review</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Review</h2>
+         <div id="topQuestionsContainer">
+            <div class="questionsHeader">
+               <div class="headerTitle">
+                  <p>Question</p>
+               </div>
+               <div class="quesionButtons">
+                  <div class="qButton" id="qButton_1">
+                     <p>1</p>
+                  </div>
+                  <div class="qButton" id="qButton_2">
+                     <p>2</p>
+                  </div>
+               </div>
+            </div>
+            <div id="questionsContainer">
+               <div class="question" id="question1" answered="false" numanswers="3" questiontype="fillInBlank">
+                  <p>For a linear contact solution that fails to converge, which action would typically not help the solution converge?</p>
+                  <p class="questionInstruction">Select one.</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a1" class="hideBlock" src="../xps3/graphics/redX.png"></img></td>
+                           <td><input id="q1a1" type="radio" correct="no" name="question1Grp"></input></td>
+                           <td>
+                              <p>Increase the allowable number of iterations.</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a2" class="hideBlock" src="../xps3/graphics/greenCheck.png"></img></td>
+                           <td><input id="q1a2" type="radio" correct="yes" name="question1Grp"></input></td>
+                           <td>
+                              <p>Decrease the convergence tolerance.</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a3" class="hideBlock" src="../xps3/graphics/redX.png"></img></td>
+                           <td><input id="q1a3" type="radio" correct="no" name="question1Grp"></input></td>
+                           <td>
+                              <p>Reduce the percentage of active contact elements.</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div class="question" id="question2" answered="false" numanswers="2" questiontype="fillInBlank">
+                  <p>Would the accuracy of results be as good using a large convergence tolerance as a small convergence tolerance?</p>
+                  <p class="questionInstruction">Select one.</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a1" class="hideBlock" src="../xps3/graphics/redX.png"></img></td>
+                           <td><input id="q2a1" type="radio" correct="no" name="question2Grp"></input></td>
+                           <td>
+                              <p>Yes</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a2" class="hideBlock" src="../xps3/graphics/greenCheck.png"></img></td>
+                           <td><input id="q2a2" type="radio" correct="yes" name="question2Grp"></input></td>
+                           <td>
+                              <p>No</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div id="showFeedbackContainer"><span showLabel="true" id="feedbackButton" title="Show feedback" dojoType="xps.form.Button" onClick="showQuestionFeedback()">Show feedback</span></div>
+            </div>
+            <div class="helpTextContainer">
+               <p class="questionFeedback" id="incorrect">Incorrect.</p>
+               <p class="questionFeedback" id="correct">Correct.</p>
+               <div class="questionHelp" id="questionHelp1">
+                  <p>Typically, increasing the convergence tolerance makes it easier for the solution to converge. However, in some cases where the solution is highly path-dependent, decreasing the convergence tolerance may actually help the solution converge.</p>
+               </div>
+               <div class="questionHelp" id="questionHelp2">
+                  <p>It is possible that the accuracy of the results would be just as good, but more than likely the results would be less accurate.</p>
+               </div>
+            </div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

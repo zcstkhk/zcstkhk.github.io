@@ -1,0 +1,417 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>系统准备</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>系统准备</h2>
+         <div class="division">
+            
+            <h3>安装 NX Nastran</h3>
+            
+            <p>高级仿真课程中将使用 NX Nastran 8.5 求解器。</p>
+            
+            <p>询问您的系统管理员，确保已安装 NX Nastran，并已定义以下信息，可以是定义为环境变量，也可以是在您的 <span class="fileName">ugii_env.dat</span> 文件中：</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p> <span class="codeText">UGII_NX_NASTRAN =</span> NX Nastran 可执行文件的路径</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p> <span class="codeText">UGII_NX_NASTRAN_VERSION = </span>(NX Nastran 版本，格式为 <span class="variableText">x.x</span>)</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <table class="attentionTable attn_tip">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">提示</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>如果您对 NX Nastran 可执行文件的路径有疑问，可以使用保护空格的文件夹名称，例如：</p>
+                     
+                     <p> <span class="codeText">UGII_NX_NASTRAN=&quot;C:/Program Files/Siemens/NX 8.5/NXNASTRAN/bin/nastran.exe&quot;</span></p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+            <p>您也可以在您的用户默认设置中指定 Nastran 的可执行文件路径与版本。</p>
+            
+            <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/menu.gif" border="0"> <strong>文件→实用工具→用户默认设置</strong></p>
+            
+            <ul class="unmarkedList">
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0"> <strong>仿真</strong></p>
+                  
+               </li>
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0"> <strong>NASTRAN</strong></p>
+                  
+               </li>
+               <li>
+                  
+                  <table border="0" cellpadding="0" cellspacing="0">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1" width="10">
+                        
+                        <col span="1" width="*">
+                        
+                        <col span="1" width="10">
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td class="tab_left" colspan="1" rowspan="1" width="10">
+                              
+                           </td>
+                           
+                           <td class="tab_middle" colspan="1" rowspan="1" width="*">
+                              
+                              <p class="no-bottom-margin"><strong>求解器参数</strong></p>
+                              
+                           </td>
+                           
+                           <td class="tab_right" colspan="1" rowspan="1" width="16">
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </li>
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/checkbox-off.gif" border="0"> <strong>使用 UGII_NX_NASTRAN</strong></p>
+                  
+               </li>
+               <li>
+                  
+                  <p>NX NASTRAN 的可执行文件</p>
+                  
+                  <table cellspacing="0" class="input_field" width="300">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1" width="90">
+                        
+                        <col span="1" width="190*">
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td class="label2" colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"> <span class="uiTerm">Windows</span></p>
+                              
+                           </td>
+                           
+                           <td class="border1b" colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"> <span class="variableText">可执行文件的路径</span></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">注释</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p>确保在路径中包含可执行文件的名称(nastran.exe)</p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </li>
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/checkbox-off.gif" border="0"> <strong>使用 UGII_NX_NASTRAN_VERSION</strong></p>
+                  
+               </li>
+               <li>
+                  
+                  <table cellspacing="0" class="input_field" width="300">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1" width="90">
+                        
+                        <col span="1" width="190*">
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td class="label2" colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"><strong>NX Nastran 版本</strong></p>
+                              
+                           </td>
+                           
+                           <td class="border1b" colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"> <span class="variableText">x.x</span></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </li>
+               <li>
+                  
+                  <table border="0" cellpadding="0" cellspacing="0">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1" width="10">
+                        
+                        <col span="1" width="*">
+                        
+                        <col span="1" width="10">
+                        
+                        <col span="1" width="*">
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td class="button_left" colspan="1" rowspan="1" width="10">
+                              
+                           </td>
+                           
+                           <td class="button_middle" colspan="1" rowspan="1" width="*">
+                              
+                              <p class="no-bottom-margin"> <span class="uiTerm">确定</span></p>
+                              
+                           </td>
+                           
+                           <td class="button_right" colspan="1" rowspan="1" width="10">
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1" width="*">
+                              
+                              <p class="no-bottom-margin">&nbsp;</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </li>
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+            <h3>激活部件间建模</h3>
+            
+            <p>在您进入高级仿真应用模块前，您必须已经使某些用户默认设置设置正确，因为这个应用模块将会使用部件间表达式，您必须激活部件间建模功能。</p>
+            
+            <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/menu.gif" border="0"> <strong>文件→实用工具→ 用户默认设置</strong></p>
+            
+            <ul class="unmarkedList">
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0">  <span class="literalText">装配</span></p>
+                  
+               </li>
+               <li>
+                  
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0">  <span class="literalText">常规</span></p>
+                  
+               </li>
+               <li>
+                  
+                  <table border="0" cellpadding="0" cellspacing="0">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1" width="10">
+                        
+                        <col span="1" width="*">
+                        
+                        <col span="1" width="10">
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td class="tab_left" colspan="1" rowspan="1" width="10">
+                              
+                           </td>
+                           
+                           <td class="tab_middle" colspan="1" rowspan="1" width="*">
+                              
+                              <p class="no-bottom-margin"> <span class="uiTerm">部件间建模</span></p>
+                              
+                           </td>
+                           
+                           <td class="tab_right" colspan="1" rowspan="1" width="16">
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </li>
+               <li>
+                  
+                  <table border="0" cellpadding="4" cellspacing="0" frame="box" width="330">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1" width="20">
+                        
+                        <col span="1" width="9840*">
+                        
+                        <col span="1" width="159*">
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/radio-on.gif" border="0"></p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin">  <span class="uiTerm">允许关联的部件间建模</span></p>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </li>
+               <li>
+                  
+                  <table border="0" cellpadding="0" cellspacing="0">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1" width="10">
+                        
+                        <col span="1" width="*">
+                        
+                        <col span="1" width="10">
+                        
+                        <col span="1" width="*">
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td class="button_left" colspan="1" rowspan="1" width="10">
+                              
+                           </td>
+                           
+                           <td class="button_middle" colspan="1" rowspan="1" width="*">
+                              
+                              <p class="no-bottom-margin"> <span class="uiTerm">确定</span></p>
+                              
+                           </td>
+                           
+                           <td class="button_right" colspan="1" rowspan="1" width="10">
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1" width="*">
+                              
+                              <p class="no-bottom-margin">&nbsp;</p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </li>
+            </ul>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">注释</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>如果软件返回一个警告，告诉您无权设置默认文件，请询问您的系统管理员。</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

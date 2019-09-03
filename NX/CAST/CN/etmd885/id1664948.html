@@ -1,0 +1,122 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Linked Part Module relationships</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Linked Part Module relationships</h2>
+         
+         <p>You may want to break the existing associativity between the main part file and a Linked Part Module file and establish the associativity to a different Linked Part Module file. This functionality is useful in cases where you create multiple designs for a single area of a complex part and need to update the part depending on the chosen design. </p>
+         
+         <p>You must first break the associativity by using the <span class="uiTerm">Break Relationship</span> command, and then establish the new associativity by using the <span class="uiTerm">Establish Relationship</span> command.
+         </p>
+         
+         <div class="division">
+            
+            <h3>Breaking a Linked Part Module relationship</h3>
+            
+            <p>The <span class="uiTerm">Break Relationship</span> command breaks the relationship between the file that is active when you select the command and the file to which it is WAVE linked. 
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>When you select the <span class="uiTerm">Break Relationship</span> command from the main part file, the WAVE links to the objects in the <span class="uiTerm">Outputs</span> collector are broken.
+                  </p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/part_module/pmod_broken_outputs.png"></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>When you select the <span class="uiTerm">Break Relationship</span> command from the Linked Part Module file, the WAVE links to the objects in the <span class="uiTerm">Inputs</span> collector are broken.
+                  </p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/part_module/pmod_broken_inputs.png"></p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>If the main part file has just one Linked Part Module, NX breaks the relationship immediately. If there are two or more Linked Part Modules in the main part file, you must select the relationship that you want to break in the <span class="uiTerm">Select Part Module Feature</span> dialog box.
+            </p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Establishing a Part Module relationship</h3>
+            
+            <p>Use the <span class="uiTerm">Establish Relationship</span> command to establish associativity between the main part file and a Linked Part Module file that is loaded in the same session.
+            </p>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Modeling, Shape Studio</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Format</span>&rarr;<span class="uiTerm">Part Module</span>&rarr;<span class="uiTerm">Break Relationship</span> or <span class="uiTerm">Establish Relationship</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

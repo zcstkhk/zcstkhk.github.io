@@ -1,0 +1,75 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Consolidate the 2D meshes</title>
+   </head>
+   <body>
+      <div class="contentType_procedure">
+         <h2>合并2D 网格</h2>
+         <p>只创建了一个3D 网格收集器，所以不必合并3D 网格。</p>
+         <p>下面，查看2D 网格收集器，您将看到2D 网格使用三个物理属性表：</p>
+         <ul>
+            
+            <li>
+               
+               <p><span class="uiTerm">SHELL 4MM IDEAS PTABLE</span></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">SHELL 3MM IDEAS PTABLE</span> 
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">SHELL 2MM IDEAS PTABLE</span> 
+               </p>
+               
+            </li>
+            
+         </ul>
+         <p>将网格收集器薄壳(1)、薄壳(3)以及薄壳(5)分别重命名为<span class="literalText">4mm薄壳</span>、<span class="literalText">3mm薄壳</span>以及<span class="literalText">2mm薄壳</span>。</p>
+         <p>将2D 网格合并到三个收集器中，根据它们的物理属性进行组织，合并后的网格如下所示：</p>
+         <table border="0" cellpadding="4" cellspacing="2" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/meshing/mesh_collectors/mech_col_nav_7.gif" border="0"> 2D 收集器<br><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/meshing/mesh_collectors/mech_col_nav_8.gif" border="0"> 4mm薄壳<br><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/meshing/mesh_collectors/mech_col_nav_9.gif" border="0"> 2d_mesh(1)<br><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/meshing/mesh_collectors/mech_col_nav_10.gif" border="0"> 2d_mesh(2)<br><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/meshing/mesh_collectors/mech_col_nav_8.gif" border="0"> 3mm薄壳<br><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/meshing/mesh_collectors/mech_col_nav_9.gif" border="0"> 2d_mesh(3)<br><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/meshing/mesh_collectors/mech_col_nav_10.gif" border="0"> 2d_mesh(4)<br><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/meshing/mesh_collectors/mech_col_nav_8.gif" border="0"> 2mm薄壳<br><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/meshing/mesh_collectors/mech_col_nav_10.gif" border="0"> 2d_mesh(5)
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <p>可以删除空的网格收集器。</p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/gateway/standard/save.gif" border="0"> <strong>保存</strong>(<strong>标准</strong>工具条)
+         </p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

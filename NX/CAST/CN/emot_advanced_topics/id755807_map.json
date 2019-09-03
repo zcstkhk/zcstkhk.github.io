@@ -1,0 +1,15 @@
+{identifier:"id",label:"title",items:[
+{id:"d11e2",title:"打开仿真",file:"id432378.html",type:"topic",parent:""},
+{id:"d11e3",title:"重置对话框内存",file:"id412719_3.html",type:"topic",parent:""},
+{id:"d11e4",title:"创建相对位移传感器",file:"id432382.html",type:"topic",parent:""},
+{id:"d11e5",title:"创建第二个传感器",file:"id432384.html",type:"topic",parent:""},
+{id:"d11e6",title:"激活电动机驱动环境",file:"id433794.html",type:"topic",parent:""},
+{id:"d11e7",title:"新建 PMDC 电动机",file:"id432386.html",type:"topic",parent:""},
+{id:"d11e8",title:"创建信号图",file:"id432388.html",type:"topic",parent:""},
+{id:"d11e9",title:"创建电动机驱动",file:"id433677.html",type:"topic",parent:""},
+{id:"d11e10",title:"创建并求解解算方案",file:"id433679.html",type:"topic",parent:""},
+{id:"d11e11",title:"使机构运动",file:"id433681.html",type:"topic",parent:""},
+{id:"d11e12",title:"绘制传感器位移曲线",file:"id433747.html",type:"topic",parent:""},
+{id:"d11e14",title:"探测图表中的数据点",file:"id433749.html",type:"topic",parent:""},
+{id:"d11e15",title:"绘制电动机电流曲线",file:"id433751.html",type:"topic",parent:""},
+{id:"d11e16",title:"可选：修改电动机参数",file:"id433753.html",type:"topic",parent:""}]}

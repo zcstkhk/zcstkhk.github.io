@@ -1,0 +1,103 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>层合板快速报告</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>层合板快速报告</h2>
+         
+         <p>层合板快速报告将结果汇总导出到 Excel 电子表格或 CSV 文件而无需查询活动的 FEM。由于层合板快速报告无需访问 FEM 即可查询结果集，因此报告可以快速得到处理。此命令在处理较大和大量解算方案时尤其有用。</p>
+         <p>快速报告包括：</p>
+         <ul>
+           <li>
+             <p>顶级汇总表，该表列出所有结果集之中最差的层片值。选择一个以上结果集时才会有顶级汇总表。</p>
+           </li>
+           <li>
+             <p>各个结果集的汇总表。</p>
+           </li>
+         </ul>
+         <p>支持以下层合板结果：</p>
+         <ul>
+           <li>
+             <p><strong>壳单元合应力</strong></p>
+           </li>
+           <li>
+             <p><strong>层片应力</strong></p>
+           </li>
+           <li>
+             <p><strong>层片应变</strong></p>
+           </li>
+           <li>
+             <p><strong>层片/胶合失效指数</strong></p>
+           </li>
+           <li>
+             <p><strong>层片/胶合强度比</strong></p>
+           </li>
+         </ul>
+         <p>在层片坐标系中输出层片结果。</p>
+         <p>NX 在您为层合板后处理报告元解算方案指定的结果集中产生层合板快速报告。</p>
+         <p>使用可从层合板后处理报告节点中访问的<strong>创建快速报告</strong>命令，可以指定层合板结果以及所需的包络类型。可以使用可在快速报告节点中访问的<strong>编辑</strong>命令来更改指定的设置。</p>
+         <p>对于每个层合板结果，必须指定一种包络类型。NX 在节点处显示：</p>
+         <ul>
+           <li>
+             <p>如果选择<strong>最大 &amp; 最小</strong>，指定层合板结果的最大值和最小值。</p>
+           </li>
+           <li>
+             <p>如果选择<strong>最小</strong>，指定层合板结果的最小值。</p>
+           </li>
+           <li>
+             <p>如果选择<strong>最大</strong>，指定层合板结果的最大值。</p>
+           </li>
+           <li>
+             <p>如果选择<strong>最大绝对</strong>，指定层合板结果的绝对最大值。</p>
+           </li>
+         </ul>
+         <p><strong>最大和最小</strong>选项有助于隔离最大拉力和压缩应力。</p>
+         
+         
+         <div class="division">
+            
+           <h3>位于何处？</h3>
+           <table border="1" cellpadding="6" cellspacing="2" class="locator">
+             <colgroup span="1">
+               <col span="1" width="149">
+               <col span="1" width="*">
+             </colgroup>
+             <tr valign="top">
+               <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">应用模块</p></td>
+               <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">高级仿真</p></td>
+             </tr>
+             <tr>
+               <td class="locator_shade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">先决条件</p></td>
+               <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">必须在仿真文件中操作，并且激活层合板后处理报告。</p></td>
+             </tr>
+             <tr>
+               <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">工具条</p></td>
+               <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin"><strong>层合板→快速报告</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/laminates/quick_post_report.gif" border="0"></p></td>
+             </tr>
+             <tr>
+               <td class="locator_shade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">菜单</p></td>
+               <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin"><strong>插入→层合板→高级后处理报告→快速报告</strong></p></td>
+             </tr>
+             <tr>
+               <td class="locator_shade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">仿真导航器</p></td>
+               <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom"><p class="no-bottom-margin">右键单击层合板后处理报告节点→<strong>创建快速报告</strong></p></td>
+             </tr>
+           </table>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>View Creation Wizard enhancements</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>View Creation Wizard enhancements</h2>
+         <div class="estimatedTime">
+            <p>Estimated time to complete this lesson: 11&ndash;16  minutes</p>
+         </div>
+         <div></div>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>Several improvements have been added to the <span class="uiTerm">View Creation Wizard</span> to enhance its overall performance and usability, especially in the realm of large assembly drawings.
+            </p>
+            
+            <div class="defList">
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p><span class="uiTerm">Part</span> step
+                     </p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <p>You must explicitly select a part from either the <span class="uiTerm">Loaded Parts</span> or <span class="uiTerm">Recent Parts</span> list box. If your active part contains no assembly components, a message window advises you that no model part is loaded into your session, and then gives you the choice of either choosing one from the <span class="uiTerm">Part Name</span> dialog, or returning to the <span class="uiTerm">Part</span> step in the <span class="uiTerm">View Creation Wizard</span>.
+                     </p>
+                     
+                  </div>
+               </div>
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p><span class="uiTerm">Large Assembly</span> step
+                     </p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <p>The <span class="uiTerm">Large Assembly</span> step is a new step dynamically added to the <span class="uiTerm">Task Navigator</span> whenever the number of components in the master assembly part exceeds the value given for the <span class="uiTerm">Show when Component Count Exceeds</span> preference. The display settings on the <span class="uiTerm">Large Assembly</span> page take precedence over those settings on the <span class="uiTerm">Options</span> page and are designed to maximize system performance while placing large assembly views.
+                     </p>
+                     
+                     <p>You can:</p>
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p>Use the <span class="uiTerm">Automatically Optimize Settings</span> option to automatically select the optimum <span class="uiTerm">View Configuration</span> and <span class="uiTerm">Custom View Settings</span> options.
+                           </p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>Control the display quality of exact or smart lightweight views.</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>Control preview style using the <span class="uiTerm">Set View Preview to Border</span> option.
+                           </p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>Use the <span class="uiTerm">Custom View Settings</span> option to manually override traceline, smooth edge, hidden line, thread, and virtual intersection displays.
+                           </p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+               </div>
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p><span class="uiTerm">Options</span> step
+                     </p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <p>When the <span class="uiTerm">Large Assembly</span> step is displayed, its options supersede those in the <span class="uiTerm">Options</span> step, and the following options are removed:
+                     </p>
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p><span class="uiTerm">Process Hidden Lines</span>.
+                           </p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>Hidden line color, font, and width lists.</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p><span class="uiTerm">Show Centerlines</span>.
+                           </p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p><span class="uiTerm">Preview Style</span> list.
+                           </p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                     <p>When <span class="uiTerm">Automatically Optimize Settings</span> is selected on the <span class="uiTerm">Large Assembly</span> page, the <span class="uiTerm">View Style</span> settings on the <span class="uiTerm">Options</span> page are disabled.
+                     </p>
+                     
+                  </div>
+               </div>
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p><span class="uiTerm">Orientation</span> step
+                     </p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p>To improve performance, view boundaries are only calculated one time as the parent view is selected.</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+               </div>
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p><span class="uiTerm">Layout</span> step
+                     </p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p>With the <span class="uiTerm">Manual</span> placement option, a view scale appears on the <span class="uiTerm">Status Line</span> as you position your views on the drawing sheet. The scale remains on the <span class="uiTerm">Status Line</span> and continually updates until you complete your view placement.
+                           </p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>When <span class="uiTerm">Ignore Title Blocks</span> is selected, the title block area is ignored when you place a view. The view and any inherited PMI can intrude into the area of the title block. By default this option is not selected.
+                           </p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>The view button arrangement in the <span class="uiTerm">Layout</span> group is more intuitive and more accurately reflects the corresponding view layout on the drawing sheet.
+                           </p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>View boundaries are only recalculated one time when changing <span class="uiTerm">Placement</span> from <span class="uiTerm">Manual</span> to <span class="uiTerm">Automatic</span>, or when changing margin values.
+                           </p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+               </div>
+            </div>
+            
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>Why should I use it?</h3>
+            
+            <p>The View Creation Wizard provides a simple and effective way of creating one or more drafting views. The steps in the wizard dynamically display options relevant to the content found in the source model. These changes and performance improvements enhance the wizard&rsquo;s overall usability and offer a greater degree of flexibility and control in managing large assembly views, including the smart lightweight view capabilities introduced in NX 8.5.</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Drafting</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Toolbar</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Drafting</span>&rarr;<span class="uiTerm">View Creation Wizard</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/drafting/drawing_layout/view_creation_wizard.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Insert</span>&rarr;<span class="uiTerm">View</span>&rarr;<span class="uiTerm">View Creation Wizard</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+            <p>Activate the <span class="uiTerm">Large Assembly</span> step:
+            </p>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Drafting</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Prerequisite</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">The <span class="uiTerm">Show when Component Count Exceeds</span> value must be set in the <span class="uiTerm">File&rarr;Utilities&rarr;Customer Defaults</span> dialog box, on the <span class="uiTerm">Drafting&rarr;General&rarr;View</span> tab&rarr;<span class="uiTerm">View Creation Wizard Large Assembly Option</span> group
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Preferences</span>&rarr;<span class="uiTerm">Drafting</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">View</span> tab&rarr;<span class="uiTerm">View Creation Wizard Large Assembly Option</span> group&rarr;<span class="uiTerm">Show when Component Count Exceeds</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         <a name="xid458642" id="xid458642"></a><div id="footer"></div>
+      </div>
+   </body>
+</html>

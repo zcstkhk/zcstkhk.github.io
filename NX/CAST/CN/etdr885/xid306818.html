@@ -1,0 +1,239 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Smash View</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Smash View</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>Use the <span class="uiTerm">Smash View</span> command to move view dependent objects from a view onto the sheet. You can move objects from the following views:
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Drawing views</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Detail views created from Drawing views</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>If you smash a Drawing view that has associated Detail views, the Detail views become independent.</p>
+            <a name="genid_etdr885_126" id="genid_etdr885_126"></a><table border="0" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        <a name="genid_etdr885_127" id="genid_etdr885_127"></a><div class="figureContainer">
+                           <table align="center">
+                              <tr>
+                                 <td>
+                                    <div class="figure">
+                                       <div><img align="bottom" src="../graphics/nonLocalized/nx/drafting/views/drawing_views/smashview_initial.png" border="0"></div>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </table>
+                           <h4>Drawing views to smash</h4>
+                        </div>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/correlation/right_arrow.gif"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        <a name="genid_etdr885_128" id="genid_etdr885_128"></a><div class="figureContainer">
+                           <table align="center">
+                              <tr>
+                                 <td>
+                                    <div class="figure">
+                                       <div><img align="bottom" src="../graphics/nonLocalized/nx/drafting/views/drawing_views/smashview_final.png" border="0"></div>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </table>
+                           <h4>View dependent objects on the sheet</h4>
+                        </div>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            
+         </div>
+         
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>The original view is removed from the drawing.</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <p>Objects maintain their apparent size and position. As a result, dimension values change whenever view scale is not 1:1.</p>
+         
+         <p>Hidden objects are also transferred onto the sheet and view clipping is removed.</p>
+         
+         <p>The following view dependent objects are deleted:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>Retained annotations</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Tabular notes</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>Exact annotation orientation cannot be maintained when the original view is rotated, due to constraints imposed on sheet annotations.</p>
+         
+         
+         <div class="division">
+            
+            <h3>Why should I use it?</h3>
+            
+            <p>This command helps you reorganize how data is represented on a 2D layout by moving content contained in a Drawing view to a sheet. This supports a more flexible 2D design workflow.</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Drafting</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Edit</span>&rarr;<span class="uiTerm">View</span>&rarr;<span class="uiTerm">Smash View</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Graphics window</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Right-click sketch curves&rarr;<span class="uiTerm">Smash View</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Part Navigator</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Right-click the sheet sketch node&rarr;<span class="uiTerm">Smash View</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

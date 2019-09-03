@@ -1,0 +1,70 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>了解冗余约束</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>了解冗余约束</h2>
+         
+         <p>求解器将忽略冗余的约束，以使自由度为零，然后生成解算方案。</p>
+         <a name="ndxgenid_emot_links_constraints_80"></a>
+         
+         
+         <ul>
+            
+            <li>
+               
+               <p>Gruebler 数小于零表示机构中存在冗余约束</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Gruebler 数大于零表示机构内自由移动(需要动力学解算方案)</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Gruebler 数等于零表示机构被完全约束</p>
+               
+            </li>
+            
+         </ul>
+         <a name="ndxgenid_emot_links_constraints_81"></a>
+         
+         
+         <a name="genid_emot_links_constraints_82" id="genid_emot_links_constraints_82"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/adv_topics/mtn_redundant_joints.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>运动副(2)以及(3)为冗余的约束</h4>
+         </div>
+         
+         
+         <p>根据您的分析对象，冗余约束可能会(也可能不会)成为分析运行时的一个问题。当您对运动副内的反作用力感兴趣时，求解器排除的约束可能会改变机构的机构的负载路径，并引起错误的运动副力结果。</p>
+         
+         
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

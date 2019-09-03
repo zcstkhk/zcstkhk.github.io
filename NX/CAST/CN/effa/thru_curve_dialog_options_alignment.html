@@ -1,0 +1,83 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>通过曲线组对话框中的对齐选项</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>通过曲线组对话框中的对齐选项</h2>
+         
+         <p><strong>保留形状</strong>通过强制公差值为 0.0，并替代逼近输出曲面的默认值以保留尖角。</p>
+         
+         <p>清除此复选框后，会使用 <strong>G0（位置）</strong>连续性值，并对该截面中的任何尖角进行光顺，但使用较小的曲率半径。 </p>
+         
+         <table border="1" cellpadding="2" cellspacing="0" width="412" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="66*">
+               
+               <col span="1" width="130*">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">清除<strong>保留形状</strong>复选框 <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_off.gif" border="0"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/through_curves/ruled_preserve_shape_cleared.png"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">选中<strong>保留形状</strong>复选框 <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_on.gif" border="0"></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/through_curves/ruled_preserve_shape_selected.png"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <p><span class="uiTerm"><strong>对齐</strong>通过定义 NX 如何沿截面线串隔开新曲面的等参数曲线，来控制特征的形状。当<strong>保留形状</strong>复选框</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_off.gif" border="0"> <span class="uiTerm">清除时，对齐选项中有六个选项。当勾选选<strong>保留形状</strong></span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_on.gif" border="0"><span class="uiTerm">复选框时，对齐选项中只剩下<strong>通过点</strong>和<strong>参数</strong>两个选项。</span></p>
+         
+         <p>要获取更多关于对齐选项的信息，参见 <a href="#" onclick="showDialog('ruled_alignment_options')">对齐选项</a>.
+         </p>
+         
+         <div dojoType="dijit.Dialog" id="ruled_alignment_options" title="对齐选项">
+            <div dojoType="dijit.layout.ContentPane" href="ruled_alignment_options.html" extractContent="true" tabIndex="0"></div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

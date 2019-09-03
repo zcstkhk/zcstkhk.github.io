@@ -1,0 +1,12 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"开始冲模工程",file:"id1056658.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"开始冲模工程",file:"getstarted.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"冲模工程工作流",file:"tnx_step2.html",type:"topic",parent:"d5e5"}]},
+{id:"d5e8",title:"工艺路线",file:"lineup.html",type:"topic",parent:"",children:[
+{id:"d5e9",title:"创建工艺路线",file:"id1081119.html",type:"activity",parent:"d5e8"}]},
+{id:"d5e11",title:"冲压操作",file:"stamping_operation.html",type:"topic",parent:"",children:[
+{id:"d5e12",title:"定义三个冲模操作",file:"id1081135.html",type:"activity",parent:"d5e11"}]},
+{id:"d5e14",title:"DOL 助手",file:"processasst.html",type:"topic",parent:"",children:[
+{id:"d5e15",title:"使用 DOL 助理来构建一个工艺路线",file:"id1105499.html",type:"activity",parent:"d5e14"}]}
+]}

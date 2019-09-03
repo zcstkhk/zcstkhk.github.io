@@ -1,0 +1,1 @@
+This directory is for parts used in self-paced Advanced Assemblies courses (EAAx) and instructor-led Large Assembly Modeling (LAM).

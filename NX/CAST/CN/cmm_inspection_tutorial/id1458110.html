@@ -1,0 +1,414 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Add and test your parts</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Add and test your parts</h2>
+         
+         <p>In this activity, you will add your new parts to the CMM Inspection Programming device and machine databases and test them by loading them in a CMM inspection setup file.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>In a text editing program such as Notepad, open the device database file.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p><span class="codeText">[install directory]\Siemens\NX x.x\CMM_INSPECTION\resource\library\device\ascii\insp_device_database.dat</span></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>In <span class="emphasis">this window,</span> click this step, select and copy the following line, and paste it as the last line in the file.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p><span class="codeText">DATA  |Renishaw_PH10M_tr|3 |CMM Renishaw PH10M for Tool Racks| HEAD</span></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>Save and close the device database file.</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>Open the machine database file.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p><span class="codeText">[install directory]\Siemens\NX x.x\CMM_INSPECTION\resource\library\machine\ascii\insp_machine_database.dat</span></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>In <span class="emphasis">this window,</span> click this step, select and copy the following line, and paste it as the last line in the file.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     <pre class="codeExample indent ">DATA | sheffield_rl_50_tr       | 5 | 3 Axis gantry CMM with tool rack | DMIS | Sheffield_tr| ${UGII_INSPECTION_POST_DIR}cmm_dmis_plugin.dat | 1.000000 | ${UGII_INSPECTION_LIBRARY_INSTALLED_MACHINES_DIR}sheffield_rl_50_tr\graphics\sheffield_rl_50_tr</pre>
+                     </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>Save and close the machine database file.</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>Start NX, open a work part, create an inspection setup file (<strong>File</strong>&rarr;<strong>New</strong>&rarr;<strong>Inspection tab</strong>&rarr;<strong>DMIS General Setup</strong>), and <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" class="links" href="javascript:void(0)" onclick="popUpPage('cmm_inspection_tutorial/index.html?goto=id771493.html&amp;vars=-aux,-home,-nav','loader','menubar=yes,status=yes,resizable=yes,toolbar=yes,scrollbars=yes,location=yes,directories=no');return(false);">load</a> your new machine, probe head, and at least two probe tools.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>The probe tools load into the tool rack in the order that they were selected.</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/machines/tool_rack_14.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>Create inspection features and then create inspection paths that use different probes.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>When you run simulations, the machine should select the tools using the entry and exit junctions you defined.</p>
+                     
+                     <table class="attentionTable attn_note">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">Note</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>If you encounter problems, in the <strong>Machine Tool Navigator</strong>, verify that your settings are correct.
+                              </p>
+                              
+                              <table class="navigator" frame="border" align="center">
+                                 
+                                 <colgroup span="1">
+                                    
+                                    <col span="1">
+                                    
+                                    <col span="1">
+                                    
+                                    <col span="1">
+                                    
+                                 </colgroup>
+                                 
+                                 <tbody>
+                                    
+                                    <tr bgcolor="#DADCDD">
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin"><strong>Name</strong></p>
+                                          
+                                       </td>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin"><strong>Classification</strong></p>
+                                          
+                                       </td>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin"><strong>Junctions</strong></p>
+                                          
+                                       </td>
+                                       
+                                    </tr>
+                                    
+                                    <tr>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">TOOL_RACK</p>
+                                          
+                                       </td>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">_DEVICE</p>
+                                          
+                                       </td>
+                                       
+                                       <td colspan="1" rowspan="1"></td>
+                                       
+                                    </tr>
+                                    
+                                    <tr bgcolor="#F7F7F7">
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">&nbsp;&nbsp;&nbsp;POCKET_ONE</p>
+                                          
+                                       </td>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">_STATIC_HOLDER</p>
+                                          
+                                       </td>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">T1,&nbsp;P1_SIM_ENTRY1,&nbsp;P1_SIM_ENTRY2,&nbsp;P1_SIM_EXIT1</p>
+                                          
+                                       </td>
+                                       
+                                    </tr>
+                                    
+                                    <tr>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">&nbsp;&nbsp;&nbsp;POCKET_TWO</p>
+                                          
+                                       </td>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">_STATIC_HOLDER</p>
+                                          
+                                       </td>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">T2,&nbsp;P2_SIM_ENTRY1,&nbsp;P2_SIM_ENTRY2,&nbsp;P2_SIM_EXIT1</p>
+                                          
+                                       </td>
+                                       
+                                    </tr>
+                                    
+                                    <tr bgcolor="#F7F7F7">
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">&nbsp;&nbsp;&nbsp;POCKET_THREE</p>
+                                          
+                                       </td>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">_STATIC_HOLDER</p>
+                                          
+                                       </td>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">T3,&nbsp;P3_SIM_ENTRY1,&nbsp;P3_SIM_ENTRY2,&nbsp;P3_SIM_EXIT1</p>
+                                          
+                                       </td>
+                                       
+                                    </tr>
+                                    
+                                    <tr>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">&nbsp;&nbsp;&nbsp;POCKET_FOUR</p>
+                                          
+                                       </td>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">_STATIC_HOLDER</p>
+                                          
+                                       </td>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">T4,&nbsp;P4_SIM_ENTRY1,&nbsp;P4_SIM_ENTRY2,&nbsp;P4_SIM_EXIT1</p>
+                                          
+                                       </td>
+                                       
+                                    </tr>
+                                    
+                                    <tr bgcolor="#F7F7F7">
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">&nbsp;&nbsp;&nbsp;POCKET_FIVE</p>
+                                          
+                                       </td>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">_STATIC_HOLDER</p>
+                                          
+                                       </td>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">T5,&nbsp;P5_SIM_ENTRY1,&nbsp;P5_SIM_ENTRY2,&nbsp;P5_SIM_EXIT1</p>
+                                          
+                                       </td>
+                                       
+                                    </tr>
+                                    
+                                    <tr>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">&nbsp;&nbsp;&nbsp;POCKET_SIX</p>
+                                          
+                                       </td>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">_STATIC_HOLDER</p>
+                                          
+                                       </td>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">T6,&nbsp;P6_SIM_ENTRY1,&nbsp;P6_SIM_ENTRY2,&nbsp;P6_SIM_EXIT1</p>
+                                          
+                                       </td>
+                                       
+                                    </tr>
+                                    
+                                    <tr bgcolor="#F7F7F7">
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">&nbsp;&nbsp;&nbsp;POCKET_SEVEN</p>
+                                          
+                                       </td>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">_STATIC_HOLDER</p>
+                                          
+                                       </td>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin">T7,&nbsp;P7_SIM_ENTRY1,&nbsp;P7_SIM_ENTRY2,&nbsp;P7_SIM_EXIT1</p>
+                                          
+                                       </td>
+                                       
+                                    </tr>
+                                    
+                                 </tbody>
+                                 
+                              </table>
+                              
+                              <p>Required settings:</p>
+                              
+                              <ul>
+                                 
+                                 <li>
+                                    
+                                    <p>Part folders and parts are renamed correctly.</p>
+                                    
+                                 </li>
+                                 
+                                 <li>
+                                    
+                                    <p><strong>HEAD_A</strong> in <strong>Renishaw_PH10M_tr.prt</strong> has no classification.
+                                    </p>
+                                    
+                                 </li>
+                                 
+                                 <li>
+                                    
+                                    <p>Your tool rack is classified as a <strong>_DEVICE</strong>.
+                                    </p>
+                                    
+                                 </li>
+                                 
+                                 <li>
+                                    
+                                    <p>Your tool rack pockets and junctions are named correctly, and each pocket is classified as a <strong>_STATIC_HOLDER</strong>.
+                                    </p>
+                                    
+                                 </li>
+                                 
+                                 <li>
+                                    
+                                    <p>You loaded the correct <strong>_tr</strong> machine and head when testing.
+                                    </p>
+                                    
+                                 </li>
+                                 
+                              </ul>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         <div class="stepListResult">
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">Note</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>To use an actual changing rack on an actual CMM, you must configure your CMM execution software, or insert a CMM command such as the following DMIS statement into your program.</p>
+                     
+                     <p><span class="codeText">TH(Rack1)=THLDEF/SS(Tool1),1,SS(Tool2),2,SS(Tool3),3</span></p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

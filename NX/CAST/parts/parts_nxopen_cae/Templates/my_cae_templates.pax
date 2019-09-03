@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Palette xmlns="http://www.ugsolutions.com/Schemas/2001/UGPalettes" schemaVersion="1.0">
+
+  <Presentation name="My CAE Templates" bitmap="sheet_and_block.bmp" FileNewTab="Simulation" application="All" UsesMasterModel="No"/>
+
+  <PaletteEntry id="d1">
+    <References/>
+    <Presentation name="Bottle Crush Demo" description="Bottle Crush Analysis Material Definition">
+        <PreviewImage type="UGPart" location="demo_fem.jpg"/>
+    </Presentation>
+    <ObjectData class="CaeFemTemplate">
+        <Filename>BottleMaterial.fem</Filename>
+	<Units>Metric</Units>
+    </ObjectData>
+  </PaletteEntry>  
+
+<PaletteEntry id="d2">
+    <References/>
+    <Presentation name="Bottle Crush Demo" description="Bottle Crush Analysis Solution Definition">
+        <PreviewImage type="UGPart" location="demo_sim.jpg"/>
+    </Presentation>
+    <ObjectData class="CaeSimTemplate">
+        <Filename>BottleCrush_s.sim</Filename>
+        <Units>Metric</Units>
+    </ObjectData>
+  </PaletteEntry>
+
+</Palette>

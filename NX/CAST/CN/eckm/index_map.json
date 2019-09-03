@@ -1,0 +1,32 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"Check-Mate",file:"id398497.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"Check-Mate 概述",file:"id672071.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"Check-Mate",file:"cm_overview.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"Check-Mate 术语",file:"concept.html",type:"topic",parent:"d5e5"}]},
+{id:"d5e9",title:"使用 Check-Mate",file:"id672595.html",type:"topic",parent:"",children:[
+{id:"d5e10",title:"Check-Mate HD3D 工作流",file:"user_guide_ovw.html",type:"topic",parent:"d5e9"},
+{id:"d5e11",title:"验证制图对象",file:"id1073809.html",type:"activity",parent:"d5e9"},
+{id:"d5e12",title:"验证建模对象",file:"id1073825.html",type:"activity",parent:"d5e9"}]},
+{id:"d5e14",title:"编创 Check-Mate 测试与检查包",file:"id674009.html",type:"topic",parent:"",children:[
+{id:"d5e15",title:"Check-Mate 编创测试概述",file:"id674046.html",type:"topic",parent:"d5e14"},
+{id:"d5e16",title:"Check-Mate 检查包",file:"id674015.html",type:"topic",parent:"d5e14"},
+{id:"d5e17",title:"创建并执行 Check-Mate 检查包",file:"id1074454.html",type:"activity",parent:"d5e14"}]},
+{id:"d5e19",title:"Check-Mate 外部查看器",file:"id674242.html",type:"topic",parent:"",children:[
+{id:"d5e20",title:"Check-Mate 日志文件",file:"id674285.html",type:"topic",parent:"d5e19"},
+{id:"d5e21",title:"创建 Check-Mate 日志文件",file:"id1074470.html",type:"activity",parent:"d5e19"},
+{id:"d5e22",title:"质量仪表板实用工具",file:"id675528.html",type:"topic",parent:"d5e19"},
+{id:"d5e23",title:"使用 Check-Mate 查看器查看结果",file:"id1074502.html",type:"activity",parent:"d5e19"},
+{id:"d5e24",title:"定义报告模板并显示结果",file:"id1074486.html",type:"activity",parent:"d5e19"}]},
+{id:"d5e27",title:"Check-Mate 参考主题",file:"id1628066.html",type:"topic",parent:"",children:[
+{id:"d5e28",title:"设置测试—运行选项",file:"id672621.html",type:"topic",parent:"d5e27"},
+{id:"d5e29",title:"过滤测试结果",file:"checkmate_filter_results.html",type:"topic",parent:"d5e27"},
+{id:"d5e30",title:"Check-Mate 工具条",file:"id387301.html",type:"topic",parent:"d5e27"},
+{id:"d5e31",title:"创建/编辑检查包选项",file:"create_profile_options.html",type:"topic",parent:"d5e27"},
+{id:"d5e32",title:"编创测试—定制",file:"id674047.html",type:"topic",parent:"d5e27"},
+{id:"d5e33",title:"Check—Mate 查看器用户界面",file:"id675929.html",type:"topic",parent:"d5e27"},
+{id:"d5e34",title:"质量仪表板—报告生成器界面",file:"id675529.html",type:"topic",parent:"d5e27"},
+{id:"d5e35",title:"QDASH 报告生成器—报告编辑器界面",file:"id675926.html",type:"topic",parent:"d5e27"},
+{id:"d5e36",title:"QDASH 报告生成器—报告编辑器",file:"id675927.html",type:"topic",parent:"d5e27"},
+{id:"d5e37",title:"质量仪表板—Teamcenter 首选项",file:"id675530.html",type:"topic",parent:"d5e27"}]}
+]}

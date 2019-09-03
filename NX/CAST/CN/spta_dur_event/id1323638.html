@@ -1,0 +1,63 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>基于事件的耐久性概述</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>基于事件的耐久性概述</h2>
+         
+         <p>要执行基于事件的耐久性分析，则准备要进行有限元分析的模型。先指定耐久性材料属性，然后进行求解以获取应力或应变结果。 </p>
+         
+         <p>耐久性解算过程包含一个或多个事件。事件可以是<em>静态</em>、<em>瞬态</em>或<em>随机</em>的。</p>
+         <ul>
+           <li>
+             <p><em>静态事件</em>确定结构模型相对于叠加了加载模式的静态解的耐久性结果。</p>
+           </li>
+           <li>
+             <p><em>瞬态事件</em>确定结构模型相对于瞬态加载的耐久性结果。</p>
+           </li>
+           <li>
+             <p><em>随机事件</em>确定应用了随机激励的结构模型的疲劳寿命结果。</p>
+           </li>
+         </ul>
+         <p>每个事件由以下几项构成：</p>
+         <ul>
+           <li>
+             <p>应力分析解算方案</p>
+           </li>
+           <li>
+             <p>静态或瞬态载荷</p>
+           </li>
+           <li>
+             <p>耐久性事件求解器设置</p>
+           </li>
+         </ul>
+        <p>耐久性的评估结果显示在轮廓绘图中，其中包含以下结果：</p>
+         
+         <ul>
+            
+            <li>
+              <p><strong>强度安全系数</strong>和<strong>安全裕度</strong>结果集用于评估模型的结构强度</p>
+            </li>
+            <li>
+              <p><strong>疲劳安全系数</strong>和<strong>疲劳失效指数</strong>结果集用于评估模型的疲劳安全系数</p>
+            </li>
+            <li>
+              <p><strong>疲劳寿命</strong>和<strong>疲劳破坏</strong>结果集用于评估模型的疲劳寿命</p>
+            </li>
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

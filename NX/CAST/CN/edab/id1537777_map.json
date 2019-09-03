@@ -1,0 +1,12 @@
+{identifier:"id",label:"title",items:[
+{id:"d8e2",title:"将零件明细表添加到图纸中",file:"id1538010.html",type:"topic",parent:""},
+{id:"d8e3",title:"添加列到零件明细表中",file:"xid455077.html",type:"topic",parent:""},
+{id:"d8e4",title:"指派部件属性",file:"id1537781.html",type:"topic",parent:""},
+{id:"d8e5",title:"对新列编辑适合方法",file:"id1537783.html",type:"topic",parent:""},
+{id:"d8e6",title:"重新排列适合方法选项的顺序",file:"id1537785.html",type:"topic",parent:""},
+{id:"d8e7",title:"编辑标题列中的文本",file:"id1537787.html",type:"topic",parent:""},
+{id:"d8e8",title:"指派其它部件属性",file:"id1537791.html",type:"topic",parent:""},
+{id:"d8e9",title:"调整列以适合文本",file:"id1537793.html",type:"topic",parent:""},
+{id:"d8e10",title:"添加 MAT 属性",file:"id1537795.html",type:"topic",parent:""},
+{id:"d8e11",title:"移动 QTY 列到 PART NAME 列左端",file:"id1537797.html",type:"topic",parent:""},
+{id:"d8e12",title:"移动标题列到零件明细表顶部",file:"id1537799.html",type:"topic",parent:""}]}

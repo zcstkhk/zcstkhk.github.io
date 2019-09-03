@@ -1,0 +1,153 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>引用集类型</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>引用集类型</h2>
+         
+         <p>可以使用装配引用集确定显示在当前会话中的装配中的数据量。对于不需要看到或使用的装配的非关键区域，您可以更改组件的引用集以确定它在图纸中的显示方式。</p>
+         
+         <div class="division">
+            
+           <h3>整个部件</h3>
+            
+            <p>使用<strong>整个部件</strong>时，将组件加载到装配中后不会进行引用集过滤。</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>空</h3>
+            
+            <p>通过使用<strong>空</strong>引用集可在图纸页上限制装配组件的显示，以便将装配及其组件加载到工作内存中，但将从图纸部件过滤（排除）其模型几何体。</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/reference_sets/reference_sets_modelref_to_emptyref.png"></p>
+            
+            <p>将任何组件的引用集更改为空会导致与该组件关联的注释恢复为保留状态。</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>模型</h3>
+            
+            <p><strong>模型</strong>引用集是系统生成的引用集，包含组件的以下内容：</p>
+            <ul>
+              <li>
+                <p>实体</p>
+              </li>
+              <li>
+                <p>片体</p>
+              </li>
+              <li>
+                <p>轻量级表示。NX 可以自动生成这些表示，具体取决于<strong>自动轻量级生成</strong>用户默认设置的设置。</p>
+              </li>
+            </ul>
+            <p><strong>模型</strong>引用集不会收集构造数据，例如基准、草图或曲线。</p>
+            <p>要定义<strong>模型</strong>引用集名称，请参见&ldquo;文件→实用程序→用户默认设置→装配→本地标准→引用集→模型引用集（名称）&rdquo;。</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>简化</h3>
+            
+            <p>如果在用户默认设置中定义它的名称，则会自动保留<strong>简化</strong>引用集。在定义简化的引用集后，创建的任何包裹装配或链接的外部对象都将自动添加到该引用集。</p>
+            <a name="genid_edaa_102" id="genid_edaa_102"></a><div class="figureContainer">
+               <table align="center">
+                  <tr>
+                     <td>
+                        <div class="figure">
+                           <div><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/reference_sets/reference_sets_simplified.png" border="0"></div>
+                        </div>
+                     </td>
+                  </tr>
+               </table>
+               <h4>组件被覆盖的简化引用集</h4>
+            </div>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <p>创建或编辑引用集：</p>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>格式→引用集</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+            <p>定义模型、简化的引用集及其他用户定义的引用集的默认命名约定和行为：</p>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>文件→实用工具→用户默认设置→装配→本地标准</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

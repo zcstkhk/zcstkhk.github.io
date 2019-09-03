@@ -1,0 +1,89 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>运行比较</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>运行比较</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>右击<strong>管道通路导航器</strong>背景并选择<strong>比较</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>比较管道通路</strong>对话框中，选中<strong>报告差异</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_on.gif" border="0"> check box.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>(<strong>文件浏览器</strong>中应该指向 <span class="fileName">rtg1_facility_1</span>。)
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>管道通路导航器</strong>中，查看<strong>比较状态</strong>列。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>将显示 RUN_4中的差异。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>展开 <strong>RUN_4</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_logical/activities/resolve_discrepancies/logical_graphic_107.gif"></p>
+                     
+                     <p>注意到 VALVE_4_OUT 显示为丢失，这是因为在3D 模型中，这个组件的引用 ID 为 VALVE_4_OUT，但是在2D 原理图中，它的引用 ID 为 VALVE_A_OUT。VALVE_A_OUT 在3D 模型中并未被引用，所以被认为是多余的组件。</p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

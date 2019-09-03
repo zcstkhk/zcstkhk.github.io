@@ -1,0 +1,182 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>投影视图</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/drafting/drawing_layout/projected_view.gif" border="0">&nbsp;投影视图</h2>
+         
+         <p>您可以从现有的基本、图纸、正交视图或辅助视图投影视图。当您环绕父视图的中心移动光标时，NX 会自动判断正交对齐和辅助对齐。</p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p><strong>首选项→制图</strong>对话框的<strong>常规</strong>选项卡中的<strong>自动启动投影视图命令</strong>选项控制投影视图命令的自动启动。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         
+         <p>系统将自动判断：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>使用<span id="popup4" dojoType="dijit.layout.ContentPane" class="popup glossaryLink">铰链线</span>做为参考，将视图旋转至正交空间内</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>矢量方向是与铰链线垂直的。指示从父视图朝哪个方向投影的箭头</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>您可以手工定义铰链线，也可以在放置视图之前反转投影方向。</p>
+         
+         
+         <div class="division">
+            
+           <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">制图</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p><strong>图纸</strong>→<strong>投影视图</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/drafting/drawing_layout/projected_view.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"><strong>图纸</strong>→<strong>添加视图下拉菜单</strong>列表→<strong>投影视图</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/drafting/drawing_layout/projected_view.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>插入→视图→投影</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">快捷菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">右击视图边界→<strong>添加投影视图</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">部件导航器</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">右击视图节点→<strong>添加投影视图</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div dojoType="dijit.TooltipDialog" id="popup1_dialog" class="glossaryPopup" style="display:none;" closable="true">
+            <div class="exitGlossaryPopup"><a href="#" onclick="closeToolTipDialog('popup1_dialog')"><img src="../xps3/graphics/exit2.png"></a></div>
+            <p><span class="glossaryTerm">base view:
+</span>Modeling view imported into a drawing. The base view can be a stand&ndash;alone view or a parent view for other derived view types, such as a section view. 
+            </p>
+         </div>
+         <div dojoType="dijit.TooltipDialog" id="popup2_dialog" class="glossaryPopup" style="display:none;" closable="true">
+            <div class="exitGlossaryPopup"><a href="#" onclick="closeToolTipDialog('popup2_dialog')"><img src="../xps3/graphics/exit2.png"></a></div>
+            <p><span class="glossaryTerm">drawing view:
+</span>Empty view used to manually create a sketch instead of displaying an associative base view of a model.
+            </p>
+         </div>
+         <div dojoType="dijit.TooltipDialog" id="popup3_dialog" class="glossaryPopup" style="display:none;" closable="true">
+            <div class="exitGlossaryPopup"><a href="#" onclick="closeToolTipDialog('popup3_dialog')"><img src="../xps3/graphics/exit2.png"></a></div>
+            <p><span class="glossaryTerm">auxiliary view:
+</span>Drawing view projected from an existing view perpendicular to an angular hinge line.
+            </p>
+         </div>
+         <div dojoType="dijit.TooltipDialog" id="popup4_dialog" class="glossaryPopup" style="display:none;" closable="true">
+            <div class="exitGlossaryPopup"><a href="#" onclick="closeToolTipDialog('popup4_dialog')"><img src="../xps3/graphics/exit2.png"></a></div>
+            <p><span class="glossaryTerm">铰链线：</span>用作在图纸的正确正交空间中旋转视图的参考。</p>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

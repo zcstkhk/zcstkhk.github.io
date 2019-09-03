@@ -1,0 +1,12 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"边倒圆和倒斜角",file:"id1073279.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"倒斜角",file:"chamfer_chamfer_ov.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"创建倒斜角",file:"id1391229.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e8",title:"边倒圆",file:"id220751.html",type:"topic",parent:"",children:[
+{id:"d5e9",title:"在钻机外壳上创建倒圆角",file:"id1374729.html",type:"activity",parent:"d5e8"},
+{id:"d5e10",title:"边倒圆选项",file:"id662871.html",type:"topic",parent:"d5e8"},
+{id:"d5e11",title:"可变半径倒圆",file:"xid454355.html",type:"topic",parent:"d5e8"},
+{id:"d5e12",title:"创建可变半径边倒圆",file:"id1011719.html",type:"activity",parent:"d5e8"},
+{id:"d5e13",title:"复习：边倒圆",file:"xid466048.html",type:"topic",parent:"d5e8"}]}
+]}

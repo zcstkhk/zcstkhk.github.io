@@ -1,0 +1,100 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Review</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>复习</h2>
+         <div id="topQuestionsContainer">
+            <div class="questionsHeader">
+               <div class="headerTitle">
+                  <p>问题</p>
+               </div>
+               <div class="quesionButtons">
+                  <div class="qButton" id="qButton_1">
+                     <p>1</p>
+                  </div>
+                  <div class="qButton" id="qButton_2">
+                     <p>2</p>
+                  </div>
+               </div>
+            </div>
+            <div id="questionsContainer">
+               <div class="question" id="question1" answered="false" numanswers="3" questiontype="fillInBlank">
+                  <p>当使用2D 种子网格来生成3D 网格时，2D 种子网格与3D 网格是否都需要完全考虑结构刚度？</p>
+                  <p class="questionInstruction">请选择一个答案</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a1" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q1a1" type="radio" correct="no" name="question1Grp"></td>
+                           <td>
+                              <p>是，都需要考虑</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a2" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q1a2" type="radio" correct="yes" name="question1Grp"></td>
+                           <td>
+                              <p>否，只有3D 网格需要</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a3" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q1a3" type="radio" correct="no" name="question1Grp"></td>
+                           <td>
+                              <p>否，只有2D 网格需要</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div class="question" id="question2" answered="false" numanswers="3" questiontype="fillInBlank">
+                  <p>假设您想要对两个彼此连续紧邻的体划分网格，如果连续网格是在重叠处各个网格中的单元共享节点，应该使用哪种网格配对条件？</p>
+                  <p class="questionInstruction">请选择一个答案</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a1" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q2a1" type="radio" correct="yes" name="question2Grp"></td>
+                           <td>
+                              <p><strong>粘连重合</strong></p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a2" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q2a2" type="radio" correct="no" name="question2Grp"></td>
+                           <td>
+                              <p><strong>粘连非重合</strong></p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a3" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q2a3" type="radio" correct="no" name="question2Grp"></td>
+                           <td>
+                              <p><strong>自由重合</strong></p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div id="showFeedbackContainer"><span showLabel="true" id="feedbackButton" title="Show feedback" dojoType="xps.form.Button" onClick="showQuestionFeedback()">显示答案</span></div>
+            </div>
+            <div class="helpTextContainer">
+               <p class="questionFeedback" id="incorrect">错误！</p>
+               <p class="questionFeedback" id="correct">正确！</p>
+               <div class="questionHelp" id="questionHelp1">
+                  <p>3D 网格需要考虑结构刚度，要使求解器忽略2D 种子网格，在创建2D 种子网格时清除<strong>将网格导出至求解器选项</strong></p>
+               </div>
+               <div class="questionHelp" id="questionHelp2">
+                  <p>对于<strong>粘连重合</strong>，软件在源面和目标面之间进行几何体和网格匹配；对于<strong>粘连非重合</strong>，软件在源面和目标面相互重叠的区域中创建连接；对于<strong>自由重合 </strong>，软件将对齐源面和目标面上的网格，但不会连接网格。</p>
+               </div>
+            </div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

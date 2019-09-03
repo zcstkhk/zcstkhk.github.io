@@ -1,0 +1,51 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>使用 CAE 模型文件</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>使用 CAE 模型文件</h2>
+         
+         <p>CAE 模型是一个包含执行分析所需的所有数据的装配，最简单的 CAE 模型由两个文件构成：</p>
+         
+         <ul>
+            
+            <li>
+              <p><em>仿真文件</em>(.sim)：是一个包含 FEM 组件的 NX 装配，边界条件以及解算方案都将储存在仿真文件中</p>
+            </li>
+            <li>
+              <p><em>FEM 文件</em>(.fem)：FEM 文件中包含网格数据与物理及材料属性，它是仿真文件的一个组件。</p>
+            </li>
+            
+         </ul>
+         
+         
+         <p>CAE 模型与包含在 CAD 部件(.prt)文件中的模型几何体保持关联，您可以：</p>
+         
+         <ul>
+            
+            <li>
+              <p>创建<em>理想化部件</em>来管理特定于分析的几何体修改，主模型是理想化部件的一个组件，所有的修改都将随理想化部件文件保存，并且原始的主模型几何体保持不变。</p>
+            </li>
+            <li>
+              <p>将您的模型直接与 NX 主模型部件关联。</p>
+            </li>
+            
+         </ul>
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

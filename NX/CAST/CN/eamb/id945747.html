@@ -1,0 +1,141 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>拉伸链接的草图并用它从定位器中移除材料</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>拉伸链接的草图并用它从定位器中移除材料</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在<strong>特征</strong>工具条上，点击<strong>拉伸</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/modeling/form_feature/extrude.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在选择条上设置下列选项：</p>
+                  <ul class="unmarkedList">
+                    <li>
+                      <p><strong>选择范围</strong> = <strong>整个装配</strong></p>
+                    </li>
+                    <li>
+                      <p>已激活<strong>创建部件间链接</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/selection_bar/create_interpart_link.gif" border="0"></p>
+                    </li>
+                    <li>
+                      <p><strong>曲线规则</strong> = <strong>特征曲线</strong></p>
+                    </li>
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>选择如图所示的草图。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave_geometry_linker/act_design_in_context_wave_link3.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>确保预览的体穿过定位器指向上方，如果不是，双击手柄以反转方向。</p>
+                  <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave_geometry_linker/act_design_in_context_wave_link5.png"></p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>在<strong>设置</strong>组中，设置如下选项：</p>
+                  <p>开始<strong>距离</strong> = <strong>0</strong></p>
+                  <p><strong>结束</strong> = <strong>直至延伸部分</strong></p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>选择定位器的上表面。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave_geometry_linker/act_design_in_context_wave_link6.png"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>拉伸特征延伸到此，同时被修剪至定位器的顶面。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave_geometry_linker/act_design_in_context_wave_link7.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>在<strong>布尔</strong>组中的<strong>布尔</strong>列表中选择<strong>求差</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>定位器在图形窗口中被选定为自动判断的被移除材料的体。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave_geometry_linker/act_design_in_context_wave_link8.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>材料将从定位器中被移除。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave_geometry_linker/act_design_in_context_wave_link9.png"></p>
+                     
+                     <p>如果您对<strong>des02_baseplate</strong>做了额外的更改，定位器修剪的块也将更新。</p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

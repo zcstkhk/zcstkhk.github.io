@@ -1,0 +1,14 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"设置装配加载选项并打开装配文件",file:"id967522.html",type:"topic",parent:""},
+{id:"d7e3",title:"对泵装配开始新序列",file:"id727391.html",type:"topic",parent:""},
+{id:"d7e4",title:"定义已忽略组件",file:"id967681.html",type:"topic",parent:""},
+{id:"d7e5",title:"拆卸泵装配",file:"id967683.html",type:"topic",parent:""},
+{id:"d7e6",title:"配置装配导航器中的列",file:"id967685.html",type:"topic",parent:""},
+{id:"d7e7",title:"装配第一个转子组",file:"id967687.html",type:"topic",parent:""},
+{id:"d7e8",title:"对序列指定细节属性",file:"id967689.html",type:"topic",parent:""},
+{id:"d7e9",title:"装配第二个转子组",file:"id967691.html",type:"topic",parent:""},
+{id:"d7e10",title:"添加一个摄像步",file:"id967693.html",type:"topic",parent:""},
+{id:"d7e11",title:"添加另一个摄像步和一个暂停步",file:"id967695.html",type:"topic",parent:""},
+{id:"d7e12",title:"为泵驱动底板添加一个步骤",file:"id967697.html",type:"topic",parent:""},
+{id:"d7e14",title:"为泵箱和泵盖添加步骤",file:"id967699.html",type:"topic",parent:""},
+{id:"d7e15",title:"回放序列",file:"id967922.html",type:"topic",parent:""}]}

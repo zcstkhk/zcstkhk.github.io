@@ -1,0 +1,189 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>将 Motion Plant 块与框图连接</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>将 Motion Plant 块与框图连接</h2>
+         <p>在 MATLAB Simulink 中执行这些步骤，要获取更多关于这些步骤的细节，参见 Simulink 帮助文档。</p>
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>在 <strong>steam_force.mdl</strong> 控制系统框图中，双击 <strong>Motion Plant 块</strong>。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>双击下图中 <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball1.gif" border="0"> 所示的 <strong>Dynamic Model</strong>。</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/activities/advanced_topics/cosimulation_6.png"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在 <strong>NXMotion_Step</strong> 输入框中，输入<strong>5000</strong>。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在 <strong>Waiting Time</strong> 输入框中，输入<strong>100</strong>。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>点击 <strong>OK</strong>。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在 Motion Plant 块中，注意看您在先前的步骤中定义的工厂输出的名称，以及它们在 <strong>Demux</strong> 上的位置。</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/activities/advanced/cosim_plant_block_detail.png"></p>
+               
+               <p>各个工厂输出的位置对您该把工厂输出连接到控制框图的哪里是很重要的。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>保存并关闭 Motion Plant 块。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在控制系统框图中，选择输入和输出连接器的末端，并将它们拖动到 Motion Plant 块上合适的输入和输出线头处。当您将它们放到与线头足够近的位置时，它们将捕捉这些位置，连接器必须与合适的线头相连。</p>
+               
+               <table border="0" cellpadding="4" cellspacing="2" align="center">
+                  
+                  <colgroup span="1">
+                     
+                     <col span="1">
+                     
+                     <col span="1">
+                  </colgroup>
+                  
+                  <thead>
+                     
+                     <tr>
+                        
+                        <td bgcolor="#B0B0B0" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">控制框图中的连接器</p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#B0B0B0" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin">工厂输入/输出线头</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </thead>
+                  
+                  <tbody>
+                     
+                     <tr>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>plant input force on piston</strong></p>
+                           
+                        </td>
+                        
+                        <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>force_plant_input</strong></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr bgcolor="#F0F0F0">
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>p out piston vel</strong></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>piston_dir_plant_output</strong></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr bgcolor="#F0F0F0">
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>p out flywheel speed</strong></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>tachometer_plant_output</strong></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr bgcolor="#F0F0F0">
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>p out desired speed</strong></p>
+                           
+                        </td>
+                        
+                        <td colspan="1" rowspan="1">
+                           
+                           <p class="no-bottom-margin"><strong>throttle_plant_output</strong></p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </tbody>
+                  
+               </table>
+               
+               <p>当完成连线后，框图应该看起来有些像这样：</p>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/activities/advanced/cosim_plant_diagram.png"></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>选择 <strong>File&rarr;Save</strong> 以保存控制系统框图。</p>
+               
+            </li>
+            
+         </ol>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,350 @@
+/* $Id: $ */
+/*
+bcprt
+Copyright (c) 2005 UGS Corp.
+
+All Rights Reserved. 
+
+This software and related documentation are proprietary to UGS Corp.
+ecprt
+*/
+
+a:link { color: blue }
+
+.bodydocs { 
+   background: white;
+   font-family: 'Arial', 'Helvetica', 'Sans-Serif'
+   }
+
+.bodytbar { background: #f6f6f6 }
+
+.bodybtns { 
+   background: #f6f6f6;
+   font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+   font-weight: bold;
+   font-size: 10pt
+   }
+
+.bodycont { 
+   background: #f6f6f6;
+   font-size: 10pt;
+   font-family: 'Arial', 'Helvetica', 'Sans-Serif'
+   }
+
+.booktitle { 
+   color: black;
+   text-align: center;
+   margin-top: 22pt;
+   font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+   font-size: 22pt;
+   font-style: normal
+   }
+
+.booktype { 
+   color: black;
+   text-align: center;
+   margin-top: 12pt;
+   font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+   font-size: 12pt;
+   font-style: normal
+   }
+
+.bookpubnrevl { 
+   color: black;
+   text-align: center;
+   margin-top: 25pt;
+   font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+   font-size: 10pt;
+   font-style: normal
+   }
+
+.bookstatus { 
+   color: black;
+   text-align: center;
+   margin-top: 25pt;
+   font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+   font-size: 18pt;
+   font-style: normal;
+   font-weight: bold
+   }
+
+.disclaimer {
+   border: 1pt solid black;
+   margin-top: 50pt;
+   margin-left: 1.2in;
+   margin-right: 1.2in;
+   padding: .1in .1in .1in .1in;
+   color: black;
+   font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+   font-size: 10pt;
+   font-style: normal
+   }
+
+.toctitle { 
+   color: black;
+   font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+   font-size: 14pt;
+   font-style: italic
+   }
+
+.tocentry {
+   font-family: 'Arial', 'Helvetica', 'Sans-Serif'
+   }
+
+.titlebar { 
+   color: black;
+   font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+   font-size: 16pt;
+   font-weight: bold
+   }
+
+.fullhelp { 
+      color: black;
+      text-align: right;
+      font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+      font-size: 12pt;
+      font-style: italic;
+      font-weight: bold;
+      }
+
+.parttitle { 
+      color: #000080;
+      font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+      font-size: 24pt;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 29pt
+      }
+
+.parttitletf {
+      color: #000080;
+      font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+      font-size: 24pt;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 29pt
+      }
+
+.secttitle { 
+      color: #000080;
+      font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+      font-size: 24pt;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 29pt
+      }
+
+.secttitletf {
+      color: #000080;
+      font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+      font-size: 15pt;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 16pt
+      }
+
+.sect1title { 
+      color: #000080;
+      font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+      font-size: 18pt;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 22pt
+      }
+
+.sect1titletf {
+      color: #000080;
+      font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+      font-size: 15pt;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 16pt
+      }
+
+.sect2title { 
+      color: #000080;
+      font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+      font-size: 18pt;
+      font-style: italic;
+      font-weight: bold;
+      line-height: 22pt;
+      }
+
+.sect2titletf {
+      color: #000080;
+      font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+      font-size: 15pt;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 16pt;
+      }
+
+.sect3title { 
+      color: #000080;
+      font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+      font-size: 14pt;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 17pt
+      }
+
+.sect3titletf {
+      color: #000080;
+      font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+      font-size: 15pt;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 16pt
+      }
+
+.sect4title { 
+      color: #000080;
+      font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+      font-size: 14pt;
+      font-style: italic;
+      font-weight: bold;
+      line-height: 17pt
+      }
+
+.sect4titletf {
+      color: #000080;
+      font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+      font-size: 15pt;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 16pt
+      }
+
+.sect5title { 
+      color: #000080;
+      font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+      font-size: 12pt;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 14pt
+      }
+
+.sect5titletf {
+      color: #000080;
+      font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+      font-size: 15pt;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 16pt
+      }
+
+.sidebar { 
+      color: #000080;
+      font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+      font-size: 12pt;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 14pt
+      }
+
+.sidebartf {
+      color: #000080;
+      font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+      font-size: 14pt;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 13pt
+      }
+
+.qsecttitle { 
+      color: black;
+      font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+      font-size: 15pt;
+      font-weight: bold;
+      line-height: 17pt
+      }
+
+.qshtitle { 
+      color: black;
+      font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+      font-size: 10pt;
+      font-weight: bold;
+      line-height: 12pt
+      }
+
+.qclas { 
+      color: black;
+      font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+      font-size: 10pt;
+      font-weight: bold;
+      line-height: 12pt
+      }
+
+.alphhead { 
+      color: black;
+      font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+      font-size: 15pt;
+      font-weight: bold;
+      line-height: 17pt
+      }
+
+.screen {
+      font-family: 'Arial', 'Helvetica', 'Sans-Serif';
+      font-weight: bold;
+      }
+
+.keyword {
+      text-transform: uppercase;
+      font-size: 75%
+      }
+
+.indent      { margin-left: 20pt; }
+.listtitle   { margin-left: -20pt;
+               font-weight: bold }
+.qshcontent  { margin-left: 30pt; }
+.nexttopic   { margin-top: 15pt }
+.unmarked    { margin-top: 6pt }
+.unmarkedList { list-style-type: none }
+.hangingList { list-style: none;
+               margin-left: 0em;
+               padding-left: 2.5em;
+               text-indent: -2.5em }
+
+.applicationName { font-weight: normal; font-style: italic }
+.argument    { font-weight: normal; font-style: italic }
+.attention   { font-weight: bold;   font-style: normal }
+.citation    { font-weight: normal; font-style: italic }
+.colhead     { font-weight: bold;   font-style: normal }
+.command     { font-weight: bold;   font-style: normal }
+.condense    { margin-top: 0pt }
+.emph        { font-weight: normal; font-style: italic }
+.emph2       { font-weight: bold;   font-style: normal }
+.entries     { font-weight: normal; font-style: normal }
+.exponent    { font-weight: normal; font-style: normal }
+.file        { font-weight: normal; font-style: italic }
+.footnoteref { font-weight: normal; font-style: normal }
+.inputfield  { font-weight: normal; font-style: normal;
+               text-decoration: underline }
+.literal     { font-weight: bold;   font-style: normal }
+.optional    { font-weight: normal; font-style: italic }
+.path        { font-weight: normal; font-style: italic }
+.radix       { font-weight: normal; font-style: normal }
+.required    { font-weight: bold;   font-style: normal }
+.series      { font-weight: normal; font-style: normal }
+.term        { font-weight: bold;   font-style: normal }
+.userinput   { font-weight: bold;   font-style: normal }
+.usertext    { font-weight: normal; font-style: italic }
+
+.uppercase  { text-transform: uppercase }
+.lowercase  { text-transform: lowercase }
+.indexNoFile { color: gray; }
+
+UL          { list-style: disc outside   }
+UL UL       { list-style: circle outside }
+UL UL UL    { list-style: disc outside   }
+UL UL UL UL { list-style: circle outside }
+
+LI          { margin-top: 6pt }
+
+P           { margin-top: 6pt;
+              margin-bottom: 6pt }
+
+PRE         { font-family: Courier }
+
+TABLE       { margin-top: 0pt }
+

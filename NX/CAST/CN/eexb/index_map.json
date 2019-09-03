@@ -1,0 +1,15 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"使用表达式",file:"id1048911.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"导入与导出表达式",file:"exportimport.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"导出与导入表达式",file:"id746426.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e7",title:"表达式中的附注",file:"id643976.html",type:"topic",parent:"",children:[
+{id:"d5e8",title:"复习：添加附注到表达式",file:"xid487387.html",type:"topic",parent:"d5e7"}]},
+{id:"d5e9",title:"列出表达式",file:"genid_listing_expressions_26_938.html",type:"topic",parent:""},
+{id:"d5e10",title:"计算器功能",file:"id643971.html",type:"topic",parent:""},
+{id:"d5e11",title:"剪切与粘贴表达式",file:"genid_cutting_and_pasting_expressions_25_719.html",type:"topic",parent:""},
+{id:"d5e12",title:"编辑表达式",file:"expressions_exp_edit_ht.html",type:"topic",parent:""},
+{id:"d5e13",title:"重命名、注释以及列出表达式",file:"id746457.html",type:"activity",parent:""},
+{id:"d5e14",title:"部件间表达式",file:"interpart.html",type:"topic",parent:""},
+{id:"d5e16",title:"单位转换及管理",file:"genid_unit_conversion_and_management_8_282.html",type:"topic",parent:""}
+]}

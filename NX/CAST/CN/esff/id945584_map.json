@@ -1,0 +1,8 @@
+{identifier:"id",label:"title",items:[
+{id:"d11e2",title:"打开部件并显示工序导航器",file:"id945588.html",type:"topic",parent:""},
+{id:"d11e3",title:"创建工序",file:"id995086.html",type:"topic",parent:""},
+{id:"d11e4",title:"定义驱动几何体",file:"id995088.html",type:"topic",parent:""},
+{id:"d11e5",title:"定义材料侧和切削方向",file:"id995090.html",type:"topic",parent:""},
+{id:"d11e6",title:"定义步距",file:"id995092.html",type:"topic",parent:""},
+{id:"d11e7",title:"定义插补的刀轴",file:"id995094.html",type:"topic",parent:""},
+{id:"d11e8",title:"生成刀轨",file:"id995096.html",type:"topic",parent:""}]}

@@ -1,0 +1,85 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>设计变量</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>设计变量</h2>
+         
+         <p><em>设计变量</em>是设计区域中各单元的密度，其值可以通过优化修改。为了满足设计目标，优化将在各个单元中指派一个相关密度，值为0(软单元)到1(硬单元)之间。</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>值为0表示空单元(其材料密度约等于0)，下限通常为一个接近0的值(比如0.001)，以防止奇异</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>值为1表示实体单元或“硬”单元(材料密度约等于1)</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p>可以使用以下任意 NX Nastran 单元类型来定义设计区域：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>CHEXA、CTETRA、CPENTA </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>CQUAD、CQUAD4、CQUAD8、CQUADR、CSHEAR、CQUADX</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>CTRIA3、CTRIA6、CTRIAR、CTRIAX、CTRAX6</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>CBAR、CBEAM、CBEND、CBUSH、CGAP、CONM1、CMASS1</p>
+               
+            </li>
+            
+         </ul>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>拓扑优化不支持棱锥单元</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

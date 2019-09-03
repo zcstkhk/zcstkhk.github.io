@@ -1,0 +1,14 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"Thermal (heat transfer) analysis",file:"id1298349.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"Thermal analysis",file:"genid_thermal_analysis_introduction_22_331.html",type:"topic",parent:""},
+{id:"d5e7",title:"Using materials for a thermal analysis",file:"genid_using_materials_for_a_thermal_analysis_22_246.html",type:"topic",parent:""},
+{id:"d5e9",title:"Defining thermal material properties",file:"genid_thermal_material_properties_23_596.html",type:"topic",parent:""},
+{id:"d5e11",title:"Defining constraints and loads for a thermal analysis",file:"genid_defining_boundary_conditions_for_a_thermal_analysis_23_443.html",type:"topic",parent:""},
+{id:"d5e14",title:"Setting thermal solution attributes",file:"genid_setting_thermal_solution_attributes_28_465.html",type:"topic",parent:""},
+{id:"d5e16",title:"Thermal analysis results types",file:"genid_reviewing_thermal_analysis_results_19_276.html",type:"topic",parent:""},
+{id:"d5e18",title:"Reviewing thermal results",file:"genid_reviewing_thermal_results_19_251.html",type:"topic",parent:""},
+{id:"d5e20",title:"Thermal stresses and strains",file:"genid_thermal_stresses_and_strains_14_368.html",type:"topic",parent:""},
+{id:"d5e22",title:"Review",file:"id1622614.html",type:"topic",parent:""},
+{id:"d5e24",title:"Thermal analysis",file:"xid481245.html",type:"activity",parent:""}
+]}

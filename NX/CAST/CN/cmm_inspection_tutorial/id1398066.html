@@ -1,0 +1,180 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Set your PCS Y origin and X alignment</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Set your PCS Y origin and X alignment</h2>
+         
+         <p>In this activity, you will use the constructed line feature you created in the last activity to set the PCS Y origin and to align the X-axis of the PCS to that of the CMM.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>Set the PCS Y origin to align with the line feature origin on the part.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <ol type="a">
+                     <li>
+                        
+                        
+                        <p>On the <strong>Insert</strong> toolbar, click <strong>Alignment</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/nx_cmm/insert/create_alignment.gif" border="0">.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Alignment</strong> dialog box, from the <strong>Type</strong> list, select <strong>Translate PCS Origin</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>YP</strong> group, from the <strong>Method</strong> list, select <strong>Measured Feature</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>From the <strong>Select Feature</strong> list, select <strong>POS_XLINE</strong>.
+                        </p>
+                        
+                        
+                        <div class="stepInformation">
+                           
+                           <p><strong>POS_XLINE</strong> is obviously not directly measured. However, because it is the design feature for the constructed line feature <strong>CONST_XLINE</strong>, its measured location values are mathematically derived from the intersection of the two measured planes between which it lies.
+                           </p>
+                           
+                        </div>
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>PCS Name</strong> box, type <span class="userInput">PCS_Y_ORIG</span>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Operation Name</strong> box, type <span class="userInput">TRANS_Y_ORIG</span> and click <strong>OK</strong>.
+                        </p>
+                        
+                        
+                        <div class="stepResult">
+                           
+                           <p>The PCS is now translated to the line&rsquo;s Y origin.</p>
+                           
+                           <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/alignment/align_tut_19.gif"></p>
+                           
+                        </div>
+                        
+                     </li>
+                  </ol>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>Rotate the PCS about its Z-axis to align its X axis with that of the CMM. </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <ol type="a">
+                     <li>
+                        
+                        
+                        <p>On the <strong>Insert</strong> toolbar, click <strong>Alignment</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/nx_cmm/insert/create_alignment.gif" border="0">.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Alignment</strong> dialog box, from the <strong>Type</strong> list, select <strong>Rotate PCS</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Rotation Parameters</strong> group, from the <strong>Method</strong> list, select <strong>Measured Feature</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>From the <strong>Rotation Axis</strong> list, select <strong>Z-axis</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>From the <strong>Select Feature</strong> list, select <strong>POS_XLINE</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>PCS Name</strong> box, type <span class="userInput">PCS_XDIR</span>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>In the <strong>Operation Name</strong> box, type <span class="userInput">ROT_ALIGN_XDIR</span> and click <strong>OK</strong>.
+                        </p>
+                        
+                        
+                     </li>
+                     <li>
+                        
+                        
+                        <p>Save your inspection setup file.</p>
+                        
+                        
+                     </li>
+                  </ol>
+               </div>
+            </li>
+         </ol>
+         <div class="stepListResult">
+            
+            <p>You have constrained two more degrees of freedom by halting any movement along the Y-axis and aligning the X-axis of the PCS with the X-axis of the machine.</p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

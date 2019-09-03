@@ -1,0 +1,71 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>采样时间和最大步长</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>采样时间和最大步长</h2>
+         
+         <p>当设置您的协同仿真时，应该考虑真实控制系统与机械系统，在协同仿真期间您想要的更新频率：</p>
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>在指定的<strong>采样时间</strong>中，控制系统在每个时间步从 NX <strong>工厂输出</strong>接收关于机构状态信息(比如位移、速度或者加速度)。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>控制系统随<strong>工厂输出</strong>中的信号响应，<strong>工厂输出</strong>为机构中的运动副提供驱动、力或者力矩载荷。</p>
+               
+            </li>
+            
+         </ol>
+         
+         <p>理想情况下栽协同仿真期间，控制系统和机械系统在移动时使用相同的时间步大小，因此，您应该对机构使用尽可能接近，但不要大于控制系统时间步大小的时间步。</p>
+         
+         <p>同时，控制系统和机构的时间步大小应该足够小以适应想要的更新频率。采样时间应该设置为1/[<span class="variableText">想要的频率</span>]。</p>
+         
+         <p>例如，假设您想要的更新频率是10000 Hz，那么应该将采样时间设置为0.0001(1/10000)，并且机构与控制系统的最大步长参数都应该设置为0.0001。</p>
+         
+         <div class="division">
+            
+            <h3>协同仿真起始时间</h3>
+            
+            <p>您用来主持协同仿真的应用程序将决定运动何时开始：</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>NX 运动仿真主持 &mdash; 运动起始于第一个采样时间。</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Simulink 主持 &mdash; 运动起始于时间=0处。</p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

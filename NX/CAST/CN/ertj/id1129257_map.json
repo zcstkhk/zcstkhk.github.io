@@ -1,0 +1,10 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"查看部件",file:"id1129261.html",type:"topic",parent:""},
+{id:"d7e3",title:"增加端口显示长度",file:"id1129263.html",type:"topic",parent:""},
+{id:"d7e4",title:"将泵添加到管线装配中",file:"id1129265.html",type:"topic",parent:""},
+{id:"d7e5",title:"旋转视图",file:"id1129267.html",type:"topic",parent:""},
+{id:"d7e6",title:"将溢流阀添加到装配中",file:"id1129269.html",type:"topic",parent:""},
+{id:"d7e7",title:"定义管道通路的起始项",file:"id1130499.html",type:"topic",parent:""},
+{id:"d7e8",title:"定义管道通路的第一个结束项",file:"id1130500.html",type:"topic",parent:""},
+{id:"d7e9",title:"定义管道通路的第二个结束项",file:"id1130501.html",type:"topic",parent:""},
+{id:"d7e10",title:"创建管道通路",file:"id1130502.html",type:"topic",parent:""}]}

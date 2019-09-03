@@ -1,0 +1,54 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>粘贴特征设置</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>粘贴特征设置</h2>
+         
+         <div class="division">
+            
+            <h3>表达式映射方法</h3>
+            
+            <p>使用这些选项来指定粘贴的特征中的表达式应如何与源特征中的原始表达式相关。</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p><strong>新建</strong> &mdash; 为粘贴特征创建新表达式。这些表达式与源特征中的原先的表达式分开。例如，原始特征中的 p0 可以变为粘贴的特征中的 p10。两个表达式中任意一个表达式的值都可以在不影响另一个的情况下被修改。</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><strong>链接至原先的</strong> &mdash; 为粘贴特征创建新表达式，并将其链接到源特征中的原先的表达式。例如，如果原始特征中的表达式 p0 变为粘贴特征中的表达式 p10，则 p10 将定义为 p10=p0。</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><strong>重用原先的</strong> &mdash; 使用了原先的表达式的一个实例。                  如果要复制和粘贴同一部件内的某一特征，则在源特征和粘贴特征中会显示相同的表达式名称（如，p0）。如果要复制特征到其他部件中，则会为原始表达式创建一个新的表达式名称。</p>
+               </li>
+            </ul>
+            <p>为表达式选择的<strong>映射方法</strong>选项还决定了在解析父引用时的灵活程度。 </p>
+            <p>如果指定<strong>链接至原先的</strong>或<strong>重用原先的</strong>，则对原始表达式的相依性意味着您打算使用与创建源特征时所用的相同方法解析父引用。例如，如果某个矢量原先由两个点指定，则矢量父引用也必须通过指定两个点来解析。 </p>
+            <p>指定<strong>新建</strong>表明您要从创建源特征时可用的所有方法中进行选择。例如，矢量父引用可以通过任何矢量创建方法进行解析，如<strong>两点</strong>、<strong>线性边</strong>或<strong>面的法向</strong>。</p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

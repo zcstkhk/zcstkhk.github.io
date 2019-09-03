@@ -1,0 +1,128 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>通过曲线网格对话框的输出曲面选项</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>通过曲线网格对话框的输出曲面选项</h2>
+         
+         <p><strong>着重</strong>将告诉 NX 在计算曲面时要强调哪些曲线集。此选项中有三个选项。</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>两者皆是</strong>：将曲面放置在主曲线和交叉曲线之间，这些线串不一定完全相交，但是它们之间的距离必须在交点公差允许范围之内。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>主线串</strong>：在主曲线中放置曲面</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>交叉线串</strong>：将在交叉曲线处放置曲面</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/through_curve_mesh/curve_mesh_emphasis_pix_1.png"></p>
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>主曲线</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>交叉曲线</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>强调主曲线</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>强调两者</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>强调交叉曲线</p>
+               
+            </li>
+            
+         </ol>
+         
+         <p><strong>构造</strong>提供三个选项：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>法向</strong>：使用标准步骤建立曲线网格曲面。和其他的&ldquo;构造选项&rdquo;相比，使用此选项将以更多数目的补片来创建体或曲面。 </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>样条点</strong>：允许用户通过为输入曲线使用点和这些点处的斜率值来创建体。对于此选项，选择的曲线必须是有相同数目定义点的单根 B 曲线。   这些曲线通过它们的定义点临时重新参数化(保留所有用户定义的相切值)。然后这些临时的曲线用于创建体。这有助于用更少的补片创建更简单的体。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>简单</strong>：使用或不使用指定约束来创建曲面。</p>
+               
+               <p>这将可能创建最简单的曲线网格曲面，包括补片和数学意义上。</p>
+               
+               <p>线串必须具有相似的，简单的数学表达，可以选择一个模板曲线作为住主线串，一个作为交叉线串。如果没有选择模板，系统会自动帮助完成。</p>
+               
+               <p>公差值会被忽略，产生曲线将被重新调整，以反映模板的阶次和段数。</p>
+               
+               <p>如果模板线串有拐角或不止一条曲线，创建的结果面会被分成多个面。</p>
+               
+               <table class="attentionTable attn_note">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">注释</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>打开<strong>简单</strong>选项时，因为是用户而不是软件在选择模板曲线，所以很可能与原始曲线的偏差会大于正常值。应该在曲面与输入曲线的偏差不重要时使用此选项。</p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

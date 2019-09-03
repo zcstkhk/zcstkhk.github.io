@@ -1,0 +1,158 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Cleanup Utility enhancements</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Cleanup Utility enhancements</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>The <span class="uiTerm">Cleanup Utility</span> command is enhanced as follows:
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>The thickness of the resulting Sheet Metal part is inferred after you select the solid body for cleanup.</p>
+                  
+                  <p>If you select the <span class="uiTerm">Infer Thickness</span> check box, NX infers the thickness of the solid body; otherwise, NX uses the user-defined value.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>B-spline faces in a model are recognized and converted to a simpler form, such as planar or cylindrical.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Improved support to recognize sharp edges in a model and convert them to bend regions.</p>
+                  
+                  <p>The inner sharp edge is replaced with a bend face of radius 0.02 mm. The model can have an inner sharp edge with an outer bend face, an outer sharp edge with an inner bend face, or both sharp edges.</p>
+                  
+                  <p>For example, if a model has an inner sharp edge, an inner bend of radius 0.02 mm is created. The corresponding outer bend radius is equal to the sum of the inner bend radius and the input thickness.</p>
+                  
+                  <p align="left"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/nx_sheet_metal/cleanup_edges.gif"></p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>Why should I use it?</h3>
+            
+            <p>The enhancements help you to clean up areas of a model that do not meet the requirements of the <span class="uiTerm">Convert to Sheet Metal</span> command.
+            </p>
+            
+            <p>They also help you to clean up imported parts and improve successful conversion of non-NX Sheet Metal parts to NX Sheet Metal parts.</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">NX Sheet Metal</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Toolbar</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">NX Sheet Metal</span>&rarr;<span class="uiTerm">Convert Drop&ndash;down</span> list&rarr;<span class="uiTerm">Cleanup Utility</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sheet_metal/sheet_metal_feature/sheet_metal_cleanup_utility.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Insert</span>&rarr;<span class="uiTerm">Convert</span>&rarr;<span class="uiTerm">Cleanup Utility</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Thickness</span> group&rarr;<span class="uiTerm">Infer Thickness</span> check box
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

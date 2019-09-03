@@ -1,0 +1,59 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>了解接触解算方案</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>了解接触解算方案</h2><a name="ndxgenid_spta_glue_47"></a>
+         <a name="ndxgenid_spta_glue_48"></a>
+         <a name="ndxgenid_spta_glue_49"></a>
+         
+         
+         <p>对于一个 NX Nastran 求解，使用的是增广拉格朗日方法，这个方法：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>包含一个罚刚度以加强接触约束</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>加强零渗透条件</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>解算方案在零渗透(满足<strong>接触零公差</strong>)以及接触单元状态更改在指定标准(满足<strong>活动接触单元的百分比</strong>)以下时被认为是收敛。</p>
+         
+         <a name="genid_spta_glue_52"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/contact/contact_example.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>(上) 应用在部件上的接触；(下)求解得出的应力结果</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

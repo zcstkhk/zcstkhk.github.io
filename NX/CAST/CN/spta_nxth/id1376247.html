@@ -1,0 +1,141 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Defining modeling objects</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>定义建模对象</h2>
+         <p>使用建模对象来为指定的实体或整个模型定义特殊的属性，可以从<strong>建模对象管理器</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/simulation/advanced_simulation/modeling_objects.gif" border="0"> 或从解算方案、仿真对象、载荷、约束对话框中创建修改建模对象。</p>
+         <p>NX 热建模对象包括：</p>
+         <ul>
+            
+            <li>
+               
+               <p><strong>碳化烧蚀</strong></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>活动的加热器控制器</strong></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>管压头损失</strong></p>
+               
+            </li>
+            
+            
+            
+            
+            
+            <li>
+               
+               <p><strong>层</strong></p>
+               
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+               
+               <p><strong>热—光属性</strong>/<strong>高级热—光属性</strong></p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>恒温器</strong></p>
+               
+            </li>
+            
+         </ul>
+         <div class="division">
+            
+           <h3>热—光属性</h3>
+            
+            <p>使用<strong>热—光属性</strong>/<strong>高级热—光属性</strong>建模对象来定义发射率，它是所有辐射建模所必需的。</p>
+            
+            <p>在太阳聚焦中的辐射热传递构建中需要<strong>吸收率</strong>，要构建反射和传输效应，也可以定义高级热—光属性is required to model radiative heat transfer in the solar band. To model specular and transmissive effects, you can also define a <span class="uiTerm">Thermo-Optical Properties &mdash; Advanced</span> modeling object with values for: 
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Specular Reflectivity</span></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Transmissivity</span> 
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Index of Refraction</span> 
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>You can model radiation in different bands defining corresponding thermo-optical properties in a <span class="uiTerm">Thermo-Optical Properties &mdash; Advanced</span> modeling object, and choosing one of the following two types:
+            </p>
+            
+            <ul class="unmarkedList">
+               <li>
+                  
+                  <p>Select <span class="uiTerm">Gray</span> to define constant or temperature varying values for infrared <span class="uiTerm">Emissivity</span> and a value for <span class="uiTerm">Absorptivity</span> when want to define properties in the solar spectrum. 
+                  </p>
+                  
+               </li>
+               <li>
+                  
+                  <p>Select <span class="uiTerm">Non-Gray &mdash; Wavelength Dependent</span> to define wavelength dependent values of non-gray <span class="uiTerm">Emissivity</span>, <span class="uiTerm">Specular Reflectivity</span> and <span class="uiTerm">Transmissivity</span>. 
+                  </p>
+                  
+               </li>
+            </ul>
+            
+            <p>Emissivity and absorptivity values can be constant or defined in function of a <span class="emphasis">Bidirectional Reflectance Distribution Function</span> (BRDF). Specular Reflectivity  and Transmissivity can be defined in terms of direction of incidence and angle of incidence.
+            </p>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">Note</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>When you define <span class="uiTerm">Thermo-Optical Properties</span> or <span class="uiTerm">Thermo-Optical Properties &mdash; Advanced</span> for a 2D mesh, you should always first check the element normals to identify the top and bottom sides of the mesh. 
+                     </p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,22 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"解算方案与后处理",file:"id1356675.html",type:"topic",parent:""},
+{id:"d5e5",title:"NX 复合层合板求解器支持",file:"id1356641.html",type:"topic",parent:""},
+{id:"d5e7",title:"结构和层合板后处理报告求解器的结果",file:"id1383362.html",type:"topic",parent:""},
+{id:"d5e9",title:"Nastran 求解器属性",file:"id851976.html",type:"topic",parent:""},
+{id:"d5e11",title:"PCOMP 与 PCOMPG 卡中的 Nastran 层合板导出选项",file:"id851951.html",type:"topic",parent:""},
+{id:"d5e14",title:"Nastran 层合板结果",file:"id851971.html",type:"topic",parent:""},
+{id:"d5e16",title:"壳单元合应力注释",file:"id852196.html",type:"topic",parent:""},
+{id:"d5e18",title:"Nastran 壳单元合应力约定",file:"id1370913.html",type:"topic",parent:""},
+{id:"d5e20",title:"复习",file:"id1383367.html",type:"topic",parent:""},
+{id:"d5e22",title:"选定面或单元的层合板定义",file:"id1216287.html",type:"topic",parent:""},
+{id:"d5e24",title:"层合板结果的高级后处理",file:"id626106.html",type:"topic",parent:""},
+{id:"d5e27",title:"层合板电子表格报告",file:"id626091.html",type:"topic",parent:""},
+{id:"d5e29",title:"层合板电子表格汇总表",file:"id851591.html",type:"topic",parent:""},
+{id:"d5e31",title:"过滤层合板电子表格报告中的结果",file:"id851576.html",type:"topic",parent:""},
+{id:"d5e33",title:"视频：层合板结果的高级后处理",file:"id1383373.html",type:"topic",parent:""},
+{id:"d5e35",title:"层合板图形报告",file:"id626051.html",type:"topic",parent:""},
+{id:"d5e37",title:"视频：层合板结果的图形显示",file:"id1383375.html",type:"topic",parent:""},
+{id:"d5e40",title:"层合板快速报告",file:"id1010026.html",type:"topic",parent:""},
+{id:"d5e42",title:"分层的自行车挡泥板结构分析",file:"id852811.html",type:"activity",parent:""},
+{id:"d5e44",title:"复习",file:"id1383377.html",type:"topic",parent:""}
+]}

@@ -1,0 +1,100 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Review</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Review</h2>
+         <div id="topQuestionsContainer">
+            <div class="questionsHeader">
+               <div class="headerTitle">
+                  <p>Question</p>
+               </div>
+               <div class="quesionButtons">
+                  <div class="qButton" id="qButton_1">
+                     <p>1</p>
+                  </div>
+                  <div class="qButton" id="qButton_2">
+                     <p>2</p>
+                  </div>
+               </div>
+            </div>
+            <div id="questionsContainer">
+               <div class="question" id="question1" answered="false" numanswers="4" questiontype="allThatApply">
+                  <p>System modeling with superelements offers which of the following advantages?</p>
+                  <p class="questionInstruction">Select all that apply.</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a1" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q1a1" type="checkbox" correct="yes" name="question1Grp"></td>
+                           <td>
+                              <p>Reduces the number of degrees of freedom in the model.</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a2" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q1a2" type="checkbox" correct="yes" name="question1Grp"></td>
+                           <td>
+                              <p>Reduces the number of equations in the solution.</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a3" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q1a3" type="checkbox" correct="yes" name="question1Grp"></td>
+                           <td>
+                              <p>Supports multiple superelement instances.</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a4" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q1a4" type="checkbox" correct="no" name="question1Grp"></td>
+                           <td>
+                              <p>Improves accuracy of results.</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div class="question" id="question2" answered="false" numanswers="2" questiontype="fillInBlank">
+                  <p>An external superelement used in an Advanced Simulation system model must have at least three non-collinear boundary nodes.</p>
+                  <p class="questionInstruction">Select one.</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a1" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q2a1" type="radio" correct="no" name="question2Grp"></td>
+                           <td>
+                              <p>False</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a2" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q2a2" type="radio" correct="yes" name="question2Grp"></td>
+                           <td>
+                              <p>True</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div id="showFeedbackContainer"><span showLabel="true" id="feedbackButton" title="Show feedback" dojoType="xps.form.Button" onClick="showQuestionFeedback()">Show feedback</span></div>
+            </div>
+            <div class="helpTextContainer">
+               <p class="questionFeedback" id="incorrect">Incorrect.</p>
+               <p class="questionFeedback" id="correct">Correct.</p>
+               <div class="questionHelp" id="questionHelp1">
+                  <p>You can reduce the number of DOFs (and consequently the number of equations) to a manageable number. System models support multiple superelement instances. The accuracy of your model, however, depends on your FE modeling and solver knowledge and experience.</p>
+               </div>
+               <div class="questionHelp" id="questionHelp2">
+                  <p>At least three non-collinear boundary nodes are necessary in order to transform the superelement instance with respect to the assembly configuration.</p>
+               </div>
+            </div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Internal and external Part Modules</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Internal and external Part Modules</h2>
+         
+         <p>A Part Module exists either as an internal Part Module solely within the main part file, or as an external Linked Part Module that links the Part Module in the main part file to a corresponding Part Module in another part file using interpart WAVE references.</p>
+         <a name="genid_etmd885_165" id="genid_etmd885_165"></a><table border="0" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="2">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr valign="middle">
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Internal Part Module</span></p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1"></td>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">External Linked Part Module</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/part_module/pmod_internal_part_nav.png"></p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/indent-40.gif"></p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/part_module/pmod_external_part_nav.png"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         
+         <p>When an internal Part Module is converted to an external Linked Part Module:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>Objects in the <span class="uiTerm">Inputs</span> collector are WAVE linked from the main part file to the Linked Part Module file.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The <span class="uiTerm">Work</span> collector and the features that it contains are moved to the Linked Part Module file.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Objects in the <span class="uiTerm">Outputs</span> collector are WAVE linked from the Linked Part Module file to the main part file.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Associativity is preserved between the main part file and the Linked Part Module file.</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

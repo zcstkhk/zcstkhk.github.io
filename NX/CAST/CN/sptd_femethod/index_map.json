@@ -1,0 +1,18 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"设计仿真与有限元方法",file:"id1297949.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"设计仿真概述",file:"genid_product_overview_22_390.html",type:"topic",parent:""},
+{id:"d5e7",title:"设计仿真能为您做什么",file:"genid_what_simulation_can_do_for_you_18_520.html",type:"topic",parent:""},
+{id:"d5e9",title:"有限元分析的流程",file:"genid_finite_element_analysis_process_25_393.html",type:"topic",parent:""},
+{id:"d5e11",title:"解算过程",file:"about_the_solve_process.html",type:"topic",parent:""},
+{id:"d5e14",title:"为何使用有限元分析？",file:"genid_using_finite_element_analysis_12_172.html",type:"topic",parent:""},
+{id:"d5e16",title:"使用 CAE 模型文件",file:"xid482768.html",type:"topic",parent:""},
+{id:"d5e18",title:"仿真导航器",file:"id1620197.html",type:"topic",parent:""},
+{id:"d5e20",title:"可见性控制",file:"id975417.html",type:"topic",parent:""},
+{id:"d5e22",title:"新建实体",file:"id975416.html",type:"topic",parent:""},
+{id:"d5e24",title:"复习",file:"id1619172.html",type:"topic",parent:""},
+{id:"d5e27",title:"编辑与管理实体",file:"id975418.html",type:"topic",parent:""},
+{id:"d5e29",title:"移动仿真导航器中的实体",file:"id975419.html",type:"topic",parent:""},
+{id:"d5e31",title:"仿真文件视图",file:"id1620199.html",type:"topic",parent:""},
+{id:"d5e33",title:"设计仿真介绍",file:"xid480712.html",type:"activity",parent:""}
+]}

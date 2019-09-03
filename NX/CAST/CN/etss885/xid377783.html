@@ -1,0 +1,365 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>&nbsp;X-Form enhancements</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/shape_studio/studio_edit/x-form.gif" border="0">&nbsp;X-Form enhancements
+         </h2>
+         <div class="estimatedTime">
+            <p>Estimated time to complete this lesson: 8&ndash;11  minutes</p>
+         </div>
+         <div></div>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>The workflow of the <span class="uiTerm">X-Form</span> command has been enhanced with the following updates.
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>You can now create a single <span class="uiTerm">X-Form</span> feature using multiple faces.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>You can now select poles and polylines from the graphics area when using the <span class="uiTerm">Proportional</span> method.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>The <span class="uiTerm">Proportional</span> and <span class="uiTerm">Falloff</span> advanced methods of previous releases have been combined into the new <span class="uiTerm">Proportional</span> advanced method with increased pole control:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">All</span> &ndash; All poles are moved with a single master pole or pole row.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Selected</span> &ndash; Only selected poles are moved with a single master pole.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">By U/V</span> &ndash; Poles in a defined U/V window are moved, and you can have multiple master poles.
+                        </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>The <span class="uiTerm">Keep Continuity</span> options for the <span class="uiTerm">Proportional</span> method are now named <span class="uiTerm">Boundary Constraints</span> and have been relocated in the dialog box so you can now use it in conjunction with the core editing methods such as <span class="uiTerm">Move</span>, <span class="uiTerm">Rotate</span>, <span class="uiTerm">Scale</span>, and <span class="uiTerm">Planarize</span>.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>The <span class="uiTerm">Lock Poles</span> option has been added to the <span class="uiTerm">Boundary Constraints</span> group so when the <span class="uiTerm">Advanced Method</span> is off so you can lock pole movement in the U/V direction based on specified continuity constraints.
+                  </p>
+                  
+                  <p>When <span class="uiTerm">Lock Poles</span> is selected, as you constrain the boundary, only the available poles for movement are displayed, the poles within the constraints are not visible.
+                  </p>
+                  
+                  <table border="0" align="center">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              <a name="genid_etss885_23" id="genid_etss885_23"></a><div class="figureContainer">
+                                 <table align="center">
+                                    <tr>
+                                       <td>
+                                          <div class="figure">
+                                             <div><img align="bottom" src="../graphics/nonLocalized/nx/shapestudio/commands/x_form/options_lock_poles_1.png" border="0"></div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </table>
+                                 <h4>U/V min/max = Free (No Constraint)</h4>
+                              </div>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              <a name="genid_etss885_24" id="genid_etss885_24"></a><div class="figureContainer">
+                                 <table align="center">
+                                    <tr>
+                                       <td>
+                                          <div class="figure">
+                                             <div><img align="bottom" src="../graphics/nonLocalized/nx/shapestudio/commands/x_form/options_lock_poles_2.png" border="0"></div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </table>
+                                 <h4>U/V min/max = G1 (Tangent)</h4>
+                              </div>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>The <span class="uiTerm">Boundary Constraints</span> options have on-screen continuity handles available at surface boundaries.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>An <span class="uiTerm">Extraction Method</span> options list has been added to the <span class="uiTerm">Settings</span> group.
+                  </p>
+                  
+                  <ul class="unmarkedList">
+                     <li>
+                        <a name="genid_etss885_25" id="genid_etss885_25"></a><table border="0" align="center">
+                           
+                           <colgroup span="1">
+                              
+                              <col span="1">
+                              
+                              <col span="1">
+                              
+                              <col span="1">
+                              
+                           </colgroup>
+                           
+                           <tbody>
+                              
+                              <tr>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"><span class="uiTerm">Original</span></p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/shapestudio/x-form/x-form_extraction_method_original.png"></p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin">Extracts the face based on the original parametric, rectangular surface. </p>
+                                    
+                                 </td>
+                                 
+                              </tr>
+                              
+                              <tr>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"><span class="uiTerm">Minimum Bounded</span></p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/shapestudio/x-form/x-form_extraction_method_min_bound.png"></p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin">Extracts the face based on a rectangular border enclosing the trimmed surface.</p>
+                                    
+                                 </td>
+                                 
+                              </tr>
+                              
+                              <tr>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin"><span class="uiTerm">Fit to Boundary</span></p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/shapestudio/x-form/x-form_extraction_method_fit_to_bound.png"></p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin">Extracts the face by fitting a quadrilateral surface using the trimmed boundary of the trimmed surface.</p>
+                                    
+                                 </td>
+                                 
+                              </tr>
+                              
+                           </tbody>
+                           
+                        </table>
+                        
+                     </li>
+                  </ul>
+                  
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>The <span class="uiTerm">Feature Save Method</span> setting <span class="uiTerm">Absolute</span> has been renamed to <span class="uiTerm">Static</span>.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>You can now use <span class="uiTerm">Edit Parameters</span> on an X-Form feature without rollback to facilitate <span class="emphasis">design-in-context</span> workflows.
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Modeling and Shape Studio</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Toolbar</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Edit Surface</span>&rarr;<span class="uiTerm">Pole Editing Drop-down</span>&rarr;<span class="uiTerm">X-Form</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/shape_studio/studio_edit/x-form.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Edit</span>&rarr;<span class="uiTerm">Surface</span>&rarr;<span class="uiTerm">X-Form</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p><span class="uiTerm">Method</span> group
+                     </p>
+                     
+                     <p><span class="uiTerm">Boundary Constraints</span> group
+                     </p>
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Settings</span> group
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         <a name="xid480849" id="xid480849"></a><div id="footer"></div>
+      </div>
+   </body>
+</html>

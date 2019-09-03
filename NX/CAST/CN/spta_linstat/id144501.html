@@ -1,0 +1,64 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>线性静态分析介绍</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>线性静态分析介绍</h2>
+         <a name="ndxgenid_spta_linstat_8"></a>
+         
+         
+        <p>线性静态是一种用于解算线性和某些非线性问题(例如缝隙和接触单元)的结构解算。线性静态分析用于确定结构或组件中因静态(稳态)载荷而导致的位移、应力、应变和各种力。这些载荷可能是： </p>
+        <ul>
+          <li>
+            <p>外部作用力和压力</p>
+          </li>
+          <li>
+            <p>稳态惯性力(重力和离心力)</p>
+          </li>
+          <li>
+            <p>强制(非零)位移 </p>
+          </li>
+          <li>
+            <p>温度(热应变)</p>
+          </li>
+        </ul>
+         
+         <h3>支持的环境</h3>
+         <p>高级仿真支持下列线性静态环境：</p>
+         <ul>
+           <li>
+             <p>Nastran — SOL 101 线性静态 — 全局约束</p>
+             <p>用解算方案类型单个约束创建解算方案时，可以创建具有唯一载荷的子工况，但每个子工况均使用相同约束。</p>
+           </li>
+           <li>
+             <p>Nastran — SOL 101 线性静态 — 子工况约束</p>
+             <p>用解算方案类型多个约束创建解算方案时，可以创建多个子工况，每个子工况既包含唯一的载荷又包含唯一的约束。设置不同子工况并提交作业时，Nastran 求解器将在一次运行中求解每个子工况。</p>
+           </li>
+           <li>
+             <p>Nastran — SOL 101 超单元</p>
+           </li>
+           <li>
+             <p>ANSYS — 线性静态 </p>
+           </li>
+           <li>
+             <p>ABAQUS — 静态扰动子步骤 </p>
+           </li>
+         </ul>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/solutions/linear_static/rod_results.png"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

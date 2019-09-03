@@ -1,0 +1,100 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>耐久性解算过程</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>耐久性解算过程</h2>
+         <p>使用<strong>耐久性</strong>命令可创建耐久性求解过程。耐久性求解过程有助于验证结构化有限元模型在其整个生命周期中的完整性。</p>
+         <p>耐久性求解过程包含一个或多个静态、瞬态和随机事件。这些事件引用以下对象：</p>
+         <ul>
+           <li>
+             <p>结构分析解算方案，事件可从中获取应力或应变结果。</p>
+           </li>
+           <li>
+             <p>包含耐久性求解器设置的耐久性对象。</p>
+           </li>
+         </ul>
+         <p>您可以分别求解每个事件的耐久性结果，然后在耐久性解算过程中求解所有活动事件的累计耐久性结果。</p>
+         <div class="division">
+            
+           <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+               </colgroup>
+               
+               <tr valign="top">
+                 <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p>高级仿真</p></td>
+               </tr>
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">先决条件</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p>采用生成应力或应变结果的结构解法</p></td>
+               </tr>
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">仿真导航器</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p>右键单击仿真节点→<strong>新建解算方案过程→耐久性</strong></p></td>
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>耐久性→新建耐久性仿真</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/durability/new_duarbility_simulation.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                  <p><strong>插入→耐久性→仿真</strong><strong></strong>                  </p></td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

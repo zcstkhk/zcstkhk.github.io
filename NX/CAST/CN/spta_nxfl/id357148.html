@@ -1,0 +1,60 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Modeling fluid flow</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Modeling fluid flow</h2>
+         <p>The flow solver is an implicit code that uses a conservative finite volume formulation to solve the Reynolds Averaged Navier-Stokes (RANS) equations describing fluid flow.</p>
+         <p>All elements you include in a flow solution must be 3D elements for which you assign the following fluid material properties.</p>
+         <ul>
+            
+            <li>
+               
+               <p>Mass density</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Dynamic Viscosity</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Thermal conductivity and specific heat</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Coefficient of thermal expansion</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Gas constant</p>
+               
+            </li>
+            
+         </ul>
+         <p>For coupled  solutions, the solver automatically simulates convection for fluid elements that touch solid walls, or where you define <span class="uiTerm">Flow Surface</span> simulation objects. Convection properties can be tailored where appropriate.
+         </p>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/maya/mushroom/CT_lamp85-1.gif"></p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,10 @@
+{identifier:"id",label:"title",items:[
+{id:"d8e2",title:"设置装配加载选项并打开装配文件",file:"id685710.html",type:"topic",parent:""},
+{id:"d8e3",title:"查看装配结构",file:"id922490.html",type:"topic",parent:""},
+{id:"d8e4",title:"打开一个组件",file:"id922492.html",type:"topic",parent:""},
+{id:"d8e5",title:"显示装配文件",file:"id922494.html",type:"topic",parent:""},
+{id:"d8e6",title:"准备加载剩余的组件",file:"id922496.html",type:"topic",parent:""},
+{id:"d8e7",title:"使用装配导航器打开装配",file:"id922498.html",type:"topic",parent:""},
+{id:"d8e8",title:"使用装配导航器关闭一个组件",file:"id922500.html",type:"topic",parent:""},
+{id:"d8e9",title:"查看装配组件列表",file:"id922502.html",type:"topic",parent:""},
+{id:"d8e10",title:"打开并完全加载一个组件",file:"id922504.html",type:"topic",parent:""}]}

@@ -1,0 +1,412 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Material types</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>材料类型</h2>
+         
+         <p>层合板层片可以引用：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>各向同性</strong>材料</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>各向异性</strong>材料</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>层片材料</strong></p>
+               
+            </li>
+            
+         </ul>
+         
+         <p><strong>层片材料</strong>是特定于层合板的对象，综合了纤维和矩阵材料属性，并计算等效刚度和强度属性。</p>
+         
+         
+         <table border="0" cellpadding="10" cellspacing="0" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/laminates/micromechanics/plylayup_material.gif"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/laminates/micromechanics/plylayup_ply_material.gif"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <a name="id852026"></a>
+         
+         
+         
+         <h2>层合板各向同性材料属性</h2>
+         
+         
+         
+         <table border="0" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr valign="top">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <ul>
+                        
+                        <h4>必要属性</h4>
+                        
+                        <li class="condense">
+                           
+                           <p class="no-bottom-margin">质量密度(RHO)</p>
+                           
+                        </li>
+                        
+                        <li class="condense">
+                           
+                           <p>三个属性中的两个：</p>
+                           
+                           <ul>
+                              
+                              <li class="condense">
+                                 
+                                 <p class="no-bottom-margin">杨氏模量(E)</p>
+                                 
+                              </li>
+                              
+                              <li class="condense">
+                                 
+                                 <p class="no-bottom-margin">泊松比(NU)</p>
+                                 
+                              </li>
+                              
+                              <li class="condense">
+                                 
+                                 <p class="no-bottom-margin">剪切模量(G)</p>
+                                 
+                              </li>
+                              
+                           </ul>
+                           
+                        </li>
+                        
+                        <li class="condense">
+                           
+                           <p class="no-bottom-margin">使用以下关系计算得出的第三个属性：E = 2G (1 + NU)</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <ul>
+                        
+                        <h4>可选属性</h4>
+                        
+                        <li class="condense">
+                           
+                           <p class="no-bottom-margin">Tsai-Wu 交互作用系数(F12)</p>
+                           
+                        </li>
+                        
+                        <li class="condense">
+                           
+                           <p class="no-bottom-margin">热膨胀系数(A)</p>
+                           
+                        </li>
+                        
+                        <li class="condense">
+                           
+                           <p class="no-bottom-margin">导热系数(K)</p>
+                           
+                        </li>
+                        
+                        <li class="condense">
+                           
+                           <p class="no-bottom-margin">比热(CP)</p>
+                           
+                        </li>
+                        
+                        <li class="condense">
+                           
+                           <p class="no-bottom-margin">应力/应变极限</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>未定义的应力极限值：</p>
+                  
+                  <ul>
+                     
+                     <li class="condense">
+                        
+                        <p>如果未定义所有应力极限值，将设为0.0</p>
+                        
+                     </li>
+                     
+                     <li class="condense">
+                        
+                        <p>如果已定义所有应变极限值，将使用应变极限值计算</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </td>
+            </tr>
+         </table>
+         <a name="id852041"></a>
+         
+         
+         
+         <h2>层合板各向异性材料属性</h2>
+         
+         
+         
+         <table border="0" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr valign="top">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <ul>
+                        
+                        <h4>必要属性</h4>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">质量密度(RHO)</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">杨氏模量(E1 与 E2)</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">泊松比(NU12)</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">剪切模量(G12、 G13以及 G23)</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <ul>
+                        
+                        <h4>可选属性</h4>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">Tsai-Wu 交互作用系数(F12)</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">热膨胀系数(A1 与 A2)</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">导热系数(K1 与 K2)</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">比热(CP)</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p class="no-bottom-margin">应力/应变极限</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>各向异性应力极限值与各向同性应力极限值的计算方法相同。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <a name="id851991"></a>
+         
+         
+         
+         <h2>各向同性材料与各向异性材料的其它说明</h2>
+         
+         
+         
+         <ul>
+            
+            <li>
+               
+               <p><strong>层合板</strong><strong>参考温度</strong>将替代<strong>参考温度</strong>材料属性</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>NX 复合层合板不使用第三个方向上的属性：</p>
+               
+               <ul>
+                  
+                  <li class="condense">
+                     
+                     <p><strong>杨氏模量</strong>(<strong>E3</strong>)</p>
+                     
+                  </li>
+                  
+                  <li class="condense">
+                     
+                     <p><strong>泊松比</strong>(<strong>NU13</strong>)与<strong>泊松比</strong>(<strong>NU23</strong>)</p>
+                     
+                  </li>
+                  
+                  <li class="condense">
+                     
+                     <p><strong>热膨胀系数</strong>(<strong>A3</strong>)</p>
+                     
+                  </li>
+                  
+                  <li class="condense">
+                     
+                     <p><strong>应力极限</strong>张量(<strong>ST3</strong>)、<strong>应变极限</strong>张量<strong>(XT3)</strong></p>
+                     
+                  </li>
+                  
+                  <li class="condense">
+                     
+                     <p><strong>压缩应力极限</strong>(<strong>SC3</strong>)、<strong>压缩应变极限</strong>(<strong>XC3</strong>)</p>
+                     
+                  </li>
+                  
+                  <li class="condense">
+                     
+                     <p><strong>剪切应力极限</strong>(<strong>S13</strong>)以及<strong>剪切应力</strong>(<strong>S23</strong>)、<strong>剪切应变极限</strong>(<strong>X13</strong>)以及<strong>剪切应变</strong>(<strong>X23</strong>)</p>
+                     
+                  </li>
+                  
+                  <li class="condense">
+                     
+                     <p><strong>导热系数</strong>(<strong>K3</strong>)</p>
+                     
+                  </li>
+                  
+               </ul>
+               
+               <p>可将这些属性导出至 <strong>ANSYS</strong> 或 <strong>Abaqus</strong>。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

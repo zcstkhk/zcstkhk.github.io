@@ -1,0 +1,208 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Random events</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Random events</h2>
+         
+         <p>You create a random durability event to predict fatigue life and damage for structures that are subject to random loads and that are characterized by a power spectral density. The excitations are defined by a Response Simulation solution process.</p>
+         
+         <div class="division">
+            
+            <h3>General workflow for random fatigue analysis</h3>
+            
+            <table cellspacing="6">
+               <tr>
+                  <td valign="top"><b class="stepLabel">Step&nbsp;1. </b></td>
+                  <td valign="top">
+                     
+                     <p>Using the NX Nastran SOL 103 Response Simulation, compute normal and constraint modes.</p>
+                     
+                  </td>
+               </tr>
+               <tr>
+                  <td valign="top"><b class="stepLabel">Step&nbsp;2. </b></td>
+                  <td valign="top">
+                     
+                     <p>Create a Response Simulation solution process. Set up a random event and an excitation PSD.</p>
+                     
+                  </td>
+               </tr>
+               <tr>
+                  <td valign="top"><b class="stepLabel">Step&nbsp;3. </b></td>
+                  <td valign="top">
+                     
+                     <p>Create a Durability solution process. Set up and solve a random durability event.</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Setting up a random durability event</h3>
+            
+            <p>In the <strong>Random Durability Event</strong> dialog box, you:
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Specify a Response Simulation solution process and its random event.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Define a random fatigue durability object that contains random fatigue settings and fatigue life output requests.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Define a solve options durability object that contains element and material overrides.</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>For each element-node, the durability solver computes fatigue life and damage using:</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>The Von Mises stress power spectral density (PSD) from the random event of the Response Simulation solution process.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Stress life material properties from NX materials.</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>To compute the fatigue life and damage results, you can choose between the narrow-band (Miles) method or the wide-band (Dirlik) method. The results from the narrow-band analysis are more conservative than those from the wide-band analysis. Wide-band analysis results generally correlate better with experiments.</p>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="25%">
+                  
+                  <col span="1" width="75%">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Advanced Simulation</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" height="28" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Prerequisite</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" height="28" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">NX Response Simulation Random Event</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td class="locator_shade" colspan="1" height="28" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Toolbar</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" height="28" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>Durability</strong>&rarr;<strong>Random Durability Event</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/durability/random_durability_event.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>Insert</strong>&rarr;<strong>Durability</strong>&rarr;<strong>Event</strong>&rarr;<strong>Random</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Simulation Navigator</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Right-click the Durability solution process node&rarr;<strong>New Event</strong>&rarr;<strong>Random</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

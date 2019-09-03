@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <title>Content</title>
+  </head>
+
+  <body>
+    <div dojoType="dijit.tree.ForestStoreModel" jsId="continentModel" store="controller.xpsMapData"
+    rootId="continentRoot" rootLabel="Contents Root" childrenAttrs="children"></div>
+
+    <div dojoType="dijit.Tree" id="mytree" model="continentModel" openOnClick="false" style="padding:5px;" showRoot="false">
+      <script type="dojo/method" event="onClick" args="item,event">
+        treeNodeSelected(event.domNode,item);
+      </script>
+    </div>
+
+  </body>
+</html>

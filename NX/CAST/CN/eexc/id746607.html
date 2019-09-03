@@ -1,0 +1,99 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>属性引用</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>属性引用</h2>
+         <p>在 Xess 中，您只要在第一个单元格中输入公式，系统就会计算三个连续单元格中的三个值。</p>
+         <p>在 Excel 中，点坐标为三个值的数组，将会被作为数组公式输入。</p>
+        <p>要在 Excel 中创建数组公式：</p>
+         <ul>
+           <li>
+             <p>首先选择想让值起始的单元格，然后向右拖动以选择三个单元格</p>
+             <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/expressions/spreadsheet_drag_start.gif"></p>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/expressions/spreadsheet_drag_right.gif"></p>
+           </li>
+         </ul>
+         <ul>
+            
+            <li>
+               
+               <p>在电子表格顶部的公式栏中，键入等号以及 <strong>POINT</strong></p>
+               
+               <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/expressions/spreadsheet_insert_function1.gif"></p>
+               <p>这是一个 Excel 函数，将会返回由点的 X、Y、Z 坐标构成的数组</p>
+            </li>
+         </ul>
+         <ul>
+           <li>
+             <p>添加您为想要引用的孔指派的孔曲线<strong>名称</strong>属性，在 <strong>POINT</strong> 函数后加上引号以及括号</p>
+             <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/expressions/spreadsheet_insert_function2.gif"></p>
+             
+             <table class="attentionTable attn_note">
+               <tr>
+                 <td valign="top">
+                   <p class="attn_title">注释</p>
+                 </td>
+                 <td class="attention_main">
+                   
+                   <p>名称属性不区分大小写。</p>
+                   
+                 </td>
+               </tr>
+             </table>
+           </li>
+         </ul>
+         <ul>
+           
+           <li>
+             
+             <p>点击公式栏中文本区域的右侧</p>
+             
+             <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/expressions/spreadsheet_insert_function30.png"></p>
+             
+            </li>
+           
+           <li>
+             
+             <p>按下 Ctrl+Shift+Enter</p>
+             <p>使用 Ctrl+Shift+Enter 是 Excel 创建数组的方法，数组与三个单独的值截然不同。</p>
+             
+             <p>当前单元格(1)中的公式(也是其它两个单元格的公式)现在被花括号扩起来，表示它一个数组成员。</p>
+             
+             <p>在这个练习中，数组单元显示在三个连续的单元格中(2)。</p>
+             
+             <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/expressions/sprd_new.png"></p>
+             
+             <table class="attentionTable attn_note">
+               <tr>
+                 <td valign="top">
+                   <p class="attn_title">注释</p>
+                  </td>
+                 <td class="attention_main">
+                   
+                   <p>如果您尝试删除某个数组成员单元格中的值，那么您会收到一条错误信息，告诉您不能更改数组的某一部分。</p>
+                   
+                  </td>
+                </tr>
+              </table>
+             
+            </li>
+           
+         </ul>
+         <div id="footer"></div>
+   </div>
+   </body>
+</html>

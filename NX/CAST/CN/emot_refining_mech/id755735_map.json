@@ -1,0 +1,12 @@
+{identifier:"id",label:"title",items:[
+{id:"d15e2",title:"打开仿真",file:"joint_friction_open_the_simulation.html",type:"topic",parent:""},
+{id:"d15e3",title:"重置对话框内存",file:"id353012_dup8.html",type:"topic",parent:""},
+{id:"d15e4",title:"创建解算方案并求解",file:"create_a_solution_curve_no_fric.html",type:"topic",parent:""},
+{id:"d15e5",title:"查看机构运动",file:"animate_the_mechanism_no_fric.html",type:"topic",parent:""},
+{id:"d15e6",title:"绘制无运动副摩擦时的结果图表",file:"graph_no_friction.html",type:"topic",parent:""},
+{id:"d15e7",title:"对滑动副添加摩擦",file:"add_friction_to_slider_joint.html",type:"topic",parent:""},
+{id:"d15e8",title:"求解并查看机构运动",file:"solve_animate_friction.html",type:"topic",parent:""},
+{id:"d15e9",title:"绘制含运动副摩擦时的结果图表",file:"plot_results_with_friction.html",type:"topic",parent:""},
+{id:"d15e10",title:"添加摩擦预载",file:"add_friction_preload.html",type:"topic",parent:""},
+{id:"d15e11",title:"求解并查看机构运动",file:"animate_the_mechanism_preload.html",type:"topic",parent:""},
+{id:"d15e12",title:"绘制带摩擦预载时的结果",file:"plot_friction_preload.html",type:"topic",parent:""}]}

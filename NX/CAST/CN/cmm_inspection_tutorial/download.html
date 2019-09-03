@@ -1,0 +1,133 @@
+<!DOCTYPE>
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Tutorials &mdash; CMM Inspection Programming</title>
+      <link id="default" type="text/css" href="uistyles_xps3.css rel="stylesheet">
+      <link id="viewStyles" type="text/css" rel="stylesheet">
+      <link id="customStyles" type="text/css" rel="stylesheet">
+      <style type="text/css">
+<!--
+.style1 {font-family: "Courier New", Courier, monospace}
+-->
+      </style>
+      <link href="uistyles_xps3.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+<!--
+.style2 {
+	font-family: "Trebuchet MS";
+	font-size: 18pt;
+	color: #666666;
+}
+.style3 {
+	font-family: "Trebuchet MS";
+	font-size: 11.5pt;
+	color: #666666;
+}
+-->
+      </style>
+</head>
+<body style="margin-left:5px;" "margin-right:5px;">
+
+<h2 class="style2">Download training materials and define load options</h2>
+<p class="style3">When working with libraries, parts, and assemblies that reside in different locations on your hard drive, you must define location paths so that they are found each time you open an inspection file. Do the following to download the appropriate training materials for your tutorials and to define assembly load options.</p>
+<ol>
+  <li class="style3">
+    <p class="style3">Click the appropriate link to save the training materials to your local hard drive.    </p>   <table border="0" cellspacing="3" cellpadding="3">
+      <tr>
+        <th bgcolor="#FFCC00" class="style3" scope="col">Tutorial</th>
+        <th bgcolor="#FFCC00" class="style3" scope="col">Course Materials </th>
+      </tr>
+      <!--<tr>
+        <td bgcolor="#FFFFCC"><p>CMM Inspection Programming start up</p></td>
+        <td bgcolor="#FFFFCC"><p><a href="cmm_start_up.zip">cmm_start_up.zip</a></p></td>
+      </tr>-->
+      <tr>
+        <td bgcolor="#FFFFCC"><p class="style3">Applying a plane/line/point alignment strategy</p></td>
+        <td bgcolor="#FFFFCC"><p class="style3"><a href="alignment_2011_06_10.zip">alignment_2011_06_10.zip</a></p></td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFCC"><p class="style3">Constructing a CMM Probe</p></td>
+        <td bgcolor="#FFFFCC"><p class="style3"><a href="Renishaw_2011_03_08.zip">Renishaw_2011_03_08.zip</a></p></td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFCC" class="style3">Defining a virtual tool rack</td>
+        <td bgcolor="#FFFFCC"><p class="style3"><a href="ACR1_308_mm.zip">ACR1_308_mm.zip</a></p></td>
+      </tr>
+    </table>
+    <span class="style3"><br>
+    </span></li>
+  <li class="style3"> Unzip or move the zipped file to a preferred location (for example, <span class="style1">C:\Temp\</span>).<br>
+    <br>
+  </li>
+  <li class="style3">Choose <strong>File</strong>→<strong>Options</strong>→<strong>Assembly Load Options</strong>. <br>
+    <br>
+  </li>
+  <li class="style3">Point to your tutorial files by doing the following.<br>
+    <br>
+  
+    <ol type="a">  
+    <li class="style3">In the <strong>Assembly Load Options</strong> dialog box, in the <strong>Part Versions</strong> group, from <strong>Load</strong>, select <strong>From Search Folders</strong>.<br>
+        <br>
+    </li>
+    <li class="style3">Next to <strong>Add Folder to Search</strong>, click <strong>Browse</strong> <img src="download_open_cdf.gif" alt="Browse" border="0" align="bottom">.<br>
+        <br>
+    </li>
+    <li class="style3">In the <strong>Choose Search Directory</strong> dialog box, navigate to the root of the directory where you unzipped the training materials (for example, <span class="style1">C:\Temp\</span>). <br>
+        <br>
+    </li>
+    <li class="style3">Click <strong>OK</strong>.<br>
+        <br>
+    </li>
+    <li class="style3">In the <strong>Assembly Load Options</strong> dialog box, in the <strong>Show Session Folders</strong> list box, select the new path.<br>
+        <br>
+    </li>
+    <li class="style3">Click in the <strong>Add Folder to Search</strong> box, move to the end of the path, and add three periods: <br>
+        <br>
+        <span class="style1">[path]...</span></li>
+    <li class="style3">In the <strong> Assembly Load Options</strong> dialog box, in the <strong>Saved Load Options</strong> group, click <strong>Save as Default</strong> <img src="download_save_as_default.gif" alt="Save As Default" border="0" align="bottom">.<br>
+        <br>
+    </li>
+  </ol>
+  </li>
+  <li class="style3">Unless you are taking the <em>Constructing a CMM Probe</em> tutorial, in the <strong>Assembly Load Options</strong> dialog box, point to the NX CMM Inspection folders by doing the following.<br>
+      <br>
+            <em><strong>NOTE:</strong></em> If you are taking the <em>Constructing a CMM Probe</em> tutorial, including NX CMM Inspection folders may accidentally  pull geometry with similar names from previously defined probe components.<br>
+    <br>
+  </li>
+  <ol type="a">
+    <li class="style3">In the <strong>Part Versions</strong> group, from <strong>Load</strong>, select <strong>From Search Folders</strong>.<br>
+        <br>
+    </li>
+    <li class="style3">Next to <strong>Add Folder to Search</strong>, click <strong>Browse</strong> <img src="download_open_cdf.gif" alt="Browse" border="0" align="bottom">.<br>
+        <br>
+    </li>
+    <li class="style3">In the <strong>Choose Search Directory</strong> dialog box, navigate to the CMM_INSPECTION folder in your NX install location (for example, <span class="style1">C:\Program Files\Siemens\NX x.x\CMM_INSPECTION\resource\</span>).<br>
+        <br>
+    </li>
+    <li class="style3">Click <strong>OK</strong>.<br>
+        <br>
+    </li>
+    <li class="style3">In the <strong>Assembly Load Options</strong> dialog box, in the <strong>Show Session Folders</strong> list box, select the new path.<br>
+        <br>
+    </li>
+    <li class="style3">Click in the <strong>Add Folder to Search</strong> box, move to the end of the path, and add three periods: <br>
+      <br>
+        <span class="style1">[path]... </span><br>
+    </li>
+    <li class="style3">In the <strong> Assembly Load Options</strong> dialog box, in the <strong>Saved Load Options</strong> group, click <strong>Save as Default</strong> <img src="download_save_as_default.gif" alt="Save As Default" border="0" align="bottom">.<br>
+        <br>
+    </li>
+  </ol>
+  <li class="style3">Click <strong>OK</strong>.</li>
+</ol>
+<p class="style3">CMM Inspection Programming will now search the library and tutorial directories each time you start the application.</p>
+</body>
+</html>

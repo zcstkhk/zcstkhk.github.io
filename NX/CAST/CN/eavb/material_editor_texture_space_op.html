@@ -1,0 +1,629 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Material Editor &mdash; Texture Space tab</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>Material Editor &mdash; Texture Space tab</h2>
+         <p>The options on this page let you specify how to apply, or map, a wrapped texture to geometry. </p>
+         <p>Any texture type that includes the word <span class="emphasis">wrapped</span> uses a texture space to determine how to position and size the texture onto geometry. 
+         </p>
+         <table cellspacing="2" width="100%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="45*">
+               
+               <col span="1" width="152*">
+               
+            </colgroup>
+            
+            <tr bgcolor="silver" valign="top">
+               
+               <th colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Options</p>
+                  
+               </th>
+               
+               <th colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">Description</p>
+                  
+               </th>
+               
+            </tr>
+            
+            <tr bgcolor="#F0F0F0" valign="top">
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Type</span></p>
+                  
+               </td>
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p>Specifies the type of texture space you want to use.</p>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">Note</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p class="no-bottom-margin">The Type options are available only if you specify a <span class="emphasis">wrapped</span> texture type in any of the other parameter pages.
+                           </p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Arbitrary Plane</span> type
+                  </p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>Specifies a planar projection.</p>
+                  
+                  <p>You can modify the following parameters:</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Center Point</span>: Opens the <span class="uiTerm">Point</span> dialog box to let you specify the origin of the texture space.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Normal Vector</span>: Opens the <span class="uiTerm">Vector</span> dialog box to let you specify the normal or primary axis for the texture space.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Up Vector</span>: Opens the <span class="uiTerm">Vector</span> dialog box to let you specify the reference axis for the texture space.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Scale</span>: Controls the overall size of the texture space.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Aspect Ratio</span>: Controls the ratio between the height and the width of the texture space.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Update Texture to Camera Direction</span>: Updates either the texture space normal vector or both normal and up vectors based on the camera direction. Use this option to rectify incorrect 2D planar texture mapping.
+                        </p>
+                        
+                        <table border="0" cellpadding="2" cellspacing="1" align="center">
+                           
+                           <colgroup span="1">
+                              
+                              <col span="1" width="52*">
+                              
+                              <col span="1" width="47*">
+                              
+                              <col span="1" width="0*">
+                              
+                           </colgroup>
+                           
+                           <tbody>
+                              
+                              <tr>
+                                 
+                                 <td colspan="1" height="252" rowspan="1">
+                                    <a name="genid_eavb_41" id="genid_eavb_41"></a><div class="figureContainer">
+                                       <table align="center">
+                                          <tr>
+                                             <td>
+                                                <div class="figure">
+                                                   <div><img align="bottom" src="../graphics/nonLocalized/nx/gateway/before_update_normal.gif" border="0"></div>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                       <h4>Arbitrary Plane texture mapping</h4>
+                                    </div>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" height="252" rowspan="1">
+                                    <a name="genid_eavb_42" id="genid_eavb_42"></a><div class="figureContainer">
+                                       <table align="center">
+                                          <tr>
+                                             <td>
+                                                <div class="figure">
+                                                   <div><img align="bottom" src="../graphics/nonLocalized/nx/gateway/after_update_normal_to_camera_direction.gif" border="0"></div>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                       <h4>Arbitrary Plane texture mapping after clicking Update Texture to Camera Direction</h4>
+                                    </div>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" height="252" rowspan="1"></td>
+                                 
+                              </tr>
+                              
+                           </tbody>
+                           
+                        </table>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Normal Vector</span> and <span class="uiTerm">Normal and Up Vectors</span>: Updates either the texture space normal vector or both normal and up vectors based on the camera direction.
+                        </p>
+                        
+                        <table border="0" cellpadding="2" cellspacing="1" align="center">
+                           
+                           <colgroup span="1">
+                              
+                              <col span="1" width="52*">
+                              
+                              <col span="1" width="47*">
+                              
+                              <col span="1" width="0*">
+                              
+                           </colgroup>
+                           
+                           <tbody>
+                              
+                              <tr>
+                                 
+                                 <td colspan="1" height="136" rowspan="1">
+                                    <a name="genid_eavb_43" id="genid_eavb_43"></a><div class="figureContainer">
+                                       <table align="center">
+                                          <tr>
+                                             <td>
+                                                <div class="figure">
+                                                   <div><img align="bottom" src="../graphics/nonLocalized/nx/gateway/normal_vector_only.gif" border="0"></div>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                       <h4>Texture space normal vector only updated based on the camera direction</h4>
+                                    </div>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" height="136" rowspan="1">
+                                    <a name="genid_eavb_44" id="genid_eavb_44"></a><div class="figureContainer">
+                                       <table align="center">
+                                          <tr>
+                                             <td>
+                                                <div class="figure">
+                                                   <div><img align="bottom" src="../graphics/nonLocalized/nx/gateway/normal_and_up_vector.gif" border="0"></div>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                       <h4>Texture space normal and up vectors updated based on the camera direction</h4>
+                                    </div>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" height="136" rowspan="1"></td>
+                                 
+                              </tr>
+                              
+                           </tbody>
+                           
+                        </table>
+                        
+                        <table border="0" cellpadding="2" cellspacing="1">
+                           
+                           <colgroup span="1">
+                              
+                              <col span="1">
+                              
+                              <col span="1">
+                              
+                           </colgroup>
+                           
+                           <tbody>
+                              
+                              <tr>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_1.gif"></p>
+                                    
+                                 </td>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    
+                                    <p class="no-bottom-margin">Up Vector</p>
+                                    
+                                 </td>
+                                 
+                              </tr>
+                              
+                           </tbody>
+                           
+                        </table>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Draw Feedback Vector</span> check box: Displays a vector on the graphics window, denoting the direction in which the pattern dynamically moves, after you select any of the following vectors:
+                        </p>
+                        
+                        <ul>
+                           
+                           <li>
+                              
+                              <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/render_view/materials_and_textures/draw_feedback_vector_1.gif" border="0">: Moves the pattern along the X axis in a range from -5 to 5 scale units.
+                              </p>
+                              
+                           </li>
+                           
+                           <li>
+                              
+                              <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/render_view/materials_and_textures/draw_feedback_vector_2.gif" border="0">: Moves the pattern along the Y axis in a range from -5 to 5 scale units.
+                              </p>
+                              
+                           </li>
+                           
+                           <li>
+                              
+                              <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/render_view/materials_and_textures/draw_feedback_vector_3.gif" border="0">: Rotates the pattern on the XY plane in a range from -180 to 180.
+                              </p>
+                              
+                           </li>
+                           
+                        </ul>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Cylindrical</span> type
+                  </p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>Specifies a cylindrical projection.</p>
+                  
+                  <p>You can modify the following parameters.</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Center Point</span>: Opens the <span class="uiTerm">Point</span> dialog box to let you specify the origin of the texture space.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Axis Direction</span>: Opens the <span class="uiTerm">Vector</span> dialog box to let you specify the normal or primary axis of the cylinder or sphere.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Origin Point</span>: Opens the <span class="uiTerm">Point</span> dialog box to let you specify a reference point for the upper left corner of the texture.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Scale Around Axis</span>: Controls the overall size of the texture space around the axis of the cylinder. 
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Scale Along Axis</span>: Controls the overall size of the texture space along the axis of the cylinder.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Draw Feedback Vector</span> check box: Displays a vector on the graphics window, denoting the direction in which the pattern dynamically moves, after you select any of the following vectors:
+                        </p>
+                        
+                        <ul>
+                           
+                           <li>
+                              
+                              <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/render_view/materials_and_textures/draw_feedback_vector_2.gif" border="0">: Moves the pattern along the Y axis in a range from -5 to 5 scale units.
+                              </p>
+                              
+                           </li>
+                           
+                           <li>
+                              
+                              <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/render_view/materials_and_textures/draw_feedback_vector_3.gif" border="0">: Rotates the pattern on the XY plane in a range from -180 to 180.
+                              </p>
+                              
+                           </li>
+                           
+                        </ul>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Spherical</span> type
+                  </p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>Specifies a spherical projection.</p>
+                  
+                  <p>The parameters you can modify are the same as for <span class="uiTerm">Cylindrical</span> except for the Scale options.
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Latitude Scale</span>: Controls the overall size of the texture space along the latitude of the sphere.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Longitude Scale</span>: Controls the overall size of the texture space along the longitude of the sphere.
+                        </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">WCS Auto Axis</span> type
+                  </p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>Selects the X,Y or Z projection based on the surface normal.</p>
+                  
+                  <p class="no-bottom-margin">You can modify the scale and draw feedback parameters.</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Uv</span> type
+                  </p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>Maps from UV coordinates for the geometry. Assigns the parametric coordinate system to the texture space.</p>
+                  
+                  <p>You can modify the following parameters.</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">U Scale</span>: Specifies the ratio between the height and the width of the texture space.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">V Scale</span>: Specifies the ratio between the height and the width of the texture space.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Draw Feedback Vector</span> check box: Displays a vector on the graphics window, denoting the direction in which the pattern dynamically moves, after you select any of the following vectors:
+                        </p>
+                        
+                        <ul>
+                           
+                           <li>
+                              
+                              <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/render_view/materials_and_textures/draw_feedback_vector_1.gif" border="0">: Moves the pattern along the X axis in a range from -5 to 5 scale units.
+                              </p>
+                              
+                           </li>
+                           
+                           <li>
+                              
+                              <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/render_view/materials_and_textures/draw_feedback_vector_2.gif" border="0">: Moves the pattern along the Y axis in a range from -5 to 5 scale units.
+                              </p>
+                              
+                           </li>
+                           
+                        </ul>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><span class="uiTerm">Camera Direction Plane</span></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>Automatically adjusts the texture space vectors &mdash; normal vector or normal and up vectors &mdash; based on the camera direction of the view.<br/>The <span class="uiTerm">Camera Direction Plane</span> option is similar to the <span class="uiTerm">Arbitrary Plane</span> option for texture space mapping.<br/>When you select either option, texture is mapped onto a user defined plane that is defined with a center point, an up vector, and a vector normal to the plane. The difference is that if you use the <span class="uiTerm">Camera Direction Plane</span> option, the texture space vectors adjust automatically based on the camera direction of the view. The texture orientation and position update dynamically as you rotate the part. If you use the <span class="uiTerm">Arbitrary Plane</span> option, you must click <span class="uiTerm">Update Normal to Camera Direction</span> to rectify the texture space mapping.
+                  </p>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">Note</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p class="no-bottom-margin">When you update the texture space based on camera direction, the texture orientation and positioning update dynamically as you rotate the part. This could degrade display performance, especially when the part is large. To delay the update, use the <span class="uiTerm">Disable Dynamic Update Camera Direction Plane Texture Space</span> option available in the <span class="uiTerm">Visualization Performance Preferences</span> dialog box.
+                           </p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+                  <p>You can modify the following parameters.</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Center Point</span>: Opens the <span class="uiTerm">Point</span> dialog box to let you specify the origin of the texture space.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Up Vector</span>: Opens the <span class="uiTerm">Vector</span> dialog box to let you specify the reference axis for the texture space.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Scale</span>: Controls the overall size of the texture space.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Aspect Ratio</span>: Controls the ratio between the height and the width of the texture space.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Normal Vector</span> and <span class="uiTerm">Normal and Up Vectors</span>: Updates either the texture space normal vector or both normal and up vectors based on the camera direction.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Draw Feedback Vector</span> check box: Displays a vector on the graphics window, denoting the direction in which the pattern dynamically moves, after you select any of the following vectors:
+                        </p>
+                        
+                        <ul>
+                           
+                           <li>
+                              
+                              <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/render_view/materials_and_textures/draw_feedback_vector_1.gif" border="0">: Moves the pattern along the X axis in a range from -5 to 5 scale units.
+                              </p>
+                              
+                           </li>
+                           
+                           <li>
+                              
+                              <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/render_view/materials_and_textures/draw_feedback_vector_2.gif" border="0">: Moves the pattern along the Y axis in a range from -5 to 5 scale units.
+                              </p>
+                              
+                           </li>
+                           
+                        </ul>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </td>
+               
+            </tr>
+            
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

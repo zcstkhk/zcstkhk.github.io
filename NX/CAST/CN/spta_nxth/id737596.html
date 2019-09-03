@@ -1,0 +1,87 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Modeling convection</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>构建对流</h2>
+         <p>如果在下列对象上定义<strong>对流到环境</strong>约束，就可以使用边界条件隐式构建对流：</p>
+         <ul>
+            
+            <li>
+               
+               <p>3D 实体的面</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>2D 单元</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>已定义横截面面积的1D 单元</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>已定义直径的0D 单元</p>
+               
+            </li>
+            
+         </ul>
+         <p>根据构建的环境，可以使用不同的类型。</p>
+         <ul>
+            
+            <h4>对流到环境</h4>
+            
+            <li>
+               
+               <p>用于在对流系数或相关参数值事先已确定(无论是根据经验还是参考其他分析)的情况下对自然或强制对流进行建模。求解器将您指定的对流值应用于所选择的几何体</p>
+               
+            </li>
+            
+         </ul>
+         <ul>
+            
+           <h4><strong>自由对流到环境</strong></h4>
+            
+            <li>
+               
+               <p>可对选定几何体中的自然对流进行建模。求解器使用您选择的标准相关性来计算对流系数。或者，您可以指定由求解器自动选择适当的相关性(示例：热空气上升)</p>
+               
+            </li>
+            
+         </ul>
+         <ul>
+            
+           <h4><strong>强制对流到环境</strong></h4>
+            
+            <li>
+               
+               <p><strong></strong>可对选定几何体中的强制对流进行建模。求解器使用您选择的标准相关性来计算对流系数(示例：风扇)</p>
+               
+            </li>
+            
+         </ul>
+         <p>在瞬态与稳态求解中，求解器将根据您指定的特性信息，为整个对流表面计算对流系数值</p>
+         <p>也可以使用耦合 NX 热和流解算方案来显式构建对流，仿真模型中的流体体积、嵌入式体积以及表面。</p>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/maya/pcb_mapping/pcbmapping_001.gif"></p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

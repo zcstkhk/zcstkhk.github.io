@@ -1,0 +1,16 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开仿真文件",file:"id1228016.html",type:"topic",parent:""},
+{id:"d7e3",title:"重置对话框内存",file:"id813466.html",type:"topic",parent:""},
+{id:"d7e4",title:"查看材料属性",file:"id1228020.html",type:"topic",parent:""},
+{id:"d7e5",title:"查看结构解算方案中的结果",file:"id1228022.html",type:"topic",parent:""},
+{id:"d7e6",title:"创建耐久性仿真",file:"id1228024.html",type:"topic",parent:""},
+{id:"d7e7",title:"创建强度耐久性对象",file:"xid455982.html",type:"topic",parent:""},
+{id:"d7e8",title:"创建疲劳耐久性对象",file:"xid456068.html",type:"topic",parent:""},
+{id:"d7e9",title:"创建轴搜索耐久性对象",file:"xid456069.html",type:"topic",parent:""},
+{id:"d7e10",title:"创建静态耐久性事件",file:"id1228031.html",type:"topic",parent:""},
+{id:"d7e11",title:"新建激励",file:"id1228033.html",type:"topic",parent:""},
+{id:"d7e12",title:"创建瞬态耐久性事件",file:"id1228035.html",type:"topic",parent:""},
+{id:"d7e13",title:"求解耐久性仿真",file:"id1228037.html",type:"topic",parent:""},
+{id:"d7e14",title:"显示疲劳寿命结果",file:"id1228039.html",type:"topic",parent:""},
+{id:"d7e15",title:"显示疲劳失效指数结果",file:"id1228041.html",type:"topic",parent:""},
+{id:"d7e19",title:"保存和关闭",file:"id811006.html",type:"topic",parent:""}]}

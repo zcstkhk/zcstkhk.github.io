@@ -1,0 +1,63 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>连接多个旋转副、滑动副和柱面副</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>连接多个旋转副、滑动副和柱面副</h2>
+         
+         <p><strong>2–3 传动副</strong>命令让您联结两个或三个旋转副、滑动副或柱面副的运动。它们与<strong>齿轮</strong>以及<strong>齿轮齿条副</strong>命令的使用方法类似。您可以调整一个运动副相对于另一个运动副运动的比例，或者使用负数来反转运动副的运动方向。</p>
+         
+         <p>您可以创建<strong>2 联接传动副</strong>或<strong>3 联接传动副</strong>。</p>
+         
+         <p>这些命令只能在使用 RecurDyn 求解器时使用。</p>
+         
+         <a name="genid_emot_links_constraints_248" id="genid_emot_links_constraints_248"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/new_features/motion/mtn_coupler.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>联接两个旋转副的2 联接传动副</h4>
+         </div>
+         
+         
+         
+         
+         <p>在选择了合适的<strong>附着类型</strong>后，您可以决定您选择的运动副在传动副中是<strong>旋转</strong>还是<strong>平移</strong>，您还可以定义运动副的比例。</p>
+         
+         <p><strong>3 联接传动副</strong>需要其中两个运动副被运动驱动所驱动。</p>
+         
+         <div class="division">
+            
+           <h3>约束方程</h3>
+            
+            <p>2–3 传动副使用这个方程：</p>
+            <p>(r1 * q1) + (r2 * q2) + (r3 * q3) = 0</p>
+            
+            <p>其中 r1、r2、r3为三个运动副的<strong>比例</strong>因子，而 q1、q2、q3为运动副的平移或旋转位移。</p>
+            
+            <p>例如，假设您创建的是2 联接传动副，其中两个运动副均为旋转副。对于第一个运动副(驱动)的每一次旋转，您都想让第二个旋转副旋转它的四倍，则您需要对第一个运动副输入的<strong>比例</strong>为<strong>4</strong>，第二个运动副的<strong>比例</strong>为<strong>1</strong>。</p>
+            
+         </div>
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

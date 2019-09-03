@@ -1,0 +1,8 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"通过光标位置创建点",file:"id737486.html",type:"topic",parent:""},
+{id:"d7e3",title:"通过精确坐标值创建点",file:"id1004337.html",type:"topic",parent:""},
+{id:"d7e4",title:"在圆弧中心创建点",file:"id1004339.html",type:"topic",parent:""},
+{id:"d7e5",title:"沿曲线创建等距点",file:"id1004341.html",type:"topic",parent:""},
+{id:"d7e6",title:"在曲线的一部分上创建等距点",file:"id1004343.html",type:"topic",parent:""},
+{id:"d7e7",title:"通过几何级数创建点",file:"id1004345.html",type:"topic",parent:""},
+{id:"d7e8",title:"删除几何级数点",file:"id1004347.html",type:"topic",parent:""}]}

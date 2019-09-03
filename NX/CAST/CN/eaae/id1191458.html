@@ -1,0 +1,73 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>装配间隙概述</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>装配间隙概述</h2>
+         <a name="ndxgenid_eaae_11"></a>
+         
+         
+         <p>使用<strong>装配间隙</strong>命令可检查装配的选定组件中是否存在可能的干涉。此命令可报告以下类型的干涉：</p>
+         <ul>
+           <li>
+             <p>软干涉 — 对象之间的最小距离小于等于安全区域。</p>
+           </li>
+           <li>
+             <p>接触干涉 — 对象相互接触但不相交。</p>
+           </li>
+           <li>
+             <p>硬干涉 — 对象彼此相交。</p>
+           </li>
+           <li>
+             <p>包容干涉 — 一个对象完全包含在另一个对象内。</p>
+           </li>
+         </ul>
+         <p>所有分析结果均存储在部件文件内的间隙集中。</p>
+         <p>将在以下模式之一执行装配间隙分析：</p>
+         <ul>
+           <li>
+             <p>交互</p>
+           </li>
+           <li>
+             <p>批处理</p>
+           </li>
+         </ul>
+         <p>无论选择何种分析模式，都必须按照下面的步骤来执行间隙分析：</p>
+         <ol start="1" type="1">
+           <li>
+             <p>创建新的间隙集，或选择并激活现有的间隙集。</p>
+           </li>
+           <li>
+             <p>在两种模式之一对活动的集运行间隙分析。</p>
+           </li>
+         </ol>
+         <p>在打开<strong>间隙浏览器</strong>时可以继续同 NX 功能进行交互，这在希望立即更改模型来解决间隙问题并检查修改结果时特别有用。 </p>
+        <p>可以创建安全区域，以指定装配中对象之间的最小距离。比此距离近的对象即使相互之间没有接触，也会作为干涉进行报告。可以为以下内容创建安全区域：</p>
+         <ul>
+           <li>
+             <p>整个装配</p>
+           </li>
+           <li>
+             <p>单独的对象</p>
+           </li>
+           <li>
+             <p>对象对</p>
+           </li>
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

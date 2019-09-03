@@ -1,0 +1,112 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Define a positioning method</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Define a positioning method</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>Zoom in on the part and identify the assembly constraints that were created to position it.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/activities/isv/replace_remove_machine_constraints.png"></p>
+                     
+                     <p>(1) A <span class="uiTerm">Touch</span> constraint is used to place the bottom of the part on the table.<br/>(2) An <span class="uiTerm">Align</span> constraint is used to center the part on the C-axis.<br/>(3) A <span class="uiTerm">Parallel</span> constraint is used to align the part with an edge on the table.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Part Mounting</span> dialog box, in the <span class="uiTerm">Placement</span> group, from the <span class="uiTerm">Positioning</span> list, select <span class="uiTerm">Keep Assembly Constraints</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>The <span class="uiTerm">Information</span> window shows devices that are added and how old devices are replaced.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">5-Ax Mill Vertical B-Head C-Table</span> dialog box, click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>Close the <span class="uiTerm">Information</span> window.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Assembly Navigator</span>, expand the <span class="uiTerm">Constraints</span> node and, one by one, select the constraints.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>The parallel constraint is reconnected between an edge on the part and an edge on the machine table.</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/activities/isv/parallel_retained.png"></p>
+                     
+                     <p>The align constraint between cylindrical axes is reconnected as a generic <span class="uiTerm">Touch Align</span> constraint.
+                     </p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/activities/isv/align_now_touch.png"></p>
+                     
+                     <p>The touch constraint between the lower flat face of the cylinder and the face of the machine table is reconnected.</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/activities/isv/touch_retained.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

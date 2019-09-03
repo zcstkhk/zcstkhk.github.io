@@ -1,0 +1,47 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>NX 拓扑优化</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>NX 拓扑优化</h2>
+         <p>NX 拓扑优化通过为您提供最佳设计建议来帮助您设计新的组件。软件基于从高级仿真有限单元模型得到的分析结果和在 NX Nastran 中求解的解算方案载荷工况生成此建议。NX 拓扑优化使用 FE DESIGN 公司的 Tosca 拓扑优化求解器。</p>
+         <p>要建立拓扑优化，需定义以下对象： </p>
+         <ul>
+           <li>
+             <p>设计区域，指定模型中可修改优化的单元</p>
+           </li>
+           <li>
+             <p>设计目标，例如刚度最大化</p>
+           </li>
+         </ul>
+         <p>可以定义设计约束(如体积)以及制造约束以确保可以产生组件。在这些限定中工作时，优化通过调整设计区域内单元的材料密度来确定最佳材料分布。 </p>
+         <p>产生模型的材料分布呈块状。然后软件创建过渡使模型变得平滑，从而使材料的分布更加连续。可以将此平滑后的模型导入到 NX 建模中以用作创建新组件的起始点。 </p>
+         <a name="genid_spta_tosca_8"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/new_features/adv_sim/cranehook_topo_opt.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>(1)用于优化的设计区域；(2)优化后的模型；(3)光顺后的模型；(4)最终的 CAD 设计</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

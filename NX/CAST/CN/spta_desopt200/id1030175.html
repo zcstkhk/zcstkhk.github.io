@@ -1,0 +1,138 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>优化输入概要</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>优化输入概要</h2>
+         <p>在下面的步骤中，您将添加下列优化输入到解算方案中，为了简化步骤，您将只创建粗体显示的那些，其它的都已预先为您创建完成。</p>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/desopt200/subcase_hierarchy.png"></p>
+         <div class="division">
+            
+            <h3><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball1.gif" border="0">&nbsp;解算方案选项</h3>
+            
+            <p>设计目标：<strong>最小化重量</strong></p>
+            
+            <p>三个设计变量：</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p><strong>对象“网帽”中的横截面高度 (DIM2)属性</strong></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><strong>对象“平板”中的厚度属性</strong></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>对象“网”中的厚度属性</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>优化参数：<strong>使用参数 P1 和 P2 更改打印输出</strong></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball2.gif" border="0">&nbsp;子工况 1
+            </h3>
+            
+            <p>类型：Desopt-静态</p>
+            
+            <p>设计约束</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>对象“网帽”中限制杆单元 A 端应力</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><strong>对象“网帽”中限制杆单元 B 端应力</strong></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>对象“平板”中限制壳单元底部应力</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><strong>对象“平板”中限制壳单元顶部应力</strong></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>对象“网”中限制壳单元底部应力</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>对象“网”中限制壳单元顶部应力</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><strong>限制平板上格点的竖直(z)位移</strong></p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+            <h3><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/symbols/balls_numbered_blue/blue_ball3.gif" border="0">&nbsp;子工况 2</h3>
+            
+            <p>类型：Desopt-静态 </p>
+            
+            <p>设计约束</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>与工况 1中相同的六个应力约束</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><strong>限制施加集中载荷的节点的垂直(z)位移</strong></p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

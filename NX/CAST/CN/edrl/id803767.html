@@ -1,0 +1,85 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>优化对话框</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>优化对话框</h2>
+         
+         <p>在<strong>循环参数</strong>对话框中单击<strong>优化</strong>时，此对话框打开。</p>
+         
+         <table cellspacing="2" width="100%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="77*">
+               
+               <col span="1" width="122*">
+           </colgroup>
+            
+            <tr bgcolor="silver" valign="top">
+              <th colspan="1" rowspan="1"><p>选项</p></th>
+              <th colspan="1" rowspan="1"> <p>描述</p></th>
+            </tr>
+            <tr bgcolor="#F0F0F0" valign="top">
+              <td colspan="1" rowspan="1" align="center" valign="middle"><p><strong>最短刀轨</strong></p></td>
+              <td colspan="1" rowspan="1" valign="middle"><p>以尽可能减少总加工时间为原则，按照相应顺序安排点。</p>
+                <ul>
+                  <li>
+                    <p><strong>层</strong></p>
+                    <ul>
+                      <li>
+                        <p><em>标准</em>是指确定最短刀轨时想要使用的分析流程。</p>
+                      </li>
+                      <li>
+                        <p><em>高级</em>尽最大可能提高机床时间效率。</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>基于</strong>是固定轴刀轨的唯一选项；决定加工效率时，可变轴刀轨会考虑该刀轴。</p>
+                  </li>
+                  <li>
+                    <p><strong>起点</strong>控制刀轨的起点。</p>
+                  </li>
+                  <li>
+                    <p><strong>终点</strong>控制刀轨的终点。</p>
+                  </li>
+                  <li>
+                    <p><strong>起始刀轴</strong>控制切削运动开始时的刀轴。此选项仅可用于可变轴刀轨。</p>
+                  </li>
+                  <li>
+                    <p><strong>结束刀轴</strong>控制切削运动结束时的刀轴。此选项仅可用于可变轴刀轨。</p>
+                  </li>
+                  <li>
+                    <p><strong>优化</strong>初始化优化过程。</p>
+                  </li>
+                </ul></td>
+            </tr>
+            <tr bgcolor="#F0F0F0" valign="top">
+              <td colspan="1" rowspan="1" align="center" valign="middle"><p><strong>水平带</strong></p>
+                <p><strong>竖直带</strong></p></td>
+              <td colspan="1" rowspan="1" valign="middle"><p>允许您限制刀轨；这些带用于其他加工约束，如夹具位置、机床行程限制、工作台大小等。</p></td>
+            </tr>
+            <tr bgcolor="#F0F0F0">
+              <td colspan="1" rowspan="1" align="center"><p><strong>重新绘制点</strong></p></td>
+              <td colspan="1" rowspan="1"><p>如果设置为<strong>是</strong>，则在每次优化后重新绘制所有点。</p></td>
+            </tr>
+            
+        </table>
+         
+         <div id="footer"></div>
+   </div>
+   </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>运动仿真如何捕捉载荷</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>运动仿真如何捕捉载荷</h2>
+         
+         <p>在运动仿真中，对于一个选定的连杆，<strong>载荷传递</strong>命令将捕捉仿真中的各个时间步里，各个与连杆相连的运动对象(比如运动副)上的反作用力、力矩以及加速度。</p>
+         
+         <p>捕捉的载荷保存在运动仿真文件中，也可以写入到点子表格中作为您的参考，XY 图表也在各个时间步上为各个相连的运动对象产生记录，也可以按需要绘制这些图表。</p>
+         
+         <p>然后您可以指定选定的时间步作为相关的时间步，在随后的在高级仿真中引用它。<a name="ndxgenid_emot_advanced_topics_14"></a>
+            
+         </p>
+         
+         <a name="genid_emot_advanced_topics_15"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div>
+                           <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;"><script type="dojo/method">
+      flashData= {
+          swfSrc : '../graphics/graphicLibrary/nx_dss/motion/adv_topics/load_trans_anim.swf',
+          graphSrc : '',
+          align : 'center',
+          base : '.',
+          height : '328',
+          width : '403',
+          bgcolor : '#FFFFFF',
+          flashVersion : '7',         
+          looping : 'false',
+          play : 'false',
+          menu : 'true',
+          parameters : ''
+      }
+      top.loadFlash(this,flashData);
+    </script></div>
+                        </div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>在一个支撑臂的两个旋转副上捕捉载荷</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

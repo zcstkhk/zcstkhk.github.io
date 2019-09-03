@@ -1,0 +1,52 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Associative FEM files</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>关联 FEM 文件</h2>
+         
+         <p><em>关联 FEM 文件</em>具有以下特性：</p>
+         <ul>
+           <li>
+             <p>包含指向 CAD 部件 (.prt) 文件的指针</p>
+           </li>
+           <li>
+             <p>从部件文件中读取 Parasolid 几何体并将其转换为适用于网格划分的多边形几何体</p>
+           </li>
+           <li>
+             <p>检查部件文件的状态并根据需要更新多边形几何体。必须加载 FEM 文件和 CAD 部件           </p>
+           </li>
+         </ul>
+         
+         <a name="genid_spta_simfiles_18"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/data_management/sim_files/files_fem_pgon_geo.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>左：CAD 部件中的 Parasolid 几何体;右：关联 FEM 文件中的派生多边形几何体,长条面和小边被抽走</h4>
+         </div>
+         
+         
+         <p>FEM 文件中的多边形几何体支持自动和手动修改曲面拓扑以改进网格质量。多边形几何体抽取会移除如长条面、小边和峡部状况等设计痕迹。这样，您便可以在能充分捕捉与特定有限元分析相关的设计意图的细节级别对几何体进行网格划分。</p>
+         <p>因为多个 FEM 文件可以引用同一部件，所以您可以为不同类型的分析构建不同的 FEM。</p>
+<div id="footer"></div>
+      </div>
+   </body>
+</html>

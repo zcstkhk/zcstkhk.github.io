@@ -1,0 +1,54 @@
+/*
+  ******************************************************
+    Styles used for test mode
+  ******************************************************   
+*/  
+
+  .testMode_contentType {
+   color: #00ff00; }
+
+  .testModeTable {
+    background-color: #FAFBC5;
+    vertical-align: top;
+    text-align: left; }
+  
+  .testModeText, .para_reviewDetails {
+    margin-bottom: 5pt;
+    margin-top: 0pt;
+    margin-left: 5pt; }
+  
+  .testModeTitle {
+    font-size: 12pt;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5pt;
+    margin-top: 5pt;
+    margin-left: 5pt; }
+    
+  .testModeAnswerTextCorrect {
+    font-size: 10pt;
+    color: green;   
+    margin-bottom: 5pt;
+    margin-top: 5pt;
+    margin-left: 5pt; }
+    
+  .testModeAnswerTextIncorrect {
+    font-size: 10pt;
+    color: red;    
+    margin-bottom: 5pt;
+    margin-top: 5pt;
+    margin-left: 5pt; }
+    
+  .testModeNote {
+    font-size: 10pt;
+    color: #000099;   
+    margin-bottom: 5pt;
+    margin-top: 5pt;
+    margin-left: 5pt; }
+    
+  .footerStatus {
+    font-size: 7pt;
+    color: black;
+    margin-bottom: 3pt;
+    margin-top: 3pt; 
+    text-align: right; }

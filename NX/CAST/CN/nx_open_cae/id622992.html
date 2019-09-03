@@ -1,0 +1,31 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Prompt for element size</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Prompt for element size</h2>
+         <p>In order to make this routine more generic, you will create a user prompt to get the desired element size from the user. Later on in the routine you will see two more alternatives for setting the element size that have been commented out.</p>
+         <p>Add the following lines below the ones from the last step to create the dialog box prompt for the element size. Note that the default value is set to 10. This prompt is placed outside of the Do loop so that the prompt does not occur each time through the loop.</p><pre class="codeExample "><span class="userInput">    ' Prompt for element size
+    Dim myElementSize As Double
+    myElementSize = NXInputBox.GetInputNumber(&quot;Element Size &quot;, &quot;Element Size &quot;, &quot;10 &quot;)
+
+    theUfSession.Obj.CycleObjsInPart(basePart.Tag, NXOpen.UF.UFConstants.UF_caegeom_type, objectTag)
+
+</span></pre><p><span class="codeText">CycleObjsInPart</span> will cycle through ALL caegeom types, but the only types that are desired for this project are <span class="codeText">cae_geom_body</span> subtypes. You will filter to that subtype only using an If statement. 
+         </p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

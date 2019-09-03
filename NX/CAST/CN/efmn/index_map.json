@@ -1,0 +1,16 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"组合体",file:"id1073307.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"使用布尔命令来组合体",type:"topicMap",parent:"",children:[
+{id:"d5e6",title:"使用布尔命令来组合体",file:"id221341.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"求和",file:"boolean_unite_ov.html",type:"topic",parent:"d5e5",children:[
+{id:"d5e8",title:"通过区域选择求和",file:"xid454826.html",type:"topic",parent:"d5e7"},
+{id:"d5e9",title:"对实体求和并移除区域",file:"xid433888.html",type:"activity",parent:"d5e7"}]},
+{id:"d5e10",title:"求差",file:"boolean_subtract_ov.html",type:"topic",parent:"d5e5"},
+{id:"d5e11",title:"求交",file:"boolean_intersect_ov.html",type:"topic",parent:"d5e5"},
+{id:"d5e12",title:"拉伸并组合体",file:"id1008113.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e14",title:"缝合",file:"sew_feat_sew_ov.html",type:"topic",parent:"",children:[
+{id:"d5e15",title:"缝合片体",file:"id699765.html",type:"activity",parent:"d5e14"}]},
+{id:"d5e17",title:"补片",file:"create_features_feat_patch.html",type:"topic",parent:"",children:[
+{id:"d5e18",title:"对两个片体应用补片",file:"id712037.html",type:"activity",parent:"d5e17"}]}
+]}

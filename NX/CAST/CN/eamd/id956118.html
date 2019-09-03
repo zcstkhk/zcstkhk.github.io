@@ -1,0 +1,98 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>查看装配结构和默认的布置</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>查看装配结构和默认的布置</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在<strong>装配导航器</strong>中，查看装配结构。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>右击 <strong>des02_vise_arrange</strong> 并选择<strong>布置</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p><strong>布置</strong>菜单中列出了可用的布置以及<strong>编辑</strong>选项，您可以使用它来编辑布置。</p>
+                     <p>在这个练习中，<strong>des02_vise_arrange</strong> 只有一个布置，名为 <strong>Arrangement 1</strong>。<strong>布置</strong>菜单也告诉您 <strong>Arrangement 1</strong>是该级别(顶层装配)下的默认布置，<strong>Arrangement 1</strong>为激活的布置，因此显示为灰色。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>查看各个子装配的默认或者其它(如果有)布置。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p><strong>des02_moving_jaw_arrange</strong> 子装配中包含两个已定义的布置，默认的布置名为 <strong>Flat Jaw</strong>，另外一个布置名为 <strong>V-Jaw</strong>。</p>
+                     
+                     <p>下图显示的是将 <strong>des02_moving_jaw_arrange</strong> 子装配设为工作部件。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/activities/arrangements/act_assm_arrangements_vise2.png"></p>
+                     <p>其它子装配，<strong>des02_guide_arrange</strong> 以及 <strong>des02_fixed_jaw_arrange</strong>，都只有一个布置。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>展开 <strong>des02_moving_jaw_arrange</strong> 子装配并查看组件。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p><strong>des02_v_plate</strong> 组件被抑制 <img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/activities/arrangements/act_assm_arrangements_vise3.png" border="0"> ，因此没有显示在装配中，带有装配约束的抑制组件在约束节点中显示错误，除非它们是被用在布置中。</p>
+                     
+                     <p><strong>des02_jaw_plate</strong> 组件当前有一个名为 <strong>Flat Jaw</strong> 的默认布置。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>展开 <strong>des02_fixed_jaw_arrange</strong> 子装配。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>第二个 <strong>des02_jaw_plate</strong> 组件和第二个 <strong>des02_v_plate</strong> 组件在 <strong>des02_fixed_jaw_arrange</strong> 子装配中，<strong>des02_v_plate</strong> 组件是隐藏的 <img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/activities/arrangements/act_assm_arrangements_vise15.png" border="0">。</p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>The interactive dialog</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>The interactive dialog</h2>
+         <table class="attentionTable attn_caution">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Caution</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>If you do not have NX installed, you will get an error message when you try to install CAST, saying that it cannot find the path to NX in the current working directory, or in the directory specified by the <span class="pathName">UGII_BASE_DIR</span> environment variable (or if this environment variable is not defined). You will get a message saying that NX must be installed before you can install CAST.
+                  </p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div class="division">
+            
+            <h3>Begin interactive dialog</h3>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>The first question asks for the path name where the DVD is mounted.</p>
+                  
+                  <p><span class="literalText">Enter SOURCE directory for NX CAST [/scratch/nx85cast]:</span> 
+                  </p>
+                  
+                  <p>If the default path name is not correct, supply the correct path name.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>The next question is looking for the path name where you want CAST installed.</p>
+                  
+                  <p><span class="literalText">Enter the DESTINATION directory for NX CAST [/scratch/nx85/nxcast]:</span> 
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>This path name is checked for sufficient disk space and permissions. If requirements are satisfied, the procedure continues unaided.</p>
+            
+            <p>If the disk you selected does not have enough disk space, you are prompted to select another disk. </p>
+            
+            <p>The default location for the <span class="literalText">Destination</span> directory is in <span class="pathName">$UGII_BASE_DIR/nxcast</span>. Make sure that the <span class="pathName">UGII_BASE_DIR</span> environment variable is set correctly before you run the installation script or, when you are prompted, make sure that CAST is being installed to the <span class="literalText">nxcast</span> directory located in the directory where NX is installed.
+            </p>
+            
+            <ul class="unmarkedList">
+               <li>
+                  
+                  <p><span class="literalText">Checking available disk space...</span></p>
+                  
+               </li>
+               <li>
+                  
+                  <p><span class="literalText">Three NX CAST installation options are available.</span></p>
+                  
+                  <ol type="1" start="1">
+                     
+                     <li class="condense">
+                        
+                        <p><span class="literalText">Install NX CAST html and parts files.</span></p>
+                        
+                     </li>
+                     
+                     <li class="condense">
+                        
+                        <p><span class="literalText">Install NX CAST html files only.</span></p>
+                        
+                     </li>
+                     
+                     <li class="condense">
+                        
+                        <p><span class="literalText">Install NX CAST parts files only.</span></p>
+                        
+                     </li>
+                     
+                  </ol>
+                  
+               </li>
+               <li>
+                  
+                  <p><span class="literalText">Select installation option: [1]</span></p>
+                  
+               </li>
+            </ul>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">Note</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>If you select the default of 1, both the HTML and part files are installed. If you wish to install the part files in a different location, select option 2 and install the HTML files, then run the install script again, using option 3 to save the part files to the desired location.</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+            <ul class="unmarkedList">
+               <li>
+                  
+                  <p><span class="literalText">Both HTML and PARTS files will be loaded.</span></p>
+                  
+               </li>
+               <li>
+                  
+                  <p><span class="literalText">No further input required.</span></p>
+                  
+               </li>
+               <li>
+                  
+                  <p><span class="literalText">Configuring...</span></p>
+                  
+               </li>
+               <li>
+                  
+                  <p><span class="literalText">NX 8.5 CAST Installation Completed</span></p>
+                  
+               </li>
+               <li>
+                  
+                  <p><span class="literalText">***************************************************<br/>If you would like to install CAST on a web server,<br/>see the </span><span class="titleReference">CAST Online Library installation&nbsp;guide</span><br/><span class="literalText"> document on the CD or in the CAST Online Library.<br/>***************************************************</span></p>
+                  
+               </li>
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+            <h3>End interactive dialog</h3>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

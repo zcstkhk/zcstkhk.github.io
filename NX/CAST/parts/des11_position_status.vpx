@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Copyright 2011 Siemens Product Lifecycle Management Software Inc.
+                        All Rights Reserved.
+
+This is a visual report file for use with the Visual Reporting tool.
+
+       ********    PLEASE NOTE   **********
+       ********    PLEASE NOTE   **********
+       ********    PLEASE NOTE   **********
+       ********    PLEASE NOTE   **********
+       
+1. Two successive dashes in XML comments make an XML document invalid
+(not well-formed). So please no double dashes in this comments section.
+2. Certain characters inside < characters > conflict with XML markup and must 
+be specially encoded.
+
+          > (greater than) must be encoded as &gt;
+          < (less than) must be encoded as &lt;
+          " must be encoded as &quot;
+          & must be encoded as &amp;
+          ' must be encoded as &apos;
+
+-->
+
+<VisualReport date="2011-06-10" time="16:47:36" author="NX 8.0.0.24">
+    <ApplicationHint application="NX" version="NX 8.0.0.24">
+        <Item key="reporting style" value="color"/>
+        <Item key="creation version" value="NX 7.0.0.5"/>
+	<Item key="creation date" value="2009-06-03"/>
+    </ApplicationHint>
+    <ReportProp name="Position Status" scope="component" bitmap="parts_position_constrained">
+        <Description>
+          Example Visual Report. Colors parts according to whether their 
+position is fully constrained, partially constrained or unconstrained.
+Parts with unknown position status are assigned with low priority and 
+are de-emphasized, while parts with other position status are assigned 
+with medium priority.
+        </Description>
+    </ReportProp>
+    <Rule name="Position rule">
+        <Action>
+            <ValueClassifier type="string" manualGrouping="0" caseSensitivity="false">
+                <ColorRamp>
+                    <Level name="Fixed" color="0.6000000 0.2000000 0.2000000" index="0" value="fixed" priority="medium" deEmphasis="0" lowerBound="0" upperBound="0" colorBehavior="specified" bitmap="parts_position_fixed"/>
+                    <Level name="Partially constrained" color="0.8117647 0.8705882 0.4196078" index="1" value="partially constrained" priority="medium" deEmphasis="0" lowerBound="0" upperBound="0" colorBehavior="specified" bitmap="parts_position_partially_mated"/>
+                    <Level name="Unconstrained" color="0.5960784 0.7882353 0.9215686" index="2" value="unconstrained" priority="medium" deEmphasis="0" lowerBound="0" upperBound="0" colorBehavior="specified" bitmap="parts_position_unmated"/>
+                    <Level name="Fully constrained" color="0.8000000 0.6000000 0.2000000" index="3" value="fully constrained" priority="medium" deEmphasis="0" lowerBound="0" upperBound="0" colorBehavior="specified" bitmap="parts_position_fully_mated"/>
+                    <Level name="Inconsistently constrained" color="0.6941176 0.4588235 0.5764706" index="4" value="inconsistently constrained" priority="medium" deEmphasis="0" lowerBound="0" upperBound="0" colorBehavior="specified" bitmap="parts_checkmate_results_failed"/>
+                    <Level name="Ignored constraints" color="0.3686275 0.5215686 0.2470588" index="5" value="ignored" priority="medium" deEmphasis="0" lowerBound="0" upperBound="0" colorBehavior="specified" bitmap="parts_position_unmated"/>
+                    <Level name="Suppressed constraints" color="0.0000000 0.4000000 0.6000000" index="6" value="suppressed" priority="medium" deEmphasis="0" lowerBound="0" upperBound="0" colorBehavior="specified" bitmap="parts_position_unmated"/>
+                    <Level name="Deferred constraints" color="0.7686275 0.7490196 0.6470588" index="7" value="deferred constraints" priority="medium" deEmphasis="0" lowerBound="0" upperBound="0" colorBehavior="specified" bitmap="questionmark"/>
+                    <Level name="Unknown" color="0.3607843 0.2862745 0.5019608" index="8" value="unknown" priority="low" deEmphasis="1" lowerBound="0" upperBound="0" colorBehavior="specified" bitmap="questionmark"/>
+                </ColorRamp>
+                <Property key="position" type="position" bitmap="parts_position_constrained"/>
+            </ValueClassifier>
+        </Action>
+    </Rule>
+    <Action showInLegend="0">
+        <SimpleClassifier>
+            <BasicColor color="-1 -1 -1" deEmphasis="1" colorBehavior="automatic"/>
+        </SimpleClassifier>
+    </Action>
+</VisualReport>

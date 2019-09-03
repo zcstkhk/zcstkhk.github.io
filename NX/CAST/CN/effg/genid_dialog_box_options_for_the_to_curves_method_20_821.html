@@ -1,0 +1,33 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>用于到曲线方法的对话框选项</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>用于到曲线方法的对话框选项</h2>
+         <p><strong>到曲线</strong>将把选中的面或片体加冠到选中的开放或封闭的高度曲线。可以使用一条或两条曲线。如果使用两条曲线，则曲线 2 必须包含曲线 1。区域边界必须封闭。</p>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/global_shaping/gs_to_curves.png"></p>
+         <p><strong>区域边界</strong> — 选择一条或多条开放曲线作为要修改的区域边界，在这些曲线外，变形为零。</p>
+         <p><strong>目标</strong> — 您可以使用一条或者两条目标曲线，其中一条在另一条内部，两条目标曲线允许您在曲线内部和外部之间进行加冠。</p>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><strong>目标曲线1</strong>：选择一条曲线或指定一个偏置值来定义加冠的高度，曲线可以是开放的，也可以是封闭的。其高度是从片体沿着变形方向来进行测量的。用这条曲线定义的内部区域偏置是恒定的。</p>
+            </li>
+            <li><strong>目标曲线2</strong>：选择第二来定义加冠的高度，这条曲线必须是封闭的，并且包含<strong>目标曲线1</strong>。偏置值必须是正的，而且比<strong>目标曲线1</strong>要小</li>
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

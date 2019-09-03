@@ -1,0 +1,60 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>设计约束</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>设计约束</h2><a name="ndxgenid_spta_desopt200_30"></a>
+         <a name="ndxgenid_spta_desopt200_31"></a>
+         <a name="ndxgenid_spta_desopt200_32"></a>
+         
+         
+         <p>设计约束定义特定解算方案输出的上限和下限。</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>优化算法在尝试满足总设计目标的同时更改设计变量，因此它必须在上述限制的范围内工作</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>创建设计响应来选择输出类型，创建设计约束来选择设计响应，可以在多个设计约束中选择相同的设计响应</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>可在解算方案或任意子工况中定义约束及其关联响应。在解算方案级别包括时，约束只能使用重量或体积响应</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>设计约束会在 Nastran 中创建一个 DCONSTR 模型数据输入项</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/optimization/constraint_dialog.png"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>测量体</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>测量体</h2>
+         <div class="estimatedTime">
+            <p>预计完成这堂课需要：8&ndash;12  分钟</p>
+         </div>
+         <div></div>
+         <p>使用<strong>测量体</strong>命令计算选定体的体积、质量、表面积、回转中心和重量。质心点是选定体的质量中心的关联点。</p>
+         <p>将<strong>信息</strong>窗口中显示的数据转换为当前单位。如果使用<strong>分析</strong>→<strong>单位</strong>命令来更改单位设置，则信息以新单位显示。</p>
+         <p>如果要使用<strong>测量体</strong>命令，如下所示：</p>
+         <ul>
+           <li>
+             <p>对于实体，只能执行三维实体分析。不能选择面或其他非实体。</p>
+           </li>
+           <li>
+             <p>选择所有要分析的实体后，NX 将计算质量属性，并使用该值来计算其他属性。</p>
+           </li>
+           <li>
+             <p>如果选择多个实体，则 NX 将为所有选定的实体生成单一的测量值各自进行计算。</p>
+           </li>
+         </ul>
+         <p>此命令存储选择意图规则。根据输入值中的任何更改，存储的测量也将进行更新。</p>
+         <table class="attentionTable attn_example">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">示例</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>可以通过将<strong>体规则</strong>设置为<strong>单个体</strong>来测量体的体积、面积、质量和重量。如果要抑制矩形凸垫和毂特征，输入体将发生更改，并且这些存储的测量值将受到影响。NX 将根据输入值中的更改自动更新存储的测量值。无需重新选择体来获取这些更新的值。</p>
+                  
+                  <table border="0">
+                     
+                     <colgroup span="1">
+                        
+                        <col align="left" span="1">
+                        
+                        <col align="left" span="1">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <table bgcolor="white" border="1" cellpadding="0" cellspacing="0" frame="void" rules="none" width="400" align="center">
+                                 
+                                 <colgroup span="1">
+                                    
+                                    <col span="1" width="100*">
+                                    
+                                 </colgroup>
+                                 
+                                 <tbody>
+                                    
+                                    <tr>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_bodies/measure_bodies_pn1.png" border="0">模型历史记录<br/>
+                                            <img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_bodies/measure_bodies_pn2a.png" border="0"> 块 (0)<br/>
+                                            <img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_bodies/measure_bodies_pn1a.png" border="0"> 矩形垫块 (1)<br/>
+                                            <img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_bodies/measure_bodies_pn1a.png" border="0"> 矩形垫块 (2)<br/>
+                                            <img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_bodies/measure_bodies_pn5.png" border="0"> 凸台 (3)<br/>
+                                            <img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_bodies/measure_bodies_pn5.png" border="0"> 凸台 (4)<br/>
+                                            <img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_bodies/measure_bodies_pn5.png" border="0"> 凸台 (5)<br/>
+                                            <img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_bodies/measure_bodies_pn7.png" border="0"> 边倒圆 (6)<br/>
+                                            <img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_bodies/measure_bodies_pn7.png" border="0"> 边倒圆 (7)<br/>
+                                            <img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_bodies/measure_bodies_pn8.png" border="0"> 体测量  (8)
+                                          </p>
+                                          
+                                       </td>
+                                       
+                                    </tr>
+                                    
+                                    <tr valign="middle">
+                                       
+                                       <td align="left" colspan="1" rowspan="1">
+                                          
+                                          <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_bodies/measure_bodies_example_before.png"></p>
+                                          
+                                       </td>
+                                       
+                                    </tr>
+                                    
+                                 </tbody>
+                                 
+                              </table>
+                              
+                           </td>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <table bgcolor="white" border="1" cellpadding="0" cellspacing="0" frame="void" rules="none" width="400" align="center">
+                                 
+                                 <colgroup span="1">
+                                    
+                                    <col span="1" width="100*">
+                                    
+                                 </colgroup>
+                                 
+                                 <tbody>
+                                    
+                                    <tr>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_bodies/measure_bodies_pn1.png" border="0"> 模型历史记录<br/>
+                                          <img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_bodies/measure_bodies_pn2a.png" border="0"> 块 (0)<br/><img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_bodies/measure_bodies_pn3a.png" border="0"> 矩形垫块 (1)<br/><img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_bodies/measure_bodies_pn3a.png" border="0"> 矩形垫块 (2)<br/><img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_bodies/measure_bodies_pn4a.png" border="0"> 凸台 (3)<br/><img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_bodies/measure_bodies_pn4a.png" border="0"> 凸台 (4)<br/><img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_bodies/measure_bodies_pn5.png" border="0"> 凸台 (5)<br/><img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_bodies/measure_bodies_pn6a.png" border="0"> 边倒圆 (6)<br/><img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_bodies/measure_bodies_pn7.png" border="0"> 边倒圆 (7)<br/>
+                                          <img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_bodies/measure_bodies_pn8.png" border="0"> 体测量 (8)
+                                          </p>
+                                          
+                                       </td>
+                                       
+                                    </tr>
+                                    
+                                    <tr valign="middle">
+                                       
+                                       <td align="left" colspan="1" rowspan="1">
+                                          
+                                          <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/gateway/analysis/measure_bodies/measure_bodies_example_after.png"></p>
+                                          
+                                       </td>
+                                       
+                                    </tr>
+                                    
+                                 </tbody>
+                                 
+                              </table>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </td>
+            </tr>
+         </table>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>因为测量特征按模型历史记录的特定时间戳存储，所以测量更新将只包含对模型历史记录的早期时间戳特征所作的更改。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                  <p><strong>主动数字样机</strong>→<strong>分析下拉菜单</strong>→<strong>测量体</strong>                  </p></td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                  <p><strong>分析</strong>→<strong>测量体</strong>                  </p></td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div><a name="id698303" id="id698303"></a><div id="footer"></div>
+      </div>
+   </body>
+</html>

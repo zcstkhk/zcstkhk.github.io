@@ -1,0 +1,136 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Solar heating</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Solar heating</h2>
+         <div class="division">
+            
+            <h3>Solar Heating Space</h3>
+            
+            <p>Use a <span class="uiTerm">Solar Heating Space</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/simulation/advanced_simulation/solar_heating.gif" border="0"> simulation object to model heating of objects on the surface of a planet due to sun incidence. This command calculates direct solar view factors for selected elements at a fixed sun position or at calculation points along the sun's trajectory. Solar view factors are the direct view of an element to the solar source, which is treated as a distant point source. You can model multiple solar sources to simulate multi-directional heating of elements in a multi-star system. 
+            </p>
+            
+            <p><span class="uiTerm">Solar Heating Space</span> is useful, for example, for modeling the thermal effects of the sun on exterior equipment, buildings, and installations. 
+            </p>
+            
+            <p>To define a <span class="uiTerm">Solar Heating Space</span> simulation object: 
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Define a <span class="uiTerm">Thermo-Optical Properties &ndash; Advanced</span> modeling object with a value for <span class="uiTerm">Absorptivity</span> under the <span class="uiTerm">Solar Properties</span> group, for all elements included in the <span class="uiTerm">Solar Heating</span> simulation object.  
+                  </p>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">Note</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p>To specify a value for <span class="uiTerm">Absorptivity</span> under the <span class="uiTerm">Solar Properties</span> group, you must select the <span class="uiTerm">Define Solar Properties (radiative source spectrum)</span> check box in the <span class="uiTerm">Thermo-Optical Properties &ndash; Advanced</span> dialog box. 
+                           </p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Create a <span class="uiTerm">Radiation</span> simulation object that includes all affected elements to account for the radiative heat that is diffusely reflected to and from the elements. 
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>The options on the <span class="uiTerm">Model Orientation</span> tab of the <span class="uiTerm">Solar Heating Space</span> dialog box let you position the model in relation to the sun to determine how the sun strikes it. The options available in this tab depend on the method you select from the <span class="uiTerm">Orientation Method</span> list. Some examples inlcude:
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Latitude</span> &mdash; The options in the <span class="uiTerm">Planet Vectors</span> and <span class="uiTerm">Solar Vectors</span> group let you define two vectors to orient the model in relation to the Earth or selected planet. These two vectors cannot be parallel to each other. Often, they are perpendicular to each other.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Sun Planet Vectors</span> &mdash; You can use <span class="uiTerm">Specify Field</span> to specify a series of time varying vectors to model the position of the sun with respect to the global coordinate system by specifying point sets in Cartesian or Spherical coordinates. 
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Radiative Heating</h3>
+            
+            <p>You define a <span class="uiTerm">Radiative Heating</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/simulation/advanced_simulation/radiative_heating.gif" border="0"> simulation object to model the radiative thermal effects of heat sources such as electrical heater elements, engine and exhaust systems, lasers, or any object in the model that emits significant and known quantities of radiative energy.  
+            </p>
+            
+            <p>Create a <span class="uiTerm">Radiative Heating</span> simulation object to define selected elements in your model as diffusely or collimated radiating heat sources. The software then calculates the direct heat flux view factors to other elements per heat source that you define.  
+            </p>
+            
+            <p>With <span class="uiTerm">Radiative Heating</span>:
+            </p>
+            
+            <ul class="unmarkedList">
+               <li>
+                  
+                  <p>You can define the energy to radiate in solar, infrared, or any other spectral distribution.</p>
+                  
+               </li>
+               <li>
+                  
+                  <p>You can define a spectral distribution of the energy by specifying the <span class="uiTerm">Source Temperature</span> of the emitting surfaces or by specifying intensity, expressed as a fraction of the entire energy emitted, as a function of wavelength. 
+                  </p>
+                  
+               </li>
+               <li>
+                  
+                  <p>Diffuse reflection and absorption of the incident radiative energy throughout the enclosure is automatically computed, provided that you also create a <span class="uiTerm">Radiation</span> simulation object. 
+                  </p>
+                  
+               </li>
+               <li>
+                  
+                  <p>Ray tracing is used for specular or transmissive surfaces. </p>
+                  
+               </li>
+               <li>
+                  
+                  <p>Heat flux view factors are calculated from the radiative source elements to the elements of the illuminated objects. If any of the illuminated elements have specular or diffuse properties, rays will be traced from those elements. Diffuse reflections are also computed from the illuminated elements, provided you also create an <span class="uiTerm">Enclosure Radiation</span> type of <span class="uiTerm">Radiation</span> simulation object. 
+                  </p>
+                  
+               </li>
+            </ul>
+            
+            <p>For loads applied to 2D or 1D geometry, you can specify how the load varies spatially over the area of the 2D geometry or length of the 1D geometry. </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

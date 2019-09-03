@@ -1,0 +1,389 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Bend Taper enhancements</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Bend Taper enhancements</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Taper options</h3>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>When you use the <span class="uiTerm">Bend Taper</span> command, the following taper options are now available.
+                  </p>
+                  
+                  <div class="defList">
+                     <div class="defListItem">
+                        <div class="defObject defObjectHorz">
+                           <p><span class="uiTerm">Linear</span></p>
+                        </div>
+                        <div class="defMeaning defMeaningHorz">
+                           
+                           <p>Creates a taper using the specified taper angle or taper distance value.</p>
+                           
+                           <p>The resulting feature is the same as the existing Bend Taper feature. All legacy Bend Taper features will be converted to the <span class="uiTerm">Linear</span> type of Bend Taper feature with the specified taper angle.
+                           </p>
+                           
+                           <p>The following example shows a symmetric linear taper applied to the bend with a taper angle of 45 degrees.</p>
+                           
+                           <p align="left"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/nx_sheet_metal/bend_taper_part.gif"></p>
+                           
+                        </div>
+                     </div>
+                     <div class="defListItem">
+                        <div class="defObject defObjectHorz">
+                           <p><span class="uiTerm">Tangent</span></p>
+                        </div>
+                        <div class="defMeaning defMeaningHorz">
+                           
+                           <p>In the flattened view, the taper is tangent to the web on both sides.</p>
+                           
+                           <p>The following example shows a symmetric tangent taper applied to the bend with a taper distance of 10 mm.</p>
+                           
+                           <p align="left"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/nx_sheet_metal/bend_taper_tangent.gif"></p>
+                           
+                        </div>
+                     </div>
+                     <div class="defListItem">
+                        <div class="defObject defObjectHorz">
+                           <p><span class="uiTerm">Square</span></p>
+                        </div>
+                        <div class="defMeaning defMeaningHorz">
+                           
+                           <p>Removes material from the web up to the specified distance. No taper is applied to the selected bend.</p>
+                           
+                           <p align="left"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/nx_sheet_metal/bend_taper_square.gif"></p>
+                           
+                        </div>
+                     </div>
+                  </div>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>You can now specify the taper parameters for the bend and web of each taper side independently using the options available in the <span class="uiTerm">Taper Definition Side 1</span> and <span class="uiTerm">Taper Definition Side 2</span> groups.
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Chaining options</h3>
+            
+            <p>The <span class="uiTerm">Chaining</span> options available in the previous <span class="uiTerm">Bend Taper</span> dialog box are replaced with the following options, and renamed as shown.
+            </p>
+            <a name="genid_etsm885_27" id="genid_etsm885_27"></a><table border="0" cellpadding="0" cellspacing="0">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="60">
+                  
+                  <col span="1">
+                  
+                  <col span="1" width="40">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top"></td>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Chaining</span> options
+                        </p>
+                        
+                     </td>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top"></td>
+                     
+                     <td align="left" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Taper</span> options
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1"></td>
+                     
+                     <td colspan="3" height="4" rowspan="1"></td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1"></td>
+                     
+                     <td bgcolor="silver" colspan="3" height="1" rowspan="1"></td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1"></td>
+                     
+                     <td colspan="3" height="18" rowspan="1"></td>
+                     
+                  </tr>
+                  
+                  <tr valign="top">
+                     
+                     <td align="left" colspan="1" rowspan="1"></td>
+                     
+                     <td align="left" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Bend Only</span></p>
+                        
+                     </td>
+                     
+                     <td align="left" colspan="1" rowspan="1"></td>
+                     
+                     <td align="left" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">None</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1"></td>
+                     
+                     <td colspan="3" height="4" rowspan="1"></td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1"></td>
+                     
+                     <td bgcolor="silver" colspan="3" height="1" rowspan="1"></td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1"></td>
+                     
+                     <td colspan="3" height="4" rowspan="1"></td>
+                     
+                  </tr>
+                  
+                  <tr valign="top">
+                     
+                     <td align="left" colspan="1" rowspan="1"></td>
+                     
+                     <td align="left" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Bend Face</span></p>
+                        
+                     </td>
+                     
+                     <td align="left" colspan="1" rowspan="1"></td>
+                     
+                     <td align="left" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Face</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1"></td>
+                     
+                     <td colspan="3" height="4" rowspan="1"></td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1"></td>
+                     
+                     <td bgcolor="silver" colspan="3" height="1" rowspan="1"></td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1"></td>
+                     
+                     <td colspan="3" height="4" rowspan="1"></td>
+                     
+                  </tr>
+                  
+                  <tr valign="top">
+                     
+                     <td align="left" colspan="1" rowspan="1"></td>
+                     
+                     <td align="left" colspan="1" height="4" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Bend Face Chain</span></p>
+                        
+                     </td>
+                     
+                     <td align="left" colspan="1" height="4" rowspan="1"></td>
+                     
+                     <td align="left" colspan="1" height="4" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Face Chain</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1"></td>
+                     
+                     <td colspan="3" height="4" rowspan="1"></td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" height="1" rowspan="1"></td>
+                     
+                     <td bgcolor="silver" colspan="3" height="1" rowspan="1"></td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>Why should I use it?</h3>
+            
+            <p>Use these options to remove material from the bend and web regions.</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">NX Sheet Metal</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Toolbar</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">NX Sheet Metal</span>&rarr;<span class="uiTerm">Cut Drop&ndash;down</span> list&rarr;<span class="uiTerm">Bend Taper</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sheet_metal/sheet_metal_feature/bend_taper.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Insert</span>&rarr;<span class="uiTerm">Cut</span>&rarr;<span class="uiTerm">Bend Taper</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Taper Definition Side 1</span> or <span class="uiTerm">Taper Definition Side 2</span> group&rarr;<span class="uiTerm">Bend</span> subgroup&rarr;<span class="uiTerm">Taper</span> list
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

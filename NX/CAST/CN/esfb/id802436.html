@@ -1,0 +1,52 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>清根参考刀具</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>清根参考刀具</h2>
+         <p><strong>参考刀具直径</strong>值将指定粗加工(参考)刀具的直径，精加工切削区域的宽度将取决于这个值。清根参考刀具工序的精加工切削区域宽度，取决于先前用于粗加工该区域的球头铣刀或圆端铣刀的直径，该粗加工刀具即被指定为参考刀具，NX 将计算参考刀具在哪里会与部件接触(双切点)，然后使用这些点来定义精加工工序的切削区域(4)，使用的是更小的精加工刀具(2)。</p>
+         <p>由于是参考刀具，而不是真实的刀具确定双切点，这个类型的清根工序可以使用多个小刀具的刀路来精加工大圆角。</p>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/milling/fixed_contour/flow_cut_graphic61.gif"></p>
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>用于粗加工的参考刀具</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>更小的精加工刀具</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>双切点</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>定义切削区域的接触曲线</p>
+               
+            </li>
+            
+         </ol>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

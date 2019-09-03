@@ -1,0 +1,12 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"雕刻文本",file:"id1073952.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"雕刻文本信息",file:"genid_text_engraving_19_514.html",type:"topic",parent:""},
+{id:"d5e7",title:"在部件上雕刻文本",file:"genid_to_engrave_text_on_a_part_24_534.html",type:"topic",parent:""},
+{id:"d5e9",title:"关于文本雕刻的注释",file:"genid_notes_pertaining_to_text_creation_27_932.html",type:"topic",parent:""},
+
+{id:"d5e11",title:"雕刻文本练习",type:"topicMap",parent:"",children:[
+{id:"d5e12",title:"创建用于雕刻的文本",file:"id1069972.html",type:"activity",parent:"d5e11"},
+{id:"d5e13",title:"创建轮廓文本工序",file:"id1069982.html",type:"activity",parent:"d5e11"},
+{id:"d5e14",title:"创建平面文本工序",file:"id1069992.html",type:"activity",parent:"d5e11"}]}
+]}

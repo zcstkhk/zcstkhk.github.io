@@ -1,0 +1,34 @@
+
+/*   
+  ******************************************************
+        Styles for the 'Where do I find it' table
+  ******************************************************
+*/
+     
+/* locator - used for the table */
+.locator {
+           margin-left: 12px;
+           margin-right: 20px;
+           border-collapse: collapse;
+           }              
+          
+/* locator .locator_shade - used for the left column */
+.locator .locator_shade {
+            background-color: #efefef;
+            border: 1px solid #000000;
+            padding: 4px 2px;
+            }
+    
+/* locator .locator_shade .para_td_last - used for the left column text */             
+.locator .locator_shade .para_td_last {
+            color: #0a3c98;
+            font-weight: bold;
+            }
+    
+/* locator .locator_noshade - used for the right column */
+.locator .locator_noshade {
+            background-color: #ffffff;
+            border: 1px solid #000000;
+            padding: 4px 2px;
+            padding-right: 10px;
+            }    

@@ -1,0 +1,182 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Other simulation objects</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Other simulation objects</h2>
+         <div class="division">
+            
+            <h3>Articulation</h3>
+            
+            <p>You can account for the motion of a parts in your assembly, such as solar panels, antennas, robotic systems, and optical platforms, in your thermal model to provide an accurate picture of the heating cycles.</p>
+            
+            <p>Use an <span class="uiTerm">Articulation</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/simulation/advanced_simulation/articulation.gif" border="0"> simulation object to model the transient thermal effects of the movement of selected elements in the model. The thermal solver uses the displacements of the articulation sequence to calculate:
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Time-varying radiative conductances</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>View factors at each location</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Heat loads (including radiative and solar heating) </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Varying conductances of thermal couplings </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Shadowing of elements </p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>To define the movement of the selected elements in your model, you use an <span class="uiTerm">Articulation</span> simulation object in conjunction with:
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>A <span class="uiTerm">Joint</span> type modeling object to model the translation or rotation of the moving elements.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>A <span class="uiTerm">Joint-Orbital Tracker</span> type modeling object to link the rotation of the moving elements to defined orbits. 
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>Options in the <span class="uiTerm">Articulation Parameters</span> group on the <span class="uiTerm">Transient Setup</span> tab of the <span class="uiTerm">Solution</span> dialog box let you control the start and end times for the articulation as well as the calculation interval. You can also choose to match the orbital start and end times and calculation interval that you may have previously defined. 
+            </p>
+            
+            <p>You can view an animated display or the articulating motion in post-processing. The animated model accurately displays all the rotations and translations of its articulated parts, including compound articulations.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/maya/basic_satellite/rot_trans.gif"></p>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Other simulation objects</h3>
+            
+            <table border="0" cellpadding="4" cellspacing="2" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+               </colgroup>
+               
+               <thead>
+                  
+                  <tr bgcolor="silver">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Boundary condition</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Description</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </thead>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Duct Flow Boundary Conditions</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/simulation/advanced_simulation/duct_flow_boundary_conditions.gif" border="0"></p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">Lets you model duct flow networks such as pipes and HVAC systems.</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr bgcolor="#F0F0F0" valign="top">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Joule Heating</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/simulation/advanced_simulation/joule_heating.gif" border="0"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Lets you model the heating generated due in an electrical circuit defining a currents and voltages. </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Peltier Cooler</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/simulation/advanced_simulation/peltier_cooler.gif" border="0"></p>
+                        
+                     </td>
+                     
+                     <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                        
+                        <p class="no-bottom-margin">Lets you model the effect of a thermo electrical cooler generated by a current or a voltage.</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

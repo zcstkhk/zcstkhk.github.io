@@ -1,0 +1,43 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Start the application</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Start the application</h2>
+         <p>You will run the application as a journal file and as a DLL.</p>
+         <p>To run the application as an NX Journal, select <span class="uiTerm">Tools</span>&rarr;<span class="uiTerm">Journal</span>&rarr;<span class="uiTerm">Play</span>. Browse to locate your VB file. Run the journal and fix any errors by comparing your file with the answer file supplied with this course. (<span class="fileName">Auto_Mesh2D_ans.vb</span>)
+         </p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>If you have made any mistakes in entering the code, the application will not run. NX will issue an error message that points to the offending line(s). Find that location in the application file and compare it to the code that was presented in the training material. Make the change to your code and run the application. Repeat this process as necessary. The length of time to complete this process will depend on the number of mistakes there are in your code.</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <p>To run the application as a DLL, make sure that you have closed all parts and started over with the opening of the part and creation of the FEM file shown above. </p>
+         <p>In order to build the application as a DLL in Visual Studio, you will need to give your setup the properties for your project. In the <span class="uiTerm">Solution Explorer</span>, right-click <span class="uiTerm">NX8_Open_VB_Wizard</span> and select <span class="uiTerm">Properties</span>. Select the <span class="uiTerm">Application</span> tab, and set the name for both the <span class="uiTerm">Assembly name</span> property and the<span class="uiTerm"> Root Namespace</span> property to <span class="fileName">Auto_Mesh2D</span>.
+         </p>
+         <p>To build the project within Visual Studio, right-click on your project and select build. Check for errors in the lower window of Visual Studio. Your DLL will be located in the <span class="fileName">bin/release</span> or <span class="fileName">bin/debug</span> directory within your project folder structure. Within NX, select <span class="uiTerm">File</span>&rarr;<span class="uiTerm">Execute</span>&rarr;<span class="uiTerm">NX Open</span> and select the .DLL. Note that there may be filename length limitations, so you may need to move the DLL to a directory structure that is shorter than the default location for Visual Studio.
+         </p>
+         <p>The application should run the same way for both methods of execution.</p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

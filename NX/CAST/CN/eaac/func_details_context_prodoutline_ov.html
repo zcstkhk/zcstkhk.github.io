@@ -1,0 +1,184 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>产品轮廓概述</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>产品轮廓概述</h2>
+         
+         <p>在不必加载组件的情况下使用<strong>产品轮廓</strong>命令创建一组几何体，以针对装配的总体大小和形状给出提示。</p>
+         
+         
+         <p>在处理形成大得多的装配(如发动机缸体或机身)的某个部件的组件时，定义轮廓时会使您轻松地快速感知对象的位置。当您不熟悉的组件出问题时，这将非常有用。</p>
+         
+         <p>可以设置产品轮廓的显示属性：颜色、线型和透明度可帮助将轮廓与其他几何体区分开来。</p>
+         
+         
+         <table border="0" cellpadding="2" cellspacing="1" align="center">
+            
+            <colgroup align="center" span="1">
+               
+               <col span="1">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/context_control_commands/define_product_outline/car_fully_loaded.png"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">已完全加载装配</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/context_control_commands/define_product_outline/car_with_outline.png"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">装配的体面板部件关闭，并显示透明的灰色产品轮廓。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         
+         <p>产品轮廓几何体位于<strong>产品轮廓</strong>用户默认设置所设置的图层上。</p>
+         
+         <table class="attentionTable attn_tip">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">提示</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>要查找用户默认设置，请选择<strong>文件</strong>→<strong>实用工具</strong>→<strong>用户默认设置</strong>，然后使用<strong>查找默认设置</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/customer_defaults/find_default.gif" border="0"> 按钮。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <p>创建产品轮廓时，显示部件中将会自动创建名为 <strong>Product_Outline</strong> 的<strong>图层类别</strong>，并在该图层上创建小平面表示。</p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p><strong>产品轮廓</strong>对话框中定义的显示属性适用于 <strong>Product_Outline</strong> 图层上的所有几何体，包括它的实体和小平面表示。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <p>如果选择了装配级的几何体，则会有一条消息通知您，该几何体将移到产品轮廓图层。<strong>显示产品轮廓</strong>通过控制产品轮廓图层的可见性来隐藏或显示产品轮廓。</p>
+         
+         <div class="division">
+            
+           <h3>位于何处？</h3>
+            
+            <table cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+               </colgroup>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" height="28" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">先决条件</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" height="28" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">具有完整菜单的角色</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>装配→显示产品轮廓</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assemblies/show_product_outline.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p><strong>装配→关联控制→定义产品轮廓</strong></p>
+                     
+                     <p class="no-bottom-margin"><strong>装配→关联控制→显示产品轮廓</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

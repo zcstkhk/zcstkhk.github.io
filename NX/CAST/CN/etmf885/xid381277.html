@@ -1,0 +1,398 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Contour Profile wall gap handling</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Contour Profile wall gap handling</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>NX now generates cuts that follow the trimmed portions of the wall. In previous releases, cuts that lost contact with the wall would create a poor quality tool path.</p>
+            
+            <table align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/vap_diminished_wall_nx85.png"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/vap_diminished_wall_before.png"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">NX 8.5</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">Previous releases</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p>New <span class="uiTerm">Across Wall Gaps</span> options are available. Use these options to control the tool path behavior across wall gaps in the following ways:
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Specify <span class="uiTerm">Extend Distance</span> values to extend the start or end of cuts.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Set the <span class="uiTerm">Motion Type</span> option to <span class="uiTerm">Cut</span> or <span class="uiTerm">Stepover</span>. The <span class="uiTerm">Stepover</span> motion lets you apply a faster feed rate.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Specify a <span class="uiTerm">Minimum Distance</span> value to control when NX applies the traverse move for within regions. The Non Cutting Moves cycle can be more efficient for large wall gaps.
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+            
+            <p>The following diagram illustrates the <span class="uiTerm">Across Wall Gaps</span> options.
+            </p>
+            <a name="genid_etmf885_86" id="genid_etmf885_86"></a><div class="figureContainer">
+               <table align="center">
+                  <tr>
+                     <td>
+                        <div class="figure">
+                           <div>
+                              <table align="center">
+                                 
+                                 <colgroup span="1">
+                                    
+                                    <col span="1">
+                                    
+                                 </colgroup>
+                                 
+                                 <tbody>
+                                    
+                                    <tr>
+                                       
+                                       <td colspan="1" rowspan="1">
+                                          
+                                          <img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/contour_profile_across_wall_gaps.png" border="0">
+                                          
+                                       </td>
+                                       
+                                    </tr>
+                                    
+                                 </tbody>
+                                 
+                              </table>
+                           </div>
+                        </div>
+                     </td>
+                  </tr>
+               </table>
+               <h4>Wall gap with start and end of cut extensions</h4>
+            </div>
+            <a name="genid_etmf885_87" id="genid_etmf885_87"></a><table border="0" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody valign="top">
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>1: Start of cut extension</p>
+                        
+                        <p>2: Wall cut</p>
+                        
+                        <p class="no-bottom-margin">3: End of cut extension</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>4: Wall gap: <span class="uiTerm">Cut</span> or <span class="uiTerm">Stepover</span> motion
+                        </p>
+                        
+                        <p>5: <span class="uiTerm">Minimum Distance</span> to be considered
+                        </p>
+                        
+                        <p class="no-bottom-margin">6: NCM cycle to traverse the gap</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Examples</h3>
+            
+            <table align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr valign="top">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/vap_cutout_motion_cut.png"></p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Motion Type</span> = <span class="uiTerm">Cut</span></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/vap_cutout_motion_stepover.png"></p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Motion Type</span> = <span class="uiTerm">Stepover</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p></p>
+            
+            <table align="center">
+               
+               <colgroup align="center" span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="2">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr valign="top">
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/vap_cutout_motion_cut_traverse_clearance.png"></p>
+                        
+                        <p><span class="uiTerm">Motion Type</span> = <span class="uiTerm">Cut</span></p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Minimum Distance</span> = 100
+                        </p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/vap_cutout_motion_stepover_traverse_clearance.png"></p>
+                        
+                        <p><span class="uiTerm">Motion Type</span> = <span class="uiTerm">Stepover</span></p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Minimum Distance</span> = 0.5
+                        </p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/vap_cutout_ncm_transfer_min0_traverse_direct.png"></p>
+                        
+                        <p><span class="uiTerm">Motion Type</span> = <span class="uiTerm">Cut</span></p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Minimum Distance</span> = 0.0
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr valign="top">
+                     
+                     <td align="center" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Traverse Type</span> = <span class="uiTerm">Clearance</span></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Traverse Type</span> = <span class="uiTerm">Clearance</span></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">Traverse Type</span> = <span class="uiTerm">Direct</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         
+         <p></p>
+         
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <p></p>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Manufacturing</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Prerequisite</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Contour Profile</span> operation
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p><span class="uiTerm">Contour Profile</span> operation dialog box&rarr;<span class="uiTerm">Drive Method</span> group&rarr;<span class="uiTerm">Edit</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/edit.gif" border="0">&rarr;<span class="uiTerm">Contour Profile Drive Method</span> dialog box:
+                     </p>
+                     
+                     <ul class="unmarkedList">
+                        <li>
+                           
+                           <p class="no-bottom-margin">(<span class="uiTerm">Motion Type</span>, <span class="uiTerm">Minimum Distance</span>) <span class="uiTerm">Across Wall Gaps</span> group
+                           </p>
+                           
+                        </li>
+                        <li>
+                           
+                           <p class="no-bottom-margin">(<span class="uiTerm">Extend Distance</span>) <span class="uiTerm">Start of Cut</span> group, <span class="uiTerm">End of Cut</span> group
+                           </p>
+                           
+                        </li>
+                     </ul>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+            <p></p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

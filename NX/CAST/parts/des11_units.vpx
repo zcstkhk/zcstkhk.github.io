@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Copyright 2011 Siemens Product Lifecycle Management Software Inc.
+                        All Rights Reserved.
+
+This is a visual report file for use with the Visual Reporting tool.
+
+       ********    PLEASE NOTE   **********
+       ********    PLEASE NOTE   **********
+       ********    PLEASE NOTE   **********
+       ********    PLEASE NOTE   **********
+       
+1. Two successive dashes in XML comments make an XML document invalid
+(not well-formed). So please no double dashes in this comments section.
+2. Certain characters inside < characters > conflict with XML markup and must 
+be specially encoded.
+
+          > (greater than) must be encoded as &gt;
+          < (less than) must be encoded as &lt;
+          " must be encoded as &quot;
+          & must be encoded as &amp;
+          ' must be encoded as &apos;
+
+-->
+
+<VisualReport date="2011-06-10" time="16:47:36" author="NX 8.0.0.24">
+    <ApplicationHint application="NX" version="NX 8.0.0.24">
+        <Item key="reporting style" value="color"/>
+        <Item key="creation version" value="NX 7.0.0.5"/>
+	<Item key="creation date" value="2010-01-08"/>
+    </ApplicationHint>
+    <ReportProp name="Units" scope="component" bitmap="units_inches">
+        <Description>
+            Example Visual Report. Colors all parts according to whether they are in inch units or mm units. The unit information is read from the 'Unit' column in the Assembly Navigator.
+        </Description>
+    </ReportProp>
+    <Rule name="Units rule">
+        <Action>
+            <ValueClassifier type="string" manualGrouping="1" caseSensitivity="false">
+                <ColorRamp>
+                    <Level color="0.6000000 0.2000000 0.2000000" index="0" value="in" deEmphasis="0" lowerBound="0" upperBound="0" colorBehavior="specified" bitmap="units_inches"/>
+                    <Level color="0.8117647 0.8705882 0.4196078" index="1" value="mm" deEmphasis="0" lowerBound="0" upperBound="0" colorBehavior="specified" bitmap="units_mm"/>
+                </ColorRamp>
+                <Property key="part units" type="partUnits" bitmap="units_inches"/>
+            </ValueClassifier>
+        </Action>
+    </Rule>
+    <Action showInLegend="0">
+        <SimpleClassifier>
+            <BasicColor color="-1 -1 -1" deEmphasis="1" colorBehavior="automatic"/>
+        </SimpleClassifier>
+    </Action>
+</VisualReport>

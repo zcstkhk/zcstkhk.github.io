@@ -1,0 +1,8 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开部件并显示工序导航器",file:"id803634.html",type:"topic",parent:""},
+{id:"d7e3",title:"定义部件几何体",file:"id975212.html",type:"topic",parent:""},
+{id:"d7e4",title:"创建工序并生成刀轨",file:"id975214.html",type:"topic",parent:""},
+{id:"d7e5",title:"更改切削参数",file:"id975216.html",type:"topic",parent:""},
+{id:"d7e6",title:"生成并确认刀轨",file:"id975218.html",type:"topic",parent:""},
+{id:"d7e7",title:"创建附加切削刀路",file:"id975220.html",type:"topic",parent:""},
+{id:"d7e8",title:"生成并确认刀轨",file:"id975222.html",type:"topic",parent:""}]}

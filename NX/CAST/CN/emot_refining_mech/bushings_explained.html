@@ -1,0 +1,106 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>概述</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>概述</h2>
+         
+         <p>衬套定义的是两个连杆之间的柔性关系，允许您对自由度进行单独控制：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>在 X、Y、Z 方向上的平移</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>绕 X、Y、Z 轴的旋转</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>在运动学环境中不支持衬套。</p>
+         <a name="ndxgenid_emot_refining_mech_208"></a>
+         
+         <a name="ndxgenid_emot_refining_mech_209"></a>
+         
+         <a name="genid_emot_refining_mech_211" id="genid_emot_refining_mech_211"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div>
+                           <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;"><script type="dojo/method">
+      flashData= {
+          swfSrc : '../graphics/graphicLibrary/nx_dss/motion/refining/bushing_anim.swf',
+          graphSrc : '',
+          align : 'center',
+          base : '.',
+          height : '338',
+          width : '394',
+          bgcolor : '#FFFFFF',
+          flashVersion : '7',         
+          looping : 'false',
+          play : 'false',
+          menu : 'true',
+          parameters : ''
+      }
+      top.loadFlash(this,flashData);
+    </script></div>
+                        </div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>安装在震动筛的脚与腿之间的柔性衬套</h4>
+         </div>
+         
+         
+         <p>使用<strong>常规</strong>衬套，您可以定义三个参数来控制各个自由度：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>刚度系数</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>阻尼系数</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>预载</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>因此，要完全定义<strong>常规</strong>衬套的约束，您可以最多指定18个参数。</p>
+         
+         <p>比较容易定义<strong>圆柱</strong>衬套，您对四个自由度应用刚度系数与阻尼系数：径向、轴纵、锥形以及扭转。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

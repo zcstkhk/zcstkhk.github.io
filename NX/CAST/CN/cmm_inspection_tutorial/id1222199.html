@@ -1,0 +1,180 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Understanding coordinate systems</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>Understanding coordinate systems</h2>
+         
+         <div class="division">
+            
+            <h3>Work Coordinate System</h3>
+            
+            <p>When you open a part file and create an inspection setup file container for it, that part file has a rectilinear Work Coordinate System (WCS) associated with it. The WCS is the reference frame from which the part&rsquo;s perfect nominal location, orientation, alignment, and origin is defined relative to the absolute coordinate system of NX.</p>
+            
+            <p>The WCS 0,0,0 origin is the point from which all feature measurements were defined. This origin occurs at the point where the mutually perpendicular X, Y, and Z axes intersect.</p>
+            
+            <p>If the WCS were used to measure the part in the example shown, X, Y and Z values relative to the WCS origin would define the perfect center point at the top of the cylinder.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/alignment/wcs.gif"></p>
+            
+            <table class="attentionTable attn_tip">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">Tip</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>Choose <strong>Format</strong>&rarr;<strong>WCS</strong>&rarr;<strong>Display</strong> to show the WCS if it is not visible.
+                     </p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Machine Coordinate System</h3>
+            
+            <p>When you implement an alignment strategy on an actual machine, you cannot take reliable feature measurements from the WCS because form, roundness, flatness, and other surface defects cause variation in calculations and orientation. In CMM Inspection Programming, you begin the process of separating the nominal and actual worlds by defining a Machine Coordinate System (MCS). An MCS consists of three mutually orthogonal axes of motion. The MCS is often located on a corner of the CMM table and is set to be mutually parallel with the movement of the CMM.</p>
+            
+            <p>To define the MCS, use the <strong>Set PCS to MCS</strong> option on the <strong>Type</strong> list in the <strong>Alignment</strong> dialog box. 
+            </p>
+            
+            <table border="0" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td colspan="4" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/alignment/mcs.gif"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1" valign="middle" width="32">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_1.gif"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1" valign="middle" width="210">
+                        
+                        <p class="no-bottom-margin">MCS</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1" valign="middle" width="32">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_2.gif"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1" valign="middle">
+                        
+                        <p class="no-bottom-margin">Parallel CMM motion</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Teach point location</h3>
+            
+            <p>Most Direct Computer Control (DCC) systems require that when the machine starts up, the probe must first move to a <span class="emphasis">teach point</span>. A <span class="emphasis">teach point</span> location is a repeatable reference on the part.
+            </p>
+            
+            <p>In CMM Inspection Programming, you will typically make a measurable point on the part the teach point. Use the <strong>Translate PCS Origin</strong> option on the <strong>Type</strong> list in the <strong>Alignment</strong> dialog box to specify the teach point. Translation is the process of moving the 0,0,0 origin of the MCS along its X, Y, and Z axes without reorienting the relationship of those axes or changing their vector length.
+            </p>
+            
+            <p>In this example, the CMM operator is prompted to manually measure a feature point on a part that will serve as the teach point. The point&rsquo;s measured X, Y, and Z values, relative to the MCS, link the part to the CMM&rsquo;s MCS.</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/alignment/teach_point.gif"></p>
+            
+            <table class="attentionTable attn_tip">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">Tip</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>Use the <strong>Rotate PCS</strong> option on the <strong>Type</strong> list in the <strong>Alignment</strong> dialog box to rotate the PCS around an axis.
+                     </p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Part Coordinate System</h3>
+            
+            <p>After you establish a teach point, you must define a measurable Part Coordinate System (PCS) to establish the orientation, alignment, and origin of the real part. Since the three axes of the PCS are generally related to the part&rsquo;s datum definitions, the PCS locates the actual measurements and orientations of inspection features on the part back to its 0,0,0 origin.</p>
+            
+            <p>ISO 5459:1981 defines a datum as a &ldquo;theoretically exact geometric reference (such as axes, planes, straight lines, etc.) to which toleranced features are related.&rdquo; Based on what ISO calls &ldquo;adequately precise&rdquo; measured part features, datums constrain all six degrees of freedom of a part&rsquo;s movement. In the real world, a datum surface deviates from its perfect value. For this reason, before the CMM can begin the inspection of the toleranced features, it must use the PCS to adequately realign the part based on the measurements of these imperfect datum surfaces.</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>PCS alignment strategies</h3>
+            
+            <p>PCS alignment strategies in CMM programming are based on concerns such as the shape of the part, tolerance inspection requirements, the amount of variation in datum surfaces, and how surfaces need to be probed. The process becomes more complex if no perpendicular relationships exist between features measured to establish datums, such as features on a part that consist of many curved surfaces. To simplify the alignment process, you can constrain a part using target points on a machine fixture.</p>
+            
+            <p>The most common form of alignment is a 3&ndash;2&ndash;1 strategy involving the use of three orthogonal datum planes, sometimes called a <span class="codeText">datdef</span> by DMIS programmers. In CMM Inspection Programming, use the <strong>Define PCS from Datums</strong> option on the <strong>Type</strong> list in the <strong>Alignment</strong> dialog box to apply this strategy.
+            </p>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/alignment/datdef01.gif"></p>
+            
+            
+            
+            
+            
+            
+            <p>You can use datums, rotations, and translations together in any combination to establish additional PCSs. You can also save and recall a PCS at a future location in the program.</p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

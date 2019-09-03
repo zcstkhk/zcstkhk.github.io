@@ -1,0 +1,13 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"清根与深度拐角铣削工序",file:"id1074678.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"清根驱动方法",file:"contour_drive_flow_overview.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"最小切削长度",file:"xid486953.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"连接距离",file:"hookup_distance.html",type:"topic",parent:"d5e5"},
+{id:"d5e8",title:"最大凹度",file:"contour_drive_flow_max_concav.html",type:"topic",parent:"d5e5"},
+{id:"d5e9",title:"清根参考刀具",file:"id802436.html",type:"topic",parent:"d5e5"},
+{id:"d5e10",title:"使用清根工序加工未切削区域",file:"id943519.html",type:"activity",parent:"d5e5"}]},
+
+{id:"d5e12",title:"深度加工拐角",file:"id802441.html",type:"topic",parent:"",children:[
+{id:"d5e13",title:"创建深度加工拐角工序",file:"id943525.html",type:"activity",parent:"d5e12"}]}
+]}

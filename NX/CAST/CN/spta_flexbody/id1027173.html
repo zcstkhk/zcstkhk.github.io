@@ -1,0 +1,59 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>选择在分析中包含的模态</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>选择在分析中包含的模态</h2>
+         
+         <p>默认情况下，所有从 NX Nastran 模态解算方案中得到的模态都会包含在运动仿真中求解，除了最前面六种考虑刚体的模态。</p>
+         
+         <p>包含所有模态确保更精确的结构表示，但是，为了更好的求解性能，可以通过移除不重要的模态来减小模态模型。</p>
+         
+         <p>要确定移除的是哪一个模态，可以使用<strong>后处理导航器</strong>工具条来查看并使模态形状运动，确保包含所有类似于正在分析的行为的所有模态。</p>
+         <a name="genid_emot_advanced_topics_91"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div>
+                           <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;"><script type="dojo/method">
+      flashData= {
+          swfSrc : '../xps3/graphics/xpsPlayer.swf',
+          graphSrc : '../graphics/graphicLibrary/nx_dss/motion/flex_bodies/mode_animation.gif',
+          align : 'center',
+          base : './',
+          height : '327',
+          width : '404',
+          bgcolor : '#FFFFFF',
+          flashVersion : '7',         
+          looping : 'false',
+          play : 'false',
+          menu : 'true',
+          parameters : 'mySound=false,dependentFile1=..%2Fgraphics%2FgraphicLibrary%2Fnx_dss%2Fmotion%2Fflex_bodies%2Fmode_animation.swf,dependentFile2=..%2Fxps3%2Fgraphics%2Fnav_buttons.txt'
+      }
+      top.loadFlash(this,flashData);
+    </script></div>
+                        </div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>模态形状示例</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

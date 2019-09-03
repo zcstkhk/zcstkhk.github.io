@@ -1,0 +1,104 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>响应仿真工作流程</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>响应仿真工作流程</h2>
+         <p><a name="ndxgenid_spta_response_14"></a>
+           
+           
+           <a name="genid_spta_response_15" id="genid_spta_response_15"></a></p>
+         <p>下列步骤汇总了在分析结构对激励的响应时应遵循的整个过程。</p>
+         <table cellpadding="8" cellspacing="2" frame="box" rules="all" width="95%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="58*">
+               
+               <col span="1" width="140*">
+               
+            </colgroup>
+            
+            <thead valign="top">
+               
+               <tr bgcolor="silver">
+                 <td colspan="1" rowspan="1"><p>步骤</p></td>
+                 <td colspan="1" rowspan="1"><p>汇总</p></td>
+               </tr>
+               <tr bgcolor="#F0F0F0">
+                 <td colspan="1" rowspan="1"><p>1. 生成有限元 (FE) 模型。</p></td>
+                 <td colspan="1" rowspan="1"><p>在高级仿真应用模块中，可以像对其他结构解算方案类型一样定义几何体、材料属性、网格和约束。 </p>
+                   <p>对于响应仿真，还必须指定激励位置以及任何静态和动态载荷。 </p></td>
+               </tr>
+               <tr bgcolor="#F0F0F0">
+                 <td colspan="1" rowspan="1"><p>2. 创建 NX Nastran 解算方案。</p></td>
+                 <td colspan="1" rowspan="1"><p>创建 NX Nastran <strong>SOL 103 — 响应仿真</strong>解算方案。在<strong>动态</strong>子工况中，为 NX Nastran 解算方案指定输出结果类型(如应力、位移等)和其他结果选项(如模态数)。 </p>
+                   <p>还可以使用 <strong>SOL 103 实特征值</strong>解算方案，但是它只生成正则模态，而不考虑载荷情况。</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>3. 对模型求解。</p></td>
+                 <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>NX Nastran 生成正则模态、约束模态、附着模态和其他模态信息。</p></td>
+               </tr>
+               <tr bgcolor="#F0F0F0">
+                 <td colspan="1" rowspan="1"><p>4. 创建响应仿真。</p></td>
+                 <td colspan="1" rowspan="1"><p>在对模型求解之后，可创建响应仿真求解过程。 </p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>5. 检查模态形状。</p></td>
+                 <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>可以在<strong>后处理导航器</strong>中或<strong>仿真导航器</strong>的<strong>响应仿真局部放大图</strong>子面板中检查模态形状。</p>
+                   <p>默认情况下，在求解过程中生成的所有模态被认为是&ldquo;活动的&rdquo;，可用于响应仿真。如果解算方案包含大量模态，则可执行不重要的模态以加快响应仿真的完成速度。</p></td>
+               </tr>
+               <tr bgcolor="#F0F0F0">
+                 <td colspan="1" rowspan="1"><p>6. 为每个模态定义阻尼值。 </p></td>
+                 <td colspan="1" rowspan="1"><p>在<strong>响应仿真局部放大图</strong>子面板中，可以通过添加粘滞和迟滞模态阻尼来调整个别正则模态的有效性。 </p>
+                   <p>如果 NX Nastran 解算方案包含物理阻尼，如阻尼器单元，则也可将该阻尼包括在响应仿真中。</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>7. 创建事件。</p></td>
+                 <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>事件可定义将要执行的响应仿真的类型(瞬态、准静态、频率、随机、响应谱或 DDAM)。它将模态模型和激励函数组合在一起。 </p>
+                   <p>在创建事件时，可指定<em>数据恢复方法</em>，这是软件从其模态响应中恢复模型的动态物理响应的方法。</p></td>
+               </tr>
+               <tr bgcolor="#F0F0F0">
+                 <td colspan="1" rowspan="1"><p>8. 创建激励函数。</p></td>
+                 <td colspan="1" rowspan="1"><p>激励定义响应仿真的载荷，如车辆轮胎在突起后的撞击特征。您可以应用节点力、强制运动、分布式载荷、速度冲击或静态激励。 </p>
+                   <p>在对 NX Nastran 解算方案求解之前，必须在模型中指定的激励位置上应用激励。</p></td>
+               </tr>
+               <tr bgcolor="#F0F0F0">
+                 <td colspan="1" rowspan="1"><p>9. 分析模型对激励的动态响应。</p></td>
+                 <td colspan="1" rowspan="1"><p>根据所计算的响应类型，软件会进行相应的计算并以如下格式之一来存储结果。 </p>
+                   <ul>
+                     <li>
+                       <p><em>响应函数</em> — 每个响应函数都包含一个时间或频率函数形式的响应。您可以在 NX 图形窗口中绘制这些函数的记录。 </p>
+                     </li>
+                   </ul>
+                   <ul>
+                     <li>
+                       <p>每个<em>响应结果集</em>都包含一个时间步或频率的模型中的多个节点或单元的响应。可在<strong>后处理导航器</strong>中将响应结果集作为等值线图进行查看。 </p>
+                     </li>
+                   </ul></td>
+               </tr>
+               
+            </thead>
+            
+            <tbody valign="top">
+               
+            </tbody>
+            
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

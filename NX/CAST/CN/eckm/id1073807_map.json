@@ -1,0 +1,7 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开装配",file:"id1073811.html",type:"topic",parent:""},
+{id:"d7e3",title:"设置测试",file:"id1073813.html",type:"topic",parent:""},
+{id:"d7e4",title:"执行测试并查看结果",file:"id1073819.html",type:"topic",parent:""},
+{id:"d7e5",title:"从结果显示中移除已通过的测试",file:"id1073821.html",type:"topic",parent:""},
+{id:"d7e6",title:"查看并解决制图错误",file:"id1073839.html",type:"topic",parent:""},
+{id:"d7e7",title:"查看并解决制图测试结果",file:"id1073843.html",type:"topic",parent:""}]}

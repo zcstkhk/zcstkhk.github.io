@@ -1,0 +1,148 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Define a tool library</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Define a tool library</h2>
+         
+         
+         <p>The steps on this page assume that you do not have write permission to your tool library, or that you do not want to risk adding an example tool that is not available to your company.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>Choose <span class="uiTerm">Help</span>&rarr;<span class="uiTerm">Log File</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Information</span> window, choose <span class="uiTerm">Edit</span>&rarr;<span class="uiTerm">Find</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Find</span> dialog box, in the <span class="uiTerm">Find what:</span> box, type <span class="userInput">UGII_CAM_LIBRARY_TOOL_DIR</span>, and click <span class="uiTerm">Find Next</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>Copy or make note of the location of the tool library. </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>For example, the default location is <span class="pathName">C:\Program Files\Siemens\NX 8.5\mach\resource\library\tool\</span>.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>In your operating system, open a navigation window, for example, Windows Explorer, and navigate to the folder that contains the tool library.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>For example, the default location is <span class="pathName">C:\Program Files\Siemens\NX 8.5\mach\resource\library\</span>.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>Copy the <span class="fileName">tool</span> folder and paste it into your home folder, or to a convenient location where you have write permission.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>Redefine the environment variable <span class="codeText">UGII_CAM_LIBRARY_TOOL_DIR</span> by doing one of the following:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>If you are in a classroom location, in your operating system, in your home folder, open the file called <span class="fileName">ugii_env.dat</span> and add a line to set the variable to your copy of the tool library folder.
+                        </p>
+                        
+                        <p>The last few lines might look something like this example:</p>
+                        <pre class="codeExample indent "># insert any other training-specific variables here
+#
+UGII_CAM_LIBRARY_TOOL_DIR=${HOME}\tool\
+
+#include ${UGII_ROOT_DIR}\ugii_env_ug.dat
+</pre>
+                        <p>Be careful not to omit the trailing slash.</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Set a new environment variable with the name <span class="codeText">UGII_CAM_LIBRARY_TOOL_DIR</span> and the value <span class="codeText">&lt;location where you put the tools folder&gt;\tool\</span></p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>Exit from NX, restart NX, and open <span class="fileName">mnf16_85_export_tool</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>Choose <span class="uiTerm">Help</span>&rarr;<span class="uiTerm">Log File</span>, and verify that <span class="codeText">UGII_CAM_LIBRARY_TOOL_DIR</span> points to the location of your copy of the tool library.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

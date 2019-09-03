@@ -1,0 +1,96 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>安装长度和预载</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>安装长度和预载</h2>
+         
+         <p>对于平移弹簧，自由长度为弹簧不受拉力或压力时的自由长度。对于扭矩弹簧，自由角度为弹簧不受力或扭矩作用时双臂间的角度。您可以在弹簧处于自由状态时对其施加预载，以将它压缩或者伸长。</p>
+         
+         <div class="division">
+            
+            <h3>安装长度</h3>
+            
+            <p>安装长度为弹簧在仿真起始时的角度，此时弹簧可能处于压缩或伸长状态。</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>当您使用<strong>连杆</strong>附着时，弹簧的安装长度由操作连杆原点和基本连杆原点来定义，并随几何体更新，这个值不显示在<strong>弹簧</strong>对话框中。</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>当您使用<strong>滑动副</strong>附着时，您必须在<strong>安装长度</strong>输入框中显式指定安装长度。</p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>预载</h3>
+            
+            <p>在大多数情况下，如果您知道弹簧的预载大小，那么您就可以在<strong>预载</strong>输入框中键入值来定义预载。</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>预载长度/预载角度</h3>
+            
+            <p>如果您知道弹簧的安装用途，您就可以选择性地输入预载大小与<strong>预载长度</strong>或<strong>预载角度</strong>，以调整弹簧的预载。</p>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">注释</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>在滑动副上定义弹簧时，<strong>预载长度</strong>等于<strong>安装长度</strong>，除非您指定不同的<strong>预载长度</strong>。</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         
+         <a name="genid_emot_refining_mech_13" id="genid_emot_refining_mech_13"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/connectors/spring_preload_example.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>(1)自由长度；(2)安装长度</h4>
+         </div>
+         
+         
+         <p>当您更改<strong>预载</strong>、<strong>预载长度</strong>/<strong>预载角度</strong>或者<strong>刚度</strong>值时，软件将自动更新<strong>弹簧</strong>对话框中的<strong>自由长度</strong>/<strong>自由角度</strong>值。</p>
+         
+         <p>要显式定义弹簧的自由长度或自由角度，在<strong>预载</strong>输入框中输入<strong>0</strong>，在<strong>预载长度</strong>输入框中键入弹簧的自由长度，或者在<strong>预载角度</strong>输入框中输入弹簧的自由角度。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

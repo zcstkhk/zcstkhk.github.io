@@ -1,0 +1,10 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"可变形组件",file:"id1073863.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"定义可变形部件",file:"func_details_comp_deform_define.html",type:"topic",parent:""},
+{id:"d5e6",title:"变形组件",file:"comp_deform_deform_comp_ov.html",type:"topic",parent:""},
+{id:"d5e7",title:"注释和限制",file:"comp_deform_notes.html",type:"topic",parent:""},
+{id:"d5e8",title:"创建一个可变形的弹簧",file:"id970815.html",type:"activity",parent:""},
+{id:"d5e9",title:"使用引导线串来定义可变形部件",file:"id971151.html",type:"activity",parent:""},
+{id:"d5e10",title:"添加可变形部件到装配中",file:"id971407.html",type:"activity",parent:""}
+]}

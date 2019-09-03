@@ -1,0 +1,15 @@
+{identifier:"id",label:"title",items:[
+{id:"d8e2",title:"打开部件",file:"id947341.html",type:"topic",parent:""},
+{id:"d8e3",title:"显示处理中的工件",file:"id1065197.html",type:"topic",parent:""},
+{id:"d8e4",title:"创建工序",file:"id1065199.html",type:"topic",parent:""},
+{id:"d8e5",title:"指定螺纹几何体",file:"id1065201.html",type:"topic",parent:""},
+{id:"d8e6",title:"指定螺纹深度",file:"id1065203.html",type:"topic",parent:""},
+{id:"d8e7",title:"指定恒定深度增量",file:"id1065205.html",type:"topic",parent:""},
+{id:"d8e8",title:"生成刀轨",file:"id1065207.html",type:"topic",parent:""},
+{id:"d8e9",title:"指定可变深度增量",file:"id1065209.html",type:"topic",parent:""},
+{id:"d8e10",title:"生成刀轨",file:"id1065211.html",type:"topic",parent:""},
+{id:"d8e11",title:"指定增量百分比",file:"id1065213.html",type:"topic",parent:""},
+{id:"d8e12",title:"生成刀轨",file:"id1065215.html",type:"topic",parent:""},
+{id:"d8e14",title:"指定切削起点和终点",file:"id1065217.html",type:"topic",parent:""},
+{id:"d8e15",title:"指定进刀和退刀角度",file:"id1065219.html",type:"topic",parent:""},
+{id:"d8e16",title:"生成刀轨",file:"id1065241.html",type:"topic",parent:""}]}

@@ -1,0 +1,40 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>装配序列注释</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>装配序列注释</h2>
+         <p>序列只创建装配中现有组件的引用。不能使用次序功能生成新的组件或从装配外部添加组件。然而，对装配的更改将反映在序列中，包括：</p>
+         <ul>
+           <li>
+             <p>在将一个组件添加到装配中时，该组件出现在序列中的<strong>未处理的</strong>文件夹内。</p>
+           </li>
+           <li>
+             <p>从装配中移除用于序列步骤的组件时，可从该序列中删除相应步骤。</p>
+           </li>
+           <li>
+             <p>关联的组件替换不会引起序列的更改。 </p>
+           </li>
+           <li>
+             <p>非关联的替换所产生的影响与删除和添加产生的影响相同。序列步骤删除后，新组件便添加到<strong>未处理的</strong>文件夹中。</p>
+           </li>
+           <li>
+             <p>对于识别约束的序列，对约束作出的更改可能会因求解新关系而影响回放。</p>
+           </li>
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

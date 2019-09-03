@@ -1,0 +1,195 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>特征组的排序与重排序</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>特征组的排序与重排序</h2>
+         
+         <p>一共有三种特征组类型：</p>
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p><strong>带时间戳记</strong></p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>这是默认的类型，带时间戳记的特征组按特征创建的时间戳记顺序放置，重新排列带时间戳记的特征组可能会引起其它特征的自动重排序。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p><strong>浮动</strong></p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>浮动的特征组可以放置在部件导航器中的任意位置，而不会打乱其它特征的顺序。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p><strong>带时间戳记和浮动</strong></p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>当您想把某种类型的特征总是放在部件导航器底部，而将其它特征组按它们创建的时间戳记顺序放置时，可以在同一个部件中混合使用带时间戳记与浮动特征组。</p>
+                  
+               </div>
+            </div>
+         </div>
+         
+         <div class="division">
+            
+            <h3>激活特征组</h3>
+            
+            <p>当某个特征组激活时，新建的特征将被自动添加到该特征组中成为其成员，要激活特征组，右击部件导航器中的特征组并选择<strong>活动的</strong>。</p>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">注释</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>活动特征组的行为取决于<strong>首选序列时间戳记顺序</strong>用户默认设置以及特征组建模首选项中的<strong>允许自动重新排序特征组</strong>(要查看此选项，必须先选中<strong>首选有序时间戳记顺序</strong>用户默认设置)。</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+            <p>下面是将激活特征组转为非激活状态的方法：</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>右击激活的特征组并再次点击以取消选择<strong>活动的</strong></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>将不是该特征组中成员的特征设为当前特征</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>右击<strong>部件导航器</strong>背景并选择<strong>更新到最后</strong>或<strong>不激活任何组</strong></p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>特征组的自动重排序</h3>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>不选中该复选框时(默认设置)，活动特征组的最后一个成员特征将被设为当前特征，新建的特征将会转到活动的特征组中，但不会引起重排序，因为下游的特征为非激活状态，不能选择为输入(父项)。</p>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">注释</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p>如果未选中<strong>首选序列时间戳记顺序</strong>用户默认设置，活动的特征组将总是执行这些操作。</p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>当选中<strong>允许自动重新排序特征组</strong>时，可以自动排列活动特征组的顺序，最后一个不会被设为当前特征，所以您可以从下游特征中选择输入几何体。</p>
+                  
+                  <p>新建的特征将转到活动的特征组中，这可能会引起重新排序，以便特征组的成员具有高于其父项的时间戳记。</p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">先决条件</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                    <p><strong>用户默认设置→建模→特征组→首选序列时间戳记顺序</strong></p>
+                     
+                     <p class="no-bottom-margin">必须先选中该选项才能查看建模首选项中的<strong>允许自动重新排序特征组</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p><strong>格式→组→特征分组→输出列表</strong></p>
+                     
+                     <p class="no-bottom-margin"><strong>首选项→建模→常规选项卡→允许自动重新排序特征组</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

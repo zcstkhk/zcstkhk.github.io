@@ -1,0 +1,135 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>激励载荷</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>激励载荷</h2>
+         <a name="ndxgenid_spta_response_69"></a>
+         <a name="ndxgenid_spta_response_70"></a>
+         
+         
+        <div>
+           <div>
+             <div>
+               <div>
+                 <div>
+                   <p>激励是应用于模型的外部载荷，旨在分析模型对载荷的动态响应，例如车辆轮胎撞击突起时的撞击特征。 </p>
+                   <p>激励可以是：</p>
+                   <ul>
+                     <li>
+                       <p>由节点、方向和力函数定义的节点力。 </p>
+                     </li>
+                     <li>
+                       <p>由节点、方向以及位移、速度或加速度函数定义的节点强迫运动。 </p>
+                     </li>
+                     <li>
+                       <p>通过缩放您在解法中预定义的载荷来定义的分布式载荷激励（仅&ldquo;瞬态&rdquo;、&ldquo;频率&rdquo;或&ldquo;随机&rdquo;事件）。 </p>
+                     </li>
+                     <li>
+                       <p>应用于单个节点的恒定速度冲击或跌落冲击（使用自动生成的半正矢函数）。</p>
+                     </li>
+                     <li>
+                       <p>定义为一般旋转力或相对于给定轴的非平衡旋转质量的旋转力（仅&ldquo;频率&rdquo;事件）。 </p>
+                     </li>
+                   </ul>
+                   <p>您可以使用 NX 函数和图形实用程序创建动态函数以用作您事件的激励。有关创建函数的一般信息，包括详细步骤，参见<strong>函数和图形帮助</strong>。 </p>
+                 </div>
+               </div>
+             </div>
+           </div>
+        </div>
+        <p>&nbsp;</p>
+         <a name="id910987"></a>
+         
+         
+         
+        <h3>响应仿真函数工具实用程序</h3>
+         
+         <a name="ndxgenid_spta_response_72"></a>
+         <a name="ndxgenid_spta_response_73"></a>
+         
+         
+        <p>除了 NX 函数和图形工具外，还可以使用响应仿真实用工具，这个实用工具提供了有用的函数命令，比如：</p>
+         
+         <ul>
+            
+            <li>               </li>
+            <li>
+              <p>轻松创建激励函数，比如脉冲、随机信号和 ramp 函数。</p>
+            </li>
+            <li>
+              <p>位移、速度和加速度数据转换</p>
+            </li>
+            <li>
+              <p>时间、频率、SRS 和 PSD 数据转换</p>
+            </li>
+            <li>
+              <p>插值 </p>
+            </li>
+            <li>
+              <p>包络线</p>
+            </li>
+            <li>
+              <p>方程组合</p>
+            </li>
+            <li>
+              <p>节点结果的 NX Nastran Punch 文件转换</p>
+            </li>
+            
+         </ul>
+         
+         
+         <p>下图为使用响应仿真实用程序创建的函数。</p>
+         <a name="genid_spta_response_74"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/solutions/response_simulation/halfsine_function.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>加速度冲击脉冲(半正弦函数)</h4>
+         </div>
+         <a name="genid_spta_response_75"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/solutions/response_simulation/square_function.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>力脉冲(方波函数)</h4>
+         </div>
+         <a name="genid_spta_response_76"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/solutions/response_simulation/ramp_function.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>速度冲击或单步速度变化(斜坡函数)</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>NX CAE 术语与概念</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>NX CAE 术语与概念</h2>
+         
+         <p>在 NX CAD 中，您主要使用部件文件和装配文件，它们都是储存在*.prt 文件中。在最简单的 CAE 模型中，您将使用两个文件：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><em>FEM 文件</em>(*.fem)：它是包含所有网格数据以及网格数据所需的物理与材料属性的文件。FEM 文件也包含多边形几何体，它是 CAD 几何体的细化(小平面化)版本。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><em>仿真文件</em>(*.sim)：它是包含边界条件以及特定于求解器数据的文件。</p>
+               
+               <p>仿真文件实际上是一个 NX 装配，其中 FEM 文件是它唯一的组件。组件 FEM 文件充当仿真文件的主模型。由于同一个 FEM 文件可以被多个仿真文件引用为组件，所以您可以在不同的分析中重用网格数据。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>除了 FEM 与仿真文件外，您也可以是下列类型的文件：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><em>理想化部件文件</em>(_i.prt )：它是部件文件的关联副本，您可以创建理想化部件来管理特定于某个分析的几何体修改，以便管理独立于原始 CAD 的数据。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><em>装配 FEM 文件</em>：它可以用于创建 包含多个 FEM 文件的 CAE 模型。装配 FEM 文件充当仿真文件的主模型部件。它包含组件 FEM 文件的事例以及位置数据，也包含连接单元(将组件 FEM 连接为一个系统)与属性覆盖。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

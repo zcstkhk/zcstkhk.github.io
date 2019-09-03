@@ -1,0 +1,114 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>引用集组</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>引用集组</h2>
+         
+         <p>可以使用<strong>装配加载选项</strong>对话框的<strong>引用集</strong>组来控制在打开装配时加载和显示的引用集。</p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>引用集可以包含组件作为成员。由引用集的成员组件显示的引用集要<em>在引用集数据中指定</em>。</p>
+                 <p>例如，可定义显示以下内容的引用集：</p>
+                  <ul>
+                    <li>
+                      <p>铆钉的<strong>空</strong>引用集。</p>
+                    </li>
+                    <li>
+                      <p>定制紧固件的<strong>模型</strong>引用集。</p>
+                    </li>
+                    <li>
+                      <p>螺纹紧固件的简化引用集。</p>
+                    </li>
+                  </ul>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <p>可以加载任何轻量级引用集，即对具有轻量级表示的引用集的成员进行轻量级表示显示。设置<strong>自动轻量级生成</strong>用户默认设置，以指定软件自动保持轻量级表示的引用集。</p>
+         
+         <table class="attentionTable attn_tip">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">提示</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>要查找用户默认设置，请选择<strong>文件</strong>→<strong>实用工具</strong>→<strong>用户默认设置</strong>，然后单击<strong>查找默认设置</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/customer_defaults/find_default.gif" border="0">。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <div class="division">
+            
+            <h3>引用集层次结构</h3>
+            
+            <p>可以使用<strong>引用集</strong>组中的列表来指定引用集的层次结构。在打开装配时：</p>
+            <ul>
+              <li>
+                <p>在找到匹配之前，将针对每个部件，按顺序对列表中的各个引用集名称进行评估。</p>
+              </li>
+              <li>
+                <p>如果部件在加载过程中的评估结果显示为<strong>空</strong>，则不会加载此部件。</p>
+              </li>
+              <li>
+                <p>如果子装配在加载过程中的评估结果显示为<strong>空</strong>，则不会加载子装配及其任何组件。</p>
+              </li>
+              <li>
+                <p>如果子装配在加载过程中的评估结果显示为<strong>整个部件</strong>，则会加载子装配，且对其组件的评估<em>会继续在装配树上进行</em>。</p>
+              </li>
+              <li>
+                <p>如果子装配在加载过程中的评估结果既非<strong>空</strong>也非<strong>整个部件</strong>，则根据<strong>应用于所有装配级</strong>复选框执行进一步评估：</p>
+                <ul>
+                  <li>
+                    <p>如果清除该复选框，评估会在子装配的第一级处停止，其中具有正在评估的引用名称。</p>
+                  </li>
+                  <li>
+                    <p>如果选中该复选框，将在所有子装配级别上完成对各个组件的评估。</p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <p>每个部件文件都包含空部件及整个部件显示条件。不能从列表中移除引用集显示条件<strong>整个部件</strong>和<strong>空</strong>。</p>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">注释</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>对列表中层次结构较高的显示条件进行评估时，该显示条件始终按名称匹配。</p>
+                     <p>不能使用层次结构来指定显示部件的引用集。引用集仅适用于已显示部件的组件。</p>
+                     <p>在软件设置为使用&ldquo;按照保存的&rdquo;引用集（例如，<strong>按照保存的</strong>位于<strong>引用集</strong>列表的顶部），但&ldquo;按照保存的&rdquo;引用集已删除时，软件会改用&ldquo;模型&rdquo;引用集。如果不存在&ldquo;模型&rdquo;引用集，软件会使用&ldquo;整个部件&rdquo;引用集。</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

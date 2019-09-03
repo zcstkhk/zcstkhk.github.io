@@ -1,0 +1,76 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Loading CAE data from search folders</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>从搜索文件夹加载 CAE 数据</h2>
+         
+         <p>如要搜索多个文件夹中的文件，则可以选择使软件搜索一组已定义的搜索文件夹中要加载的组件和关联文件。必须使用<strong>从搜索文件夹</strong>加载选项。该选项显示在<strong>文件</strong>→<strong>选项</strong>→<strong>装配加载选项</strong>对话框的<strong>部件版本</strong>组中。</p>
+         <p>在多个文件夹中搜索数据，有利有弊。</p>
+         
+         <div class="division">
+            
+           <h3>利：</h3>
+            
+            <ul>
+               
+               <li>
+                 <p>支持并行工程工作流</p>
+               </li>
+               <li>
+                 <p>支持基于小组的分析</p>
+               </li>
+               <li>
+                 <p>可以重用组件 FEM 文件和关联的 CAD 部件文件</p>
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>弊：</h3>
+            
+            <ul>
+               
+               <li>
+                 <p>加载性能与必须搜索的目录和文件的数目成比例</p>
+               </li>
+               <li>
+                 <p>由于文件和项目的数量不断增加，因此，必须不断维护搜索目录并使其保持最新状态               </p>
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>建议</h3>
+            
+            <p>要缩短搜索时间，请与其他文件类型（如规范、报告、演示文稿，等等）在不同的目录结构中维护 NX 文件。 </p>
+            <p>为避免每个用户都保留搜索路径，系统管理员应在文本文件中保留搜索路径。 </p>
+            <p>要使 NX 搜索正确的目录，则将<strong>文件</strong>→<strong>选项</strong>→<strong>装配加载选项</strong>对话框中的搜索路径设为 <em>ug_search_dirs.dat</em>。这是 NX 可识别的文件。包含一个子目录名称的列表，每行一个名称。</p>
+         </div>
+         
+         
+         <p>有关使用文本文件维护搜索路径的更多信息，以及有关使用<strong>从搜索文件夹</strong>加载选项的更多提示，请参见<span class="titleReference">装配</span>联机帮助中的<span class="titleReference">加载部件版本</span>。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

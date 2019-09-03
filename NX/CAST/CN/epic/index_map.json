@@ -1,0 +1,19 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"PMI 注释",file:"xid483040.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"PMI 注释",type:"topicMap",parent:"",children:[
+{id:"d5e6",title:"基准特征符号",file:"pmi_menu_datum_feature_symbol_ov.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"基准目标",file:"drf_datum_target_ov.html",type:"topic",parent:"d5e5"},
+{id:"d5e8",title:"特征控制框",file:"ann_toolbar_fcf_ov.html",type:"topic",parent:"d5e5"},
+{id:"d5e9",title:"注释",file:"annotation_annot_ovw.html",type:"topic",parent:"d5e5"},
+{id:"d5e10",title:"符号注释",file:"prod_def_proddef_attrib_balloon.html",type:"topic",parent:"d5e5"},
+{id:"d5e11",title:"在部件中添加 PMI 注释",file:"id1011674.html",type:"activity",parent:"d5e5"},
+{id:"d5e12",title:"表面粗糙度",file:"id1011696.html",type:"topic",parent:"d5e5"},
+{id:"d5e13",title:"创建并编辑表面粗糙度",file:"id1011703.html",type:"activity",parent:"d5e5"},
+{id:"d5e14",title:"焊接符号",file:"weld_weld_symbols.html",type:"topic",parent:"d5e5"},
+{id:"d5e15",title:"创建焊接符号",file:"id1011735.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e17",title:"编辑 PMI",type:"topicMap",parent:"",children:[
+{id:"d5e18",title:"编辑注释",file:"dim_edit_dim_ov.html",type:"topic",parent:"d5e17"},
+{id:"d5e19",title:"编辑样式",file:"edit_ordinate_dim.html",type:"topic",parent:"d5e17"},
+{id:"d5e20",title:"编辑文本",file:"txt_editr_ov.html",type:"topic",parent:"d5e17"}]}
+]}

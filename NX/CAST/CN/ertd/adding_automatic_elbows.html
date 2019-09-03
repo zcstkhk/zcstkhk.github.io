@@ -1,0 +1,153 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>在管线中添加自动弯头</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>在管线中添加自动弯头</h2>
+         <div class="estimatedTime">
+            <p>预计完成这堂课需要：8&ndash;12  分钟</p>
+         </div>
+         <div></div>
+         
+         <p>与使用自动折弯段生成管线相同，您同样可以在创建管线时在其中包含标准弯头。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/preferences/withstock_elbow_1.gif"></p>
+         
+         <div class="division">
+            
+            <h3>指定默认弯头</h3>
+            <a name="ndxgenid_ertd_78"></a>
+            
+            <a name="ndxgenid_ertd_79"></a>
+            
+            
+            <p><strong>指定默认弯头</strong>选项将调用<strong>指定项</strong>对话框，以便您使用<strong>管线部件库</strong>来选择标准弯头。</p>
+            
+            <p>在<strong>创建线性路径</strong>对话框中，当首选项设为同时包含折弯与弯头时，则优先使用默认弯头。</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>指派默认弯头</h3>
+            <a name="ndxgenid_ertd_80"></a>
+            
+            <a name="ndxgenid_ertd_81"></a>
+            
+            
+            <p><strong>指派默认弯头</strong>将自动根据<strong>指派默认弯头</strong>的设置，来把标准弯头放置到路径段的顶点上。为了把默认弯头放置到路径中：</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>弯头的 ELBOW_ANG 值必须与当前创建的线段和上一条线段所成的角度相同。</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>弯头是部件族表中满足目标路径特性的唯一成员。</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>如果 NX 无法找到合适的弯头来放置到拐角中，则将不会放置弯头，如果这时候已启用<strong>指派默认转角</strong>，就会创建一个折弯段。</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>允许切割弯头</h3>
+            <a name="ndxgenid_ertd_82"></a>
+            
+            <a name="ndxgenid_ertd_83"></a>
+            
+            
+            <p>选中后，这个选项将会在拐角超过90&deg;，并且无法放置默认弯头的顶点处放置切割弯头，<strong>允许切割弯头</strong>只在<strong>管道和布管</strong>应用模块中可用，并且需要选中<strong>指派默认弯头</strong>复选框。默认的弯头部件族模板将作为切割弯头的种子部件。</p>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table cellspacing="2" class="locator" frame="box">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>机械管线布置</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">对话框</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>创建线性路径</strong>&rarr;<strong>设置</strong>组&rarr;<strong>指派默认弯头</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">首选项</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>首选项</strong>&rarr;<strong>管线布置</strong>&rarr;<strong>部件</strong>选项卡&rarr;<strong>指派默认弯头</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         <a name="id1129453" id="id1129453"></a><div id="footer"></div>
+      </div>
+   </body>
+</html>

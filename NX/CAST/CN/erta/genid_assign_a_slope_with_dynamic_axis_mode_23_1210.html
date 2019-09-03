@@ -1,0 +1,68 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>使用动态轴模式指派斜直线</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>使用动态轴模式指派斜直线</h2>
+         <a name="ndxgenid_erta_70"></a>
+         
+         
+         <p>您可使用动态轴来创建管线段，该管线段的斜率方向为预定义的向下的方向。</p>
+         <p>向下的方向是用来指示管线段中重力的方向。一旦定义，向下的方向就会随部件一起保存，因此您可以在不同的部件中使用不同的方向。向下的方向和动态轴方向平行时，斜率值可以忽略。 </p>
+        <p>正的斜率值对应为上升，负的斜率值对应为下降。NX 将计算上升或下降做为一个平面内的 CCW，该值取决于管线向下方向的矢量，以及当前拖动的轴手柄。 使用<strong>管线布置首选项</strong>对话框的<strong>路径</strong>选项卡中的<strong>设置向下方向</strong>来定义向下方向。
+          <a name="ndxgenid_erta_71"></a>        </p>
+        <p>译者注：创建倾斜的管线段时，必须参考<strong>向下方向</strong>，选择的方向为全局矢量，不随创建管线的动态 CSYS 变化而变化。在创建倾斜管线段时，输入的角度值是这样计算的：首先，创建的管线段位于指定的<strong>向下方向</strong>矢量与您指定的 CSYS 方向矢量所构成的平面内；其次，以您创建的管线段终点为角度测量原点，<strong>向下方向</strong>矢量为角度测量的第一个矢量，创建的管线段为第二条边，若测量方向为逆时针方向则角度值为正值，若为顺时针方向则为负值。此段话仅为帮助您理解<strong>向下矢量</strong>，如果看不懂就好好琢磨一下，后面创建倾斜管线段要用到。</p>
+        <p>当您选择<strong>动态轴</strong>时，<strong>斜率类型</strong>和<strong>斜率值</strong>选项变为可用。 有三种方法可以创建倾斜的路径。 在<strong>斜率类型</strong>列表中，您可以选择：</p>
+         <a name="ndxgenid_erta_72"></a>
+         
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>度</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>让您输入斜直线的角度值作为<strong>斜率值</strong>。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>百分比</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>让您输入斜直线的百分比作为<strong>斜率值</strong>。例如，10% 将会使直线每增加10个单位长度，就会出现一个单位斜度。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>比率</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>让您输入 a:b 来作为<strong>斜率值</strong>，例如，比率1:10将会使直线每增加10个单位长度，就会出现一个单位斜度。</p>
+                  <p>译者注：此处的<strong>斜率值</strong>与数学概念上的斜率不一样，是对斜度的泛指，不是仅仅代表直线的斜率。</p>
+                  
+               </div>
+            </div>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

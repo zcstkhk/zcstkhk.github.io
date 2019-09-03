@@ -1,0 +1,100 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>完全打开部件以包含重量数据</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>完全打开部件以包含重量数据</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在<strong>装配导航器</strong>的<strong>重量状态列下，确认哪些组件有</strong>不可靠值 <img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/activities/advanced_weight_management/weight_mgmt_question_mark.gif" border="0"> 的例外。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>装配导航器</strong>中，右击 <span class="fileName">des20_valve1_rodend</span> 并选择<strong>打开&rarr;完整组件</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>为三个仍然关闭的组件重复这个步骤，<span class="fileName">des20_valve1_pipe2</span>、<span class="fileName">des20_valve1_housing</span> 以及 <span class="fileName">des20_valve1_pipe1</span>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>由于组件最初是隐藏的，它们将返回到此状态，即使您将它们打开后依然如此。没有必要在装配文件中显示它们。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>重量管理</strong>对话框中的<strong>计算</strong>组，点击<strong>工作部件</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>浏览<strong>信息</strong>窗口的内容。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>隐藏的组件也进行重量计算，在<strong>信息</strong>窗口的警告区中不再列出这些组件。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>关闭<strong>信息</strong>窗口。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>查看隐藏组件的重量状态。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>这一次，<strong>装配导航器</strong>中没有不可靠值 <img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/activities/advanced_weight_management/weight_mgmt_question_mark.gif" border="0"> 标志了。</p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

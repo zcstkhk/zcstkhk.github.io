@@ -1,0 +1,14 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e3",title:"打开 FEM 文件",file:"id852546.html",type:"topic",parent:""},
+{id:"d7e2",title:"重置对话框内存",file:"id813466.html",type:"topic",parent:""},
+{id:"d7e4",title:"定义材料坐标系",file:"id852711.html",type:"topic",parent:""},
+{id:"d7e5",title:"创建层合板物理属性",file:"id852481.html",type:"topic",parent:""},
+{id:"d7e6",title:"创建全局铺层",file:"id852476.html",type:"topic",parent:""},
+{id:"d7e7",title:"定义皱褶输入",file:"id852511.html",type:"topic",parent:""},
+{id:"d7e8",title:"定义铺层偏置",file:"id852496.html",type:"topic",parent:""},
+{id:"d7e9",title:"创建区域",file:"id852486.html",type:"topic",parent:""},
+{id:"d7e10",title:"局部增强挡泥板",file:"id852531.html",type:"topic",parent:""},
+{id:"d7e11",title:"更新区域",file:"id852566.html",type:"topic",parent:""},
+{id:"d7e12",title:"检查材料方向",file:"id852456.html",type:"topic",parent:""},
+{id:"d7e14",title:"显示厚度云图",file:"id1539277.html",type:"topic",parent:""},
+{id:"d7e15",title:"保存并关闭",file:"id813461.html",type:"topic",parent:""}]}

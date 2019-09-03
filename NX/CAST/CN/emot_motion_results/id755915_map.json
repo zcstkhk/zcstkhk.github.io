@@ -1,0 +1,6 @@
+{identifier:"id",label:"title",items:[
+{id:"d18e2",title:"打开仿真",file:"excavator_open_simulation.html",type:"topic",parent:""},
+{id:"d18e3",title:"重置对话框内存",file:"id353012_dup11.html",type:"topic",parent:""},
+{id:"d18e4",title:"显示装配导航器",file:"display_assembly_navigator.html",type:"topic",parent:""},
+{id:"d18e5",title:"导入子装配",file:"import_subassembly.html",type:"topic",parent:""},
+{id:"d18e6",title:"将导入的对象移动到主机构中",file:"move_imported_objects.html",type:"topic",parent:""}]}

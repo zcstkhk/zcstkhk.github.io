@@ -1,0 +1,191 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>分析分型</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>分析分型
+         
+         
+         </h2><p><strong>模具部件验证</strong>将帮助您识别产品模型中的设计缺陷，<strong>检查区域</strong>提供了关于拔模角度、底切以及横截面的相关信息。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>使用下列方法中的一种打开<strong>检查区域</strong>对话框：</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>点击<strong>注塑模向导</strong>工具条上的<strong>模具部件验证</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/wizards/mold_wizard/molded_part_validation.png" border="0">，然后点击<strong>模具部件验证</strong>工具条上的<strong>检查区域</strong>。</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>选择<strong>分析&rarr;模具部件验证&rarr;检查区域</strong>。</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>当前部件中包含一个体，它将被自动选中。</p>
+                     
+                     <p>默认脱模方向为工作坐标系的 +ZC 轴，对于这个部件来说这个轴是正确的。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>计算</strong>选项卡中的<strong>计算</strong> <img align="bottom" src="../graphics/nonLocalized/nx/mold_wizard/calculate.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>面</strong>选项卡。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>在<strong>面拔模角</strong>组中，注意到默认的拔模角限制为3.0度，<strong>数量</strong>列显示部件中有180个面。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>拔模角限制</strong>输入框中键入<strong>1</strong>并回车。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>将更新结果以反映拔模角的变化。</p>
+                     
+                     <p><strong>面</strong>选项卡显示了按照拔模角限制分类的面的数量，这些面中有：</p>
+                     
+                     <ul>
+                        
+                        <li>
+                           
+                           <p>拔模角大于或等于拔模角限制</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>拔模角小于拔模角限制</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>无拔模角(竖直面)</p>
+                           
+                        </li>
+                        
+                        <li>
+                           
+                           <p>底切面</p>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>选中<strong>竖直</strong>复选框，然后旋转部件以查看高亮显示的面。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>在盘面下方有底脚和肋板，四个肋版以及两个底脚中含有竖直(无拔模)面。<img align="bottom" src="../graphics/graphicLibrary/nx/mold_wizard/activities/introductory_topics/vertical_faces.png" border="0"></p>
+                     
+                     <p>您可以向右移动<strong>未选定的面</strong>滑动条，以提升分析显示的可见性。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>选中<strong>底切区域</strong>复选框。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>盘面底部的两个圆柱面为底切面，底切表示它们含有与周围面的拔模角度相反的区域。</p>
+                     
+                     <p>这两个面也被识别为交叉面，这是因为它们的一部分跨越了理论等斜线，即连接所有零度拔模点的曲线。<img align="bottom" src="../graphics/graphicLibrary/nx/mold_wizard/activities/introductory_topics/undercut_faces.png" border="0"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>设置所有面的颜色</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/wizards/mpv/set_color_all_faces.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p><img align="bottom" src="../graphics/graphicLibrary/nx/mold_wizard/activities/introductory_topics/cardholder_validate.png" border="0"></p>
+                     
+                     <p>型腔与型芯面将显示不同的颜色，以便软件在其它命令中可以快速识别它们。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>关闭所有部件。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

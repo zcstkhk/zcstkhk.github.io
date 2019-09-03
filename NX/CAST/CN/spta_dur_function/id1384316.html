@@ -1,0 +1,143 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>分析应变片应变花数据</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>分析应变片应变花数据</h2>
+         
+         <p>使用<strong>分析应变片</strong>命令可通过应变片应变花数据创建耐久性函数。可以通过以下途径获取应变片应变花数据：</p>
+         <ul>
+           <li>
+             <p>响应仿真求解过程。可以从列表或图形窗口选择应变片数据。</p>
+           </li>
+           <li>
+             <p>AFU 文件。可以从测试设置获取存储在 AFU 文件中的应变片数据。</p>
+           </li>
+         </ul>
+         <p> 耐久性函数保存到目标 AFU 文件中。在 <strong>XY 函数导航器</strong>中可以查看耐久性函数。 </p>
+         
+         <table border="0" width="100%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p>以下耐久性函数可以作为时间函数：</p>
+                     <ul>
+                       <li>
+                         <p>双轴比</p>
+                       </li>
+                       <li>
+                         <p>有效应力和应变</p>
+                       </li>
+                       <li>
+                         <p>最大和绝对最大主应变</p>
+                       </li>
+                       <li>
+                         <p>最大和绝对最大剪切应变</p>
+                       </li>
+                       <li>
+                         <p>最大和绝对最大主应力</p>
+                       </li>
+                       <li>
+                         <p>最大和绝对最大剪切应力</p>
+                       </li>
+                       <li>
+                         <p>Von Mises 和带符号的 Von Mises 应力</p>
+                       </li>
+                       <li>
+                         <p>非比例指示函数：最大和绝对最大主角度</p>
+                       </li>
+                     </ul>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/durability/biaxiality_ratio.gif"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <p>可以请求 NX 将横向加载比写入存储应力和应变函数的 AFU 记录中。横向加载比（有时称为<em>有效双轴比</em>）写入 AFU 记录的<strong>用户值</strong>字段。</p>
+         <p>分析应变片时，可以使用用户默认设置来设置默认输出请求。可以在<strong>用户默认设置</strong>对话框的<strong>仿真</strong>→<strong>NX 高级耐久性</strong>→<strong>应变片分析</strong>选项卡上设置默认值。</p>
+         <p>双轴比和非比例指示函数可以帮助决定损伤计算所使用的疲劳寿命准则。使用<strong>计算损伤</strong>命令，可以生成包含应变片损伤位置信息的电子表格。</p>
+         
+         
+         <div class="division">
+            
+           <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+               </colgroup>
+               
+               <tr valign="top">
+                 <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p>高级仿真</p></td>
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>耐久性</strong>→<strong>分析应变片</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/durability/analyze_strain_gage.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                 <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p></td>
+                 <td colspan="1" rowspan="1" valign="bottom"><p><strong>插入</strong>→<strong>耐久性</strong>→<strong>分析应变片</strong></p></td>
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

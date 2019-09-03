@@ -1,0 +1,431 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>方向方法</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>方向方法</h2>
+         
+         <p>有<strong>5</strong>种投影方向方法：<a name="ndxgenid_ecvd_53"></a>
+            
+         </p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>沿面的法向</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>朝向点</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>朝向直线</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>沿矢量</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>与矢量成角度</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p><a name="ndxgenid_ecvd_54"></a><strong>沿面的法向</strong>将沿面和平面的法向投影对象。</p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>只有使用<strong>沿面的法向</strong>或<strong>沿矢量</strong>投影对象到平面上是精确投影，所有其它投影都是使用建模公差逼近。</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/project_curve/proj_crv_along_face_normals.png"></p>
+                  
+                  <table border="1" cellpadding="6" cellspacing="2" class="locator" width="40%" align="center">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1" width="32">
+                        
+                        <col span="1">
+                     </colgroup>
+                     
+                     <tr>
+                        
+                        <td align="center" bgcolor="" class="locator_shade" colspan="1" rowspan="1">
+                           
+                           <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_1_small.gif"></p>
+                           
+                        </td>
+                        
+                        <td bgcolor="" class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">要投影的曲线</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr>
+                        
+                        <td align="center" bgcolor="" class="locator_shade" colspan="1" rowspan="1">
+                           
+                           <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_2_small.gif"></p>
+                           
+                        </td>
+                        
+                        <td bgcolor="" class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">面的法向</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                     <tr>
+                        
+                        <td align="center" bgcolor="" class="locator_shade" colspan="1" rowspan="1">
+                           
+                           <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_3_small.gif"></p>
+                           
+                        </td>
+                        
+                        <td bgcolor="" class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                           
+                           <p class="no-bottom-margin">投影的曲线</p>
+                           
+                        </td>
+                        
+                     </tr>
+                     
+                  </table>
+                  
+               </td>
+            </tr>
+         </table>
+         <p><strong>朝向点</strong>把对象朝一个指定的点投影，对于一个投影的点，您将得到选定的点与投影点的交点。</p>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/project_curve/proj_crv_toward_pt.png"></p>
+         <table border="1" cellpadding="6" cellspacing="2" class="locator" width="40%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="32">
+               
+               <col span="1">
+            </colgroup>
+            
+            <tr>
+               
+               <td align="center" bgcolor="" class="locator_shade" colspan="1" rowspan="1">
+                  
+                  <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_1_small.gif"></p>
+                  
+               </td>
+               
+               <td bgcolor="" class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">要投影的曲线</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td align="center" bgcolor="" class="locator_shade" colspan="1" rowspan="1">
+                  
+                  <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_2_small.gif"></p>
+                  
+               </td>
+               
+               <td bgcolor="" class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">曲线朝这个点投影</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td align="center" bgcolor="" class="locator_shade" colspan="1" rowspan="1">
+                  
+                  <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_3_small.gif"></p>
+                  
+               </td>
+               
+               <td bgcolor="" class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">投影的曲线</p>
+                  
+               </td>
+               
+            </tr>
+            
+         </table>
+         <p><strong>朝向直线</strong>把对象沿垂直于指定直线或基准轴的矢量投影，对于一个投影的点，是在指定直线上与该直线垂线的交点。</p>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/project_curve/proj_crv_toward_line.png"></p>
+         <table border="1" cellpadding="6" cellspacing="2" class="locator" width="40%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="32">
+               
+               <col span="1">
+            </colgroup>
+            
+            <tr>
+               
+               <td align="center" bgcolor="" class="locator_shade" colspan="1" rowspan="1">
+                  
+                  <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_1_small.gif"></p>
+                  
+               </td>
+               
+               <td bgcolor="" class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">要投影的曲线</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td align="center" bgcolor="" class="locator_shade" colspan="1" rowspan="1">
+                  
+                  <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_2_small.gif"></p>
+                  
+               </td>
+               
+               <td bgcolor="" class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">曲线朝这条直线投影</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td align="center" bgcolor="" class="locator_shade" colspan="1" rowspan="1">
+                  
+                  <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_3_small.gif"></p>
+                  
+               </td>
+               
+               <td bgcolor="" class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin">投影的曲线</p>
+                  
+               </td>
+               
+            </tr>
+            
+         </table>
+         <p><strong>沿矢量</strong>将把选定的对象沿使用<strong>矢量构造器</strong>指定的矢量投影。</p>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/project_curve/7abprjptfi03.gif"></p>
+         <table border="1" cellpadding="6" cellspacing="2" class="locator" width="40%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="32">
+               
+               <col span="1">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td align="center" class="locator_shade" colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_1_small.gif"></p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">V 等曲线</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_2_small.gif"></p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">面上的点</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td align="center" class="locator_shade" colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_3_small.gif"></p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">U 等曲线</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td align="center" class="locator_shade" colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_4_small.gif"></p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">参考点</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <p>当使用矢量，选择<strong>投影两侧</strong>选项实现双向投影。</p>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/project_curve/proj_curve_project_both_sides.png"></p>
+         <p><strong>与矢量成角度</strong>将把选定曲线沿与指定矢量成指定角度的方向投影。</p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>这个选项在投影点时不可用。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/project_curve/proj_crv_angle_from_vector.png"></p>
+         <table border="1" cellpadding="4" cellspacing="2" class="locator" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="32">
+               
+               <col span="1">
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_1_small.gif"></p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">要投影的曲线</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_2_small.gif"></p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">投影方向矢量</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_3_small.gif"></p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">正角(外)</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_4_small.gif"></p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">生成的投影曲线</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

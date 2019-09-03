@@ -1,0 +1,59 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>后处理</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>后处理</h2><a name="ndxgenid_spta_desopt200_43"></a>
+         <a name="ndxgenid_spta_desopt200_44"></a>
+         <a name="ndxgenid_spta_desopt200_45"></a>
+         
+         
+         <p>优化完成求解过程后，您可以在<strong>后处理导航器</strong>中查看每个设计循环的响应结果。而且，还会在 Nastran .f06 文件中写入有关优化器的设计循环迭代的完整报告。</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>该 .f06 文件会报告请求输出的每个设计循环的设计变量、约束、响应和目标</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>默认情况下，会报告初始设计循环和最终设计循环，但可以使用 NASPRT 参数对所有设计循环请求输出</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在 SOL 200 求解完成后，使用文本编辑器打开 Nastran .f06 文件</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>该 .f06 文件中包含优化器算法对设计模型的详细分析。所提供的详细程度取决于您所定义的输出控制参数</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/optimization/desopt_f06_output.png"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

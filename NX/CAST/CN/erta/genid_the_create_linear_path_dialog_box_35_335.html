@@ -1,0 +1,141 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>创建线性路径对话框</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>创建线性路径对话框</h2>
+         
+         <div class="verbose">
+            <p>创建线性路径是用来构建单条线段的最主要的工具。 路径包括在其起点至终点之间的所有管线控制点(RCPs)、线段、拐角和折弯 。NX 在您创建线段时会自动添加装配约束。</p>
+         </div>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/commands/create_linear_path/controlpath_create_linear_path.png"></p>
+         
+         <p>您可以构建带或不带拐角和型材的路径，当您添加型材到您的路径中时，将会沿着路径扫掠路径轮廓线以形成实体模型。</p>
+         
+         <div class="division">
+            
+           <h3>模式</h3>
+            <a name="ndxgenid_erta_38"></a>
+            
+            
+            <p>模式选项定义了线段的起点和终点。您将在这个课程中使用以下选项：</p>
+            <a name="ndxgenid_erta_39"></a>
+            
+            
+            <div class="defList"><a name="ndxgenid_erta_40"></a>
+               <a name="ndxgenid_erta_41"></a>
+               
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p>指定点</p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <p>让您使用捕捉点选项、<strong>点</strong>对话框中的选项或者下拉菜单来选择起点和终点。</p>
+                     
+                  </div>
+               </div><a name="ndxgenid_erta_42"></a>
+               <a name="ndxgenid_erta_43"></a>
+               
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p>动态轴</p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <p>在线段的活动的控制点上放置动态 CSYS，拖动平移手柄(1)来延伸线段在拖动方向上的长度。释放鼠标按钮则结束拖动。管线控制点被放置在新管线段终止点处。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/commands/create_linear_path/translation_handle.png"></p>
+                     
+                     <p>要改变平移手柄的角度，拖动其中一个旋转手柄(2)。您后续所创建的任何线段将会沿着旋转后的手柄的方向。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/commands/create_linear_path/rotation_handle.png"></p>
+                     
+                     <p>要激活屏显输入框，选择平移或旋转手柄一次。然后在<strong>距离</strong>、<strong>角度</strong>或<strong>捕捉</strong>输入框中键输入正或负值以移动手柄。平移箭头所指的方向为正方向。</p>
+                     <p>要反转平移手柄方向，在图形窗口中双击箭头符号。                  </p>
+                  </div>
+               </div><a name="ndxgenid_erta_44"></a>
+               <a name="ndxgenid_erta_45"></a>
+               
+               <div class="defListItem">
+                  <div class="defObject defObjectVert">
+                     <p>平行于轴</p>
+                  </div>
+                  <div class="defMeaning defMeaningVert">
+                     
+                     <p>创建投影到用户指定轴上的控制点。您可以使用对话框中的矢量下拉菜单来指定该轴。矢量默认为您选择的最后一个端口或圆弧的轴，或者如果您还没有选择端口或圆弧，则默认为上一个用户定义的轴。您也可以使用快速定向工具来定义矢量。</p>
+                     
+                  </div>
+               </div>
+            </div>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>机械管线布置&rarr;创建线性路径</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/routing/common/create_linear_path.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>插入&rarr;管线布置路径&rarr;创建线性路径</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

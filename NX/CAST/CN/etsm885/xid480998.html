@@ -1,0 +1,223 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Add a dimple and create a bend through it</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Add a dimple and create a bend through it</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>On the <span class="uiTerm">NX Sheet Metal</span> toolbar, from the <span class="uiTerm">Punch Drop-down</span> list, click <span class="uiTerm">Dimple</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sheet_metal/nx_sheet_metal/dimple.gif" border="0" alt="Insert&rarr;Punch&rarr;Dimple" title="Insert&rarr;Punch&rarr;Dimple">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Section</span> group, click <span class="uiTerm">Sketch Section</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/nx_sheet_metal/bead/sketch_section.gif" border="0"> and create a rectangle similar to the one shown.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/nx_sheet_metal/activities/punched_features/dimple_sketch_no_text.png" border="0"></p>
+                     
+                     <p>The dimensions do not have to be exact.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>On the <span class="uiTerm">Sketch</span> toolbar, click <span class="uiTerm">Finish Sketch</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sketcher/sketch/finish_sketch.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_sheet_metal/activities/punched_features/dimple_wrong_direction.png"></p>
+                     
+                     <p></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">Reverse Direction</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/drafting/reverse_direction.gif" border="0"> so that the dimple feature is indented, not protruded.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/nx_sheet_metal/activities/punched_features/dimple_reversed_default.png" border="0"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Dimple</span> dialog box, set the following:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Depth</span> = <span class="uiTerm">4</span></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Side Angle</span> = <span class="uiTerm">0</span></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Depth Reference</span> = <span class="userInput">Inside</span></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Side Walls</span> = <span class="uiTerm">Material Outside</span></p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/nx_sheet_metal/activities/punched_features/dimple_finished.png" border="0"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>On the <span class="uiTerm">NX Sheet Metal</span> toolbar, from the <span class="uiTerm">Bend Drop-down</span> list, select <span class="uiTerm">Bend</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sheet_metal/nx_sheet_metal/bend.gif" border="0" alt="Insert&rarr;Bend&rarr;Bend" title="Insert&rarr;Bend&rarr;Bend">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Section</span> group, click <span class="uiTerm">Sketch Section</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/nx_sheet_metal/bead/sketch_section.gif" border="0">and sketch a curve across the dimple feature as shown.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/nx_sheet_metal/activities/punched_features/sketch_across_dimple.png" border="0"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>On the <span class="uiTerm">Sketch</span> toolbar, click <span class="uiTerm">Finish Sketch</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sketcher/sketch/finish_sketch.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>If you get the result shown, click <span class="uiTerm">Reverse Side</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/drafting/reverse_direction.gif" border="0"> to switch the side of the part that moves to create the bend.
+                     </p>
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/nx_sheet_metal/activities/punched_features/dimple_bend_90_degree_preview.png" border="0"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Bend Properties group</span>, set the following:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Angle</span> = <span class="uiTerm">60</span></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Inset</span> = <span class="uiTerm">Outer Mold Line Profile</span></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Extend Section</span> = <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/check_box_on.gif" border="0"></p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/nx_sheet_metal/activities/punched_features/bead_dimple_final.png" border="0"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>Close the part now, or close all parts when you exit the session.</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

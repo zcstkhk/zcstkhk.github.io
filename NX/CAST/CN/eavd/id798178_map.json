@@ -1,0 +1,9 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"设置摄像机",file:"id798182.html",type:"topic",parent:""},
+{id:"d7e3",title:"定义第一个摄像机",file:"id924041.html",type:"topic",parent:""},
+{id:"d7e4",title:"指定第一个摄像点的位置",file:"id924043.html",type:"topic",parent:""},
+{id:"d7e5",title:"定义第二个摄像机",file:"id924045.html",type:"topic",parent:""},
+{id:"d7e6",title:"(可选)定义第三个摄像机",file:"id924047.html",type:"topic",parent:""},
+{id:"d7e7",title:"创建一个基于现有摄像机的特写摄像机",file:"id924049.html",type:"topic",parent:""},
+{id:"d7e8",title:"查看摄像机",file:"id924051.html",type:"topic",parent:""},
+{id:"d7e9",title:"使用摄像机舞台窗口",file:"id924055.html",type:"topic",parent:""}]}

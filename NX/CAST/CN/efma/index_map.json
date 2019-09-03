@@ -1,0 +1,16 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"拉伸、回转以及扫掠轮廓",file:"id1073258.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"拉伸",file:"create_features_feat_extrude.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"体类型",file:"id221336.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"使用限制的拉伸",file:"xid452809.html",type:"topic",parent:"d5e5"},
+{id:"d5e8",title:"使用拔模的拉伸",file:"xid454466.html",type:"topic",parent:"d5e5"},
+{id:"d5e9",title:"使用偏置的拉伸",file:"xid454468.html",type:"topic",parent:"d5e5"},
+{id:"d5e10",title:"拉伸草图",file:"id655707.html",type:"activity",parent:"d5e5"},
+{id:"d5e11",title:"拉伸面的边以创建腔体",file:"id692102.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e13",title:"回转",file:"revolve_revolve_ov.html",type:"topic",parent:"",children:[
+{id:"d5e14",title:"回转草图",file:"id655717.html",type:"activity",parent:"d5e13"}]},
+{id:"d5e16",title:"沿引导线扫掠",file:"sweep_along_guide_sweep_along_guide_ov.html",type:"topic",parent:"",children:[
+{id:"d5e17",title:"沿开放引导线扫掠",file:"id655727.html",type:"activity",parent:"d5e16"},
+{id:"d5e18",title:"复习：沿引导线扫掠",file:"xid470759.html",type:"topic",parent:"d5e16"}]}
+]}

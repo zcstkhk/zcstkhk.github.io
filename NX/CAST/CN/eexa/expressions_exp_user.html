@@ -1,0 +1,206 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>用户表达式</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>用户表达式</h2>
+         <div class="estimatedTime">
+           <p>预计完成这堂课需要：9&ndash;13  分钟</p>
+         </div>
+         <div>
+           <p>用户表达式是由用户自己用&ldquo;表达式&rdquo;对话框创建的任何表达式。 </p>
+           <p>例如，可以创建名为&ldquo;width&rdquo;和公式字符串为&ldquo;5.0&rdquo;的表达式。然后在适当的参数输入字段中输入&ldquo;width&rdquo;，用该表达式定义支架的尺寸。</p>
+           <p>可根据测量结果和部件间引用来创建表达式。</p>
+           <p>以下是用户定义表达式的示例：</p>
+         </div>
+         <table border="1" cellpadding="1" cellspacing="0" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="49*">
+               
+               <col span="1" width="50*">
+               
+            </colgroup>
+            
+            <tr valign="top">
+              <th colspan="1" rowspan="1" align="left"><p>表达式名</p></th>
+              <th colspan="1" rowspan="1" align="left"> <p>公式</p></th>
+            </tr>
+            <tr valign="top">
+              <td colspan="1" rowspan="1"><p>宽度</p></td>
+              <td colspan="1" rowspan="1"><p>22</p></td>
+            </tr>
+            <tr valign="top">
+              <td colspan="1" rowspan="1"><p>长度</p></td>
+              <td colspan="1" rowspan="1"><p>5*宽度</p></td>
+            </tr>
+            <tr valign="top">
+              <td colspan="1" rowspan="1"><p>直径</p></td>
+              <td colspan="1" rowspan="1"><p>宽度/3</p></td>
+            </tr>
+            <tr valign="top">
+              <td colspan="1" rowspan="1"><p>位置</p></td>
+              <td colspan="1" rowspan="1"><p>if (宽度&lt;=2)(0.5*宽度) else (2)</p></td>
+            </tr>
+            <tr valign="top">
+              <td colspan="1" rowspan="1"><p>base_block_height</p></td>
+              <td colspan="1" rowspan="1"><p>16</p></td>
+            </tr>
+            <tr valign="top">
+              <td colspan="1" rowspan="1"><p>base_block_length</p></td>
+              <td colspan="1" rowspan="1"><p>1</p></td>
+            </tr>
+            <tr valign="top">
+              <td colspan="1" rowspan="1"><p>base_block_multiple</p></td>
+              <td colspan="1" rowspan="1"><p>8</p></td>
+            </tr>
+            <tr valign="top">
+              <td colspan="1" rowspan="1"><p>base_block_width</p></td>
+              <td colspan="1" rowspan="1"><p>base_block_height*block_multiple</p></td>
+            </tr>
+            <tr valign="top">
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"> <img align="bottom" src="../graphics/nonLocalized/nx/modeling/expressions/exp_interpart_lock.gif" border="0">block_heighta
+                  </p>
+                  
+               </td>
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">(base_block_length/2)*a_multiple</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">block_length</p>
+                  
+               </td>
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">a_multiple/2</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">block_multiple</p>
+                  
+               </td>
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">base_block_width*block_multiple</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">BLOCK(6):Size X</p>
+                  
+               </td>
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">block_length</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">div</p>
+                  
+               </td>
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">3+sqrt(aln)</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">aln</p>
+                  
+               </td>
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">5.4</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr valign="top">
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">railwidth</p>
+                  
+               </td>
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin">2*aln // forechain</p>
+                  
+               </td>
+               
+            </tr>
+            
+         </table>
+         
+         <p>通过编辑该公式，可以编辑模型参数。 </p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>如果比较表达式的结果，那么有时可能会发现已知值之间有一些明显的错误。这是因为使用双精度值时，由于正常的系统圆整和浮点算法而引起的。 </p>
+                  
+               </td>
+            </tr>
+         </table>
+         <a name="id745614" id="id745614"></a><div id="footer"></div>
+      </div>
+   </body>
+</html>

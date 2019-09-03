@@ -1,0 +1,9 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"修剪体与拆分体",file:"id663131.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"修剪体",file:"create_features_trim_body_ov.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"修剪实体",file:"id655878.html",type:"activity",parent:"d5e5"},
+{id:"d5e7",title:"复习：修剪体",file:"xid470755.html",type:"topic",parent:"d5e5"}]},
+{id:"d5e9",title:"拆分体",file:"create_features_feat_spltbdy.html",type:"topic",parent:"",children:[
+{id:"d5e10",title:"使用拉伸的草图来拆分体",file:"id712720.html",type:"activity",parent:"d5e9"}]}
+]}

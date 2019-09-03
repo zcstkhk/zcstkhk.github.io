@@ -1,0 +1,21 @@
+#! NX/KF 7.5
+#@<DEL>@
+#     Date      Name                    Description of Change
+#  15-Jan-2010  Shrinivas Soman         Initial
+#@<DEL>@
+
+#+
+Class pointing to drawing project schedule.
+#-
+DefClass: gennote( %NoteText );
+
+(List) NewText: 
+@{
+$File << openFile("D:\workdocs\XPS\products\nx\nx8\common\cware\parts\parts_transition\dfa\general_notes.txt", read);
+	
+$data << ReadLinesFromFile($File, {KeepBlankLines, True, TrimWhitespace, False});
+
+closeFile($File);
+
+$data;
+};

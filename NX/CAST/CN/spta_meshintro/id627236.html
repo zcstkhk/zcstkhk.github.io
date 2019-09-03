@@ -1,0 +1,45 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>了解自动单元大小计算</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>了解自动单元大小计算</h2>
+         
+         <p>要使软件基于所选几何体计算估计的单元长度，请使用网格划分对话框中的<strong>自动单元大小</strong>选项。软件根据一系列不同的标准和因子进行估算。 </p>
+        <ul>
+           <li>
+             <p>对于 2D 网格，软件进行一系列的计算以确定估计尺寸。</p>
+           </li>
+           <li>
+             <p>对于 3D 网格，软件先进行 2D 计算，然后进行下一步估算，以确定体单元的估计尺寸。</p>
+           </li>
+        </ul>
+        <table class="attentionTable attn_note">
+           <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p><strong>自动单元大小</strong>所计算的单元大小是估计值，基于当前选定的几何体的某些特征。您始终都应认真地评估模型，并在确定单元大小时进行正确的工程判断(无论是接受软件的估计值还是指定其他大小)。此估算应考虑模型几何体的各自特征和您的分析要求。</p>
+                  
+               </td>
+            </tr>
+         </table>
+        </li>
+        <div id="footer"></div>
+      </div>
+   </body>
+</html>

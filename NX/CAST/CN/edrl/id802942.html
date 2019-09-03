@@ -1,0 +1,201 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>指定孔—点到点几何体对话框</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>指定孔—点到点几何体对话框</h2>
+         
+         <p>单击<strong>指定孔</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/drilling/specify_holes.gif" border="0"> 时，显示<strong>点到点几何体</strong>对话框。</p>
+         
+         <p><strong>点到点几何体</strong>对话框包含多个选项。可使用这些选项选择和操控点，用于生成刀轨。</p>
+         
+         
+         <table cellspacing="2" width="100%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="77*">
+               
+               <col span="1" width="122*">
+            </colgroup>
+            
+            <tr bgcolor="silver" valign="top">
+              <th colspan="1" rowspan="1"><p>选项</p></th>
+              <th colspan="1" rowspan="1"> <p>描述</p></th>
+            </tr>
+            
+            <tr bgcolor="#F0F0F0" valign="top">
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p class="no-bottom-margin"><strong>选择</strong></p>
+                  
+               </td>
+               
+               <td colspan="1" rowspan="1">
+                  
+                  <p>打开选择对话框，选择表示孔顶部的几何体。当该对话框打开时，可根据名称或使用任何可用选项在图形窗口中选择几何体。</p>
+                  
+                  <p>可使用以下不同类型的几何体来代表点到点工序中的孔：</p>
+                  <ul>
+                    <li>
+                      <p>片体或实体中的圆柱孔或锥形孔</p>
+                    </li>
+                    <li>
+                      <p>点</p>
+                    </li>
+                    <li>
+                      <p>圆弧或整圆</p>
+                    </li>
+               </ul></td>
+               
+            </tr>
+            
+            <tr bgcolor="#F0F0F0" valign="top">
+              <td colspan="1" rowspan="1"><p><strong>附加</strong></p></td>
+              <td colspan="1" rowspan="1"><p>将选择的点添加到先前选定的钻加工几何体。 </p></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>省略</strong></p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>忽略在先前定义的钻加工几何体上选择的点。</p></td>
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><strong>优化</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>打开对话框，在其中设置选项，以优化刀具行程，从而减少刀轨长度。</p>
+                  
+                  <p class="no-bottom-margin">要获取更多信息，参见 <a href="#" onclick="loadFile('id803767.html')">优化对话框</a>。</p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p class="no-bottom-margin"><strong>显示点</strong></p>
+                  
+               </td>
+               
+               <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                  
+                  <p>使用<strong>包含</strong>、<strong>省略</strong>、<strong>避让</strong>或<strong>优化</strong>选项后，显示多个点的新顺序。</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/milling/drilling/drill_geom_specify_pts1.png"></p>
+                  
+               </td>
+               
+            </tr>
+            
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>避让</strong></p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>用于指定夹具或部件内障碍上方的&ldquo;刀具安全距离&rdquo;。必须定义&ldquo;起点&rdquo;、&ldquo;终点&rdquo;和&ldquo;避让距离&rdquo;。距离表示部件表面与刀尖之间的距离。</p>
+                <p>该选项与标准循环 RTRCTO 参数的不同之处在于：</p>
+                <ul>
+                  <li>
+                    <p>避让运动由&ldquo;点到点&rdquo;模块生成，因此其刀轨中包含 GOTO/ 语句，从而可以抬起刀具并越过障碍。RTRCTO 运动由后处理器生成，所有 GOTO/ 语句都不是软件生成的。出于这个原因，使用 RTRCTO 时，经过后处理的 N/C 程序可能比使用<strong>避让</strong>时短。</p>
+                  </li>
+                  <li>
+                    <p>避让运动与成对的相邻点相关联。软件生成运动，以避让各对相邻点之间的障碍。RTRCTO 被定义为循环参数集的一部分。对于该参数集所关联的每个点，无论点的顺序如何，软件都将按照指定的 RTRCTO 距离退刀。</p>
+                  </li>
+                </ul></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>反向</strong></p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>将先前选定的 GoTo 点的顺序设为相反方向。可使用该选项在相同的点集上执行背靠背工序，如，钻孔和攻丝。该过程允许您在第一个工序结束的位置处开始第二个工序。</p>
+                <p>避让关系保留。</p></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>圆弧轴控制</strong></p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>将片体中选定圆弧和孔的刀轴方位设为相反方向。</p></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>Rapto 偏置</strong></p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>打开对话框，在其中为每个选定的点、圆弧或孔指定 RAPTO 值。在&ldquo;Rapto 偏置&rdquo;位置处，进给率从&ldquo;快进&rdquo;进给率更改为&ldquo;切削&rdquo;进给率。 </p>
+                <table cellspacing="10" width="95%">
+                  <tbody>
+                    <tr>
+                      <td valign="top"><p><strong>默认 RAPTO</strong></p></td>
+                      <td valign="top"><p>将偏置设置为正的&ldquo;最小安全距离&rdquo;。</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p><strong>RAPTO 偏置</strong></p></td>
+                      <td valign="top"><p>显示当前偏置。如果没有选择<strong>使用默认 RAPTO</strong>，可以为选定的孔输入另一个值。</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p><strong>全选</strong></p></td>
+                      <td valign="top"><p>选择所有孔，或仅选择类型和大小相同的孔或处于同一面上的孔。 </p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p><strong>全不选</strong></p></td>
+                      <td valign="top"><p>取消选择先前选定的所有孔。</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p><strong>显示孔</strong></p></td>
+                      <td valign="top"><p>显示每个孔的刀轨序号。</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p><strong>列出 RAPTO</strong></p></td>
+                      <td valign="top"><p>将每个孔 RAPTO 信息输出到列表设备。</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p><strong>过滤器</strong></p></td>
+                      <td valign="top"><p>过滤显示和列出的内容。<strong>全部</strong>和<strong>非默认的</strong>应用于&ldquo;显示孔&rdquo;和&ldquo;列出 RAPTO&rdquo;。<strong>非默认的</strong>仅显示并列出那些没有使用默认 RAPTO 的孔。</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>RAPTO 值可以为正，也可以为负。如果指定负的 RAPTO </p>
+                <ul>
+                  <li>
+                    <p>在刀具移动到后续的孔位置之前，从孔中退刀至指定的安全距离值。</p>
+                  </li>
+                  <li>
+                    <p>如果没有指定 RTRCTO，将为除手工镗循环之外的所有钻孔循环自动插入RTRCTO = &ldquo;安全距离&rdquo;值。</p>
+                  </li>
+                </ul></td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p><strong>规划完成</strong></p></td>
+              <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>关闭<strong>点</strong>对话框，返回<strong>钻加工几何体</strong>对话框。</p></td>
+            </tr>
+            
+         </table>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>指定几何体时仅使用<strong>选择</strong>选项。其余选项用于编辑已选定的几何体。</p>
+                  
+               </td>
+           </tr>
+        </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

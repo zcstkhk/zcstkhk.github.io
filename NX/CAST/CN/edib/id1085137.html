@@ -1,0 +1,114 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>为压料圈指定外部修剪曲线</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>为压料圈指定外部修剪曲线</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>压料圈的边</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/vehicle_automation/binder_ring/edge_of_binder_ring.gif" border="0"> 选择步。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>这一步用于修剪曲线以控制压料圈的边，它将指定压料圈的外部修剪曲线。</p>
+                     
+                     <p>如果您不提供此信息，压料面曲面的边将用作压料圈的面。在多数情况下，这些曲线等效于毛坯的边。</p>
+                     
+                     <p>在这个模型中，外部修剪曲线是包围冲模输出特征的封闭样条线 。而冲模输出片体的外部边界边则作为压料圈的内部修剪边界。</p>
+                     
+                     <p>当正交投影到压料面上时，内部修剪边界必须是封闭的。在这个模型中，内部修剪边界由冲模输出特征的外部边正交投影到压料面得到。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>过滤器</strong>列表中选择<strong>曲线</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>选择下列曲线作为压料圈的边。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/die_engineering/activities/binder_ring/bindringsht_graphic15.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>压料圈</strong>对话框中，确保未选中<strong>应用时确认</strong>复选框。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>已完成压料圈并更新输出特征。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/die_engineering/activities/binder_ring/bindringsht_graphic16A.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在<strong>部件导航器</strong>中查看新的压料圈特征。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>压料圈使用压料面曲面并将其修剪到工艺补充面的外部边，然后它被缝合到工艺补充面，成形冲压工序曲面变为一个片体以表示拉延工序所得到的钣金形状。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>关闭所有部件。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

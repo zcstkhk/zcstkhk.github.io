@@ -1,0 +1,28 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"1D 连接",file:"id1298475.html",type:"topic",parent:""},
+
+
+{id:"d5e5",title:"1D 连接",file:"id1022649.html",type:"topic",parent:""},
+
+{id:"d5e7",title:"基于几何体的1D 连接",file:"id1022651.html",type:"topic",parent:""},
+
+{id:"d5e9",title:"基于 FE 的1D 连接",file:"id1456072.html",type:"topic",parent:""},
+
+{id:"d5e11",title:"边到面的1D 连接",file:"id1022653.html",type:"topic",parent:""},
+
+{id:"d5e14",title:"连接点和节点",file:"id1022655.html",type:"topic",parent:""},
+
+{id:"d5e16",title:"定义蛛网单元连接",file:"id1022657.html",type:"topic",parent:""},
+
+{id:"d5e18",title:"使用 RBE2和 RBE3单元",file:"id1022659.html",type:"topic",parent:""},
+
+{id:"d5e20",title:"视频：创建1D 连接",file:"id1323943.html",type:"topic",parent:""},
+
+{id:"d5e22",title:"使用蜘蛛单元连接节点",file:"xid430563.html",type:"activity",parent:""},
+
+{id:"d5e24",title:"构建螺栓连接",file:"id1041087.html",type:"topic",parent:""},
+
+{id:"d5e27",title:"构建螺栓连接",file:"id805285.html",type:"activity",parent:""},
+
+{id:"d5e29",title:"复习",file:"id1323937.html",type:"topic",parent:""}
+]}

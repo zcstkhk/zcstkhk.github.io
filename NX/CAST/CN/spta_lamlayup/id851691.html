@@ -1,0 +1,61 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>织物求解器</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>织物求解器</h2>
+         
+         <p><em>织物</em>求解器为具有两组互成角度的纤维的布料织物计算纤维方向。</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>变形纤维方向由<strong>主要对齐</strong>设置</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>纬线纤维方向由<strong>次要对齐</strong>设置</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>下图显示一块织物上的剪切角度变形，其中纬线纤维角度为 90°。由 1 表示的经线纤维长度和由 2 表示的纬线纤维长度不会更改，但是它们之间的纱线角 (3) 可以更改。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_global_layup/lam_woven_distortion.gif"></p>
+         
+         <p>剪切角度 = 原始纱线角 &ndash; 变形纱线角</p>
+         
+         
+         <p>织物层片<strong>锁定角度</strong>属于材料属性，用于指定纤维可变动的最大剪切量。</p>
+         
+         <p>软件将比较剪切角度与锁定角度之间的差异。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/laminates/lam_global_layup/fiber_orientation_ply1.gif"></p>
+         
+         <p>绿色 &mdash; 剪切角度 &lt; 90% <strong>锁定角度</strong></p>
+         
+         <p>黄色 &mdash; 90% <strong>锁定角度</strong> &lt;  剪切角度 &lt; <strong>锁定角度</strong></p>
+         
+         <p>红色 &mdash; 剪切角度 &gt; <strong>锁定角度</strong></p>
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

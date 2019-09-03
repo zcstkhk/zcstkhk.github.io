@@ -1,0 +1,99 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>配对条件转换</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>配对条件转换</h2>
+         <p>可以使用<strong>转换配对条件</strong>选项将现有配对条件转换为装配约束。现有配对条件是使用 NX 6 之前版本中的<strong>配对条件</strong>对话框创建的。转换过程是单向的；您不能将装配约束转换为配对条件和约束。</p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>创建或编辑组件阵列时需要使用组件-组件配对约束和组件-数据配对约束，因此无法转换这两种约束。这些配对约束将继续同转换的装配约束一起求解。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <p>尽管现有配对条件在 NX 中受支持并在组件更改时会继续更新，但让装配使用 NX 7.5 及更高发行版中的配对条件仍存在缺陷。一些主要缺陷如下：</p>
+         <ul>
+           <li>
+             <p>使用<strong>装配约束</strong>或<strong>移动组件</strong>对话框拖动组件时，NX 无法动态更新配对条件。单击<strong>确定</strong>或<strong>应用</strong>后配对条件会更新，但在拖动期间不会更新。</p>
+           </li>
+           <li>
+             <p>只能通过编辑与配对条件关联的距离或角度表达式来编辑配对条件。否则，只有将装配中的配对条件转换为装配约束后才能作更改。</p>
+           </li>
+           <li>
+             <p>无法删除单独的配对条件。</p>
+           </li>
+           <li>
+             <p>装配序列不会识别配对条件。受配对条件约束的组件在序列中自由移动。</p>
+           </li>
+         </ul>
+         <div class="division">
+            
+           <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">装配</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>装配→组件位置→转换配对条件</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+        </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

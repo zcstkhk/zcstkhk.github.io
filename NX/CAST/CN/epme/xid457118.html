@@ -1,0 +1,259 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>底面和壁铣削</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>底面和壁铣削</h2>
+         <p>使用<strong>底面和壁</strong>或<strong>带 IPW 的底面和壁</strong>子类型的工序可对棱柱部件和特征进行高效加工。</p>
+         <p>针对棱柱部件的基本底面和壁铣削，使用<strong>底面和壁</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/floor_and_wall.gif" border="0"> 工序。</p>
+         <p>使用 IPW 跟踪未切削材料时，请针对棱柱部件的底面和壁铣削使用<strong>带 IPW 的底面和壁</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/floor_and_wall_with_ipw.gif" border="0"> 工序。</p>
+         <p>使用以上工序时，您可以：</p>
+         <ul>
+           <li>
+             <p>同时加工底面、壁以及底面和壁的组合</p>
+           </li>
+           <li>
+             <p>加工壁和不以底面几何体为边界的锥壁</p>
+           </li>
+           <li>
+             <p>包含切削区域并控制切削区域形状</p>
+           </li>
+           <li>
+             <p>控制毛坯，并预览毛坯和切削层           </p>
+           </li>
+         </ul>
+         <table frame="void" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="2">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td align="center" colspan="3" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/vol_based_25D_milling_3a.png"></p>
+                     
+                     <p class="no-bottom-margin">显示切削区域和切削层的部件及 IPW</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td align="center" colspan="1" height="191" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/vol_based_25D_milling_4a.png"></p>
+                     
+                     <p class="no-bottom-margin">沿壁向下切削至底面的刀轨</p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">&nbsp;&nbsp;</p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" height="191" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/floor_wall_milling/vol_based_25D_milling_5a.png"></p>
+                     
+                     <p class="no-bottom-margin">刀轨的俯视图</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <div class="division">
+            
+            <h3>原有的面铣工序</h3>
+            
+            <p>NX 可将 NX 8.5 之前版本的面铣工序迁移至合适的工序类型。</p>
+            
+            <table align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td align="left" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">NX 8.5 之前版本的面铣工序</p>
+                        
+                     </td>
+                     
+                     <td align="left" colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">当前面铣和底面壁工序</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1" width="50%">
+                        
+                        <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/face_milling_area.gif" border="0"> 使用<strong>跟随部件</strong>、<strong>跟随周边</strong>、<strong>轮廓</strong>、<strong>摆线</strong>、<strong>单向</strong>、<strong>往复</strong>或<strong>单向轮廓</strong>切削模式的<strong>FACE_MILLING_AREA</strong></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/floor_and_wall.gif" border="0"> <strong>底面和壁</strong></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/face_milling_area.gif" border="0"> <strong>FACE_MILLING_AREA</strong>，使用<strong>混合</strong>切削模式</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/face_milling_manual.gif" border="0"> <strong>手工面铣削</strong></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/face_milling.gif" border="0"> <strong>FACE_MILLING</strong>，使用边界</p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/face_milling.gif" border="0"> <strong>使用边界面铣削</strong></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">加工</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>插入</strong>→<strong>创建工序</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/manufacturing/manufacturing_create/create_operation.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                  <p><strong>插入</strong>→<strong>工序</strong>                  </p></td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">对话框中的位置</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>类型</strong>列表→<strong>mill_planar</strong>→<strong>工序子类型</strong>组→<strong>底面和壁</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/floor_and_wall.gif" border="0">  或<strong>带 IPW 的底面和壁</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/floor_and_wall_with_ipw.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>从实例特征注释</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>从实例特征注释</h2>
+         <div class="division">
+            
+           <div>
+             <div>
+               <h3>特征实例阵列中的阵列特征</h3>
+             </div>
+             <p>在&ldquo;建模&rdquo;应用模块中，可以通过选择<strong>插入</strong>→<strong>关联复制</strong>→<strong>阵列特征</strong>来添加阵列特征。</p>
+             <p>在创建<strong>从实例特征</strong>阵列时，可以参考线性或圆形阵列特征，以下情况除外：</p>
+             <ul>
+               <li>
+                 <p>选择<strong>辐射</strong>选项来创建的圆形阵列特征。</p>
+               </li>
+               <li>
+                 <p>选中<strong>对称</strong>复选框来创建的线性和圆形阵列特征。</p>
+               </li>
+               <li>
+                 <p>使用定义的边界以及选中<strong>简化边界填充</strong>复选框来创建的线性阵列特征。</p>
+               </li>
+               <li>
+                 <p>使用以下所有条件创建的线性阵列特征：选中<strong>使用方向 2</strong>复选框，<strong>交错</strong>列表设为<strong>方向 1</strong>或<strong>方向 2</strong>，不选中<strong>仅限框架</strong>复选框，并且不选中<strong>显示最后一行实例</strong>复选框。</p>
+               </li>
+             </ul>
+             <p>有关阵列特征的更多信息，请参见建模帮助。</p>
+           </div>
+         </div>
+         <div class="division">
+            
+            <div>
+              <div>
+                <h3>特征实例阵列中的约束</h3>
+              </div>
+              <p>可以根据特征实例阵列来创建组件阵列。实例阵列中的每个特征均有一个组件，而组件会自动约束到适当的面或边。</p>
+              <p>创建<strong>从实例特征</strong>阵列时，必须首先通过装配约束来定位组件，以使组件约束到实例阵列中的一个特征。</p>
+              <p>默认情况下，首先约束的组件为模板组件。添加的任何新组件均共享模板属性。(可以随时指定新模板。)</p>
+              <p>无论何时将新的组件添加到阵列，均通过装配约束来定位组件。NX 从模板中复制装配约束，并将其应用到相应的特征。</p>
+              <p>如果更改模板装配约束导致新的组件无法正确约束，则 NX 会以绝对方式定位这些组件。</p>
+              <p>为实例集中的每个特征复制几何体时，每个组件都会独立约束。否则，每个组件都会约束到同一几何体。</p>
+            </div>
+         </div>
+         <div class="division">
+            
+            <h3>示例</h3>
+            
+            <p>下图中的块是使用孔特征阵列以及相应的螺栓组件阵列创建的。</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/component_array/3n_array_at03.png"></p>
+            
+            <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_1_small.gif" border="0"> 面到面接触-对齐装配约束</p>
+            <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_2_small.gif" border="0"> 圆柱体到圆柱体接触-对齐装配约束</p>
+            <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_3_small.gif" border="0"> 此螺栓为模板。</p>
+           <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_4_small.gif" border="0"> 此螺栓已添加。</p>
+<p>每个螺栓组件都由两个约束进行约束：轴约束到孔，螺栓面的底面约束到块的顶部。由于每个孔特征都有唯一的圆柱面，因此两个螺栓均约束到两个不同的圆柱面。每个螺栓均约束到块的同一顶面。</p>
+<p>螺栓(3)为模板。添加了螺栓(4)，因此，螺栓上相同的面受到约束，但被约束到组件中不同的面。图中说明了特征实例阵列中的每个单元是如何独立约束到适当几何体的。</p>
+         </div>
+         <div class="division">
+            
+            <div>
+              <h3>建模更改的效果</h3>
+            </div>
+            <p>如果更改特征实例阵列中的特征数，则会更新组件数。此外，实例集中的单独特征和组件可能会被使特定特征无效的建模更改删除。</p>
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">注释</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>仅当完全加载了包含特征实例阵列的部件时，才会更新组件阵列。如果加载的组件启用了部分加载(默认设置)，且该组件的特征实例阵列已更改，则不会更新依赖该特征实例阵列的组件阵列。</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         <div class="division">
+            
+            <div>
+              <h3>组件标识</h3>
+            </div>
+            <p>组件标识基于特征标识。特征实例阵列基于作为阵列中第一个单元的<em>主特征</em>。这是阵列中唯一的固定位置，而其他所有特征均为主特征位置的偏置。</p>
+            <p>在修改实例阵列时保留特征标识。例如，在矩形实例阵列中，如果至少有4行和3列保留在阵列中，则位于位置(3,2) 的特征将保留在该位置。同样，约束到该特征的组件会保留在组件阵列中的位置(3,2)处。</p>
+            <p>下图显示了编辑的特征阵列参数的两种不同结果。当阵列中的特征数减少时，产生的行为由阵列中的主特征确定。</p>
+            <h3>&nbsp;</h3>
+            
+            <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/component_array/3n_array_at02.png"></p>
+            
+            <p><em>图例：</em>(1) (2)</p>
+            <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_1_small.gif" border="0"> 主特征在右侧。</p>
+            <p><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/symbols/balls_numbered_red/ball_red_2_small.gif" border="0"> 主特征在左侧(已删除着色的组件)。</p>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

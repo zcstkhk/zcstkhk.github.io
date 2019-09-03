@@ -1,0 +1,82 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Flow surfaces</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Flow surfaces</h2>
+         <p>You define a <span class="uiTerm">Flow Surface</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/simulation/advanced_simulation/flow_surface.gif" border="0"> simulation object to model:
+         </p>
+         <ul>
+            
+            <li>
+               
+               <p>3D obstructions in a fluid volume using a simplified 2D geometry representation of the original part. </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Specific wall function characteristics.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Specific convection properties.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>A rotating or translating surface in shear (moving wall).</p>
+               
+            </li>
+            
+         </ul>
+         <p>For the selected faces, a <span class="uiTerm">Flow Surface</span> overrides the default <span class="uiTerm">Friction and Convection Parameters</span> options on the 3D Flow tab in the <span class="uiTerm">Solution</span> dialog box. 
+         </p>
+         <p>When you solve the model, the solver:</p>
+         <ul>
+            
+            <li>
+               
+               <p>Establishes heat paths (conductances) from the surfaces and obstructions to adjacent 3D fluid elements. </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Opens the 3D flow mesh at the embedded <span class="uiTerm">Flow Surface</span>, and models friction on both sides of the <span class="uiTerm">Flow Surface</span>.
+               </p>
+               
+            </li>
+            
+         </ul><a name="genid_spta_esc_30"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/activities/maya/heatpipe/flow_surface.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>Temperature sectioned contours of a shell mesh.<br>The shell models a heatsink inside a fluid domain. 
+            </h4>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

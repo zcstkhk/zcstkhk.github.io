@@ -1,0 +1,32 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>阻尼</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>阻尼</h2>
+         
+         <p>阻尼力会减小接触运动响应。求解器以函数形式将它逐渐增大，直到达到<strong>渗透深度</strong>阈值。</p>
+         
+         <p>在穿透深度为0时的碰撞瞬间，应用的阻尼系数为0，当实际渗透(图中的(2))增加到<strong>渗透深度</strong>阈值(4)时，求解器将通过函数来逐渐增大阻尼系数(1)，直至达到材料阻尼系数(3)。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/motion/refining/penetration_depth_damping_graph.gif"></p>
+         
+         
+         <p>作为一般规则，您应该将<strong>材料阻尼</strong>系数设置在刚度值的百分之<strong>0.01</strong>到<strong>0.1</strong>之间。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

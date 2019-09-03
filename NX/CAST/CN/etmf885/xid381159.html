@@ -1,0 +1,163 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Floor and Wall milling cut region containment</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Floor and Wall milling cut region containment</h2>
+         
+         <p>When you create <span class="uiTerm">Floor and Wall</span> and <span class="uiTerm">Floor and Wall with IPW</span> operations, you can use two options to limit the resulting cut region.
+         </p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>The <span class="uiTerm">Floors</span> option projects all cut levels along the tool axis and limits the cut region to the floors.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The <span class="uiTerm">Walls</span> option limits the cut region to the specified floor or walls. As the cut levels follow the tapered walls to change the cut region from the top of the wall to the bottom of the wall, this option efficiently machines the tapered walls.
+               </p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>The examples illustrate the result of using these options with 4 cut levels.</p>
+         
+         <table border="0" frame="box" rules="all" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="2">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/floor_wall_containment_floor.png"></p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">&nbsp;&nbsp;</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/floor_wall_containment_walls.png"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Cut Region Containment</span> = <span class="uiTerm">Floors</span></p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">&nbsp;&nbsp;</p>
+                     
+                  </td>
+                  
+                  <td align="center" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Cut Region Containment</span> = <span class="uiTerm">Walls</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Manufacturing</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p><span class="uiTerm">Floor Wall</span> dialog box or <span class="uiTerm">Floor Wall IPW</span> dialog box &rarr;<span class="uiTerm">Path Settings</span> group
+                     </p>
+                     
+                     <p>or</p>
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Floor Wall</span> dialog box or <span class="uiTerm">Floor Wall IPW</span> dialog box&rarr;<span class="uiTerm">Path Settings</span> group&rarr;<span class="uiTerm">Cutting Parameters</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/cutting_parameters.gif" border="0">&rarr;<span class="uiTerm">Containment</span> tab&rarr;<span class="uiTerm">Cut Regions</span> group
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

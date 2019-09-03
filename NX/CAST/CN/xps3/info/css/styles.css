@@ -1,0 +1,16 @@
+/* View Specific Sytles go here */
+
+.topPane {
+  height: 36px;
+  background: url(../graphics/bg_top.gif) left top repeat-x;
+}
+
+.infoList p {
+  font-size:10pt;
+  margin-top:0;
+  margin-bottom:0;
+}
+
+.indent {
+  margin-left: 50px;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>复习</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>复习</h2>
+         <div id="topQuestionsContainer">
+            <div class="questionsHeader">
+               <div class="headerTitle">
+                  <p>问题</p>
+               </div>
+               <div class="quesionButtons">
+                  <div class="qButton" id="qButton_1">
+                     <p>1</p>
+                  </div>
+                  <div class="qButton" id="qButton_2">
+                     <p>2</p>
+                  </div>
+                  <div class="qButton" id="qButton_3">
+                     <p>3</p>
+                  </div>
+               </div>
+            </div>
+            <div id="questionsContainer">
+               <div class="question" id="question1" answered="false" numanswers="2" questiontype="fillInBlank">
+                  <p>一个单元的假定位移字段是形状函数与节点位移的乘积，单元应变字段由假定位移字段微分而得，那么单元内的应变字段可能是恒定的吗？</p>
+                  <p class="questionInstruction">请选择一个答案</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a1" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q1a1" type="radio" correct="yes" name="question1Grp"></td>
+                           <td>
+                              <p>是</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q1a2" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q1a2" type="radio" correct="no" name="question1Grp"></td>
+                           <td>
+                              <p>否</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div class="question" id="question2" answered="false" numanswers="2" questiontype="fillInBlank">
+                  <p>通常情况下，恒定的应变三角形对建立大型应变梯度的结构区域是否合适?</p>
+                  <p class="questionInstruction">请选择一个答案</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a1" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q2a1" type="radio" correct="no" name="question2Grp"></td>
+                           <td>
+                              <p>是</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q2a2" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q2a2" type="radio" correct="yes" name="question2Grp"></td>
+                           <td>
+                              <p>否</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div class="question" id="question3" answered="false" numanswers="4" questiontype="fillInBlank">
+                  <p>假设有四个单元公用一个节点，对于此节点，有多少个位移组件组和应变组件组将会在结果中报告?</p>
+                  <p class="questionInstruction">请选择一个答案</p>
+                  <form id="question">
+                     <table border="0">
+                        <tr>
+                           <td class="resultIcon"><img id="img_q3a1" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q3a1" type="radio" correct="no" name="question3Grp"></td>
+                           <td>
+                              <p>一个位移组件组和一个位移应变组件组</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q3a2" class="hideBlock" src="../xps3/graphics/greenCheck.png"></td>
+                           <td><input id="q3a2" type="radio" correct="yes" name="question3Grp"></td>
+                           <td>
+                              <p>一个位移组件组和四个位移应变组件组</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q3a3" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q3a3" type="radio" correct="no" name="question3Grp"></td>
+                           <td>
+                              <p>四个位移组件组和一个位移应变组件组</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="resultIcon"><img id="img_q3a4" class="hideBlock" src="../xps3/graphics/redX.png"></td>
+                           <td><input id="q3a4" type="radio" correct="no" name="question3Grp"></td>
+                           <td>
+                              <p>四个位移组件组和四个位移应变组件组</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+               <div id="showFeedbackContainer"><span showLabel="true" id="feedbackButton" title="Show feedback" dojoType="xps.form.Button" onClick="showQuestionFeedback()">显示答案</span></div>
+            </div>
+            <div class="helpTextContainer">
+               <p class="questionFeedback" id="incorrect">错误！</p>
+               <p class="questionFeedback" id="correct">正确！</p>
+               <div class="questionHelp" id="questionHelp1">
+                  <p>3节点的三角形单元就是单元内应变字段恒定的例子，因为3节点三角形单元的形状函数的导数值是常数，事实上，三节点三角形单元被认为是恒定的应变三角形，您能想出几个其它可能发生这种情况的单元吗？</p>
+               </div>
+               <div class="questionHelp" id="questionHelp2">
+                  <p>由于这些单元上的应变值为常数，所以在计算大型应变梯度时结果将会特别不好，可以使用非常多非常多小的恒定应变三角形来构建大应变梯度的区域，以部分解决这个问题，因此，尽量避免使用恒定的应变单元是比较明智的做法。 </p>
+</div>
+               <div class="questionHelp" id="questionHelp3">
+                  <p>位移组件是通过分解的平衡方程直接计算，每个节点都存在一组位移组件。应变组件是在结果恢复时使用位移组件计算的，由于应变式通过形状函数的导数来计算，并且形状函数的导数在单元间一般不连续，因此，在每一个共享的节点处都存在一组应变组件.</p>
+               </div>
+            </div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

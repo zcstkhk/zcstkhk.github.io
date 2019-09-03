@@ -1,0 +1,62 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>最大凹度</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>最大凹度</h2>
+         <p>使用&ldquo;最大凹度&rdquo;可帮助您确定要切削哪些尖角和陡峭谷。例如，如果正在加工下图所示的部件，则在开始的几次  工序后 160 度凹部内可能没有剩余材料。这是因为此凹部比较浅且比较平坦。但是，您无法加工接下来两个凹部中的所有材料，这两个凹部分别是 110   度和 70 度。像这样的尖角和陡峭凹部中遗留了更多的材料。 </p>
+         <p>返回加工先前刀路遗漏的陡峭凹部  时，只加工这些陡峭凹部而略过先前刀路已加工过的非陡峭凹部，这样更高效。也可以通过&ldquo;最大凹度&rdquo;指定要忽略的角进行此项操作。例如，在下图中，将&ldquo;最大  凹度&rdquo;角设置为 120 度，则将加工 110 度和 70 度的凹部，而不会加工 160 度的凹部。 </p>
+         <a name="genid_esfb_12" id="genid_esfb_12"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/fixed_contour/concavity.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>凹角</h4>
+         </div>
+         <p>在下图中，&ldquo;最大凹度&rdquo;被设置为 179 度。所有小于等于 179 度角均被加工，即切削了所有的凹谷。</p>
+         <a name="genid_esfb_13" id="genid_esfb_13"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/milling/fixed_contour/concav_179.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>最大凹角 = 179度</h4>
+         </div>
+         <p>在下图中，&ldquo;最大凹角&rdquo;被设置为 160 度。所有小于等于 160 度的角均被加工。</p>
+         <a name="genid_esfb_14" id="genid_esfb_14"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/milling/fixed_contour/concav_160.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>最大凹角 = 160度</h4>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,28 @@
+/* View Specific Sytles go here */
+
+.topPane {
+  /* height:66px; */
+  background: url(../graphics/bg_top.gif) left top repeat-x;
+}
+
+.bottomPane {
+  height:5px;
+  background: url(../graphics/bg_top.gif) left top repeat-x;
+}
+
+.navMenu {
+  float:none;
+  text-align:right;
+}
+
+.topDiv .title {
+  font-size:28px;
+}
+
+#footer {
+  border:none;
+}
+
+p {
+  font-size: 22px;
+}

@@ -1,0 +1,38 @@
+{identifier:"id",label:"title",items:[
+
+
+{id:"d5e3",title:"构建内部流体",file:"id1378241.html",type:"topic",parent:""},
+
+
+{id:"d5e5",title:"NX Flow and NX Advanced Flow",file:"id1375639.html",type:"topic",parent:""},
+
+{id:"d5e7",title:"Workflow and file structure",file:"id351615.html",type:"topic",parent:""},
+
+{id:"d5e9",title:"Modeling fluid flow",file:"id357148.html",type:"topic",parent:""},
+
+{id:"d5e11",title:"Creating a fluid volume",file:"id351637.html",type:"topic",parent:""},
+
+{id:"d5e14",title:"Creating a model",file:"id347987.html",type:"topic",parent:""},
+
+{id:"d5e16",title:"Defining modeling objects",file:"id1376247.html",type:"topic",parent:""},
+
+{id:"d5e18",title:"Defining boundary conditions",file:"id351639.html",type:"topic",parent:""},
+
+{id:"d5e20",title:"Fluid domain and fluid surface meshing",file:"id351643.html",type:"topic",parent:""},
+
+{id:"d5e22",title:"Flow boundary conditions",file:"id351645.html",type:"topic",parent:""},
+
+{id:"d5e24",title:"Flow surfaces",file:"id351662.html",type:"topic",parent:""},
+
+{id:"d5e27",title:"Flow blockages",file:"id740127.html",type:"topic",parent:""},
+
+{id:"d5e29",title:"Other flow boundary conditions",file:"id1376569.html",type:"topic",parent:""},
+
+{id:"d5e31",title:"Modeling flow turbulence",file:"id799071.html",type:"topic",parent:""},
+
+{id:"d5e33",title:"Solving the model",file:"id347995.html",type:"topic",parent:""},
+
+{id:"d5e35",title:"阀的流体分析",file:"id741088.html",type:"activity",parent:""},
+
+{id:"d5e37",title:"Modeling internal flows questions",file:"id1326138.html",type:"topic",parent:""}
+]}

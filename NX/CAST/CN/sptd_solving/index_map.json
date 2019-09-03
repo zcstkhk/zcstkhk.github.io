@@ -1,0 +1,11 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"Solving",file:"id1298053.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"Solving a model",file:"genid_solving_overview_16_544.html",type:"topic",parent:""},
+{id:"d5e7",title:"NX Nastran solution types in Design Simulation",file:"nx_nastran_types_des.html",type:"topic",parent:""},
+{id:"d5e9",title:"NX Nastran solution files",file:"id1081382.html",type:"topic",parent:""},
+{id:"d5e11",title:"Defining multiple solutions",file:"genid_multiple_solutions_18_413.html",type:"topic",parent:""},
+{id:"d5e14",title:"Video: solving a model",file:"id1585892.html",type:"topic",parent:""},
+{id:"d5e16",title:"Nastran solution monitor",file:"nastran_solver_monitor_ov.html",type:"topic",parent:""},
+{id:"d5e18",title:"Review",file:"id1622606.html",type:"topic",parent:""}
+]}

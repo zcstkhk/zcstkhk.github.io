@@ -1,0 +1,2 @@
+p29=(Pt_Length/2)-(Slot_Length-(Slot_Width/2))/2
+p30=Pt_Angle_Dist/2

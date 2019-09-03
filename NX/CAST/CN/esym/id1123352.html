@@ -1,0 +1,216 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>移动基座中的面</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>移动基座中的面</h2>
+         
+         
+         <p>该装配需要进行设计更改，以支承处于15度角方位的轴。</p>
+         
+         <p>基座(1)是使用参数化建模的，但是在最初设计时并未预计到这项更改。</p>
+         
+         <p>顶盖(2)是从其它系统中导入的，其中不包含任何特征或参数。</p>
+         
+         <p>您将使用同步建模命令来编辑基座和顶盖组件，而无需重新创建特征或装配约束。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/synchronous_modeling/sm_intro_1_completed.png"></p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>打开 <span class="fileName">syn3_clamp_assembly</span>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/synchronous_modeling/sm_intro_1.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>装配导航器</strong>中，右击 <strong>syn3_clamp_base</strong> 节点并选择<strong>设为工作部件</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>右击 <strong>syn3_clamp_base</strong> 节点并选择<strong>仅显示</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/synchronous_modeling/sm_intro_2.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>同步建模</strong>工具条上的<strong>修改面</strong>下拉菜单中，选择<strong>移动面</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/modeling/synchronous_modeling/move_face.gif" border="0" alt="Insert &gt; Synchronous Modeling &gt; Move Face" title="Insert &gt; Synchronous Modeling &gt; Move Face">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在选择条上的<strong>面规则</strong>列表中，选择<strong>单个面</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>选择如图所示顶面的其中一个。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/synchronous_modeling/sm_intro_4.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>在<strong>移动面</strong>对话框的<strong>面查找器</strong>组中，在<strong>结果</strong>选项卡中，确保已选中<strong>共面</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/widgets/check_box_on.gif" border="0"> 复选框。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>由于两个面为共面，因此两个面都将被选中。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>选择较大的圆柱面。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/synchronous_modeling/sm_intro_5.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>在选择条上的<strong>面规则</strong>列表中，选择<strong>特征面</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>选择如图所示的圆柱孔。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/synchronous_modeling/sm_intro_6.png"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>四个孔被创建为一个特征，因此所有孔的面都将被选中。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>在<strong>变换</strong>组的运动列表中选择<strong>角度</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_12">
+               <div class="stepAction">
+                  
+                  <p>选择如图所示的矢量作为旋转轴。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/synchronous_modeling/sm_intro_7.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_13">
+               <div class="stepAction">
+                  
+                  <p>选择如图所示边的中点。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/synchronous_modeling/sm_intro_8.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_14">
+               <div class="stepAction">
+                  
+                  <p>在<strong>角度</strong>输入框中键入<strong>15</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_15">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>以移动面。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/synchronous_modeling/sm_intro_9.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

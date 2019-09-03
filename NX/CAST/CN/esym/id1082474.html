@@ -1,0 +1,191 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>添加材料以纠正干涉</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>添加材料以纠正干涉</h2>
+         
+         
+         <p>输出轴与右侧盖板发生干涉，添加材料以纠正这个干涉。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/sym_shell/06sym_shell.png"></p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>直接草图</strong>工具条上的<strong>圆</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/sketcher/sketch_tools/circle.gif" border="0" alt="Insert &gt; Sketch Curve &gt; Circle" title="Insert &gt; Sketch Curve &gt; Circle">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在选择条上的<strong>选择范围</strong>列表中，选择<strong>整个装配</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>选择顶部输出杆顶面的圆弧中心，如图所示。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/sym_shell/07sym_shell.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>直径</strong>屏显输入框中键入<strong>50</strong>并回车。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>特征</strong>工具条上的<strong>拉伸</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/modeling/form_feature/extrude.gif" border="0" alt="Insert &gt; Design Feature &gt; Extrude" title="Insert &gt; Design Feature &gt; Extrude">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在<strong>拉伸</strong>对话框中设置如下参数：</p>
+                  
+                  <p><strong>限制</strong>组：</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p><strong>开始距离</strong> = <strong>-4.2</strong></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><strong>结束距离</strong> = <strong>5</strong></p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+                  <p><strong>布尔</strong>组：</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p><strong>布尔</strong> = <strong>自动判断</strong></p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+                  <p><strong>拔模</strong>组：</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p><strong>拔模</strong> = <strong>从截面</strong></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><strong>角度</strong> = <strong>10</strong></p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/sym_shell/08sym_shell.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>特征</strong>工具条上 的<strong>边倒圆</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/modeling/feature_operation/edge_blend.gif" border="0" alt="Insert &gt; Detail Feature &gt; Blend" title="Insert &gt; Detail Feature &gt; Blend">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>选择如图所示的两条边。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/sym_shell/09sym_shell.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>在<strong>半径 1</strong>屏显输入框中键入<strong>3</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>单击鼠标中键两次以创建倒圆角。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>在<strong>部件导航器</strong>的<strong>未用项</strong>文件夹中，右击<strong>草图</strong>节点并选择隐藏。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepRemediation">
+                     
+                     <p>草图在<strong>未用项</strong>文件夹中是因为您正在使用<strong>无历史记录模式</strong>。</p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

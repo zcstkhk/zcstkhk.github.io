@@ -1,0 +1,12 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开部件并开始加工应用模块",file:"id946557.html",type:"topic",parent:""},
+{id:"d7e3",title:"选择会话配置以及 CAM 设置",file:"id1061890.html",type:"topic",parent:""},
+{id:"d7e4",title:"查看几何体",file:"id1061892.html",type:"topic",parent:""},
+{id:"d7e5",title:"定义部件几何体",file:"id1061894.html",type:"topic",parent:""},
+{id:"d7e6",title:"显示部件旋转轮廓",file:"id1061896.html",type:"topic",parent:""},
+{id:"d7e7",title:"定义毛坯几何体",file:"id1061898.html",type:"topic",parent:""},
+{id:"d7e8",title:"定义空间范围",file:"id1061900.html",type:"topic",parent:""},
+{id:"d7e9",title:"定义修剪平面",file:"id1061902.html",type:"topic",parent:""},
+{id:"d7e10",title:"显示修剪平面",file:"id1061904.html",type:"topic",parent:""},
+{id:"d7e11",title:"定义避让",file:"id1061906.html",type:"topic",parent:""},
+{id:"d7e12",title:"指定开始和返回点",file:"id1061908.html",type:"topic",parent:""}]}

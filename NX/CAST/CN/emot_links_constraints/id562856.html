@@ -1,0 +1,77 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>查看机构中的自由度总数</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>查看机构中的自由度总数</h2>
+         
+         <p>机构中的 <em>Gruebler 数</em>近似于它的自由度总数。</p>
+         
+         <p>仿真中的 Gruebler 数总是显示在<strong>运动导航器</strong>的 <strong>Gruebler 数</strong>列中。</p>
+         
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/new_features/motion/gruebler_count_navigator.png"></p>
+         
+         
+         <p>Gruebler 数方程为：</p>
+         
+         <p>Gruebler 数 = (连杆数 * 6) — (被运动副或其它约束移除的自由度总数) — (运动驱动数)</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>机构中的初始 Gruebler 数为连杆数的六倍(各个连杆含有六个自由度)</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>运动副和其它约束将移除某些自由度，具体数量取决于运动副类型。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>每个运动驱动将移除一个自由度</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>每一个在仿真中激活的柔性体连杆模态形状将增加一个自由度</p>
+               
+            </li>
+            
+         </ul>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>Gruebler 数并未考虑机构内所有影响约束的因素，求解器将考虑其它因素(包括运动副连接以及运动副方位)来确定机构真实的自由度。这个区别可能会导致自由度错误信息，即与显示的 Gruebler 数不一致，在这种情况下，软件将优先考虑使用自由度。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>使用重合边创建面倒圆</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>使用重合边创建面倒圆</h2>
+         
+         
+         <p>您想让倒圆与输入面的选定边重合，而非与之相切。</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>右击图形窗口背景并选择<strong>撤销</strong>以删除您刚刚创建的面倒圆。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>使用<strong>图层设置</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/gateway/utility/layer_settings.gif" border="0"> 命令来清除图层<strong>43</strong>的复选框。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/face_blend/face_blends_face_blend_1.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>特征</strong>工具条上的<strong>面倒圆</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/modeling/feature_operation/face_blend.gif" border="0" alt="Insert &gt; Detail Feature &gt; Face Blend" title="Insert &gt; Detail Feature &gt; Face Blend">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在<strong>面倒圆</strong>对话框的<strong>类型</strong>列表中，确保选择的是<strong>两个定义面链</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>在<strong>横截面</strong>组的<strong>截面方向</strong>列表中，确保选择的是<strong>滚球</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在<strong>面链</strong>组中，确保已激活<strong>选择面链 1</strong>，然后选择竖直的曲面。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>确保方向矢量是指向先前图示的圆角方向，否则点击<strong>反向</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/common/reverse_direction.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>单击鼠标中键。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>当<strong>选择面链 2</strong>激活时，选择水平曲面。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>确保方向矢量是指向先前图示的圆角方向，否则点击<strong>反向</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/common/reverse_direction.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>在<strong>横截面</strong>组的<strong>形状</strong>列表中，选择<strong>圆形</strong>，并从<strong>半径方法</strong>列表中选择<strong>恒定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_12">
+               <div class="stepAction">
+                  
+                  <p>在<strong>约束和限制几何体</strong>组中，点击<strong>选择重合曲线</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/face_blend/coincident_edges.gif" border="0">，然后选择竖直曲面的顶边。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_13">
+               <div class="stepAction">
+                  
+                  <p>在图形窗口中，来回拖动<strong>半径</strong>手柄，注意当切点靠近(通过)选定重合边时的影响。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/face_blend/face_blends_drag_past_coincident.png"></p>
+                     
+                     <p>当切点越过切点时，圆角面不再与选定的面相切。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_14">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>取消</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/activities/face_blend/face_blends_face_blend_1.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

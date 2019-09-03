@@ -1,0 +1,181 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>编辑折弯角度</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>编辑折弯角度</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>右击如图所示的拐角管线控制点，然后选择<strong>编辑折弯角</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation"></div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在屏显输入框中键入<strong>135</strong>并回车。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/activities/edit_path/rev_rtg_assy_14.png"></p>
+                     
+                     <table class="attentionTable attn_tip">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">提示</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>您也可以逆时针拖动旋转手柄到135。</p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/activities/edit_path/rev_rtg_assy_15.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>将再次打开<strong>设计规则违例</strong>对话框。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>下一个</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/routing/place_part/next.gif" border="0" alt="Next" title="Next">，直到两条折弯段之间的管线段高亮显示。
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/activities/edit_path/rev_rtg_assy_16.png"></p>
+                     
+                     <p>两条折弯段之间的直线段长度已经大幅增加，但是还是违反所需的最短直线长度规则。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>完整违例文本</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/common/information.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     <pre class="codeExample indent ">The straight length of the segment<br/>is too short based on diameter.<br/>The current length is 888.301166, the minimum length is 3239.0.<br/>(管线直线段长度对于型材直径来说太短，
+当前长度为888.301166，最小长度为3239.0。)</pre>
+                     </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>信息</strong>组中的<strong>设计规则定义</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/common/information.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p><strong>信息</strong>窗口将列出定义管线段最小直线长度的设计规则。</p>
+                     
+                     <p>由于这个用户首选项的系数为10，因此管线段最小直线长度(3239.0)是型材外径的10倍。这个值是在应用模块视图文件 <span class="fileName">ugroute_mech_metric.xml</span> 中进行设置的。但是您无法再 NX 会话中队这个设置值进行交互修改，因此您必须在部件中替代这个设计规则。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>关闭<strong>信息</strong>窗口。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>在<strong>替代</strong>组的<strong>替代</strong>列表中，选择<strong>是</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>在<strong>原因</strong>输入框中，键入：</p>
+                  
+                  <table border="0" align="center">
+                     
+                     <colgroup span="1">
+                        
+                        <col span="1">
+                        
+                     </colgroup>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td colspan="1" rowspan="1">
+                              
+                              <p class="no-bottom-margin"><span class="userInput">空间限制</span></p>
+                              
+                           </td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

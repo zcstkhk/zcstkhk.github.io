@@ -1,0 +1,83 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>停用不相干的模态</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>停用不相干的模态</h2>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0">&nbsp;<strong>正则模态 [10]</strong>(位于 <strong>RS_Meta_Solution_1</strong>节点下方)</p>
+         <p>在<strong>响应仿真细节视图</strong>面板中，注意各个模态在 Z 方向上的质量值(位于<strong>%Z_Mass</strong> 列下方)。</p>
+         <p>在这个练习中，我们只对 Z 方向上的动态响应感兴趣，通常来说，在您评估的方向上至少应该有80%的质量表示，才能完成较精确的分析，模态1、3、7为 Z 方向上仅有的有效模态(一般情况下，您可以将贡献大于0.5%的模态认为是有效的)。它们在 Z 方向上一共表示了95.836%的质量。</p>
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/solutions/response_simulation/modal_mass.gif"></p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>已经在图中用矩形框出了所需的列。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <p>为了进一步减少模态模型，您可以从分析中移除模态 2、4、5、6、8、9、10，因为它们在您感兴趣的方向上对模态质量无贡献。</p>
+         <p>在<strong># 模态</strong>列中带星号(<strong>*</strong>)的模态为“已激活”，默认情况下，所有模态都被标记为激活。</p>
+         <table border="0" cellpadding="0" cellspacing="0">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="10">
+               
+               <col span="1" width="*">
+               
+               <col span="1" width="10">
+               
+               <col span="1" width="*">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td class="key_left" colspan="1" rowspan="1" width="8"></td>
+                  
+                  <td class="key_middle" colspan="1" rowspan="1" width="*">
+                     
+                     <p class="no-bottom-margin"><strong>Ctrl</strong></p>
+                     
+                  </td>
+                  
+                  <td class="key_right" colspan="1" rowspan="1" width="8"></td>
+                  
+                  <td colspan="1" rowspan="1" width="*">
+                     
+                     <p class="no-bottom-margin">&nbsp;+ <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0"> 模态 2、4、5、6、8、9、10
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb3.gif" border="0">&nbsp;<strong>停用</strong></p>
+         <p>选定模态旁的星号已经消失。</p>
+         <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/gateway/standard/save.gif" border="0">&nbsp;<strong>保存</strong>(<strong>标准</strong>工具条)</p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

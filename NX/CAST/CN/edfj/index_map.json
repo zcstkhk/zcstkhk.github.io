@@ -1,0 +1,18 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"中心线符号",file:"id1056446.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"创建中心线符号",file:"centerlines.html",type:"topic",parent:""},
+{id:"d5e7",title:"中心线手柄",file:"handles_cl_ov.html",type:"topic",parent:""},
+{id:"d5e9",title:"中心标记",file:"genid_center_marks_140_2639.html",type:"topic",parent:"",children:[
+{id:"d5e10",title:"创建中心标记",file:"id756277.html",type:"activity",parent:"d5e9"}]},
+{id:"d5e12",title:"自动中心线",file:"genid_automatic_centerlines_96_1822.html",type:"topic",parent:"",children:[
+{id:"d5e13",title:"创建斜的中心标记符号",file:"id756288.html",type:"activity",parent:"d5e12"}]},
+{id:"d5e16",title:"螺栓圆中心线",file:"genid_bolt_circle_centerlines_91_1392.html",type:"topic",parent:"",children:[
+{id:"d5e17",title:"创建一个完整的螺栓圆符号",file:"id756294.html",type:"activity",parent:"d5e16"}]},
+{id:"d5e19",title:"圆形中心线",file:"genid_circular_centerlines_115_1971.html",type:"topic",parent:"",children:[
+{id:"d5e20",title:"创建一个部分圆形中心线",file:"id756300.html",type:"activity",parent:"d5e19"}]},
+{id:"d5e22",title:"2D 和3D 中心线",file:"genid_2d_and_3d_centerlines_175_2417.html",type:"topic",parent:"",children:[
+{id:"d5e23",title:"2D 和3D 中心线符号",file:"id756306.html",type:"activity",parent:"d5e22"}]},
+{id:"d5e25",title:"偏置中心点",file:"genid_offset_center_points_118_1802.html",type:"topic",parent:"",children:[
+{id:"d5e26",title:"Create and edit an Offset Center Point",file:"id756318.html",type:"activity",parent:"d5e25"}]}
+]}

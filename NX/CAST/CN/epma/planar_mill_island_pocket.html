@@ -1,0 +1,43 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>平面铣工序中的岛</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>平面铣工序中的岛</h2>
+         
+         <p>NX 将由内部仍剩余材料的部件边界所包围的区域视为岛。这意味着某些按惯例未被视为岛的区域将在 NX 中视为岛。使用<strong>切削深度参数</strong>选项(例如<strong>底面和岛的顶面</strong>、<strong>岛顶部的层</strong>和<strong>岛顶面切削</strong>)时牢记此定义将非常重要，这样便于了解它们的行为。</p>
+         <p>该示例显示了部件边界定义的腔体周边外部，材料侧为外部。其他边界中，材料侧为内部。这些为岛边界。</p>
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/planar_milling/planar_mill_bnd_1.png" border="0"></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                 <dl>
+                   <dd>
+                     <ol start="1" type="1">
+                       <li>
+                         <p>外部周边边界 </p>
+                       </li>
+                       <li>
+                         <p>岛边界</p></li></ol></dd></dl></div>
+            </div>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

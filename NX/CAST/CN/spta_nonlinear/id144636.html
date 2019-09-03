@@ -1,0 +1,89 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>比较线性与非线性静态解算方案</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>比较线性与非线性静态解算方案</h2><a name="ndxgenid_spta_nonlinear_15"></a>
+         <a name="ndxgenid_spta_nonlinear_16"></a>
+         <a name="ndxgenid_spta_nonlinear_17"></a>
+         
+         
+         <p>SOL 101 线性静态解算方案：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>在解算方案起始时计算单元刚度(K)矩阵</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>根据胡克定律，力 F = K*U，来计算位移(U)</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>不考虑大位移和旋转</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>不更新压力载荷方向</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <p>SOL 106 解算方案求解几何非线性：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>迭代以跟随非线性力/位移路径</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在跟随非线性力/位移路径时，定期更新单元刚度矩阵</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>使用考虑大位移和旋转的应变定义</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>使用变形结构的当前形状来确定压力载荷方向</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>如果分析中即存在几何非线性，也存在材料非线性，那么二者都有可能影响刚度变化。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

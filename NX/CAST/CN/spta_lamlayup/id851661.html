@@ -1,0 +1,103 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>基于层片的过程概述</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>基于层片的过程概述</h2>
+         
+         <p>在基于层片的过程中，通过定义铺层的全局层片以及它们如何在模型中不同多边形面上皱褶来定义层合板属性。</p>
+         
+         <table cellspacing="0">
+            <tr>
+               <td valign="top"><strong>第一步</strong></td>
+               <td valign="top">
+                  
+                  <p>使用壳单元创建网格</p>
+                  
+               </td>
+            </tr>
+            <tr>
+               <td valign="top"><strong>第二步</strong></td>
+               <td valign="top">
+                  
+                  <p>设置材料方向</p>
+                  
+               </td>
+            </tr>
+            <tr>
+               <td valign="top"><strong>第三步</strong></td>
+               <td valign="top">
+                  
+                  <p>在网格收集器中，创建层合板物理属性，并将它设置为继承自全局铺层</p>
+                  
+               </td>
+            </tr>
+            <tr>
+               <td valign="top"><strong>第四步</strong></td>
+               <td valign="top">
+                  
+                  <p>通过下列方法创建全局铺层：</p>
+                  
+                  <ul>
+                     
+                     <li class="condense">
+                        
+                        <p>创建层片并堆叠，以获得想要的属性</p>
+                        
+                     </li>
+                     
+                     <li class="condense">
+                        
+                        <p>选择或创建最适合层合板的材料</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </td>
+            </tr>
+            <tr>
+               <td valign="top"><strong>第五步</strong></td>
+               <td valign="top">
+                  
+                  <p>定义皱褶数据</p>
+                  
+               </td>
+            </tr>
+            <tr>
+               <td valign="top"><strong>第六步</strong></td>
+               <td valign="top">
+                  
+                  <p>创建区域</p>
+                  
+               </td>
+            </tr>
+            <tr>
+               <td valign="top"><strong>第七步</strong></td>
+               <td valign="top">
+                  
+                  <p>(可选)膨胀层合板</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/laminates/lam_physical_property/process.gif"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

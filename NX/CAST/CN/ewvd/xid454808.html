@@ -1,0 +1,61 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>部件导航器中的部件模块</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>部件导航器中的部件模块</h2>
+         
+         <p>在<strong>部件导航器</strong>中，部件模块显示为特征，划分到三个收集器。第一次创建部件模块时，只有<strong>输入</strong>收集器包含对象，<strong>工作</strong>和<strong>输出</strong>收集器是空的。</p>
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>输入</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>此收集器包含几何体对象的抽取物以及在创建部件模块时从该部件中选择的表达式。其中将部件模块与上游部件隔离开。这些对象是稍后要创建的特征的父引用，并出现在<strong>工作</strong>收集器中。 </p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>工作</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>此收集器包含所有新特征和在部件模块中创建的表达式。创建的特征只能以抽取的几何体和<strong>输入</strong>收集器中的表达式为基础。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p><strong>输出</strong></p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>此收集器包含从<strong>工作</strong>收集器中指定的这些特征和表达式抽取物。主部件文件的下游特征仅基于此收集器而非<strong>工作</strong>收集器中的特征。它将部件模块和下游部件隔离开。停用部件模块后，其<strong>输出</strong>收集器中的对象是针对部件模块特征显示的唯一对象；实际上，完成工作后，部件模块就是其<strong>输出</strong>。<strong>输入</strong>和<strong>工作</strong>收集器中的所有对象处于隐藏状态。</p>
+                  
+               </div>
+            </div>
+         </div>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/modeling/commands/part_module/pmod_internal_part_nav.png"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

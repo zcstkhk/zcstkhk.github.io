@@ -1,0 +1,60 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>加载状态</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>加载状态</h2><a name="ndxgenid_eama_27"></a>
+         
+         
+         <p>部件的<em>加载状态</em>描述从文件存储加载到计算机内存的数据量。</p>
+         <p>有三种加载状态：</p>
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p>已完全加载</p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>文件中的所有数据均已加载到内存中。可对小型装配或大型装配组件的子集使用此加载状态，以编辑或创建指向参数数据的链接。</p>
+                  
+               </div>
+           </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p>已部分加载</p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>已向内存中加载足够的数据，以便显示部件。参数数据未加载到内存中。使用此加载状态打开大型装配要比完全打开组件更快，并能节约计算机内存以用于要修改的组件。您可以在任何时间完全打开部分加载的组件以编辑其数据。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectVert">
+                  <p>未加载</p>
+               </div>
+               <div class="defMeaning defMeaningVert">
+                  
+                  <p>文件根本没有加载到内存中。装配包含有关已卸载部件的位置和包容块大小的信息。使用此加载状态管理极大型装配，在任何时候，都只能一次操控数量相对较少的数据。仅完全或部分加载当前关注的组件，其他组件保持已卸载状态。</p>
+                  
+               </div>
+            </div>
+        </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

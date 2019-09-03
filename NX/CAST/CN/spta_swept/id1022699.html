@@ -1,0 +1,70 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>控制扫掠网格中源面上的网格</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>控制扫掠网格中源面上的网格</h2>
+         
+         <p><a name="ndxgenid_spta_swept_23"></a>生成扫掠网格时，软件会扫掠以下各项上的网格：从源面，经由体，直到目标面。源面上的网格控制整个实体中的网格。因此，您应该确保源面上的网格是规则的（尽可能结构化）并且包含高质量单元。要控制源面上的单元，有两种方法：</p>
+         
+         <ul>
+            
+            <li>可以使用 <strong>2D 映射网格</strong>命令首先在源面上创建结构化种子网格
+               
+            </li>
+            
+            <li>
+               
+               <p>可以使用 <strong>3D 扫掠网格</strong>对话框中的选项控制源上的网格：</p>
+               
+               <ul class="unmarkedList">
+                  <li>
+                     
+                     <p><a name="ndxgenid_spta_swept_24"></a><strong>尝试自由映射网格划分</strong>允许您在自由网格环境中创建类似于映射网格</p>
+                     
+                  </li>
+                  <li>
+                     
+                     <p><a name="ndxgenid_spta_swept_25"></a><strong>仅尝试四边形</strong>允许您控制软件是否包含源面上网格中的任何三角形单元。使源面上只有四边形网格，可确保整个体积内的扫掠网格将不包含任何楔形体单元</p>
+                     
+                  </li>
+                  <li>
+                     
+                     <p><a name="ndxgenid_spta_swept_26"></a>使用<strong>边映射</strong>选项，软件会将源面边界上的所有顶点映射到目标面。这样就可以控制壁面上网格的显示</p>
+                     
+                  </li>
+               </ul>
+               
+            </li>
+            
+         </ul>
+         
+         <a name="genid_spta_swept_27"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/meshing/3d/sweep_multi_source2c.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>(A)当<strong>边映射</strong>复选框处于清除状态时墙面上的网格；(B)<strong>边映射</strong>复选框处于选中状态时墙面上的网格</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

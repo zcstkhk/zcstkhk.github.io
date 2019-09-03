@@ -1,0 +1,8 @@
+{identifier:"id",label:"title",items:[
+{id:"d14e2",title:"打开部件",file:"id740903.html",type:"topic",parent:""},
+{id:"d14e3",title:"添加一个控制点",file:"id1010634.html",type:"topic",parent:""},
+{id:"d14e4",title:"更改端点处的斜率",file:"id1010636.html",type:"topic",parent:""},
+{id:"d14e5",title:"查看样条的曲率梳",file:"id1010638.html",type:"topic",parent:""},
+{id:"d14e6",title:"通过移动极点编辑样条",file:"id1010640.html",type:"topic",parent:""},
+{id:"d14e7",title:"编辑样条刚度",file:"id1010642.html",type:"topic",parent:""},
+{id:"d14e8",title:"光顺样条",file:"id1010647.html",type:"topic",parent:""}]}

@@ -1,0 +1,62 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Excluding objects from boundary conditions</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Excluding objects from boundary conditions</h2>
+         
+         <p><a name="ndxgenid_spta_symmetry_22"></a>
+            When you define loads or constraints, use the <span class="uiTerm">Excluded</span> option to specify geometry or FE entities to exclude from the boundary condition definition. 
+         </p>
+         
+         <p>For example, you can define a fixed constraint on a polygon face, and exclude the polygon edges.</p>
+         
+         <p>Use the <span class="uiTerm">Excluded</span> option to:
+         </p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>Avoid conflicts in constraints applied to shared geometry. You can prevent the software from creating a constraint along edges that are shared between faces. </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Apply a load to geometry and exclude selected elements. You can then apply a different load to the excluded elements.</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <a name="genid_spta_symmetry_23" id="genid_spta_symmetry_23"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/boundary_conditions/techniques/excluded.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>(Top) Fixed constraint on a polygon face; (Bottom) Fixed constraint on a polygon face, with a polygon edge excluded</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

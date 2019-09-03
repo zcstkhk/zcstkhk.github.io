@@ -1,0 +1,271 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>耐久性对象</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>耐久性对象</h2>
+         
+         <p>使用<strong>管理耐久性对象</strong>命令可以创建用于定义耐久性求解器设置的耐久性对象。由于可在不同的耐久性事件和<strong>损伤计算</strong>对话框中重用耐久性对象，因此在对耐久性求解器设置进行一次定义后，可在多个事件或<strong>损伤计算</strong>对话框中使用它们。</p>
+         <p>可以创建以下耐久性对象：</p>
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>强度耐久性对象</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>为应力准则、应力类型和强度输出定义请求。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>疲劳耐久性对象</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>定义疲劳寿命设置、疲劳寿命输出请求、疲劳安全系数设置及疲劳安全系数输出请求。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>随机疲劳耐久性对象</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>定义随机疲劳设置及疲劳寿命输出请求。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>轴搜索耐久性对象</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>定义用于计算应力损伤扩展的应力轴方法与设置。</p>
+                  
+               </div>
+            </div>
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>解算选项耐久性对象</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>定义单元和材料替代。仅选择模型的一部分来执行耐久性分析可缩短求解时间。如果以下条件之一成立，则可替代模型中指定的材料：</p>
+                  <ul>
+                    <li>
+                      <p>所有相应的耐久性和疲劳材料属性均未在 FEM 文件中设置。</p>
+                    </li>
+                    <li>
+                      <p>需要执行假设方案。</p>
+                    </li>
+                  </ul>
+                  
+              </div>
+            </div>
+         </div>
+         
+         <p>该表列出必须为每个耐久性事件或损伤计算定义的耐久性对象。只能根据事件或损伤计算选择每种类型的一个对象。</p>
+         
+         <table cellpadding="5" cellspacing="5" frame="box" rules="all" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <thead>
+               
+               <tr>
+                 <td colspan="1" rowspan="1"></td>
+                 <td colspan="1" rowspan="1"><p><strong>强度</strong></p></td>
+                 <td colspan="1" rowspan="1"><p><strong>疲劳</strong></p></td>
+                 <td colspan="1" rowspan="1"><p><strong>随机疲劳</strong></p></td>
+                 <td colspan="1" rowspan="1"><p><strong>轴搜索</strong></p></td>
+                 <td colspan="1" rowspan="1"><p><strong>解算选项</strong></p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1"><p><strong>静态耐久性事件</strong></p></td>
+                 <td colspan="1" rowspan="1"><p>X</p></td>
+                 <td colspan="1" rowspan="1"><p>X</p></td>
+                 <td colspan="1" rowspan="1"></td>
+                 <td colspan="1" rowspan="1"><p>X</p></td>
+                 <td colspan="1" rowspan="1"><p>X</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1"><p><strong>瞬态耐久性事件</strong></p></td>
+                 <td colspan="1" rowspan="1"><p>X</p></td>
+                 <td colspan="1" rowspan="1"><p>X</p></td>
+                 <td colspan="1" rowspan="1"></td>
+                 <td colspan="1" rowspan="1"><p>X</p></td>
+                 <td colspan="1" rowspan="1"><p>X</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1"><p><strong>随机耐久性事件</strong></p></td>
+                 <td colspan="1" rowspan="1"></td>
+                 <td colspan="1" rowspan="1"></td>
+                 <td colspan="1" rowspan="1"><p>X</p></td>
+                 <td colspan="1" rowspan="1"></td>
+                 <td colspan="1" rowspan="1"><p>X</p></td>
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>计算损伤</strong></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1"></td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">X<sup><span id="popup1" dojoType="dijit.layout.ContentPane" class="popup glossaryLink footnote">注</span></sup></p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1"></td>
+                  
+                  <td colspan="1" rowspan="1"></td>
+                  
+                  <td colspan="1" rowspan="1"></td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <p>首次打开<strong>耐久性对象管理器</strong>对话框时，NX 将使用所有耐久性设置的默认值为每种类型自动创建一个耐久性对象。</p>
+         <p>耐久性对象保存在仿真文件中。仿真文件可以包含每种类型的多个耐久性对象。</p>
+         <p>也可以从事件对话框或<strong>耐久性损伤计算</strong>对话框中直接创建和编辑耐久性对象。</p>
+         
+         
+         <div class="division">
+            
+           <h3>用户默认设置</h3>
+            
+            <p>可以将用户默认设置设为遵循公司标准，并且适于分析。在<strong>用户默认设置</strong>对话框的<strong>仿真</strong>→<strong>NX 高级耐久性</strong>下，耐久性设置的用户默认设置在以下选项卡上可用。</p>
+            <ul>
+              <li>
+                <p><strong>常规</strong>选项卡包含解算选项耐久性对象的温度默认设置。</p>
+              </li>
+              <li>
+                <p><strong>强度</strong>选项卡包含强度耐久性对象的默认设置。</p>
+              </li>
+              <li>
+                <p><strong>疲劳</strong>选项卡包含疲劳耐久性对象的默认设置。</p>
+              </li>
+              <li>
+                <p><strong>轴搜索</strong>选项卡包含轴搜索耐久性对象的默认设置。</p>
+              </li>
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="25%">
+                  
+                  <col span="1" width="75%">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">高级仿真</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td class="locator_shade" colspan="1" height="28" rowspan="1">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" height="28" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><strong>耐久性</strong>→<strong>管理耐久性对象</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/durability/manage_durability_objects.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin"><strong>插入→耐久性→管理对象</strong></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div dojoType="dijit.TooltipDialog" id="popup1_dialog" class="glossaryPopup" style="display:none;" closable="true">
+            <div class="exitGlossaryPopup"><a href="#" onclick="closeToolTipDialog('popup1_dialog')"><img src="../xps3/graphics/exit2.png"></a></div>
+            <p><strong>计算损伤</strong>命令不使用<strong>疲劳</strong>耐久性对象中提供的所有选项。</p>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>抑制视图更新</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>抑制视图更新</h2>
+         
+         <p>大型装配图纸的性能和内存使用问题的一个主要成因是更新视图需要消耗大量资源。尤其是隐藏边渲染需要占用大量内存，特别是装配模型很复杂并且图纸上有许多成员视图时更是如此。</p>
+         <p>您可以通过抑制自动视图更新，然后根据需要选择性地更新个别视图或整个图纸页来提高系统性能。</p>
+         
+         <div class="division">
+            
+           <h3>延迟视图更新</h3>
+            
+            <p>选择<strong>延迟视图更新</strong>，以防止在装配模型更改时重新计算隐藏线。然后，可以根据需要对特定视图或图纸页发起更新。</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>创建时延迟更新</h3>
+            
+            <p>此选项决定当将视图放在图纸页上时是否立即进行更新。选中此选项时，可以在图纸页上快速放置已标记为过时的视图。</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>快照</h3>
+            
+            <p><strong>快照</strong>选项可以将视图中的已抽取边转换为非关联状态。模型更新时，不会对快照视图进行过时检查，并且在为该视图关闭此选项之前，不会进行更新。</p>
+            
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <p>抑制所有制图视图的更新：</p>
+            
+            <table cellpadding="6" cellspacing="2" class="locator" frame="box" rules="all">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin">应用模块</p>
+                        
+                     </td>
+                     
+                     <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin">制图</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin">菜单</p>
+                        
+                     </td>
+                     
+                     <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin"><strong>首选项→制图</strong></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin">对话框中的位置</p>
+                        
+                     </td>
+                     
+                     <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin"><strong>视图</strong>选项卡<strong>→延迟视图更新/创建时延迟更新</strong>复选框</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p>抑制某些视图的更新：</p>
+            
+            <table cellpadding="6" cellspacing="2" class="locator" frame="box" rules="all">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin">应用模块</p>
+                        
+                     </td>
+                     
+                     <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin">制图</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin">菜单</p>
+                        
+                     </td>
+                     
+                     <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin"><strong>首选项→视图</strong></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin">对话框中的位置</p>
+                        
+                     </td>
+                     
+                     <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                        
+                        <p class="no-bottom-margin"><strong>常规</strong>选项卡<strong>→自动更新</strong>复选框</p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

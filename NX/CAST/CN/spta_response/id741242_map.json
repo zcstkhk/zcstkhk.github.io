@@ -1,0 +1,15 @@
+{identifier:"id",label:"title",items:[
+{id:"d8e2",title:"打开仿真文件",file:"resp_sim_events_open_sim_file.html",type:"topic",parent:""},
+{id:"d8e3",title:"重置对话框内存",file:"id353012_dup1.html",type:"topic",parent:""},
+{id:"d8e4",title:"创建加速度脉冲函数",file:"create_accel_pulse_function.html",type:"topic",parent:""},
+{id:"d8e5",title:"绘制脉冲函数",file:"plot_pulse_function.html",type:"topic",parent:""},
+{id:"d8e6",title:"创建瞬态事件",file:"create_transient_event.html",type:"topic",parent:""},
+{id:"d8e7",title:"创建激励",file:"create_excitation.html",type:"topic",parent:""},
+{id:"d8e8",title:"生成节点函数响应",file:"generate_nodal_func_resp.html",type:"topic",parent:""},
+{id:"d8e9",title:"生成单元函数响应",file:"generate_elem_func_resp.html",type:"topic",parent:""},
+{id:"d8e10",title:"将显示拆分为两个视图窗口",file:"divide_display.html",type:"topic",parent:""},
+{id:"d8e11",title:"查找最大和最小加速度",file:"find_minimum_max_accel.html",type:"topic",parent:""},
+{id:"d8e12",title:"生成位移云图结果",file:"generate_disp_contour_results.html",type:"topic",parent:""},
+{id:"d8e14",title:"生成应力云图结果",file:"generate_stress_contour_results.html",type:"topic",parent:""},
+{id:"d8e15",title:"查看位移云图结果",file:"view_disp_contour_results.html",type:"topic",parent:""},
+{id:"d8e16",title:"查看应力云图结果",file:"view_stress_contour_results.html",type:"topic",parent:""}]}

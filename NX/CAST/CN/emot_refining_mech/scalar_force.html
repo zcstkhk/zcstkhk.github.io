@@ -1,0 +1,125 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>标量力</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>标量力</h2>
+         
+         <p>标量力是应用在两个连杆之间的直线载荷。</p>
+         
+         <p>您只定义力的大小，而方向是由相应连杆上力的附着点确定。<a name="ndxgenid_emot_refining_mech_49"></a>
+            <a name="ndxgenid_emot_refining_mech_50"></a>
+            
+         </p>
+         
+         <p>体将使用标量力的大小和初始方向来确定运动，而方向在运动仿真过程中可能会发生变化。</p>
+         
+         <a name="genid_emot_refining_mech_51" id="genid_emot_refining_mech_51"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div>
+                           <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;"><script type="dojo/method">
+      flashData= {
+          swfSrc : '../xps3/graphics/xpsPlayer.swf',
+          graphSrc : '../graphics/nonLocalized/nx_dss/motion/activities/loads/scalar_force_1_anim.gif',
+          align : 'center',
+          base : './',
+          height : '331',
+          width : '445',
+          bgcolor : '#FFFFFF',
+          flashVersion : '7',         
+          looping : 'false',
+          play : 'false',
+          menu : 'true',
+          parameters : 'mySound=false,dependentFile1=..%2Fgraphics%2FnonLocalized%2Fnx_dss%2Fmotion%2Factivities%2Floads%2Fscalar_force_1_anim.swf,dependentFile2=..%2Fxps3%2Fgraphics%2Fnav_buttons.txt'
+      }
+      top.loadFlash(this,flashData);
+    </script></div>
+                        </div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>定义在空间点与块上旗帜的边之间的标量力</h4>
+         </div>
+         
+         
+         <p>使用标量力来：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>使实体运动</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在静态仿真中对不移动的体施加载荷</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>限制对立的力和运动</p>
+               
+            </li>
+            
+         </ul>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>在运动学解算方案中，力和扭矩只能用于确定运动副上的反作用力。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <p>要创建标量力，您需要定义：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>恒定的力大小，或者使用函数来定义变化的力大小</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>操作连杆以及力的作用点</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>基本连杆以及基本连杆上力的反作用点，反作用点将受到等值反向的反作用力。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,171 @@
+
+A:link { color: darkblue; }
+A:visited { color: darkblue; }
+A:active { color: blue; }
+
+H2 { 
+   font-size: 10pt;
+   font-family: 'Arial', 'Helvetica', 'sans-serif';
+   color: darkblue;
+   margin-top: 5pt;
+   margin-bottom: 6pt;
+   margin-left: 5pt;
+   text-decoration: none;
+}
+
+.assessment {
+   font-size: 10pt;
+   font-family: 'Arial', 'Helvetica', 'sans-serif';
+   color: darkblue;
+   text-decoration: none;
+   margin-left: 10pt;
+   margin-bottom: 6pt;
+}
+
+.assessment_para {
+   font-size: 10pt;
+   font-family: 'Arial', 'Helvetica', 'sans-serif';
+   color: darkblue;
+   margin-left: 10pt;
+   margin-top: 0pt;
+   margin-bottom: 3pt;
+}
+
+.node, .nofile, .part {
+   font-size: 8pt;
+   font-family: 'Arial', 'Helvetica', 'sans-serif';
+   margin-top: 2pt;
+   margin-bottom: 0pt;
+   vertical-align: middle;
+   
+}
+
+a {
+   text-decoration: none;
+}
+
+a.selected {
+   background-color: #c0d2ec;
+}
+
+a:hover, a.selected:hover {
+   color: darkblue;
+   text-decoration: underline;
+}
+
+.oldpart {
+   font-size: 10pt;
+   font-family: 'Arial', 'Helvetica', 'sans-serif';
+   color: darkblue;
+   font-weight: bold;
+   margin-top: 5pt;
+   margin-bottom: 3pt;
+   margin-left: 0pt;
+}
+
+.part_tab {
+   font-size: 10pt;
+   font-family: 'Arial', 'Helvetica', 'sans-serif';
+   color: darkblue;
+   border: 1px solid #cccccc;
+}
+
+.part_tab_selected {
+   font-size: 10pt;
+   font-family: 'Arial', 'Helvetica', 'sans-serif';
+   color: darkblue;
+   background-color: #c0d2ec;
+   border: 1px solid #cccccc;
+
+}
+
+a.part_tab_selected:hover, a.part_tab:hover {
+   color: darkblue;
+   text-decoration: none;
+   background-color: #DEDEDE;
+
+}
+
+/*
+  Page numbers
+ */
+
+.pageOf {
+   font-size: 10pt;
+   font-family: 'Arial', 'Helvetica', 'sans-serif';
+   color: darkblue;
+   text-decoration: none;
+   background-color: #c0d2ec;
+   vertical-align: top;
+}
+
+/*
+  Styles used in the bookmark list frame
+ */
+  
+.bookmarkHead { 
+   font-weight: bold; 
+   font-size: 11pt; 
+   font-family: Helvetica,Lucida; 
+   margin-top: 5px;
+   margin-bottom: 0px;
+   color: green; 
+}
+  
+.courseName { 
+   font-weight: bold; 
+   font-size: 10pt; 
+   font-family: Helvetica,Lucida; 
+   margin-top: 0px;
+   margin-bottom: 5px;
+   color: darkblue; 
+} 
+  
+.bookmarkLink { 
+   font-weight: normal; 
+   font-size: 8pt; 
+   font-family: Helvetica,Lucida; 
+   margin-bottom: 4px;
+   color: black; 
+   text-decoration: none; 
+}
+  
+hr { 
+   margin-top: 0px;
+   margin-bottom: 0px; 
+}
+
+img {
+   vertical-align: middle;
+}
+
+p {
+  font-size: 10pt;
+  font-family: 'Arial', 'Helvetica', 'sans-serif'; 
+  color: black;
+  margin-bottom: 5pt;
+  margin-top: 5pt; 
+}
+
+
+ .revealGraphicsBorder { border: 4pt double black;}
+ 
+/*
+ Styles used in the index frame
+*/
+  
+FORM {
+  font-size: 9pt;
+  font-family: 'Arial', 'Helvetica', 'sans-serif';
+  color: darkblue;
+  font-weight: bold;
+}
+
+.indexList {
+  font-size: 9pt;
+  font-family: 'Arial', 'Helvetica', 'sans-serif';
+  color: darkblue;
+  text-decoration: none;
+  background-color: #f6f6f6;
+  width:275 
+}

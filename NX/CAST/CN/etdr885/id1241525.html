@@ -1,0 +1,161 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Drawing Booklet</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Drawing Booklet</h2>
+         <div class="estimatedTime">
+            <p>Estimated time to complete this lesson: 9&ndash;16  minutes</p>
+         </div>
+         <div></div>
+         
+         <p>A drawing booklet is a structure of multiple files, each comprised of one or more drawing sheets, which together make up a complete set of drawings required to define the entire assembly or study. The files in the booklet are collectively created and managed as a single unit.</p>
+         
+         <p>You can use booklets to break up very large assembly and detail drawings that contain many drawing sheets into more manageable drawings across multiple parts. This reduces the impact large drawings can have on system resources.</p>
+         
+         <p>For example, a single booklet may consist of multiple detail drawings generated for an entire assembly, or it can be restricted to a selected set of components within the assembly. The booklet itself can be further compartmentalized into individual part containers, each containing a subset of sheets. As with components in general, a detail part can be included in more than one drawing booklet.</p>
+         
+         <p>You can generate a booklet in both the native and managed environments. In managed mode, the booklet is represented as a Teamcenter object containing the Items and Revisions that hold the part containers which collectively represent the entire drawing. Booklets in managed mode appear in a Teamcenter Navigator folder. For more information about booklets in Teamcenter, see the <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" href="#" onclick="popUpPage('tcint/index.html?goto=linkInter_target_not_resolved.html#tcint:xid452674::-aux,-home&amp;vars=','linkInter','menubar=yes,status=yes,resizable=yes,toolbar=yes,scrollbars=yes,location=yes,directories=no');return(false);">Drawing booklet</a> topic in <span class="emphasis">Teamcenter Integration for NX</span> Help.
+         </p>
+         
+         <p>Booklets are organized in the <span class="uiTerm">Part Navigator</span> under a <span class="emphasis">Booklet</span> node. Separate nodes for each container appear under the booklet node, and each drawing node lists the individual sheets in it.  View nodes appear under each sheet node. If there is a parts list on a sheet, a node for it is also created.
+         </p>
+         <a name="genid_etdr885_101" id="genid_etdr885_101"></a><table border="0" cellpadding="0" cellspacing="0" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+            </colgroup>
+            
+            <tbody>
+               
+               <tr>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/customize/drawing_automation/pn_1.gif" border="0"> Booklet<br/><img align="bottom" src="../graphics/nonLocalized/nx/drafting/customize/drawing_automation/pn_2.gif" border="0"> IntroductorySheets_dwg.prt<br/><img align="bottom" src="../graphics/nonLocalized/nx/drafting/customize/drawing_automation/pn_3.gif" border="0"> Sheet &ldquo;Sheet 1&rdquo; (Work-Active)<br/><img align="bottom" src="../graphics/nonLocalized/nx/drafting/customize/drawing_automation/pn_4.gif" border="0">Imported &ldquo;TRI-TRI@1&rdquo;<br/><img align="bottom" src="../graphics/nonLocalized/nx/drafting/customize/drawing_automation/pn_19.gif" border="0"> Parts List<br/><img align="bottom" src="../graphics/nonLocalized/nx/drafting/customize/drawing_automation/pn_5.gif" border="0">Out-of-Date<br/><img align="bottom" src="../graphics/nonLocalized/nx/drafting/customize/drawing_automation/pn_6.gif" border="0">Run_1_dwg.prt<br/><img align="bottom" src="../graphics/nonLocalized/nx/drafting/customize/drawing_automation/pn_6.gif" border="0">Run_2_dwg.prt<br/><img align="bottom" src="../graphics/nonLocalized/nx/drafting/customize/drawing_automation/pn_8.gif" border="0">Run_3_dwg.prt<br/><img align="bottom" src="../graphics/nonLocalized/nx/drafting/customize/drawing_automation/pn_7.gif" border="0">Groups
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <div class="division">
+            
+            <h3>Creating and identifying booklets</h3>
+            
+            <p>Drawing booklets are created with the <span class="uiTerm">Create Drawing Booklet</span> wizard. The booklet name helps identify the collection of parts that make up the entire drawing. In the managed mode, the booklet name is used for relating the Item and Revisions together and for identifying and locating these items.
+            </p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Numbering sheets</h3>
+            
+            <p>You can specify the first sheet number for booklets and also edit the sheet number of a drawing sheet. When the sheet number is changed, the booklet automatically rearranges the order of the sheets in the work part only.</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Plotting</h3>
+            
+            <p>The booklet provides utilities that let you print or plot the collection of sheets in it. You can select one sheet, all sheets, or a set of sheets to print.</p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Editing drawing booklets</h3>
+            
+            <p>You can use the <span class="uiTerm">Edit Drawing Booklet</span> command to edit an existing booklet and add drawings.
+            </p>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">Note</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>The <span class="uiTerm">Edit Drawing Booklet</span> command lets you add drawing only. It does not let you modify or remove existing content.
+                     </p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">All applications except Drafting</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">Menu</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Tools&rarr;Drawing Automation&rarr;Create Drawing Booklet</span> or <span class="uiTerm">Edit Drawing Booklet</span></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         <a name="xid458673" id="xid458673"></a><div id="footer"></div>
+      </div>
+   </body>
+</html>

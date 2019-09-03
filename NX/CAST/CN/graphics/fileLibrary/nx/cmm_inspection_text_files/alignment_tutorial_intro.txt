@@ -1,0 +1,52 @@
+﻿//!-- UTF8
+
+LOCALIZATION: This text file loads the text below into into the Flash animation 
+that appears in the file "Applying a plane/line/point alignment strategy" in the CMM Inspection Programming 
+tutorials (in Contenta, id1338015, /en_US/projects/nx/nx8_phase1/collections/nx8_tdoc/nx8_collectionToc/
+Inspection_and_validation/inspection_programming_tutorials/inspection_programming_tutorials/
+body_topics/cmm_tutorials_launch/cmm_tutorials_launch/cmm_tutorials_launch/
+aligning_parts_on_a_cmm/aligning_parts_on_a_cmm/aligning_parts_intro/aligning_parts_intro). 
+Change only the text between = and the second & on each line. Do not change 
+named/numbered variables (&t1-&t21), or the & and = signs below, and do not add hard returns.. 
+If any special characters do not appear correctly in Flash, see http://www.permadi.com/tutorial/urlEncoding/ 
+to determine the correct URL Encoding (%27 below, for example, is a ' character that 
+had to be URL encoded). Always save the file in UTF-8 format. 
+
+&t1=要开始对齐过程，定义程序标题信息以及设备的开启命令。&
+&t2=将部件坐标系(Part Coordinate System，PCS)设为设备坐标系(Machine Coordinate System,MCS)位置，注意到 location. Note that the MCS consists of three mutually orthogonal axes of motion identical in direction to the Work Coordinate System (WCS) and CAD absolute coordinate system. All part features will be measured from the MCS 0,0,0 location in this program until you modify the PCS.&
+&t3=Define a teach point to serve as a temporary part location reference point.&
+&t4=Prompt the operator to manually inspect the teach point.&
+&t5=Set the program to use both PROG (program) and MAN (manual) modes so that the machine runs the program but returns to manual mode if a problem arises. Prompt the operator to begin inspection.&
+&t6=Move a top plane inspection feature automatically generated from PMI data to follow the operator prompt command. This feature is the largest measurable plane on the part and represents datum A.&
+&t6a=Translate the PCS X, Y, and Z origin to the measured X, Y, and Z Feature Actual (FA) teach point values. Measurements following this change will be taken from this temporary 0,0,0 location.&
+&t7=Measure the plane feature. The measured data will be used to level the part to the CMM axis.&
+&t8=Rotate the PCS about the X axis to align the measured plane +Z normal with that of the machine table. Because you are viewing this action in the perfect CAD world, no alignment is visible in the graphics window.&
+&t9=Rotate the PCS about the Y axis to further align the measured plane +Z normal with that of the machine table. If significant differences existed between the measured plane values and the machine values in the actual world, this action would be visible.&
+&t10=Translate the PCS to the plane's Z origin. Because the PCS is aligned to the teach point and the plane's Z origin lies on that same point, the action is again not visible in the graphics window. The part's first three degrees of freedom are now constrained.&
+&t11=Move a front plane inspection feature automatically generated from PMI data to follow the Z translation alignment. While this feature is not a referenced datum, it is both measurable and orthogonal to the first plane feature. It can therefore be used to create a second alignment feature.&
+&t12=Measure the front plane inspection feature.&
+&t13=Create a line inspection feature on the edge that lies between the two plane features.&
+&t14=Using the line feature as a nominal design feature, create a constructed line feature. This feature's measurements are mathematically derived from the intersection between the two plane features.&
+&t15=Translate the PCS to the line feature's Y origin.&
+&t16=Rotate the PCS about its Z axis to align its X axis with that of the CMM. Five of six degrees of freedom are now constrained; all that remains is movement in the X direction.&
+&t17=Move a left side plane inspection feature automatically generated from PMI data to follow the X translation alignment. Since this feature is measurable and is orthogonal to the first and second plane features, it can be used to create the final alignment feature.&
+&t18=Measure the left plane inspection feature.&
+&t19=Using your original teach point as a nominal design feature, create a constructed point inspection feature. This feature's measurements mathematically derive from the intersection between the line and left side plane features.&
+&t20=Translate the PCS to your teach point's X origin. The calculated constructed point feature measurement locks the part's final degree of freedom.&
+&t21=Save the final PCS so that it can be recalled later in your program if you need to modify the PCS. The PCS alignment is now complete, and inspection of toleranced features can begin.&
+
+The text below appears in the Info window. The DMIS code in that window is not translated, it is a programming language. The operator messages (i1-i2) ARE translated.
+
+&h1=Information&
+&i1=Take a teach point.&
+&i2=Press OK to begin inspection.&
+
+The following are callouts in the second frame of the swf (on Work and Machine Coordinate Systems).
+
+&c1=WCS&
+&c2=MCS&
+
+This is the text that appears on the buttons.
+
+&nextButt=下一步&
+&prevButt=上一步&

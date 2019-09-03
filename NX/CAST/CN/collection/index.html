@@ -1,0 +1,107 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<HTML>
+   <HEAD>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="jobjects/quest" content="ignore-start">
+      <TITLE>计算机辅助自学系统</TITLE>
+      <LINK type="text/css" HREF="../css/ui.css" REL="stylesheet">
+      <script language="VBscript">
+  Dim WM_detect_through_vb
+  WM_detect_through_vb = 0
+
+  If ScriptEngineMajorVersion >= 2 then
+    WM_detect_through_vb = 1
+  End If
+
+  Function WM_activeXDetect(activeXname)
+    on error resume next
+    If ScriptEngineMajorVersion >= 2 then
+      WM_activeXDetect = False
+      WM_activeXDetect = IsObject(CreateObject(activeXname))
+      If (err) then
+        WM_activeXDetect = False
+      End If
+    Else
+      WM_activeXDetect = False
+    End If
+  End Function
+</script>
+      <script type="text/javascript" src="../js/collectionData.js" language="JavaScript1.2"></script>
+      <script type="text/javascript" src="../js/common_xps3.js" language="JavaScript1.2"></script>
+      <script type="text/javascript" src="../js/l10n_xps3.js" language="JavaScript1.2"></script>
+      <script type="text/javascript" src="../js/toc.js" language="JavaScript1.2"></script>
+      <script type="text/javascript" src="tocData.js" language="JavaScript1.2"></script>
+      <script type="text/javascript" src="../js/toolbar.js" language="JavaScript1.2"></script>
+      <script type="text/javascript" src="../js/toolbarData_xps3.js" language="JavaScript1.2"></script>
+      <script type="text/javascript" src="../js/auxToolbarData_xps3.js" language="JavaScript1.2"></script>
+      <script type="text/javascript" src="../js/bookmarks.js" language="JavaScript1.2"></script>
+      <script type="text/javascript" src="../js/aicc_ajax.js" language="JavaScript1.2"></script>
+      <script type="text/javascript" src="../js/cookie.js" language="JavaScript1.2"></script>
+      
+      <script TYPE="text/javascript" LANGUAGE="JavaScript">
+  var courseId='collection';  
+  var courseDir='collection';
+  var courseName="CAST Online Library";
+  var lastPage='collection/browser_requirements.html';
+  var realFile='';
+  var openedByGlobal=false;
+  var searchCollection=false;
+  var showTitleFrame=true;
+  var titleFrameHeight='40';
+  var mainToolbarHeight='30';
+    
+  // Set top.auxWindow attributes
+  top.auxWindow.tool='contents';
+  top.auxWindow.defaultSize='300';
+  top.auxWindow.navHeight='25';
+  top.auxWindow.tabHeight='25';
+
+  top.auxWindow.showAllTab=true;
+  top.auxWindow.displayTabs=false;
+  toc.setTocData(true);
+    
+  // Default display for the icons
+  showContents=true;
+  showBookmarks=true;
+  showNextPrev=true;
+  showVerbose=false;
+  showSearch=true;
+  showFeedback=true;
+  
+  launchFile='index.html';
+  project='nx85-xps4';
+  partsFile='partfiles.html';
+  glossaryFile='';
+  homeFile='index.html';
+  
+  
+  indexFile='';
+
+  showPartfile=((partsFile && partsFile!='') ? true : false);
+  showGlossary=((glossaryFile && glossaryFile!='') ? true : false);
+  showHome=((homeFile && homeFile!='') ? true : false);  
+  showIndex=((indexFile && indexFile!='') ? true : false);  
+  
+  initCourse();
+  
+  dhtml='<frameset frameborder="no" border="1" framespacing="1" rows="' + getRowData() + '*" onunload="top.unloadAll()">';
+  if (showTitleFrame) dhtml+='<frame src="titlebar.html" name="title" id="title" marginheight="8" marginwidth="2" frameborder="1" scrolling="no">';
+  dhtml+='<frame id="nav" name="nav" src="../blank.html" scrolling="no" noresize="true">';
+  dhtml+='<frame frameborder="no" border="0" marginheight="0" name="content" src="../frames.html" scrolling="no">';
+  
+  dhtml+='</frameset>';
+
+  document.write(dhtml);
+  
+</script>
+      </HEAD>
+</HTML>

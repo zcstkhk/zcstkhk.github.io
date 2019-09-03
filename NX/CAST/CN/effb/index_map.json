@@ -1,0 +1,32 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"扫掠和 N 边曲面",file:"id1050313.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"扫掠",file:"swept_overview.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"截面线串和引导线",file:"swept_sections_guides.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"扫掠特征的引导线",file:"create_freeform_swept_guides_ref.html",type:"topic",parent:"d5e5"},
+{id:"d5e8",title:"缩放方法",file:"swept_scaling_methods.html",type:"topic",parent:"d5e5"},
+{id:"d5e9",title:"其它选项",file:"swept_other_options.html",type:"topic",parent:"d5e5"},
+{id:"d5e10",title:"封闭的扫掠特征",file:"closed_swept_features.html",type:"topic",parent:"d5e5"},
+{id:"d5e11",title:"扫掠方位选项",file:"id714231.html",type:"activity",parent:"d5e5"},
+{id:"d5e12",title:"使用两条引导线与一条截面线创建扫掠特征",file:"id713024.html",type:"activity",parent:"d5e5"},
+{id:"d5e13",title:"使用固定或 ZC 轴方位",file:"id713990.html",type:"activity",parent:"d5e5"},
+{id:"d5e14",title:"使用角度规律来创建扫掠特征",file:"id1586195.html",type:"activity",parent:"d5e5"},
+{id:"d5e15",title:"创建面积规律控制的扫掠特征",file:"id1586211.html",type:"activity",parent:"d5e5"},
+{id:"d5e16",title:"脊线的使用",file:"swept_spine_strings.html",type:"topic",parent:"d5e5"},
+{id:"d5e18",title:"使用两条引导线、两个截面以及一条脊线来创建扫掠特征",file:"id713030.html",type:"activity",parent:"d5e5"}]},
+{id:"d5e20",title:"变化扫掠",file:"vsweep.html",type:"topic",parent:"",children:[
+{id:"d5e21",title:"变化扫掠",file:"vsweep_overview.html",type:"topic",parent:"d5e20"},
+{id:"d5e22",title:"使用约束来控制变化扫掠",file:"vsweep_constraints.html",type:"topic",parent:"d5e20"},
+{id:"d5e23",title:"沿两条轨迹线创建简单的变化扫掠曲面",file:"id714277.html",type:"activity",parent:"d5e20"},
+{id:"d5e24",title:"创建相切于另外两个曲面的变化扫掠",file:"id714288.html",type:"activity",parent:"d5e20"},
+{id:"d5e25",title:"创建变化直径的进气岐管",file:"xid433932.html",type:"activity",parent:"d5e20"},
+{id:"d5e26",title:"创建变化截面的制动控制杆",file:"xid456266.html",type:"activity",parent:"d5e20"},
+{id:"d5e27",title:"创建变化扫掠并控制草图平面方位",file:"id714320.html",type:"activity",parent:"d5e20"}]},
+{id:"d5e29",title:"N 边曲面",file:"n_sided.html",type:"topic",parent:"",children:[
+{id:"d5e30",title:"N 边曲面概述",file:"n-sided_overview.html",type:"topic",parent:"d5e29"},
+{id:"d5e31",title:"N 边曲面的类型",file:"n-sided_types.html",type:"topic",parent:"d5e29"},
+{id:"d5e32",title:"N 边曲面的 UV 方位",file:"n-sided_uv_orientation.html",type:"topic",parent:"d5e29"},
+{id:"d5e33",title:"形状控制",file:"n-sided_shape_control.html",type:"topic",parent:"d5e29"},
+{id:"d5e34",title:"使用 N 边曲面作为片体修复工具",file:"id1115400.html",type:"activity",parent:"d5e29"},
+{id:"d5e35",title:"使用三角形面创建 N 边曲面",file:"id715674.html",type:"activity",parent:"d5e29"}]}
+]}

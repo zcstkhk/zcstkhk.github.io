@@ -1,0 +1,19 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"高级仿真与有限元方法",file:"id1297949.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"高级仿真概述",file:"genid_product_overview_22_390.html",type:"topic",parent:""},
+{id:"d5e7",title:"高级仿真能为您做什么",file:"genid_what_simulation_can_do_for_you_18_520.html",type:"topic",parent:""},
+{id:"d5e9",title:"有限元方法",file:"id736477.html",type:"topic",parent:""},
+{id:"d5e11",title:"复习",file:"id1320020.html",type:"topic",parent:""},
+{id:"d5e14",title:"有限元分析的流程",file:"genid_finite_element_analysis_process_25_393.html",type:"topic",parent:""},
+{id:"d5e16",title:"使用装配来管理 CAE 数据",file:"xid487400.html",type:"topic",parent:""},
+{id:"d5e18",title:"使用 CAE 模型文件",file:"xid482768.html",type:"topic",parent:""},
+{id:"d5e33",title:"高级仿真中的文件",file:"id1070692.html",type:"topic",parent:""},
+{id:"d5e20",title:"关联中的 FE 模型",file:"xid456313.html",type:"topic",parent:""},
+{id:"d5e22",title:"NX 中的求解器语言",file:"genid_transparent_solver_support_28_246.html",type:"topic",parent:""},
+{id:"d5e24",title:"视频：开始一个分析",file:"id1384752.html",type:"topic",parent:""},
+{id:"d5e27",title:"视频：仿真导航器",file:"id1407592.html",type:"topic",parent:""},
+{id:"d5e29",title:"复习",file:"id1320028.html",type:"topic",parent:""},
+{id:"d5e35",title:"练习：使用仿真导航器",file:"id1320040.html",type:"topic",parent:""},
+{id:"d5e31",title:"在高级仿真中实现有限元分析",file:"id741160.html",type:"activity",parent:""}
+]}

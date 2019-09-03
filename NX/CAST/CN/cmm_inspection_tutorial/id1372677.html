@@ -1,0 +1,236 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Set the PCS to the MCS</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Set the PCS to the MCS</h2>
+         <p>When you implement an alignment strategy on an actual machine, you must first bridge the implied Part Coordinate System (PCS) to a Machine Coordinate System (MCS). </p>
+         <p>The MCS 0,0,0 origin can lie wherever the programmer prefers but must consist of three mutually orthogonal axes of motion. For the purpose of this tutorial, the PCS can be said to initially lie on the same location as the Work Coordinate System (WCS).</p>
+         <p>For more information on coordinate systems common to CMMs, see <span class="titleReference"><a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" class="links" href="javascript:void(0)" onclick="popUpPage('cmm_inspection_tutorial/index.html?goto=id1222199.html&amp;vars=-aux,-home,-nav','link','menubar=yes,status=yes,resizable=yes,toolbar=yes,scrollbars=yes,location=yes,directories=no');return(false);">Understanding coordinate systems</a></span>.
+         </p>
+         
+         <p>In this activity, you will define an MCS. The PCS will then be set to your defined MCS.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>If the WCS for the part being inspected is not already visible, choose <strong>Format</strong>&rarr;<strong>WCS</strong>&rarr;<strong>Display</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>In the graphics window, note that the directions of the View Triad and WCS are analogous. The View Triad essentially represents the application&rsquo;s absolute coordinate system, while the WCS represents the work part&rsquo;s coordinate system. </p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/alignment/align_tut_00.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>On the <strong>Insert</strong> toolbar, click <strong>Alignment</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/nx_cmm/insert/create_alignment.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Alignment</strong> dialog box, in the <strong>Machine Coordinate System</strong> group, click <strong>CSYS Dialog</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/gateway/common/csys_dialog.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>CSYS</strong> dialog box, in the <strong>Type</strong> group, select <strong>X-axis, Y-axis</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>X-axis</strong> group, ensure that <strong>Specify Vector</strong> is selected, and then click to the right of the midpoint of the CMM table&rsquo;s front edge.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/alignment/align_tut_01.gif"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>In the <strong>CSYS</strong> dialog box, the <strong>X-axis</strong> is now defined. Because you clicked to the right of the table edge, the vector also points to the right, along positive X.
+                     </p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/alignment/align_tut_02.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Y-axis</strong> group, ensure that <strong>Specify Vector</strong> is selected, and then click toward the back of the CMM table&rsquo;s left edge.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/alignment/align_tut_03.gif"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>In the <strong>CSYS</strong> dialog box, the <strong>Y-axis</strong> is now defined. The vector points to +Y. The Z axis is inferred and your MCS is analogous to the WCS.
+                     </p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/alignment/align_tut_04.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>Click <strong>OK</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Alignment</strong> dialog box, in the <strong>PCS Name</strong> box, type <span class="userInput">MCS_000</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>Although you are defining an MCS, the movement to the MCS location affects the PCS, so you must give it an MCS name. This name represents the nominal MCS location (X=0, Y=0, and Z=0).</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Operation Name</strong> box, type <span class="userInput">DEFINE_MCS</span>, and click <strong>OK</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Inspection Navigator</strong>, expand the <strong>PART_ALIGNMENT</strong> program group and then select <strong>DEFINE_MCS</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <table border="0" cellpadding="0" cellspacing="0" class="navigator" width="100%" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" valign="middle" width="50">
+                           
+                           <col span="1" valign="middle">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group2.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td bgcolor="#F7F7F7" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">PART_ALIGNMENT</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/nav_group4.gif" border="0"></p>
+                                 
+                              </td>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/common/insp_align_mcs.gif" border="0">&nbsp;DEFINE_MCS
+                                 </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>In the graphics window, the axes of the MCS are now mutually parallel with the axes of the WCS and the movement of the CMM.</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/alignment/align_tut_05.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>Save your inspection setup file.</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         <div class="stepListResult">
+            
+            <p>The MCS is now defined. You are ready to begin your part alignment.</p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

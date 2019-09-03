@@ -1,0 +1,108 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Specify boundary constraints</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Specify boundary constraints </h2>
+         
+         
+         <p>There are times when you will want to constrain the boundaries of an X-Form edit from moving, or constrain the boundaries to be tangent or curvature continuous.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>Expand the <span class="uiTerm">Boundary Constraints</span> group.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>Notice that the U and V options are set to <span class="uiTerm">Free (No Constraint)</span>. 
+                     </p>
+                     
+                     <p>This means that any pole movement is unconstrained in the U and V directions.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Boundary Constraints</span> group, set the following options:
+                  </p>
+                  
+                  <ul class="hangingList">
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">Apply to All</span> = <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_off.gif" border="0" alt="cleared = off" title="cleared = off"></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">V-min</span> = <span class="uiTerm">G0 (Position)</span></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><span class="uiTerm">V-max</span> = <span class="uiTerm">G0 (Position)</span></p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     <a name="genid_etss885_31" id="genid_etss885_31"></a><div class="figureContainer">
+                        <table align="center">
+                           <tr>
+                              <td>
+                                 <div class="figure">
+                                    <div><img align="bottom" src="../graphics/nonLocalized/nx/shapestudio/activities/x-form/FFM85003_trans_activity_2d.png" border="0"></div>
+                                 </div>
+                              </td>
+                           </tr>
+                        </table>
+                        <h4>Before (no constraints)</h4>
+                     </div>
+                     <a name="genid_etss885_32" id="genid_etss885_32"></a><div class="figureContainer">
+                        <table align="center">
+                           <tr>
+                              <td>
+                                 <div class="figure">
+                                    <div><img align="bottom" src="../graphics/nonLocalized/nx/shapestudio/activities/x-form/FFM85003_trans_activity_3.png" border="0"></div>
+                                 </div>
+                              </td>
+                           </tr>
+                        </table>
+                        <h4>After (V-min / V-max positionally constrained)</h4>
+                     </div>
+                     
+                     <p>Notice that only the poles available for edit are now displayed.</p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

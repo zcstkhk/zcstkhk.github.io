@@ -1,0 +1,102 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>光顺</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>光顺</h2>
+         <p>光顺功能只适用于开放样条，它既可以应用于整条样条，也可以应用于根据定义点创建的样条段。</p>
+         
+         <p><strong>源曲线</strong>选项列表让您为采样点选择数据源，并计算端点斜率和曲率，它可以是原始样条或 当前状态的编辑样条。</p>
+         
+         <p><strong>阈值</strong>是每个点可以从它的原始位置开始移动的最大距离。</p>
+         
+         <table class="attentionTable attn_tip">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">提示</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>在逼近或光顺时，如果曲率分布没有改善，则尝试增加阈值。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <div class="division">
+            
+            <h3>光顺样条</h3>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>选择<strong>编辑曲线参数 (原先的)</strong>，选择一条样条然后点击<strong>光顺</strong>。</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>设置想要的<strong>分段</strong>数、<strong>阈值</strong>以及端点<strong>约束</strong>。</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>点击<strong>逼近</strong>。</p>
+                  <p>这将更新分段。</p>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">注释</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p><strong>光顺</strong>按钮在点击<strong>逼近</strong>后可用。</p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>选择曲线上一个或多个点来光顺样条段或者再次选择<strong>光顺</strong>来继续光顺整条曲线。<br></p>
+                  <p>样条根据<strong>阈值</strong>和您应用的任何端点约束进行光顺。</p>
+                  
+                  <table class="attentionTable attn_note">
+                     <tr>
+                        <td valign="top">
+                           <p class="attn_title">注释</p>
+                        </td>
+                        <td class="attention_main">
+                           
+                           <p>光顺后的样条阶次为5。</p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </li>
+               
+            </ol>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>使用动态间隙检查</title>
+   </head>
+   <body>
+      <div class="contentType_procedure">
+         <h2>使用动态间隙检查</h2>
+         
+         <p>本例显示如何设置动态间隙检查，以便在与实体发生碰撞之前停止运动。</p>
+         
+         <ol type="1">
+            <li>
+               
+               
+               <p>在开始可能发生碰撞的运动步骤之前，如有必要，可在<strong>序列分析</strong>工具条上展开<strong>碰撞动作</strong>列表，并选择<strong>在碰撞前停止</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/dynamic_collision_detection/stop_before_collision.gif" border="0">。</p>
+               
+               
+               <div class="stepInformation">
+                  
+                  <p>工具条列表(如<strong>碰撞动作</strong>列表)的名称仅在<strong>添加或移除按钮</strong>菜单中显示。</p>
+                  
+               </div>
+           </li>
+            <li>
+              <p>(可选)要以牺牲少量精确性为代价获得更快速的动态分析，可以在<strong>检查类型</strong>列表中选择<strong>快速小平面</strong>。</p>
+            </li>
+            <li>
+              <p>创建运动步骤。              </p>
+              <div class="stepResult">
+                
+                <p>您所移动的对象大约会在另一捕捉增量导致与实体发生碰撞之前停止。运动停止的精确距离取决于您使用的<strong>捕捉</strong>值和<strong>检查类型</strong>选项。 </p>
+                <p><strong>认可碰撞</strong>按钮变为可用状态，并且移动对象及将要与之碰撞的体会高亮显示。 </p>
+              </div>
+            </li>
+            <li>
+              <p>(可选)碰撞发生后，可以执行以下操作之一：</p>
+              <ul>
+                <li>
+                  <p>认可碰撞并继续运动，直到检测到与另一个体发生碰撞为止。</p>
+                </li>
+                <li>
+                  <p>通过以下方法优化结果：</p>
+                  <ul>
+                    <li>
+                      <p>减小<strong>捕捉</strong>值 </p>
+                    </li>
+                    <li>
+                      <p>将<strong>检查类型</strong>更改为<strong>小平面/实体</strong></p>
+                    </li>
+                    <li>
+                      <p>按增量距离移动对象而不是进行拖动。</p>
+                    </li>
+                  </ul>
+                  <p>沿相同方向移动，直到检测到与同一个体发生另一次碰撞为止。</p></li></ul></li>
+        </ol>
+         <div class="stepListResult">
+            
+           <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/assembly_sequencing/assyseq_collision_1_anim.gif"></p>
+            
+        </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

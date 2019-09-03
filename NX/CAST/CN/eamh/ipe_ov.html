@@ -1,0 +1,294 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>部件间表达式概述</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>部件间表达式概述</h2>
+         
+         <p>部件间表达式会创建非几何的部件间引用，所以您可以将表达式从一个部件链接到另一个部件。</p>
+         
+         <p>可以创建以下两种类型的部件间表达式：</p>
+         <ul>
+           <li>
+             <p>引用表达式 - 从另一个部件中的表达式获取值的表达式。</p>
+           </li>
+           <li>
+             <p>替代表达式 - 设置另一个部件中的表达式值的表达式，替代表达式只能遍历一个装配结构。</p></li></ul>
+         
+         <table class="attentionTable attn_warning">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">警告</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>如果加载的组件包含替代部件间表达式，且该表达式与会话中已有的替代部件间表达式冲突，则新加载的替代表达式会被删除。所有引用已删除表达式的表达式都会转换为常数。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <div class="division">
+            
+            <h3>语法</h3>
+            
+            <p>部件间表达式的语法如下所示：</p>
+            
+            <p>expression::part_name</p>
+            
+            <p>在下例中，一个部件中的本地表达式 hole_dia 通过在名为bracket的部件中引用表达式 diameter 来获取值。</p>
+            
+            <table border="1" cellpadding="2" cellspacing="1" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <th colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">名称</p>
+                        
+                     </th>
+                     
+                     <th colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">公式</p>
+                        
+                     </th>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="literalText">hole_dia</span></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="literalText">bracket::diameter+tolerance</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+            <p>替代表达式的语法如下所示：</p>
+            
+            <p>part_name::expression</p>
+            
+            <p>在下例中，替代表达式 <span class="literalText">diameter</span> 被用来替代名为 <span class="literalText">plate</span> 的部件中表达式 <span class="literalText">hole_dia</span> 的值。</p>
+            
+            <table border="1" cellpadding="2" cellspacing="1" align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+               </colgroup>
+               
+               <tbody>
+                  
+                  <tr>
+                     
+                     <th colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">名称</p>
+                        
+                     </th>
+                     
+                     <th colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin">公式</p>
+                        
+                     </th>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="literalText">plate::hole_dia</span></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p class="no-bottom-margin"><span class="literalText">diameter</span></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>引用文件名</h3>
+            
+            <p>如果文件名包含以下一个或多个字符，则必须用引号将文件名引起来：</p>
+            <pre class="codeExample indent ">' ' (space) = + - * / ( ) : ^ ! &lt; &amp;</pre>
+            <p>例如，要在名为 top-level 的部件中引用表达式 length，可创建的表达式如下：</p>
+            <pre class="codeExample indent ">&quot;top-level&quot;::len</pre>
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">注释</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>并非以上所有字符在每个操作系统上的文件名中都有效；但是，如果文件名中出现以上任何字符，则<em>只有</em>该文件名在表达式中必须用引号引起来，才能被正确解释。</p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         
+         
+         <div class="division">
+            
+           <h3>为何使用？</h3>
+            
+            <p>您可以使用部件间表达式对组件之间的关系进行建模。</p>
+            <p>例如，可以在一个组件中设计适合另一组件中孔的销，以及针对所需压配合或间隙的正/负调整。如果编辑该孔，则销会在下次加载这两个部件时自动更新。</p>
+         </div>
+         
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>部件间表达式功能由用户默认设置<strong>允许部件间建模</strong>（位于<strong>部件间建模</strong>选项卡的<strong>装配→常规</strong>默认设置中）来控制。有三个可能的设置：</p>
+                 <ul>
+                    <li>
+                      <p><strong>是</strong> — 您可以随意定义部件间表达式。</p>
+                    </li>
+                    <li>
+                      <p><strong>是，但不在命令中</strong> — 您可以随意定义部件间表达式。（命令方面的限制针对几何链接。）</p>
+                    </li>
+                    <li>
+                      <p><strong>否</strong> — 所有的部件间建模定义功能都处于禁用状态。</p>
+                    </li>
+               </ul></td>
+            </tr>
+         </table>
+         
+         <div class="division">
+            
+            <h3>位于何处？</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+               </colgroup>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">建模</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">先决条件</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">必须至少有两个部件文件可用</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>工具</strong>→<strong>表达式</strong>，然后单击<strong>创建部件间引用</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/expressions/create_interpart_reference.gif" border="0"> 或<strong>编辑部件间引用</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/expressions/edit_interpart_references.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">对话框中的位置</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">在<strong>表达式</strong>对话框底部</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

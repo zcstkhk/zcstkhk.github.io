@@ -1,0 +1,30 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"底面和壁铣削",file:"id1074648.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"切削封闭空间",type:"topicMap",parent:"",children:[
+{id:"d5e6",title:"底面和壁铣削",file:"genid_face_milling_557_12318.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"底面和壁铣削",file:"xid457118.html",type:"topic",parent:"d5e5"},
+{id:"d5e8",title:"底面壁铣对话框",file:"xid457334.html",type:"topic",parent:"d5e5"},
+{id:"d5e9",title:"预览底面壁 IPW 工序",file:"id1069016.html",type:"activity",parent:"d5e5"}]},
+
+{id:"d5e11",title:"创建只铣削壁的切削",type:"topicMap",parent:"",children:[
+{id:"d5e12",title:"底面和壁铣削几何体",file:"xid457328.html",type:"topic",parent:"d5e11"},
+{id:"d5e13",title:"底面和壁铣削切削区域空间范围",file:"xid465947.html",type:"topic",parent:"d5e11"},
+{id:"d5e14",title:"创建底面壁精铣工序",file:"id1068479.html",type:"activity",parent:"d5e11"},
+{id:"d5e15",title:"创建加工多个面的底面壁 IPW 工序",file:"id1068920.html",type:"activity",parent:"d5e11"}]},
+
+{id:"d5e17",title:"创建只铣削壁的切削",type:"topicMap",parent:"",children:[
+{id:"d5e18",title:"预览底面和壁铣削中的切削区域和切削层",file:"xid465945.html",type:"topic",parent:"d5e17"},
+{id:"d5e19",title:"底面和壁铣削中的延伸壁示例",file:"xid457329.html",type:"topic",parent:"d5e17"},
+{id:"d5e20",title:"通过延伸壁来包含切削区域",file:"id1068489.html",type:"activity",parent:"d5e17"},
+{id:"d5e21",title:"创建带延伸壁与不带延伸壁的切削区域",file:"id1068504.html",type:"activity",parent:"d5e17"}]},
+
+{id:"d5e23",title:"简化形状",type:"topicMap",parent:"",children:[
+{id:"d5e24",title:"底面和壁铣削毛坯控制",file:"xid465891.html",type:"topic",parent:"d5e23"},
+{id:"d5e25",title:"底面和壁铣每刀切削深度",file:"xid457332.html",type:"topic",parent:"d5e23"},
+{id:"d5e26",title:"使用精确定位的底面和壁铣削",file:"xid465944.html",type:"topic",parent:"d5e23"},
+{id:"d5e27",title:"底面和壁铣削中的精确定位示例",file:"xid457331.html",type:"topic",parent:"d5e23"},
+{id:"d5e28",title:"指定壁几何体以及壁余量",file:"id1068904.html",type:"activity",parent:"d5e23"},
+{id:"d5e29",title:"创建底面壁 IPW 工序",file:"id1068112.html",type:"activity",parent:"d5e23"},
+{id:"d5e30",title:"将切削区域延伸到部件轮廓",file:"id1069006.html",type:"activity",parent:"d5e23"}]}
+]}

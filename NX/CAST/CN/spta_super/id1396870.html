@@ -1,0 +1,43 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Defining boundary DOFs for a static or dynamic reduction</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>Defining boundary DOFs for a static or dynamic reduction</h2>
+         
+         <p>For an SEMODES 103 &ndash; Superelement solution, you can define a <strong>Fixed Boundary Degrees of Freedom</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/fixed_boundary_dof.gif" border="0"> or <strong>Free Boundary Degrees of Freedom</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/free_boundary_dof.gif" border="0"> constraint to specify free or fixed boundary DOFs. You can apply these constraints to geometry or to selected nodes. Geometry-based boundary DOFs update automatically when the mesh updates. To define the constraint, you specify the active DOFs for the corresponding nodes.
+         </p>
+         
+         <p>For an SESTATIC 101 &ndash; Superelement solution, you can define a <strong>Fixed Boundary Degrees of Freedom</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/fixed_boundary_dof.gif" border="0"> constraint.  NX Nastran ultimately treats these as &ldquo;boundary DOF&rdquo; with no fixed or free distinction.
+         </p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>If you plan to use the superelement in an NX system model, a minimum of three non-collinear boundary DOFs are required to orient the superelement in the assembly FEM. In a dynamic reduction, if you define a third boundary DOF for orientation purposes, use <strong>Free Boundary Degrees of Freedom</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/toolbars/simulation/advanced_simulation/free_boundary_dof.gif" border="0"> for best results.
+                  </p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

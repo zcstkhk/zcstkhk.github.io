@@ -1,0 +1,78 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>交互分析模式</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>交互分析模式</h2>
+         
+         <p>交互分析模式可供执行分析，并在<strong>间隙浏览器</strong>对话框中显示结果。可供您：</p>
+         <ul>
+           <li>
+             <p>全局查看装配中的干涉。</p>
+           </li>
+           <li>
+             <p>隔离单独的干涉以进一步查看。</p>
+           </li>
+           <li>
+             <p>修改干涉的显示方式。</p>
+           </li>
+           <li>
+             <p>定义执行进一步分析的方式。</p>
+           </li>
+         </ul>
+        <p>在设置交互间隙分析时，可在以下分析模式之间进行选择：</p>
+        <ul>
+           <li>
+             <p><strong>基于小平面</strong> — 使用此模式可进行初步分析；该模式并非最准确的模式，但所需时间最短。如果尚未加载基于小平面的轻量级表示，则 NX 将为分析创建小平面。</p>
+           </li>
+           <li>
+             <p><strong>使用可用的实体</strong> — 此模式可执行基于实体和基于小平面的混和检查：</p>
+             <ul>
+               <li>
+                 <p>对已加载实体数据的对执行基于实体的检查。</p>
+               </li>
+               <li>
+                 <p>对所有其他对执行基于小平面的检查。</p>
+                 <table class="attentionTable attn_note">
+                   <tr>
+                     <td valign="top">
+                       <p class="attn_title">注释</p>
+                     </td>
+                     <td class="attention_main">
+                       
+                       <p>在将装配设置为仅加载需要基于实体的精度的对象时，请使用<strong>使用可用的实体</strong>。如果仔细规划，此模式既比<strong>基于小平面</strong>模式精确，又比<strong>使用实体</strong>模式快速。</p>
+                       <p>在此模式过程中，NX 不会试图加载任何附加的实体数据。</p>
+                       
+                     </td>
+                   </tr>
+                 </table>
+               </li>
+             </ul>
+           </li>
+        </ul>
+        <ul>
+            
+           <li>
+               
+              <p><strong>使用实体</strong> — 这是最精确的分析模式，但所需时间比其他两个模式更长。它将为所有对执行基于实体的检查。必要时会自动为起初使用轻量级表示而加载的组件加载实体数据。如果任何几何体只具有基于小平面的数据，则该数据将用于分析，并作为异常来报告。</p>
+               
+           </li>
+            
+        </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

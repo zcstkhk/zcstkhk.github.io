@@ -1,0 +1,69 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Compare your application to the target</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Compare your application to the target</h2>
+         <p>Siemens PLM Software provides an example of the completed bottle mesh application, named <span class="literalText">bottleMeshAppAns.vb</span>, that you can use as a control file to check your work.
+         </p>
+         <p>Before proceeding, open your application and the completed application file in a differencing and merging tool.</p>
+         <p>There are times when extra information can be recorded in the journal files due to the rotating the model or things that are selected during journal recording. Use the file differencing tool to change any lines that show up as errors when you try to run the edited code. The changes will include line removals, and additions.</p>
+         <table class="attentionTable attn_tip">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Tip</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>If you are using WinMerge: Start WinMerge and choose <span class="uiTerm">File</span>&rarr;<span class="uiTerm">Open</span>. In the <span class="uiTerm">Select Files or Folders</span> dialog box, specify <span class="literalText">bottleMeshAppAns.vb</span> on the left side and <span class="literalText">bottleMeshApp.vb</span> on the right.
+                  </p>
+                  
+               </td>
+            </tr>
+         </table>
+         <p>Things to notice:</p>
+         <ul>
+            
+            <li>
+               
+               <p>There may be options that are set in the application file side, but not in the control file. Remove those additional lines from the application file. Also, delete any duplicate occurrences of dialog box options.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>Ensure that the index values for undo mark, expressions, and so on are consistent. Where inconsistencies occur, merge the values from the control file into your application file.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>There may be some lines in the application file that begin with <span class="codeText">Dim objects1</span>, <span class="codeText">Dim cAEBody1</span>, or <span class="codeText">Dim cAEFace</span>. Remove these from your application file.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The answer file has quite a few statements in it for debugging purposes that were not copied into your application file. These lines begin with <span class="codeText">theLW.WritelLine</span>, and are used to determine how far program execution got when there are errors. Uncomment these lines in order to see them in action.
+               </p>
+               
+            </li>
+            
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

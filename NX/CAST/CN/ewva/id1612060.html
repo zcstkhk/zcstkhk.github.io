@@ -1,0 +1,84 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>修改电钻外壳</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>修改电钻外壳</h2>
+         
+         
+         <p>透明的红色面表示为适应更大的钻孔点击所需进行的设计更改，这个更改必须对模具基座进行，您将看到对电钻外壳的修改如何立即更新到模具基座中，这个部件间关系是从电钻外壳到模具基座，在模具基座中的 WAVE 链接的体是这个部件间关系中的子项，电钻外壳是父项。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/start_mold_base/07_mold_base.png"></p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>将电钻外壳设为<strong>显示部件</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/start_mold_base/06_mold_base.png"></p>
+                     
+                     <p><strong>草图 (11) motor_bump_out_rev</strong> 是驱动电机间隙直径以及长度的基本特制。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>编辑下列表达式：</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p><strong>Motor_Dia</strong> = <strong>25</strong></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p><strong>Motor_Lg</strong> = <strong>90</strong></p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>现在电机间隙区域将变大。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/wave/start_mold_base/08_mold_base.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         <div class="stepListResult">
+            
+            <p>在使用含有很多特制的部件间父项模型时，那么打开子部件可能需要大量时间，在父项中进行的每一项更改都将自动传递到子项中， 父项中的一个变化都可能导致子部件中漫长的部件更新，加快更改的的其中一种方法是在完成对父项的修改后再打开子部件。</p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

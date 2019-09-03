@@ -1,0 +1,11 @@
+{identifier:"id",label:"title",items:[
+
+{id:"d5e3",title:"向导和车间文档",file:"id1056516.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"加工向导",file:"wizards.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"使用加工向导",file:"id788672.html",type:"activity",parent:"d5e5"}]},
+
+{id:"d5e8",title:"车间文档",file:"shopdoc.html",type:"topic",parent:"",children:[
+{id:"d5e9",title:"创建车间文档",file:"id788688.html",type:"activity",parent:"d5e8"},
+{id:"d5e10",title:"后处理时创建车间文档",file:"id788694.html",type:"activity",parent:"d5e8"}]}
+]}

@@ -1,0 +1,18 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"NX 8 - NX 8.5 PMI transition",file:"xid309023.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"PMI user interface enhancements",file:"xid377304.html",type:"topic",parent:""},
+{id:"d5e7",title:"Component PMI in assembly section views enhancement",file:"xid377040.html",type:"topic",parent:""},
+{id:"d5e9",title:"Circle U Tolerance Modifier for feature control frames",file:"xid377163.html",type:"topic",parent:""},
+{id:"d5e11",title:"Find PMI Associated to Geometry",file:"xid377230.html",type:"topic",parent:""},
+{id:"d5e14",title:"Find PMI associated to geometry",file:"id967232.html",type:"activity",parent:""},
+{id:"d5e16",title:"PMI leader arrowhead display enhancement",file:"xid377262.html",type:"topic",parent:""},
+{id:"d5e18",title:"PMI region crosshatch pattern",file:"xid377263.html",type:"topic",parent:""},
+{id:"d5e20",title:"Create and edit a circular PMI region",file:"id966301.html",type:"activity",parent:""},
+{id:"d5e22",title:"Replace Custom Symbol",file:"id1629301.html",type:"topic",parent:""},
+{id:"d5e24",title:"Width options for lines and symbols",file:"xid310557.html",type:"topic",parent:""},
+{id:"d5e27",title:"Standard font support for symbols",file:"xid376870.html",type:"topic",parent:""},
+{id:"d5e29",title:"Drafting leader line enhancements",file:"xid377033.html",type:"topic",parent:""},
+{id:"d5e31",title:"Weld symbol enhancements",file:"xid377032.html",type:"topic",parent:""},
+{id:"d5e33",title:"General annotation enhancements",file:"xid377166.html",type:"topic",parent:""}
+]}

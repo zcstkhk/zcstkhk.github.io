@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="Hex Fit Bolt, Grade A, B, GB.prt"/>
+	<DetailImage Location="Hex Fit Bolt, Grade A, B, GB.bmp"/>
+	<KeyParameter DescriptiveName="(S) Size">DIAMETER</KeyParameter>
+	<KeyParameter DescriptiveName="(L) Length">LENGTH</KeyParameter>
+</ItemData>
+<ComponentData>
+</ComponentData>
+	<MatchData ParaName="THREAD_MAJOR_DIAMETER" ValueMatch="LE" />
+</KnowledgeReuse>

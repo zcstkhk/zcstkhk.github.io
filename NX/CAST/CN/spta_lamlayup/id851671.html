@@ -1,0 +1,43 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>单向求解器</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>单向求解器</h2>
+         
+         <p><em>单向</em>求解器为所有纤维在一个方向对齐的层片进行皱褶建模。</p>
+         
+         <p>材料产生皱褶后，相邻的材料纤维可能彼此相对地滑动一定距离，同时彼此相对地维持相同的间距。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_global_layup/lam_unidir_distortion.gif"></p>
+         
+         <p>剪切角(1)是纤维滑动量的衡量。</p>
+         
+         
+         <p>单向层片<strong>锁定角</strong>属于材料属性，用于指定纤维可承受的最大滑动量。</p>
+         
+         <p>软件将比较剪切角度与锁定角度之间的差异。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/lam_global_layup/fiber_orientation_uni_zoom.gif"></p>
+         
+         <p>绿色 — 剪切角度 &lt; 90% <strong>锁定角度</strong></p>
+         <p>黄色 — 90% <strong>锁定角度</strong> &lt; 剪切角度 &lt; <strong>锁定角度</strong> </p>
+         <p>红色 — 剪切角度 &gt; <strong>锁定角度</strong></p>
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

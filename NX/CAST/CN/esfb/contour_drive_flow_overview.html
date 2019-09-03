@@ -1,0 +1,189 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>清根驱动方法</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>清根驱动方法</h2>
+         <div class="estimatedTime">
+            <p>预计完成这堂课需要：10&ndash;15  分钟</p>
+         </div>
+         <div></div>
+         
+         <p><strong>清根</strong>驱动方法可用于：</p>
+         <ul>
+           <li>
+             <p>高速加工。</p>
+           </li>
+           <li>
+             <p>精加工之前移除拐角中的多余材料。</p>
+           </li>
+           <li>
+             <p>移除之前较大的球头铣刀或穿环刀遗留下来的未切削材料。</p>
+           </li>
+         </ul>
+        <p><strong>清根</strong>驱动方法执行以下操作：</p>
+         <ul>
+           <li>
+             <p>沿部件表面形成的凹角和凹部一次生成一层刀轨。 </p>
+           </li>
+           <li>
+             <p>在刀具从一侧移至另一侧时避免其嵌入。</p>
+           </li>
+           <li>
+             <p>计算切削的方向和顺序以优化刀具与部件的接触，并将非切削移动降至最少。</p>
+           </li>
+           <li>
+             <p>提供手工定义切削顺序的选项。</p>
+           </li>
+           <li>
+             <p>为带有多个偏置的工序提供排序选项，例如 <img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/fixed_contour/insideout.gif" border="0"><strong>从内向外</strong>。这些选项有助于生成更恒定的切削载荷和更短的<strong>非切削</strong>移动。</p>
+           </li>
+         </ul>
+         <ul>
+            
+            <li>
+               
+               <p>在凹部末端提供光顺转向。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <a name="genid_esfb_8" id="genid_esfb_8"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/fixed_contour/flowcut.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>光顺改进转向</h4>
+         </div>
+         
+         <p>&nbsp;</p>
+         
+         <p>此外，<strong>清根</strong>驱动方法还可以灵活地在一个工序中将陡峭区域和非陡峭区域的深度加工和清根切削模式结合起来。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/fixed_contour/flowcut_mixed_steep_nonsteep.png"></p>
+         
+         <p>建议选择&ldquo;球头刀&rdquo;以获得最佳效果。如果选择外圆刀具或平头刀具，则刀轨可能会出现不能令人满意的结果。</p>
+         
+         
+         <div class="division">
+            
+           <h3>位于何处？</h3>
+            
+            <table border="1" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">应用模块</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">加工</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">先决条件</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">固定轮廓铣工序</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">工具条</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin"><strong>插入</strong>→<strong>创建工序</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/manufacturing/manufacturing_create/create_operation.gif" border="0"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">菜单</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p><strong>插入</strong>→<strong>工序</strong></p>
+                     <p class="no-bottom-margin">&nbsp;</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td class="locator_shade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p class="no-bottom-margin">对话框中的位置</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1" valign="bottom">
+                     
+                     <p><strong>创建工序</strong>对话框→<strong>类型</strong>→<strong>mill_contour</strong>→<strong>工序子类型</strong>组→<strong>清根参考刀具</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/flowcut_ref_tool.gif" border="0">/<strong>固定轮廓铣</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_operation/fixed_contour.gif" border="0"></p>
+                     
+                     <p class="no-bottom-margin"></p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+         </div>
+         <a name="id943517" id="id943517"></a><div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Streamline Cut Step enhancement</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Streamline Cut Step enhancement</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>For <span class="uiTerm">Streamline</span> and <span class="uiTerm">Variable Streamline</span> operations, you can now specify <span class="uiTerm">Cut Step</span> values as a number or a tolerance. These parameters are the same as in the <span class="uiTerm">Surface Area</span> drive method. In previous releases, NX used an internal number value of 100 for both <span class="uiTerm">First Cut</span> and <span class="uiTerm">Last Cut</span>. The previous system-defined values are now the default number values.
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>The <span class="uiTerm">Cut Step</span> number values define the number of equal length segments into which the drive surface contour is divided to create the cut pattern.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>The <span class="uiTerm">Cut Step</span> tolerance values define the chordal tolerances used in following the drive surface contours.
+                  </p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>Changing the <span class="uiTerm">Cut Step</span> values changes the point distribution of a cut pattern, which is a factor in how accurately the cut pattern follows the drive surface contours. Cut patterns with more points can more accurately follow small details, such as fillets in a long boundary contour.
+            </p>
+            
+            <table align="center">
+               
+               <colgroup span="1">
+                  
+                  <col span="1">
+                  
+                  <col span="1">
+                  
+               </colgroup>
+               
+               <tbody valign="top">
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/streamline_cut_step_1000.png"></p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/version_specific/nx85/manufacturing/streamline_cut_step_100.png"></p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+                  <tr>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>NX 8.5 user-controlled settings</p>
+                        
+                        <p><span class="uiTerm">Cut Step</span> = <span class="uiTerm">Number</span></p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">First Cut</span>, <span class="uiTerm">Last Cut</span> = 1000
+                        </p>
+                        
+                     </td>
+                     
+                     <td colspan="1" rowspan="1">
+                        
+                        <p>Previous release system-controlled settings</p>
+                        
+                        <p><span class="uiTerm">Cut Step</span> = <span class="uiTerm">Number</span></p>
+                        
+                        <p class="no-bottom-margin"><span class="uiTerm">First Cut</span>, <span class="uiTerm">Last Cut</span> = 100
+                        </p>
+                        
+                     </td>
+                     
+                  </tr>
+                  
+               </tbody>
+               
+            </table>
+            
+         </div>
+         
+         
+         <p></p>
+         
+         
+         <div class="division">
+            
+            <h3>Why should I use it?</h3>
+            
+            <p>The <span class="uiTerm">Cut Step</span> values help you to control the point distribution accuracy for how the cut pattern follows the drive surface contours.
+            </p>
+            
+            <p>If it is critical for the cut pattern to accurately follow along the shape of the drive surface boundaries, you can increase the <span class="uiTerm">Cut Step</span> number values, or decrease the tolerances, to introduce more points into the drive contours. When the drive surfaces more accurately follow the shape of the part geometry, this can help improve the surface finish.
+            </p>
+            
+            <table class="attentionTable attn_note">
+               <tr>
+                  <td valign="top">
+                     <p class="attn_title">Note</p>
+                  </td>
+                  <td class="attention_main">
+                     
+                     <p>Excessive increase of the <span class="uiTerm">Cut Step</span> number values may create more points in the tool path than is optimal for your controller.
+                     </p>
+                     
+                  </td>
+               </tr>
+            </table>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Manufacturing</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Streamline</span> or <span class="uiTerm">Variable Streamline</span> operation dialog box&rarr;<span class="uiTerm">Drive Method</span> group&rarr;<span class="uiTerm">Edit</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/edit.gif" border="0">&rarr;<span class="uiTerm">Streamline Drive Method</span> dialog box&rarr;<span class="uiTerm">More</span> group
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+            <p></p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

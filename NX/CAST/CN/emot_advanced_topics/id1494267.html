@@ -1,0 +1,54 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>从 Plant.m 文件中移除注释符</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>从 Plant.m 文件中移除注释符</h2>
+         <p>在运行_Plant.m 文件来创建 Motion plant 块之前，应该先编辑文件以更改 Motion Plant 块，使软件在每次运行协同仿真时，自动加载函数块参数。</p>
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>在文本编辑器中打开文件 <strong>controller_brute_force_controlled_Plant.m</strong>，它位于与运动仿真文件相同的文件夹下。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>移除 set_param 行前面的注释符(<span class="codeText">%</span>)：</p>
+               <p><span class="codeText">% Load PlantIO.m matlab_host_simulink_host_flex_PlantIO;</span> 
+               </p>
+               
+               <p><span class="codeText">% One process nx_client;</span> 
+               </p>
+               
+               <p><span class="codeText">% Remove comments to initialize plant to auto-load workspace variables</span> 
+               </p>
+               
+               <p><span class="codeText">set_param(gcb, 'MaskInitialization', 'matlab_host_simulink_host_flex_PlantIO' );</span></p>
+               
+            </li>
+            
+            <li>
+               
+               <p>保存并关闭文件。</p>
+               
+            </li>
+            
+         </ol>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

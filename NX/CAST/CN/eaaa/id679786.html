@@ -1,0 +1,83 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>关于组件组的思考</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>关于组件组的思考</h2>
+         
+         <p>当您的装配越来越复杂时，您就会有越来越强烈的需求来控制您工作的组件，控制您工作环境的组件组有几个特性：</p>
+         
+         <p>组件组提供在装配内指定那些对您很重要的组件集合的方法，这些组可能在自然实体上很接近，但是属于不同的子装配。</p>
+         
+         <p>组件组的类型：</p>
+         
+         <ul>
+            
+            <li class="condense">
+               
+               <p><strong>会话组件组</strong>只能在当前 NX 会话中使用，不会随部件保存。</p>
+               
+            </li>
+            
+            <li class="condense">
+               
+               <p> <strong>部件中的组件组</strong>会随部件文件保存，包括组件和用户定义的组。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>组的特性：</p>
+         
+         <ul>
+            
+            <li class="condense">
+               
+               <p>组可以嵌套</p>
+               
+            </li>
+            
+            <li class="condense">
+               
+               <p>当组中含有其它组时，情形和嵌套组提供包含组的输入一致。</p>
+               
+            </li>
+            
+            <li class="condense">
+               
+               <p>嵌套的组在<strong>装配导航器</strong>中遵循树形结构</p>
+               
+            </li>
+            
+            <li class="condense">
+               
+               <p>所有组操作都可以在 NX 宏中正常工作</p>
+               
+            </li>
+            
+            <li class="condense">
+               
+               <p>组件分组支持<strong>撤销</strong>操作</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

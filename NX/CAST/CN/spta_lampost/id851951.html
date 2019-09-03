@@ -1,0 +1,100 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>PCOMP 与 PCOMPG 卡中的 Nastran 层合板导出选项</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>PCOMP 与 PCOMPG 卡中的 Nastran 层合板导出选项</h2><a name="genid_spta_lampost_14"></a><table border="1" cellpadding="5" cellspacing="0" width="100%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+               <col span="2">
+            </colgroup>
+            
+            <thead>
+               
+               <tr bgcolor="#C0C0C0">
+                 <td colspan="1" rowspan="1"><p>层合板选项</p></td>
+                 <td colspan="1" rowspan="1"><p>堆叠方法</p></td>
+                 <td colspan="1" rowspan="1" align="center"><p>NASTRAN 定义</p></td>
+                 <td colspan="1" rowspan="1"><p>PCOMP 卡的 LAM 字段</p></td>
+                 <td colspan="1" rowspan="1"><p>PCOMPG 卡的 LAM 字段</p></td>
+               </tr>
+               <tr bgcolor="#F7F7F7">
+                 <td colspan="1" rowspan="1"><p>无</p></td>
+                 <td colspan="1" rowspan="1"><p>≠ <strong>对称</strong></p></td>
+                 <td colspan="1" rowspan="1"><p>所有层片都在 <strong>PCOMP</strong> 或 <strong>PCOMPG</strong> 卡上指定。</p></td>
+                 <td colspan="1" rowspan="1"><p>隐藏</p></td>
+                 <td colspan="1" rowspan="1"><p>隐藏</p></td>
+               </tr>
+               <tr bgcolor="F7F7F7">
+                 <td colspan="1" rowspan="1"><p>无</p></td>
+                 <td colspan="1" rowspan="1"><p>= <strong>对称</strong></p></td>
+                 <td colspan="1" rowspan="1"><p>在 <strong>PCOMP</strong> 卡上仅指定在中间平面一侧的层片.</p></td>
+                 <td colspan="1" rowspan="1"><p>SYM</p></td>
+                 <td colspan="1" rowspan="1"><p>无</p></td>
+               </tr>
+               <tr bgcolor="F7F7F7">
+                 <td colspan="1" rowspan="1"><p>MEM</p></td>
+                 <td colspan="1" rowspan="1"><p>全部</p></td>
+                 <td colspan="1" rowspan="1"><p>所有层片都已指定，仅膜的项被保留。</p></td>
+                 <td colspan="1" rowspan="1"><p>MEM</p></td>
+                 <td colspan="1" rowspan="1"><p>MEM</p></td>
+               </tr>
+               <tr bgcolor="F7F7F7">
+                 <td colspan="1" rowspan="1"><p>BEND</p></td>
+                 <td colspan="1" rowspan="1"><p>全部</p></td>
+                 <td colspan="1" rowspan="1"><p>所有层片都已指定，仅弯曲的项被保留。</p></td>
+                 <td colspan="1" rowspan="1"><p>BEND</p></td>
+                 <td colspan="1" rowspan="1"><p>BEND</p></td>
+               </tr>
+               <tr bgcolor="F7F7F7">
+                 <td colspan="1" rowspan="1"><p>SMEAR</p></td>
+                 <td colspan="1" rowspan="1"><p>全部</p></td>
+                 <td colspan="1" rowspan="1"><p>所有层片都已指定，堆叠顺序已忽略，剪切和弯曲膜耦合条件设为 0。</p></td>
+                 <td colspan="1" rowspan="1"><p>SMEAR</p></td>
+                 <td colspan="1" rowspan="1"><p>SMEAR</p></td>
+               </tr>
+               <tr bgcolor="F7F7F7">
+                 <td colspan="1" rowspan="1"><p>SMCORE</p></td>
+                 <td colspan="1" rowspan="1"><p>= <strong>核心对称</strong></p></td>
+                 <td colspan="1" rowspan="1"><p>所有层片都已指定，上一个层片是核心，堆叠顺序已忽略，剪切和弯曲膜耦合条件设为 0。</p></td>
+                 <td colspan="1" rowspan="1"><p>SMCORE</p></td>
+                 <td colspan="1" rowspan="1"><p>SMCORE</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1" bgcolor="#F7F7F7"><p>SMCORE + 横向剪切</p></td>
+                 <td colspan="1" rowspan="1" bgcolor="#F7F7F7"><p>= <strong>核心对称</strong></p></td>
+                 <td colspan="1" rowspan="1" bgcolor="#F7F7F7"><p>类似于标准 Nastran SMCORE 选项，但是还提供横向剪切刚度。</p></td>
+                 <td colspan="1" rowspan="1" bgcolor="#F7F7F7"><p>无</p></td>
+                 <td colspan="1" rowspan="1" bgcolor="#F7F7F7"><p>无</p></td>
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+            </tbody>
+            
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

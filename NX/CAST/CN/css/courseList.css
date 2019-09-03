@@ -1,0 +1,63 @@
+
+A:link { color: darkblue; }
+A:visited { color: darkblue; }
+A:active { color: blue; }
+
+h2 { 
+   font-size: 12pt;
+   font-family: 'Arial', 'Helvetica', 'sans-serif';
+   color: black;
+   font-weight: bold;
+   margin-top: 5pt;
+   margin-bottom: 6pt;
+   margin-left: 0pt;
+   text-decoration: none;
+}
+
+dl {
+   margin-top: 6pt;
+   margin-bottom: 3pt;
+}
+
+dd {
+   margin-top: 3pt;
+   margin-left: 12pt;
+   margin-bottom: 3pt;
+}
+
+a {
+   text-decoration: none;
+}
+
+a.selected {
+	background-color: #c0d2ec;
+}
+
+a:hover, a.selected:hover {
+	color: darkblue;
+	text-decoration: underline;
+}
+
+.part {
+	font-size: 9pt;
+	font-family: 'Arial', 'Helvetica', 'sans-serif';
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	margin-top: 6pt;
+	margin-bottom: 3pt;
+        margin-left: 0pt;
+}
+
+
+.course { 
+	font-size: 8pt; 
+ 	font-family: Helvetica,Lucida; 
+	margin-top: 0px;
+	margin-bottom: 3pt;
+	color: black; 
+	text-decoration: none;
+
+}	
+	

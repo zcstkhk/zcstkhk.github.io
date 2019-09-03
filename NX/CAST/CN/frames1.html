@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<LINK type="text/css" HREF="css/ui.css" REL="stylesheet">
+
+<script TYPE="text/javascript" LANGUAGE="JavaScript">
+  if (top.theBrowser=="IE") {
+    tabHeight=((top.auxWindow.displayTabs) ? "," + top.auxWindow.tabHeight : "");
+    displayTab=((top.auxWindow.displayTabs) ? true : false);
+
+  } else {
+    tabHeight=((top.auxWindow.displayTabs) && (top.auxWindow.tool=="contents") ? "," + top.auxWindow.tabHeight : "");
+    displayTab=((top.auxWindow.displayTabs) && (top.auxWindow.tool=="contents") ? true : false);
+
+  }
+
+  dHTML="<frameset frameborder='no' border='0' framespacing='0' rows='" + top.auxWindow.navHeight + tabHeight + ",*'>\n";
+  dHTML+="<frame frameborder='no' border='0' marginheight='0' name='aux_nav' src='blank.html' scrolling='no'>\n";
+
+  if (displayTab)
+    dHTML+="<frame frameborder='no' border='0' marginheight='0' name='aux_tabs' src='blank.html' scrolling='no'>\n";
+
+  dHTML+="<frame frameborder='no' border='0' marginheight='0' name='aux_main' src='" + top.auxWindow.toolURL + "'>\n";
+  dHTML+="</frameset>\n";
+
+  document.write(dHTML);
+
+</script>
+
+</HEAD>
+</HTML>

@@ -1,0 +1,51 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>概述</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>概述</h2>
+         
+         <p>典型的运动仿真使用刚体表示，它们根据约束，按规定的自由度移动。这些刚体运动仿真不能表示某些动力学特性，特别是比如大冲击、运动中的突发变化，或者组件柔软到可以影响机械的运动，在这些场合中，可以使用柔性体分析来将弹性变形与刚体运动结合起来。</p>
+         
+         <p>这种类型的分析要求 NX 运动仿真带有 RecurDyn 求解器，NX 高级仿真带有 NX Nastran 求解器。</p>
+         
+         
+         <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;"><script type="dojo/method">
+      flashData= {
+          swfSrc : '../xps3/graphics/xpsPlayer.swf',
+          graphSrc : '../graphics/graphicLibrary/nx_dss/new_features/motion/flexible_body_satellite_anim.png',
+          align : 'center',
+          base : './',
+          height : '325',
+          width : '404',
+          bgcolor : '#FFFFFF',
+          flashVersion : '7',         
+          looping : 'false',
+          play : 'false',
+          menu : 'true',
+          parameters : 'mySound=false,dependentFile1=..%2Fgraphics%2FgraphicLibrary%2Fnx_dss%2Fnew_features%2Fmotion%2Fflexible_body_satellite_anim.swf,dependentFile2=..%2Fxps3%2Fgraphics%2Fnav_buttons.txt'
+      }
+      top.loadFlash(this,flashData);
+    </script></div>
+         
+         
+         <p>要设置机械组件的柔体分析，需要在组件上创建一个有限元模型，并在连接到机械上的点(通常是在运动副位置)定义刚度值。<strong>NX Nastran SEMODES 103 &ndash; 柔体</strong>解算方案将柔体性的动力学行为减少到一组模态形状中，它储存在输出文件中。</p>
+         
+         <p>在求解这个模态解算方案之后，将柔性体输出文件(.rfi 文件)与连杆关联，该连杆位于运动仿真中定义的组件上，当求解运动仿真时，RecurDyn 求解器与 NX Nastran 通信并取回有限元分析结果，当机构运动时，柔性组件的曲面与刚体一起运动。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

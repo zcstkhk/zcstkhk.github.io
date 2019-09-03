@@ -1,0 +1,15 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开部件并设置首选项",file:"id947332.html",type:"topic",parent:""},
+{id:"d7e3",title:"显示处理中的工件",file:"id1065166.html",type:"topic",parent:""},
+{id:"d7e4",title:"创建工序",file:"id1065168.html",type:"topic",parent:""},
+{id:"d7e5",title:"指定切削策略",file:"id1065170.html",type:"topic",parent:""},
+{id:"d7e6",title:"指定步距",file:"id1065172.html",type:"topic",parent:""},
+{id:"d7e7",title:"定义轴向修剪平面",file:"id1065174.html",type:"topic",parent:""},
+{id:"d7e8",title:"定义径向修剪平面",file:"id1065176.html",type:"topic",parent:""},
+{id:"d7e9",title:"显示切削区域",file:"id1065178.html",type:"topic",parent:""},
+{id:"d7e10",title:"生成刀轨",file:"id1065180.html",type:"topic",parent:""},
+{id:"d7e11",title:"显示处理中的工件",file:"id1065182.html",type:"topic",parent:""},
+{id:"d7e12",title:"可视化材料移除",file:"id1065184.html",type:"topic",parent:""},
+{id:"d7e14",title:"放置第一次插削",file:"id1065186.html",type:"topic",parent:""},
+{id:"d7e15",title:"定义切屑控制",file:"id1065188.html",type:"topic",parent:""},
+{id:"d7e16",title:"可视化材料移除",file:"id1065190.html",type:"topic",parent:""}]}

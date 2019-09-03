@@ -1,0 +1,10 @@
+{identifier:"id",label:"title",items:[
+{id:"d11e2",title:"打开仿真",file:"graphing_open_simulation.html",type:"topic",parent:""},
+{id:"d11e3",title:"重置对话框内存",file:"id353012_dup4.html",type:"topic",parent:""},
+{id:"d11e4",title:"查看机构动画",file:"animate_mechanism_graphing.html",type:"topic",parent:""},
+{id:"d11e5",title:"将图形窗口拆分为两个视图窗口",file:"divide_graphics_window.html",type:"topic",parent:""},
+{id:"d11e6",title:"绘制驱动运动副图表",file:"graph_the_driving_joint.html",type:"topic",parent:""},
+{id:"d11e7",title:"将图表存储在 AFU 文件中",file:"store_the_graph.html",type:"topic",parent:""},
+{id:"d11e8",title:"再次查看机构运动",file:"animate_mech_again_graphing.html",type:"topic",parent:""},
+{id:"d11e9",title:"插补函数",file:"interpolate_the_function.html",type:"topic",parent:""},
+{id:"d11e10",title:"叠加插补图表",file:"overlay_the_interpolated_graph.html",type:"topic",parent:""}]}

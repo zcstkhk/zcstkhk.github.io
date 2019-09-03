@@ -1,0 +1,185 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Mirror instances of a pattern feature</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Mirror instances of a pattern feature </h2>
+         
+         
+         <p>You will mirror one set of hole instances from a pattern feature and a datum coordinate system on one side of the box frame to the opposite side. You will use the Part Navigator to select the instances you want to mirror.</p>
+         
+         <p>You can complete mirroring hole instances as an optional design challenge.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>Show <span class="uiTerm">Datum Coordinate System (16)</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Part Navigator</span>, expand <span class="uiTerm">Pattern [Linear]</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>Press the Shift key and select the following series:</p>
+                  
+                  <ul class="unmarkedList">
+                     <li>
+                        
+                        <p><span class="uiTerm">Instance [0] [5]</span> through <span class="uiTerm">Instance [0] [15]</span></p>
+                        
+                     </li>
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>Press the Ctrl key and select <span class="uiTerm">Datum Coordinate System (16)</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>Click the middle mouse button.</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Mirror Plane</span> group, make sure <span class="uiTerm">Plane</span> is set to <span class="uiTerm">New Plane</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>With <span class="uiTerm">Specify Plane</span> highlighted, select one of the inside vertical faces, and then the other to create a mirror plane.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/mirror_feature/mirror_feature_pattern_mirror_plane.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Settings</span> group, from the <span class="uiTerm">CSYS Mirror Method</span> list, select <span class="uiTerm">Mirror Y and Z, Derive X</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/mirror_feature/mirror_feature_first_set.png"></p>
+                     
+                     <p>A subset of eleven instances of the linear pattern feature is mirrored to the opposite side of the box frame. The CSYS is also mirrored using the mirror method you chose.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p><span class="emphasis">Optional:</span> Edit the <span class="uiTerm">Mirror Feature</span> you just created to add the rest of the ventilation holes to the mirrored pattern feature.
+                  </p>
+                  
+                  <p>Add the follow groups of pattern instances to complete the mirror feature operation.</p>
+                  
+                  <ul class="unmarkedList">
+                     <li>
+                        
+                        <p><span class="uiTerm">Instance [1] [5]</span> through <span class="uiTerm">Instance [1] [15]</span></p>
+                        
+                     </li>
+                     <li>
+                        
+                        <p><span class="uiTerm">Instance [2] [5]</span> through <span class="uiTerm">Instance [2] [15]</span></p>
+                        
+                     </li>
+                     <li>
+                        
+                        <p><span class="uiTerm">Instance [3] [5]</span> through <span class="uiTerm">Instance [3] [15]</span></p>
+                        
+                     </li>
+                     <li>
+                        
+                        <p><span class="uiTerm">Instance [4] [5]</span> through <span class="uiTerm">Instance [4] [15]</span></p>
+                        
+                     </li>
+                     <li>
+                        
+                        <p><span class="uiTerm">Instance [5] [6]</span> through <span class="uiTerm">Instance [5] [14]</span></p>
+                        
+                     </li>
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/activities/mirror_feature/mirror_feature_done_2.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>Close the part.</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

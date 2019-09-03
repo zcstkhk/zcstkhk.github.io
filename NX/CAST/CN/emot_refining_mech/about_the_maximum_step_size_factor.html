@@ -1,0 +1,30 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>最大步长因子</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>最大步长因子</h2>
+         
+         <p>求解器使用较小的步长时，将使用更多分析迭代，最终使接触仿真的结果更精确，这种精确会使解算性能降低，只在操作体将要与基本体发生接触时需要使用，<strong>最大步长因子</strong>接触参数将在真正需要时临时减小最大步长—在仿真的接触部分，减少在其余仿真部分时的不必要的求解时间，<strong>最大步长因子</strong>值越大，步长越小。</p>
+         
+         
+         <p>这个参数与<strong>最大步长</strong>求解器参数一起使用，以在需要精确分析时使用较小的步长，求解器可确定将要发生接触，并自动应用<strong>最大步长因子</strong>。</p>
+         
+         <p>例如，假设<strong>最大步长</strong>为<strong>0.01</strong>，<strong>最大步长因子</strong>为<strong>2</strong>，求解器将使用<strong>0.01</strong>作为最大步长，直到将要发生接触，此时将使用的最大步长为<strong>0.005</strong>。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

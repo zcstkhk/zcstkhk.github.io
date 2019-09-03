@@ -1,0 +1,186 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Add additional junctions to the pocket</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Add additional junctions to the pocket</h2>
+         
+         <p>In this activity, you will add an entry and an exit junction that will allow the probe head to simulate entry to, and exit from, the pocket when it retrieves a probe tool. These junctions will essentially match the tool mount and safe move junctions you have already defined.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Create Machine Component</strong> dialog box, define the probe head entry junction.
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>Repeat the <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" href="#" onclick="loadFile('id1458104.html')">activity</a> you used to define the safe move junction, but this time leave the offset value set to 0.
+                        </p>
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/machines/tool_rack_11.gif"></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Name the new set <strong>P1_SIM_ENTRY2</strong>.
+                        </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <table class="attentionTable attn_caution">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">Caution</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>The conjunction names are important to simulations. The junctions used to position the entry moves must be named <strong>Px_SIM_ENTRYn</strong>, where <strong>x</strong> is the tool pocket identifier and <strong>n</strong> ranges from 1 to 10 so that simulations occur sequentially.
+                              </p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>Create a probe head exit junction that is identical to the safe move junction you created.</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>Repeat the <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" href="#" onclick="loadFile('id1458104.html')">activity</a> you used to define the save move junction, but this time select the safe move CSYS as your reference CSYS, and do not define an offset value.
+                        </p>
+                        
+                        <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/nx_cmm/machines/tool_rack_12.gif"></p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Name the set <strong>P1_SIM_EXIT1</strong>.
+                        </p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <table class="attentionTable attn_caution">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">Caution</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>The conjunction names are important to simulations. The junctions used to position the exit move must be named <strong>Px_SIM_EXITn</strong>, where <strong>x</strong> is the tool pocket identifier and <strong>n</strong> ranges from 1 to 10. 
+                              </p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>In the <strong>Create Machine Component</strong> dialog box, in the <strong>Junctions</strong> section, the junctions <strong>List</strong> should now contain four items: <strong>T1</strong>, <strong>P1_SIM_ENTRY1</strong>, <strong>P1_SIM_ENTRY2</strong>, and <strong>P1_SIM_EXIT1</strong>.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>At the top of the <strong>Edit Machine Component</strong> dialog box, in the <strong>Name</strong> box, type <span class="userInput">POCKET_ONE</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Classify Component</strong> section, select the <strong>_STATIC_HOLDER</strong> check box.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <table class="attentionTable attn_note">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">Note</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>If the class option is not available, click <strong>Add Class</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialog_bars/nx_cmm/inspection_operation/add_sub_op.gif" border="0">, type <span class="userInput">_STATIC_HOLDER</span>, and select the check box.
+                              </p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>Click <strong>OK</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>Choose <strong>File</strong>&rarr;<strong>Save</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         <div class="stepListResult">
+            
+            <p>The first tool racket pocket is now completely defined. The pocket junctions are now visible in the <strong>Junctions</strong> column of the <strong>Machine Tool Navigator</strong>.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

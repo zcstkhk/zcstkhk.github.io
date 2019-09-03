@@ -1,0 +1,10 @@
+{identifier:"id",label:"title",items:[
+{id:"d16e2",title:"打开仿真文件",file:"bushings_open_the_part.html",type:"topic",parent:""},
+{id:"d16e3",title:"重置对话框内存",file:"id353012_dup9.html",type:"topic",parent:""},
+{id:"d16e4",title:"在第一个腿上创建衬套",file:"create_bushings.html",type:"topic",parent:""},
+{id:"d16e5",title:"输入刚度与阻尼系数",file:"enter_bushing_coefficients.html",type:"topic",parent:""},
+{id:"d16e6",title:"在其它脚上定义衬套",file:"define_remaining_bushings.html",type:"topic",parent:""},
+{id:"d16e7",title:"创建解算方案并求解",file:"create_a_solution_curve_bushing.html",type:"topic",parent:""},
+{id:"d16e8",title:"查看机构运动",file:"animate_the_mechanism_bushing.html",type:"topic",parent:""},
+{id:"d16e9",title:"对衬套添加阻尼",file:"adjust_damping_bushings.html",type:"topic",parent:""},
+{id:"d16e10",title:"再次求解并查看运动",file:"solve_animate_again_dup1.html",type:"topic",parent:""}]}

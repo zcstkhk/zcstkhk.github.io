@@ -1,0 +1,214 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Workflow and file structure</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>工作流和文件结构</h2>
+         <table border="0" cellpadding="4" cellspacing="2" width="95%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="58*">
+               
+               <col span="2" width="140*">
+            </colgroup>
+            
+            <thead valign="top">
+               
+               <tr bgcolor="silver">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">步骤</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">任务</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">应用模块和文件类型</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </thead>
+            
+            <tbody valign="top">
+               
+               <tr bgcolor="#F0F0F0">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">1. </p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">创建或导入模型。</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p><strong>建模</strong></p>
+                     
+                     <p class="no-bottom-margin">部件文件(.prt)</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">2. </p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">使用 NX 建模和高级仿真命令简化模型。</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p><strong>建模</strong>和<strong>高级仿真</strong></p>
+                     
+                     <p class="no-bottom-margin">理想化部件文件(_i.prt)</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#F0F0F0">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">3.</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">定义材料、物理属性以及热—光属性</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p><strong>高级仿真</strong></p>
+                     <p>FEM 文件(.fem)</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">4. </p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>划分模型网格并定义网格收集器来组织网格并指派物理属性。</p>
+                     
+                     
+                     
+                     <p class="no-bottom-margin">使用装配 FEM 时要将所有 FEM 文件关联到相应的部件文件。</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p><strong>高级仿真</strong></p>
+                     
+                     <p>FEM 文件(.fem)</p>
+                     
+                     <p class="no-bottom-margin">装配 FEM 文件(.afm)</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">5. </p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p>定义解算方案选项以及求解器参数。</p>
+                     
+                     <p>定义载荷、约束条件以及其它特殊边界条件。</p>
+                     
+                     <p class="no-bottom-margin">求解并查看解算信息。</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1">
+                     
+                     <p><strong>高级仿真</strong></p>
+                     <p class="no-bottom-margin">仿真文件(.sim)</p></td>
+                  
+               </tr>
+               
+               <tr bgcolor="#F0F0F0">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">6. </p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p>使用后处理工具查看并显示结果。</p>
+                     
+                     <p class="no-bottom-margin">刷新结果以包含其它结果集。</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p><strong>高级仿真</strong></p>
+                     
+                     <p class="no-bottom-margin">仿真文件(.sim)</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

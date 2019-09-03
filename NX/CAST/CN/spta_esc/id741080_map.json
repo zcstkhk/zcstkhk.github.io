@@ -1,0 +1,13 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开仿真文件",file:"id336278.html",type:"topic",parent:""},
+{id:"d7e3",title:"重置对话框设置",file:"id353012.html",type:"topic",parent:""},
+{id:"d7e4",title:"查看 FEM 和仿真文件",file:"id734642.html",type:"topic",parent:""},
+{id:"d7e5",title:"创建热耦合",file:"id336292.html",type:"topic",parent:""},
+{id:"d7e6",title:"创建出口风扇",file:"id336308.html",type:"topic",parent:""},
+{id:"d7e7",title:"创建开口边界条件",file:"id336310.html",type:"topic",parent:""},
+{id:"d7e8",title:"创建流体域网格",file:"id336717.html",type:"topic",parent:""},
+{id:"d7e9",title:"创建热载",file:"id336306.html",type:"topic",parent:""},
+{id:"d7e10",title:"求解模型",file:"id336300.html",type:"topic",parent:""},
+{id:"d7e11",title:"显示单元温度结果",file:"id336302.html",type:"topic",parent:""},
+{id:"d7e12",title:"显示空气速度结果",file:"id336939.html",type:"topic",parent:""},
+{id:"d7e14",title:"使用箭头显示空气速度结果 ",file:"id357807.html",type:"topic",parent:""}]}

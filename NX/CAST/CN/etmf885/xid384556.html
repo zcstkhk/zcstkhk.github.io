@@ -1,0 +1,187 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Contour Profile start points for closed pockets</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Contour Profile start points for closed pockets</h2>
+         
+         <div class="division">
+            
+            <h3>What is it?</h3>
+            
+            <p>You can now use the <span class="uiTerm">Region Start Points</span> options in <span class="uiTerm">Non Cutting Moves</span> to control the start point for closed pockets. These options control multiple closed pockets, but do not affect open pockets.
+            </p>
+            
+            <p>The default setting for the <span class="uiTerm">Default Region Start</span> option is set to one of the following:
+            </p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Mid Point</span></p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p><span class="uiTerm">Corner</span></p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Mid Point start point</h3>
+            
+            <p>The <span class="uiTerm">Mid Point</span> setting starts the tool path for each closed pocket at the mid point of the longest wall segment. This option provides the same results as in previous releases.
+            </p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Corner start point</h3>
+            
+            <p>The <span class="uiTerm">Corner</span> setting starts the tool path for each closed pocket at one of the following locations, listed in order of priority.
+            </p>
+            
+            <ol type="1" start="1">
+               
+               <li>
+                  
+                  <p>A sharp convex corner.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>The midpoint of a concave corner if the tool fits into the curvature.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>The midpoint of a convex rounded corner.</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>A sharp concave corner or fillet where the tool does not fit.</p>
+                  
+               </li>
+               
+            </ol>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/variable_contour/contour_profile_automatic_start_point.png"></p>
+            
+         </div>
+         
+         <div class="division">
+            
+            <h3>Select Points start point</h3>
+            
+            <p>The <span class="uiTerm">Select Points</span> options let you manually specify a start point location if none of the <span class="uiTerm">Midpoint</span> or <span class="uiTerm">Corner</span> option locations are acceptable. NX starts the tool path at the closest safe location to the manually specified start point.
+            </p>
+            
+            <p>If you manually specify region start points, they take precedence over the <span class="uiTerm">Default Region Start</span> point. Use the <span class="uiTerm">Effective Distance</span> option to limit the influence of the manually specified points.
+            </p>
+            
+         </div>
+         
+         
+         <p></p>
+         
+         
+         <div class="division">
+            
+            <h3>Where do I find it?</h3>
+            
+            <p></p>
+            
+            <table border="1" cellpadding="6" cellspacing="2" class="locator">
+               
+               <colgroup span="1">
+                  
+                  <col span="1" width="149">
+                  
+                  <col span="1" width="*">
+                  
+               </colgroup>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Application</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Manufacturing</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Prerequisite</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Contour Profile</span> operation
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr valign="top">
+                  
+                  <td bgcolor="" class="locator_shade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">Location in dialog box</p>
+                     
+                  </td>
+                  
+                  <td class="locator_noshade" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin"><span class="uiTerm">Contour Profile</span> operation dialog box&rarr;<span class="uiTerm">Path Settings</span> group&rarr;<span class="uiTerm">Non Cutting Moves</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/non_cutting_moves.gif" border="0">&rarr;<span class="uiTerm">Non Cutting Moves</span> dialog box&rarr;<span class="uiTerm">Start/Drill Points</span> tab&rarr;<span class="uiTerm">Region Start Points</span> group
+                     </p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </table>
+            
+            <p></p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

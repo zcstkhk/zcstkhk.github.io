@@ -1,0 +1,28 @@
+
+  A:link { color: darkblue; }
+  A:visited { color: darkblue; }
+  A:active { color: blue; }
+
+H1 { 
+	font-size: 12pt; 
+ 	font-family: 'Arial', 'Helvetica', 'sans-serif'; 
+	color: darkblue;
+	text-decoration: none; }
+
+P {
+	font-size: 10pt; 
+ 	font-family: 'Arial', 'Helvetica', 'sans-serif'; 
+	margin-left: 0pt;
+	margin-right: 0pt;
+	margin-top: 0pt;
+	margin-bottom: 6pt;
+	}
+	
+.link {
+	font-weight: normal;
+	font-size: 10pt; 
+ 	font-family: 'Arial', 'Helvetica', 'sans-serif'; 
+	margin-top: 0pt;
+	margin-bottom: 18pt;
+	margin-left: 12pt;
+	color: darkblue; }	

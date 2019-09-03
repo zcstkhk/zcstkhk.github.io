@@ -1,0 +1,11 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"设置装配加载选项并打开装配文件",file:"id979011.html",type:"topic",parent:""},
+{id:"d7e3",title:"定义要克隆的装配和克隆操作的类型",file:"id728510.html",type:"topic",parent:""},
+{id:"d7e4",title:"定义命名规则和位置",file:"id979004.html",type:"topic",parent:""},
+{id:"d7e5",title:"检查克隆默认设置并定义克隆异常",file:"id979005.html",type:"topic",parent:""},
+{id:"d7e6",title:"定义命名异常",file:"id979006.html",type:"topic",parent:""},
+{id:"d7e7",title:"允许克隆报告并检查操作冲突",file:"id979007.html",type:"topic",parent:""},
+{id:"d7e8",title:"创建克隆装配日志文件",file:"id979008.html",type:"topic",parent:""},
+{id:"d7e9",title:"为克隆操作执行一次空运行",file:"id979009.html",type:"topic",parent:""},
+{id:"d7e10",title:"克隆装配",file:"id979013.html",type:"topic",parent:""},
+{id:"d7e11",title:"打开克隆的装配文件",file:"id979015.html",type:"topic",parent:""}]}

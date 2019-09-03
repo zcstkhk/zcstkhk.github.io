@@ -1,0 +1,102 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Add and constrain the cap to the assembly</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>添加并约束虎钳帽(cap)到装配中</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>使用<span class="uiTerm">添加组件</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assemblies/add_component.gif" border="0">命令添加 <span class="literalText">des15_cap_clamp_b</span> 到装配中，对于<span class="uiTerm">定位</span>选项，使用<span class="uiTerm">通过约束</span>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/projects/assm_create_clamp_project_14.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在如下图所示的两个平面间创建一个<span class="literalText">180</span>度的角度约束<span class="uiTerm">。</span></p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/projects/assm_create_clamp_project_5.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>使用<span class="uiTerm">接触对齐</span>约束来对齐 <span class="literalText">des15_cap_clamp_b</span> 中孔的中心线到 <span class="literalText">des15_clamp_base_b</span> 中最上面的孔的中心线。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <table class="attentionTable attn_tip">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">提示</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>如果虎钳帽反转了<span class="literalText">180</span>度，使用<span class="uiTerm">反转方向</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/common/reverse_direction.gif" border="0">命令来维持下图中所示的方位。</p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/projects/assm_create_clamp_project_3.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在虎钳帽的两个外平面和虎钳台的两个内平面间创建一个<span class="uiTerm">中心2对2</span>约束。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/projects/assm_create_clamp_project_4.png"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>您约束的组件看起来应该类似下图所示。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/assemblies/projects/assm_create_clamp_project_6.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

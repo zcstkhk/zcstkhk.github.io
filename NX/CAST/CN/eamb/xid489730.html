@@ -1,0 +1,130 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>更改引用集</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>更改引用集</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>显示父项装配，并将它设为工作部件。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/reference_sets/act_create_ref_set13.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>右击 <strong>des02_jaw_plate</strong> 组件节点并将它的当前引用集替换为引用集 <strong>SKETCH_1</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>对于组件 <strong>des02_jaw_plate</strong>，只有它的草图是可见的，其它组件则不受影响，即使其它组件中也包含名为 <strong>SKETCH_1</strong>的引用集。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/reference_sets/act_create_ref_set14.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>将组件 <strong>des02_fixed_jaw</strong> 的当前引用集替换为 <strong>SKETCH_1</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>对于组件 <strong>des02_fixed_jaw</strong>，只有草图以及基准 CSYS 为可见。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/reference_sets/act_create_ref_set15.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>在图形窗口中，右击其中一个 <strong>des02_plate_screw</strong> 实例并将它的引用集替换为 <strong>SKETCH_1</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>对于这个实例，只有草图为可见，引用集不会改变其它实例的显示，即使这些实例属于相同的组件。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/reference_sets/act_create_ref_set16.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>将另一个实例的引用集替换为 <strong>SKETCH_1</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>只有属于引用集 <strong>SKETCH_1</strong>的草图和基准 CSYS 为可见。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/reference_sets/act_create_ref_set17.png"></p>
+                     
+                     <p>丢失了一个草图：组件 <strong>des02_fixed_jaw</strong> 中添加到引用集 <strong>SKETCH_2</strong>而不是 <strong>SKETCH_1</strong>里面的草图。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>将 <strong>Sketch_000</strong>添加到引用集 <strong>SKETCH_1</strong>中。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p><strong>Sketch_000</strong> 现在既包含在引用集 <strong>SKETCH_1</strong>中，又包含在<strong>SKETCH_2</strong>中。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/reference_sets/act_create_ref_set18.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>关闭所有部件。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

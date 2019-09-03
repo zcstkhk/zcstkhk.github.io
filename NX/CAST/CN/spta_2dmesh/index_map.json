@@ -1,0 +1,19 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"2D 网格划分",file:"id1298171.html",type:"topic",parent:""},
+{id:"d5e5",title:"创建2D 自由网格",file:"id150951.html",type:"topic",parent:""},
+{id:"d5e7",title:"定义网格划分方法",file:"id362307.html",type:"topic",parent:""},
+{id:"d5e9",title:"使用自由映射网格",file:"id150881.html",type:"topic",parent:""},
+{id:"d5e11",title:"练习：生成2D 网格",file:"id1321090.html",type:"topic",parent:""},
+{id:"d5e14",title:"在圆角或圆柱体上定义2D 网格",file:"id344733.html",type:"topic",parent:""},
+{id:"d5e16",title:"指派壳单元厚度",file:"id1056325.html",type:"topic",parent:""},
+{id:"d5e18",title:"查看壳单元厚度",file:"id1056637.html",type:"topic",parent:""},
+{id:"d5e20",title:"抑制片体中的孔",file:"id1524032.html",type:"topic",parent:""},
+{id:"d5e22",title:"视频：2D 网格划分",file:"id1321091.html",type:"topic",parent:""},
+{id:"d5e24",title:"生成2D 网格",file:"id740968.html",type:"activity",parent:""},
+{id:"d5e27",title:"创建2D 映射网格",file:"id345680.html",type:"topic",parent:""},
+{id:"d5e29",title:"使用2D 种子网格生成六面体(扫掠)网格",file:"id1557354.html",type:"activity",parent:""},
+{id:"d5e31",title:"后处理壳单元结果",file:"id1542833.html",type:"topic",parent:""},
+{id:"d5e33",title:"显示壳单元法向",file:"id1547357.html",type:"topic",parent:""},
+{id:"d5e35",title:"生成壳单元的后处理结果",file:"id1538630.html",type:"activity",parent:""},
+{id:"d5e37",title:"复习",file:"id1320583.html",type:"topic",parent:""}
+]}

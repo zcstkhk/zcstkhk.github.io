@@ -1,0 +1,88 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>NX 制图方法与主模型工作流</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>NX 制图方法与主模型工作流</h2>
+         <p>NX 提供了不同的方法来创建图纸，您可以使用：</p>
+         <ul>
+            
+            <li>
+               
+               <p>2D 制图过程，不引用任何3D 模型几何体即开始创建新图纸</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>3D 制图过程，将您的图纸直接在包含3D 数据的装配或部件文件中</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>主模型工作流，将您的模型文件与图纸文件分开管理，在使用3D 数据时推荐您使用这个工作流</p>
+               
+            </li>
+            
+         </ul>
+         <div class="division">
+            
+            <h3>使用主模型技术进行 3D 制图</h3>
+            
+            <p>此产品设计过程通常包含来自不同专业领域的人员的输入，他们使用不同的 NX   应用模块并共享同一个模型。这种团队导向型的产品设计称为<em>并行工程</em>。主模型架构支持此类型的环境，因此团队可以同时处理部件、部件的组件或图纸。</p>
+            
+            <p>主模型是包含单个装配组件的部件文件，其中包含来自下游应用模块的数据，比如：</p>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>制图</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>加工</p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>分析</p>
+                  
+               </li>
+               
+            </ul>
+            
+            <p>主模型方法既适用于整个装配，也可用于单个部件。对于单个部件，可以由一个人具体地处理图纸，同时由另一个人修改模型几何体。可通过创建只含一个组件的装配部件来实现此目的。组件部件是主模型，在装配部件中创建图纸。</p>
+            
+            
+            <p>由于图纸包含在单独的文件中，下游用户不需要具有几何体的写权限。这可以防止意外修改，并保留设计的完整性。</p>
+            
+            <p>在非主模型工作流中，图纸包含在部件之中。</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/drawings/create_edit_sheet/non_master_model.gif"></p>
+            
+            <p>在主模型工作流中，部件作为一个组件被添加到图纸文件中。</p>
+            
+            <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/drafting/drawings/create_edit_sheet/master_model.gif"></p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

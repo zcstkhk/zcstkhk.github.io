@@ -1,0 +1,21 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"Modeling 3D laminates",file:"xid480348.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"Advantages of using 3D elements",file:"xid481152.html",type:"topic",parent:""},
+{id:"d5e7",title:"Create 3D laminates",file:"xid475940.html",type:"topic",parent:""},
+{id:"d5e9",title:"Solid Laminate Modeler",file:"id1535493.html",type:"topic",parent:""},
+{id:"d5e11",title:"Defining laminate properties",file:"xid476003.html",type:"topic",parent:""},
+{id:"d5e14",title:"Plies and 3D mesh elements",file:"xid480267.html",type:"topic",parent:""},
+{id:"d5e16",title:"Create a 3D laminate on a pad",file:"id1548064.html",type:"activity",parent:""},
+{id:"d5e18",title:"Inflating laminates",file:"id1542807.html",type:"topic",parent:""},
+{id:"d5e20",title:"Element types supported for inflation",file:"xid384939.html",type:"topic",parent:""},
+{id:"d5e22",title:"Number of solid layers",file:"xid475935.html",type:"topic",parent:""},
+{id:"d5e24",title:"Modifying laminate inflation setups",file:"xid480281.html",type:"topic",parent:""},
+{id:"d5e27",title:"Extrude laminate",file:"id1084357.html",type:"topic",parent:""},
+{id:"d5e29",title:"Extrude the 2D mesh using the global layup",file:"id1082589.html",type:"activity",parent:""},
+{id:"d5e31",title:"Fill laminate",file:"id1542809.html",type:"topic",parent:""},
+{id:"d5e33",title:"Ply thickness tolerance",file:"xid429190.html",type:"topic",parent:""},
+{id:"d5e35",title:"Butt joints",file:"xid475936.html",type:"topic",parent:""},
+{id:"d5e37",title:"Create a solid laminate using the global layup",file:"id1542815.html",type:"activity",parent:""},
+{id:"d5e40",title:"Review",file:"xid480361.html",type:"topic",parent:""}
+]}

@@ -1,0 +1,75 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Modeling flow turbulence</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Modeling flow turbulence</h2><a name="ndxgenid_spta_nxfl_32"></a>
+         
+         
+         <p>The flow solver uses the Reynolds-Averaged Navier Stokes (RANS) methods to solve for turbulence.</p>
+         
+         <p>You set the <span class="uiTerm">Turbulence Model</span> for your flow analysis on the <span class="uiTerm">Solution Details</span> tab of the <span class="uiTerm">Solution</span> dialog box.
+         </p>
+         
+         <p><span class="uiTerm">K-Epsilon</span> (k-&epsilon;), <span class="uiTerm">K-Omega</span> (k-&omega;), and <span class="uiTerm">Shear Stress Transport &mdash;SST</span> are known as two equation models.
+         </p>
+         
+         <p>In the flow solver, you have the following options to model flow regime:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p><span class="uiTerm">None &mdash; Laminar Flow</span> &mdash; The flow is not turbulent.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">Fixed Turbulent Viscosity</span> (FTV) &mdash; Turbulent viscosity is assumed to be constant throughout the flow domain. This method converges quickly and is recommended for preliminary results. It is useful in determining general trends and troubleshooting problem areas in the model.
+               </p>
+               <p>The model is very sensitive to the specified characteristic turbulence scales.</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <ul>
+            
+            <li>
+               
+               <p><span class="uiTerm">Mixing Length</span> &mdash; It converges better than FTV, but it is more computationally intensive. Mixing Length is less accurate than the two equation turbulence models.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p><span class="uiTerm">K-Epsilon</span> (<span class="emphasis">k-&epsilon;</span>) &mdash; Turbulent viscosity is evaluated at each node by solving two additional conservation equations: one for the turbulence kinetic energy and the other one for the dissipation rate. The total solution time may double or triple. This model requires a finer 3D flow mesh to observe any improvement in turbulence simulation.
+               </p>
+               
+            </li>
+            
+            
+            
+         </ul>
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

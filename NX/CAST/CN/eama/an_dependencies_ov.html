@@ -1,0 +1,84 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>装配导航器相依性面板</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2><img align="bottom" src="../graphics/nonLocalized/nx/icons/images/resource_bar/assembly_navigator.gif" border="0">&nbsp;装配导航器相依性面板</h2>
+         
+         <p>装配导航器的&ldquo;相依性&rdquo;面板会显示所选装配或零件节点的当前父级和子级相依性。</p>
+         <p>可用<strong>相依性</strong>面板中的结构确定修改的潜在影响。</p>
+        <p>相依性包含以下内容：</p>
+         <ul>
+           <li>
+             <p>以下各项之间的 WAVE 相依性：</p>
+             <ul>
+               <li>
+                 <p>所选部件与同一装配中的已加载或已卸载组件</p>
+               </li>
+               <li>
+                 <p>所选部件和装配以外的已加载部件</p>
+               </li>
+             </ul>
+           </li>
+           <li>
+             <p>装配约束</p>
+           </li>
+           <li>
+             <p>原有配对条件</p>
+           </li>
+         </ul>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>在某些情况下，WAVE 信息仅对完全加载的部件可用。</p>
+                  <p>不论选择哪一项，任何组件对之间的约束关系始终显示在<strong>子项</strong>节点下。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <table class="attentionTable attn_tip">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">提示</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>可以将相依性树结构导出至浏览器或电子表格。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         
+         <div class="division">
+            
+            <h3>循环</h3>
+            
+            <p>装配约束没有父级—子级关系。为防止出现循环树结构，约束关系始终显示为子级。在展开关系的第一级时，可以看到 <img align="bottom" src="../graphics/nonLocalized/nx/assemblies/assembly_navigator/an_an_more_node.gif" border="0"> <strong>父级重复</strong>注释。</p>
+            
+            <p>可能存在有效的循环 WAVE 相依性。在循环不造成错误的情况下，可以看到 <img align="bottom" src="../graphics/nonLocalized/nx/assemblies/assembly_navigator/an_an_more_node.gif" border="0"> <strong>父级重复</strong>注释。</p>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

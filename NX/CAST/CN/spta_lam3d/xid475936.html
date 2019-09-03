@@ -1,0 +1,104 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Butt joints</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>Butt joints</h2>
+         
+         <p>In the ply-based process, you can create a butt joint between two plies that are on the same layer when you inflate a 2D laminate. This avoids the creation of spurious drop-off resin elements between the two plies. In the zone-based process, NX always creates butt joints.</p>
+         <a name="genid_spta_lam3d_54" id="genid_spta_lam3d_54"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/extrusion/laminate_without_butt_joint.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>Laminate with spurious drop-off elements</h4>
+         </div>
+         <a name="genid_spta_lam3d_55" id="genid_spta_lam3d_55"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/extrusion/laminate_with_butt_joint.gif" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>Laminate with butt joint</h4>
+         </div>
+         
+         <p>To create a butt joint, in the <span class="uiTerm">Layup Modeler</span> dialog box, specify the same base integer in the <span class="uiTerm">Description</span> column of the two plies. 
+         </p>
+         
+         
+         <p>When NX inflates the laminate, it looks in the <span class="uiTerm">Description</span> field of each ply and looks at the first integer it encounters. 
+         </p>
+         
+         <p>If two plies have the same first integer, NX creates the butt joint if the following conditions are met:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>The plies are on the same layer.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The draping domains of the two plies touch but do not overlap.</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>The order of plies must not be inverted to butt plies together.</p>
+               
+            </li>
+            
+         </ul>
+         <a name="xid481910" id="xid481910"></a>
+         
+         
+         
+         <h2>Butt joint examples</h2>
+         
+         
+         
+         
+         <p>In example 1, ply p1 butts with ply p4 and ply p2 butts with ply p5 because the order of plies is preserved.</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/laminates/lam_extrusion/butt_joint_example1.gif"></p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/extrusion/lam_2_butt_joints.gif"></p>
+         
+         
+         <p>In example 2, only ply p2 butts with ply p4. Ply p1 cannot butt with ply p5 at the same time that ply p2 butts with p4, because either ply p1 and ply p2  or ply p4 and ply p5 should be inverted.</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/laminates/lam_extrusion/butt_joint_example2.gif"></p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/laminates/extrusion/lam_1_butt_joint.gif"></p>
+         
+         
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Defining physical properties</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>定义物理属性</h2>
+         <p>物理属性将定义在部件中未显式构建的特性，使用<strong>物理属性管理器</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/simulation/advanced_simulation/physical_properties.gif" border="0"> 对话框中的属性来描述单元的物理性质及特性，比如厚度、层堆叠定义等等。</p>
+         <p>可以定义物理属性来指定：</p>
+         <ul>
+            
+            <li>
+               
+               <p>使用直径和质量定义球形<strong>集中质量</strong>，例如，可以在合适位置创建0D 单元，然后指派集中质量，以在受热载荷作用的铆接平板中构建铆钉效应。您也可以使用0D 单元来构建在汽水瓶内部的流体质量，而不用构建3D 网格的流体</p>
+               
+            </li>
+            
+            <li>
+               
+               <p><strong>单位长度质量</strong>的线性一致变化的<strong>非结构质量</strong>，对于1D 梁单元，使用它来添加其它电容(capacitance)到1D 单元中</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>对于2D 壳单元的薄壳收集器，定义<strong>厚度</strong>值，或单位面积质量的<strong>非结构质量</strong>值，使用<strong>非结构质量</strong>来添加重量，而不用为它显式构建几何体和网格单元，例如，内衬材料和表面涂层</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>对于2D 单元，为<strong>多层壳均匀</strong>收集器定义层，您将在其中指定<strong>总厚度</strong>和<strong>层数</strong></p>
+               <p>使用这个属性来构建详细的穿过平面传导和传导。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>为多层壳不均匀收集器定义层堆叠，您将在其中定义多层建模对象的层堆叠</p>
+               <p>各个层可以定义不同的材料，厚度以及热—光属性。</p>
+               
+               <p>通过构建夹层材料的物理层使用这个属性来构建传导或辐射热传递，例如，可以使用多层壳不均匀来构建复合材料的精确热传递</p>
+               
+            </li>
+            
+         </ul>
+         <p>在活动的 FEM 文件中定义物理属性时，被分配到网格收集器中的网格及其单元将继承这些属性。</p>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

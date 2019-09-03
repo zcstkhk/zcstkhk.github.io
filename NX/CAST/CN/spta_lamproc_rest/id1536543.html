@@ -1,0 +1,296 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Using a spreadsheet or a CSV file to define a layup</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>使用电子表格或 CSV 文件定义铺层</h2>
+         
+         <p>使用<strong>从电子表格导入铺层</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/laminates/lam_import_frm_spreadsheet.gif" border="0"> 或<strong>从 CSV 文件导入铺层</strong> <img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/icons/dialogs/simulation/laminates/import_layup_from_csv.gif" border="0"> 选项可在 Excel 电子表格或 CSV 文件中定义铺层，并将其导入至 NX。必须使用三列以及数量与层片数量相同的行来定义铺层。列从左到右必须包含：</p>
+         <ul>
+            <li>
+              <p>材料名称。这是现有的 NX 材料或层片材料的名称。如果没有在 FEM 文件中找到材料名称，则不会导入铺层</p>
+            </li>
+            <li>
+              <p>厚度，使用 FEM 单位</p>
+            </li>
+            <li>
+              <p>方位角，以度为单位            </p>
+            </li>
+            
+         </ul>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>在将铺层导入现有的铺层时，将替代该铺层定义。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         
+         <p>Excel 工作表准备导入<strong>层合板建模器</strong>的内容示例：</p>
+         
+        <table cellpadding="2" cellspacing="4" width="95%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+            </colgroup>
+            
+            <thead>
+               
+               <tr bgcolor="#C0C0C0">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                    <p class="no-bottom-margin">材料名称</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">厚度(毫米)</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">角度(度)</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+               <tr bgcolor="#f7f7f7">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">KEVLAR SKIN</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">0.0635</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">0</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#f7f7f7">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">KEVLAR SKIN</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">0.0635</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">&ndash;45</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#f7f7f7">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">KEVLAR SKIN</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">0.0635</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">90</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#f7f7f7">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">KEVLAR SKIN</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">0.0635</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">45</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#f7f7f7">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">KEVLAR CORE</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">12.7</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">0</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#f7f7f7">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">KEVLAR SKIN</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">0.0635</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">45</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#f7f7f7">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">KEVLAR SKIN</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">0.0635</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">90</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#f7f7f7">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">KEVLAR SKIN</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">0.0635</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">&ndash;45</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#f7f7f7">
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">KEVLAR SKIN</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">0.0635</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">0</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         <p>从电子表格或 CSV 文件导入铺层时，<strong>堆叠方法</strong>列表将被重置为<strong>常规</strong>。该层片铺层的内容始终与<strong>层片草图生成器</strong>组中显示的内容相同。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Modify pcbx_ug_filter.ini</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Modify pcbx_ug_filter.ini</h2>
+         <p>The initialization files contain settings on display, filters, meshing, and other properties. </p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>For more information about <span class="fileName">.ini</span> and <span class="fileName">.xml</span> setting files see:<br/><span class="emphasis">PCB Exchange&rarr;PCB Exchange application settings&rarr;Modifying settings and PC assembly data</span></p>
+                  
+               </td>
+            </tr>
+         </table>
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>In your working folder, open <span class="fileName">pcbx_ug_filter.ini</span> with a text editor.
+               </p>
+               
+               <table class="attentionTable attn_tip">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">Tip</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>Observe the other predefined filters.</p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+            
+            <li>
+               
+               <p>To enable component height filtering, at the end of the document, insert the following:</p>
+               <pre class="codeExample indent "># This filter removes components of less than 2mm
+[ComponentMinHeight 0.002]
+ComponentMinHeight=0.002
+</pre>
+               </li>
+            
+            <li>
+               
+               <p>To enable user defined component mapping, insert the following:</p>
+               <pre class="codeExample indent "># This filter maps components
+[mapped components activity]
+ComponentMapFile=..full path..\mapped_components.txt
+</pre>
+               <table class="attentionTable attn_caution">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">Caution</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>Replace <span class="emphasis">..full path..</span> by the full system path of your <span class="pathName">pcb_activities</span> folder.
+                        </p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+            
+            <li>
+               
+               <p>Save and close the <span class="fileName">pcbx_ug_filter.ini</span> file.
+               </p>
+               
+            </li>
+            
+            
+         </ol>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

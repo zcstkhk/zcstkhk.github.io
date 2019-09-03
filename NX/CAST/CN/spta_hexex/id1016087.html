@@ -1,0 +1,86 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>使用另一个工作流对支架划分六面体网格</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>使用另一个工作流对支架划分六面体网格</h2>
+         
+         <p>另一种生成扫掠网格的方法是使用<strong>直到目标</strong>扫掠网格类型来选择多个相连的源面，扫掠到一个目标面。这个分析工作流如下<strong>：</strong></p>
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>使用基于实体的 CAD 装配，可以使在 NX 中创建的，也可以是导入到 NX 中的。</p>
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/modeling/brick_solid1_small.gif" border="0"></p>
+               
+               <table class="attentionTable attn_note">
+                  <tr>
+                     <td valign="top">
+                        <p class="attn_title">注释</p>
+                     </td>
+                     <td class="attention_main">
+                        
+                        <p>在下面的示例中，模型已经简化，从装配组件中得到的几何体也已经使用<strong> WAVE 几何体链接器</strong>复制到工作部件中，要获取详细过程，可参见前面一个练习的介绍。</p>
+                        
+                     </td>
+                  </tr>
+               </table>
+               
+            </li>
+            
+            <li>
+               
+               <p>在高级仿真中创建 FEM。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>生成网格配对条件。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>应用边密度来控制沿组件厚度方向的单元数量。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>创建2D 相关网格，以用作种子网格来控制扫掠网格中的数量。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>创建映射网格网格作为种子网格，以控制扫掠网格中的单元。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>生成扫掠网格，扫掠网格将会生成六面体单元。</p>
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim_examples/meshing/3d/brick_swept21_small.gif" border="0"></p>
+               
+            </li>
+            
+         </ol>
+         
+         <div id="footer"></div>
+   </div>
+   </body>
+</html>

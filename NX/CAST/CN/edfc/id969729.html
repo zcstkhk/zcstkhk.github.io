@@ -1,0 +1,185 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>将一个尺寸的位置与另一个关联</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>将一个尺寸的位置与另一个关联</h2>
+         
+         
+         <p>您需要标注部件底座的高度尺寸，同时您也想让新的尺寸与现有尺寸在一条竖直线上，并且与之关联，以使当第一个尺寸移动时，另一个将随着它移动。</p>
+         
+         <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;"><script type="dojo/method">
+      flashData= {
+          swfSrc : '../xps3/graphics/xpsPlayer.swf',
+          graphSrc : '',
+          align : 'center',
+          base : './',
+          height : '228',
+          width : '279',
+          bgcolor : '#FFFFFF',
+          flashVersion : '6',         
+          looping : 'true',
+          play : 'true',
+          menu : 'true',
+          parameters : 'mySound=false,dependentFile1=..%2Fgraphics%2FnonLocalized%2Fnx%2Ficons%2Fanimations%2Fflash%2Fdrafting%2Finfer_vert_dim4.swf,dependentFile2=..%2Fxps3%2Fgraphics%2Fnav_buttons.txt'
+      }
+      top.loadFlash(this,flashData);
+    </script></div>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在选择条上，确保已选择<strong>关联原点</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/drafting/annotation_placement/associate_origin_with_helper_lines.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>您可以选择现有尺寸的延伸线来开始创建新尺寸。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>选择尺寸 22.2 的延长线。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/dimensions/drafting_activities_dimensions_dimlin1_610.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>选择部件底部端点。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/dimensions/drafting_activities_dimensions_dimlin1_615.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>将光标移动到它上方的尺寸上。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>尺寸将高亮显示，并出现两个关联符号。</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/dimensions/drafting_activities_dimensions_dimlin1_620.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>单击以放置下方的尺寸。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/dimensions/drafting_activities_dimensions_dimlin1_630.gif"></p>
+                     
+                     <p>已创建新的尺寸，它与另一个尺寸在一条竖直线上，并且与之关联。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>向右拖动尺寸 22.2 少许，然后释放。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/dimensions/drafting_activities_dimensions_dimlin1_640.gif"></p>
+                     
+                     <p>尺寸 22.2 一被放置，尺寸 15.9 将立即调整以保持与上方尺寸的竖直对齐。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>选择<strong>信息→其它→特定于对象</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>以此来查看尺寸间的关联性。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>关联对象</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>选择尺寸15.9 。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>与这个尺寸关联的对象高亮显示。</p>
+                     
+                     <div class="verbose">
+                        <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/drafting/activities/dimensions/drafting_activities_dimensions_dimlin1_650.gif"></p>
+                     </div>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>取消</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

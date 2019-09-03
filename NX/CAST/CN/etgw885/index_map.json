@@ -1,0 +1,24 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"NX 8 - NX 8.5 Gateway and visualization transition",file:"xid307105.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"Dialog box snapping",file:"xid430789.html",type:"topic",parent:""},
+{id:"d5e7",title:"Emphasis enhancements",file:"xid452511.html",type:"topic",parent:""},
+{id:"d5e9",title:"Custom Widths enhancements",file:"xid377632.html",type:"topic",parent:""},
+{id:"d5e11",title:"Save Options enhancement",file:"xid434106.html",type:"topic",parent:""},
+{id:"d5e14",title:"Miscellaneous display enhancements",type:"topicMap",parent:"",children:[{id:"d5e15",title:"Line widths enhancement",file:"xid434051.html",type:"topic",parent:"d5e14"},{id:"d5e16",title:"Smooth Edges visualization enhancement",file:"xid376806.html",type:"topic",parent:"d5e14"},{id:"d5e17",title:"See-Thru Preview",file:"xid377137.html",type:"topic",parent:"d5e14"}]},
+{id:"d5e19",title:"Using some miscellaneous display enhancements",file:"xid454069.html",type:"activity",parent:""},
+{id:"d5e21",title:"Shortcut toolbar",file:"xid377135.html",type:"topic",parent:""},
+{id:"d5e23",title:"Displaying View operation commands on the shortcut menu",file:"xid379454.html",type:"topic",parent:""},
+{id:"d5e25",title:"Customizing shortcut toolbars and radial shortcuts",file:"xid377136.html",type:"topic",parent:""},
+{id:"d5e27",title:"Less and More dialog box layouts",file:"xid376875.html",type:"topic",parent:""},
+{id:"d5e30",title:"Measurement enhancements",type:"topicMap",parent:"",children:[{id:"d5e31",title:"Simple Measure commands",file:"xid340188.html",type:"topic",parent:"d5e30"},{id:"d5e32",title:"Measure Distance enhancements",file:"xid340189.html",type:"topic",parent:"d5e30"},{id:"d5e33",title:"Measure Extremes",file:"xid310582.html",type:"topic",parent:"d5e30"},{id:"d5e34",title:"Selection Intent with measurement commands",file:"xid381257.html",type:"topic",parent:"d5e30"},{id:"d5e35",title:"Measure Extremes and Distances",file:"xid386355.html",type:"activity",parent:"d5e30"},{id:"d5e36",title:"Make simple measurements",file:"xid452763.html",type:"activity",parent:"d5e30"}]},
+{id:"d5e38",title:"True Studio 3D Dome environment",file:"xid376951.html",type:"topic",parent:""},
+{id:"d5e40",title:"Create and modify a scene with a 3D dome background",file:"xid386251.html",type:"activity",parent:""},
+{id:"d5e42",title:"Align Facets along Edges",file:"xid377048.html",type:"topic",parent:""},
+{id:"d5e44",title:"Rotate and Fit enhancements",type:"topicMap",parent:"",children:[{id:"d5e45",title:"Rotate enhancements",file:"xid376989.html",type:"topic",parent:"d5e44"},{id:"d5e46",title:"Set Rotation Reference",file:"xid377330.html",type:"topic",parent:"d5e44"},{id:"d5e47",title:"Fit enhancements",file:"xid376990.html",type:"topic",parent:"d5e44"},{id:"d5e48",title:"Rotate and Fit enhancements",file:"xid385900.html",type:"activity",parent:"d5e44"}]},
+{id:"d5e50",title:"Selection Preferences enhancement",file:"id1642715.html",type:"topic",parent:""},
+{id:"d5e53",title:"User defined object names in NX",file:"xid340187.html",type:"topic",parent:""},
+{id:"d5e55",title:"JT attributes in NX",file:"xid377049.html",type:"topic",parent:""},
+{id:"d5e57",title:"Import Points from File",file:"xid377153.html",type:"topic",parent:""},
+{id:"d5e59",title:"Linux — standard buttons relocated",file:"id1642718.html",type:"topic",parent:""}
+]}

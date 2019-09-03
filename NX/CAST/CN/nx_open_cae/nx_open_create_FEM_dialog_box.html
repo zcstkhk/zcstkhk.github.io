@@ -1,0 +1,555 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Define a Create FEM file dialog box</title>
+   </head>
+   <body>
+      <div class="contentType_procedure">
+         <h2>Define a Create FEM file dialog box</h2>
+         <p>The first dialog box you will define is used to create a FEM file. It contains a selection step that prompts the user to select the solid body used in creating the FEM file. The dialog box also contains the standard navigation buttons <span class="uiTerm">OK</span>, <span class="uiTerm">Apply</span>, and <span class="uiTerm">Cancel</span>. 
+         </p>
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>NX should still be open.</p>
+                  
+               </td>
+            </tr>
+         </table>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/start.gif" border="0"> &nbsp; <span class="literalText">Start</span>&rarr;<span class="uiTerm">All Applications</span>&rarr;<span class="uiTerm">Block UI Styler</span></p>
+               
+               <ul class="unmarkedList">
+                  <li>
+                     
+                     <table border="0" cellpadding="0" cellspacing="0">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" width="10">
+                           
+                           <col span="1" width="*">
+                           
+                           <col span="1" width="10">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td class="tab_left" colspan="1" rowspan="1" width="10"></td>
+                              
+                              <td class="tab_middle" colspan="1" rowspan="1" width="*">
+                                 
+                                 <p class="no-bottom-margin"><span class="uiTerm">Dialog</span></p>
+                                 
+                              </td>
+                              
+                              <td class="tab_right" colspan="1" rowspan="1" width="16"></td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </li>
+                  <li>
+                     
+                     <table border="0" cellpadding="0" cellspacing="0">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" width="10">
+                           
+                           <col span="1" width="*">
+                           
+                           <col span="1" width="45">
+                           
+                           <col span="1" width="*">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td class="banner_left" colspan="1" rowspan="1" width="10"></td>
+                              
+                              <td class="banner_middle" colspan="1" rowspan="1" width="*">
+                                 
+                                 <p class="no-bottom-margin"><span class="uiTerm">Properties</span></p>
+                                 
+                              </td>
+                              
+                              <td class="banner_right" colspan="1" rowspan="1" width="45"></td>
+                              
+                              <td colspan="1" rowspan="1" width="*">
+                                 
+                                 <p class="no-bottom-margin">&nbsp;</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </li>
+                  <li>
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb12.gif" border="0"> <span class="uiTerm">NoTitle</span> (<span class="uiTerm">Value</span> column)
+                     </p>
+                     
+                  </li>
+                  <li>
+                     
+                     <table cellspacing="0" class="input_field" width="300">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" width="90">
+                           
+                           <col span="1" width="190*">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td class="label2" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><span class="uiTerm">Label</span></p>
+                                 
+                              </td>
+                              
+                              <td class="border1b" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">Create FEM</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                     <table border="0" cellpadding="0" cellspacing="0">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" width="10">
+                           
+                           <col span="1" width="*">
+                           
+                           <col span="1" width="10">
+                           
+                           <col span="1" width="*">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td class="key_left" colspan="1" rowspan="1" width="8"></td>
+                              
+                              <td class="key_middle" colspan="1" rowspan="1" width="*">
+                                 
+                                 <p class="no-bottom-margin"><span class="uiTerm">Enter</span></p>
+                                 
+                              </td>
+                              
+                              <td class="key_right" colspan="1" rowspan="1" width="8"></td>
+                              
+                              <td colspan="1" rowspan="1" width="*">
+                                 
+                                 <p class="no-bottom-margin">&nbsp;</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </li>
+               </ul>
+               
+            </li>
+         </ul>
+         <ul class="unmarkedList">
+            <li>
+               
+               <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/block_catalog_navigator.gif" border="0"> &nbsp; <span class="uiTerm">Block Catalog Navigator</span></p>
+               
+               <ul class="unmarkedList">
+                  <li>
+                     
+                     <table border="0" cellpadding="0" cellspacing="0">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" width="10">
+                           
+                           <col span="1" width="*">
+                           
+                           <col span="1" width="45">
+                           
+                           <col span="1" width="*">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td class="banner_left" colspan="1" rowspan="1" width="10"></td>
+                              
+                              <td class="banner_middle" colspan="1" rowspan="1" width="*">
+                                 
+                                 <p class="no-bottom-margin"><span class="uiTerm">Selection</span></p>
+                                 
+                              </td>
+                              
+                              <td class="banner_right" colspan="1" rowspan="1" width="45"></td>
+                              
+                              <td colspan="1" rowspan="1" width="*">
+                                 
+                                 <p class="no-bottom-margin">&nbsp;</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </li>
+                  <li>
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb1.gif" border="0"> &nbsp; <span class="literalText">Select Object</span></p>
+                     
+                  </li>
+                  <li>
+                     
+                     <table class="attentionTable attn_note">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">Note</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>The dialog box now appears, with the <span class="uiTerm">Select Object</span> widget displayed.
+                              </p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </li>
+               </ul>
+               
+               <p><img align="bottom" src="../graphics/graphicLibrary/nx_dss/activities/nx_open/bottle21.gif" border="0"></p>
+               
+               <ul class="unmarkedList">
+                  <li>
+                     
+                     <table border="0" cellpadding="0" cellspacing="0">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" width="10">
+                           
+                           <col span="1" width="*">
+                           
+                           <col span="1" width="10">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td class="tab_left" colspan="1" rowspan="1" width="10"></td>
+                              
+                              <td class="tab_middle" colspan="1" rowspan="1" width="*">
+                                 
+                                 <p class="no-bottom-margin"><span class="uiTerm">Dialog</span></p>
+                                 
+                              </td>
+                              
+                              <td class="tab_right" colspan="1" rowspan="1" width="16"></td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </li>
+                  <li>
+                     
+                     <table border="0" cellpadding="0" cellspacing="0">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" width="10">
+                           
+                           <col span="1" width="*">
+                           
+                           <col span="1" width="45">
+                           
+                           <col span="1" width="*">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td class="banner_left" colspan="1" rowspan="1" width="10"></td>
+                              
+                              <td class="banner_middle" colspan="1" rowspan="1" width="*">
+                                 
+                                 <p class="no-bottom-margin"><span class="uiTerm">Properties</span></p>
+                                 
+                              </td>
+                              
+                              <td class="banner_right" colspan="1" rowspan="1" width="45"></td>
+                              
+                              <td colspan="1" rowspan="1" width="*">
+                                 
+                                 <p class="no-bottom-margin">&nbsp; </p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </li>
+                  <li>
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/mb12.gif" border="0"> <span class="uiTerm">Select Object </span> (<span class="uiTerm">Value</span> column)
+                     </p>
+                     
+                  </li>
+                  <li>
+                     
+                     <table cellspacing="0" class="input_field" width="300">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" width="90">
+                           
+                           <col span="1" width="190*">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td class="label2" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><span class="uiTerm">LabelString</span></p>
+                                 
+                              </td>
+                              
+                              <td class="border1b" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">Bottle Solid Body</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                     <table class="attentionTable attn_note">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">Note</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>The <span class="uiTerm">LabelString</span> line is in the <span class="uiTerm">InterpartSelection</span> group.
+                              </p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                     <table border="0" cellpadding="0" cellspacing="0">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" width="10">
+                           
+                           <col span="1" width="*">
+                           
+                           <col span="1" width="10">
+                           
+                           <col span="1" width="*">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td class="key_left" colspan="1" rowspan="1" width="8"></td>
+                              
+                              <td class="key_middle" colspan="1" rowspan="1" width="*">
+                                 
+                                 <p class="no-bottom-margin"><span class="uiTerm">Enter</span></p>
+                                 
+                              </td>
+                              
+                              <td class="key_right" colspan="1" rowspan="1" width="8"></td>
+                              
+                              <td colspan="1" rowspan="1" width="*">
+                                 
+                                 <p class="no-bottom-margin">&nbsp;</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </li>
+                  <li>
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx_dss/icons/images/widgets/menu.gif" border="0"> &nbsp; <span class="literalText">File</span>&rarr;<span class="uiTerm">Save</span></p>
+                     
+                  </li>
+                  <li>
+                     
+                     <table cellspacing="0" class="input_field" width="300">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" width="90">
+                           
+                           <col span="1" width="190*">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td class="label2" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin"><span class="uiTerm">File name</span></p>
+                                 
+                              </td>
+                              
+                              <td class="border1b" colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">faceSelect</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                     <table border="0" cellpadding="0" cellspacing="0">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1" width="10">
+                           
+                           <col span="1" width="*">
+                           
+                           <col span="1" width="10">
+                           
+                           <col span="1" width="*">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td class="button_left" colspan="1" rowspan="1" width="10"></td>
+                              
+                              <td class="button_middle" colspan="1" rowspan="1" width="*">
+                                 
+                                 <p class="no-bottom-margin"><span class="uiTerm">OK</span></p>
+                                 
+                              </td>
+                              
+                              <td class="button_right" colspan="1" rowspan="1" width="10"></td>
+                              
+                              <td colspan="1" rowspan="1" width="*">
+                                 
+                                 <p class="no-bottom-margin">&nbsp; all dialog boxes</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </li>
+                  <li>
+                     
+                     <table class="attentionTable attn_note">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">Note</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>The software generates a dialog box file (<span class="literalText">faceSelect.dlx</span>) and a Visual Basic source code file (<span class="literalText">faceSelect.vb</span>). Make sure that you save these files in the directory where your part file is located.
+                              </p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                  </li>
+               </ul>
+               
+            </li>
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

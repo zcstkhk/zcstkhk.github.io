@@ -1,0 +1,59 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>使用 RBE2和 RBE3单元</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>使用 RBE2和 RBE3单元</h2>
+         
+         <p><a name="ndxgenid_spta_1d_conn_26"></a>
+            <a name="ndxgenid_spta_1d_conn_27"></a>
+            <a name="ndxgenid_spta_1d_conn_28"></a>
+            <a name="ndxgenid_spta_1d_conn_29"></a>
+            在 NX Nastran 中，RBE2与 RBE3单元通常被用作蜘蛛单元。</p>
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>RBE2单元</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>单个核心节点(独立)的活动自由度强制分支节点(依附)的活动自由度。因此，RBE2 单元中包含的所有节点的活动自由度被认为是刚性连接的。</p>
+                  <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/oned_connections/rbe2.gif"></p>
+                  <p align="center"><strong>(1) 独立节点 (2) 依附节点</strong></p>
+                  
+               </div>
+            </div>
+         </div>
+         
+         <div class="defList">
+            <div class="defListItem">
+               <div class="defObject defObjectHorz">
+                  <p>RBE3单元</p>
+               </div>
+               <div class="defMeaning defMeaningHorz">
+                  
+                  <p>分支节点（独立）的活动自由度的加权平均值强制单个核心节点（依附）的活动自由度。加权设置为 1，且不能在 NX   中更改；所有节点都平等地参与运动。与 RBE2 不同的是，由于分支节点允许的自由度，RBE3   单元是柔性的（不是无限刚性）。此单元类型的常见用法包括添加和分布质量而不添加刚度，以及将载荷从多个点分布到单个点。</p>
+                  
+               </div>
+            </div>
+         </div>
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/adv_sim/meshing/mesh_connections/rbe3.gif"></p>
+         <p align="center"><strong>(1) 依附节点 (2) 独立节点</strong></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

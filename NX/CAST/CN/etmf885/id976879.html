@@ -1,0 +1,166 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Modify the cut pattern for steep and non-steep cut areas</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Modify the cut pattern for steep and non-steep cut areas</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Drive Method</span> group, in the <span class="uiTerm">Method</span> row, click <span class="uiTerm">Edit</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/edit.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Flow Cut Drive Method</span> dialog box, set the following:
+                  </p>
+                  
+                  <p><span class="uiTerm">Non-steep Cutting</span> group
+                  </p>
+                  
+                  <ul class="unmarkedList">
+                     <li>
+                        
+                        <p><span class="uiTerm">Non-steep Cut Pattern</span> = <span class="uiTerm">Zlevel Zig Zag</span></p>
+                        
+                     </li>
+                  </ul>
+                  
+                  <p><span class="uiTerm">Steep Cutting</span> group
+                  </p>
+                  
+                  <ul class="unmarkedList">
+                     <li>
+                        
+                        <p><span class="uiTerm">Steep Cut Pattern</span> = <span class="uiTerm">Zig Zag</span></p>
+                        
+                     </li>
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>The <span class="uiTerm">Flowcut Ref Tool</span> dialog box is displayed.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>Generate the operation.</p>
+                  
+                  <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/fixed_contour/act_flowcut_ref_tool_generate2.png"></p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>Zoom in on the part.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/fixed_contour/act_flowcut_ref_tool_generate2a.png"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p>Notice the change in the cut pattern between the non-steep and steep areas of the part.</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/fixed_contour/act_flowcut_ref_tool_generate2b.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>Edit the <span class="uiTerm">Flow Cut</span> drive method as shown.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p><span class="uiTerm">Non-steep Cutting</span> group
+                     </p>
+                     
+                     <ul class="unmarkedList">
+                        <li>
+                           
+                           <p><span class="uiTerm">Non-steep Cut Pattern</span> = <span class="uiTerm">Zlevel Zig Zag</span>.
+                           </p>
+                           
+                        </li>
+                     </ul>
+                     
+                     <p><span class="uiTerm">Steep Cutting</span> group
+                     </p>
+                     
+                     <ul class="unmarkedList">
+                        <li>
+                           
+                           <p><span class="uiTerm">Steep Cut Pattern</span> = <span class="uiTerm">Zlevel Zig Zag with Lifts</span>.
+                           </p>
+                           
+                        </li>
+                     </ul>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>Generate the operation.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>Notice the change in the cut pattern fillet intersection.</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/milling/fixed_contour/act_flowcut_ref_tool_generate3.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,13 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"为实体网格修复导入的几何体",file:"id1298095.html",type:"topic",parent:""},
+{id:"d5e5",title:"使用 NX 建模命令修复几何体",file:"id151321.html",type:"topic",parent:""},
+{id:"d5e7",title:"修复问题",file:"id151331.html",type:"topic",parent:""},
+{id:"d5e9",title:"在部件导航器中查看特征",file:"id146621.html",type:"topic",parent:""},
+{id:"d5e11",title:"使用3D 曲线创建曲面",file:"id151291.html",type:"topic",parent:""},
+{id:"d5e14",title:"曲面创建命令",file:"id1572567.html",type:"topic",parent:""},
+{id:"d5e16",title:"视频：创建曲面",file:"id1320473.html",type:"topic",parent:""},
+{id:"d5e18",title:"添加面或移除面命令",file:"id151301.html",type:"topic",parent:""},
+
+{id:"d5e20",title:"修复导入的几何体",file:"id741112.html",type:"activity",parent:""}
+
+]}

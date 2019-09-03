@@ -1,0 +1,113 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>关于齿轮对相同基本连杆的要求</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>关于齿轮对相同基本连杆的要求</h2>
+         
+         <p>当齿轮耦合两个非固定运动副(亦即定义操作连杆与基本连杆之间的相对运动的运动副)的运动时，这两个运动副的基本连杆必须相同。</p>
+         
+         <p>这个要求也适用于齿轮齿条副，即定义齿轮齿条副的滑动副和旋转副必须使用同一个基本连杆。</p>
+         
+         <p>这个要求将以下面的万向齿轮为例进行说明。</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>蓝色的编号(1、2、3、4)表示连杆</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>褐色的编号(5、6、7)表示旋转副</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>绿色编号(8、9)表示齿轮连接</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>齿轮8耦合运动副5和运动副6的运动。</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>在运动副5中，操作连杆为连杆2，基本连杆为3。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在运动副6中，操作连杆为连杆1，基本连杆为3。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>齿轮8可以耦合这两个运动副的运动，因为连杆3是这两个运动副共同的基本连杆。</p>
+         
+         <p>齿轮9耦合运动副5和运动副7的运动。</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>在运动副5中，操作连杆为连杆2，基本连杆为3。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在运动副7中，操作连杆为连杆4，基本连杆为3。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p>齿轮9可以耦合这两个运动副的运动，因为连杆3是这两个运动副共同的基本连杆。</p>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx_dss/motion/connectors/gear_common_base_link.png"></p>
+         
+         
+         <div dojoType="dojox.layout.ContentPane" parseOnLoad="true" executeScripts="true" style="display:inline;"><script type="dojo/method">
+      flashData= {
+          swfSrc : '../xps3/graphics/xpsPlayer.swf',
+          graphSrc : '',
+          align : 'center',
+          base : './',
+          height : '481',
+          width : '343',
+          bgcolor : '#FFFFFF',
+          flashVersion : '10',         
+          looping : 'false',
+          play : 'false',
+          menu : 'true',
+          parameters : 'mySound=false,dependentFile1=..%2Fgraphics%2FnonLocalized%2Fnx_dss%2Fmotion%2Fconnectors%2Fcardan_gear_anim.swf,dependentFile2=..%2Fxps3%2Fgraphics%2Fnav_buttons.txt'
+      }
+      top.loadFlash(this,flashData);
+    </script></div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

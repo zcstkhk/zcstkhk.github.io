@@ -1,0 +1,234 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Create a mirror body without using Make Position Independent</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Create a mirror body without using Make Position Independent</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>Open <span class="fileName">asm2_85_housing_assm_01</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/pilo/pilo_01.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>Make sure the Modeling and Assemblies applications are active.</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Assembly Navigator</span>, double-click <span class="uiTerm">asm2_85_housing_rgt</span> to make it the work part.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/pilo/pilo_workpart1.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>On the <span class="uiTerm">Assemblies</span> toolbar, click <span class="uiTerm">WAVE Geometry Linker</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assemblies/wave_geometry_linker.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Wave Geometry Linker</span> dialog box, set <span class="uiTerm">Type</span> to <span class="uiTerm">Mirror Body</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>Expand the <span class="uiTerm">Settings</span> group and make sure the <span class="uiTerm">Make Position Independent</span> check box is cleared <img align="bottom" src="../graphics/nonLocalized/nx/icons/images/check_box_off.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>Select the solid body in <span class="uiTerm">asm2_85_housing2_rt</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/pilo/pilo_selectbody1.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Mirror Plane</span> group, click <span class="uiTerm">Select Mirror Plane</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/assemblies/geometry_linker/mirror_plane.gif" border="0"> and select the Y-Z Plane of the Datum CSYS.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/pilo/pilo_selectmirrorplane1.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/pilo/pilo_mirrorpart1.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>Make <span class="literalText">asm2_85_housing_assm_01</span> the work part.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>On the <span class="uiTerm">Assemblies</span> toolbar, click <span class="uiTerm">Move Component</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/assemblies/assemblies/move_component.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>The <span class="uiTerm">Move Component</span> dialog box is displayed, with <span class="uiTerm">Select Components</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/assemblies/common/select_component.gif" border="0"> active.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_12">
+               <div class="stepAction">
+                  
+                  <p>Select the mirror body (<span class="uiTerm">asm2_85_housing_rgt</span>).
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/pilo/pilo_selectmirrorbody1.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_13">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Transform</span> group, from the <span class="uiTerm">Motion</span> list, select <span class="uiTerm">Dynamic</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_14">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">Specify Orientation</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/common/specify_orientation.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_15">
+               <div class="stepAction">
+                  
+                  <p>Select the <span class="uiTerm">YC</span> handle, enter <span class="userInput">15</span>, and press Enter.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/pilo/pilo_movecomp1.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_16">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>The selected component returns to its original position.</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/assemblies/activities/pilo/pilo_end1.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_17">
+               <div class="stepAction">
+                  
+                  <p>Close the part without saving.</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>种子网格</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>种子网格</h2><a name="ndxgenid_spta_3dmesh_8"></a>
+         <a name="ndxgenid_spta_3dmesh_9"></a>
+         
+         
+         <p><strong>种子网格</strong>是在实体部件选定面上应用的2D 网格，当您创建3D 网格时，种子网格将驱动该面上3D 单元的大小和节点位置，种子网格用于：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>控制圆角以及圆柱面上的单元分配</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在可映射的面上创建更规则的网格</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>控制局部单元长度</p>
+               
+            </li>
+            
+         </ul>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/selection_techniques/select_fillets_to_mesh.png"></p>
+         <a name="genid_seed_meshes_21_553"></a>
+         
+         
+         
+         <h3>使用2D 网格作为种子网格生成3D 网格的工作流</h3>
+         
+         <a name="ndxgenid_spta_3dmesh_11"></a>
+         <a name="ndxgenid_spta_3dmesh_12"></a>
+         
+         
+         <ol type="1" start="1">
+            
+            <li>
+               
+               <p>在选定曲面上创建2D 网格</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>生成3D 网格</p>
+               <p>软件将使用2D 单元作为起始点(种子)以创建3D 单元。</p>
+               
+            </li>
+            
+         </ol>
+         
+         <p>要控制软件是否将网格导出到指定的求解器，使用<strong>2D 网格</strong>对话框中的<strong>将网格导出至求解器</strong>选项，如果只打算将2D 网格作为种子网格，清除这个复选框。</p>
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/meshing/seed3.png"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

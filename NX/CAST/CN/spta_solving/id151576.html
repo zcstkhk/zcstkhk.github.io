@@ -1,0 +1,92 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>求解模型</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>求解模型</h2><a name="ndxgenid_spta_solving_8"></a>
+         <a name="ndxgenid_spta_solving_9"></a>
+         <a name="ndxgenid_spta_solving_10"></a>
+         
+         
+         <p>在完成网格定义以及边界条件应用以准备有限元模型以后，您就可以求解模型。</p>
+         
+         <p>在通过定义网格和应用边界条件准备好有限元模型之后，便可执行求解过程。在对模型求解时，软件为选定的求解器创建输入文件，然后开始处理它。也可以只创建求解器输入文件，而实际上不对其求解。<a name="genid_solutions_and_subcases_17_565"></a>         </p>
+         <h3>解算方案</h3>
+         
+         <a name="ndxgenid_spta_solving_15"></a>
+         <a name="ndxgenid_spta_solving_16"></a>
+         
+         
+        <p>解算方案储存在仿真文件中，其中包含一组载荷、约束以及仿真对象。</p>
+        <p>您可以使用这些条件来求解，或者新建由不同的条件定义的解算方案。</p>
+         
+         
+         <p>每个仿真中可以使用不限数量的解算方案。</p>
+         <p>对于 NX Nastran 中的结构求解，约束可以储存在主解算方案中，也可以储存在子工况中；对于热力学求解，载荷与约束都储存在子工况中。</p>
+         <a name="genid_solution_attributes_35_478"></a>
+         
+         
+         
+        <h3>解算方案属性</h3>
+         
+         <a name="ndxgenid_spta_solving_18"></a>
+         <a name="ndxgenid_spta_solving_19"></a>
+         <a name="ndxgenid_spta_solving_20"></a>
+         
+         
+        <p><span class="emphasis">解算方案属性将为选定的求解器定义选项，您可以为新建的解算方案定义解算方案属性，或者为在求解前为现有解算方案定义属性</span>。</p>
+         
+         <p>可用选项取决于求解器类型(比如 NX Nastran)、分析类型(比如结构分析、线性静态分析)以及解算方案类型(比如 SOL 101 静态 &mdash; 全局约束)。</p>
+         
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/solutions/edit_solution.png"></p>
+         <a name="genid_output_requests_13_244"></a>
+         
+         
+         
+         <h3>输出请求</h3>
+         
+         <a name="ndxgenid_spta_solving_22"></a>
+         <a name="ndxgenid_spta_solving_23"></a>
+         <a name="ndxgenid_spta_solving_24"></a>
+         
+         
+        <p><span class="emphasis">输出请求</span>将确定从求解器输出的数据类型。</p>
+         
+         <p>有些输出类型默认是已选的，您必须显式选择其它的类型。要修改默认输出请求，使用<strong>用户默认设置</strong>对话框。</p>
+         
+         <p>您可以保存一个已命名的输出请求组，并在其它解算方案中重用。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/solutions/output_request.png"></p>
+         <a name="genid_solution_parameters_28_179"></a>
+         
+         
+         
+         <h3>求解器参数</h3>
+         
+         <a name="ndxgenid_spta_solving_26"></a>
+         <a name="ndxgenid_spta_solving_27"></a>
+         
+         
+        <p><span class="emphasis">求解器参数</span>中包含对选定求解器的设置。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/solving/solver_parameters.png"></p>
+         
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

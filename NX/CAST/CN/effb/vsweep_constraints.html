@@ -1,0 +1,48 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>使用约束来控制变化扫掠</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>使用约束来控制变化扫掠</h2>
+         
+         <p>变化扫掠的截面可基于路径与草图约束进行更改。如果草图已约束以便曲线与交点重合，则扫掠的边界将与相应的引导线重合。</p>
+         <p>通过向主截面添加约束或从中移除约束，可以控制变化扫掠。</p>
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">注释</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p>尽管简单的变化扫掠可能不需要任何约束，但建议完全约束草图。</p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <p>在本例中，交点创建自第二引导线。该草图已约束，以使线的端点与草图原点处的第一引导线上的点及第二引导线上的交点重合。这些线还被约束为与相切矢量共线。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/variational_sweep/vsweep_constraints_ex1.png"></p>
+         
+         
+         <p>添加用于约束草图的尺寸还影响产生的扫掠。在下图中，对不同的直线添加尺寸以维持它们在扫掠中的长度。</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/modeling/commands/variational_sweep/vsweep_constraints_ex2.png"></p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

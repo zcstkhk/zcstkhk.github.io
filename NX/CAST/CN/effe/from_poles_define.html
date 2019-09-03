@@ -1,0 +1,64 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>定义从极点曲面</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>定义从极点曲面</h2>
+         
+         <p><strong>从极点</strong>曲面可以从点数据文件或直接选取点来读入点数据</p>
+         
+         <p>如何创建<strong>从极点</strong>曲面是通过以下选项来控制的：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>补片是如何构成的？</p>
+               
+               <p>这是通过 <a href="#" onclick="showDialog('patch_type_more_about')"><strong>补片类型</strong></a> 设置来控制的。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>曲面如何封闭？</p>
+               
+               <p>这是通过 <a href="#" onclick="showDialog('closed_along_more_about')"><strong>沿以下方向封闭</strong></a> 设置来控制的。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>想要的曲面的阶次。</p>
+               
+               <p>这是通过 <a href="#" onclick="showDialog('degree_more_about')"><strong>行/列阶次</strong></a> 设置来控制的。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div dojoType="dijit.Dialog" id="patch_type_more_about" title="补片类型">
+           <div dojoType="dijit.layout.ContentPane" href="patch_type_more_about.html" extractContent="true" tabIndex="0"></div>
+         </div>
+         <div dojoType="dijit.Dialog" id="closed_along_more_about" title="沿以下方向封闭">
+            <div dojoType="dijit.layout.ContentPane" href="closed_along_more_about.html" extractContent="true" tabIndex="0"></div>
+         </div>
+         <div dojoType="dijit.Dialog" id="degree_more_about" title="行/列阶次">
+            <div dojoType="dijit.layout.ContentPane" href="degree_more_about.html" extractContent="true" tabIndex="0"></div>
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

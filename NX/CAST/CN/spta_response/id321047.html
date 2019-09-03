@@ -1,0 +1,200 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>分析事件</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>分析事件</h2><a name="ndxgenid_spta_response_56"></a>
+         <a name="ndxgenid_spta_response_57"></a>
+         
+         
+         <p>事件组合了有限元模型、模态模型和激励载荷。</p>
+         
+         <p>根据计划执行的响应分析的类型，可以定义瞬态、频率、随机、响应谱、DDAM 或准静态事件。事件类型及有限元模型和模态模型中的可用信息确定了您可以评估的结果的类型。</p>
+         
+         
+         <table cellpadding="8" cellspacing="2" frame="box" rules="all" width="95%" align="center">
+            
+            <colgroup span="1">
+               
+               <col span="1">
+               
+               <col span="1">
+            </colgroup>
+            
+            <thead>
+               
+               <tr>
+                  
+                  <td bgcolor="silver" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">事件类型</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="silver" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">计算的响应</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+               <tr bgcolor="#F0F0F0">
+                 <td colspan="1" rowspan="1"><p>瞬态 </p></td>
+                 <td colspan="1" rowspan="1"><p>计算结构对一组同步激励的动态响应，这些激励随着时间的推移而发生变化。瞬态激励可以是施加到节点自由度上的点载荷（节点力或强迫运动），也可以是分布载荷。 </p>
+                   <p>软件会计算每个即时点的响应。 </p>
+                   <p>瞬态激励的示例包括：在试车跑道上开车的时间历史或者其中的机械设备在一段时间内受到激励的任何事件。</p></td>
+               </tr>
+               <tr bgcolor="#F0F0F0">
+                 <td colspan="1" rowspan="1"><p>频率 </p></td>
+                 <td colspan="1" rowspan="1"><p>计算结构对一组同步振荡激励的稳态响应。频率激励可以是施加到节点自由度的点载荷，也可以是分布载荷。 </p>
+                   <p>软件会计算每个频率下的响应。 </p>
+                   <p>频率激励的示例包括：汽车发动机的转动或车轮不平衡对司机舒适度的影响。</p></td>
+               </tr>
+               <tr bgcolor="#F0F0F0">
+                 <td colspan="1" rowspan="1"><p>随机 </p></td>
+                 <td colspan="1" rowspan="1"><p>计算结构对一个或多个同步随机激励所做出响应的功率谱密度 (PSD)、平方根 (RMS) 和平面交叉率 (LCR) 结果。随机激励可以是节点力 PSD 函数、强迫运动 PSD 函数（位移、速度和加速度）或分布载荷。 </p>
+                   <p>对于频域中的两个随机激励，您可以通过定义它们之间的相位关系或时间延迟来使它们关联起来。每个频率下的 PSD 响应都通过使用激励源和所请求的响应数量之间的传送函数来计算，而随机过程的 RMS 是针对 PSD 函数计算的。 </p>
+                   <p>随机激励的示例包括喷气发动机的噪音、路面的轮廓以及湍流对飞机造成的影响。 </p></td>
+               </tr>
+               <tr bgcolor="#F0F0F0">
+                 <td colspan="1" rowspan="1"><p>响应谱</p>
+                   <p>（又称为冲击响应谱）</p></td>
+                 <td colspan="1" rowspan="1"><p>计算结构对一组同步基础激励的峰值响应，这些激励由响应谱函数定义。峰值响应可通过使用模态近似方法（如绝对值方  法、平方和的平方根方法和其他方法）来计算。这是在每个模式频率下的预期输出，因此也就是整个模型在一个模态频率下的响应，该响应然后需要与响应谱范围内  的任何其他模式频率合并。 </p>
+                   <p>响应谱冲击激励的示例包括：飞机着陆、原子核超压、下降试验和地震效应。 </p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>DDAM（动态设计分析方法）</p></td>
+                 <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>计算轮船部件对施加到船身、甲板或外板上冲击的动态响应。 </p>
+                   <p>动态设计分析方法是由美国海军开发的。您可以向水上船只或潜水艇的船身、甲板或外板施加 DDAM 激励。您可以在垂直 (Y) 方向、横过船的方向 (Z) 和前/后 (X) 方向上应用这些强迫运动激励。可用的变形类型包括弹性变形和弹性-塑性变形。 </p>
+                   <p>响应仿真使用美国海军规范 DDS-072-1。 </p>
+                   <p>为了实现机密性，软件会要求您在每次执行响应计算时都输入 DDAM 载荷系数。您可以在文本文件中预定义这些系数。</p></td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>准静态</p></td>
+                 <td colspan="1" rowspan="1" bgcolor="#F0F0F0"><p>将结构的静态响应计算为一组同步随时间变化的静态激励。要创建静态激励，可使用函数缩放在模态解法中应用的载荷。软件可计算每个即时响应，方法是将所有载荷的静态结果与指定的时间历程缩放函数进行线性组合（重叠）。 </p>
+                   <p>如果只对静态结果感兴趣，并需要比全动态解法性能更快的解法性能，则该事件类型很有用。</p></td>
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         
+         <div class="division">
+            
+           <h3>数据恢复</h3>
+            
+            <p><em>数据恢复</em>方法是每个动态事件的关键属性根据执行的分析的类型，您可以使用以下这些恢复方法之一根据其模态响应来恢复模型的动态物理响应：</p>
+           <ul>
+              <li>
+                <p><strong>模态加速度</strong> － 假设通过添加加速度效应(或由于惯性力而导致的静态结果)至静态响应来计算位移,一般来说，输入中包含大型静态组件时应该使用此方法，例如，如果需要获取飞行结构中的应力和力时使用此方法，这类对象中通常具有重叠动态波动的稳定加速度</p></li></ul>
+            <ul>
+               
+               <li>
+                  
+                  <p><strong>模态位移</strong> — 假设物理响应是正则模态中模态贡献的线性组合。此方法适用于频率或随机事件，尤其是如果您仅对高频率位移、加速度或速度感兴趣时，或者如果激励函数具有平均值零时，例如，如果对固定于在零点周围震动的台面上的结构响应感兴趣时使用此方法，这个方法可能比模态加速度需要更多的正则模态来表示结构的行为</p>
+                  <table align="center" border="0" cellpadding="4" cellspacing="2" width="95%">
+                    <thead>
+                      <tr bgcolor="silver">
+                        <td colspan="1" rowspan="1"><p>数据恢复方法</p></td>
+                        <td colspan="1" rowspan="1"><p>特征</p></td>
+                        <td colspan="1" rowspan="1"><p>建议使用</p></td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr bgcolor="#F0F0F0" valign="top">
+                        <td colspan="1" rowspan="1"><p>模态加速度</p></td>
+                        <td colspan="1" rowspan="1"><ul>
+                          <li>
+                            <p>精确地确定与动态载荷的静态组件相关联的载荷。</p>
+                          </li>
+                          <li>
+                            <p>保证完全的 FE 刚度。 </p>
+                          </li>
+                          <li>
+                            <p>仅将模态截断应用于模型惯性。 </p>
+                          </li>
+                          <li>
+                            <p>使用附着模态和正则模态进行数据恢复。 </p>
+                          </li>
+                          <li>
+                            <p>与模态位移方法相比，需要更多的数据恢复磁盘空间，尽管可能不需要保存那么多的模态。</p>
+                          </li>
+                        </ul></td>
+                        <td colspan="1" rowspan="1"><ul>
+                          <li>
+                            <p>当执行瞬态分析（通常更加精确）时。 </p>
+                          </li>
+                          <li>
+                            <p>当使用强迫运动激励（其中的运动不会关于零均值波动）时。 </p>
+                          </li>
+                          <li>
+                            <p>适用于计算偏离谐振频率的频率响应。 </p>
+                          </li>
+                          <li>
+                            <p>适用于飞行的结构。对于此类问题，存在具有重叠动态波动的稳定加速度。对于获得此类载荷的应力和力，模态加速度更加精确。 </p>
+                          </li>
+                          <li>
+                            <p>适用于不确定为精确捕获结构行为需要多少模态时的情形。 </p>
+                          </li>
+                        </ul></td>
+                      </tr>
+                      <tr bgcolor="#F0F0F0" valign="top">
+                        <td colspan="1" rowspan="1"><p>模态位移</p></td>
+                        <td colspan="1" rowspan="1"><ul>
+                          <li>
+                            <p>同时将模态截断应用于刚度和惯性。 </p>
+                          </li>
+                          <li>
+                            <p>仅需要用于数据恢复的正则模态，但是可能需要比模态加速度更多的正则模态来表示结构的行为。 </p>
+                          </li>
+                          <li>
+                            <p>速度更快，并且需要的磁盘空间比模态加速度更少。 </p>
+                          </li>
+                        </ul></td>
+                        <td colspan="1" rowspan="1"><ul>
+                          <li>
+                            <p>适用于频率或随机事件（尤其是如果您仅对高频率位移、加速度或速度感兴趣时）。 </p>
+                          </li>
+                          <li>
+                            <p>当激励函数具有平均值零时。</p>
+                          </li>
+                          <li>
+                            <p>当使用运动是来自邻近部件的振动（例如，模型安装在振动工作台上）的强迫运动激励时。 </p>
+                          </li>
+                          <li>
+                            <p>适用于受约束的结构。</p>
+                          </li>
+                        </ul></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>&nbsp;</p>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

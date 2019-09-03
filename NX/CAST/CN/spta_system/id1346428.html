@@ -1,0 +1,36 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Example: Defining superelement connections and orientation</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Example: Defining superelement connections and orientation</h2>
+         
+         <p>The connections and orientation of your external superelements are defined in the Main Bulk Data section of your input file. For example, the two instances of the same superelement shown above are connected to different nodes, and in different orientations. The following SEBULK, SELOC, and SECONCT statements appear in the .dat file.</p>
+         <pre class="codeExample indent ">$* SUPERELEMENT MODEL
+$*
+$*  NX Superelement ID: 4
+SEBULK         4  EXTOP2          MANUAL                      31
+SELOC          4     253     417     418    1602    1766    1767
+SECONCT        4       0              NO                                +
++            253    1602     417    1766     418    1767
+$*  NX Superelement ID: 7
+SEBULK         7  EXTOP2          MANUAL                      32
+SELOC          7     253     417     418    2023    2187    2188
+SECONCT        7       0              NO                                +
++            253    2023     417    2187     418    2188</pre>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

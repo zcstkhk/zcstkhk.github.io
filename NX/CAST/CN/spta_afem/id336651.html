@@ -1,0 +1,187 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>装配有限元模型工作流</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>装配有限元模型工作流</h2><a name="ndxgenid_spta_afem_13"></a>
+         
+         
+         <p>装配有限元模型支持两种基本工作流：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>关联：在这个工作流中，您将创建与现有装配部件关联的装配有限元模型，并将新的或现有的组件有限元模型映射到各个组件部件中。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>非关联：在这个工作流中，您先创建空的装配有限元模型，然后将组件有限元模型添加到装配有限元模型中，最后，定义组件有限元模型的位置和方位。</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+        <table cellpadding="2" cellspacing="4" rules="all" width="95%">
+            
+            <colgroup span="1">
+               
+               <col span="1" width="133*">
+               
+               <col span="1" width="133*">
+            </colgroup>
+            
+            <thead>
+               
+               <tr>
+                  
+                  <td align="center" bgcolor="silver" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">关联工作流</p>
+                     
+                  </td>
+                  
+                  <td align="center" bgcolor="silver" colspan="1" rowspan="1">
+                     
+                     <p class="no-bottom-margin">非关联工作流</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </thead>
+            
+            <tbody>
+               
+               <tr bgcolor="#f0f0f0">
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">1. 创建或获取组件有限元模型。</p>
+                     
+                  </td>
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">1. 创建或获取组件有限元模型。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr bgcolor="#f0f0f0">
+                  
+                  <td colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">2. 创建装配有限元模型。</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">2. 创建空的装配有限元模型。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" class="text_blue" colspan="1" rowspan="2" valign="top">
+                     
+                     <p class="no-bottom-margin">3. 将 CAD 组件映射到有限元模型。</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" class="text_blue" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">3. 添加组件有限元模型。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F4F4F4" class="text_blue" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">4. 定义组件位置和方位。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">4. 连接组件有限元模型。</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">5. 连接组件有限元模型。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">5. 解析标签冲突。</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">6. 解析标签冲突。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+               <tr>
+                  
+                  <td bgcolor="#F0F0F0" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">6. 创建仿真文件。</p>
+                     
+                  </td>
+                  
+                  <td bgcolor="#F4F4F4" colspan="1" rowspan="1" valign="top">
+                     
+                     <p class="no-bottom-margin">7. 创建仿真文件。</p>
+                     
+                  </td>
+                  
+               </tr>
+               
+            </tbody>
+            
+         </table>
+         
+         
+         <p>您可以在同一个装配<span class="no-bottom-margin">有限元模型</span>中将关联和非关联<span class="no-bottom-margin">有限元模型</span>组合使用。例如，您可以将非关联的组件有限元模型添加到关联的装配有限元模型中，以表示跌落测试中的撞击结构。</p>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

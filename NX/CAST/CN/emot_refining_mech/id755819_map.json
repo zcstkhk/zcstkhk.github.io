@@ -1,0 +1,12 @@
+{identifier:"id",label:"title",items:[
+{id:"d7e2",title:"打开仿真",file:"trans_spring_open_simulation.html",type:"topic",parent:""},
+{id:"d7e3",title:"设置角色",file:"mtn_role_adv_full.html",type:"topic",parent:""},
+{id:"d7e4",title:"重置对话框内存",file:"id353012.html",type:"topic",parent:""},
+{id:"d7e5",title:"查看机构",file:"examine_the_mechanism_spring.html",type:"topic",parent:""},
+{id:"d7e6",title:"创建弹簧",file:"create_trans_spring.html",type:"topic",parent:""},
+{id:"d7e7",title:"创建解算方案并求解",file:"create_solution_trans_spring.html",type:"topic",parent:""},
+{id:"d7e8",title:"将图形窗口拆分为两个视图窗口",file:"divide_graphics_window_spring.html",type:"topic",parent:""},
+{id:"d7e9",title:"创建接触力图表",file:"graph_the_contact_force.html",type:"topic",parent:""},
+{id:"d7e10",title:"查看机构动画",file:"animate_mechanism_trans_spring.html",type:"topic",parent:""},
+{id:"d7e11",title:"增加自由长度",file:"increase_spring_stiffness.html",type:"topic",parent:""},
+{id:"d7e12",title:"再次查看机构运动",file:"solve_animate_spring.html",type:"topic",parent:""}]}

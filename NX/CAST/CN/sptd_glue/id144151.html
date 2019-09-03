@@ -1,0 +1,69 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Defining surface-to-surface contact</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>Defining surface-to-surface contact</h2>
+         <a name="ndxgenid_sptd_glue_11"></a>
+         
+         <a name="ndxgenid_sptd_glue_12"></a>
+         
+         
+         <p>To define contact between two surfaces, use the <span class="uiTerm">Surface-to-Surface Contact</span> simulation object. 
+         </p>
+         
+         <p>You can either specify the contacting surfaces manually, or you can have the software automatically determine which pairs of faces come in contact with each other.</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>To manually specify source and target surfaces in the contact definition, you can select an existing <span class="uiTerm">Simulation Region</span> or create a new one.
+               </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>To have the software automatically determine the contacting surfaces, you can use the <span class="uiTerm">Create Automatic Face Pairs</span> dialog box to specify the criteria the software uses to search for surfaces.
+               </p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx_dss/des_sim/simulation_objects/contact_des.gif"></p>
+         
+         
+         <table class="attentionTable attn_note">
+            <tr>
+               <td valign="top">
+                  <p class="attn_title">Note</p>
+               </td>
+               <td class="attention_main">
+                  
+                  <p><span class="uiTerm">Surface-to-Surface Contact</span> is solver-based and defines contact directly between two surfaces. Another similar command, <span class="uiTerm">Surface Contact Mesh</span>, is element-based and defines contact with contact (or gap) elements defined between two surfaces.
+                  </p>
+                  
+               </td>
+            </tr>
+         </table>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

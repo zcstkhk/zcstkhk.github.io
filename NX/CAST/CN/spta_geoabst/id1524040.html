@@ -1,0 +1,43 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>标识和修复多边形体问题</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>标识和修复多边形体问题</h2>
+         
+         <p>创建 FEM 文件时，如果在<strong>新建 FEM</strong> 对话框中选择<strong>关联至部件</strong>选项，则软件将会基于 CAD 模型中的几何体自动创建多边形几何体。使用该多边形几何体时，可能会对该几何体做出一些无意的修改。在其他情况下，多边形体可能会出现数据一致性问题或损坏问题。</p>
+         
+         <p>有两个工具可以帮助您标识并修复这些问题：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>可以使用<strong>模型检查</strong>对话框中的 <strong>CAE 模型一致性</strong>选项来检查 FEM 文件中的所有多变形体中是否存在问题。如果软件标识出问题，则将按名称列出受影响的多边形体。</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>如果软件标识出具有一致性问题的多边形体，并且您已加载与当前 FEM 文件关联的 CAD 部件，则可以在<strong>仿真导航器</strong>中使用这些选项来修复它们：<strong>重新创建并更新</strong>、<strong>仅重新创建</strong>、<strong>删除</strong>。</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

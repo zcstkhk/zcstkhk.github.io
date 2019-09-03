@@ -1,0 +1,205 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>创建解算方案和解算</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>创建解算方案和解算</h2>
+         
+         <p>下表显示了对每个受支持求解器支持的分析类型和解算方案类型。</p>
+         <p>(译者注：NX CAST 此处只节选了 NX Nastran 求解器支持的解算方案，这里列出了所有求解器所支持的解算方案，以便您查询，您也可以直接查阅 NX 帮助文档。)</p>
+         <table frame="border" rules="all" align="center" border="1" cellpadding="2" width="95%">
+           <thead>
+             <tr bgcolor="silver">
+               <td colspan="1" rowspan="1" align="center" height="27"><p>分析类型</p></td>
+               <td colspan="1" rowspan="2" align="center" height="27"><p>分析类型描述</p></td>
+               <td colspan="4" rowspan="1" align="center" height="27"><p>支持的解算方案类型</p></td>
+             </tr>
+             <tr bgcolor="silver">
+               <td colspan="1" rowspan="1"></td>
+               <td colspan="1" rowspan="1" align="center"><p>NX Nastran</p></td>
+               <td colspan="1" rowspan="1" align="center"><p>MSC Nastran</p></td>
+               <td colspan="1" rowspan="1" align="center"><p>ANSYS</p></td>
+               <td colspan="1" rowspan="1" align="center"><p>ABAQUS</p></td>
+             </tr>
+           </thead>
+           <tbody>
+             <tr bgcolor="#F0F0F0">
+               <td colspan="1" rowspan="14" valign="top"><p>结构</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>线性静态</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>SOL 101 线性静态 - 全局约束</p>
+                 <p>SOL 101 线性静态 - 子工况约束</p>
+                 <p>SOL 101 - 超单元</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>SOL 101 线性静态 - 全局约束</p>
+                 <p>SOL 101 线性静态 - 子工况约束</p>
+                 <p>SOL 101 - 超单元</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>线性静态</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>静态扰动</p></td>
+             </tr>
+             <tr bgcolor="#F0F0F0">
+               <td colspan="1" rowspan="1" height="37" valign="top"><p>模态分析</p></td>
+               <td colspan="1" rowspan="1" height="37" valign="top"><p>SOL 103 - 实特征值</p>
+                 <p>SOL 103 - 响应仿真</p>
+                 <p>SOL 103 - 超单元</p>
+                 <p>SOL 103 - 柔性体</p></td>
+               <td colspan="1" rowspan="1" height="37" valign="top"><p>SOL 103 - 实特征值 </p>
+                 <p>SOL 103 - 超单元</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>模态</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>频率扰动</p></td>
+             </tr>
+             <tr bgcolor="#F0F0F0">
+               <td colspan="1" rowspan="1" valign="top"><p>线性屈曲</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>SOL 105 - 线性屈曲</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>SOL 105 - 线性屈曲</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>屈曲</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>屈曲扰动</p></td>
+             </tr>
+             <tr bgcolor="#F0F0F0">
+               <td colspan="1" rowspan="1" valign="top"><p>非线性静态</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>SOL 106 非线性分析</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>SOL 106 非线性分析</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>非线性静态</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>常规</p></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"><p>复特征值</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"><p>SOL 107 直接复特征值</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"><p>SOL 107 直接复特征值</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"><p>直接频率响应</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"><p>SOL 108 直接频率响应</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"><p>直接瞬态响应</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"><p>SOL 109 直接瞬态响应</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"><p>模态频率响应</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"><p>SOL 111 模态频率响应</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"><p>模态瞬态响应</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"><p>SOL 112 模态瞬态响应</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"><p>非线性瞬态响应</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"><p>SOL 129 非线性瞬态响应</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"><p>SOL 129 非线性瞬态响应</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"><p>高级非线性静态（隐式）</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"><p>SOL 601,106 高级非线性静态</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"><p>高级非线性瞬态响应（隐式）</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"><p>SOL 601,129 高级非线性瞬态</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"><p>高级非线性动态分析（显式）</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"><p>SOL 701 显式高级非线性分析</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"><p>设计优化</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"><p>SOL 200 设计优化</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" height="54" valign="top"></td>
+             </tr>
+             <tr bgcolor="#F0F0F0">
+               <td colspan="1" rowspan="2" valign="top"><p>热</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>稳态热传递</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>SOL 153 稳态非线性热传递</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>SOL 153 稳态非线性热传递</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>热</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>热传递</p></td>
+             </tr>
+             <tr>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>瞬态非线性热传递</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>SOL 159 瞬态非线性热传递</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"><p>SOL 159 瞬态非线性热传递</p></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"></td>
+               <td colspan="1" rowspan="1" bgcolor="#F0F0F0" valign="top"></td>
+             </tr>
+             <tr bgcolor="#F0F0F0">
+               <td colspan="1" rowspan="1" valign="top"><p>轴对称结构</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>轴对称结构</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>SOL 101 线性静态 - 子工况约束</p>
+                 <p>SOL 106 非线性静态</p>
+                 <p>SOL 601,106 高级非线性静态</p>
+                 <p>SOL 601,129 高级非线性瞬态</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>SOL 101 线性静态 - 子工况约束 </p>
+                 <p>SOL 106 非线性静态</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>线性静态</p>
+                 <p>非线性静态</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>静态扰动</p>
+                 <p>常规</p></td>
+             </tr>
+             <tr bgcolor="#F0F0F0">
+               <td colspan="1" rowspan="1" valign="top"><p>轴对称热</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>轴对称热</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>SOL 153 稳态非线性热传递</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>SOL 153 稳态非线性热传递</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>热</p></td>
+               <td colspan="1" rowspan="1" valign="top"><p>热传递</p></td>
+             </tr>
+           </tbody>
+         </table>
+         <p>如果您选择求解器，选项将包括上表中未列出的几种求解器类型： </p>
+         <ul>
+           <li>
+             <p>NX Nastran Design - 该求解器是适用于设计仿真用户的 NX Nastran   求解器的流线型版本。可以使用 NX Nastran Design 来执行线性静态、振动（自然）模式、线性屈曲和热分析。关于更多信息，请参见表中的   NX Nastran 列。</p>
+           </li>
+           <li>
+             <p>NX 热/流 - 通过此求解器可以执行热传递和计算流体动力学 (CFD) 分析。可将两种求解器单独使用或结合使用来获得耦合热流分析结果。</p>
+           </li>
+           <li>
+             <p>NX Electronic System Cooling - 此求解器是一个综合的热传递和流仿真套件，它将热分析和计算流体动力学 (CFD) 分析相结合。可以使用此求解器来分析电子设计的复杂热问题。</p>
+           </li>
+           <li>
+             <p>NX 空间系统热- 此求解器提供了用于空间和常规应用的热仿真工具的综合套件。</p>
+           </li>
+           <li>
+             <p>LSDYNA - 此版本的 NX 中的 LS-DYNA 解算方案类型用于将来扩展。您可以创建 FEM 并使用&ldquo;导出仿真&rdquo;来写入 LS-DYNA 关键字文件，但仿真文件不支持边界条件和载荷，并且<strong>解算</strong>选项不起作用。</p>
+           </li>
+         </ul>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

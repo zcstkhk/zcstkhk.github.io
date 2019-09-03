@@ -1,0 +1,234 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Browser and plug-in requirements</title>
+   </head>
+   <body>
+      <div class="contentType_reference">
+         <h2>Browser and plug-in requirements</h2>
+         <p>The CAST Online Library is provided in an HTML format that is displayed in your local Web browser.</p>
+         <div class="division">
+            
+            <h3>Supported browsers</h3>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>Windows</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>Internet Explorer 7, 8, or 9 (32-bit version)*</p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Firefox 3.x or higher**</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>UNIX/Linux</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>Firefox 3.x or higher**</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Mac</p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>Safari 3.x or higher</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Internet Explorer caveats</h3>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>If you have problems displaying the pages in Internet Explorer, you may need to set your browser options to allow active content to be displayed. This is usually an issue when using Windows XP Service Pack 2 (SP2).</p>
+                  
+                  <p>To allow active content to be displayed in Internet Explorer, follow these steps:</p>
+                  
+                  <ol type="1" start="1">
+                     
+                     <li>
+                        
+                        <p>Select <span class="uiTerm">Tools&rarr;Internet Options</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Click the <span class="uiTerm">Advanced</span> tab.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>In the <span class="uiTerm">Security</span> section, turn on <span class="uiTerm">Allow active content to run in files on My Computer</span>.
+                        </p>
+                        
+                     </li>
+                     
+                  </ol>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>IE9 Compatibility View: The HTML deliverables are fully supported when launched with the http:// protocol or the file:/// protocol. However, if you are viewing the files from a local installation e.g., D://, you may need to enable Compatibility View. In IE 9, do the following:</p>
+                  
+                  <ol type="1" start="1">
+                     
+                     <li>
+                        
+                        <p>Choose <span class="uiTerm">Tools/Compatibility View Settings</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>In the <span class="uiTerm">Compatibility View Settings</span> dialog box, select the <span class="uiTerm">Display all websites in Compatibility View</span> check box.
+                        </p>
+                        
+                     </li>
+                     
+                  </ol>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+            <h3>**Firefox caveats</h3>
+            
+            <ul>
+               
+               <li>
+                  
+                  <p>The default behavior in Firefox 3.0.5 is for pages to be opened in a new tab. This affects the behavior of the global search since new links will open in a tab instead of a new window. Users can configure Firefox to open a new window instead of a tab under <span class="uiTerm">Tools&rarr;Options&rarr;Tabs</span>.
+                  </p>
+                  
+               </li>
+               
+               <li>
+                  
+                  <p>Most customers install and launch our deliverables via <span class="fileName">http://</span> protocol which is fully supported. However, Firefox has a default security setting that prevents the help from launching correctly from a UNC path (<span class="fileName">file:///</span>). To change this setting, you need to change the value of the <span class="fileName">security.fileuri.strict_origin_policy</span> preference:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        
+                        <p>In the address bar, type <span class="literalText">about:config</span>.
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>In the <span class="uiTerm">Filter</span> field, type <span class="literalText">security.fileuri</span>. If the value of the <span class="literalText">security.fileuri.strict_origin_policy</span> preference is set to true, set the value to false (double-click the value to toggle it).
+                        </p>
+                        
+                     </li>
+                     
+                     <li>
+                        
+                        <p>Restart the browser.</p>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Downloading browsers</h3>
+            
+            <p>These browsers are free and can be downloaded from the following Web sites: </p>
+            
+            <ul class="unmarkedList">
+               <li>
+                  
+                  <p> <span class="uiTerm">Internet Explorer</span> &mdash; <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" class="links" href="#" onclick="popUpPage('http://www.microsoft.com','linkURL','menubar=yes,status=yes,resizable=yes,toolbar=yes,scrollbars=yes,location=yes,directories=no')">http://www.microsoft.com</a> 
+                  </p>
+                  
+               </li>
+               <li>
+                  
+                  <p> <span class="uiTerm">Firefox</span> &mdash; <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" class="links" href="#" onclick="popUpPage('http://www.mozilla.org','linkURL','menubar=yes,status=yes,resizable=yes,toolbar=yes,scrollbars=yes,location=yes,directories=no')">http://www.mozilla.org</a> 
+                  </p>
+                  
+               </li>
+               <li>
+                  
+                  <p><span class="uiTerm">Safari</span> &mdash; <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" class="links" href="#" onclick="popUpPage('http://www.apple.com/safari/','linkURL','menubar=yes,status=yes,resizable=yes,toolbar=yes,scrollbars=yes,location=yes,directories=no')">http://www.apple.com</a></p>
+                  
+               </li>
+            </ul>
+            
+         </div>
+         <div class="division">
+            
+            <h3>Flash plug-in</h3>
+            
+            <p>To view some of the animations, you need the Macromedia Flash player, Flash 5 or greater. Visit <a xmlns="http://www.plm.automation.siemens.com/lmd/tools/xps/xpsDocument" class="links" href="#" onclick="popUpPage('http://www.macromedia.com/shockwave/download/alternates/','linkURL','menubar=yes,status=yes,resizable=yes,toolbar=yes,scrollbars=yes,location=yes,directories=no')">the Macromedia site</a> for more information about the Flash player.
+            </p>
+            
+         </div>
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

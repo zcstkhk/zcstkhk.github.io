@@ -1,0 +1,94 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"基本可视化工具",file:"id1044009.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"艺术图像",file:"id788131.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"艺术图像概述",file:"id787436.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"艺术效果的一些注意事项",file:"id787421.html",type:"topic",parent:"d5e5"},
+{id:"d5e8",title:"艺术图像对话框",file:"id787431.html",type:"topic",parent:"d5e5"},
+{id:"d5e9",title:"卡通",file:"id787386.html",type:"topic",parent:"d5e5"},
+{id:"d5e10",title:"颜色衰减",file:"id787391.html",type:"topic",parent:"d5e5"},
+{id:"d5e11",title:"铅笔着色",file:"id787411.html",type:"topic",parent:"d5e5"},
+{id:"d5e12",title:"手绘",file:"id787396.html",type:"topic",parent:"d5e5"},
+{id:"d5e13",title:"喷墨打印",file:"id787401.html",type:"topic",parent:"d5e5"},
+{id:"d5e14",title:"线条和阴影",file:"id787406.html",type:"topic",parent:"d5e5"},
+{id:"d5e15",title:"粗糙铅笔",file:"id787416.html",type:"topic",parent:"d5e5"},
+{id:"d5e16",title:"点刻",file:"id787426.html",type:"topic",parent:"d5e5"},
+{id:"d5e18",title:"艺术效果",file:"id798174.html",type:"activity",parent:"d5e5"}]},
+
+{id:"d5e20",title:"基本光源",file:"id788132.html",type:"topic",parent:"",children:[
+{id:"d5e21",title:"基本光源概述",file:"id787456.html",type:"topic",parent:"d5e20"},
+{id:"d5e22",title:"基本光源对话框",file:"id787451.html",type:"topic",parent:"d5e20"}]},
+
+{id:"d5e24",title:"摄像机",file:"id787091.html",type:"topic",parent:"",children:[
+{id:"d5e25",title:"摄像机概述",file:"id787306.html",type:"topic",parent:"d5e24"},
+{id:"d5e26",title:"视频：摄像机概述",file:"id1542064.html",type:"topic",parent:"d5e24"},
+{id:"d5e27",title:"摄像机类型",file:"id787276.html",type:"topic",parent:"d5e24"},
+{id:"d5e28",title:"透视摄像机选项",file:"id787291.html",type:"topic",parent:"d5e24"},
+{id:"d5e29",title:"创建摄像机",file:"id798180.html",type:"activity",parent:"d5e24"}]},
+
+{id:"d5e31",title:"贴花",file:"id787096.html",type:"topic",parent:"",children:[
+{id:"d5e32",title:"贴花概述",file:"id787586.html",type:"topic",parent:"d5e31"},
+{id:"d5e33",title:"应用图像作为贴花",file:"id787541.html",type:"topic",parent:"d5e31"},
+{id:"d5e34",title:"贴花的放置",file:"id787556.html",type:"topic",parent:"d5e31"},
+{id:"d5e35",title:"缩放",file:"id787566.html",type:"topic",parent:"d5e31"},
+{id:"d5e36",title:"透明色",file:"id787581.html",type:"topic",parent:"d5e31",children:[
+{id:"d5e37",title:"RGB 公差",file:"id787561.html",type:"topic",parent:"d5e36"},
+{id:"d5e38",title:"贴花预览",file:"id787571.html",type:"topic",parent:"d5e36"}]},
+{id:"d5e39",title:"照明",file:"id787536.html",type:"topic",parent:"d5e31"},
+{id:"d5e40",title:"位移",file:"id787531.html",type:"topic",parent:"d5e31"},
+{id:"d5e41",title:"创建一个简单贴花",file:"id798188.html",type:"activity",parent:"d5e31"},
+{id:"d5e42",title:"创建一个雕刻贴花",file:"id798194.html",type:"activity",parent:"d5e31"}]},
+
+{id:"d5e45",title:"高质量图像着色",file:"id787101.html",type:"topic",parent:"",children:[
+{id:"d5e46",title:"高质量图像概述",file:"id787641.html",type:"topic",parent:"d5e45"},
+{id:"d5e47",title:"高质量图像对话框",file:"id787636.html",type:"topic",parent:"d5e45"},
+{id:"d5e48",title:"渲染方法对比",file:"id798200.html",type:"activity",parent:"d5e45"}]},
+
+{id:"d5e50",title:"光栅图像",file:"id787106.html",type:"topic",parent:"",children:[
+{id:"d5e51",title:"光栅图像概述",file:"id787661.html",type:"topic",parent:"d5e50"},
+{id:"d5e52",title:"操作光栅图像",file:"id787656.html",type:"topic",parent:"d5e50"},
+{id:"d5e53",title:"导入并操作光栅图像",file:"id798206.html",type:"activity",parent:"d5e50"}]},
+
+{id:"d5e55",title:"截面",file:"id787111.html",type:"topic",parent:"",children:[
+{id:"d5e56",title:"截面概述",file:"id787351.html",type:"topic",parent:"d5e55"},
+{id:"d5e57",title:"截面类型",file:"id787381.html",type:"topic",parent:"d5e55"},
+{id:"d5e58",title:"截面",file:"id787366.html",type:"topic",parent:"d5e55"},
+{id:"d5e59",title:"第二平面",file:"id787341.html",type:"topic",parent:"d5e55"},
+{id:"d5e60",title:"方块",file:"id787326.html",type:"topic",parent:"d5e55"},
+{id:"d5e61",title:"显示设置",file:"id787336.html",type:"topic",parent:"d5e55"},
+{id:"d5e62",title:"截断面设置",file:"id787331.html",type:"topic",parent:"d5e55"},
+{id:"d5e63",title:"2D 查看器设置",file:"id787311.html",type:"topic",parent:"d5e55"},
+{id:"d5e64",title:"截面系列设置",file:"id787376.html",type:"topic",parent:"d5e55"},
+{id:"d5e65",title:"创建动态截面",file:"id798212.html",type:"activity",parent:"d5e55"}]},
+
+{id:"d5e67",title:"真实着色",file:"id787116.html",type:"topic",parent:"",children:[
+{id:"d5e68",title:"真实着色概述",file:"id787741.html",type:"topic",parent:"d5e67"},
+{id:"d5e69",title:"真实着色工具条",file:"id787711.html",type:"topic",parent:"d5e67",children:[
+{id:"d5e70",title:"材料 – 全局",file:"id787681.html",type:"topic",parent:"d5e69"},
+{id:"d5e71",title:"材料 – 特定于对象",file:"id787686.html",type:"topic",parent:"d5e69"},
+{id:"d5e72",title:"全局反射",file:"id787701.html",type:"topic",parent:"d5e69"},
+{id:"d5e73",title:"背景",file:"id787666.html",type:"topic",parent:"d5e69"},
+{id:"d5e74",title:"阴影/反射/栅格",file:"id787706.html",type:"topic",parent:"d5e69"},
+{id:"d5e75",title:"地板/墙壁",file:"id787676.html",type:"topic",parent:"d5e69"},
+{id:"d5e76",title:"预设光源",file:"id787696.html",type:"topic",parent:"d5e69"},
+{id:"d5e77",title:"其它光源",file:"id787691.html",type:"topic",parent:"d5e69"},
+{id:"d5e78",title:"面边",file:"id787671.html",type:"topic",parent:"d5e69"}]},
+{id:"d5e79",title:"真实着色编辑器",file:"id787716.html",type:"topic",parent:"d5e67",children:[
+{id:"d5e80",title:"真实着色编辑器 – 材质/反射/背景",file:"id787736.html",type:"topic",parent:"d5e79"},
+{id:"d5e81",title:"真实着色编辑器 – 底面",file:"id787721.html",type:"topic",parent:"d5e79"},
+{id:"d5e82",title:"真实着色编辑器 – 地板效果",file:"id787726.html",type:"topic",parent:"d5e79"},
+{id:"d5e83",title:"真实着色编辑器 – 光源",file:"id787731.html",type:"topic",parent:"d5e79"}]},
+{id:"d5e84",title:"创建真实着色",file:"id798218.html",type:"activity",parent:"d5e67"}]},
+
+{id:"d5e86",title:"可视化场景",file:"id787121.html",type:"topic",parent:"",children:[
+{id:"d5e87",title:"可视化场景概述",file:"id787506.html",type:"topic",parent:"d5e86"},
+{id:"d5e88",title:"系统场景",file:"id787501.html",type:"topic",parent:"d5e86"},
+{id:"d5e89",title:"场景编辑器",file:"id787466.html",type:"topic",parent:"d5e86",children:[
+{id:"d5e90",title:"基于图像的打光",file:"id787476.html",type:"topic",parent:"d5e89"},
+{id:"d5e91",title:"系统场景与场景编辑器",file:"id798224.html",type:"activity",parent:"d5e89"}]},
+{id:"d5e92",title:"抽取场景",file:"id787471.html",type:"topic",parent:"d5e86",children:[
+{id:"d5e93",title:"抽取场景",file:"id798230.html",type:"activity",parent:"d5e92"}]}]},
+
+{id:"d5e95",title:"开始下一个课程",file:"id275386.html",type:"topic",parent:""}
+
+]}

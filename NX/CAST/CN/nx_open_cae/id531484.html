@@ -1,0 +1,230 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Enable the custom dialog box</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Enable the custom dialog box</h2>
+         <div class="action">
+            
+            <p>To include the Block Styler code, go back to the top of the file and add an <span class="codeText">Imports</span> statement after the <span class="codeText">Open</span> statement to make the <span class="codeText">NXOpen.Blockstyler</span> namespace available.
+            </p>
+            
+         </div><pre class="codeExample indent ">Option Strict Off
+Imports System
+Imports NXOpen
+<span class="userInput">' Added for BlockStyler UI pieces
+</span><span class="userInput">Imports NXOpen.Blockstyler</span></pre><div class="action">
+            
+            <p>To allow a list window to be used add the following Dim statements.</p>
+            
+         </div><pre class="codeExample indent ">Module NX Journal
+<span class="userInput">Dim theSession As Session = Session.GetSession()
+    Dim theLW As NXOpen.ListingWindow = theSession.ListingWindow()
+    Dim theUI As NXOpen.UI = NXOpen.UI.GetUI()
+</span>
+    Sub Main<span class="userInput">()</span></pre><div class="action">
+            
+            <p>Locate the CreateFem routine.</p>
+            
+         </div>
+         <div class="action">
+            
+            <p>Add the code highlighted in bold below to call the custom dialog box and enable part selection.</p>
+            
+         </div><pre class="codeExample indent ">Dim displayPart As Part = theSession.Parts.Display
+
+<span class="userInput">        Dim body1 As Body
+        Dim theSolidBodySelection As faceSelect = Nothing
+        Dim fembodies() As Body
+        Try
+            theSolidBodySelection = New faceSelect()
+
+            ' The following method shows the dialog immediately
+            theSolidBodySelection.Show()
+
+            fembodies = theSolidBodySelection.bodies.Clone()
+            If fembodies.Length &lt; 1 Then Return
+
+            body1 = fembodies(0)
+
+        Catch ex As Exception
+
+        Finally
+            ' Added the following lines for error checking
+            If theSolidBodySelection IsNot Nothing Then
+                theSolidBodySelection.Dispose()
+            End If
+
+        End Try
+
+</span>
+<span class="userInput"></span>
+Dim markId1 As Session.UndoMarkId
+markId1 = theSession.SetUndoMark(Session.MarkVisibility.Visible, &quot;Start&quot;)</pre><div class="action">
+            
+            <p>Find the <span class="codeText">faceSelect</span> class and make the following changes.
+            </p>
+            
+         </div><pre class="codeExample indent ">    Public Class faceSelect
+        'class members
+        Private Shared theSession As Session
+<span class="userInput">        ' Added the following line to allow access to a listing window
+        Private Shared theLW As NXOpen.ListingWindow
+</span>        Private Shared theUI As UI
+<span class="userInput">        Public Shared thefaceSelect As faceSelect
+        ' Added the following for body selection
+        Public bodies As NXOpen.Body()
+</span>        Private theDlxFileName As String
+<span class="userInput">        ' Added the (= Nothing) to the end of the next line
+</span>        Private theDialog As NXOpen.BlockStyler.BlockDialog<span class="userInput"> = Nothing</span>
+        Private group0 As NXOpen.BlockStyler.UIBlock ' Block type: Group
+        Private selection0 As NXOpen.BlockStyler.UIBlock ' Block type: Selection
+<span class="userInput">        ' Added next line for an expression
+        Private expression0 As NXOpen.BlockStyler.UIBlock ' Block type: Expression
+</span>        '------------------------------------------------------------------------------
+        'Bit Option for Property: SnapPointTypesEnabled</pre><div class="action">
+            
+            <p>Locate the comment 'Constructor for NX Styler class, a little further down in the code and make the following changes to allow NX to look in the local directory instead of directories defined with environment variables.</p>
+            
+         </div><pre class="codeExample indent ">        'Constructor for NX Styler class
+        '------------------------------------------------------------------------------
+        Public Sub New()
+            Try
+
+                theSession = Session.GetSession()
+<span class="userInput">            Dim journal As String = theSession.ExecutingJournal
+            Dim testFile As System.IO.FileInfo = My.Computer.FileSystem.GetFileInfo(journal)
+            Dim folderPath As String = testFile.DirectoryName
+
+            ' dialog is expect to to be next to vb file. 
+            theDlxFileName = My.Computer.FileSystem.CombinePath(folderPath, &quot;faceSelect.dlx&quot;)
+
+            testFile = My.Computer.FileSystem.GetFileInfo(theDlxFileName)
+            If Not testFile.Exists Then
+                theDlxFileName = &quot;faceSelect.dlx&quot;
+            End If
+
+</span>                theUI = UI.GetUI()
+</pre><div class="action">
+            
+            <p>Locate the following section to add a simple error handler in case a file can not be found.</p>
+            <pre class="codeExample indent ">            Catch ex As Exception
+
+                '---- Enter your exception handling code here -----
+<span class="userInput">            theUI.NXMessageBox.Show(&quot;Bottle Crush Example&quot;, NXMessageBox.DialogType.Error, ex.ToString)
+</span>                Throw ex
+            End Try
+        End Sub
+
+</pre>
+            </div>
+         <div class="action">
+            
+            <p>Locate the function for the custom dialog box (<span class="codeText">xxxxMain</span>).
+            </p>
+            
+         </div>
+         <div class="action">
+            
+            <p>Within the <span class="codeText">Try</span> loop, add a <span class="codeText">For</span> statement to enable body selection after the method that launches the dialog.
+            </p>
+            
+         </div><pre class="codeExample indent ">Try
+...
+    thefaceSelect.Show()
+<span class="userInput">            For Each Item As NXOpen.TaggedObject In thefaceSelect.bodies
+
+                Dim faces As NXOpen.Body = CType(Item, NXOpen.Body)
+
+            Next
+</span>
+Catch ex As Exception
+</pre><div class="action">
+            
+            <p>Locate the callback function for initializing the dialog box and add the code highlighted in bold. The lines beginning with group0 and selection0 are being replaced by the first bold lines, while the rest of the bold lines are added.</p>
+            
+         </div><pre class="codeExample indent ">Public Sub initialize_cb()
+    Try
+
+<span class="userInput">            group0 = CType(theDialog.TopBlock.FindBlock(&quot;group0&quot;), NXOpen.BlockStyler.UIBlock)
+            selection0 = CType(theDialog.TopBlock.FindBlock(&quot;selection0&quot;), NXOpen.BlockStyler.UIBlock)
+
+            ' Some additional Code
+            expression0 = theDialog.TopBlock.FindBlock(&quot;expression0&quot;)
+
+            Dim propertyList As BlockStyler.PropertyList
+            propertyList = selection0.GetProperties()
+
+            Dim masktriples1(0) As Selection.MaskTriple
+            masktriples1(0).Type = NXOpen.UF.UFConstants.UF_solid_type
+            masktriples1(0).Subtype = NXOpen.UF.UFConstants.UF_solid_body_subtype
+            masktriples1(0).SolidBodySubtype = NXOpen.UF.UFConstants.UF_UI_SEL_FEATURE_BODY
+            propertyList.SetSelectionFilter(&quot;SelectionFilter&quot;, Selection.SelectionAction.ClearAndEnableSpecific, masktriples1)
+
+            propertyList.SetString(&quot;LabelString&quot;, &quot;Bottle Solid Body&quot;)
+
+            propertyList = group0.GetProperties()
+            propertyList.SetString(&quot;Label&quot;, &quot;Body Selection&quot;)
+            ' End of additions
+
+</span>
+    Catch ex As Exception
+...
+End Sub</pre><div class="action">
+            
+            <p>Locate the callback function for the <span class="uiTerm">Apply</span> button and add the code highlighted in bold.
+            </p>
+            
+         </div><pre class="codeExample indent ">Public Function apply_cb() As Integer
+    Dim errorCode As Integer = 0
+    Try
+
+        '---- Enter your callback code here -----
+<span class="userInput">            ' All of this was added
+            selection0 = theDialog.TopBlock.FindBlock(&quot;selection0&quot;)
+
+            ' Retrieve the selection0 property list
+            Dim propertyList As BlockStyler.PropertyList
+            propertyList = selection0.GetProperties()
+
+            Dim objects As NXOpen.TaggedObject()
+
+            objects = propertyList.GetTaggedObjectVector(&quot;SelectedObjects&quot;)
+
+            Dim Lng As Integer = 0
+
+            ReDim bodies(objects.Length - 1)
+
+            For Each Item As NXOpen.TaggedObject In objects
+
+                Try
+
+                    Dim body As NXOpen.Body = CType(Item, NXOpen.Body)
+                    If body Is Nothing Then
+                        ' Error of some sort
+                    Else
+                        bodies(Lng) = body
+                        Lng = Lng + 1
+                    End If
+                Catch ex As ApplicationException
+
+                End Try
+            Next
+</span>
+    Catch ex As Exception
+</pre><div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <title>Activity View</title>
+  </head>
+  <body class="soria xps">
+
+    <div id="topBorderContainer" dojoType="dijit.layout.BorderContainer" gutters="false" class="borderContainer">
+
+      <!-- Top Pane -->
+      <div dojoType="dijit.layout.ContentPane" region="top" class="topPane" splitter="false">
+        <div class="topDiv">
+          <div class="title" id="topicSetTitle">...</div>
+        </div>
+      </div>
+
+      <!-- Center Pane -->
+      <div id="mainDiv" dojoType="dijit.layout.ContentPane" class="mainPane" region="center" extractContent="true">
+        loading main content...
+      </div>
+
+      <!-- Navigation Pane -->
+      <div id="navDiv" dojoType="dijit.layout.ContentPane" region="bottom" class="bottomPane" extractContent="true">
+
+          <div class="navMenu">
+            <span id="leftButton" title="..." dojoType="xps.form.Button" onClick='gotoPrevPage()' iconClass="prevIcon" showLabel="false"></span>
+
+            <span id="dropDownButton" dojoType="xps.form.DropDownButton">
+              <span>...</span>
+              <div class="dropDownMenu" dojoType="dijit.Menu" id="dropDownMenu"></div>
+            </span>
+
+            <span id="rightButton" title="..." dojoType="xps.form.Button" onClick='gotoNextPage()' iconClass="nextIcon" showLabel="false"></span>
+          </div>
+      </div>
+
+
+    </div>
+
+  </body>
+</html>

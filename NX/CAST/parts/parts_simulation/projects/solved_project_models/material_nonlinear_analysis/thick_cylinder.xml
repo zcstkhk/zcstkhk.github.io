@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XYPLOT-GraphTemplate2D version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="GraphTemplate2D.xsd">
+    <ComplexOption>0</ComplexOption>
+    <PhaseDisplayRangeOption>0</PhaseDisplayRangeOption>
+    <XYSwapped>0</XYSwapped>
+    <Title>
+        <TextLines IsAuto="0">
+            <Text>Stress at Inner Radius vs. Time</Text>
+        </TextLines>
+        <Style Font="ideas_simplex" Size="4" Angle="0" Color="173" TextJust="0" NumFormat="0" Thickness="1">
+            <TextBox Enabled="0">
+                <Style Color="173" Filled="0" FillColor="61"/>
+                <Margin Top="0.5" Left="0.5" Right="0.5" Bottom="0.5"/>
+            </TextBox>
+        </Style>
+        <Position X="0.5" Y="0.5" Z="0"/>
+    </Title>
+    <Legend Enabled="1">
+        <Style Font="ideas_simplex" Size="2" Angle="0" Color="173" TextJust="0" NumFormat="0" Thickness="1">
+            <TextBox Enabled="1">
+                <Style Color="173" Filled="0" FillColor="61"/>
+                <Margin Top="0.8" Left="9" Right="0.5" Bottom="0.5"/>
+            </TextBox>
+        </Style>
+        <Position X="0.8" Y="0.85" Z="0"/>
+    </Legend>
+    <Marker>
+        <Style Font="ideas_simplex" Size="2" Angle="0" Color="173" TextJust="0" NumFormat="7" Thickness="0">
+            <TextBox Enabled="1">
+                <Style Color="173" Filled="0" FillColor="61"/>
+                <Margin Top="0.5" Left="0.5" Right="0.5" Bottom="0.5"/>
+            </TextBox>
+        </Style>
+    </Marker>
+    <ProbingText>
+        <Style Font="ideas_simplex" Size="2" Angle="0" Color="173" TextJust="1" NumFormat="7" Thickness="0">
+            <TextBox Enabled="1">
+                <Style Color="173" Filled="0" FillColor="61"/>
+                <Margin Top="0.5" Left="0.5" Right="0.5" Bottom="0.5"/>
+            </TextBox>
+        </Style>
+    </ProbingText>
+    <Note>
+        <Style Font="ideas_simplex" Size="2" Angle="0" Color="173" TextJust="0" NumFormat="0" Thickness="0">
+            <TextBox Enabled="1">
+                <Style Color="173" Filled="0" FillColor="61"/>
+                <Margin Top="0.5" Left="0.5" Right="0.5" Bottom="0.5"/>
+            </TextBox>
+        </Style>
+    </Note>
+    <GraphName>
+        <Style Font="ideas_simplex" Size="2" Angle="0" Color="173" TextJust="2" NumFormat="0" Thickness="0">
+            <TextBox Enabled="0">
+                <Style Color="173" Filled="0" FillColor="61"/>
+                <Margin Top="0.5" Left="0.5" Right="0.5" Bottom="0.5"/>
+            </TextBox>
+        </Style>
+        <Position X="0.05" Y="0.5" Z="0"/>
+    </GraphName>
+    <PageNumber Enabled="1">
+        <Style Font="ideas_simplex" Size="2" Angle="0" Color="173" TextJust="0" NumFormat="0" Thickness="1">
+            <TextBox Enabled="0">
+                <Style Color="173" Filled="0" FillColor="61"/>
+                <Margin Top="0.5" Left="0.5" Right="0.5" Bottom="0.5"/>
+            </TextBox>
+        </Style>
+        <Position X="0.92" Y="0.025" Z="0"/>
+    </PageNumber>
+    <Display-Styles>
+        <Item Index="0" Active="0">
+            <CurveStyle LineFont="0" LineWidth="1" PointMarker="0" OutlineColor="186"/>
+            <BarStyle BarWidth="50" FillColor="25" PointMarker="0" ShowOutline="1" OutlineColor="186"/>
+            <PlateStyle FillColor="25" PointMarker="0" ShowOutline="1" OutlineColor="186"/>
+        </Item>
+        <Item Index="1" Active="0">
+            <CurveStyle LineFont="0" LineWidth="1" PointMarker="0" OutlineColor="211"/>
+            <BarStyle BarWidth="50" FillColor="185" PointMarker="0" ShowOutline="1" OutlineColor="211"/>
+            <PlateStyle FillColor="185" PointMarker="0" ShowOutline="1" OutlineColor="211"/>
+        </Item>
+        <Item Index="2" Active="0">
+            <CurveStyle LineFont="0" LineWidth="1" PointMarker="0" OutlineColor="108"/>
+            <BarStyle BarWidth="50" FillColor="77" PointMarker="0" ShowOutline="1" OutlineColor="108"/>
+            <PlateStyle FillColor="77" PointMarker="0" ShowOutline="1" OutlineColor="108"/>
+        </Item>
+        <Item Index="3" Active="0">
+            <CurveStyle LineFont="0" LineWidth="1" PointMarker="0" OutlineColor="6"/>
+            <BarStyle BarWidth="50" FillColor="101" PointMarker="0" ShowOutline="1" OutlineColor="6"/>
+            <PlateStyle FillColor="101" PointMarker="0" ShowOutline="1" OutlineColor="6"/>
+        </Item>
+        <Item Index="4" Active="0">
+            <CurveStyle LineFont="4" LineWidth="0" PointMarker="0" OutlineColor="31"/>
+            <BarStyle BarWidth="50" FillColor="165" PointMarker="0" ShowOutline="1" OutlineColor="31"/>
+            <PlateStyle FillColor="165" PointMarker="0" ShowOutline="1" OutlineColor="31"/>
+        </Item>
+        <Item Index="5" Active="0">
+            <CurveStyle LineFont="5" LineWidth="0" PointMarker="0" OutlineColor="181"/>
+            <BarStyle BarWidth="50" FillColor="168" PointMarker="0" ShowOutline="1" OutlineColor="181"/>
+            <PlateStyle FillColor="168" PointMarker="0" ShowOutline="1" OutlineColor="181"/>
+        </Item>
+        <Item Index="6" Active="0">
+            <CurveStyle LineFont="6" LineWidth="0" PointMarker="0" OutlineColor="131"/>
+            <BarStyle BarWidth="50" FillColor="155" PointMarker="0" ShowOutline="1" OutlineColor="131"/>
+            <PlateStyle FillColor="155" PointMarker="0" ShowOutline="1" OutlineColor="131"/>
+        </Item>
+        <Item Index="7" Active="0">
+            <CurveStyle LineFont="0" LineWidth="0" PointMarker="0" OutlineColor="81"/>
+            <BarStyle BarWidth="50" FillColor="178" PointMarker="0" ShowOutline="1" OutlineColor="81"/>
+            <PlateStyle FillColor="178" PointMarker="0" ShowOutline="1" OutlineColor="81"/>
+        </Item>
+        <Item Index="8" Active="0">
+            <CurveStyle LineFont="1" LineWidth="0" PointMarker="0" OutlineColor="125"/>
+            <BarStyle BarWidth="50" FillColor="98" PointMarker="0" ShowOutline="1" OutlineColor="125"/>
+            <PlateStyle FillColor="98" PointMarker="0" ShowOutline="1" OutlineColor="125"/>
+        </Item>
+        <Item Index="9" Active="0">
+            <CurveStyle LineFont="2" LineWidth="0" PointMarker="0" OutlineColor="82"/>
+            <BarStyle BarWidth="50" FillColor="44" PointMarker="0" ShowOutline="1" OutlineColor="82"/>
+            <PlateStyle FillColor="44" PointMarker="0" ShowOutline="1" OutlineColor="82"/>
+        </Item>
+        <Item Index="10" Active="0">
+            <CurveStyle LineFont="3" LineWidth="0" PointMarker="0" OutlineColor="164"/>
+            <BarStyle BarWidth="50" FillColor="114" PointMarker="0" ShowOutline="1" OutlineColor="164"/>
+            <PlateStyle FillColor="114" PointMarker="0" ShowOutline="1" OutlineColor="164"/>
+        </Item>
+        <Item Index="11" Active="0">
+            <CurveStyle LineFont="4" LineWidth="0" PointMarker="0" OutlineColor="161"/>
+            <BarStyle BarWidth="50" FillColor="59" PointMarker="0" ShowOutline="1" OutlineColor="161"/>
+            <PlateStyle FillColor="59" PointMarker="0" ShowOutline="1" OutlineColor="161"/>
+        </Item>
+        <Item Index="12" Active="0">
+            <CurveStyle LineFont="5" LineWidth="0" PointMarker="0" OutlineColor="99"/>
+            <BarStyle BarWidth="50" FillColor="42" PointMarker="0" ShowOutline="1" OutlineColor="99"/>
+            <PlateStyle FillColor="42" PointMarker="0" ShowOutline="1" OutlineColor="99"/>
+        </Item>
+        <Item Index="13" Active="0">
+            <CurveStyle LineFont="6" LineWidth="0" PointMarker="0" OutlineColor="173"/>
+            <BarStyle BarWidth="50" FillColor="69" PointMarker="0" ShowOutline="1" OutlineColor="173"/>
+            <PlateStyle FillColor="69" PointMarker="0" ShowOutline="1" OutlineColor="173"/>
+        </Item>
+        <Item Index="14" Active="0">
+            <CurveStyle LineFont="0" LineWidth="0" PointMarker="0" OutlineColor="9"/>
+            <BarStyle BarWidth="50" FillColor="212" PointMarker="0" ShowOutline="1" OutlineColor="9"/>
+            <PlateStyle FillColor="212" PointMarker="0" ShowOutline="1" OutlineColor="9"/>
+        </Item>
+        <Item Index="15" Active="0">
+            <CurveStyle LineFont="1" LineWidth="0" PointMarker="0" OutlineColor="59"/>
+            <BarStyle BarWidth="50" FillColor="91" PointMarker="0" ShowOutline="1" OutlineColor="59"/>
+            <PlateStyle FillColor="91" PointMarker="0" ShowOutline="1" OutlineColor="59"/>
+        </Item>
+        <Item Index="16" Active="0">
+            <CurveStyle LineFont="2" LineWidth="0" PointMarker="0" OutlineColor="93"/>
+            <BarStyle BarWidth="50" FillColor="3" PointMarker="0" ShowOutline="1" OutlineColor="93"/>
+            <PlateStyle FillColor="3" PointMarker="0" ShowOutline="1" OutlineColor="93"/>
+        </Item>
+        <Item Index="17" Active="0">
+            <CurveStyle LineFont="3" LineWidth="0" PointMarker="0" OutlineColor="103"/>
+            <BarStyle BarWidth="50" FillColor="124" PointMarker="0" ShowOutline="1" OutlineColor="103"/>
+            <PlateStyle FillColor="124" PointMarker="0" ShowOutline="1" OutlineColor="103"/>
+        </Item>
+        <Item Index="18" Active="0">
+            <CurveStyle LineFont="4" LineWidth="0" PointMarker="0" OutlineColor="189"/>
+            <BarStyle BarWidth="50" FillColor="66" PointMarker="0" ShowOutline="1" OutlineColor="189"/>
+            <PlateStyle FillColor="66" PointMarker="0" ShowOutline="1" OutlineColor="189"/>
+        </Item>
+        <Item Index="19" Active="0">
+            <CurveStyle LineFont="5" LineWidth="0" PointMarker="0" OutlineColor="136"/>
+            <BarStyle BarWidth="50" FillColor="146" PointMarker="0" ShowOutline="1" OutlineColor="136"/>
+            <PlateStyle FillColor="146" PointMarker="0" ShowOutline="1" OutlineColor="136"/>
+        </Item>
+    </Display-Styles>
+    <Grid>
+        <Layout>
+            <Line Font="0" Color="173" Width="1" DenseColor="44"/>
+            <Background Color="61" Enabled="0"/>
+            <Contouring Type="0" Level="4" Enabled="0"/>
+            <XYPlane Type="3"/>
+        </Layout>
+        <Divisions>
+            <Item Index="0" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+            <Item Index="1" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+            <Item Index="2" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+            <Item Index="3" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+            <Item Index="4" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+            <Item Index="5" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+            <Item Index="6" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+            <Item Index="7" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+            <Item Index="8" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+            <Item Index="9" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+            <Item Index="10" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+            <Item Index="11" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+        </Divisions>
+    </Grid>
+    <X-Axis>
+        <Type Value="0" Overhead="0">
+            <Log LogDecades="0"/>
+            <Db dBRef="1000" dBScale="10" dBDecades="0"/>
+        </Type>
+        <Units Count="31" UnitSystem="0">
+            <Item Type="0" Unit="0" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="1" Unit="2" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="2" Unit="5" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="3" Unit="8" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="4" Unit="11" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="5" Unit="14" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="6" Unit="15" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="7" Unit="21" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="8" Unit="25" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="9" Unit="29" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="10" Unit="31" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="11" Unit="33" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="12" Unit="36" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="13" Unit="41" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="14" Unit="48" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="15" Unit="51" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="16" Unit="53" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="17" Unit="54" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="18" Unit="55" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="19" Unit="84" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="20" Unit="57" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="21" Unit="62" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="22" Unit="67" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="23" Unit="71" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="24" Unit="76" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="25" Unit="85" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="26" Unit="86" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="27" Unit="87" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="28" Unit="88" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="29" Unit="80" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="30" Unit="82" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+        </Units>
+        <Label>
+            <TextLines IsAuto="1">
+                <Text>Time (sec)</Text>
+            </TextLines>
+            <Style Font="ideas_simplex" Size="3" Angle="0" Color="173" TextJust="0" NumFormat="0" Thickness="1">
+                <TextBox Enabled="0">
+                    <Style Color="173" Filled="0" FillColor="61"/>
+                    <Margin Top="0.5" Left="0.5" Right="0.5" Bottom="0.5"/>
+                </TextBox>
+            </Style>
+            <Position X="0.5" Y="0.4" Z="0"/>
+        </Label>
+        <Number>
+            <Style Font="ideas_simplex" Size="2" Angle="0" Color="173" TextJust="0" NumFormat="0" Thickness="1">
+                <TextBox Enabled="0">
+                    <Style Color="173" Filled="0" FillColor="61"/>
+                    <Margin Top="0.5" Left="0.5" Right="0.5" Bottom="0.5"/>
+                </TextBox>
+            </Style>
+            <Position X="0" Y="0.7" Z="0"/>
+        </Number>
+    </X-Axis>
+    <Y-Axis>
+        <Type Value="0" Overhead="5">
+            <Log LogDecades="0"/>
+            <Db dBRef="1000" dBScale="10" dBDecades="0"/>
+        </Type>
+        <Units Count="31" UnitSystem="0">
+            <Item Type="0" Unit="0" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="1" Unit="2" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="2" Unit="5" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="3" Unit="8" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="4" Unit="11" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="5" Unit="14" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="6" Unit="15" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="7" Unit="21" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="8" Unit="25" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="9" Unit="29" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="10" Unit="31" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="11" Unit="33" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="12" Unit="36" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="13" Unit="41" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="14" Unit="50" RangeMax="40000" RangeMin="-40000" RangeAuto="0"/>
+            <Item Type="15" Unit="51" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="16" Unit="53" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="17" Unit="54" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="18" Unit="55" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="19" Unit="84" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="20" Unit="57" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="21" Unit="62" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="22" Unit="67" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="23" Unit="71" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="24" Unit="76" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="25" Unit="85" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="26" Unit="86" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="27" Unit="87" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="28" Unit="88" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="29" Unit="80" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+            <Item Type="30" Unit="82" RangeMax="0" RangeMin="0" RangeAuto="1"/>
+        </Units>
+        <Label>
+            <TextLines IsAuto="1">
+                <Text>Stress (psi)</Text>
+            </TextLines>
+            <Style Font="ideas_simplex" Size="3" Angle="90" Color="173" TextJust="0" NumFormat="0" Thickness="1">
+                <TextBox Enabled="0">
+                    <Style Color="173" Filled="0" FillColor="61"/>
+                    <Margin Top="0.5" Left="0.5" Right="0.5" Bottom="0.5"/>
+                </TextBox>
+            </Style>
+            <Position X="0.3" Y="0.5" Z="0"/>
+        </Label>
+        <Number>
+            <Style Font="ideas_simplex" Size="2" Angle="0" Color="173" TextJust="0" NumFormat="1" Thickness="1">
+                <TextBox Enabled="0">
+                    <Style Color="173" Filled="0" FillColor="61"/>
+                    <Margin Top="0.5" Left="0.5" Right="0.5" Bottom="0.5"/>
+                </TextBox>
+            </Style>
+            <Position X="0.65" Y="0" Z="0"/>
+        </Number>
+    </Y-Axis>
+</XYPLOT-GraphTemplate2D>

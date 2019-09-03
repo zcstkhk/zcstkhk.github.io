@@ -1,0 +1,141 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>执行交互设计规则检查</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>执行交互设计规则检查</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>在<strong>机械管线布置</strong>工具条上的<strong>设计规则</strong>下拉菜单中，选择<strong>交互检查</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/routing/common/interactive_check.gif" border="0" alt="分析 &gt; 设计规则 &gt; 交互检查" title="分析 &gt; 设计规则 &gt; 交互检查">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>在<strong>违例</strong>组的<strong>过滤器</strong>列表中，选择<strong>跳过替代</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>导航违例</strong>下方，点击<strong>下一个</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/routing/place_part/next.gif" border="0" alt="Next" title="Next">，直到如图所示的折弯段在图形窗口中高亮显示。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/activities/edit_path/rev_rtg_assy_2.png"></p>
+                     
+                     <p>对于这个违例，显示的文本为：</p>
+                     
+                     <table border="0" align="center">
+                        
+                        <colgroup span="1">
+                           
+                           <col span="1">
+                           
+                        </colgroup>
+                        
+                        <tbody>
+                           
+                           <tr>
+                              
+                              <td colspan="1" rowspan="1">
+                                 
+                                 <p class="no-bottom-margin">信息：Arc violates bend radius.(圆弧违反折弯半径)<br/>
+                                设计规则：Curve Bend Radius.(曲线折弯半径)<br/>
+                                忽略：是</p>
+                                 
+                              </td>
+                              
+                           </tr>
+                           
+                        </tbody>
+                        
+                     </table>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>完整的违例文本</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/common/information.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     <pre class="codeExample indent ">Stock of diameter 323.900000 is assigned along a<br/>segment which follows the arc whose bend radius is<br/>only 300.000000.  A larger bend radius is needed<br/>to support the stocck.<br/>(管线段中的型材直径为323.900000，连接它们的折弯段半径只<br/>有300.00000，需要使用更大的折弯半径来支撑型材。)</pre></div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>关闭<strong>信息</strong>窗口。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在<strong>导航违例</strong>下方，点击<strong>下一个</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/routing/place_part/next.gif" border="0" alt="Next" title="Next">，直到下一个折弯半径违例在视图中高亮显示。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/activities/edit_path/rev_rtg_assy_3.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>再次点击<strong>下一个</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/routing/place_part/next.gif" border="0" alt="Next" title="Next">，直到第三个折弯半径违例高亮显示：</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/routing_mechanical/activities/edit_path/rev_rtg_assy_4.png"></p>
+                     
+                     <p>这三个违例通过增加拐角处的折弯半径就可以轻松纠正。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>取消</strong>。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

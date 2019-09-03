@@ -1,0 +1,155 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Define avoidance geometry for the od grooves</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Define avoidance geometry for the od grooves</h2>
+         
+         
+         <p>The next three operations will use the indicated Start Point and Return Point to rough and finish the outside diameter grooves.</p>
+         
+         <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/turning_project_graphic80.png"></p>
+         
+         <p>Create an AVOIDANCE operation object inside TURN_WORKPIECE node.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">Create Geometry</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/toolbars/manufacturing/manufacturing_create/create_geometry.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Geometry Subtype</span> group, click <span class="uiTerm">AVOIDANCE</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/create_geometry/avoidance.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>From the <span class="uiTerm">Geometry</span> list, select <span class="uiTerm">TURN_WORKPIECE</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Avoidance</span> dialog box, in the <span class="uiTerm">Motion to Start Point (ST)</span> group, select <span class="uiTerm">Direct</span> from the <span class="uiTerm">Motion Type</span> list.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>Define a Start Point at the position shown in step 7 that uses a direct motion to the point.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">Inferred Point</span> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/modeling/common/point.gif" border="0">.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>Select the point.</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/turning_project_graphic509.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Motion to Start of Engage</span> group, from the <span class="uiTerm">Motion Type</span> list, select <span class="uiTerm">Axial&rarr;Radial</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>Define an Axial&rarr;Radial motion to the start of the engage.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Motion to Return Point / Clearance (RT)</span> group, select <span class="uiTerm">Radial&rarr;Axial</span> from the <span class="uiTerm">Motion Type</span> list.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>Define a Radial&rarr;Axial motion to a Return Point defined at the same position as the Start Point.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>From the <span class="uiTerm">Point Option</span> list, select <span class="uiTerm">Same as Start</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>Click <span class="uiTerm">OK</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

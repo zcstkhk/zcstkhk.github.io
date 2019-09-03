@@ -1,0 +1,14 @@
+{identifier:"id",label:"title",items:[
+{id:"d14e2",title:"打开部件",file:"diaphragm_open_the_part.html",type:"topic",parent:""},
+{id:"d14e3",title:"重置对话框内存",file:"id353012_dup7.html",type:"topic",parent:""},
+{id:"d14e4",title:"创建仿真",file:"diaphragm_create_simulation.html",type:"topic",parent:""},
+{id:"d14e5",title:"孤立图层51上的机构",file:"isolate_mechanism_on_layer_51.html",type:"topic",parent:""},
+{id:"d14e6",title:"创建连杆",file:"create_links.html",type:"topic",parent:""},
+{id:"d14e7",title:"在环形齿轮上创建旋转副",file:"create_revolute_on_ring_gear.html",type:"topic",parent:""},
+{id:"d14e8",title:"在正齿轮上创建旋转副",file:"create_rev_joint_spur_gear.html",type:"topic",parent:""},
+{id:"d14e9",title:"在柱塞上创建智能点",file:"create_smart_point.html",type:"topic",parent:""},
+{id:"d14e10",title:"创建共点约束",file:"create_atpoint_point.html",type:"topic",parent:""},
+{id:"d14e11",title:"创建共线约束",file:"create_inline_point.html",type:"topic",parent:""},
+{id:"d14e12",title:"创建齿轮传动",file:"create_gear_coupler.html",type:"topic",parent:""},
+{id:"d14e14",title:"创建解算方案并求解",file:"create_a_solution_atpoint_inline.html",type:"topic",parent:""},
+{id:"d14e15",title:"查看机构运动",file:"animate_the_mechanism_dup3.html",type:"topic",parent:""}]}

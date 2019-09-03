@@ -1,0 +1,195 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>修改切削层</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>修改切削层</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>刷新显示。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>刀轨设置</strong>组中的<strong>切削层</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/cut_levels.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>将打开<strong>切削层</strong>对话框。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>在<strong>范围定义</strong>组的列表中，选择范围。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/activities/fixed_contour/zlevel_corner_cut_levels1.png" border="0"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>放大部件。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/activities/fixed_contour/zlevel_corner_cut_levels1a.png"></p>
+                     
+                  </div>
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/activities/fixed_contour/zlevel_corner_cut_levels1b.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>查看<strong>范围深度</strong>以及<strong>每刀切削深度</strong>设置：</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <ul class="unmarkedList">
+                        <li>
+                           
+                           <p><strong>范围深度</strong> = <span class="literalText">1.0000</span></p>
+                           
+                        </li>
+                        <li>
+                           
+                           <p><strong>测量开始位置</strong> = <strong>顶层</strong></p>
+                           
+                        </li>
+                        <li>
+                           
+                           <p><strong>每刀切削深度</strong> = <strong>.1250</strong></p>
+                           
+                        </li>
+                     </ul>
+                     
+                     <p>范围深度设置为定义切削区域的面，该值从部件顶层开始测量，每刀切削深度值设置为工序公共切削深度的最大值，您将对半个部件使用较小的每刀切削深度值，对底部的一半使用较大的每刀切削深度。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>在<strong>范围深度</strong>输入框中键入<strong>0.5</strong>并回车。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/activities/fixed_contour/zlevel_corner_cut_levels1c.png"></p>
+                     
+                     <p>这个范围的底部现在是0.5英寸，从部件顶层开始测量。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>在<strong>每刀切削深度</strong>输入框中键入<strong>0.0625</strong>并回车。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/activities/fixed_contour/zlevel_corner_cut_levels1d.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_8">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>添加新集</strong> <img align="bottom" src="../graphics/nonLocalized/nx/icons/icons/dialogs/manufacturing/common/add_new_event.gif" border="0">。</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_9">
+               <div class="stepAction">
+                  
+                  <p>在<strong>范围深度</strong>输入框中键入<strong>1.0</strong>并回车。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/activities/fixed_contour/zlevel_corner_cut_levels2a.png"></p>
+                     
+                     <p>第二个范围的底部现在是1.0英寸，从部件顶部开始测量，这个范围的顶部是第一个范围的底部。</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_10">
+               <div class="stepAction">
+                  
+                  <p>在<strong>每刀切削深度</strong>输入框中键入<strong>0.125</strong>并回车。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p align="center"><img align="bottom" src="../graphics/nonLocalized/nx/manufacturing/activities/fixed_contour/zlevel_corner_cut_levels2b.png"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_11">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>以接受切削层。</p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepResult">
+                     
+                     <p>将打开<strong>深度加工拐角</strong>对话框。</p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

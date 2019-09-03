@@ -1,0 +1,679 @@
+Input file: E:\Documents\Siemens\NX\parts\parts_motion\proj_1\_interference_trace_sim-solution_1.minp
+
+Solver running in Simcenter Mode
+
+
+Solver: Simcenter Motion Version 11 (11.0) Apr  5 2017 01:07:25 Intel Release 64bit
+Interface: P11.0.2_P5_rc2 2017-04-05
+Hostname: DESKTOP-LRHGMQR
+OS Type: Windows
+Release: 6.2
+Version: Build 9200
+Machine: 8664
+Integer size:    5000000
+Real size:    5000000
+Mcheps: 0.22204460492503E-15
+LMSMOTGGL is active
+
+[1482]
+NOTE:  The system data element specifies inconsistent units:
+  LENGTH.UNIT = MILLIMETER
+  MASS.UNIT   = KILOGRAM
+  FORCE.UNIT  = NEWTON
+Force and mass values are converted to a consistent set of units for
+solution and then converted back to the specified units before being
+reported.
+
+[1296]
+Warning (dynamic data element):  When "INTERPOLATED" is selected for the
+print method, the print frequency feature cannot be used.  PRINT.Freq is
+being reset to zero (disabled) and execution is continuing.
+ The GGL formulation is turned on.
+
+[1076]
+Warning:  The data for the driver element "MOTION_J007_TZ" specifies
+"POLYNOMIAL" as the DRiving.function, but all four parameters
+are zero.  Execution is continuing with a zero function for this driver.
+
+[1076]
+Warning:  The data for the driver element "MOTION_J008_TZ" specifies
+"POLYNOMIAL" as the DRiving.function, but all four parameters
+are zero.  Execution is continuing with a zero function for this driver.
+
+License Server is [28000@desktop-lrhgmqr]
+
+Features requiring licenses
+-----------------------
+sc_motion_solver "Motion Solver"
+
+
+
+------------------------------------------------------------
+   Entering Interactive Mode at Time =  0.0000000000000    
+------------------------------------------------------------
+
+
+------------------------------------------------------------
+   Exiting Interactive Mode
+------------------------------------------------------------
+
+
+Results achieved by the model assembly process with drivers:
+
+  Number of function evaluations =     1
+  Maximum constraint violation   =   0.138698E-10
+
+ Element: Aqua_5
+    Coordinate    New Value     Original Value  Difference
+    X              1881.0         1881.0         0.0000    
+    Y              0.0000         0.0000         0.0000    
+    Z              410.00         410.00         0.0000    
+    E0            0.70711        0.70711         0.0000    
+    E1            0.70711        0.70711         0.0000    
+    E2             0.0000         0.0000         0.0000    
+    E3             0.0000         0.0000         0.0000    
+
+ Element: Blue_1
+    Coordinate    New Value     Original Value  Difference
+    X              1705.5         1705.5         0.0000    
+    Y             -536.88        -536.88         0.0000    
+    Z              769.24         769.24         0.0000    
+    E0            0.70499        0.70499         0.0000    
+    E1           -0.54648E-01   -0.54648E-01     0.0000    
+    E2           -0.70520       -0.70520         0.0000    
+    E3            0.51882E-01    0.51882E-01     0.0000    
+
+ Element: Cyan_6
+    Coordinate    New Value     Original Value  Difference
+    X              1710.5         1710.5         0.0000    
+    Y             -535.82        -535.82         0.0000    
+    Z              589.02         589.02         0.0000    
+    E0            0.65377E-01    0.65377E-01     0.0000    
+    E1            0.73503        0.73503         0.0000    
+    E2            0.67297        0.67297         0.0000    
+    E3           -0.50734E-01   -0.50734E-01     0.0000    
+
+ Element: Green_2
+    Coordinate    New Value     Original Value  Difference
+    X              1792.5         1792.5         0.0000    
+    Y             -482.34        -482.34         0.0000    
+    Z              345.43         345.43         0.0000    
+    E0            0.64500        0.64500         0.0000    
+    E1            0.25138        0.25138         0.0000    
+    E2           -0.67232       -0.67232         0.0000    
+    E3            0.26223        0.26223         0.0000    
+
+ Element: Magenta_4
+    Coordinate    New Value     Original Value  Difference
+    X              1852.0         1852.0         0.0000    
+    Y             -535.00        -535.00         0.0000    
+    Z              414.40         414.40         0.0000    
+    E0            0.71384        0.71384         0.0000    
+    E1            0.69419        0.69419         0.0000    
+    E2           -0.64433E-01   -0.64433E-01     0.0000    
+    E3           -0.66257E-01   -0.66257E-01     0.0000    
+
+ Element: Pink_7
+    Coordinate    New Value     Original Value  Difference
+    X              1709.1         1709.1         0.0000    
+    Y             -501.70        -501.70         0.0000    
+    Z              795.77         795.77         0.0000    
+    E0            0.99680        0.99680         0.0000    
+    E1           -0.79899E-01   -0.79899E-01     0.0000    
+    E2             0.0000         0.0000         0.0000    
+    E3             0.0000         0.0000         0.0000    
+
+ Element: Red_3
+    Coordinate    New Value     Original Value  Difference
+    X              1700.3         1700.3         0.0000    
+    Y             -771.50        -771.50         0.0000    
+    Z              437.30         437.30         0.0000    
+    E0           -0.87837E-02   -0.87837E-02     0.0000    
+    E1            0.70672        0.70672         0.0000    
+    E2            0.70720        0.70720         0.0000    
+    E3           -0.18459E-01   -0.18459E-01     0.0000    
+
+ Element: the_ground
+    Coordinate    New Value     Original Value  Difference
+    X              0.0000         0.0000         0.0000    
+    Y              0.0000         0.0000         0.0000    
+    Z              0.0000         0.0000         0.0000    
+    E0             1.0000         1.0000         0.0000    
+    E1             0.0000         0.0000         0.0000    
+    E2             0.0000         0.0000         0.0000    
+    E3             0.0000         0.0000         0.0000    
+
+
+------------------------------------------------------------
+   Entering Interactive Mode at Time =  0.0000000000000    
+------------------------------------------------------------
+
+STEP command
+
+[1440]
+Warning:  Initial velocities of all generalized coordinates have
+been set to zero.
+Solution of initial velocities, using QR method:
+
+ Element: Aqua_5
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: Blue_1
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: Cyan_6
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: Green_2
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: Magenta_4
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: Pink_7
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: Red_3
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: the_ground
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+Solution of velocities in local coordinates:
+
+ Element: Aqua_5
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: Blue_1
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: Cyan_6
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: Green_2
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: Magenta_4
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: Pink_7
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: Red_3
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: the_ground
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+Number of real data in the system     =     15912
+Number of integer data in the system  =     25179
+
+
+[1310]
+Warning:  Number of constraints is greater than or equal to the number
+of generalized coordinates.
+  Number of generalized coordinates =                   56
+  Number of constraints             =                   56
+
+Solution of accelerations in local coordinates:
+
+ Element: Aqua_5
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+ Element: Blue_1
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+ Element: Cyan_6
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+ Element: Green_2
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+ Element: Magenta_4
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+ Element: Pink_7
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+ Element: Red_3
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+ Element: the_ground
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+Total Number of Bodies             =    8
+
+Total Number of Degrees of Freedom =   48
+Number of Kinematic Constraints    =   48
+Number of Drivers                  =    2
+Number of Initial Conditions       =    0
+Number of Degrees of Freedom       =    0
+SET SYSTEM System ENDING.TIME = 256.00000000000
+STEP command
+
+[1440]
+Warning:  Initial velocities of all generalized coordinates have
+been set to zero.
+Solution of initial velocities, using QR method:
+
+ Element: Aqua_5
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: Blue_1
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: Cyan_6
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: Green_2
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: Magenta_4
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: Pink_7
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: Red_3
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: the_ground
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+Solution of velocities in local coordinates:
+
+ Element: Aqua_5
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: Blue_1
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: Cyan_6
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: Green_2
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: Magenta_4
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: Pink_7
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: Red_3
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: the_ground
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+Number of real data in the system     =     18715
+Number of integer data in the system  =     28043
+
+
+[1310]
+Warning:  Number of constraints is greater than or equal to the number
+of generalized coordinates.
+  Number of generalized coordinates =                   56
+  Number of constraints             =                   56
+
+Solution of accelerations in local coordinates:
+
+ Element: Aqua_5
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+ Element: Blue_1
+    Coordinate    Acceleration
+    X            -0.151317E-30
+    Y             0.395418E-16
+    Z             0.260225E-15
+    OMEGAD_XL    -0.804731E-29
+    OMEGAD_YL    -0.955115E-20
+    OMEGAD_ZL     0.243474E-17
+
+ Element: Cyan_6
+    Coordinate    Acceleration
+    X            -0.527960E-38
+    Y             0.223368E-34
+    Z            -0.341714E-35
+    OMEGAD_XL     0.514284E-38
+    OMEGAD_YL     0.573937E-37
+    OMEGAD_ZL    -0.264495E-38
+
+ Element: Green_2
+    Coordinate    Acceleration
+    X             0.547772E-50
+    Y             0.217275E-34
+    Z            -0.450083E-35
+    OMEGAD_XL    -0.141656E-38
+    OMEGAD_YL    -0.230575E-37
+    OMEGAD_ZL    -0.250740E-37
+
+ Element: Magenta_4
+    Coordinate    Acceleration
+    X            -0.928490    
+    Y             0.184770    
+    Z             0.872232E-02
+    OMEGAD_XL    -0.571660E-04
+    OMEGAD_YL    -0.600067E-02
+    OMEGAD_ZL    -0.958146E-05
+
+ Element: Pink_7
+    Coordinate    Acceleration
+    X            -0.310511E-38
+    Y             0.761505E-35
+    Z            -0.113872E-35
+    OMEGAD_XL     0.575830E-37
+    OMEGAD_YL     0.271115E-40
+    OMEGAD_ZL     0.341750E-38
+
+ Element: Red_3
+    Coordinate    Acceleration
+    X             0.233580    
+    Y              1.23591    
+    Z            -0.223016    
+    OMEGAD_XL     0.458995E-03
+    OMEGAD_YL     0.149953E-04
+    OMEGAD_ZL    -0.290571E-02
+
+ Element: the_ground
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+Total Number of Bodies             =    8
+
+Total Number of Degrees of Freedom =   48
+Number of Kinematic Constraints    =   48
+Number of Drivers                  =    2
+Number of Initial Conditions       =    0
+Number of Degrees of Freedom       =    0
+STEP command
+STEP command
+STEP command
+STEP command
+STEP command
+STEP command
+STEP command
+STEP command
+STEP command
+STEP command
+STEP command
+STEP command
+STEP command
+STEP command
+SET SYSTEM System ENDING.TIME = 16.000000000000
+   Quiting Motion.
+
+------------------------------------------------------------
+   Exiting Interactive Mode
+------------------------------------------------------------
+
+
+    Total elapsed CPU time:   73.75800    
+    Total clock time:         74

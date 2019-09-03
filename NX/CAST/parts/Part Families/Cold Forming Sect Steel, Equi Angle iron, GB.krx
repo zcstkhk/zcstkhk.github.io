@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="Cold Forming Sect Steel, Equi Angle iron, GB.prt"/>
+	<DetailImage Location="Cold Forming Sect Steel, Equi Angle iron, GB.bmp"/>
+	<DataFile Location="Cold Forming Sect Steel, Equi Angle iron, GB.xls"/>
+	<KeyParameter DescriptiveName="(W) Width">BODY_WIDTH</KeyParameter>
+	<KeyParameter DescriptiveName="(T) Thickness">BODY_THICKNESS</KeyParameter>
+</ItemData>
+</KnowledgeReuse>

@@ -1,0 +1,38 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>光线追踪内存</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2><strong>光线追踪内存</strong></h2>
+         
+         <p>您可以控制在场景中作光线追踪时渲染机构可以使用的虚拟内存空间量。</p>
+         
+         <p>光线追踪发生在将<strong>方法</strong>设为<strong>光线追踪</strong>或场景中存在反射对象或玻璃对象(如镜子、金属或玻璃)时。对于大型、极度复杂并具有大量多边形的部件，可能需要增加该值以保持渲染性能。</p>
+         <ul>
+           <li>
+             <p>增加分配给光线追踪的内存增加了将渲染背景分割成分区的限制</p>
+           </li>
+           <li>
+             <p>模型越大，<strong>高质量图像</strong>允许分割的空间越大</p>
+           </li>
+           <li>
+             <p>可以将该值最高设为 128 MB</p>
+           </li>
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

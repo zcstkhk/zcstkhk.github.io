@@ -1,0 +1,15 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"坐标尺寸",file:"id1056481.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"坐标尺寸",file:"toolbox_tbx_ord_dim.html",type:"topic",parent:""},
+{id:"d5e7",title:"坐标原点",file:"tbx_ord_origin_ov.html",type:"topic",parent:""},
+{id:"d5e9",title:"基线",file:"toolbox_tbx_ord_baseline_ov.html",type:"topic",parent:""},
+{id:"d5e11",title:"坐标边距",file:"tbx_margins_ov.html",type:"topic",parent:""},
+{id:"d5e14",title:"折线延伸线",file:"tbx_dogleg_ov.html",type:"topic",parent:""},
+{id:"d5e16",title:"创建坐标尺寸集",file:"id755176.html",type:"activity",parent:""},
+{id:"d5e18",title:"创建新的边距",file:"id755197.html",type:"activity",parent:""},
+{id:"d5e20",title:"添加一个折线到坐标尺寸中",file:"id755208.html",type:"activity",parent:""},
+{id:"d5e22",title:"编辑坐标尺寸样式",file:"id755214.html",type:"activity",parent:""},
+{id:"d5e24",title:"编辑坐标原点显示",file:"id755220.html",type:"activity",parent:""},
+{id:"d5e27",title:"将尺寸移动到另一个边距上",file:"id755291.html",type:"activity",parent:""}
+]}

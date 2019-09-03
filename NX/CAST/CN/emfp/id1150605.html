@@ -1,0 +1,119 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Drill the 0.250 diameter holes</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Drill the 0.250 diameter holes</h2>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Program Order</span> view of the <span class="uiTerm">Operation Navigator</span>, right-click <span class="uiTerm">SPOT_DRILLING_1</span> and choose <span class="uiTerm">Copy</span>. 
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>Right-click <span class="uiTerm">SPOT_DRILLING_1</span> and choose <span class="uiTerm">Paste</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p><span class="uiTerm">SPOT_DRILLING_1_COPY</span> should be the last operation in the program.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>Right-click <span class="uiTerm">SPOT_DRILLING_1_COPY</span> and choose <span class="uiTerm">Rename</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>Change the name of the copied operation to <span class="userInput">DRILLING_.25</span> and press Enter.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>It is easier to copy the existing spot drilling operation and make minor changes than it is to recreate the entire operation.</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/drilling_project_graphic57.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>In the <span class="uiTerm">Operation Navigator</span>, right-click in the background and choose <span class="uiTerm">Machine Tool View</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>Right-click in the background again and choose <span class="uiTerm">Expand All</span>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>You need to change the tool that is used by the <span class="uiTerm">DRILLING_.25</span> operation. You will change the current tool from a spot drill tool to a drill tool. This can be done in the <span class="uiTerm">Machine Tool View</span> of the <span class="uiTerm">Operation Navigator</span> by dragging the operation out of one tool object and dropping it onto the desired tool object.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>Drag the <span class="uiTerm">DRILLING_.25</span> operation (found inside the <span class="uiTerm">SPOTDRILLING_TOOL</span> object) onto the <span class="uiTerm">DRILL.250</span> object.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>The operation should be contained inside the DRILL.250 object as shown.</p>
+                     
+                     <p align="center"><img align="bottom" src="../graphics/graphicLibrary/nx/manufacturing/activities/projects/drilling_project_graphic58.gif"></p>
+                     
+                  </div>
+               </div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

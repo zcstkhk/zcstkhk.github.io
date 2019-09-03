@@ -1,0 +1,12 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"深度铣",file:"id1074662.html",type:"topic",parent:""},
+
+{id:"d5e5",title:"深度铣",file:"id789306.html",type:"topic",parent:"",children:[
+{id:"d5e6",title:"轮廓铣削整个部件",file:"id803632.html",type:"activity",parent:"d5e5"}]},
+
+{id:"d5e8",title:"只加工陡峭区域的轮廓",file:"genid_profiling_only_steep_areas_105_2897.html",type:"topic",parent:"",children:[
+{id:"d5e9",title:"只加工陡峭区域的轮廓",file:"id803643.html",type:"activity",parent:"d5e8"}]},
+
+{id:"d5e11",title:"指定切削顺序",file:"genid_specifying_the_cut_order_261_4384.html",type:"topic",parent:"",children:[
+{id:"d5e12",title:"控制切削顺序",file:"id803659.html",type:"activity",parent:"d5e11"}]}
+]}

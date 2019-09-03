@@ -1,0 +1,52 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>静态降阶概述</title>
+   </head>
+   <body>
+      <div class="contentType_">
+         <h2>静态降阶概述</h2>
+         
+         <p>SOL 101 超单元解算方案类型Superelement solution type performs a static condensation of stiffness and a Guyan reduction of mass and damping.</p>
+         
+         <p>If only stiffness exists in the model, the reduction is a static condensation. This occurs when no mass or damping is defined. For example, density is undefined on the material definitions.</p>
+         
+         <p>Static condensation exactly represents the original stiffness with no loss of accuracy. You can use static condensation in any subsequent solution which requires only stiffness.</p>
+         
+         <p>If mass and/or damping also exist, the reduction is considered a Guyan reduction. In a Guyan reduction, all interior mass is lumped on the boundary DOF.</p>
+         
+         
+         <p>You can safely and effectively use a statically reduced superelement in a subsequent static solution.</p>
+         
+         <p>Significant error may result if you use a statically reduced superelement in a dynamic solution where it is not appropriate. It may be appropriate to use a static condensation in a dynamic solution if:</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>The component is very stiff relative to the rest of the structure. </p>
+               
+            </li>
+            
+            <li>
+               
+               <p>You want to exclude the dynamics of a region of the model.</p>
+               
+            </li>
+            
+         </ul>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>从边界条件中排除对象</title>
+   </head>
+   <body>
+      <div class="contentType_concept">
+         <h2>从边界条件中排除对象</h2>
+         
+         <p><a name="ndxgenid_spta_loadcnst_83"></a>
+            当您定义载荷或约束时，使用<strong>排除</strong>选项指定要从边界条件定义中排除的几何体或有限元实体。</p>
+         
+         <p>例如，您可以在多边形面上定义一个固定约束，并排除多边形边。</p>
+         
+         <p>使用<strong>排除</strong>选项来：</p>
+         
+         <ul>
+            
+            <li>
+               
+               <p>避免应用于共享几何体上的约束冲突。您可以防止软件在沿面交界的边创建</p>
+               
+            </li>
+            
+            <li>
+               
+               <p>在几何体上施加载荷并排除选定的单元，然后在排除的单元上施加另一个不同的载荷</p>
+               
+            </li>
+            
+         </ul>
+         
+         
+         <a name="genid_spta_loadcnst_89"></a><div class="figureContainer">
+            <table align="center">
+               <tr>
+                  <td>
+                     <div class="figure">
+                        <div><img align="bottom" src="../graphics/graphicLibrary/nx_dss/adv_sim/boundary_conditions/techniques/excluded.png" border="0"></div>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+            <h4>(上) 多边形面上的固定约束；(下) 多半形面上的固定约束，其中多边形边被排除</h4>
+         </div>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

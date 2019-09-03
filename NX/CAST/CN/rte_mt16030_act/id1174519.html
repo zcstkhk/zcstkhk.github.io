@@ -1,0 +1,189 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+This software and related documentation are proprietary to Siemens Product Lifecycle Management Software Inc.
+
+(c) 2010 Siemens Product Lifecycle Management Software Inc. All Rights Reserved. 
+
+All trademarks belong to their respective holders.
+-->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Review the customer defaults</title>
+   </head>
+   <body>
+      <div class="contentType_activity">
+         <h2>Review the customer defaults</h2>
+         
+         
+         <p>To complete all of the formboard activities, you may need to make some entries into your customer defaults, and then restart NX.</p>
+         
+         <ol class="stepList">
+            <li class="step" id="step_1">
+               <div class="stepAction">
+                  
+                  <p>Choose <strong>File&rarr;Utilities&rarr;Customer Defaults</strong>.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_2">
+               <div class="stepAction">
+                  
+                  <p>In the <strong>Customer Defaults</strong> indent list, select:
+                  </p>
+                  
+                  <p><strong>Routing<br>&nbsp;&rarr;Formboard</strong></p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_3">
+               <div class="stepAction">
+                  
+                  <p>Click the <strong>Annotation</strong> tab.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <p>The values in the <strong>Attribute List</strong> correspond to the data imported into the <strong>Electrical Connection Navigator</strong> and determine which attribute columns appear in the cut sheet table.
+                     </p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_4">
+               <div class="stepAction">
+                  
+                  <p>If your <strong>Attribute List</strong> contains all of the following data, you may proceed to the next page.
+                  </p>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <ul class="unmarkedList">
+                        <li>
+                           
+                           <table frame="box" rules="all" align="center">
+                              
+                              <colgroup span="1">
+                                 
+                                 <col span="1" width="300">
+                              </colgroup>
+                              
+                              <tbody>
+                                 
+                                 <tr bgcolor="#E0E0E0">
+                                    
+                                    <td colspan="1" rowspan="1">
+                                       
+                                       <p class="no-bottom-margin">&nbsp;&nbsp; Attribute List</p>
+                                       
+                                    </td>
+                                    
+                                 </tr>
+                                 
+                                 <tr>
+                                    
+                                    <td colspan="1" rowspan="1">
+                                       <pre class="codeExample indent ">unique_id<br>from_conn<br>from_port<br>to_conn<br>to_port<br>cut_length</pre>
+                                       </td>
+                                    
+                                 </tr>
+                                 
+                              </tbody>
+                              
+                           </table>
+                           
+                        </li>
+                     </ul>
+                     
+                     <p>If it does not, continue to the next step.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_5">
+               <div class="stepAction">
+                  
+                  <p>Below unique_id, add the following data:</p>
+                  
+                  <ul class="unmarkedList">
+                     <li>
+                        
+                        <table frame="box" rules="all" align="center">
+                           
+                           <colgroup span="1">
+                              
+                              <col span="1" width="300">
+                           </colgroup>
+                           
+                           <tbody>
+                              
+                              <tr>
+                                 
+                                 <td colspan="1" rowspan="1">
+                                    <pre class="codeExample indent ">from_conn<br>from_port<br>to_conn<br>to_port<br>cut_length</pre>
+                                    </td>
+                                 
+                              </tr>
+                              
+                           </tbody>
+                           
+                        </table>
+                        
+                     </li>
+                  </ul>
+                  
+               </div>
+               <div class="stepDetails">
+                  <div class="stepInformation">
+                     
+                     <table class="attentionTable attn_tip">
+                        <tr>
+                           <td valign="top">
+                              <p class="attn_title">Tip</p>
+                           </td>
+                           <td class="attention_main">
+                              
+                              <p>You can copy each line of text from this activity window and then paste it into<strong> Attribute List</strong> box. Make sure you press Enter at the end of a line to start a new line of text.
+                              </p>
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     
+                     <p>This edit becomes effective when you restart NX, and any cut sheet table you create will automatically contain a column for each of the attributes in this list.</p>
+                     
+                  </div>
+               </div>
+            </li>
+            <li class="step" id="step_6">
+               <div class="stepAction">
+                  
+                  <p>点击<strong>确定</strong>。
+                  </p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+            <li class="step" id="step_7">
+               <div class="stepAction">
+                  
+                  <p>Terminate your current session of NX, and then start a new session.</p>
+                  
+               </div>
+               <div class="stepDetails"></div>
+            </li>
+         </ol>
+         
+         <div id="footer"></div>
+      </div>
+   </body>
+</html>

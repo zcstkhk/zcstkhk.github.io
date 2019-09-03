@@ -1,0 +1,61 @@
+{identifier:"id",label:"title",items:[
+{id:"d5e3",title:"高级主题",file:"id1051173.html",type:"topic",parent:""},
+
+
+{id:"d5e5",title:"载荷传递",type:"topicMap",parent:"",children:[
+{id:"d5e6",title:"在这堂课中",file:"id411011.html",type:"topic",parent:"d5e5"},
+{id:"d5e7",title:"概述",file:"id411013.html",type:"topic",parent:"d5e5"},
+{id:"d5e8",title:"工作流",file:"id412459.html",type:"topic",parent:"d5e5"},
+{id:"d5e9",title:"运动仿真如何捕捉载荷",file:"id411113.html",type:"topic",parent:"d5e5"},
+{id:"d5e10",title:"高级仿真如何导入载荷",file:"id411115.html",type:"topic",parent:"d5e5"},
+{id:"d5e11",title:"关于有限元网格",file:"id967929.html",type:"topic",parent:"d5e5"},
+{id:"d5e12",title:"将载荷连接到网格",file:"id412208.html",type:"topic",parent:"d5e5"},
+{id:"d5e13",title:"冗余的约束将被忽略",file:"id412210.html",type:"topic",parent:"d5e5"},
+{id:"d5e14",title:"复习",file:"id1493287.html",type:"topic",parent:"d5e5"},
+{id:"d5e15",title:"求解相关的时间步",file:"id412457.html",type:"topic",parent:"d5e5"},
+{id:"d5e16",title:"将载荷导出到高级仿真中",file:"id755899.html",type:"activity",parent:"d5e5"}]},
+
+{id:"d5e18",title:"柔性体分析",type:"topicMap",parent:"",children:[
+{id:"d5e19",title:"在这堂课中",file:"id950599.html",type:"topic",parent:"d5e18"},
+{id:"d5e20",title:"概述",file:"id1540266.html",type:"topic",parent:"d5e18"},
+{id:"d5e21",title:"工作流",file:"id950603.html",type:"topic",parent:"d5e18"},
+{id:"d5e22",title:"柔性体分析 — 介绍",file:"id1454869.html",type:"activity",parent:"d5e18"},
+{id:"d5e23",title:"关于柔性体模态解算方案",file:"id967927.html",type:"topic",parent:"d5e18"},
+{id:"d5e24",title:"关于有限元网格",file:"id967929_1.html",type:"topic",parent:"d5e18"},
+{id:"d5e25",title:"对网格指派材料",file:"id968031.html",type:"topic",parent:"d5e18"},
+{id:"d5e26",title:"将柔性体有限元模型与机构连接",file:"id794072.html",type:"topic",parent:"d5e18"},
+{id:"d5e27",title:"定义连接和载荷自由度",file:"id950607.html",type:"topic",parent:"d5e18"},
+{id:"d5e28",title:"求解 NX Nastran 模态解算方案",file:"id966269.html",type:"topic",parent:"d5e18"},
+{id:"d5e29",title:"复习",file:"id1493293.html",type:"topic",parent:"d5e18"},
+{id:"d5e31",title:"柔性体分析—高级仿真部分",file:"id952514.html",type:"activity",parent:"d5e18"},
+{id:"d5e32",title:"在机构中定义柔性连杆",file:"id950609.html",type:"topic",parent:"d5e18"},
+{id:"d5e33",title:"选择在分析中包含的模态",file:"id1027173.html",type:"topic",parent:"d5e18"},
+{id:"d5e34",title:"求解模型并使机构运动",file:"id950611.html",type:"topic",parent:"d5e18"},
+{id:"d5e35",title:"柔性体分析—运动仿真部分",file:"id1450424.html",type:"activity",parent:"d5e18"}]},
+
+{id:"d5e37",title:"PMDC 电动机",type:"topicMap",parent:"",children:[
+{id:"d5e38",title:"在这堂课中",file:"id411124.html",type:"topic",parent:"d5e37"},
+{id:"d5e39",title:"概述",file:"id411126.html",type:"topic",parent:"d5e37"},
+{id:"d5e40",title:"信号图",file:"id411134.html",type:"topic",parent:"d5e37"},
+{id:"d5e41",title:"闭环信号图",file:"id411146.html",type:"topic",parent:"d5e37"},
+{id:"d5e42",title:"开环信号图",file:"id411148.html",type:"topic",parent:"d5e37"},
+{id:"d5e43",title:"PMDC 电动机",file:"id411150.html",type:"topic",parent:"d5e37"},
+{id:"d5e44",title:"创建一个 PMDC 电动机",file:"id755809.html",type:"activity",parent:"d5e37"},
+{id:"d5e45",title:"复习",file:"id1493343.html",type:"topic",parent:"d5e37"}]},
+
+{id:"d5e47",title:"联合仿真",type:"topicMap",parent:"",children:[
+{id:"d5e48",title:"在这堂课中",file:"id1411334.html",type:"topic",parent:"d5e47"},
+{id:"d5e49",title:"概述",file:"id1411336.html",type:"topic",parent:"d5e47"},
+{id:"d5e50",title:"工厂输入",file:"id1496812.html",type:"topic",parent:"d5e47"},
+{id:"d5e51",title:"工厂输出",file:"id1496814.html",type:"topic",parent:"d5e47"},
+{id:"d5e52",title:"Motion Plant 块",file:"id1493519.html",type:"topic",parent:"d5e47"},
+{id:"d5e53",title:"Simulink 控制系统文件",file:"id1493525.html",type:"topic",parent:"d5e47"},
+{id:"d5e54",title:"工作流",file:"id1411338.html",type:"topic",parent:"d5e47"},
+{id:"d5e55",title:"NX-主持工作流",file:"id1411340.html",type:"topic",parent:"d5e47"},
+{id:"d5e56",title:"Simulink-主持工作流",file:"id1493517.html",type:"topic",parent:"d5e47"},
+{id:"d5e57",title:"模板文件",file:"id1493521.html",type:"topic",parent:"d5e47"},
+{id:"d5e58",title:"采样时间和最大步长",file:"id1493523.html",type:"topic",parent:"d5e47"},
+{id:"d5e60",title:"复习",file:"id1536157.html",type:"topic",parent:"d5e47"},
+{id:"d5e61",title:"使用 Simulink 运行协同仿真",file:"id1494239.html",type:"activity",parent:"d5e47"}]}
+
+]}

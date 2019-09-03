@@ -1,0 +1,10 @@
+{identifier:"id",label:"title",items:[
+{id:"d17e2",title:"打开部件",file:"gear_open_the_part.html",type:"topic",parent:""},
+{id:"d17e3",title:"重置对话框内存",file:"id353012_dup10.html",type:"topic",parent:""},
+{id:"d17e4",title:"创建仿真",file:"create_simulation_gear.html",type:"topic",parent:""},
+{id:"d17e5",title:"创建连杆",file:"create_links_gear.html",type:"topic",parent:""},
+{id:"d17e6",title:"创建旋转副",file:"create_revolute_joints.html",type:"topic",parent:""},
+{id:"d17e7",title:"在柱塞上创建滑动副",file:"create_slider_joint_plunger.html",type:"topic",parent:""},
+{id:"d17e8",title:"在蜗杆与环形物之间创建齿轮传动",file:"create_gear_worm_ring.html",type:"topic",parent:""},
+{id:"d17e9",title:"创建解算方案并求解",file:"create_a_solution_gear.html",type:"topic",parent:""},
+{id:"d17e10",title:"查看机构运动",file:"animate_the_mechanism_dup5.html",type:"topic",parent:""}]}
