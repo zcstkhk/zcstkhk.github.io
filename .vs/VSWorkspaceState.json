@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\NX",
+    "\\NX\\CAST",
+    "\\NX\\CAST\\CN",
+    "\\NX\\CAST\\CN\\collection",
+    "\\NX\\CAST\\CN\\js"
   ],
-  "SelectedNode": "\\NX",
+  "SelectedNode": "\\NX\\CAST\\CN\\js\\collectionToc.js",
   "PreviewInSolutionExplorer": false
 }
