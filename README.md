@@ -11,7 +11,7 @@
 
 5.此教程完全免费，如果你觉得我付出的劳动对你有些许帮助，欢迎打赏，在此谢过。
 
-![](https://github.com/zcstkhk/zcstkhk.github.io/blob/master/imgs/donate_code.jpg)
+<img src="https://github.com/zcstkhk/zcstkhk.github.io/blob/master/imgs/donate_code.jpg" width = "300" height = "300" div align=center />
 
 6.中文版页面访问地址为 https://zcstkhk.github.io/NX/CAST/CN/
 	
