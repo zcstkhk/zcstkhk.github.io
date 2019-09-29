@@ -1,12 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\imgs",
     "\\NX",
-    "\\NX\\CAST",
-    "\\NX\\CAST\\CN",
-    "\\NX\\CAST\\CN\\collection",
-    "\\NX\\CAST\\CN\\js"
+    "\\NX\\CAST"
   ],
-  "SelectedNode": "\\NX\\CAST\\CN\\js\\collectionToc.js",
+  "SelectedNode": "\\imgs\\donate_code.jpg",
   "PreviewInSolutionExplorer": false
 }
