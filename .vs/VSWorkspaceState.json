@@ -3,8 +3,10 @@
     "",
     "\\imgs",
     "\\NX",
-    "\\NX\\CAST"
+    "\\NX\\CAST",
+    "\\NX\\CAST\\CN",
+    "\\NX\\CAST\\CN\\collection",
+    "\\NX\\CAST\\CN\\pcbx_tutorials"
   ],
-  "SelectedNode": "\\imgs\\donate_code.jpg",
   "PreviewInSolutionExplorer": false
 }
